@@ -1,0 +1,175 @@
+@import blueprint/colors
+@import compass/utilities/links/link-colors
+@import compass/utilities/general/float
+
+$blueprint-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif !default
+
+$blueprint-fixed-font-family: "andale mono", "lucida console", monospace !default
+
+$blueprint-font-size: 12px !default
+
+// Usage examples:
+// As a top-level mixin, apply to any page that includes the stylesheet:
+//   +blueprint-typography
+// Scoped by a presentational class:
+//   body.blueprint
+//    +blueprint-typography(true)
+// Scoped by semantic selectors:
+//   body#page-1, body#page-2, body.a-special-page-type
+//     +blueprint-typography(true)
+// Deprecated:
+//   You can pass the body selector as the first argument when used as a top-level mixin
+//   +blueprint-typography("body#page-1, body#page-2, body.a-special-page-type")
+=blueprint-typography($body-selector: body)
+  @if $body-selector == true
+    +blueprint-typography-body
+    +blueprint-typography-defaults
+  @else
+    #{$body-selector}
+      +blueprint-typography-body
+      @if $body-selector != body
+        //@warn "[DEPRECATED] To specify the selector \"#{$body-selector}\\" to +blueprint-typography, pass true as the first argument and mix it into #{$body-selector}."
+        +blueprint-typography-defaults
+    @if $body-selector == body
+      +blueprint-typography-defaults
+
+=normal-text
+  font-family: $blueprint-font-family
+  color: $font-color
+
+=fixed-width-text
+  font: 1em $blueprint-fixed-font-family
+  line-height: $baseline
+
+=header-text
+  font-weight: normal
+  color: $header-color
+
+=quiet
+  color: $quiet-color
+
+=loud
+  color: $loud-color
+
+=blueprint-typography-body($font-size: $blueprint-font-size)
+  line-height: $baseline
+  +normal-text
+  font-size: 100% * $font-size / 16px
+
+=blueprint-typography-defaults
+  #{headers(all)}
+    +header-text
+    img
+      margin: 0
+  h1
+    +adjust-font-size-to(36px)
+    text-rendering: optimizeLegibility
+    font-family: $blueprint_header_font_family
+    em
+      font-family: $blueprint_header_font_family
+  h2
+    +adjust-font-size-to(30px)
+    text-rendering: optimizeLegibility
+    font-family: $blueprint_header_font_family
+  h3
+    +adjust-font-size-to(27px)
+    text-rendering: optimizeLegibility
+    font-family: $blueprint_header_font_family
+  h4
+    +adjust-font-size-to(24px)
+    text-rendering: optimizeLegibility
+  h5
+    +adjust-font-size-to(18px)
+  h6
+    +adjust-font-size-to(18px)
+  p
+    margin: 0 0 $baseline
+    img.left
+      +float-left
+      margin: $baseline $gutter $baseline 0
+      padding: 0
+    img.right
+      +float-right
+      margin: $baseline 0 $gutter $baseline
+      padding: 0
+  a
+    text-decoration: underline
+    +link-colors($link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color)
+  blockquote
+    margin: $baseline $gutter
+    color: $dark_gray
+    // font-style: italic
+    font-family: $bp_font_italic
+  strong
+    // font-weight: bold
+    font-family: $bp_font_bold
+  em
+    // font-style: italic
+    font-family: $bp_font_italic
+  dfn
+    // font-style: italic
+    // font-weight: bold
+    font-family: $bp_font_bold_italic
+  sup, sub
+    line-height: 0
+  abbr, acronym
+    border-bottom: 1px dotted #666666
+  address
+    margin: 0 0 $baseline
+    // font-style: italic
+    font-family: $bp_font_italic
+  del
+    color: #666666
+  pre
+    margin: $baseline 0
+    white-space: pre
+  pre, code, tt, samp
+    +fixed-width-text
+  li ul, li ol
+    margin: 0
+  ul, ol
+    margin: 0 $gutter $baseline 0
+    padding-left: $blueprint_grid_outer_width
+  ul
+    list-style-type: disc
+  ol
+    list-style-type: decimal
+  dl
+    margin: 0 0 $baseline 0
+    dt
+      // font-weight: bold
+      font-family: $bp_font_bold
+  dd
+    margin-left: $blueprint_grid_outer_width
+  table
+    width: 100%
+  th
+    // font-weight: bold
+    font-family: $bp_font_bold
+  thead th
+    // background: $blueprint-table-header-color
+  th, td, caption
+    padding: 0
+  tr.even td
+    background: $blueprint-table-stripe-color
+  tfoot
+    // font-style: italic
+    font-family: $bp_font_italic
+  caption
+    background: #eeeeee
+  .quiet
+    +quiet
+  .loud
+    +loud
+  /* CANARY ADDITIONS
+  cite
+    font-family: $font_sans_italic
+  sup
+    vertical-align: super
+  sub
+    vertical-align: sub
+  hr
+    border-top: 1px dotted $gray
+    border-right: none
+    border-bottom: none
+    border-left: none

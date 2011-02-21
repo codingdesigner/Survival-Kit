@@ -1,0 +1,100 @@
+$bordercolor_default: $gray !default
+
+
+/* Links --------------------------------------------------------------
+// replace underlines on links with bottom borders
+=better-links($link-color: $alt-color)
+  a
+    text-decoration: none
+    border-bottom: 1px solid $link-color
+    &:link, &:visited
+      color: $link-color
+    &:link, &:visited, &:hover, &:active
+      outline: none
+    &:focus, &:hover, &:active
+      color: complement($link-color)
+      // color: $blue
+      text-decoration: none
+      border-bottom-color: complement($link-color)
+    &:focus
+      outline: none
+  
+
+// fade between default and hover colors
+=link-transitions()
+  a
+    +transition(color, 0.5s, ease-out)
+
+// remove bottom borders from better links
+// call directly from an <a> element
+// (needed when linking an <img/> for example)
+=remove-link-underlines($selector: false)
+  @if #{$selector}
+    #{$selector}
+      border-bottom: none
+      &:hover
+        border-bottom: none
+  @else
+    &
+      border-bottom: none
+      &:hover
+        border-bottom: none
+
+
+=accessible-color($background: $white)
+  @if lightness($background) >= 65%
+    color: $base-color
+  @else
+    color: white    
+
+
+=vertical-separation($margin: $baseline, $divide: false, $bordercolor: $bordercolor_default, $borderstyle: solid)
+  +pie-clearfix
+  @if $divide
+    border-bottom: $divide $borderstyle $bordercolor
+    margin-bottom: $margin * 0.5
+    padding-bottom: $margin * 0.5 - $divide
+  @else
+    margin-bottom: $margin * 0.5
+    padding-bottom: $margin * 0.5
+    border-bottom: none
+  &:last-child
+    padding-bottom: 0
+    border-bottom-width: 0
+    margin-bottom: 0
+
+=un-vertical-separation
+  border-bottom: none
+  margin-bottom: 0
+  padding-bottom: 0
+
+=decending-z-order-tab($count: 20)
+  // assumes placement on UL
+  position: relative
+  li
+    position: relative
+    $t: 0
+    $i: $count
+    @while $i > 0
+      &:nth-child(#{$t})
+        z-index: #{$i}
+      $t: $t + 1
+      $i: $i - 1
+      
+
+=gradient-bg($color, $top: 5, $bottom: $top)
+  @if $top < 0 and $bottom < 0
+    $color1: darken($color, abs($top))
+    $color2: lighten($color, abs($bottom))
+    +linear-gradient(color-stops($color1, $color2))
+  @else
+    $color1: lighten($color, abs($top))
+    $color2: darken($color, abs($bottom))
+    +linear-gradient(color-stops($color1, $color2))
+  background-color: $color
+  
+
+=clean-list
+  +no-bullets
+  margin-left: 0
+  padding-left: 0

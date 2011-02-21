@@ -1,0 +1,18 @@
+/* REPLACEMENT FOR THE CSS FILE THAT SHIPS W/ TYPOGRIFY.MODULE
+//!amp_font_family ||= "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua",serif
+$amp_font_family: unquote("Plantin,'Plantin std','Plantin', 'Warnock Pro', 'Baskerville','Goudy Old Style','Palatino','Book Antiqua',serif") !default
+
+
+.caps
+  font-size: 0.9em
+
+.dquo
+  margin-left: -0.5em
+  font-family: $amp_font_family
+
+
+/* Only use the fancy ampersand in <h#> tags
+h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp
+  font-size: 1em
+  font-family: $amp_font_family
+  //font-style: italic
