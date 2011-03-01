@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url(partials/variables/base_compass.css);
+@import url(partials/variables/base_susy.css);
 /* Links -------------------------------------------------------------- */
 /*html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
  *v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
@@ -864,6 +866,30 @@ ul.tabs {
     content: ", "; }
   .terms-inline ul li:last-child:after, .terms-inline ul li.last:after {
     content: ""; }
+
+.container {
+  *zoom: 1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 984px;
+  max-width: 100%; }
+  .container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden; }
+
+.wireframe {
+  outline: 1px dashed red; }
+
+body {
+  font-size: 87.5%;
+  line-height: 1.714em; }
+
+html > body {
+  font-size: 14px; }
 
 body #container {
   *zoom: 1;
