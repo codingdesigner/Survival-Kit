@@ -22,16 +22,17 @@ This also includes a Sass / Compass folder that starts with some very clean defa
 - [xrefresh](http://xrefresh.binaryage.com/)
 
 
-## Acknowledgements
+## Acknowledgements, Installation, & Documentation
 
 - [HTML5 Boilerplate](http://html5boilerplate.com)
 - [Sass](http://sass-lang.com/)
 - [Compass](http://compass-style.org/)
 - [Susy](http://susy.oddbird.net/)
 - [Fancy Buttons](https://github.com/imathis/fancy-buttons)
+- [Selectivizr](http://selectivizr.com/)
+- [Modularscale](http://modularscale.com/)
 - more, more, more
-
-
+- [Screencast (coming soon)](http://thecodingdesigner.com/)
 
 
 

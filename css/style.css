@@ -121,7 +121,7 @@ html {
   text-transform: uppercase; }
 
 .amp {
-  font-family: "GoudyBookletter1911Regular", "goudy-bookletter-1911-1", "goudy-bookletter-1911-2"; }
+  font-family: GoudyBookletter1911Regular, sans-serif; }
 
 .smallcaps {
   font-variant: small-caps; }
@@ -220,8 +220,8 @@ mark {
   text-shadow: none; }
 
 small {
-  font-size: 0.857em;
-  line-height: 2em; }
+  font-size: 1.286em;
+  line-height: 1.333em; }
 
 q {
   font-style: italic;
@@ -305,8 +305,8 @@ tr.even td {
   background-color: gray; }
 
 tfoot {
-  font-size: 1.143em;
-  line-height: 1.5em; }
+  font-size: 1.929em;
+  line-height: 1.778em; }
 
 /* Forms -------------------------------------------------------------- */
 /* `Widths
@@ -629,11 +629,11 @@ label {
   font-weight: bold; }
 
 .textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
-  font-size: 1em;
-  line-height: 1.714em;
+  font-size: 1.714em;
+  line-height: 1em;
   border-style: solid;
-  border-width: 0.071em;
-  padding: 0.357em;
+  border-width: 0.042em;
+  padding: 0.208em;
   border-width: 1px;
   margin-bottom: 0.857em;
   -moz-box-sizing: border-box;
@@ -644,10 +644,10 @@ label {
   max-width: 100%;
   margin-top: 0;
   border-color: black;
-  height: 2.571; }
+  height: 1.5; }
 
 textarea {
-  height: 11.143;
+  height: 6.5;
   vertical-align: text-bottom; }
 
 input[type=search] {
@@ -825,8 +825,8 @@ ul.tabs {
     border-bottom-width: 0;
     margin-bottom: 0; }
   #comments .comment .submitted {
-    font-size: 0.857em;
-    line-height: 2em;
+    font-size: 1.286em;
+    line-height: 1.333em;
     color: gray;
     font-style: italic; }
   #comments .comment .content p:last-of-type {
@@ -838,8 +838,8 @@ ul.tabs {
     outline: 0;
     overflow: hidden;
     *zoom: 1;
-    font-size: 0.857em;
-    line-height: 2em; }
+    font-size: 1.286em;
+    line-height: 1.333em; }
     #comments .comment ul.links li {
       list-style-image: none;
       list-style-type: none;

@@ -2,18 +2,21 @@
 
 // Imports --------------------------------------------------------------
 
-// -->  VARIABLES
+// -->  1. VARIABLES
+// Set up variables for future use
 @import partials/variables/colors
 @import partials/variables/fonts
-// starter shit
+// general starter variables
 @import partials/variables/base
+@import partials/variables/base_compass
 
-// CHOOSE A GRID FRAMEWORK
-// @import partials/variables/base_compass
+// --> 2. CHOOSE A GRID FRAMEWORK
+// todo: add blueprint
 @import partials/variables/base_susy
 
 
-// -->  COMPASS MIXINS
+// -->  3. COMPASS MIXINS
+// Add the compass tools you need
 // all of compass
 // @import compass
 // individual compass components, if you're into the whole brevity thing
@@ -27,7 +30,7 @@
 @import partials/mixins/helpers
 
 
-// --> PICK A CSS RESET
+// --> 4. PICK A CSS RESET
 // html5 boilerplate reset
 @import partials/boilerplate/_boilerplate-reset
 // compass reset
@@ -35,18 +38,20 @@
 // susy reset
 // @import susy/reset
 
-// -->  COMPASS PLUG-INS
+// -->  5. COMPASS PLUG-INS
 // Fancy Buttons
 // @import fancy-buttons
 
-// -->  DEFAULTS
+// -->  6. DEFAULTS
+// Set your overall site defaults
 @import partials/defaults
 // @import partials/boilerplate/_boilerplate-setup
 // @import partials/boilerplate/_boilerplate-helpers
 
 
+// --> 7. CMS-specific overrides and mixins
 // DRUPAL
-@import partials/drupal/drupal
+@import partials/cms/drupal/drupal
 
 // -->  STYLES FOR THIS SITE --------------------------------------------------
 @import partials/grids/_grids_susy.sass

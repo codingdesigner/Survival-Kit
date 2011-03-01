@@ -3,7 +3,7 @@ $bordercolor_default: $gray !default
 
 /* Links --------------------------------------------------------------
 // replace underlines on links with bottom borders
-=better-links($link-color: $alt-color)
+=better-links($link-color: $alt-color, $link-change: complement($alt-color))
   a
     text-decoration: none
     border-bottom: 1px solid $link-color
@@ -12,10 +12,10 @@ $bordercolor_default: $gray !default
     &:link, &:visited, &:hover, &:active
       outline: none
     &:focus, &:hover, &:active
-      color: complement($link-color)
+      color: $link-change
       // color: $blue
       text-decoration: none
-      border-bottom-color: complement($link-color)
+      border-bottom-color: $link-change
     &:focus
       outline: none
   
@@ -28,17 +28,11 @@ $bordercolor_default: $gray !default
 // remove bottom borders from better links
 // call directly from an <a> element
 // (needed when linking an <img/> for example)
-=remove-link-underlines($selector: false)
-  @if #{$selector}
-    #{$selector}
+=remove-link-underlines()
+  &
+    border-bottom: none
+    &:hover
       border-bottom: none
-      &:hover
-        border-bottom: none
-  @else
-    &
-      border-bottom: none
-      &:hover
-        border-bottom: none
 
 
 =accessible-color($background: $white)

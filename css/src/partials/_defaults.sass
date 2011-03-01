@@ -74,22 +74,22 @@ body
   font-weight: normal
 
 h1
-  +adjust-font-size-to($fs9)
+  +adjust-font-size-to($ms6)
 
 h2
-  +adjust-font-size-to($fs8)
+  +adjust-font-size-to($ms5)
 
 h3
-  +adjust-font-size-to($fs7)
+  +adjust-font-size-to($ms4)
 
 h4
-  +adjust-font-size-to($fs6)
+  +adjust-font-size-to($ms3)
 
 h5
-  +adjust-font-size-to($fs5)
+  +adjust-font-size-to($ms2)
 
 h6
-  +adjust-font-size-to($fs4)
+  +adjust-font-size-to($ms1)
 
 /* Inline --------------------------------------------------------------
 
@@ -126,7 +126,7 @@ mark
   text-shadow: none
 
 small
-  +adjust-font-size-to($fs2)
+  +adjust-font-size-to($ms2)
 
 q
   font-style: italic
@@ -218,7 +218,7 @@ tr.even
     background-color: $gray
 
 tfoot
-  +adjust-font-size-to($fs4)
+  +adjust-font-size-to($ms4)
 
 caption
   @extend .allcaps
@@ -245,8 +245,8 @@ label
   
 .textinput
   @extend .sans
-  +adjust-font-size-to($fs3, 1)
-  +rhythm-borders(1px, 0.25, $fs3)
+  +adjust-font-size-to($ms3, 1)
+  +rhythm-borders(1px, 0.25, $ms3)
   border-width: 1px
   +trailer(0.5)
   +box-sizing(border-box)
@@ -254,11 +254,11 @@ label
   max-width: 100%
   margin-top: 0
   border-color: $base-color
-  height: $base-line-height / $fs3 * 1.5
+  height: $base-line-height / $ms3 * 1.5
   
 textarea
   @extend .textinput
-  height: $base-line-height / $fs3 * 6.5
+  height: $base-line-height / $ms3 * 6.5
   vertical-align: text-bottom
   
 input
@@ -275,7 +275,7 @@ input
 button, input[type=button], input[type=submit]
   width: auto
   overflow: visible
-  // +fancy-button($gray, $fs2)
+  // +fancy-button($gray, $ms2)
 
 textarea
   +box-sizing(border-box) 
