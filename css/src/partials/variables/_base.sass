@@ -1,4 +1,4 @@
-// GENERIC 
+// SET VARIABLES FOR USE BY DEFAULTS, MIXINS, AND FRAMEWORKS 
 
 
 // Dimensions
@@ -31,3 +31,53 @@ $ms10: 72px
 $base-font-size: $ms0
 
 
+
+// SUSY
+// UNCOMMENT AND CUSTOMIZE THE FOLLOWING IF YOU'RE
+// USING THE SUSY FRAMEWORK
+//**
+//  Susy: Un-obtrusive grids for designers
+//  By: Eric A. Meyer and OddBird
+//  Site: susy.oddbird.net
+//**
+// Font Sizes --------------------------------------------------------------
+$base-font-size: 14px !default
+$base-line-height: $baseline
+// Grid --------------------------------------------------------------
+$total-cols: 6
+$col-width: 140px
+$gutter-width: $gutter
+$side-gutter-width: $gutter_half
+
+//**
+// You can have Compass generate a grid background png for you with 
+// the following command
+// format is COLUMN+GUTTER+BASELINE
+// compass grid-img 140+24x24
+
+@import susy/susy
+// uncomment to output the full container width to the terminal
+@debug $container-width
+
+// -- END SUSY
+
+
+
+// COMPASS DEFAULT VARIABLES
+// USE THESE WITH COMPASS MIXINS LIKE CSS3 AND SPRITES
+// CSS3 --------------------------------------------------------------
+$default_text_shadow_color: transparentize($gray, 0.5)
+$default_text_shadow_h_offset: 1px
+$default_text_shadow_v_offset: 1px
+$default_text_shadow_blur: 3px
+
+$default_box_shadow_color: $base-color + 50
+$default_box_shadow_h_offset: 1px
+$default_box_shadow_v_offset: 1px
+$default_box_shadow_blur: 5px
+
+// compass sprites
+$sprite-default-size: 32px 
+$sprite-default-margin: 4px
+$sprite-image-default-width: $sprite-default-size
+$sprite-image-default-height: $sprite-default-size

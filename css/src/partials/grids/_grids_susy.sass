@@ -1,3 +1,17 @@
+// BUILD THE GRID FOR YOUR SITE
+
+// HELPER CLASSES INTENDED FOR USE IN @EXTEND
+.container
+  +container
+  // uncomment to show grid background
+  // +show-grid("grid.png")
+.wireframe
+  outline: 1px dashed $red
+
+// CALL THE +SUSY MIXIN TO ESTABLISH THE BASELINE TYPOGRAPHY GRID  
++susy
+
+// BUILD THE GRID BY CALLING SUSY MIXINS ON DOM ELEMENTS
 body
   #container
     +container
