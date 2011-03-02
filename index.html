@@ -40,8 +40,6 @@
     <noscript><link rel="stylesheet" href="css/selectivizr.css" /></noscript>
   <![endif]-->
   
-  <!-- Also put Lettering.js at the top -->
-  <script src="js/libs/jquery.lettering.js"></script>
 
 </head>
 
@@ -64,9 +62,14 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.0.js"%3E%3C/script%3E'))</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
   
+  <!-- Formalize (http://formalize.me) -->
+  <script src="js/libs/formalize/jquery.formalize.js"></script>
+  
+  <!-- Also put Lettering.js at the top -->
+  <script src="js/libs/jquery.lettering.js"></script>
   
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>

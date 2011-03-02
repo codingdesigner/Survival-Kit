@@ -226,7 +226,10 @@ caption
 
 /* Forms --------------------------------------------------------------
 
+// USE FORMALIZE TO EVEN FORMS ACROSS BROWSERS
 @import partials/forms/_formalize
+
+// aditional form styles 
 
 fieldset
   +trailer
@@ -242,11 +245,12 @@ label, input[type=button], input[type=submit], button
 
 label
   font-weight: bold
+  margin-right: 0.5em
   
 .textinput
   @extend .sans
-  +adjust-font-size-to($ms3, 1)
-  +rhythm-borders(1px, 0.25, $ms3)
+  +adjust-font-size-to($ms0, 1)
+  +rhythm-borders(1px, 0.25, $ms0)
   border-width: 1px
   +trailer(0.5)
   +box-sizing(border-box)
@@ -254,12 +258,11 @@ label
   max-width: 100%
   margin-top: 0
   border-color: $base-color
-  height: $base-line-height / $ms3 * 1.5
+  height: $base-line-height / $ms0 * 1.5
   
 textarea
   @extend .textinput
-  height: $base-line-height / $ms3 * 6.5
-  vertical-align: text-bottom
+  height: $base-line-height / $ms0 * 6.5
   
 input
   &[type=text], &[type=password], &[type=email], &[type=url], &[type=tel],

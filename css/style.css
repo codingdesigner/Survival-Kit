@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url(partials/variables/base_compass.css);
-@import url(partials/variables/base_susy.css);
 /* Links -------------------------------------------------------------- */
 /*html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
  *v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
@@ -165,28 +163,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
 h1 {
-  font-size: 2.571em;
-  line-height: 1.333em; }
+  font-size: 3.375em;
+  line-height: 1.016em; }
 
 h2 {
-  font-size: 2.143em;
-  line-height: 1.6em; }
+  font-size: 2.963em;
+  line-height: 1.157em; }
 
 h3 {
-  font-size: 1.929em;
-  line-height: 1.778em; }
+  font-size: 2.25em;
+  line-height: 1.524em; }
 
 h4 {
-  font-size: 1.714em;
-  line-height: 1em; }
+  font-size: 1.975em;
+  line-height: 1.736em; }
 
 h5 {
-  font-size: 1.286em;
-  line-height: 1.333em; }
+  font-size: 1.5em;
+  line-height: 1.143em; }
 
 h6 {
-  font-size: 1.143em;
-  line-height: 1.5em; }
+  font-size: 1.317em;
+  line-height: 1.302em; }
 
 /* Inline -------------------------------------------------------------- */
 cite, em, dfn, address, i {
@@ -222,8 +220,8 @@ mark {
   text-shadow: none; }
 
 small {
-  font-size: 1.286em;
-  line-height: 1.333em; }
+  font-size: 1.5em;
+  line-height: 1.143em; }
 
 q {
   font-style: italic;
@@ -307,12 +305,10 @@ tr.even td {
   background-color: gray; }
 
 tfoot {
-  font-size: 1.929em;
-  line-height: 1.778em; }
+  font-size: 2.25em;
+  line-height: 1.524em; }
 
 /* Forms -------------------------------------------------------------- */
-/* `Widths
- *---------------------------------------------------------------------------------------------------- */
 .input_tiny {
   width: 50px; }
 
@@ -334,41 +330,41 @@ tfoot {
 .input_full {
   width: 100%; }
 
-/*	Added via JS to <textarea> and class="input_full".
- *	Applies only to IE7. Other browsers don't need it. */
 .input_full_wrap {
   display: block;
   padding-right: 8px; }
 
-/* `UI Consistency
- *---------------------------------------------------------------------------------------------------- */
 ::-moz-focus-inner {
   border: 0; }
 
-input {
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding;
-  background-clip: padding-box;
-  margin: 0;
-  vertical-align: middle; }
-  input[type="search"]::-webkit-search-decoration {
-    display: none; }
+input[type="search"]::-webkit-search-decoration {
+  display: none; }
 
-button, select, textarea {
+input,
+button,
+select,
+textarea {
   -moz-background-clip: padding;
   -webkit-background-clip: padding;
   background-clip: padding-box;
   margin: 0;
   vertical-align: middle; }
 
-button {
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
   -webkit-appearance: none;
   -moz-border-radius: 11px;
   -webkit-border-radius: 11px;
+  -o-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -khtml-border-radius: 11px;
   border-radius: 11px;
   background: #dddddd url(../images/button.png) repeat-x;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #dddddd));
-  background: -moz-linear-gradient(top center, white 0%, #dddddd 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #dddddd 100%);
   border: 1px solid;
   border-color: #dddddd #bbbbbb #999999;
   cursor: pointer;
@@ -379,49 +375,44 @@ button {
   padding: 3px 10px 4px;
   text-shadow: white 0 1px 1px;
   width: auto;
-  /* IE7 */
-  *padding-top: 2px;
-  *padding-bottom: 0px; }
-
-input[type="reset"], input[type="submit"], input[type="button"] {
-  -webkit-appearance: none;
-  -moz-border-radius: 11px;
-  -webkit-border-radius: 11px;
-  border-radius: 11px;
-  background: #dddddd url(../images/button.png) repeat-x;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #dddddd));
-  background: -moz-linear-gradient(top center, white 0%, #dddddd 100%);
-  border: 1px solid;
-  border-color: #dddddd #bbbbbb #999999;
-  cursor: pointer;
-  color: #333333;
-  font: bold 12px/1.2 Arial, sans-serif;
-  outline: 0;
-  overflow: visible;
-  padding: 3px 10px 4px;
-  text-shadow: white 0 1px 1px;
-  width: auto;
-  /* IE7 */
   *padding-top: 2px;
   *padding-bottom: 0px; }
 
 button {
-  /* IE7 */
   *padding-top: 1px;
   *padding-bottom: 1px; }
-  button[disabled] {
-    color: #888888; }
 
-input[type="reset"][disabled], input[type="submit"][disabled], input[type="button"][disabled] {
+button[disabled],
+input[type="reset"][disabled],
+input[type="submit"][disabled],
+input[type="button"][disabled] {
   color: #888888; }
 
-textarea, select {
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
   -webkit-appearance: none;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
   border-radius: 0;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
   background-color: white;
   border: 1px solid;
@@ -432,91 +423,67 @@ textarea, select {
   font-size: 13px;
   font-family: Arial, sans-serif;
   height: 1.8em;
-  /* IE7 */
   *padding-top: 2px;
   *padding-bottom: 1px;
   *height: auto; }
 
-input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
-  -webkit-appearance: none;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: white;
-  border: 1px solid;
-  border-color: #848484 #c1c1c1 #e1e1e1;
-  color: black;
-  outline: 0;
-  padding: 2px 3px;
-  font-size: 13px;
-  font-family: Arial, sans-serif;
-  height: 1.8em;
-  /* IE7 */
-  *padding-top: 2px;
-  *padding-bottom: 1px;
-  *height: auto; }
-input.placeholder_text {
+input.placeholder-text,
+textarea.placeholder-text {
   color: #888888; }
 
-/*	Separate rule for Firefox.
- *	Cannot stack with WebKit's. */
-textarea.placeholder_text, ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   color: #888888; }
 
-textarea[disabled], select[disabled] {
+textarea[disabled],
+select[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled] {
   background-color: #eeeeee;
   color: #888888; }
 
-input[type="date"][disabled], input[type="datetime"][disabled], input[type="datetime-local"][disabled], input[type="email"][disabled], input[type="month"][disabled], input[type="number"][disabled], input[type="password"][disabled], input[type="search"][disabled], input[type="tel"][disabled], input[type="text"][disabled], input[type="time"][disabled], input[type="url"][disabled], input[type="week"][disabled] {
-  background-color: #eeeeee;
-  color: #888888; }
-
-button:focus, button:active {
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active {
   -moz-box-shadow: #0066ff 0 0 7px;
   -webkit-box-shadow: #0066ff 0 0 7px;
   box-shadow: #0066ff 0 0 7px;
-  /* for Opera */
   z-index: 1; }
 
-input:focus, input:active {
-  -moz-box-shadow: #0066ff 0 0 7px;
-  -webkit-box-shadow: #0066ff 0 0 7px;
-  box-shadow: #0066ff 0 0 7px;
-  /* for Opera */
-  z-index: 1; }
-
-select:focus, select:active {
-  -moz-box-shadow: #0066ff 0 0 7px;
-  -webkit-box-shadow: #0066ff 0 0 7px;
-  box-shadow: #0066ff 0 0 7px;
-  /* for Opera */
-  z-index: 1; }
-
-textarea:focus, textarea:active {
-  -moz-box-shadow: #0066ff 0 0 7px;
-  -webkit-box-shadow: #0066ff 0 0 7px;
-  box-shadow: #0066ff 0 0 7px;
-  /* for Opera */
-  z-index: 1; }
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
 
 .is_webkit select {
-  /* Tweaks for Safari + Chrome. */
   background-image: url(../images/select_arrow.gif);
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 20px; }
 
-textarea {
+textarea,
+select[multiple] {
   height: auto; }
 
-select[multiple] {
-  height: auto;
-  background-image: none;
-  padding: 0; }
-
+select[multiple],
 .is_webkit select[multiple] {
   background-image: none;
   padding: 0; }
@@ -532,28 +499,8 @@ optgroup {
   font-style: normal;
   font-weight: normal; }
 
-/* `IE6
- *---------------------------------------------------------------------------------------------------- */
-/*	Everything below this line is for IE6.
- *	Delete it if you don't support it! :)
- *
- *	Classes are added dynamically via JS,
- *	because IE6 doesn't support attribute
- *	selectors: .ie6_button, .ie6_input, etc.
- *
- *	Note: These style rules are somewhat
- *	duplicated because IE6 bombs out when
- *	it sees attribute selectors. Example:
- *
- *	.ie6_button {
- *		This works in IE6.
- *	}
- *
- *	.ie6_button,
- *	input[type=submit] {
- *		This doesn't work.
- *	} */
-.ie6_button {
+.ie6_button,
+* html button {
   background: #dddddd url(../images/button.png) repeat-x;
   border: 1px solid;
   border-color: #dddddd #bbbbbb #999999;
@@ -565,37 +512,11 @@ optgroup {
   width: auto; }
 
 * html button {
-  background: #dddddd url(../images/button.png) repeat-x;
-  border: 1px solid;
-  border-color: #dddddd #bbbbbb #999999;
-  cursor: pointer;
-  color: #333333;
-  font: bold 12px/1.2 Arial, sans-serif;
-  padding: 2px 10px 0px;
-  overflow: visible;
-  width: auto;
   padding-top: 1px;
   padding-bottom: 1px; }
 
-.ie6_input {
-  background: white;
-  border: 1px solid;
-  border-color: #848484 #c1c1c1 #e1e1e1;
-  color: black;
-  padding: 2px 3px 1px;
-  font-size: 13px;
-  font-family: Arial, sans-serif;
-  vertical-align: top; }
-
-* html textarea {
-  background: white;
-  border: 1px solid;
-  border-color: #848484 #c1c1c1 #e1e1e1;
-  color: black;
-  padding: 2px 3px 1px;
-  font-size: 13px;
-  font-family: Arial, sans-serif;
-  vertical-align: top; }
+.ie6_input,
+* html textarea,
 * html select {
   background: white;
   border: 1px solid;
@@ -604,10 +525,14 @@ optgroup {
   padding: 2px 3px 1px;
   font-size: 13px;
   font-family: Arial, sans-serif;
-  vertical-align: top;
+  vertical-align: top; }
+
+* html select {
   margin-top: 1px; }
 
-.placeholder_text, .ie6_input_disabled, .ie6_button_disabled {
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled {
   color: #888888; }
 
 .ie6_input_disabled {
@@ -628,14 +553,15 @@ label, input[type=button], input[type=submit], button {
   cursor: pointer; }
 
 label {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-right: 0.5em; }
 
 .textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
-  font-size: 1.714em;
-  line-height: 1em;
+  font-size: 1em;
+  line-height: 1.714em;
   border-style: solid;
-  border-width: 0.042em;
-  padding: 0.208em;
+  border-width: 0.071em;
+  padding: 0.357em;
   border-width: 1px;
   margin-bottom: 0.857em;
   -moz-box-sizing: border-box;
@@ -646,11 +572,10 @@ label {
   max-width: 100%;
   margin-top: 0;
   border-color: black;
-  height: 1.5; }
+  height: 2.571; }
 
 textarea {
-  height: 6.5;
-  vertical-align: text-bottom; }
+  height: 11.143; }
 
 input[type=search] {
   -webkit-appearance: none; }
@@ -827,8 +752,8 @@ ul.tabs {
     border-bottom-width: 0;
     margin-bottom: 0; }
   #comments .comment .submitted {
-    font-size: 1.286em;
-    line-height: 1.333em;
+    font-size: 1.5em;
+    line-height: 1.143em;
     color: gray;
     font-style: italic; }
   #comments .comment .content p:last-of-type {
@@ -840,8 +765,8 @@ ul.tabs {
     outline: 0;
     overflow: hidden;
     *zoom: 1;
-    font-size: 1.286em;
-    line-height: 1.333em; }
+    font-size: 1.5em;
+    line-height: 1.143em; }
     #comments .comment ul.links li {
       list-style-image: none;
       list-style-type: none;
