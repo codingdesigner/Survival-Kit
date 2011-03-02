@@ -1,0 +1,88 @@
+html, body {
+	background-color: #F8F6EE;
+	margin: 0;
+}
+
+#Header h1 {
+	font-size: 9em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#Container {
+	width: 960px;
+	padding: 0 0 150px 0;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+}
+
+.columnHolder {
+	position: relative;
+	zoom: 1;
+}
+
+.columnHolder .short {
+	top: 0;
+}
+
+.tall1 .columnOne {
+	margin-left: 0;
+}
+
+.tall2 .columnOne,
+.tall3 .columnOne {
+	left: 0;
+}
+
+.tall1 .columnTwo,
+.tall3 .columnTwo {
+	left: 320px;
+}
+
+.tall2 .columnTwo {
+	margin-left: 320px;
+}
+
+.tall1 .columnThree,
+.tall2 .columnThree {
+	left: 750px;
+}
+
+.tall3 .columnThree {
+	margin-left: 750px;
+}
+
+.columnHolder .static {
+	float: left;
+	position: static;
+	margin: 0;
+}
+
+.fixed {
+	float: none;
+	position: fixed;
+}
+
+.column {
+	float: left;
+	zoom: 1;
+}
+
+.columnOne {
+	width: 320px;
+	background: red;
+}
+
+.columnTwo {
+	width: 430px;
+	background: green;
+
+}
+
+.columnThree {
+	width: 210px;
+	background: blue;
+}
