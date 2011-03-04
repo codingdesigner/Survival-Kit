@@ -3,10 +3,10 @@ $bordercolor_default: $gray !default
 
 /* Links --------------------------------------------------------------
 // replace underlines on links with bottom borders
-=better-links($link-color: $alt-color, $link-change: complement($alt-color))
+=better-links($link-color: $alt-color, $link-change: complement($alt-color), $link-border-color: $alt-color, $link-border-color-change: complement($alt-color))
   a
     text-decoration: none
-    border-bottom: 1px solid $link-color
+    border-bottom: 1px solid $link-border-color
     &:link, &:visited
       color: $link-color
     &:link, &:visited, &:hover, &:active
@@ -15,15 +15,15 @@ $bordercolor_default: $gray !default
       color: $link-change
       // color: $blue
       text-decoration: none
-      border-bottom-color: $link-change
+      border-bottom-color: $link-border-color-change
     &:focus
       outline: none
   
 
 // fade between default and hover colors
-=link-transitions()
+=link-transitions($time: 0.5s, $easing: 'ease-out', $property: 'color')
   a
-    +transition(color, 0.5s, ease-out)
+    +transition($property, $time, $easing)
 
 // remove bottom borders from better links
 // call directly from an <a> element
