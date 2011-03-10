@@ -1,0 +1,33 @@
+[submodule "sources/PaintbrushJS"]
+	path = sources/PaintbrushJS
+	url = https://github.com/mezzoblue/PaintbrushJS.git
+[submodule "sources/flexie"]
+	path = sources/flexie
+	url = https://github.com/doctyper/flexie.git
+[submodule "sources/formalize"]
+	path = sources/formalize
+	url = https://github.com/nathansmith/formalize.git
+[submodule "sources/Geared-Scrolling"]
+	path = sources/Geared-Scrolling
+	url = https://github.com/heyday/Geared-Scrolling.git
+[submodule "sources/html5-boilerplate"]
+	path = sources/html5-boilerplate
+	url = https://github.com/paulirish/html5-boilerplate.git
+[submodule "sources/iSwipe-jQuery-Plugin"]
+	path = sources/iSwipe-jQuery-Plugin
+	url = https://github.com/heyday/iSwipe-jQuery-Plugin.git
+[submodule "sources/Lettering.js"]
+	path = sources/Lettering.js
+	url = https://github.com/davatron5000/Lettering.js.git
+[submodule "sources/masonry"]
+	path = sources/masonry
+	url = https://github.com/desandro/masonry.git
+[submodule "sources/Sticky-Footer-jQuery-Plugin"]
+	path = sources/Sticky-Footer-jQuery-Plugin
+	url = https://github.com/heyday/Sticky-Footer-jQuery-Plugin.git
+[submodule "sources/infinite-scroll"]
+	path = sources/infinite-scroll
+	url = https://github.com/paulirish/infinite-scroll.git
+[submodule "sources/jquery-ui"]
+	path = sources/jquery-ui
+	url = https://github.com/jquery/jquery-ui.git
