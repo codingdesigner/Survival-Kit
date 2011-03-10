@@ -19,9 +19,6 @@
 [submodule "sources/Lettering.js"]
 	path = sources/Lettering.js
 	url = https://github.com/davatron5000/Lettering.js.git
-[submodule "sources/masonry"]
-	path = sources/masonry
-	url = https://github.com/desandro/masonry.git
 [submodule "sources/Sticky-Footer-jQuery-Plugin"]
 	path = sources/Sticky-Footer-jQuery-Plugin
 	url = https://github.com/heyday/Sticky-Footer-jQuery-Plugin.git
