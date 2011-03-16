@@ -1,5 +1,6 @@
 require 'susy'
-require 'fancy-buttons'  
+# require 'fancy-buttons'  
+# require 'sassy-buttons'  
 # Require any additional compass plugins here.
 
 project_type = :stand_alone
