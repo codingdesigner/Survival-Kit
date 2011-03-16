@@ -28,3 +28,6 @@
 [submodule "sources/jquery-ui"]
 	path = sources/jquery-ui
 	url = https://github.com/jquery/jquery-ui.git
+[submodule "sources/pie"]
+	path = sources/pie
+	url = https://github.com/lojjic/PIE.git
