@@ -163,32 +163,32 @@ body {
 /* -moz- must be declared separately */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/_defaults\.sass}line{font-family:\0000355}}
 ::-moz-selection {
-  color: white;
-  background: #7fff00;
+  color: black;
+  background: #ff69b4;
   text-shadow: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/_defaults\.sass}line{font-family:\0000360}}
 ::selection {
-  color: white;
-  background: #7fff00;
+  color: black;
+  background: #ff69b4;
   text-shadow: none; }
 
 /* Links -------------------------------------------------------------- */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\000037}}
 a {
   text-decoration: none;
-  border-bottom: 1px solid #7fff00; }
+  border-bottom: 1px solid #ff69b4; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000310}}
   a:link, a:visited {
-    color: #7fff00; }
+    color: #ff69b4; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000312}}
   a:link, a:visited, a:hover, a:active {
     outline: none; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000314}}
   a:focus, a:hover, a:active {
-    color: #8000ff;
+    color: #69ffb4;
     text-decoration: none;
-    border-bottom-color: #8000ff; }
+    border-bottom-color: #69ffb4; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000319}}
   a:focus {
     outline: none; }
@@ -734,6 +734,30 @@ img {
     float: right;
     margin: 12px 0 12px 24px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\000035}}
+body.markup-elements article.element {
+  *zoom: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  padding-bottom: 23px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
+  body.markup-elements article.element:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000355}}
+  body.markup-elements article.element:last-child {
+    padding-bottom: 0;
+    border-bottom-width: 0;
+    margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\000037}}
+  body.markup-elements article.element h2.element-title {
+    font-size: 1em;
+    line-height: 1.714em; }
+
 /* Drupal -------------------------------------------------------------- */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal\.sass}line{font-family:\000032}}
 ul.pager {
@@ -816,7 +840,7 @@ ul.tabs {
       margin-right: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal\.sass}line{font-family:\0000323}}
     ul.tabs li.active {
-      background-color: #7fff00; }
+      background-color: #ff69b4; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal\.sass}line{font-family:\0000325}}
     ul.tabs li a {
       margin: 0 12px; }
@@ -825,7 +849,7 @@ ul.tabs {
       border-bottom-width: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal\.sass}line{font-family:\0000329}}
       ul.tabs li a:link, ul.tabs li a:visited {
-        color: #7fff00; }
+        color: #ff69b4; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal\.sass}line{font-family:\0000331}}
       ul.tabs li a:focus, ul.tabs li a:hover, ul.tabs li a:active {
         border-bottom-width: 0; }
