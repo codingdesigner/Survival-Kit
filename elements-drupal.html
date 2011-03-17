@@ -53,9 +53,19 @@
       <section id="elements">
         <h1>Drupal markup</h1>
         
-        <article id="drupal-site-name">
+        <article id="drupal-site-name" class="crawl">
           <h2>Site Name</h2>
-          <h1 id="site-name"><a href="/" title="Home" rel="home"><span>d7</span></a></h1>
+          <div class="content">
+            <h1 id="site-name"><a href="/" title="Home" rel="home"><span>d7</span></a></h1>
+          </div>
+          <aside class="code">
+            <label for="drupal-site-name-markup">markup</label>
+            <textarea name="drupal-site-name-markup" id="" class="markup"></textarea>
+            <label for="drupal-site-name-css">css</label>
+            <textarea name="drupal-site-name-css" id="" class="css"></textarea>
+            <!-- <label for="drupal-site-name-sass">sass</label>
+            <textarea name="drupal-site-name-sass" id="" cols="30" rows="10" class="sass"></textarea> -->
+          </aside>
         </article>
         
         <article id="menu">
@@ -433,8 +443,11 @@
   <!-- Formalize (http://formalize.me) -->
   <script src="js/libs/formalize/jquery.formalize.js"></script>
   
+  <!-- Lettering.js -->
+  <!-- <script src="js/libs/jquery.lettering.js"></script> -->
+  
   <!-- Also put Lettering.js at the top -->
-  <script src="js/libs/jquery.lettering.js"></script>
+  <script src="js/libs/jquery.element-crawler.js"></script>
   
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
