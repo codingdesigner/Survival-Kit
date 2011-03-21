@@ -6,3 +6,15 @@ body.markup-elements
     +vertical-separation($baseline * 2, 1px, transparentize($base-color, 0.9))
     h2.element-title
       +adjust-font-size-to($ms0)
+      & + p
+        clear: both
+    .content
+      +columns(4)
+      & + .show-source
+        +columns(2)
+        +omega(6)
+        @extend .mono
+        .show-hide
+          text-align: right
+        & + p
+          clear: both

@@ -130,7 +130,7 @@ html {
   font-family: sans-serif; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/_defaults\.sass}line{font-family:\0000322}}
-.mono, pre, code, tt {
+.mono, pre, code, tt, body.markup-elements article.element .content + .show-source {
   font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/_defaults\.sass}line{font-family:\0000325}}
@@ -288,10 +288,6 @@ q {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/_defaults\.sass}line{font-family:\00003139}}
   q em {
     font-style: normal; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/_defaults\.sass}line{font-family:\00003145}}
-code {
-  background: gray; }
 
 /* Block -------------------------------------------------------------- */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/_defaults\.sass}line{font-family:\00003150}}
@@ -757,6 +753,31 @@ body.markup-elements article.element {
   body.markup-elements article.element h2.element-title {
     font-size: 1em;
     line-height: 1.714em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\000039}}
+    body.markup-elements article.element h2.element-title + p {
+      clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\0000311}}
+  body.markup-elements article.element .content {
+    display: inline;
+    float: left;
+    width: 64.228%;
+    margin-right: 2.439%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\0000313}}
+    body.markup-elements article.element .content + .show-source {
+      display: inline;
+      float: left;
+      width: 30.894%;
+      margin-right: 2.439%;
+      display: inline;
+      float: right;
+      margin-right: 0;
+      #margin-left: -24px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\0000317}}
+      body.markup-elements article.element .content + .show-source .show-hide {
+        text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\0000319}}
+      body.markup-elements article.element .content + .show-source + p {
+        clear: both; }
 
 /* Drupal -------------------------------------------------------------- */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal\.sass}line{font-family:\000032}}
