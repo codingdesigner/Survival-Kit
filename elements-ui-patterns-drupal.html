@@ -55,14 +55,14 @@
         
         <article id="drupal-site-name" class="element">
           <h2 class="element-title">Site Name</h2>
-          <div class="content">
+          <div class="markup">
             <h1 id="site-name"><a href="/" title="Home" rel="home"><span>d7</span></a></h1>
           </div>
         </article>
         
         <article id="menu" class="element">
           <h2 class="element-title">Menus</h2>
-          <div class="content">
+          <div class="markup">
             <ul id="main-menu" class="links inline clearfix">
               <li class="menu-201 first"><a href="/">Home</a></li>
               <li class="menu-365 active-trail active"><a href="/blog" title="Blog" class="active-trail active">Blog</a></li>
@@ -73,7 +73,7 @@
         
         <article id="breadbrumbs" class="element">
           <h2 class="element-title">Breadcrumbs</h2>
-          <div class="content">
+          <div class="markup">
             <div class="breadcrumb">
               <a href="/">Home</a> » 
               <a href="/blog" title="Blog">Blog</a>
@@ -83,7 +83,7 @@
         
         <article id="search" class="element">
           <h2 class="element-title">Search Field</h2>
-          <div class="content">
+          <div class="markup">
             <div id="block-search-form" class="block block-search contextual-links-region">
               <div class="content">
                 <form action="" method="post" id="search-block-form" accept-charset="UTF-8">
@@ -107,7 +107,7 @@
         
         <article id="drupal-messages" class="element">
           <h2 class="element-title">Messages</h2>
-          <div class="content">
+          <div class="markup">
             <div class="messages status">
               <h2 class="element-invisible" style="display: none;">Status message</h2>
               <p> This is <em>status</em> message. </p>
@@ -125,14 +125,9 @@
         
         <article id="block" class="element">
           <h2 class="element-title">Block</h2>
-          <div class="content">
-            <div id="block-block-1" class="block block-block contextual-links-region">
+          <div class="markup">
+            <div id="block-block-1" class="block block-block">
               <h2>This is a Custom Block</h2>
-              <div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Configure</a>
-                <ul class="contextual-links">
-                  <li class="block-configure first last"><a href="/admin/structure/block/manage/block/1/configure?destination=node/52">Configure block</a></li>
-                </ul>
-              </div>
               <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
               </div>
@@ -142,7 +137,7 @@
         
         <article id="tabs" class="element">
           <h2 class="element-title">Tabs</h2>
-          <div class="content">
+          <div class="markup">
             <div class="tabs">
               <h2 class="element-invisible">Primary tabs</h2>
               <ul class="tabs primary">
@@ -156,7 +151,7 @@
         
         <article id="new-account-form" class="element">
           <h2 class="element-title">New User Form</h2>
-          <div class="content">
+          <div class="markup">
             <div id="block-system-main" class="block block-system">
               <div class="content">
                 <form class="user-info-from-cookie" enctype="multipart/form-data" action="/user/register" method="post" id="user-register-form" accept-charset="UTF-8">
@@ -186,7 +181,7 @@
         
         <article id="login-form" class="element">
           <h2 class="element-title">Log In Form</h2>
-          <div class="content">
+          <div class="markup">
             <div id="block-system-main" class="block block-system">
               <div class="content">
                 <form action="/user" method="post" id="user-login" accept-charset="UTF-8">
@@ -215,7 +210,7 @@
         
         <article id="new-password-form" class="element">
           <h2 class="element-title">New Password Form</h2>
-          <div class="content">
+          <div class="markup">
             <div id="block-system-main" class="block block-system">
               <div class="content">
                 <form action="/user/password" method="post" id="user-pass" accept-charset="UTF-8">
@@ -238,7 +233,7 @@
         
         <article id="pager" class="element">
           <h2 class="element-title">Pager</h2>
-          <div class="content">
+          <div class="markup">
             <ul class="pager">
               <li class="pager-first first"><a href="/node" title="Go to first page" class="active">« first</a></li>
               <li class="pager-previous"><a href="/node" title="Go to previous page" class="active">‹ previous</a></li>
@@ -253,14 +248,14 @@
         
         <article id="rss-link" class="element">
           <h2 class="element-title">RSS Link</h2>
-          <div class="content">
+          <div class="markup">
             <a href="/rss.xml" class="feed-icon" title="Subscribe to d7 RSS"><img src="http://d7/misc/feed.png" alt="Subscribe to d7 RSS"></a>
           </div>
         </article>
         
-        <article id="links">
+        <article id="links" class="element">
           <h2 class="element-title">Inline Links</h2>
-          <div class="content">
+          <div class="markup">
             <ul class="links inline">
               <li class="comment-add first last active"><a href="/node/1#comment-form" title="Share your thoughts and opinions related to this posting." class="active">Add new comment</a></li>
             </ul>
@@ -269,7 +264,7 @@
         
         <article id="taxonomy" class="element">
           <h2 class="element-title">Taxonomy List</h2>
-          <div class="content">
+          <div class="markup">
             <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above">
               <div class="field-label">Tags:&nbsp;</div>
               <div class="field-items">
@@ -282,7 +277,7 @@
         
         <article id="field-image" class="element">
           <h2 class="element-title">Image Field</h2>
-          <div class="content">
+          <div class="markup">
             <div class="field field-name-field-image field-type-image field-label-hidden">
               <div class="field-items">
                 <div class="field-item even"><img src="http://dummyimage.com/100x100/ccc/fff" alt="placeholder image" /></div>
@@ -293,7 +288,7 @@
         
         <article id="node" class="element">
           <h2 class="element-title">Node Page</h2>
-          <div class="content">
+          <div class="markup">
             <h1>This is the node title</h1>
             <div id="node-1" class="node node-article node-promoted clearfix">
               <div class="submitted"> Submitted by <span class="username">Anonymous (not verified)</span> on Sat, 01/15/2011 - 16:14 </div>
@@ -327,7 +322,7 @@
         
         <article id="comments" class="element">
           <h2 class="element-title">Comments</h2>
-          <div class="content">
+          <div class="markup">
             <div id="comments" class="comment-wrapper">
               <h2 class="title">Comments</h2>
               <a id="comment-1"></a>
@@ -394,7 +389,7 @@
         
         <article id="comment-form" class="element">
           <h2 class="element-title">Comment Form</h2>
-          <div class="content">
+          <div class="markup">
             <h2 class="title comment-form">Add new comment</h2>
             <form class="comment-form" action="/comment/reply/1" method="post" id="comment-form" accept-charset="UTF-8">
               <div>
@@ -473,40 +468,43 @@
     <footer>
 
     </footer>
-  </div> <!--! end of #container -->
+  </div>   <!--! end of #container -->
 
 
-  <!-- JavaScript at the bottom for fast page loading -->
+    <!-- JavaScript at the bottom for fast page loading -->
 
-  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
-  
-  <!-- Formalize (http://formalize.me) -->
-  <script src="js/libs/formalize/jquery.formalize.js"></script>
-  
-  <!-- Lettering.js -->
-  <!-- <script src="js/libs/jquery.lettering.js"></script> -->
-  
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <!-- end concatenated and minified scripts-->
-  
-  
-  <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
-    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
-  <![endif]-->
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+
+    <!-- Formalize (http://formalize.me) -->
+    <script src="js/libs/formalize/jquery.formalize.js"></script>
+
+    <!-- Lettering.js -->
+    <!-- <script src="js/libs/jquery.lettering.js"></script> -->
+
+    <!-- show source -->
+    <script src="js/kit/jquery.kit-source.js"></script>
+
+    <!-- scripts concatenated and minified via ant build script-->
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <!-- end concatenated and minified scripts-->
 
 
-  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-  
-</body>
-</html>
+    <!--[if lt IE 7 ]>
+      <script src="js/libs/dd_belatedpng.js"></script>
+      <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+    <![endif]-->
+
+
+    <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+  </body>
+  </html>
