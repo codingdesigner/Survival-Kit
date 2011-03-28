@@ -45,9 +45,11 @@
 
 // -->  6. DEFAULTS
 // Set your overall site defaults
-@import partials/defaults
+@import partials/defaults/_defaults
 // @import partials/boilerplate/_boilerplate-setup
 // @import partials/boilerplate/_boilerplate-helpers
+@import partials/defaults/_elements
+@import partials/ui-patterns/_ui-patterns-common
 
 // --> 7. Styles just for working in the Survival Kit
 // remove these in production
@@ -57,6 +59,7 @@
 // --> 7. CMS-specific overrides and mixins
 // DRUPAL
 // @import partials/cms/drupal/drupal
+@import partials/ui-patterns/_ui-patterns-drupal
 
 // -->  8. STYLES FOR THIS SITE --------------------------------------------------
 @import partials/grids/_grids_susy.sass
