@@ -19,15 +19,18 @@ body.markup-elements
       text-transform: uppercase
       padding-left: $gutter_half
       +better-links($white, $alt-color, $white, $alt-color)
-      & + p
-        clear: both
-    .content
-      +columns(4)
-      & + .show-source
-        +columns(2)
-        +omega(6)
-        @extend .mono
-        .show-hide
-          text-align: right
-        & + p
-          clear: both
+      // & + p
+      //   clear: both
+    .example
+      +vertical-separation($baseline, 1px, transparentize($base-color, 0.9), dashed)
+      +pie-clearfix
+      .markup
+        +columns(4)
+        & + .show-source
+          +columns(2)
+          +omega(6)
+          @extend .mono
+          .show-hide
+            text-align: right
+          & + p
+            clear: both
