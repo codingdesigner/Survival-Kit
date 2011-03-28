@@ -61,7 +61,36 @@ $bordercolor_default: $gray !default
   border-bottom: none
   margin-bottom: 0
   padding-bottom: 0
+  
+=visually-hide
+  position: absolute !important
+  clip: rect(1px 1px 1px 1px)
+  /* IE6, IE7
+  clip: rect(1px, 1px, 1px, 1px)
 
+
+=tabs
+  // assumes placement on UL
+  +horizontal-list(3px)
+  position: relative
+  li
+    border-bottom: 1px solid $base-color
+    &.active
+      a
+        padding-bottom: 0
+        border-bottom: 1px solid $white
+    a
+      border:
+        width: 1px
+        style: solid
+        color: $base-color
+      +remove-link-underlines
+      float: left
+      padding: 0 0.25em 1px
+      position: relative
+      bottom: -1px
+      +border-top-radius
+  
 =decending-z-order-tab($count: 20)
   // assumes placement on UL
   position: relative
