@@ -1,68 +1,3 @@
-//** DEFAULT STYLES **// 
-// adapted from Susy
-
-// Based heavily on the work of:
-// Andy Clarke: http://forabeautifulweb.com/
-// Paul Irish & Divya Manian: http://html5boilerplate.com/
-// And many others, less directly...
-
-
-/* Typography --------------------------------------------------------------
-html
-  text-rendering: optimizeLegibility
-  -webkit-font-smoothing: antialiased
-
-/* The following classes are for use with @extend.
-.serif
-  font-family: $font-serifs  
-
-.sans
-  font-family: $font-sans
-
-.mono
-  font-family: $font-mono
-
-.caps
-  letter-spacing: 0.1em
-
-.headers
-  font-family: $font-headline
-  // +sans-family
-
-.allcaps
-  @extend .caps
-  text-transform: uppercase
-
-.amp
-  font-family: $font-amp
-
-.smallcaps
-  @extend .caps
-  font-variant: small-caps
-  
-  
-/* Body --------------------------------------------------------------
-
-body
-  @extend .serif
-  color: $base-color
-  background: $background-color
-
-
-/* Selected Text --------------------------------------------------------------
-/* -moz- must be declared separately
-
-\::-moz-selection
-  +accessible-color($alt-color)
-  background: $alt-color
-  text-shadow: none
-
-\::selection
-  +accessible-color($alt-color)
-  background: $alt-color
-  text-shadow: none
-
-
 /* Links --------------------------------------------------------------
 +better-links
 
@@ -126,7 +61,7 @@ mark
   text-shadow: none
 
 small
-  +adjust-font-size-to($ms2)
+  +adjust-font-size-to($ms-1)
 
 q
   font-style: italic
@@ -206,7 +141,6 @@ th, thead th
 th, td, caption
   padding: $base-rhythm-unit * 0.5
   text-align: left
-  font-weight: normal
 
 table, th
   +trailing-border(1px, 0.5)
@@ -218,13 +152,14 @@ tr.even
     background-color: $gray
 
 tfoot
-  +adjust-font-size-to($ms4)
+  font-weight: bold
 
 caption
   @extend .allcaps
   
 
 /* Forms --------------------------------------------------------------
+// too many form rules to list here. split into its own partial
 @import partials/forms/_form-defaults
 
   
