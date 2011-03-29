@@ -104,6 +104,39 @@ $bordercolor_default: $gray !default
       $t: $t + 1
       $i: $i - 1
       
+=page-curl($left: left, $right: right, $skew-left: -15deg, $rotate-left: -6deg, $skew-right: 15deg, $rotate-right: 6deg)
+  display: block
+  width: 300px
+  height: 185px
+  background: $white
+  position: relative
+  +box-shadow(transparentize($black, 0.7), 0px, 8px, 16px)
+  &:before
+    z-index: -1
+    position: absolute
+    background: transparent
+    width: 70%
+    height: 55%
+    content: "\0020"
+    left: 10px
+    bottom: 10px
+    +transform(1, $rotate-left, 0, 0, $skew-left, 0)
+    +box-shadow(transparentize($black, 0.7), 0px, 8px, 16px)
+  &:after
+    z-index: -2
+    position: absolute
+    background: transparent
+    width: 70%
+    height: 55%
+    content: "\0020"
+    right: 10px
+    bottom: 10px
+    +transform(1, $rotate-right, 0, 0, $skew-right, 0)
+    +box-shadow(transparentize($black, 0.7), 0px, 8px, 16px)
+  
+
+#site-name
+  +page-curl
 
 =gradient-bg($color, $top: 5, $bottom: $top)
   @if $top < 0 and $bottom < 0
