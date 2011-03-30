@@ -103,36 +103,152 @@ $bordercolor_default: $gray !default
         z-index: #{$i}
       $t: $t + 1
       $i: $i - 1
-      
-=page-curl($left: left, $right: right, $skew-left: -15deg, $rotate-left: -6deg, $skew-right: 15deg, $rotate-right: 6deg)
+
+
+/* css3 page curl effect
+  page-curl(
+    $position: top, right, bottom, left, top-left, top-right, bottom-right, bottom-left, top-left-bottom-right, top-right-bottom-left
+    $box-color: color
+    $shadow-color: color
+    $box-shadow: true, false
+    $skew: xxdeg
+    $rotate: xxdeg
+=page-curl($position: bottom, $box-color: $white, $shadow-color: transparentize($black, 0.7), $box-shadow: true, $skew: 15deg, $rotate: 6deg)
   display: block
-  width: 300px
-  height: 185px
-  background: $white
+  background: $box-color
   position: relative
-  +box-shadow(transparentize($black, 0.7), 0px, 8px, 16px)
-  &:before
-    z-index: -1
+  @if $box-shadow
+    +box-shadow(transparentize($shadow-color, 0.15), 0px, 4px, 8px)
+  &:before, &:after
     position: absolute
     background: transparent
     width: 70%
     height: 55%
     content: "\0020"
-    left: 10px
-    bottom: 10px
-    +transform(1, $rotate-left, 0, 0, $skew-left, 0)
-    +box-shadow(transparentize($black, 0.7), 0px, 8px, 16px)
-  &:after
-    z-index: -2
-    position: absolute
-    background: transparent
-    width: 70%
-    height: 55%
-    content: "\0020"
-    right: 10px
-    bottom: 10px
-    +transform(1, $rotate-right, 0, 0, $skew-right, 0)
-    +box-shadow(transparentize($black, 0.7), 0px, 8px, 16px)
+  @if $position == top
+    &:before
+      z-index: -1
+      left: 0px
+      top: 0px
+      +transform-origin(0%, 0%)
+      +transform(1, $rotate, 0, 0, $skew, 0)
+      +box-shadow($shadow-color, 0px, -8px, 16px)
+    &:after
+      z-index: -2
+      right: 0
+      top: 0
+      +transform-origin(100%, 0%)
+      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
+      +box-shadow($shadow-color, 0px, -8px, 16px)
+  @if $position == right
+    &:before
+      z-index: -1
+      right: 0px
+      top: 0px
+      +transform-origin(100%, 0%)
+      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
+      +box-shadow($shadow-color, 8px, 0px, 16px)
+    &:after
+      z-index: -2
+      right: 0
+      bottom: 0
+      +transform-origin(100%, 100%)
+      +transform(1, $rotate, 0, 0, $skew, 0)
+      +box-shadow($shadow-color, 8px, 0px, 16px)
+  @if $position == bottom
+    &:before
+      z-index: -1
+      left: 0px
+      bottom: 0px
+      +transform-origin(0%, 100%)
+      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
+      +box-shadow($shadow-color, 0px, 8px, 16px)
+    &:after
+      z-index: -2
+      right: 0
+      bottom: 0
+      +transform-origin(100%, 100%)
+      +transform(1, $rotate, 0, 0, $skew, 0)
+      +box-shadow($shadow-color, 0px, 8px, 16px)
+  @if $position == left
+    &:before
+      z-index: -1
+      left: 0px
+      top: 0px
+      +transform-origin(0%, 0%)
+      +transform(1, $rotate, 0, 0, $skew, 0)
+      +box-shadow($shadow-color, -8px, 0px, 16px)
+    &:after
+      z-index: -2
+      left: 0
+      bottom: 0
+      +transform-origin(0%, 100%)
+      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
+      +box-shadow($shadow-color, -8px, 0px, 16px)
+  // $position: top-left-bottom-right, top-right-bottom-left
+  @if $position == top-left
+    &:before
+      z-index: -1
+      left: 0px
+      top: 0px
+      +transform-origin(0%, 0%)
+      +transform(1, $rotate, 0, 0, $skew, 0)
+      +box-shadow($shadow-color, 0px, -8px, 16px)
+  @if $position == top-right
+    &:before
+      z-index: -1
+      right: 0
+      top: 0
+      +transform-origin(100%, 0%)
+      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
+      +box-shadow($shadow-color, 0px, -8px, 16px)
+  @if $position == bottom-right
+    &:before
+      z-index: -1
+      right: 0
+      bottom: 0
+      +transform-origin(100%, 100%)
+      +transform(1, $rotate, 0, 0, $skew, 0)
+      +box-shadow($shadow-color, 0px, 8px, 16px)
+  @if $position == bottom-left
+    &:before
+      z-index: -1
+      left: 0px
+      bottom: 0px
+      +transform-origin(0%, 100%)
+      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
+      +box-shadow($shadow-color, 0px, 8px, 16px)
+  @if $position == top-left-bottom-right
+    &:before
+      z-index: -1
+      left: 0px
+      top: 0px
+      +transform-origin(0%, 0%)
+      +transform(1, $rotate, 0, 0, $skew, 0)
+      +box-shadow($shadow-color, 0px, -8px, 16px)
+    &:after
+      z-index: -2
+      right: 0
+      bottom: 0
+      +transform-origin(100%, 100%)
+      +transform(1, $rotate, 0, 0, $skew, 0)
+      +box-shadow($shadow-color, 0px, 8px, 16px)
+  @if $position == top-right-bottom-left
+    &:before
+      z-index: -1
+      right: 0
+      top: 0
+      +transform-origin(100%, 0%)
+      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
+      +box-shadow($shadow-color, 0px, -8px, 16px)
+    &:after
+      z-index: -2
+      left: 0px
+      bottom: 0px
+      +transform-origin(0%, 100%)
+      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
+      +box-shadow($shadow-color, 0px, 8px, 16px)
+
   
 
 #site-name
