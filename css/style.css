@@ -1,55 +1,6 @@
 @charset "UTF-8";
 /* Links -------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\00003138}}
-#site-name {
-  display: block;
-  width: 300px;
-  height: 185px;
-  background: white;
-  position: relative;
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\00003114}}
-  #site-name:before {
-    z-index: -1;
-    position: absolute;
-    background: transparent;
-    width: 70%;
-    height: 55%;
-    content: "\0020";
-    left: 10px;
-    bottom: 10px;
-    -moz-transform: scale(1) rotate(-6deg) translate(0, 0) skew(-15deg, 0);
-    -webkit-transform: scale(1) rotate(-6deg) translate(0, 0) skew(-15deg, 0);
-    -o-transform: scale(1) rotate(-6deg) translate(0, 0) skew(-15deg, 0);
-    transform: scale(1) rotate(-6deg) translate(0, 0) skew(-15deg, 0);
-    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0;
-    -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\00003125}}
-  #site-name:after {
-    z-index: -2;
-    position: absolute;
-    background: transparent;
-    width: 70%;
-    height: 55%;
-    content: "\0020";
-    right: 10px;
-    bottom: 10px;
-    -moz-transform: scale(1) rotate(6deg) translate(0, 0) skew(15deg, 0);
-    -webkit-transform: scale(1) rotate(6deg) translate(0, 0) skew(15deg, 0);
-    -o-transform: scale(1) rotate(6deg) translate(0, 0) skew(15deg, 0);
-    transform: scale(1) rotate(6deg) translate(0, 0) skew(15deg, 0);
-    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0;
-    -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px 0; }
-
 /* Reset --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000314}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -68,41 +19,33 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: inherit;
   vertical-align: baseline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
 body {
   line-height: 1;
   color: black;
   background: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000319}}
 ol, ul {
   list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000321}}
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000323}}
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000325}}
 q, blockquote {
   quotes: "" ""; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000396}}
   q:before, q:after, blockquote:before, blockquote:after {
     content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000327}}
 a img {
   border: none; }
 
 /* HTML5 Reset --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003108}}
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   margin: 0;
   padding: 0;
@@ -111,253 +54,199 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   display: block; }
 
 /* Typography -------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000311}}
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
 
 /* The following classes are for use with @extend. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000316}}
 .serif, body {
   font-family: Georgia, serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000319}}
 .sans, .textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
   font-family: sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000322}}
 .mono, pre, code, tt, body.markup-elements article.element .example .markup + .show-source {
   font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000325}}
 .caps, .allcaps, caption, .smallcaps {
   letter-spacing: 0.1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000328}}
 .headers, h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000332}}
 .allcaps, caption {
   text-transform: uppercase; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000336}}
 .amp {
   font-family: GoudyBookletter1911Regular, sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000339}}
 .smallcaps {
   font-variant: small-caps; }
 
 /* Body -------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000346}}
 body {
   color: black;
   background: white; }
 
 /* Selected Text -------------------------------------------------------------- */
 /* -moz- must be declared separately */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000355}}
 ::-moz-selection {
   color: black;
   background: #ff69b4;
   text-shadow: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_defaults\.sass}line{font-family:\0000360}}
 ::selection {
   color: black;
   background: #ff69b4;
   text-shadow: none; }
 
 /* Links -------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\000037}}
 a {
   text-decoration: none;
   border-bottom: 1px solid #ff69b4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000310}}
   a:link, a:visited {
     color: #ff69b4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000312}}
   a:link, a:visited, a:hover, a:active {
     outline: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000314}}
   a:focus, a:hover, a:active {
     color: #69ffb4;
     text-decoration: none;
     border-bottom-color: #69ffb4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000319}}
   a:focus {
     outline: none; }
 
 /* Headings -------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\000037}}
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000311}}
 h1 {
   font-size: 3.375em;
   line-height: 1.016em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000314}}
 h2 {
   font-size: 2.963em;
   line-height: 1.157em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000317}}
 h3 {
   font-size: 2.25em;
   line-height: 1.524em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000320}}
 h4 {
   font-size: 1.975em;
   line-height: 1.736em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000323}}
 h5 {
   font-size: 1.5em;
   line-height: 1.143em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000326}}
 h6 {
   font-size: 1.317em;
   line-height: 1.302em; }
 
 /* Inline -------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000331}}
 cite, em, dfn, address, i {
   font-style: italic; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000334}}
 strong, dfn, b {
   font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000337}}
 sup, sub {
   font-size: smaller;
   line-height: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000341}}
 sup {
   vertical-align: super; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000344}}
 sub {
   vertical-align: sub; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000347}}
 abbr, acronym {
   border-bottom: 1px dotted;
   cursor: help; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000351}}
 ins {
   text-decoration: none;
   border-bottom: 1px solid black; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000355}}
 del {
   text-decoration: line-through; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000358}}
 mark {
   background: red;
   background-color: rgba(255, 255, 0, 0.5);
   text-shadow: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000363}}
 small {
   font-size: 0.878em;
   line-height: 1.953em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000366}}
 q {
   font-style: italic;
   quotes: "“" "”"; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000369}}
   q:before {
     content: open-quote; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000371}}
   q:after {
     content: close-quote; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000374}}
   q em {
     font-style: normal; }
 
 /* Block -------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000385}}
 p {
   margin-bottom: 1.714em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000388}}
 pre {
   margin: 1.714em;
   white-space: pre; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\0000392}}
 blockquote {
   margin: 1.714em 24px;
   font-style: italic;
   font-weight: 300; }
 
 /* Lists -------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003100}}
 ol, ul, dl {
   margin-bottom: 1.714em;
   margin-left: 24px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003104}}
 dl {
   margin-left: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003107}}
 ol {
   list-style: decimal; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003110}}
 ul {
   list-style: disc; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003112}}
   li ul {
     list-style-type: circle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003115}}
 dt {
   margin-top: 1.714em;
   font-style: italic;
   color: black; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003119}}
   dt:first-of-type {
     margin-top: 0em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003122}}
 dd {
   padding-left: 24px; }
 
 /* Tables -------------------------------------------------------------- */
 /* tables still need 'cellspacing="0"' in the markup */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003129}}
 table {
   margin-bottom: 1.714em;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003135}}
 table, td, th {
   vertical-align: top; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003138}}
 th, thead th {
   font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003141}}
 th, td, caption {
   padding: 0.857em;
   text-align: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003145}}
 table, th {
   border-bottom-style: solid;
   border-bottom-width: 0.071em;
@@ -365,57 +254,44 @@ table, th {
   border-color: gray;
   border-style: dotted; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003151}}
 tr.even td {
   background-color: gray; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003154}}
 tfoot {
   font-weight: bold; }
 
 /* Forms -------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\000038}}
 .input_tiny {
   width: 50px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000311}}
 .input_small {
   width: 100px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000314}}
 .input_medium {
   width: 150px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000317}}
 .input_large {
   width: 200px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000320}}
 .input_xlarge {
   width: 250px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000323}}
 .input_xxlarge {
   width: 300px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000326}}
 .input_full {
   width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000331}}
 .input_full_wrap {
   display: block;
   padding-right: 8px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000338}}
 ::-moz-focus-inner {
   border: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000341}}
 input[type="search"]::-webkit-search-decoration {
   display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000344}}
 input,
 button,
 select,
@@ -426,7 +302,6 @@ textarea {
   margin: 0;
   vertical-align: middle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000354}}
 button,
 input[type="reset"],
 input[type="submit"],
@@ -455,19 +330,16 @@ input[type="button"] {
   *padding-top: 2px;
   *padding-bottom: 0px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000377}}
 button {
   *padding-top: 1px;
   *padding-bottom: 1px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000382}}
 button[disabled],
 input[type="reset"][disabled],
 input[type="submit"][disabled],
 input[type="button"][disabled] {
   color: #888888; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\0000388}}
 textarea,
 select,
 input[type="date"],
@@ -507,16 +379,13 @@ input[type="week"] {
   *padding-bottom: 1px;
   *height: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003125}}
 input.placeholder-text,
 textarea.placeholder-text {
   color: #888888; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003129}}
 ::-webkit-input-placeholder {
   color: #888888; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003132}}
 textarea[disabled],
 select[disabled],
 input[type="date"][disabled],
@@ -535,7 +404,6 @@ input[type="week"][disabled] {
   background-color: #eeeeee;
   color: #888888; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003150}}
 button:focus,
 button:active,
 input:focus,
@@ -549,7 +417,6 @@ textarea:active {
   box-shadow: #0066ff 0 0 7px;
   z-index: 1; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003165}}
 input[type="radio"]:focus,
 input[type="radio"]:active,
 input[type="checkbox"]:focus,
@@ -558,38 +425,32 @@ input[type="checkbox"]:active {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003173}}
 .is_webkit select {
   background-image: url(../images/select_arrow.gif);
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003181}}
 textarea,
 select[multiple] {
   height: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003185}}
 select[multiple],
 .is_webkit select[multiple] {
   background-image: none;
   padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003190}}
 textarea {
   min-height: 40px;
   overflow: auto;
   resize: vertical;
   width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003196}}
 optgroup {
   color: black;
   font-style: normal;
   font-weight: normal; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003224}}
 .ie6_button,
 * html button {
   background: #dddddd url(../images/button.png) repeat-x;
@@ -602,12 +463,10 @@ optgroup {
   overflow: visible;
   width: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003236}}
 * html button {
   padding-top: 1px;
   padding-bottom: 1px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003240}}
 .ie6_input,
 * html textarea,
 * html select {
@@ -620,21 +479,17 @@ optgroup {
   font-family: Arial, sans-serif;
   vertical-align: top; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003252}}
 * html select {
   margin-top: 1px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003255}}
 .placeholder_text,
 .ie6_input_disabled,
 .ie6_button_disabled {
   color: #888888; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_formalize\.sass}line{font-family:\00003260}}
 .ie6_input_disabled {
   background: #eeeeee; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\000036}}
 fieldset {
   margin-bottom: 1.714em;
   border-style: solid;
@@ -643,20 +498,16 @@ fieldset {
   border-color: black;
   border-style: dotted; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\0000312}}
 legend {
   padding: 0 0.25em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\0000315}}
 label, input[type=button], input[type=submit], button {
   cursor: pointer; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\0000318}}
 label {
   font-weight: bold;
   margin-right: 0.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\0000322}}
 .textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
   font-size: 1em;
   line-height: 1.714em;
@@ -675,23 +526,18 @@ label {
   border-color: black;
   height: 2.571; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\0000335}}
 textarea {
   height: 11.143; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\0000345}}
 input[type=search] {
   -webkit-appearance: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\0000347}}
   input[type=search]::-webkit-search-decoration {
     display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\0000350}}
 button, input[type=button], input[type=submit] {
   width: auto;
   overflow: visible; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\0000355}}
 textarea {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -699,54 +545,43 @@ textarea {
   box-sizing: border-box;
   width: 304px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\0000360}}
 input[type="radio"], input[type="checkbox"] {
   margin-left: 0.25em;
   margin-right: 0.25em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/forms\/_form-defaults\.sass}line{font-family:\0000364}}
 textarea, input:not([type="radio"]) {
   max-width: 100%; }
 
 /* Images -------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003169}}
 img {
   vertical-align: text-bottom;
   max-width: 100%;
   -ms-interpolation-mode: bicubic; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003173}}
   img.left {
     float: left;
     margin: 12px 24px 12px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/defaults\/_elements\.sass}line{font-family:\00003176}}
   img.right {
     float: right;
     margin: 12px 0 12px 24px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-common\.sass}line{font-family:\000034}}
 .messages, .status, .warning, .error {
   border: 1px solid black;
   padding: 12px 0.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-common\.sass}line{font-family:\000037}}
   .messages p:last-child, .status p:last-child, .warning p:last-child, .error p:last-child {
     margin-bottom: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-common\.sass}line{font-family:\0000311}}
 .status {
   border-color: green;
   color: green; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-common\.sass}line{font-family:\0000314}}
 .warning {
   border-color: #ffa500;
   color: #ffa500; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-common\.sass}line{font-family:\0000317}}
 .error {
   border-color: red;
   color: red; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-common\.sass}line{font-family:\0000322}}
 ul.pager {
   margin: 0;
   padding: 0;
@@ -754,7 +589,6 @@ ul.pager {
   outline: 0;
   overflow: hidden;
   *zoom: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/lists\/_horizontal-list\.scss}line{font-family:\0000356}}
   ul.pager li {
     list-style-image: none;
     list-style-type: none;
@@ -764,51 +598,39 @@ ul.pager {
     float: left;
     padding-left: 0.5em;
     padding-right: 0.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/lists\/_horizontal-list\.scss}line{font-family:\0000345}}
     ul.pager li:first-child, ul.pager li.first {
       padding-left: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/lists\/_horizontal-list\.scss}line{font-family:\0000346}}
     ul.pager li:last-child, ul.pager li.last {
       padding-right: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000332}}
   ul.pager a {
     border-bottom: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000334}}
     ul.pager a:hover {
       border-bottom: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\000035}}
 body.markup-elements h1.section-title {
   font-size: 2.25em;
   line-height: 1.524em;
   background-color: #d3d3d3;
   text-transform: uppercase;
   padding-left: 12px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\000037}}
   body.markup-elements h1.section-title a {
     text-decoration: none;
     border-bottom: 1px solid black; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000310}}
     body.markup-elements h1.section-title a:link, body.markup-elements h1.section-title a:visited {
       color: black; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000312}}
     body.markup-elements h1.section-title a:link, body.markup-elements h1.section-title a:visited, body.markup-elements h1.section-title a:hover, body.markup-elements h1.section-title a:active {
       outline: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000314}}
     body.markup-elements h1.section-title a:focus, body.markup-elements h1.section-title a:hover, body.markup-elements h1.section-title a:active {
       color: #ff69b4;
       text-decoration: none;
       border-bottom-color: #ff69b4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000319}}
     body.markup-elements h1.section-title a:focus {
       outline: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\0000313}}
 body.markup-elements article.element {
   *zoom: 1;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 24px;
   padding-bottom: 23px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
   body.markup-elements article.element:after {
     content: "\0020";
     display: block;
@@ -816,12 +638,10 @@ body.markup-elements article.element {
     clear: both;
     overflow: hidden;
     visibility: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000355}}
   body.markup-elements article.element:last-child {
     padding-bottom: 0;
     border-bottom-width: 0;
     margin-bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\0000315}}
   body.markup-elements article.element h2.element-title {
     font-size: 1em;
     line-height: 1.714em;
@@ -829,32 +649,25 @@ body.markup-elements article.element {
     color: white;
     text-transform: uppercase;
     padding-left: 12px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\000037}}
     body.markup-elements article.element h2.element-title a {
       text-decoration: none;
       border-bottom: 1px solid white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000310}}
       body.markup-elements article.element h2.element-title a:link, body.markup-elements article.element h2.element-title a:visited {
         color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000312}}
       body.markup-elements article.element h2.element-title a:link, body.markup-elements article.element h2.element-title a:visited, body.markup-elements article.element h2.element-title a:hover, body.markup-elements article.element h2.element-title a:active {
         outline: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000314}}
       body.markup-elements article.element h2.element-title a:focus, body.markup-elements article.element h2.element-title a:hover, body.markup-elements article.element h2.element-title a:active {
         color: #ff69b4;
         text-decoration: none;
         border-bottom-color: #ff69b4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000319}}
       body.markup-elements article.element h2.element-title a:focus {
         outline: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\0000324}}
   body.markup-elements article.element .example {
     *zoom: 1;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
     margin-bottom: 12px;
     padding-bottom: 11px;
     *zoom: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
     body.markup-elements article.element .example:after {
       content: "\0020";
       display: block;
@@ -862,12 +675,10 @@ body.markup-elements article.element {
       clear: both;
       overflow: hidden;
       visibility: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000355}}
     body.markup-elements article.element .example:last-child {
       padding-bottom: 0;
       border-bottom-width: 0;
       margin-bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
     body.markup-elements article.element .example:after {
       content: "\0020";
       display: block;
@@ -875,13 +686,11 @@ body.markup-elements article.element {
       clear: both;
       overflow: hidden;
       visibility: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\0000327}}
     body.markup-elements article.element .example .markup {
       display: inline;
       float: left;
       width: 64.228%;
       margin-right: 2.439%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\0000329}}
       body.markup-elements article.element .example .markup + .show-source {
         display: inline;
         float: left;
@@ -891,58 +700,46 @@ body.markup-elements article.element {
         float: right;
         margin-right: 0;
         #margin-left: -24px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\0000333}}
         body.markup-elements article.element .example .markup + .show-source .show-hide {
           text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/survival_kit\/_survival-kit\.sass}line{font-family:\0000335}}
         body.markup-elements article.element .example .markup + .show-source + p {
           clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\000036}}
 #autocomplete {
   border: 1px solid black;
   overflow: hidden;
   position: absolute;
   z-index: 100; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000311}}
   #autocomplete ul {
     list-style: none;
     list-style-image: none;
     margin: 0;
     padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000316}}
   #autocomplete li {
     cursor: default;
     white-space: pre; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000325}}
 html.js input.form-autocomplete {
   background-image: url('images/cms/drupal/throbber.gif?1116980082');
   background-position: 100% 2px;
   /* LTR */
   background-repeat: no-repeat; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000330}}
 html.js input.throbbing {
   background-position: 100% -18px;
   /* LTR */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000333}}
 html.js fieldset.collapsed {
   border-bottom-width: 0;
   border-left-width: 0;
   border-right-width: 0;
   height: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000338}}
   html.js fieldset.collapsed .fieldset-wrapper {
     display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000343}}
 fieldset.collapsible {
   position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000345}}
   fieldset.collapsible .fieldset-legend {
     display: block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000352}}
 .form-textarea-wrapper textarea {
   display: block;
   margin: 0;
@@ -952,7 +749,6 @@ fieldset.collapsible {
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000359}}
 .resizable-textarea .grippie {
   background: gray url('images/cms/drupal/grippie.png?1251037426') no-repeat center 2px;
   border: 1px solid black;
@@ -961,11 +757,9 @@ fieldset.collapsible {
   height: 9px;
   overflow: hidden; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000370}}
 body.drag {
   cursor: move; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000374}}
 .draggable a.tabledrag-handle {
   cursor: move;
   float: left;
@@ -977,20 +771,16 @@ body.drag {
   /* LTR */
   text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000387}}
 a.tabledrag-handle:hover {
   text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000389}}
 a.tabledrag-handle .handle {
   background: url('images/cms/drupal/draggable.png?1277825991') no-repeat 0 0;
   height: 13px;
   margin-top: 4px;
   width: 13px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000395}}
 a.tabledrag-handle-hover .handle {
   background-position: 0 -20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\0000399}}
 div.indentation {
   float: left;
   /* LTR */
@@ -1000,52 +790,41 @@ div.indentation {
   padding: 0.42em 0 0.42em 0.6em;
   /* LTR */
   width: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003108}}
 div.tree-child {
   background: url('images/cms/drupal/tree.png?1251037426') no-repeat 11px center;
   /* LTR */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003111}}
 div.tree-child-last {
   background: url('images/cms/drupal/tree-bottom.png?1251037426') no-repeat 11px center;
   /* LTR */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003114}}
 div.tree-child-horizontal {
   background: url('images/cms/drupal/tree.png?1251037426') no-repeat -11px center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003117}}
 .tabledrag-toggle-weight-wrapper {
   text-align: right;
   /* LTR */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003124}}
 table.sticky-header {
   background-color: white;
   margin-top: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003133}}
 .progress .bar {
   background-color: white;
   border: 1px solid black; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003136}}
 .progress .filled {
   background-color: black;
   height: 1.5em;
   width: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003140}}
 .progress .percentage {
   float: right;
   /* LTR */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003144}}
 .progress-disabled {
   float: left;
   /* LTR */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003150}}
 .ajax-progress {
   float: left;
   /* LTR */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003153}}
   .ajax-progress .throbber {
     background: transparent url('images/cms/drupal/throbber.gif?1116980082') no-repeat 0px -18px;
     float: left;
@@ -1054,44 +833,34 @@ table.sticky-header {
     margin: 2px;
     width: 15px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003163}}
 tr .ajax-progress .throbber {
   margin: 0 2px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003166}}
 .ajax-progress-bar {
   width: 16em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003171}}
 .container-inline div, .container-inline label {
   display: inline; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003173}}
 .container-inline .fieldset-wrapper {
   display: block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003179}}
 .nowrap {
   white-space: nowrap; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003185}}
 html.js .js-hide, .element-hidden {
   display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003200}}
 .element-invisible {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003203}}
   .element-invisible.element-focusable:active, .element-invisible.element-focusable:focus {
     position: static !important;
     clip: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/cms\/drupal\/_drupal-helpers\.sass}line{font-family:\00003213}}
 .clearfix {
   *zoom: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
   .clearfix:after {
     content: "\0020";
     display: block;
@@ -1100,14 +869,11 @@ html.js .js-hide, .element-hidden {
     overflow: hidden;
     visibility: hidden; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000332}}
 #site-name a {
   border-bottom: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000334}}
   #site-name a:hover {
     border-bottom: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-drupal\.sass}line{font-family:\0000311}}
 #main-menu {
   margin: 0;
   padding: 0;
@@ -1115,7 +881,6 @@ html.js .js-hide, .element-hidden {
   outline: 0;
   overflow: hidden;
   *zoom: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/lists\/_horizontal-list\.scss}line{font-family:\0000356}}
   #main-menu li {
     list-style-image: none;
     list-style-type: none;
@@ -1125,14 +890,11 @@ html.js .js-hide, .element-hidden {
     float: left;
     padding-left: 0.5em;
     padding-right: 0.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/lists\/_horizontal-list\.scss}line{font-family:\0000345}}
     #main-menu li:first-child, #main-menu li.first {
       padding-left: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/lists\/_horizontal-list\.scss}line{font-family:\0000346}}
     #main-menu li:last-child, #main-menu li.last {
       padding-right: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-drupal\.sass}line{font-family:\0000338}}
 ul.tabs {
   margin: 0;
   padding: 0;
@@ -1141,7 +903,6 @@ ul.tabs {
   overflow: hidden;
   *zoom: 1;
   position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/lists\/_horizontal-list\.scss}line{font-family:\0000356}}
   ul.tabs li {
     list-style-image: none;
     list-style-type: none;
@@ -1151,20 +912,15 @@ ul.tabs {
     float: left;
     padding-left: 3px;
     padding-right: 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/lists\/_horizontal-list\.scss}line{font-family:\0000345}}
     ul.tabs li:first-child, ul.tabs li.first {
       padding-left: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/lists\/_horizontal-list\.scss}line{font-family:\0000346}}
     ul.tabs li:last-child, ul.tabs li.last {
       padding-right: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000376}}
   ul.tabs li {
     border-bottom: 1px solid black; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000379}}
     ul.tabs li.active a {
       padding-bottom: 0;
       border-bottom: 1px solid white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000382}}
     ul.tabs li a {
       border-width: 1px;
       border-style: solid;
@@ -1185,48 +941,37 @@ ul.tabs {
       -ms-border-top-right-radius: 5px;
       -khtml-border-top-right-radius: 5px;
       border-top-right-radius: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000332}}
       ul.tabs li a {
         border-bottom: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000334}}
         ul.tabs li a:hover {
           border-bottom: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-drupal\.sass}line{font-family:\0000342}}
 .form-required {
   color: red; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000332}}
 a.feed-icon {
   border-bottom: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000334}}
   a.feed-icon:hover {
     border-bottom: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-drupal\.sass}line{font-family:\0000361}}
 ul.inline {
   list-style-type: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/lists\/_inline-list\.scss}line{font-family:\000035}}
   ul.inline, ul.inline li {
     margin: 0px;
     padding: 0px;
     display: inline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-drupal\.sass}line{font-family:\0000366}}
 .field-type-taxonomy-term-reference .field-item {
   display: inline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-drupal\.sass}line{font-family:\0000371}}
 .field-label-above .field-label {
   display: block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-drupal\.sass}line{font-family:\0000378}}
 #comments .comment {
   *zoom: 1;
   margin-bottom: 12px;
   padding-bottom: 12px;
   border-bottom: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
   #comments .comment:after {
     content: "\0020";
     display: block;
@@ -1234,28 +979,23 @@ ul.inline {
     clear: both;
     overflow: hidden;
     visibility: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/mixins\/_helpers\.sass}line{font-family:\0000355}}
   #comments .comment:last-child {
     padding-bottom: 0;
     border-bottom-width: 0;
     margin-bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-drupal\.sass}line{font-family:\0000380}}
   #comments .comment:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/ui-patterns\/_ui-patterns-drupal\.sass}line{font-family:\0000382}}
 #comments .indented {
   padding-left: 1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/grids\/_grids_susy\.sass}line{font-family:\000034}}
 .container, body #container {
   *zoom: 1;
   margin-left: auto;
   margin-right: auto;
   width: 984px;
   max-width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
   .container:after, body #container:after {
     content: "\0020";
     display: block;
@@ -1264,20 +1004,16 @@ ul.inline {
     overflow: hidden;
     visibility: hidden; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/grids\/_grids_susy\.sass}line{font-family:\000038}}
 .wireframe {
   outline: 1px dashed red; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-susy-plugin-0\.8\.1\/sass\/susy\/_vertical_rhythm\.scss}line{font-family:\0000329}}
 body {
   font-size: 87.5%;
   line-height: 1.714em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-susy-plugin-0\.8\.1\/sass\/susy\/_vertical_rhythm\.scss}line{font-family:\0000333}}
 html > body {
   font-size: 14px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mason\/www\/coding_designer\/css\/src\/partials\/grids\/_grids_susy\.sass}line{font-family:\0000319}}
 body #container > header, body #container > #main, body #container > footer {
   clear: both;
   margin-right: 1.22%;
