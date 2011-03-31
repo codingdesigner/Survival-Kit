@@ -78,7 +78,7 @@ html {
   text-transform: uppercase; }
 
 .amp {
-  font-family: GoudyBookletter1911Regular, sans-serif; }
+  font-family: GoudyBookletter1911Regular, 'Goudy Old Style', Baskerville, Palatino,  Georgia, serif; }
 
 .smallcaps {
   font-variant: small-caps; }
