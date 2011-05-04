@@ -1,36 +1,33 @@
-@charset "UTF-8";
 /* Links -------------------------------------------------------------- */
-/* Reset --------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
   font-size: 100%;
-  font-family: inherit;
+  font: inherit;
   vertical-align: baseline; }
 
 body {
-  line-height: 1;
-  color: black;
-  background: white; }
+  line-height: 1; }
 
 ol, ul {
   list-style: none; }
 
 table {
-  border-collapse: separate;
-  border-spacing: 0;
-  vertical-align: middle; }
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 caption, th, td {
   text-align: left;
@@ -38,19 +35,16 @@ caption, th, td {
   vertical-align: middle; }
 
 q, blockquote {
-  quotes: "" ""; }
+  quotes: none; }
   q:before, q:after, blockquote:before, blockquote:after {
-    content: ""; }
+    content: "";
+    content: none; }
 
 a img {
   border: none; }
 
-/* HTML5 Reset --------------------------------------------------------------*/
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 /* Typography -------------------------------------------------------------- */
@@ -314,9 +308,11 @@ input[type="button"] {
   -khtml-border-radius: 11px;
   border-radius: 11px;
   background: #dddddd url(../images/button.png) repeat-x;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #dddddd 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(top, #ffffff, #dddddd);
+  background-image: -moz-linear-gradient(top, #ffffff, #dddddd);
+  background-image: -o-linear-gradient(top, #ffffff, #dddddd);
+  background-image: linear-gradient(top, #ffffff, #dddddd);
   border: 1px solid;
   border-color: #dddddd #bbbbbb #999999;
   cursor: pointer;
@@ -586,7 +582,6 @@ ul.pager {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
   overflow: hidden;
   *zoom: 1; }
   ul.pager li {
@@ -600,7 +595,9 @@ ul.pager {
     padding-right: 0.5em; }
     ul.pager li:first-child, ul.pager li.first {
       padding-left: 0; }
-    ul.pager li:last-child, ul.pager li.last {
+    ul.pager li:last-child {
+      padding-right: 0; }
+    ul.pager li.last {
       padding-right: 0; }
   ul.pager a {
     border-bottom: none; }
@@ -720,7 +717,7 @@ body.markup-elements article.element {
     white-space: pre; }
 
 html.js input.form-autocomplete {
-  background-image: url('images/cms/drupal/throbber.gif?1116980082');
+  background-image: url('images/cms/drupal/throbber.gif?1303351260');
   background-position: 100% 2px;
   /* LTR */
   background-repeat: no-repeat; }
@@ -750,7 +747,7 @@ fieldset.collapsible {
   box-sizing: border-box; }
 
 .resizable-textarea .grippie {
-  background: gray url('images/cms/drupal/grippie.png?1251037426') no-repeat center 2px;
+  background: gray url('images/cms/drupal/grippie.png?1303351260') no-repeat center 2px;
   border: 1px solid black;
   border-top-width: 0;
   cursor: s-resize;
@@ -774,7 +771,7 @@ body.drag {
 a.tabledrag-handle:hover {
   text-decoration: none; }
 a.tabledrag-handle .handle {
-  background: url('images/cms/drupal/draggable.png?1277825991') no-repeat 0 0;
+  background: url('images/cms/drupal/draggable.png?1303351260') no-repeat 0 0;
   height: 13px;
   margin-top: 4px;
   width: 13px; }
@@ -791,13 +788,13 @@ div.indentation {
   /* LTR */
   width: 20px; }
 div.tree-child {
-  background: url('images/cms/drupal/tree.png?1251037426') no-repeat 11px center;
+  background: url('images/cms/drupal/tree.png?1303351260') no-repeat 11px center;
   /* LTR */ }
 div.tree-child-last {
-  background: url('images/cms/drupal/tree-bottom.png?1251037426') no-repeat 11px center;
+  background: url('images/cms/drupal/tree-bottom.png?1303351260') no-repeat 11px center;
   /* LTR */ }
 div.tree-child-horizontal {
-  background: url('images/cms/drupal/tree.png?1251037426') no-repeat -11px center; }
+  background: url('images/cms/drupal/tree.png?1303351260') no-repeat -11px center; }
 
 .tabledrag-toggle-weight-wrapper {
   text-align: right;
@@ -826,7 +823,7 @@ table.sticky-header {
   float: left;
   /* LTR */ }
   .ajax-progress .throbber {
-    background: transparent url('images/cms/drupal/throbber.gif?1116980082') no-repeat 0px -18px;
+    background: transparent url('images/cms/drupal/throbber.gif?1303351260') no-repeat 0px -18px;
     float: left;
     /* LTR */
     height: 15px;
@@ -878,7 +875,6 @@ html.js .js-hide, .element-hidden {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
   overflow: hidden;
   *zoom: 1; }
   #main-menu li {
@@ -892,14 +888,15 @@ html.js .js-hide, .element-hidden {
     padding-right: 0.5em; }
     #main-menu li:first-child, #main-menu li.first {
       padding-left: 0; }
-    #main-menu li:last-child, #main-menu li.last {
+    #main-menu li:last-child {
+      padding-right: 0; }
+    #main-menu li.last {
       padding-right: 0; }
 
 ul.tabs {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
   overflow: hidden;
   *zoom: 1;
   position: relative; }
@@ -914,7 +911,9 @@ ul.tabs {
     padding-right: 3px; }
     ul.tabs li:first-child, ul.tabs li.first {
       padding-left: 0; }
-    ul.tabs li:last-child, ul.tabs li.last {
+    ul.tabs li:last-child {
+      padding-right: 0; }
+    ul.tabs li.last {
       padding-right: 0; }
   ul.tabs li {
     border-bottom: 1px solid black; }
@@ -992,8 +991,7 @@ ul.inline {
 
 .container, body #container {
   *zoom: 1;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 984px;
   max-width: 100%; }
   .container:after, body #container:after {
@@ -1007,16 +1005,9 @@ ul.inline {
 .wireframe {
   outline: 1px dashed red; }
 
-body {
-  font-size: 87.5%;
-  line-height: 1.714em; }
-
-html > body {
-  font-size: 14px; }
-
 body #container > header, body #container > #main, body #container > footer {
   clear: both;
-  margin-right: 1.22%;
-  margin-left: 1.22%; }
+  margin-left: 1.22%;
+  margin-right: 1.22%; }
 
 /* Non-grid Layout and styling -------------------------------------------------------------- */
