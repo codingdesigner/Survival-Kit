@@ -9,23 +9,25 @@
 // general starter variables
 @import partials/variables/base
 
-// --> 2. CHOOSE A GRID FRAMEWORK
-// in partials/variables/_base.sass
-// (assumes susy by default)
-// todo: add blueprint
-
-// -->  3. COMPASS MIXINS
+// -->  2. COMPASS MIXINS
 // Add the compass tools you need
 // all of compass
-// @import compass
+@import compass
 // individual compass components, if you're into the whole brevity thing
-@import compass/css3
+// @import compass/css3
 // @import compass/layout
 // @import compass/support
-@import compass/utilities
+// @import compass/typography
+// @import compass/utilities
+
+// --> 3. CHOOSE A GRID FRAMEWORK
+// in partials/variables/_base.sass
 // Susy
-@import susy/vertical_rhythm
-// Launch Pad
+@import partials/grids/_susy_setup
+// todo: add blueprint
+
+// Survival Kit
+// TODO: COMB OVER THIS ////////////////////////////////////////////////////////@import partials/mixins/helpers
 @import partials/mixins/helpers
 
 
@@ -33,9 +35,9 @@
 // html5 boilerplate reset
 // @import partials/boilerplate/_boilerplate-reset
 // compass reset
-// @import compass/reset
+@import compass/reset
 // susy reset
-@import susy/reset
+// @import susy/reset
 
 // -->  5. COMPASS PLUG-INS
 // Fancy Buttons
@@ -49,17 +51,17 @@
 // @import partials/boilerplate/_boilerplate-setup
 // @import partials/boilerplate/_boilerplate-helpers
 @import partials/defaults/_elements
-@import partials/ui-patterns/_ui-patterns-common
+//////@import partials/ui-patterns/_ui-patterns-common
 
 // --> 7. Styles just for working in the Survival Kit
-// remove these in production
+// REMOVE THESE IN PRODUCTION
 @import partials/survival_kit/_survival-kit
 
 
 // --> 8. CMS-specific overrides and mixins
 // DRUPAL
 // @import partials/cms/drupal/drupal
-@import partials/ui-patterns/_ui-patterns-drupal
+//////@import partials/ui-patterns/_ui-patterns-drupal
 
 // -->  9. STYLES FOR THIS SITE --------------------------------------------------
 @import partials/grids/_grids_susy.sass
