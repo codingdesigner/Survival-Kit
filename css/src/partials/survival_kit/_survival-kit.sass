@@ -3,13 +3,13 @@
 
 body.markup-elements
   h1.section-title
-    // @extend h2
     +adjust-font-size-to($ms4)
     background-color: $lightgray
-    // color: $darkgray
     text-transform: uppercase
     padding-left: $gutter_half
-    +better-links($black, $alt-color, $black, $alt-color)
+    a
+      +link-colors($black, $alt-color, $alt-color, $black, false)
+      +better-links($black, $alt-color, $alt-color, $black, false)
   article.element
     +vertical-separation($baseline * 2, 1px, transparentize($base-color, 0.9))
     h2.element-title
@@ -18,9 +18,9 @@ body.markup-elements
       color: $white
       text-transform: uppercase
       padding-left: $gutter_half
-      +better-links($white, $alt-color, $white, $alt-color)
-      // & + p
-      //   clear: both
+      a
+        +link-colors($white, $alt-color, $alt-color, $white, false)
+        +better-links($white, $alt-color, $alt-color, $white, false)
     .example
       +vertical-separation($baseline, 1px, transparentize($base-color, 0.9), dashed)
       +pie-clearfix

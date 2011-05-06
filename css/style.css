@@ -128,22 +128,29 @@ html > body {
 
 /* Links -------------------------------------------------------------- */
 a {
+  color: #ff69b4;
+}
+a:visited {
+  color: #ff69b4;
+}
+a:hover {
+  color: #69ffb4;
+}
+a:active {
+  color: #69ffb4;
+}
+a {
   text-decoration: none;
   border-bottom: 1px solid #ff69b4;
 }
-a:link, a:visited {
-  color: #ff69b4;
+a:visited {
+  border-bottom-color: #ff69b4;
 }
-a:link, a:visited, a:hover, a:active {
-  outline: none;
-}
-a:focus, a:hover, a:active {
-  color: #69ffb4;
-  text-decoration: none;
+a:hover {
   border-bottom-color: #69ffb4;
 }
-a:focus {
-  outline: none;
+a:active {
+  border-bottom-color: #69ffb4;
 }
 
 /* Headings -------------------------------------------------------------- */
@@ -690,22 +697,29 @@ body.markup-elements h1.section-title {
   padding-left: 12px;
 }
 body.markup-elements h1.section-title a {
+  color: black;
+}
+body.markup-elements h1.section-title a:visited {
+  color: black;
+}
+body.markup-elements h1.section-title a:hover {
+  color: #ff69b4;
+}
+body.markup-elements h1.section-title a:active {
+  color: #ff69b4;
+}
+body.markup-elements h1.section-title a {
   text-decoration: none;
   border-bottom: 1px solid black;
 }
-body.markup-elements h1.section-title a:link, body.markup-elements h1.section-title a:visited {
-  color: black;
+body.markup-elements h1.section-title a:visited {
+  border-bottom-color: black;
 }
-body.markup-elements h1.section-title a:link, body.markup-elements h1.section-title a:visited, body.markup-elements h1.section-title a:hover, body.markup-elements h1.section-title a:active {
-  outline: none;
-}
-body.markup-elements h1.section-title a:focus, body.markup-elements h1.section-title a:hover, body.markup-elements h1.section-title a:active {
-  color: #ff69b4;
-  text-decoration: none;
+body.markup-elements h1.section-title a:hover {
   border-bottom-color: #ff69b4;
 }
-body.markup-elements h1.section-title a:focus {
-  outline: none;
+body.markup-elements h1.section-title a:active {
+  border-bottom-color: #ff69b4;
 }
 body.markup-elements article.element {
   *zoom: 1;
@@ -735,22 +749,29 @@ body.markup-elements article.element h2.element-title {
   padding-left: 12px;
 }
 body.markup-elements article.element h2.element-title a {
+  color: white;
+}
+body.markup-elements article.element h2.element-title a:visited {
+  color: white;
+}
+body.markup-elements article.element h2.element-title a:hover {
+  color: #ff69b4;
+}
+body.markup-elements article.element h2.element-title a:active {
+  color: #ff69b4;
+}
+body.markup-elements article.element h2.element-title a {
   text-decoration: none;
   border-bottom: 1px solid white;
 }
-body.markup-elements article.element h2.element-title a:link, body.markup-elements article.element h2.element-title a:visited {
-  color: white;
+body.markup-elements article.element h2.element-title a:visited {
+  border-bottom-color: white;
 }
-body.markup-elements article.element h2.element-title a:link, body.markup-elements article.element h2.element-title a:visited, body.markup-elements article.element h2.element-title a:hover, body.markup-elements article.element h2.element-title a:active {
-  outline: none;
-}
-body.markup-elements article.element h2.element-title a:focus, body.markup-elements article.element h2.element-title a:hover, body.markup-elements article.element h2.element-title a:active {
-  color: #ff69b4;
-  text-decoration: none;
+body.markup-elements article.element h2.element-title a:hover {
   border-bottom-color: #ff69b4;
 }
-body.markup-elements article.element h2.element-title a:focus {
-  outline: none;
+body.markup-elements article.element h2.element-title a:active {
+  border-bottom-color: #ff69b4;
 }
 body.markup-elements article.element .example {
   *zoom: 1;
