@@ -72,7 +72,7 @@ html {
 }
 
 .mono, pre, code, tt, body.markup-elements article.element .example .markup + .show-source {
-  font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
 }
 
 .caps, .allcaps, caption, .smallcaps {
@@ -88,7 +88,7 @@ html {
 }
 
 .amp {
-  font-family: GoudyBookletter1911Regular, 'Goudy Old Style', Baskerville, Palatino,  Georgia, serif;
+  font-family: GoudyBookletter1911Regular, "Goudy Old Style", Baskerville, Palatino, Georgia, serif;
 }
 
 .smallcaps {

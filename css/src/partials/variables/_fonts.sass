@@ -1,15 +1,18 @@
 // @import font_face
 
-$font-sans: unquote("sans-serif")  
-$font-serifs: unquote("Georgia, serif")
+// declare typekit fonts
+$font-sans: sans-serif
+$font-serifs: Georgia, serif
+$font-mono: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif
+
+// $font-my-webfont: my-webfont-1,my-webfont-2, $font-serifs
+
+$font-body: $font-serifs
 $font-headline: $font-sans
-$font-mono: unquote("Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif")
+$font-logo: $font-sans
 
 // special use font stacks
 // ampersands
-$font-amp: unquote("GoudyBookletter1911Regular, 'Goudy Old Style', Baskerville, Palatino, ") $font-serifs
+$font-amp: GoudyBookletter1911Regular, 'Goudy Old Style', Baskerville, Palatino,  $font-serifs
 // CAPS
-$font_cap: $font-sans         
-
-
-
+$font_cap: $font-sans
