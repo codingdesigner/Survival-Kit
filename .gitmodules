@@ -31,3 +31,6 @@
 [submodule "sources/pie"]
 	path = sources/pie
 	url = https://github.com/lojjic/PIE.git
+[submodule "sources/modernizr"]
+	path = sources/modernizr
+	url = https://github.com/Modernizr/Modernizr.git
