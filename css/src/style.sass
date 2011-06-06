@@ -4,10 +4,14 @@
   
 // -->  1. VARIABLES
 // Set up variables for future use
-@import partials/variables/colors
-@import partials/variables/fonts
+@import kit_partials/variables/colors
+@import my_partials/variables/colors
+@import kit_partials/variables/fonts
+@import my_partials/variables/fonts
 // general starter variables
-@import partials/variables/base
+@import kit_partials/variables/base
+// uncomment below to use custom base values
+// @import kit_partials/variables/base
 
 // -->  2. COMPASS MIXINS
 // Add the compass tools you need
@@ -20,18 +24,7 @@
 // @import compass/typography
 // @import compass/utilities
 
-// --> 3. CHOOSE A GRID FRAMEWORK
-// in partials/variables/_base.sass
-// Susy
-@import partials/grids/_susy_setup
-// todo: add blueprint
-
-// Survival Kit
-// TODO: COMB OVER THIS ////////////////////////////////////////////////////////@import partials/mixins/helpers
-@import partials/mixins/helpers
-
-
-// --> 4. PICK A CSS RESET
+// --> 3. PICK A CSS RESET
 // html5 boilerplate reset
 // @import partials/boilerplate/_boilerplate-reset
 // compass reset
@@ -39,59 +32,56 @@
 // susy reset
 // @import susy/reset
 
+// -->  4. CHOOSE A GRID FRAMEWORK
+// in partials/variables/_base.sass
+// Susy
+@import kit_partials/grids/_grids_susy.sass
+// todo: add blueprint
+
 // -->  5. COMPASS PLUG-INS
 // Fancy Buttons
 // @import fancy-buttons
 // Sassy Buttons
 // @import sassybuttons
 
-// -->  6. DEFAULTS
+// -->  6. ADD HELPER MIXINS
+// TODO: COMB OVER THIS ////////////////////////////////////////////////////////@import partials/mixins/helpers
+@import kit_partials/mixins/helpers
+
+// -->  7. DEFAULTS
 // Set your overall site defaults
-@import partials/defaults/_defaults
+@import kit_partials/defaults/_defaults
 // @import partials/boilerplate/_boilerplate-setup
 // @import partials/boilerplate/_boilerplate-helpers
-@import partials/defaults/_elements
+@import kit_partials/defaults/_elements
 //////@import partials/ui-patterns/_ui-patterns-common
 
-// --> 7. Styles just for working in the Survival Kit
+// -->  8. Styles just for working in the Survival Kit
 // REMOVE THESE IN PRODUCTION
-@import partials/survival_kit/_survival-kit
+@import kit_partials/survival_kit/_survival-kit
 
 
-// --> 8. CMS-specific overrides and mixins
+// --> 9. CMS-specific overrides and mixins
 // DRUPAL
 // @import partials/cms/drupal/drupal
 //////@import partials/ui-patterns/_ui-patterns-drupal
 
-// -->  9. STYLES FOR THIS SITE --------------------------------------------------
-@import partials/grids/_grids_susy.sass
-@import partials/_site-wide.sass
+// -->  10. STYLES FOR THIS SITE --------------------------------------------------
+// NOTE: Adjust your master grid using "_grids_susy.sass" (Step 4)
+@import _site-wide.sass
 
-// -->  10. RESPONSIVE --------------------------------------------------
-// @import partials/media/_responsive.sass
+// -->  11. RESPONSIVE --------------------------------------------------
+// @import kit_partials/media/_responsive.sass
 
-// -->  11. Modernizr & Browser Support -------------------------------------------
-// @import partials/browser_adjustments/_modernizr.sass
-// @import partials/browser_adjustments/_ie.sass
-
-
-// -->  12. Print -------------------------------------------
-// @import partials/print
+// -->  12. Modernizr & Browser Support -------------------------------------------
+// @import kit_partials/browser_adjustments/_modernizr.sass
+// @import kit_partials/browser_adjustments/_ie.sass
 
 
+// -->  13. Print -------------------------------------------
+// @import kit_partials/print
 
 
 
 
 
-
-
-//-->//@import partials/mixin_library
-//-->//@import partials/fonts
-//-->//@import partials/colors
-// @import partials/vertical_rhythm
-// @import partials/typography
-// @import partials/typogrify
-//-->//@import fancy-buttons
-//-->//@import compass/css3
-// @import partials/form
