@@ -34,3 +34,6 @@
 [submodule "sources/modernizr"]
 	path = sources/modernizr
 	url = https://github.com/Modernizr/Modernizr.git
+[submodule "sources/FitText"]
+	path = sources/FitText
+	url = https://github.com/davatron5000/FitText.js.git
