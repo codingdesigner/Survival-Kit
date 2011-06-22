@@ -1,84 +1,127 @@
-//** ALL MEDIA STYLES **//
-
-// Imports --------------------------------------------------------------
+/* The Coding Designer's Survival Kit 
+  A framework for designing websites in the browser. 
   
-// -->  1. VARIABLES
-// Set up variables for future use
+  Much love to:
+  Sass, Compass, HTML5 Boilerplate, Modernizr, Formalize, and more
+  
+  Available at http://thecodingdesigner.com
+  twitter: http://twitter.com/canarymason
+  
+  
+// Chapter I: INTRODUCTION
+  This is the central organizing sass file where we manage all the imported partials 
+  in The Kit. Don't write custom code here. Instead, import files that bring in
+  default code from The Kit and files that add your custom code. The checklist below
+  should help you put these files in order. 
+  
+  The partials are split into two containing folders: 
+  "kit_partials" contains partials that you shouldn't alter. Leaving these
+  alone will make upgrading The Kit much easier in the future. 
+  "my_partials" contains all the custom alterations and original sass code
+  you write for your project. See below for details.
+  
+  
+// Chapter II: IMPORTS THAT DON'T ADD CODE  
+  --------------------------------------------------------------
+  Start by importing a number of set up sass partials. The imported partials
+  in the first few steps will not add any css to the compiled css. They 
+  merely establish variables and helper mixins that will help later 
+  in the process. 
+  
+
+// ✔ 1. VARIABLES
+  Set up variables for future use.
+  First we import the kit's default colors, which contains all the named 
+  CSS values as variables. This makes quickly blocking our generic colors
+  very easy. 
 @import kit_partials/variables/colors
+// Then you can add your own custom color variables to your own colors partial.
 @import my_partials/variables/colors
+// The Kit fonts partial establishes variables for simple clean typography
 @import kit_partials/variables/fonts
+// Declare your own font variables here.
 @import my_partials/variables/fonts
-// general starter variables
+// Import general starter variables from The Kit
 @import kit_partials/variables/base
-// uncomment below to use custom base values
+// Uncomment below to use custom base values
 // @import kit_partials/variables/base
 
-// -->  2. COMPASS MIXINS
-// Add the compass tools you need
+// ✔ 2. COMPASS MIXINS
+  Add the compass tools you need
 // all of compass
 @import compass
-// individual compass components, if you're into the whole brevity thing
+// or individual compass components, if you're into the whole brevity thing
 // @import compass/css3
 // @import compass/layout
 // @import compass/support
 // @import compass/typography
 // @import compass/utilities
 
-// --> 3. PICK A CSS RESET
+
+// Chapter III: IMPORTS THAT DO ADD CODE
+  --------------------------------------------------------------
+  These imported partials will start adding css when compiled. Starting with 
+  your choice of CSS reset.
+  
+  
+// ✔ 3. PICK A CSS RESET
+/* CSS RESET  
+// Eric Meyer reset
+@import kit_partials/reset/_meyer-reset
 // html5 boilerplate reset
 // @import partials/boilerplate/_boilerplate-reset
 // compass reset
-@import compass/reset
+// @import compass/reset
 // susy reset
 // @import susy/reset
 
-// -->  4. CHOOSE A GRID FRAMEWORK
+// ✔ 4. CHOOSE A GRID FRAMEWORK
 // in partials/variables/_base.sass
 // Susy
-@import kit_partials/grids/_grids_susy.sass
+//$$// @import kit_partials/grids/_grids_susy.sass
 // todo: add blueprint
 
-// -->  5. COMPASS PLUG-INS
+// ✔ 5. COMPASS PLUG-INS
 // Fancy Buttons
 // @import fancy-buttons
 // Sassy Buttons
 // @import sassybuttons
 
-// -->  6. ADD HELPER MIXINS
+// ✔ 6. ADD HELPER MIXINS
 // TODO: COMB OVER THIS ////////////////////////////////////////////////////////@import partials/mixins/helpers
-@import kit_partials/mixins/helpers
+//$$// @import kit_partials/mixins/helpers
 
-// -->  7. DEFAULTS
+// ✔ 7. DEFAULTS
 // Set your overall site defaults
-@import kit_partials/defaults/_defaults
+//$$// @import kit_partials/defaults/_defaults
 // @import partials/boilerplate/_boilerplate-setup
 // @import partials/boilerplate/_boilerplate-helpers
-@import kit_partials/defaults/_elements
+//$$// @import kit_partials/defaults/_elements
 //////@import partials/ui-patterns/_ui-patterns-common
 
-// -->  8. Styles just for working in the Survival Kit
+// ✔ 8. Styles just for working in the Survival Kit
 // REMOVE THESE IN PRODUCTION
-@import kit_partials/survival_kit/_survival-kit
+//$$// @import kit_partials/survival_kit/_survival-kit
 
 
-// --> 9. CMS-specific overrides and mixins
+// ✔ 9. CMS-specific overrides and mixins
 // DRUPAL
 // @import partials/cms/drupal/drupal
 //////@import partials/ui-patterns/_ui-patterns-drupal
 
-// -->  10. STYLES FOR THIS SITE --------------------------------------------------
+// ✔ 10. STYLES FOR THIS SITE --------------------------------------------------
 // NOTE: Adjust your master grid using "_grids_susy.sass" (Step 4)
-@import _site-wide.sass
+//$$// @import _site-wide.sass
 
-// -->  11. RESPONSIVE --------------------------------------------------
+// ✔ 11. RESPONSIVE --------------------------------------------------
 // @import kit_partials/media/_responsive.sass
 
-// -->  12. Modernizr & Browser Support -------------------------------------------
+// ✔ 12. Modernizr & Browser Support -------------------------------------------
 // @import kit_partials/browser_adjustments/_modernizr.sass
 // @import kit_partials/browser_adjustments/_ie.sass
 
 
-// -->  13. Print -------------------------------------------
+// ✔ 13. Print -------------------------------------------
 // @import kit_partials/print
 
 

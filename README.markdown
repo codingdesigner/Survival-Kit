@@ -8,7 +8,7 @@ This is a collection of Design-in-Browser tools and some great default markup. T
 - __elements.html__ includes a collection of standard html elements
 - I will be including others soon, including basic forms, content pages, sidebars, footers, etc
 
-This also includes a Sass / Compass folder that starts with some very clean defaults. I can't include those projects in this one, so you'll need to install Sass and Compass to get started with these, and I encourage you to install Susy and Fancy Buttons as well. 
+This also includes a Sass / Compass folder that starts with some very clean defaults. I can't include those projects in this one, so you'll need to install Sass and Compass to get started with these, and I encourage you to install Susy and other projects like Fancy Buttons as well. 
 
 ## Requirements 
 
@@ -20,6 +20,7 @@ This also includes a Sass / Compass folder that starts with some very clean defa
 - [Susy](http://susy.oddbird.net/)
 - [Fancy Buttons](https://github.com/imathis/fancy-buttons)
 - [Sassy Buttons](https://github.com/jhardy/Sassy-Buttons)
+- [Livereload](http://livereload.mockko.com/)
 - [xrefresh](http://xrefresh.binaryage.com/)
 
 
@@ -30,6 +31,7 @@ This also includes a Sass / Compass folder that starts with some very clean defa
 - [Compass](http://compass-style.org/)
 - [Susy](http://susy.oddbird.net/)
 - [Fancy Buttons](https://github.com/imathis/fancy-buttons)
+- [Modernizr](http://modernizr.com/)
 - [Selectivizr](http://selectivizr.com/)
 - [Modularscale](http://modularscale.com/)
 - more, more, more
@@ -54,25 +56,4 @@ Everything else:
 
 * [The Unlicense](http://unlicense.org) (aka: public domain) 
 
-
-## Summary:
-
-This is a set of files that a front-end developer can use to get started on a website, with following included:
-
-1. Cross-browser compatible (IE6, yeah we got that.)
-2. HTML5 ready. Use the new tags with certainty.
-3. Optimal caching and compression rules for grade-A performance
-4. Best practice site configuration defaults
-5. Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)
-6. Mobile browser optimizations
-7. Progressive enhancement graceful degredation ........ yeah yeah we got that
-8. IE specific classes for maximum cross-browser control
-9. Want to write unit tests but lazy? A full, hooked up test suite is waiting for you.
-10. Javascript profiling.. in IE6 and IE7? Sure, no problem.
-11. Console.log nerfing so you won't break anyone by mistake.
-12. Never go wrong with your doctype or markup!
-13. An optimal print stylesheet, performance optimized
-14. iOS, Android, Opera Mobile-adaptable markup and CSS skeleton.
-15. IE6 pngfix baked in.
-16. jQuery, waiting for you
 
