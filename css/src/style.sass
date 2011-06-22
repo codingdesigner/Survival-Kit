@@ -83,13 +83,13 @@
 // Set some variables commonly used by most grid systems
 @import kit_partials/grids/_grids-all.sass
 // Blueprint
-@import blueprint/grid
+// @import blueprint/grid
 // alternately, import all of blueprint - use caution
 // @import blueprint
 // Susy
   You may want to try Susy (http://susy.oddbird.net/), which 
   is designed to work closely with Compass.
-// @import kit_partials/grids/_grids-susy.sass
+@import kit_partials/grids/_grids-susy.sass
 
 
 // Chapter IV: IMPORTS THAT SAVE TIME AND TROUBLE
@@ -121,6 +121,12 @@
 // Set defaults for most HTML elements
 @import kit_partials/defaults/_elements
 
+
+// Chapter VI: IMPORTS THAT YOU DON'T NEED
+  --------------------------------------------------------------
+  At least you won't need them in production. They help give you some structure
+  while you design, or mimic styles from your CMS
+
 // ✔ 8. Styles just for working in the Survival Kit
   REMOVE THESE IN PRODUCTION
   These are styles designed for use by The Kit
@@ -128,15 +134,30 @@
 
 
 // ✔ 9. CMS-specific overrides and mixins
+  These add in some of the default styles from your CMS. 
+  They may be REMOVED IN PRODUCTION with caution
 // DRUPAL
-// @import partials/cms/drupal/drupal
+// @import kit_partials/cms/drupal/drupal-helpers
 
+
+// Chapter VII: HERE IS WHERE YOU DO YOUR MAIN WORK
+  --------------------------------------------------------------
+  With all the defaults set up, now you can get to work on your own design. 
+  
+  
 // ✔ 10. STYLES FOR THIS SITE --------------------------------------------------
-// NOTE: Adjust your master grid using "_grids_susy.sass" (Step 4)
-//$$// @import _site-wide.sass
+  Create your layout in a separate file from your design details
+@import _layout.sass
+@import _design.sass
+
+
+// Chapter VIII: MAKE ADJUSTMENTS FOR DIFFERENT ENVIRONMENTS AND CAPABILITIES
+  --------------------------------------------------------------
+  Now set up your responsive layout, and use modernizr and ie classes to 
+  adjust for less-capable systems
 
 // ✔ 11. RESPONSIVE --------------------------------------------------
-// @import kit_partials/media/_responsive.sass
+@import kit_partials/media/_responsive.sass
 
 // ✔ 12. Modernizr & Browser Support -------------------------------------------
 // @import kit_partials/browser_adjustments/_modernizr.sass
