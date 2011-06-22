@@ -4,55 +4,55 @@
 @media screen and (max-width: 320px)
   // redefine grid variables for this context (susy)
   $total-cols: 3
-  $col-width: 96px
-  $gutter-width: $gutter_half
+  $kit-col-width: 96px
+  $kit-gutter-width: $kit-gutter_half
   $side-gutter-width: 3px
   // recalculate grid
-  $container-width: container($total-cols, $col-width, $gutter-width, $side-gutter-width)
+  $container-width: container($total-cols, $kit-col-width, $kit-gutter-width, $side-gutter-width)
   // @debug $container-width
   // YOUR STYLES BELOW
 
 // mobile horizontal (iphone)
 @media screen and (min-width: 321px) and (max-width: 480px)
   $total-cols: 3
-  $col-width: 148px
-  $gutter-width: 15px
+  $kit-col-width: 148px
+  $kit-gutter-width: 15px
   $side-gutter-width: 3px
   // recalculate grid
-  $container-width: container($total-cols, $col-width, $gutter-width, $side-gutter-width)
+  $container-width: container($total-cols, $kit-col-width, $kit-gutter-width, $side-gutter-width)
   // @debug $container-width
   // YOUR STYLES BELOW
 
 // narrow screen 
 @media screen and (min-width: 481px) and (max-width: 665px)
   $total-cols: 3
-  $col-width: 116px
-  $gutter-width: $gutter
-  $side-gutter-width: $gutter-width
+  $kit-col-width: 116px
+  $kit-gutter-width: $kit-gutter
+  $side-gutter-width: $kit-gutter-width
   // recalculate grid
-  $container-width: container($total-cols, $col-width, $gutter-width, $side-gutter-width)
+  $container-width: container($total-cols, $kit-col-width, $kit-gutter-width, $side-gutter-width)
   // @debug $container-width
   // YOUR STYLES BELOW
 
 // narrow screen (commented out, since it's the default context)
   @media screen and (min-width: 666px) and (max-width: 1484px)
   $total-cols: 7
-  $col-width: 116px
-  $gutter-width: $gutter
-  $side-gutter-width: $gutter-width
+  $kit-col-width: 116px
+  $kit-gutter-width: $kit-gutter
+  $side-gutter-width: $kit-gutter-width
   // recalculate grid
-  $container-width: container($total-cols, $col-width, $gutter-width, $side-gutter-width)
+  $container-width: container($total-cols, $kit-col-width, $kit-gutter-width, $side-gutter-width)
   // @debug $container-width
   // YOUR STYLES BELOW
     
 // wide screen
 @media screen and (min-width: 1485px)
   $total-cols: 10
-  $col-width: 116px
-  $gutter-width: 32px
-  $side-gutter-width: $gutter-width
+  $kit-col-width: 116px
+  $kit-gutter-width: 32px
+  $side-gutter-width: $kit-gutter-width
   // recalculate grid
-  $container-width: container($total-cols, $col-width, $gutter-width, $side-gutter-width)
+  $container-width: container($total-cols, $kit-col-width, $kit-gutter-width, $side-gutter-width)
   // @debug $container-width
   // YOUR STYLES BELOW
   

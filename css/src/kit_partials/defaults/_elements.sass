@@ -93,7 +93,7 @@ pre
   white-space: pre
 
 blockquote
-  margin: $base-rhythm-unit $gutter
+  margin: $base-rhythm-unit $kit-gutter
   font-style: italic
   font-weight: 300
   
@@ -102,7 +102,7 @@ blockquote
 
 ol, ul, dl
   +trailer
-  margin-left: $gutter
+  margin-left: $kit-gutter
 
 dl
   margin-left: 0
@@ -123,7 +123,7 @@ dt
     +leader(0)
 
 dd
-  padding-left: $gutter
+  padding-left: $kit-gutter
   
 
 /* Tables --------------------------------------------------------------
@@ -175,7 +175,7 @@ img
   -ms-interpolation-mode: bicubic
   &.left
     float: left
-    margin: $baseline_half $gutter $baseline_half 0
+    margin: $kit-baseline_half $kit-gutter $kit-baseline_half 0
   &.right
     float: right
-    margin: $baseline_half 0 $baseline_half $gutter
+    margin: $kit-baseline_half 0 $kit-baseline_half $kit-gutter

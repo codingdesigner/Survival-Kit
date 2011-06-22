@@ -1,46 +1,128 @@
-/* The Coding Designer's Survival Kit
- * A framework for designing websites in the browser. 
- *
- * Much love to:
- * Sass, Compass, HTML5 Boilerplate, Modernizr, Formalize, and more
- *
- * Available at http://thecodingdesigner.com
- * twitter: http://twitter.com/canarymason */
-/* CSS RESET */
-/* http://meyerweb.com/eric/tools/css/reset/
- * v2.0 | 20110126
- * License: none (public domain) */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+/*
+Syntax error: Undefined mixin 'columns'.
+        on line 28 of /Users/mason/www/coding_designer/The-Coding-Designers-Survival-Kit/css/src/kit_partials/survival_kit/_survival-kit.sass, in `columns'
+        from line 28 of /Users/mason/www/coding_designer/The-Coding-Designers-Survival-Kit/css/src/kit_partials/survival_kit/_survival-kit.sass
+        from line 127 of /Users/mason/www/coding_designer/The-Coding-Designers-Survival-Kit/css/src/style.sass
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+Backtrace:
+/Users/mason/www/coding_designer/The-Coding-Designers-Survival-Kit/css/src/kit_partials/survival_kit/_survival-kit.sass:28:in `columns'
+/Users/mason/www/coding_designer/The-Coding-Designers-Survival-Kit/css/src/kit_partials/survival_kit/_survival-kit.sass:28
+/Users/mason/www/coding_designer/The-Coding-Designers-Survival-Kit/css/src/style.sass:127
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:169:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:230:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:230:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:230:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:230:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:145:in `visit_import'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:145:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:145:in `visit_import'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:47:in `visit_root'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:291:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:239:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/util.rb:298:in `silence_sass_warnings'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:239:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:130:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:116:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:129:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:128:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:108:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:95:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:93:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:93:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:116:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:92:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/commands/watch_project.rb:142:in `recompile'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:36:in `to_proc'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:39:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:18:in `refresh'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:15:in `add_handler'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:14:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:14:in `add_handler'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/rubycocoa/fsevents.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/rubycocoa/fsevents.rb:107:in `initialize'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:27:in `CFRunLoopRun'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:27:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/commands/watch_project.rb:86:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/bin/compass:25
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/bin/compass:39:in `call'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.1/bin/compass:39
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'columns'.\A         on line 28 of /Users/mason/www/coding_designer/The-Coding-Designers-Survival-Kit/css/src/kit_partials/survival_kit/_survival-kit.sass, in `columns'\A         from line 28 of /Users/mason/www/coding_designer/The-Coding-Designers-Survival-Kit/css/src/kit_partials/survival_kit/_survival-kit.sass\A         from line 127 of /Users/mason/www/coding_designer/The-Coding-Designers-Survival-Kit/css/src/style.sass"; }

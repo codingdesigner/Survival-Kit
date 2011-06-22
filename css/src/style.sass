@@ -65,6 +65,8 @@
   
   
 // ✔ 3. PICK A CSS RESET
+  There are subtle differences and approaches with the following CSS resets. 
+  Eric Meyer is set by default, but the others are worth trying. 
 /* CSS RESET  
 // Eric Meyer reset
 @import kit_partials/reset/_meyer-reset
@@ -76,38 +78,58 @@
 // @import susy/reset
 
 // ✔ 4. CHOOSE A GRID FRAMEWORK
-// in partials/variables/_base.sass
+  Compass comes with Blueprint, and plenty of documentation
+  (http://compass-style.org/reference/blueprint/)
+// Set some variables commonly used by most grid systems
+@import kit_partials/grids/_grids-all.sass
+// Blueprint
+@import blueprint/grid
+// alternately, import all of blueprint - use caution
+// @import blueprint
 // Susy
-//$$// @import kit_partials/grids/_grids_susy.sass
-// todo: add blueprint
+  You may want to try Susy (http://susy.oddbird.net/), which 
+  is designed to work closely with Compass.
+// @import kit_partials/grids/_grids-susy.sass
+
+
+// Chapter IV: IMPORTS THAT SAVE TIME AND TROUBLE
+  --------------------------------------------------------------
+  From button styles to better link styles. Use the following imports to 
+  add tools that automate different tasks
+
 
 // ✔ 5. COMPASS PLUG-INS
 // Fancy Buttons
 // @import fancy-buttons
 // Sassy Buttons
 // @import sassybuttons
-
+  
 // ✔ 6. ADD HELPER MIXINS
-// TODO: COMB OVER THIS ////////////////////////////////////////////////////////@import partials/mixins/helpers
-//$$// @import kit_partials/mixins/helpers
+  Over time I've collected or written a number of useful mixins. 
+@import kit_partials/mixins/helpers
+
+
+// Chapter V: IMPORTS THAT SET DEFAULTS FOR YOUR PROJECT
+  --------------------------------------------------------------
+  The following imports set default styles for most standard elements in a site. 
 
 // ✔ 7. DEFAULTS
-// Set your overall site defaults
-//$$// @import kit_partials/defaults/_defaults
+  Set your overall site defaults. This covers mostly high level typographic items
+@import kit_partials/defaults/_defaults
 // @import partials/boilerplate/_boilerplate-setup
 // @import partials/boilerplate/_boilerplate-helpers
-//$$// @import kit_partials/defaults/_elements
-//////@import partials/ui-patterns/_ui-patterns-common
+// Set defaults for most HTML elements
+@import kit_partials/defaults/_elements
 
 // ✔ 8. Styles just for working in the Survival Kit
-// REMOVE THESE IN PRODUCTION
-//$$// @import kit_partials/survival_kit/_survival-kit
+  REMOVE THESE IN PRODUCTION
+  These are styles designed for use by The Kit
+@import kit_partials/survival_kit/_survival-kit
 
 
 // ✔ 9. CMS-specific overrides and mixins
 // DRUPAL
 // @import partials/cms/drupal/drupal
-//////@import partials/ui-patterns/_ui-patterns-drupal
 
 // ✔ 10. STYLES FOR THIS SITE --------------------------------------------------
 // NOTE: Adjust your master grid using "_grids_susy.sass" (Step 4)

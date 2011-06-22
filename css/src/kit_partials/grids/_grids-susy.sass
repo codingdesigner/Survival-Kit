@@ -7,12 +7,12 @@
 
 // Font Sizes --------------------------------------------------------------
 $base-font-size: 14px !default
-$base-line-height: $baseline
+$base-line-height: $kit-baseline
 // Grid Variables --------------------------------------------------------------
-$total-cols: 6
-$col-width: 140px
-$gutter-width: $gutter
-$side-gutter-width: $gutter_half
+$total-cols: $kit-total-cols
+$col-width: $kit-col-width
+$gutter-width: $kit-gutter-width
+$side-gutter-width: $kit-side-gutter-width
 
 @import susy
 // uncomment to output the full container width to the terminal
@@ -34,11 +34,10 @@ $side-gutter-width: $gutter_half
 
 // BUILD THE GRID BY CALLING SUSY MIXINS ON DOM ELEMENTS
 // example: 
-body
-  #container
-    @extend .container
-    > 
-      header, #main, footer
-        +full
-
+  body
+    #container
+      @extend .container
+      > 
+        header, #main, footer
+          +full
 
