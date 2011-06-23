@@ -164,14 +164,18 @@
   adjust for less-capable systems
 
 // ✔ 11. RESPONSIVE --------------------------------------------------
-@import kit_partials/media/_responsive.sass
+  Create layouts for a number of device-size breakpoints
+// @import kit_partials/media/_responsive.sass
 
 // ✔ 12. Modernizr & Browser Support -------------------------------------------
+  Use modernizr (http://modernizr.com) to manage styles for less-capable devices
+  Use IE classes on the <html> tag to manage classes for different IE browsers
 // @import kit_partials/browser_adjustments/_modernizr.sass
 // @import kit_partials/browser_adjustments/_ie.sass
 
 
 // ✔ 13. Print -------------------------------------------
+  Add print styles via @media query rather than by it's own stylesheet
 // @import kit_partials/print
 
 
