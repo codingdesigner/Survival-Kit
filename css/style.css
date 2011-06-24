@@ -699,13 +699,13 @@ img.right {
   margin: 12px 0 12px 24px;
 }
 
-body.markup-elements #container {
+body.markup-elements #page {
   *zoom: 1;
   margin: auto;
   width: 984px;
   max-width: 100%;
 }
-body.markup-elements #container:after {
+body.markup-elements #page:after {
   content: "\0020";
   display: block;
   height: 0;
