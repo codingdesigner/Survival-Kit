@@ -37,3 +37,12 @@
 [submodule "sources/FitText"]
 	path = sources/FitText
 	url = https://github.com/davatron5000/FitText.js.git
+[submodule "sources/Dynamic-Carousel"]
+	path = sources/Dynamic-Carousel
+	url = https://github.com/Wilto/Dynamic-Carousel.git
+[submodule "sources/Respond"]
+	path = sources/Respond
+	url = https://github.com/scottjehl/Respond.git
+[submodule "sources/jquery-lightbox"]
+	path = sources/jquery-lightbox
+	url = https://github.com/krewenki/jquery-lightbox.git
