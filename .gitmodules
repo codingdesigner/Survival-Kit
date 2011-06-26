@@ -46,3 +46,6 @@
 [submodule "sources/jquery-lightbox"]
 	path = sources/jquery-lightbox
 	url = https://github.com/krewenki/jquery-lightbox.git
+[submodule "sources/scrollability"]
+	path = sources/scrollability
+	url = https://github.com/joehewitt/scrollability.git
