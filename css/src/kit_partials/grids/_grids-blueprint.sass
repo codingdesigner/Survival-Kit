@@ -1,13 +1,20 @@
 // The number of columns in the grid.
 $blueprint-grid-columns: $kit-total-cols !default
-
 // The width of a column
 $blueprint-grid-width: $kit-col-width !default
-
 // The amount of margin between columns
 $blueprint-grid-margin: $kit-gutter-width !default
-
-
-
 @import blueprint/grid
 
+// Background grid variables
+$grid-background-total-columns: $kit-total-cols
+$grid-background-column-width: $kit-col-width
+$grid-background-gutter-width: $kit-gutter-width
+$grid-background-baseline-height: $kit-baseline
+// $grid-background-offset: $kit-side-gutter-width
+@import compass/layout/grid-background
+
+
+.container
+  +container
+  +grid-background
