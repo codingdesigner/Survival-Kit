@@ -6,6 +6,14 @@
  *
  * Available at http://thecodingdesigner.com
  * twitter: http://twitter.com/canarymason */
+/* ------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------------ */
+/* This CSS was authored using Sass & Compass
+ * Download the source files here: 
+ * https://github.com/canarymason/The-Coding-Designers-Survival-Kit
+ * Learn more about Sass & Compass at http://compass-style.org/   */
+/* ------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------------ */
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
  * v2.0 | 20110126
@@ -49,13 +57,13 @@ table {
 .container, #page {
   *zoom: 1;
   margin: auto;
-  width: 984px;
+  width: 960px;
   max-width: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(1.22%, rgba(0, 0, 0, 0)), color-stop(1.22%, rgba(100, 100, 225, 0.25)), color-stop(15.447%, rgba(100, 100, 225, 0.25)), color-stop(15.447%, rgba(0, 0, 0, 0)), color-stop(17.886%, rgba(0, 0, 0, 0)), color-stop(17.886%, rgba(100, 100, 225, 0.25)), color-stop(32.114%, rgba(100, 100, 225, 0.25)), color-stop(32.114%, rgba(0, 0, 0, 0)), color-stop(34.553%, rgba(0, 0, 0, 0)), color-stop(34.553%, rgba(100, 100, 225, 0.25)), color-stop(48.78%, rgba(100, 100, 225, 0.25)), color-stop(48.78%, rgba(0, 0, 0, 0)), color-stop(51.22%, rgba(0, 0, 0, 0)), color-stop(51.22%, rgba(100, 100, 225, 0.25)), color-stop(65.447%, rgba(100, 100, 225, 0.25)), color-stop(65.447%, rgba(0, 0, 0, 0)), color-stop(67.886%, rgba(0, 0, 0, 0)), color-stop(67.886%, rgba(100, 100, 225, 0.25)), color-stop(82.114%, rgba(100, 100, 225, 0.25)), color-stop(82.114%, rgba(0, 0, 0, 0)), color-stop(84.553%, rgba(0, 0, 0, 0)), color-stop(84.553%, rgba(100, 100, 225, 0.25)), color-stop(98.78%, rgba(100, 100, 225, 0.25)), color-stop(98.78%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 1.22%, rgba(100, 100, 225, 0.25) 1.22%, rgba(100, 100, 225, 0.25) 15.447%, rgba(0, 0, 0, 0) 15.447%, rgba(0, 0, 0, 0) 17.886%, rgba(100, 100, 225, 0.25) 17.886%, rgba(100, 100, 225, 0.25) 32.114%, rgba(0, 0, 0, 0) 32.114%, rgba(0, 0, 0, 0) 34.553%, rgba(100, 100, 225, 0.25) 34.553%, rgba(100, 100, 225, 0.25) 48.78%, rgba(0, 0, 0, 0) 48.78%, rgba(0, 0, 0, 0) 51.22%, rgba(100, 100, 225, 0.25) 51.22%, rgba(100, 100, 225, 0.25) 65.447%, rgba(0, 0, 0, 0) 65.447%, rgba(0, 0, 0, 0) 67.886%, rgba(100, 100, 225, 0.25) 67.886%, rgba(100, 100, 225, 0.25) 82.114%, rgba(0, 0, 0, 0) 82.114%, rgba(0, 0, 0, 0) 84.553%, rgba(100, 100, 225, 0.25) 84.553%, rgba(100, 100, 225, 0.25) 98.78%, rgba(0, 0, 0, 0) 98.78%, rgba(0, 0, 0, 0) 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 1.22%, rgba(100, 100, 225, 0.25) 1.22%, rgba(100, 100, 225, 0.25) 15.447%, rgba(0, 0, 0, 0) 15.447%, rgba(0, 0, 0, 0) 17.886%, rgba(100, 100, 225, 0.25) 17.886%, rgba(100, 100, 225, 0.25) 32.114%, rgba(0, 0, 0, 0) 32.114%, rgba(0, 0, 0, 0) 34.553%, rgba(100, 100, 225, 0.25) 34.553%, rgba(100, 100, 225, 0.25) 48.78%, rgba(0, 0, 0, 0) 48.78%, rgba(0, 0, 0, 0) 51.22%, rgba(100, 100, 225, 0.25) 51.22%, rgba(100, 100, 225, 0.25) 65.447%, rgba(0, 0, 0, 0) 65.447%, rgba(0, 0, 0, 0) 67.886%, rgba(100, 100, 225, 0.25) 67.886%, rgba(100, 100, 225, 0.25) 82.114%, rgba(0, 0, 0, 0) 82.114%, rgba(0, 0, 0, 0) 84.553%, rgba(100, 100, 225, 0.25) 84.553%, rgba(100, 100, 225, 0.25) 98.78%, rgba(0, 0, 0, 0) 98.78%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 1.22%, rgba(100, 100, 225, 0.25) 1.22%, rgba(100, 100, 225, 0.25) 15.447%, rgba(0, 0, 0, 0) 15.447%, rgba(0, 0, 0, 0) 17.886%, rgba(100, 100, 225, 0.25) 17.886%, rgba(100, 100, 225, 0.25) 32.114%, rgba(0, 0, 0, 0) 32.114%, rgba(0, 0, 0, 0) 34.553%, rgba(100, 100, 225, 0.25) 34.553%, rgba(100, 100, 225, 0.25) 48.78%, rgba(0, 0, 0, 0) 48.78%, rgba(0, 0, 0, 0) 51.22%, rgba(100, 100, 225, 0.25) 51.22%, rgba(100, 100, 225, 0.25) 65.447%, rgba(0, 0, 0, 0) 65.447%, rgba(0, 0, 0, 0) 67.886%, rgba(100, 100, 225, 0.25) 67.886%, rgba(100, 100, 225, 0.25) 82.114%, rgba(0, 0, 0, 0) 82.114%, rgba(0, 0, 0, 0) 84.553%, rgba(100, 100, 225, 0.25) 84.553%, rgba(100, 100, 225, 0.25) 98.78%, rgba(0, 0, 0, 0) 98.78%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 1.22%, rgba(100, 100, 225, 0.25) 1.22%, rgba(100, 100, 225, 0.25) 15.447%, rgba(0, 0, 0, 0) 15.447%, rgba(0, 0, 0, 0) 17.886%, rgba(100, 100, 225, 0.25) 17.886%, rgba(100, 100, 225, 0.25) 32.114%, rgba(0, 0, 0, 0) 32.114%, rgba(0, 0, 0, 0) 34.553%, rgba(100, 100, 225, 0.25) 34.553%, rgba(100, 100, 225, 0.25) 48.78%, rgba(0, 0, 0, 0) 48.78%, rgba(0, 0, 0, 0) 51.22%, rgba(100, 100, 225, 0.25) 51.22%, rgba(100, 100, 225, 0.25) 65.447%, rgba(0, 0, 0, 0) 65.447%, rgba(0, 0, 0, 0) 67.886%, rgba(100, 100, 225, 0.25) 67.886%, rgba(100, 100, 225, 0.25) 82.114%, rgba(0, 0, 0, 0) 82.114%, rgba(0, 0, 0, 0) 84.553%, rgba(100, 100, 225, 0.25) 84.553%, rgba(100, 100, 225, 0.25) 98.78%, rgba(0, 0, 0, 0) 98.78%, rgba(0, 0, 0, 0) 100%);
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(14.583%, rgba(100, 100, 225, 0.25)), color-stop(14.583%, rgba(0, 0, 0, 0)), color-stop(17.083%, rgba(0, 0, 0, 0)), color-stop(17.083%, rgba(100, 100, 225, 0.25)), color-stop(31.667%, rgba(100, 100, 225, 0.25)), color-stop(31.667%, rgba(0, 0, 0, 0)), color-stop(34.167%, rgba(0, 0, 0, 0)), color-stop(34.167%, rgba(100, 100, 225, 0.25)), color-stop(48.75%, rgba(100, 100, 225, 0.25)), color-stop(48.75%, rgba(0, 0, 0, 0)), color-stop(51.25%, rgba(0, 0, 0, 0)), color-stop(51.25%, rgba(100, 100, 225, 0.25)), color-stop(65.833%, rgba(100, 100, 225, 0.25)), color-stop(65.833%, rgba(0, 0, 0, 0)), color-stop(68.333%, rgba(0, 0, 0, 0)), color-stop(68.333%, rgba(100, 100, 225, 0.25)), color-stop(82.917%, rgba(100, 100, 225, 0.25)), color-stop(82.917%, rgba(0, 0, 0, 0)), color-stop(85.417%, rgba(0, 0, 0, 0)), color-stop(85.417%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 14.583%, rgba(0, 0, 0, 0) 14.583%, rgba(0, 0, 0, 0) 17.083%, rgba(100, 100, 225, 0.25) 17.083%, rgba(100, 100, 225, 0.25) 31.667%, rgba(0, 0, 0, 0) 31.667%, rgba(0, 0, 0, 0) 34.167%, rgba(100, 100, 225, 0.25) 34.167%, rgba(100, 100, 225, 0.25) 48.75%, rgba(0, 0, 0, 0) 48.75%, rgba(0, 0, 0, 0) 51.25%, rgba(100, 100, 225, 0.25) 51.25%, rgba(100, 100, 225, 0.25) 65.833%, rgba(0, 0, 0, 0) 65.833%, rgba(0, 0, 0, 0) 68.333%, rgba(100, 100, 225, 0.25) 68.333%, rgba(100, 100, 225, 0.25) 82.917%, rgba(0, 0, 0, 0) 82.917%, rgba(0, 0, 0, 0) 85.417%, rgba(100, 100, 225, 0.25) 85.417%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 14.583%, rgba(0, 0, 0, 0) 14.583%, rgba(0, 0, 0, 0) 17.083%, rgba(100, 100, 225, 0.25) 17.083%, rgba(100, 100, 225, 0.25) 31.667%, rgba(0, 0, 0, 0) 31.667%, rgba(0, 0, 0, 0) 34.167%, rgba(100, 100, 225, 0.25) 34.167%, rgba(100, 100, 225, 0.25) 48.75%, rgba(0, 0, 0, 0) 48.75%, rgba(0, 0, 0, 0) 51.25%, rgba(100, 100, 225, 0.25) 51.25%, rgba(100, 100, 225, 0.25) 65.833%, rgba(0, 0, 0, 0) 65.833%, rgba(0, 0, 0, 0) 68.333%, rgba(100, 100, 225, 0.25) 68.333%, rgba(100, 100, 225, 0.25) 82.917%, rgba(0, 0, 0, 0) 82.917%, rgba(0, 0, 0, 0) 85.417%, rgba(100, 100, 225, 0.25) 85.417%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 14.583%, rgba(0, 0, 0, 0) 14.583%, rgba(0, 0, 0, 0) 17.083%, rgba(100, 100, 225, 0.25) 17.083%, rgba(100, 100, 225, 0.25) 31.667%, rgba(0, 0, 0, 0) 31.667%, rgba(0, 0, 0, 0) 34.167%, rgba(100, 100, 225, 0.25) 34.167%, rgba(100, 100, 225, 0.25) 48.75%, rgba(0, 0, 0, 0) 48.75%, rgba(0, 0, 0, 0) 51.25%, rgba(100, 100, 225, 0.25) 51.25%, rgba(100, 100, 225, 0.25) 65.833%, rgba(0, 0, 0, 0) 65.833%, rgba(0, 0, 0, 0) 68.333%, rgba(100, 100, 225, 0.25) 68.333%, rgba(100, 100, 225, 0.25) 82.917%, rgba(0, 0, 0, 0) 82.917%, rgba(0, 0, 0, 0) 85.417%, rgba(100, 100, 225, 0.25) 85.417%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 14.583%, rgba(0, 0, 0, 0) 14.583%, rgba(0, 0, 0, 0) 17.083%, rgba(100, 100, 225, 0.25) 17.083%, rgba(100, 100, 225, 0.25) 31.667%, rgba(0, 0, 0, 0) 31.667%, rgba(0, 0, 0, 0) 34.167%, rgba(100, 100, 225, 0.25) 34.167%, rgba(100, 100, 225, 0.25) 48.75%, rgba(0, 0, 0, 0) 48.75%, rgba(0, 0, 0, 0) 51.25%, rgba(100, 100, 225, 0.25) 51.25%, rgba(100, 100, 225, 0.25) 65.833%, rgba(0, 0, 0, 0) 65.833%, rgba(0, 0, 0, 0) 68.333%, rgba(100, 100, 225, 0.25) 68.333%, rgba(100, 100, 225, 0.25) 82.917%, rgba(0, 0, 0, 0) 82.917%, rgba(0, 0, 0, 0) 85.417%, rgba(100, 100, 225, 0.25) 85.417%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
   background-position: left top;
 }
 .container:after, #page:after {
@@ -705,21 +713,6 @@ img.right {
   margin: 12px 0 12px 24px;
 }
 
-body.markup-elements #page {
-  *zoom: 1;
-  margin: auto;
-  width: 95%;
-  max-width: 100%;
-  padding: 0 1.22%;
-}
-body.markup-elements #page:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
 body.markup-elements h1.section-title {
   font-size: 2.25em;
   line-height: 1.524em;
@@ -875,6 +868,11 @@ body.markup-elements article.element .example .markup + .show-source + p {
     overflow: hidden;
     visibility: hidden;
   }
+  #page > * {
+    clear: both;
+    margin-left: 0.938%;
+    margin-right: 0.938%;
+  }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
   #page {
@@ -896,6 +894,11 @@ body.markup-elements article.element .example .markup + .show-source + p {
     clear: both;
     overflow: hidden;
     visibility: hidden;
+  }
+  #page > * {
+    clear: both;
+    margin-left: 0.625%;
+    margin-right: 0.625%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
@@ -919,6 +922,11 @@ body.markup-elements article.element .example .markup + .show-source + p {
     overflow: hidden;
     visibility: hidden;
   }
+  #page > * {
+    clear: both;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 768px) {
   #page {
@@ -940,6 +948,11 @@ body.markup-elements article.element .example .markup + .show-source + p {
     clear: both;
     overflow: hidden;
     visibility: hidden;
+  }
+  #page > * {
+    clear: both;
+    margin-left: 1.432%;
+    margin-right: 1.432%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -963,6 +976,11 @@ body.markup-elements article.element .example .markup + .show-source + p {
     overflow: hidden;
     visibility: hidden;
   }
+  #page > * {
+    clear: both;
+    margin-left: 1.22%;
+    margin-right: 1.22%;
+  }
 }
 @media screen and (min-width: 1200px) {
   #page {
@@ -984,5 +1002,10 @@ body.markup-elements article.element .example .markup + .show-source + p {
     clear: both;
     overflow: hidden;
     visibility: hidden;
+  }
+  #page > * {
+    clear: both;
+    margin-left: 2.493%;
+    margin-right: 2.493%;
   }
 }
