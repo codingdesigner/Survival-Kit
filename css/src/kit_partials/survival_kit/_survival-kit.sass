@@ -4,20 +4,6 @@
 @import ../mixins/helpers
 
 body.markup-elements
-  #page
-    // +container
-    *zoom: 1
-    margin: auto
-    width: 95%
-    max-width: 100%
-    padding: 0 1.22%
-    &:after
-      content: "\0020"
-      display: block
-      height: 0
-      clear: both
-      overflow: hidden
-      visibility: hidden
   h1.section-title
     +adjust-font-size-to($ms4)
     background-color: $lightgray
