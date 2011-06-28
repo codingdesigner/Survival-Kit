@@ -6,6 +6,14 @@
   
   Available at http://thecodingdesigner.com
   twitter: http://twitter.com/canarymason
+
+
+/* ------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------
+/* This CSS was authored using Sass & Compass
+  Download the source files here: 
+  https://github.com/canarymason/The-Coding-Designers-Survival-Kit
+  Learn more about Sass & Compass at http://compass-style.org/  
   
   
 // Chapter I: INTRODUCTION
@@ -67,6 +75,8 @@
 // ✔ 3. PICK A CSS RESET
   There are subtle differences and approaches with the following CSS resets. 
   Eric Meyer is set by default, but the others are worth trying. 
+/* ------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------
 /* CSS RESET  
 // Eric Meyer reset
 @import kit_partials/reset/_meyer-reset
@@ -84,7 +94,6 @@
 @import kit_partials/grids/_grids-all.sass
 // @import my_partials/grids/_grids-all.sass
 // BLUEPRINT
-// @import blueprint/grid
 // @import kit_partials/grids/_grids-blueprint.sass
 // @import my_partials/grids/_grids-blueprint.sass
 // alternately, import all of blueprint - use caution
@@ -165,7 +174,8 @@
 
 // ✔ 11. RESPONSIVE --------------------------------------------------
   Create layouts for a number of device-size breakpoints
-@import kit_partials/responsive/_responsive.sass
+// @import kit_partials/responsive/_responsive-susy.sass
+// @import kit_partials/responsive/_responsive-blueprint.sass
 
 // ✔ 12. Modernizr & Browser Support -------------------------------------------
   Use modernizr (http://modernizr.com) to manage styles for less-capable devices
