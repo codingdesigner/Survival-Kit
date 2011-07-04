@@ -7,27 +7,37 @@ a
 
 /* Headings --------------------------------------------------------------
 
-#{headers(all)}
+// #{headers(all)}, 
+.h1, .h2, .h3, .h4, .h5, .h6
   @extend .headers
   font-weight: normal
+  text-transform: uppercase
 
-h1
+.h1
   +adjust-font-size-to($ms6)
-
-h2
+.h2
   +adjust-font-size-to($ms5)
-
-h3
+.h3
   +adjust-font-size-to($ms4)
-
-h4
+.h4
   +adjust-font-size-to($ms3)
-
-h5
+.h5
   +adjust-font-size-to($ms2)
-
-h6
+.h6
   +adjust-font-size-to($ms1)
+  
+h1
+  @extend .h1
+h2
+  @extend .h2
+h3
+  @extend .h3
+h4
+  @extend .h4
+h5
+  @extend .h5
+h6
+  @extend .h6
 
 /* Inline --------------------------------------------------------------
 
@@ -160,10 +170,6 @@ tfoot
 caption
   @extend .allcaps
   
-
-/* Forms --------------------------------------------------------------
-// too many form rules to list here. split into its own partial
-@import kit_partials/forms/_form-defaults
 
   
   
