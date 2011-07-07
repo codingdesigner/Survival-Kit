@@ -49,6 +49,4 @@
 [submodule "sources/scrollability"]
 	path = sources/scrollability
 	url = https://github.com/joehewitt/scrollability.git
-[submodule "scrollability"]
-	path = scrollability
-	url = https://github.com/joehewitt/scrollability.git
+
