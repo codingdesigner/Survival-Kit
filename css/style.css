@@ -73,7 +73,6 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-/* The following classes are for use with @extend. */
 .serif, body {
   font-family: Georgia, serif;
 }
@@ -90,7 +89,7 @@ html {
   letter-spacing: 0.1em;
 }
 
-.headers, h1, h2, h3, h4, h5, h6 {
+.headers, .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
   font-family: sans-serif;
 }
 
@@ -165,36 +164,36 @@ a:active {
 }
 
 /* Headings -------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 {
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
   font-weight: normal;
 }
 
-h1 {
+.h1, h1 {
   font-size: 3.375em;
   line-height: 1.016em;
 }
 
-h2 {
+.h2, h2 {
   font-size: 2.963em;
   line-height: 1.157em;
 }
 
-h3 {
+.h3, h3 {
   font-size: 2.25em;
   line-height: 1.524em;
 }
 
-h4 {
+.h4, h4 {
   font-size: 1.975em;
   line-height: 1.736em;
 }
 
-h5 {
+.h5, h5 {
   font-size: 1.5em;
   line-height: 1.143em;
 }
 
-h6 {
+.h6, h6 {
   font-size: 1.317em;
   line-height: 1.302em;
 }
@@ -346,6 +345,22 @@ tr.even td {
 
 tfoot {
   font-weight: bold;
+}
+
+/* Images -------------------------------------------------------------- */
+img {
+  vertical-align: text-bottom;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+img.left {
+  float: left;
+  margin: 12px 24px 12px 0;
+}
+img.right {
+  float: right;
+  margin: 12px 0 12px 24px;
 }
 
 /* Forms -------------------------------------------------------------- */
@@ -683,21 +698,6 @@ input[type="radio"], input[type="checkbox"] {
 
 textarea, input:not([type="radio"]) {
   max-width: 100%;
-}
-
-/* Images -------------------------------------------------------------- */
-img {
-  vertical-align: text-bottom;
-  max-width: 100%;
-  -ms-interpolation-mode: bicubic;
-}
-img.left {
-  float: left;
-  margin: 12px 24px 12px 0;
-}
-img.right {
-  float: right;
-  margin: 12px 0 12px 24px;
 }
 
 body.markup-elements h1.section-title {
