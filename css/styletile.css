@@ -1,0 +1,435 @@
+/* The Coding Designer's Survival Kit
+ * A framework for designing websites in the browser. 
+ *
+ * Much love to:
+ * Sass, Compass, HTML5 Boilerplate, Modernizr, Formalize, and more
+ *
+ * Available at http://thecodingdesigner.com
+ * twitter: http://twitter.com/canarymason */
+/* ------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------------ */
+/* This CSS was authored using Sass & Compass
+ * Download the source files here: 
+ * https://github.com/canarymason/The-Coding-Designers-Survival-Kit
+ * Learn more about Sass & Compass at http://compass-style.org/   */
+/* ------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------------ */
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* DEFINE THE GRID CONTAINER -------------------------------------------------------------- */
+.container, #page {
+  *zoom: 1;
+  margin: auto;
+  width: 1032px;
+  max-width: 100%;
+}
+.container:after, #page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wireframe {
+  outline: 1px dashed red;
+}
+
+/* Links -------------------------------------------------------------- */
+/* Typography -------------------------------------------------------------- */
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.serif, body {
+  font-family: Georgia, serif;
+}
+
+.sans, header aside {
+  font-family: sans-serif;
+}
+
+.mono, pre, code, tt {
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+}
+
+.caps, .allcaps, caption, .smallcaps {
+  letter-spacing: 0.1em;
+}
+
+.headers, .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+  font-family: sans-serif;
+}
+
+.allcaps, caption {
+  text-transform: uppercase;
+}
+
+.amp {
+  font-family: GoudyBookletter1911Regular, "Goudy Old Style", Baskerville, Palatino, Georgia, serif;
+}
+
+.smallcaps {
+  font-variant: small-caps;
+}
+
+/* Body -------------------------------------------------------------- */
+body {
+  color: black;
+  background: white;
+}
+
+/* Selected Text -------------------------------------------------------------- */
+/* -moz- must be declared separately */
+::-moz-selection {
+  color: black;
+  background: #ff69b4;
+  text-shadow: none;
+}
+
+::selection {
+  color: black;
+  background: #ff69b4;
+  text-shadow: none;
+}
+
+/* Establish baseline rhythm
+ * from compass/typography/_vertical_rhythm */
+body {
+  font-size: 87.5%;
+  line-height: 1.714em;
+}
+
+html > body {
+  font-size: 14px;
+}
+
+/* Links -------------------------------------------------------------- */
+a {
+  color: #ff69b4;
+}
+a:visited {
+  color: #ff69b4;
+}
+a:hover {
+  color: #69ffb4;
+}
+a:active {
+  color: #69ffb4;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #ff69b4;
+}
+a:visited {
+  border-bottom-color: #ff69b4;
+}
+a:hover {
+  border-bottom-color: #69ffb4;
+}
+a:active {
+  border-bottom-color: #69ffb4;
+}
+
+/* Headings -------------------------------------------------------------- */
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.h1, h1 {
+  font-size: 3.375em;
+  line-height: 1.524em;
+}
+
+.h2, h2 {
+  font-size: 2.963em;
+  line-height: 1.157em;
+}
+
+.h3, h3 {
+  font-size: 2.25em;
+  line-height: 1.524em;
+}
+
+.h4, h4 {
+  font-size: 1.975em;
+  line-height: 1.736em;
+}
+
+.h5, h5 {
+  font-size: 1.5em;
+  line-height: 2.286em;
+}
+
+.h6, h6 {
+  font-size: 1.317em;
+  line-height: 1.302em;
+}
+
+/* Inline -------------------------------------------------------------- */
+cite, em, dfn, address, i {
+  font-style: italic;
+}
+
+strong, dfn, b {
+  font-weight: bold;
+}
+
+sup, sub {
+  font-size: smaller;
+  line-height: 0;
+}
+
+sup {
+  vertical-align: super;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+ins {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+mark {
+  background: red;
+  background-color: rgba(255, 255, 0, 0.5);
+  text-shadow: none;
+}
+
+small {
+  font-size: 0.878em;
+  line-height: 1.953em;
+}
+
+q {
+  font-style: italic;
+  quotes: "“" "”";
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+q em {
+  font-style: normal;
+}
+
+/* Block -------------------------------------------------------------- */
+p {
+  margin-bottom: 1.714em;
+}
+
+pre {
+  margin: 1.714em;
+  white-space: pre;
+}
+
+blockquote {
+  margin: 1.714em 24px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Lists -------------------------------------------------------------- */
+ol, ul, dl {
+  margin-bottom: 1.714em;
+  margin-left: 24px;
+}
+
+dl {
+  margin-left: 0;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+li ul {
+  list-style-type: circle;
+}
+
+dt {
+  margin-top: 1.714em;
+  font-style: italic;
+  color: black;
+}
+dt:first-of-type {
+  margin-top: 0em;
+}
+
+dd {
+  padding-left: 24px;
+}
+
+/* Tables -------------------------------------------------------------- */
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  margin-bottom: 1.714em;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+table, td, th {
+  vertical-align: top;
+}
+
+th, thead th {
+  font-weight: bold;
+}
+
+th, td, caption {
+  padding: 0.857em;
+  text-align: left;
+}
+
+table, th {
+  border-bottom-style: solid;
+  border-bottom-width: 0.071em;
+  padding-bottom: 0.786em;
+  border-color: gray;
+  border-style: dotted;
+}
+
+tr.even td {
+  background-color: gray;
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+/* Images -------------------------------------------------------------- */
+img {
+  vertical-align: text-bottom;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+img.left {
+  float: left;
+  margin: 12px 24px 12px 0;
+}
+img.right {
+  float: right;
+  margin: 12px 0 12px 24px;
+}
+
+/* LAYOUT -------------------------------------------------------------- */
+#page {
+  width: 95%;
+}
+#page header {
+  clear: both;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+#page header h1 {
+  display: inline;
+  float: left;
+  width: 74.419%;
+  margin-right: 2.326%;
+}
+#page header aside {
+  display: inline;
+  float: left;
+  width: 23.256%;
+  margin-right: 2.326%;
+  display: inline;
+  float: right;
+  margin-right: 0%;
+  #margin-left: -24px;
+}
+#page #main {
+  clear: both;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+#page #main .text-examples {
+  display: inline;
+  float: left;
+  width: 48.837%;
+  margin-right: 2.326%;
+}
+#page #main .graphic-examples {
+  display: inline;
+  float: left;
+  width: 48.837%;
+  margin-right: 2.326%;
+  display: inline;
+  float: right;
+  margin-right: 0%;
+  #margin-left: -24px;
+}
+#page footer {
+  clear: both;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+/* SITE-WIDE DESIGN -------------------------------------------------------------- */
+header aside {
+  text-align: right;
+  color: gray;
+}
+
+.group {
+  margin-bottom: 1.714em;
+}
+
+h5.label {
+  color: gray;
+}
