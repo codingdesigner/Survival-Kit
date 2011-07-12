@@ -1,5 +1,6 @@
 require 'susy'
-require 'fancy-buttons'  
+# require 'fancy-buttons'  
+# require 'sassy-buttons'  
 # Require any additional compass plugins here.
 
 project_type = :stand_alone
@@ -10,7 +11,7 @@ sass_dir = "src"
 images_dir = "images"
 javascripts_dir = "../js"
 fonts_dir = "fonts"
-output_style = :nested
+# output_style = :nested
 # output_style = :compact
 # output_style = :expanded
 line_comments = false

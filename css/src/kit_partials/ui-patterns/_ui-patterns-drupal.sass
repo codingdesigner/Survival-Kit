@@ -1,0 +1,85 @@
+// see: elements-ui-patterns-drupal.html for markup
+@import ../cms/drupal/_drupal-helpers
+
+
+// SITE NAME
+#site-name
+  a
+    +remove-link-underlines
+    
+// MENUS
+#main-menu
+  +horizontal-list(0.5em)
+
+// SEARCH FIELD
+
+// MESSAGES
+// uncomment to override or replace styles from _ui-patterns-common
+// .messages
+//   border: 1px solid $base-color
+//   padding: $kit-baseline-half 0.5em
+//   p:last-child
+//     margin-bottom: 0
+// .status, .warning, .error
+//   @extend .messages
+// .status
+//   border-color: $green
+//   color: $green
+// .warning
+//   border-color: $orange
+//   color: $orange
+// .error
+//   border-color: $red
+//   color: $red
+
+// BLOCK
+
+// TABS
+ul.tabs
+  +tabs
+  
+// NEW USER FORM
+.form-required
+  color: $red
+  
+// LOG IN FORM
+
+// NEW PASSWORD FORM
+  
+// PAGERS
+// uncomment to override or replace styles from _ui-patterns-common
+// ul.pager
+//   +horizontal-list(0.5em)
+//   a
+//     +remove-link-underlines
+
+// RSS LINK
+a.feed-icon
+  +remove-link-underlines
+  
+// INLINE LINKS
+ul.inline
+  +inline-list
+  
+// TAXONOMY LIST
+.field-type-taxonomy-term-reference
+  .field-item
+    display: inline
+  
+// FIELDS
+.field-label-above
+  .field-label
+    display: block
+    
+// NODE PAGE
+
+// COMMENTS
+#comments
+  .comment
+    +vertical-separation
+    &:last-child
+      +un-vertical-separation
+  .indented
+    padding-left: 1em
+    
+// COMMENT FORM

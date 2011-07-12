@@ -28,3 +28,25 @@
 [submodule "sources/jquery-ui"]
 	path = sources/jquery-ui
 	url = https://github.com/jquery/jquery-ui.git
+[submodule "sources/pie"]
+	path = sources/pie
+	url = https://github.com/lojjic/PIE.git
+[submodule "sources/modernizr"]
+	path = sources/modernizr
+	url = https://github.com/Modernizr/Modernizr.git
+[submodule "sources/FitText"]
+	path = sources/FitText
+	url = https://github.com/davatron5000/FitText.js.git
+[submodule "sources/Dynamic-Carousel"]
+	path = sources/Dynamic-Carousel
+	url = https://github.com/Wilto/Dynamic-Carousel.git
+[submodule "sources/Respond"]
+	path = sources/Respond
+	url = https://github.com/scottjehl/Respond.git
+[submodule "sources/jquery-lightbox"]
+	path = sources/jquery-lightbox
+	url = https://github.com/krewenki/jquery-lightbox.git
+[submodule "sources/scrollability"]
+	path = sources/scrollability
+	url = https://github.com/joehewitt/scrollability.git
+

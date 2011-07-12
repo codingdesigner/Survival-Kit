@@ -1,0 +1,509 @@
+<!doctype html>  
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Drupal UI Patterns</title>
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-2.0.min.js"></script>
+  
+  <!-- Also put Selectivizr at the top -->
+  <script type="text/javascript" src="js/libs/mootools-core-1.3.1-full-compat-yc.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="js/libs/selectivizr.js"></script>
+    <noscript><link rel="stylesheet" href="css/selectivizr.css" /></noscript>
+  <![endif]-->
+  
+
+</head>
+
+<body lang="en" class="markup-elements">
+
+  <div id="page">
+    <header>
+      <hgroup>
+        <h1>The Coding Designer's Survival Guide</h1>
+        <h2>Drupal 7 UI Patterns</h2>
+      </hgroup>
+    </header>
+    
+    <div id="main" role="main">
+      <section id="elements">
+        
+        
+        <article id="drupal-site-name" class="element">
+          <h2 class="element-title">Site Name</h2>
+          <div class="markup">
+            <h1 id="site-name"><a href="/" title="Home" rel="home"><span>My Awesome Site</span></a></h1>
+          </div>
+        </article>
+        
+        <article id="menu" class="element">
+          <h2 class="element-title">Menus</h2>
+          <div class="markup">
+            <ul id="main-menu" class="links inline clearfix">
+              <li class="menu-201 first"><a href="/">Home</a></li>
+              <li class="menu-365 active-trail active"><a href="/blog" title="Blog" class="active-trail active">Blog</a></li>
+              <li class="menu-366 last"><a href="/my-page" title="My Page">My Page</a></li>
+            </ul>
+          </div>
+        </article>
+        
+        <article id="breadbrumbs" class="element">
+          <h2 class="element-title">Breadcrumbs</h2>
+          <div class="markup">
+            <div class="breadcrumb">
+              <a href="/">Home</a> » 
+              <a href="/blog" title="Blog">Blog</a>
+            </div>
+          </div>
+        </article>
+        
+        <article id="search" class="element">
+          <h2 class="element-title">Search Field</h2>
+          <div class="markup">
+            <div id="block-search-form" class="block block-search contextual-links-region">
+              <div class="content">
+                <form action="" method="post" id="search-block-form" accept-charset="UTF-8">
+                  <div>
+                    <div class="container-inline">
+                      <h2 class="element-invisible">Search form</h2>
+                      <div class="form-item form-type-searchfield form-item-search-block-form">
+                        <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+                        <input title="Enter the terms you wish to search for." type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text form-search">
+                      </div>
+                      <div class="form-actions form-wrapper" id="edit-actions">
+                        <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article id="drupal-messages" class="element">
+          <h2 class="element-title">Messages</h2>
+          <div class="markup">
+            <div class="messages status">
+              <h2 class="element-invisible" style="display: none;">Status message</h2>
+              <p> This is <em>status</em> message. </p>
+            </div>
+            <div class="messages warning">
+              <h2 class="element-invisible" style="display: none;">Status message</h2>
+              <p> This is <em>warning</em> message. </p>
+            </div>
+            <div class="messages error">
+              <h2 class="element-invisible" style="display: none;">Status message</h2>
+              <p> This is <em>error</em> message. </p>
+            </div>
+          </div>
+        </article>
+        
+        <article id="block" class="element">
+          <h2 class="element-title">Block</h2>
+          <div class="markup">
+            <div id="block-block-1" class="block block-block">
+              <h2>This is a Custom Block</h2>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article id="tabs" class="element">
+          <h2 class="element-title">Tabs</h2>
+          <div class="markup">
+            <div class="tabs">
+              <h2 class="element-invisible">Primary tabs</h2>
+              <ul class="tabs primary">
+                <li class="active"><a href="/blog/about" class="active">View<span class="element-invisible">(active tab)</span></a></li>
+                <li><a href="/node/52/edit">Edit</a></li>
+                <li><a href="/node/52/devel">Devel</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        
+        <article id="new-account-form" class="element">
+          <h2 class="element-title">New User Form</h2>
+          <div class="markup">
+            <div id="block-system-main" class="block block-system">
+              <div class="content">
+                <form class="user-info-from-cookie" enctype="multipart/form-data" action="/user/register" method="post" id="user-register-form" accept-charset="UTF-8">
+                  <div>
+                    <div class="form-item form-type-textfield form-item-name">
+                      <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
+                      <input class="username form-text required" type="text" id="edit-name" name="name" value="" size="60" maxlength="60">
+                      <div class="description">Spaces are allowed; punctuation is not allowed except for periods, hyphens, apostrophes, and underscores.</div>
+                    </div>
+                    <div class="form-item form-type-emailfield form-item-mail">
+                      <label for="edit-mail">E-mail address <span class="form-required" title="This field is required.">*</span></label>
+                      <input type="email" id="edit-mail" name="mail" value="" size="60" maxlength="254" class="form-text form-email required">
+                      <div class="description">A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.</div>
+                    </div>
+                    <input type="hidden" name="timezone" value="America/New_York">
+                    <input type="hidden" name="form_build_id" value="form-5ZOqvNO7BiBFYWgXdre26qBbXM5YuyRLfOsdc1Kx9KU">
+                    <input type="hidden" name="form_id" value="user_register_form">
+                    <div class="form-actions form-wrapper" id="edit-actions">
+                      <input type="submit" id="edit-submit" name="op" value="Create new account" class="form-submit">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article id="login-form" class="element">
+          <h2 class="element-title">Log In Form</h2>
+          <div class="markup">
+            <div id="block-system-main" class="block block-system">
+              <div class="content">
+                <form action="/user" method="post" id="user-login" accept-charset="UTF-8">
+                  <div>
+                    <div class="form-item form-type-textfield form-item-name">
+                      <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
+                      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+                      <div class="description">Enter your d7 username.</div>
+                    </div>
+                    <div class="form-item form-type-password form-item-pass">
+                      <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+                      <input type="password" id="edit-pass" name="pass" value="" size="60" maxlength="128" class="form-text required">
+                      <div class="description">Enter the password that accompanies your username.</div>
+                    </div>
+                    <input type="hidden" name="form_build_id" value="form-XW71tLWvMNpumkgW-wKMOpDRUN0cPt62fr5Q0M7KNzo">
+                    <input type="hidden" name="form_id" value="user_login">
+                    <div class="form-actions form-wrapper" id="edit-actions">
+                      <input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article id="new-password-form" class="element">
+          <h2 class="element-title">New Password Form</h2>
+          <div class="markup">
+            <div id="block-system-main" class="block block-system">
+              <div class="content">
+                <form action="/user/password" method="post" id="user-pass" accept-charset="UTF-8">
+                  <div>
+                    <div class="form-item form-type-textfield form-item-name">
+                      <label for="edit-name">Username or e-mail address <span class="form-required" title="This field is required.">*</span></label>
+                      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="254" class="form-text required">
+                    </div>
+                    <input type="hidden" name="form_build_id" value="form-P9tzA7PRYI8Y3TxPo9aBfFXR3hVb38lqzMLrZE1O9VE">
+                    <input type="hidden" name="form_id" value="user_pass">
+                    <div class="form-actions form-wrapper" id="edit-actions">
+                      <input type="submit" id="edit-submit" name="op" value="E-mail new password" class="form-submit">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article id="pager" class="element">
+          <h2 class="element-title">Pager</h2>
+          <div class="markup">
+            <ul class="pager">
+              <li class="pager-first first"><a href="/node" title="Go to first page" class="active">« first</a></li>
+              <li class="pager-previous"><a href="/node" title="Go to previous page" class="active">‹ previous</a></li>
+              <li class="pager-item"><a href="/node" title="Go to page 1" class="active">1</a></li>
+              <li class="pager-current">2</li>
+              <li class="pager-item"><a href="/node?page=2" title="Go to page 3" class="active">3</a></li>
+              <li class="pager-next"><a href="/node?page=2" title="Go to next page" class="active">next ›</a></li>
+              <li class="pager-last last"><a href="/node?page=2" title="Go to last page" class="active">last »</a></li>
+            </ul>
+          </div>
+        </article>
+        
+        <article id="rss-link" class="element">
+          <h2 class="element-title">RSS Link</h2>
+          <div class="markup">
+            <a href="/rss.xml" class="feed-icon" title="Subscribe to d7 RSS"><img src="http://d7/misc/feed.png" alt="Subscribe to d7 RSS"></a>
+          </div>
+        </article>
+        
+        <article id="links" class="element">
+          <h2 class="element-title">Inline Links</h2>
+          <div class="markup">
+            <ul class="links inline">
+              <li class="comment-add first last active"><a href="/node/1#comment-form" title="Share your thoughts and opinions related to this posting." class="active">Add new comment</a></li>
+            </ul>
+          </div>
+        </article>
+        
+        <article id="taxonomy" class="element">
+          <h2 class="element-title">Taxonomy List</h2>
+          <div class="markup">
+            <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above">
+              <div class="field-label">Tags:&nbsp;</div>
+              <div class="field-items">
+                <div class="field-item even"><a href="/taxonomy/term/1">foo</a></div>
+                <div class="field-item odd"><a href="/taxonomy/term/2">bar</a></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article id="field-image" class="element">
+          <h2 class="element-title">Image Field</h2>
+          <div class="markup">
+            <div class="field field-name-field-image field-type-image field-label-hidden">
+              <div class="field-items">
+                <div class="field-item even"><img src="http://dummyimage.com/100x100/ccc/fff" alt="placeholder image" /></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article id="node" class="element">
+          <h2 class="element-title">Node Page</h2>
+          <div class="markup">
+            <h1>This is the node title</h1>
+            <div id="node-1" class="node node-article node-promoted clearfix">
+              <div class="submitted"> Submitted by <span class="username">Anonymous (not verified)</span> on Sat, 01/15/2011 - 16:14 </div>
+              <div class="content">
+                <div class="field field-name-field-image field-type-image field-label-hidden">
+                  <div class="field-items">
+                    <div class="field-item even"><img src="http://dummyimage.com/100x100/ccc/fff" alt="placeholder image" /></div>
+                  </div>
+                </div>
+                <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                  <div class="field-items">
+                    <div class="field-item even">
+                      <p>Ad esca ludus. Adipiscing autem defui similis utinam. Abluo causa duis esca meus nostrud si volutpat.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above">
+                  <div class="field-label">Tags:&nbsp;</div>
+                  <div class="field-items">
+                    <div class="field-item even"><a href="/taxonomy/term/1">foo</a></div>
+                    <div class="field-item odd"><a href="/taxonomy/term/2">bar</a></div>
+                  </div>
+                </div>
+              </div>
+              <ul class="links inline">
+                <li class="comment-add first last active"><a href="/node/1#comment-form" title="Share your thoughts and opinions related to this posting." class="active">Add new comment</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        
+        <article id="comments" class="element">
+          <h2 class="element-title">Comments</h2>
+          <div class="markup">
+            <div id="comments" class="comment-wrapper">
+              <h2 class="title">Comments</h2>
+              <a id="comment-1"></a>
+              <div class="comment comment-by-viewer clearfix">
+                <h3><a href="/comment/1#comment-1" class="permalink" rel="bookmark">First</a></h3>
+                <div class="submitted"> <a href="/comment/1#comment-1" class="permalink" rel="bookmark">Permalink</a> Submitted by <a href="/user/1" title="View user profile." class="username">admin</a> on Wed, 03/09/2011 - 23:52 </div>
+                <div class="content">
+                  <div class="field field-name-comment-body field-type-text-long field-label-hidden">
+                    <div class="field-items">
+                      <div class="field-item even">
+                        <p>This is the first comment</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="links inline">
+                  <li class="comment-delete first"><a href="/comment/1/delete">delete</a></li>
+                  <li class="comment-edit"><a href="/comment/1/edit">edit</a></li>
+                  <li class="comment-reply last"><a href="/comment/reply/1/1">reply</a></li>
+                </ul>
+              </div>
+              <a id="comment-2"></a>
+              <div class="comment comment-by-viewer clearfix">
+                <h3><a href="/comment/2#comment-2" class="permalink" rel="bookmark">Second</a></h3>
+                <div class="submitted"> <a href="/comment/2#comment-2" class="permalink" rel="bookmark">Permalink</a> Submitted by <a href="/user/1" title="View user profile." class="username">admin</a> on Wed, 03/09/2011 - 23:53 </div>
+                <div class="content">
+                  <div class="field field-name-comment-body field-type-text-long field-label-hidden">
+                    <div class="field-items">
+                      <div class="field-item even">
+                        <p>This is the second comment.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="links inline">
+                  <li class="comment-delete first"><a href="/comment/2/delete">delete</a></li>
+                  <li class="comment-edit"><a href="/comment/2/edit">edit</a></li>
+                  <li class="comment-reply last"><a href="/comment/reply/1/2">reply</a></li>
+                </ul>
+              </div>
+              <div class="indented"><a id="comment-3"></a>
+                <div class="comment comment-by-viewer clearfix">
+                  <h3><a href="/comment/3#comment-3" class="permalink" rel="bookmark">reply</a></h3>
+                  <div class="submitted"> <a href="/comment/3#comment-3" class="permalink" rel="bookmark">Permalink</a> Submitted by <a href="/user/1" title="View user profile." class="username">admin</a> on Wed, 03/09/2011 - 23:53 </div>
+                  <div class="content">
+                    <div class="field field-name-comment-body field-type-text-long field-label-hidden">
+                      <div class="field-items">
+                        <div class="field-item even">
+                          <p>This is a reply to the second comment.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="links inline">
+                    <li class="comment-delete first"><a href="/comment/3/delete">delete</a></li>
+                    <li class="comment-edit"><a href="/comment/3/edit">edit</a></li>
+                    <li class="comment-reply last"><a href="/comment/reply/1/3">reply</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article id="comment-form" class="element">
+          <h2 class="element-title">Comment Form</h2>
+          <div class="markup">
+            <h2 class="title comment-form">Add new comment</h2>
+            <form class="comment-form" action="/comment/reply/1" method="post" id="comment-form" accept-charset="UTF-8">
+              <div>
+                <div id="edit-author--2" class="form-item form-type-item">
+                  <label for="edit-author--2">Your name </label>
+                  <a href="/user/1" title="View user profile." class="username">admin</a> </div>
+                <div class="form-item form-type-textfield form-item-subject">
+                  <label for="edit-subject">Subject </label>
+                  <input type="text" id="edit-subject" name="subject" value="" size="60" maxlength="64" class="form-text">
+                </div>
+                <div class="field-type-text-long field-name-comment-body field-widget-text-textarea form-wrapper" id="edit-comment-body">
+                  <div id="comment-body-add-more-wrapper">
+                    <div class="text-format-wrapper">
+                      <div class="form-item form-type-textarea form-item-comment-body-und-0-value">
+                        <label for="edit-comment-body-und-0-value">Comment <span class="form-required" title="This field is required.">*</span></label>
+                        <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+                          <textarea class="text-full form-textarea required" id="edit-comment-body-und-0-value" name="comment_body[und][0][value]" cols="60" rows="5"></textarea>
+                          <div class="grippie"></div>
+                        </div>
+                      </div>
+                      <fieldset class="filter-wrapper form-wrapper" id="edit-comment-body-und-0-format">
+                        <div class="fieldset-wrapper">
+                          <div class="filter-help form-wrapper" id="edit-comment-body-und-0-format-help">
+                            <p><a href="/filter/tips">More information about text formats</a></p>
+                          </div>
+                          <div class="form-item form-type-select form-item-comment-body-und-0-format">
+                            <label for="edit-comment-body-und-0-format--2">Text format </label>
+                            <select class="filter-list form-select" id="edit-comment-body-und-0-format--2" name="comment_body[und][0][format]">
+                              <option value="filtered_html" selected="selected">Filtered HTML</option>
+                              <option value="full_html">Full HTML</option>
+                              <option value="plain_text">Plain text</option>
+                            </select>
+                          </div>
+                          <div class="filter-guidelines form-wrapper filter-guidelines-processed" id="edit-comment-body-und-0-format-guidelines">
+                            <div class="filter-guidelines-item filter-guidelines-filtered_html" style="display: block; ">
+                              <h3 style="display: none; ">Filtered HTML</h3>
+                              <ul class="tips">
+                                <li>Web page addresses and e-mail addresses turn into links automatically.</li>
+                                <li>Allowed HTML tags: &lt;a&gt; &lt;em&gt; &lt;strong&gt; &lt;cite&gt; &lt;blockquote&gt; &lt;code&gt; &lt;ul&gt; &lt;ol&gt; &lt;li&gt; &lt;dl&gt; &lt;dt&gt; &lt;dd&gt;</li>
+                                <li>Lines and paragraphs break automatically.</li>
+                              </ul>
+                            </div>
+                            <div class="filter-guidelines-item filter-guidelines-full_html" style="display: none; ">
+                              <h3 style="display: none; ">Full HTML</h3>
+                              <ul class="tips">
+                                <li>Web page addresses and e-mail addresses turn into links automatically.</li>
+                                <li>Lines and paragraphs break automatically.</li>
+                              </ul>
+                            </div>
+                            <div class="filter-guidelines-item filter-guidelines-plain_text" style="display: none; ">
+                              <h3 style="display: none; ">Plain text</h3>
+                              <ul class="tips">
+                                <li>No HTML tags allowed.</li>
+                                <li>Web page addresses and e-mail addresses turn into links automatically.</li>
+                                <li>Lines and paragraphs break automatically.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-actions form-wrapper" id="edit-actions">
+                  <input type="submit" id="edit-submit" name="op" value="Save" class="form-submit">
+                  <input type="submit" id="edit-preview" name="op" value="Preview" class="form-submit">
+                </div>
+              </div>
+            </form>
+          </div>
+        </article>
+        
+      </section>
+    </div>
+    
+    <footer>
+
+    </footer>
+  </div>   <!--! end of #container -->
+
+
+    <!-- JavaScript at the bottom for fast page loading -->
+
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.2.min.js"%3E%3C/script%3E'))</script>
+
+    <!-- Formalize (http://formalize.me) -->
+    <script src="js/libs/formalize/jquery.formalize.js"></script>
+
+    <!-- Lettering.js -->
+    <!-- <script src="js/libs/jquery.lettering.js"></script> -->
+
+    <!-- show source -->
+    <script src="js/kit/jquery.kit-source.js"></script>
+
+    <!-- scripts concatenated and minified via ant build script-->
+    <script src="js/script.js"></script>
+    <!-- end concatenated and minified scripts-->
+
+
+    <!--[if lt IE 7 ]>
+      <script src="js/libs/dd_belatedpng.js"></script>
+      <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+    <![endif]-->
+
+
+    <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+  </body>
+  </html>

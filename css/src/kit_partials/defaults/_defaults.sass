@@ -1,0 +1,70 @@
+//** DEFAULT STYLES **// 
+// adapted from Susy
+
+// Based heavily on the work of:
+// Andy Clarke: http://forabeautifulweb.com/
+// Paul Irish & Divya Manian: http://html5boilerplate.com/
+// And many others, less directly...
+
+
+/* Typography --------------------------------------------------------------
+html
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+
+// The following classes are for use with @extend.
+.serif
+  font-family: $font-serifs  
+
+.sans
+  font-family: $font-sans
+
+.mono
+  font-family: $font-mono
+
+.caps
+  letter-spacing: 0.1em
+
+.headers
+  font-family: $font-headline
+  // +sans-family
+
+.allcaps
+  @extend .caps
+  text-transform: uppercase
+
+.amp
+  font-family: $font-amp
+
+.smallcaps
+  @extend .caps
+  font-variant: small-caps
+  
+  
+/* Body --------------------------------------------------------------
+
+body
+  @extend .serif
+  color: $base-color
+  background: $background-color
+
+
+/* Selected Text --------------------------------------------------------------
+/* -moz- must be declared separately
+
+\::-moz-selection
+  // "+accessible-color" located in 'kit_partials/mixins/_helpers.sass'
+  +accessible-color($alt-color)
+  background: $alt-color
+  text-shadow: none
+
+\::selection
+  // "+accessible-color" located in 'kit_partials/mixins/_helpers.sass'
+  +accessible-color($alt-color)
+  background: $alt-color
+  text-shadow: none
+
+
+/* Establish baseline rhythm 
+ * from compass/typography/_vertical_rhythm
++establish-baseline
