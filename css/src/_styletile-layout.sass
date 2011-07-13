@@ -10,17 +10,51 @@
     +full
     // +trailer
     h1
-      +columns(3)
+      +columns(8)
     aside
-      +columns(1)
+      +columns(4)
       +omega
   #main
     +full
     .text-examples
-      +columns(2)
+      +columns(6)
     .graphic-examples
-      +columns(2)
+      +columns(6)
       +omega
   footer
     +full
   
+
+/* graphic examples
+
+/* colors
+.colors
+  ul
+    +inline-list
+    li
+      +columns(1, 6)
+      height: $kit-col-width
+      margin-bottom: $kit-baseline
+      +box-sizing(border-box)
+      border: 4px solid $white
+      position: relative
+      &:nth-of-type(6n+6)
+        +omega
+      &:after
+        position: relative
+        top: 102%
+        color: $gray
+
+.images
+  ul
+    +inline-list
+    li
+      +columns(2, 6)
+      max-height: $kit-baseline * 8
+      overflow: hidden
+      margin-bottom: $kit-baseline
+      +box-sizing(border-box)
+      border: 4px solid $white
+      &:nth-of-type(3n+3)
+        +omega
+          

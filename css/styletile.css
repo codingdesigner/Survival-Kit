@@ -57,7 +57,7 @@ table {
 .container, #page {
   *zoom: 1;
   margin: auto;
-  width: 1032px;
+  width: 984px;
   max-width: 100%;
 }
 .container:after, #page:after {
@@ -94,7 +94,7 @@ html {
 }
 
 .headers, .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
-  font-family: sans-serif;
+  font-family: "Copperplate", "Copperplate Gothic Light", Georgia, serif;
 }
 
 .allcaps, caption {
@@ -112,20 +112,20 @@ html {
 /* Body -------------------------------------------------------------- */
 body {
   color: black;
-  background: white;
+  background: #f2f2f2;
 }
 
 /* Selected Text -------------------------------------------------------------- */
 /* -moz- must be declared separately */
 ::-moz-selection {
-  color: black;
-  background: #ff69b4;
+  color: white;
+  background: #5a1631;
   text-shadow: none;
 }
 
 ::selection {
-  color: black;
-  background: #ff69b4;
+  color: white;
+  background: #5a1631;
   text-shadow: none;
 }
 
@@ -142,37 +142,32 @@ html > body {
 
 /* Links -------------------------------------------------------------- */
 a {
-  color: #ff69b4;
+  color: #5a1631;
 }
 a:visited {
-  color: #ff69b4;
+  color: #5a1631;
 }
 a:hover {
-  color: #69ffb4;
+  color: #165a3f;
 }
 a:active {
-  color: #69ffb4;
+  color: #165a3f;
 }
 a {
   text-decoration: none;
-  border-bottom: 1px solid #ff69b4;
+  border-bottom: 1px solid #5a1631;
 }
 a:visited {
-  border-bottom-color: #ff69b4;
+  border-bottom-color: #5a1631;
 }
 a:hover {
-  border-bottom-color: #69ffb4;
+  border-bottom-color: #165a3f;
 }
 a:active {
-  border-bottom-color: #69ffb4;
+  border-bottom-color: #165a3f;
 }
 
 /* Headings -------------------------------------------------------------- */
-.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
 .h1, h1 {
   font-size: 3.375em;
   line-height: 1.524em;
@@ -380,14 +375,14 @@ img.right {
 #page header h1 {
   display: inline;
   float: left;
-  width: 74.419%;
-  margin-right: 2.326%;
+  width: 65.854%;
+  margin-right: 2.439%;
 }
 #page header aside {
   display: inline;
   float: left;
-  width: 23.256%;
-  margin-right: 2.326%;
+  width: 31.707%;
+  margin-right: 2.439%;
   display: inline;
   float: right;
   margin-right: 0%;
@@ -401,14 +396,14 @@ img.right {
 #page #main .text-examples {
   display: inline;
   float: left;
-  width: 48.837%;
-  margin-right: 2.326%;
+  width: 48.78%;
+  margin-right: 2.439%;
 }
 #page #main .graphic-examples {
   display: inline;
   float: left;
-  width: 48.837%;
-  margin-right: 2.326%;
+  width: 48.78%;
+  margin-right: 2.439%;
   display: inline;
   float: right;
   margin-right: 0%;
@@ -420,7 +415,75 @@ img.right {
   margin-right: 0%;
 }
 
+/* graphic examples */
+/* colors */
+.colors ul {
+  list-style-type: none;
+}
+.colors ul, .colors ul li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+.colors ul li {
+  display: inline;
+  float: left;
+  width: 12.5%;
+  margin-right: 5%;
+  height: 60px;
+  margin-bottom: 24px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 4px solid white;
+  position: relative;
+}
+.colors ul li:nth-of-type(6n+6) {
+  display: inline;
+  float: right;
+  margin-right: 0%;
+  #margin-left: -24px;
+}
+.colors ul li:after {
+  position: relative;
+  top: 102%;
+  color: gray;
+}
+
+.images ul {
+  list-style-type: none;
+}
+.images ul, .images ul li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+.images ul li {
+  display: inline;
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  max-height: 192px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 4px solid white;
+}
+.images ul li:nth-of-type(3n+3) {
+  display: inline;
+  float: right;
+  margin-right: 0%;
+  #margin-left: -24px;
+}
+
 /* SITE-WIDE DESIGN -------------------------------------------------------------- */
+header h1 {
+  text-transform: uppercase;
+}
 header aside {
   text-align: right;
   color: gray;
@@ -432,4 +495,56 @@ header aside {
 
 h5.label {
   color: gray;
+}
+
+/* graphic examples */
+/* colors */
+.colors ul li {
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.colors ul li.color-1 {
+  background-color: #5a1631;
+}
+.colors ul li.color-1:after {
+  content: "#5a1631";
+}
+.colors ul li.color-2 {
+  background-color: gray;
+}
+.colors ul li.color-2:after {
+  content: "gray";
+}
+.colors ul li.color-3 {
+  background-color: gray;
+}
+.colors ul li.color-3:after {
+  content: "gray";
+}
+.colors ul li.color-4 {
+  background-color: gray;
+}
+.colors ul li.color-4:after {
+  content: "gray";
+}
+.colors ul li.color-5 {
+  background-color: gray;
+}
+.colors ul li.color-5:after {
+  content: "gray";
+}
+.colors ul li.color-6 {
+  background-color: gray;
+}
+.colors ul li.color-6:after {
+  content: "gray";
+}
+
+.images ul li {
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }

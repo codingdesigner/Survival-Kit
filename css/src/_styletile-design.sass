@@ -2,8 +2,10 @@
 /* SITE-WIDE DESIGN --------------------------------------------------------------
 
 
+
 header
   h1
+    text-transform: uppercase
   aside
     text-align: right
     color: $gray
@@ -16,3 +18,55 @@ header
 h5.label
   color: $gray
   
+
+
+/* graphic examples
+
+/* colors
+.colors
+  ul
+    li
+      +box-shadow(rgba($black, 0.1), 0px, 2px, 4px)
+      &.color-1   
+        background-color: $brand-purple   
+        &:after
+          content: "#{$brand-purple}"
+      &.color-2 
+        background-color: $gray   
+        &:after
+          content: "#{$gray}"
+      &.color-3
+        background-color: $gray   
+        &:after
+          content: "#{$gray}"
+      &.color-4
+        background-color: $gray   
+        &:after
+          content: "#{$gray}"
+      &.color-5
+        background-color: $gray   
+        &:after
+          content: "#{$gray}"
+      &.color-6
+        background-color: $gray   
+        &:after
+          content: "#{$gray}"
+
+.images
+  ul
+    li
+      +box-shadow(rgba($black, 0.1), 0px, 2px, 4px)
+      &.image-1   
+        //
+      &.image-2 
+        //
+      &.image-3
+        //
+      &.image-4
+        //
+      &.image-5
+        //
+      &.image-6
+        //
+
+    
