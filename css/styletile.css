@@ -94,7 +94,7 @@ html {
 }
 
 .headers, .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
-  font-family: "Copperplate", "Copperplate Gothic Light", Georgia, serif;
+  font-family: sans-serif;
 }
 
 .allcaps, caption {
@@ -112,20 +112,20 @@ html {
 /* Body -------------------------------------------------------------- */
 body {
   color: black;
-  background: #f2f2f2;
+  background: white;
 }
 
 /* Selected Text -------------------------------------------------------------- */
 /* -moz- must be declared separately */
 ::-moz-selection {
-  color: white;
-  background: #5a1631;
+  color: black;
+  background: #ff69b4;
   text-shadow: none;
 }
 
 ::selection {
-  color: white;
-  background: #5a1631;
+  color: black;
+  background: #ff69b4;
   text-shadow: none;
 }
 
@@ -142,32 +142,36 @@ html > body {
 
 /* Links -------------------------------------------------------------- */
 a {
-  color: #5a1631;
+  color: #ff69b4;
 }
 a:visited {
-  color: #5a1631;
+  color: #ff69b4;
 }
 a:hover {
-  color: #165a3f;
+  color: #69ffb4;
 }
 a:active {
-  color: #165a3f;
+  color: #69ffb4;
 }
 a {
   text-decoration: none;
-  border-bottom: 1px solid #5a1631;
+  border-bottom: 1px solid #ff69b4;
 }
 a:visited {
-  border-bottom-color: #5a1631;
+  border-bottom-color: #ff69b4;
 }
 a:hover {
-  border-bottom-color: #165a3f;
+  border-bottom-color: #69ffb4;
 }
 a:active {
-  border-bottom-color: #165a3f;
+  border-bottom-color: #69ffb4;
 }
 
 /* Headings -------------------------------------------------------------- */
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+  font-weight: normal;
+}
+
 .h1, h1 {
   font-size: 3.375em;
   line-height: 1.524em;
@@ -506,10 +510,10 @@ h5.label {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .colors ul li.color-1 {
-  background-color: #5a1631;
+  background-color: gray;
 }
 .colors ul li.color-1:after {
-  content: "#5a1631";
+  content: "gray";
 }
 .colors ul li.color-2 {
   background-color: gray;
