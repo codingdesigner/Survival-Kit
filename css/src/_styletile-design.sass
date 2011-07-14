@@ -19,12 +19,27 @@ h5.label
   +adjust-font-size-to($ms0)
   text-transform: uppercase
 
+.colors
+  ul
+    li
+      +box-shadow(rgba($black, 0.1), 0px, 2px, 4px)
+         
+.images
+  ul
+    li
+      +box-shadow(rgba($black, 0.1), 0px, 2px, 4px)
+      &:nth-of-type(2n+2)
+        +rotate(2deg)
+      &:nth-of-type(3n+3)
+        +rotate(-3deg)
+      &:nth-of-type(5n+5)
+        +rotate(1deg)
 /*
   CLIENT NAME ------------------------------------------------------------------------------------------------------------------------------
 
 header
   h1.client-name
-    ..
+    //
 
 /*
   STYLE TILE #1 ------------------------------------------------------------------------------------------------------------------------------
@@ -59,7 +74,6 @@ header
   .colors
     ul
       li
-        +box-shadow(rgba($black, 0.1), 0px, 2px, 4px)
         &.color-1   
           background-color: $color-tile1-1
           &:after
@@ -88,7 +102,6 @@ header
   .images
     ul
       li
-        +box-shadow(rgba($black, 0.1), 0px, 2px, 4px)
         &.image-1   
           //
         &.image-2 
@@ -101,11 +114,6 @@ header
           //
         &.image-6
           //
-        &:nth-of-type(2n+2)
-          +rotate(2deg)
-        &:nth-of-type(3n+3)
-          +rotate(-3deg)
-        &:nth-of-type(5n+5)
-          +rotate(1deg)
+
 
 
