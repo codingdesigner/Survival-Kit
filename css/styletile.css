@@ -94,7 +94,7 @@ html {
 }
 
 .headers, .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
-  font-family: "Copperplate", "Copperplate Gothic Light", Georgia, serif;
+  font-family: sans-serif;
 }
 
 .allcaps, caption {
@@ -112,20 +112,20 @@ html {
 /* Body -------------------------------------------------------------- */
 body {
   color: black;
-  background: #f2f2f2;
+  background: white;
 }
 
 /* Selected Text -------------------------------------------------------------- */
 /* -moz- must be declared separately */
 ::-moz-selection {
-  color: white;
-  background: #5a1631;
+  color: black;
+  background: #ff69b4;
   text-shadow: none;
 }
 
 ::selection {
-  color: white;
-  background: #5a1631;
+  color: black;
+  background: #ff69b4;
   text-shadow: none;
 }
 
@@ -142,32 +142,36 @@ html > body {
 
 /* Links -------------------------------------------------------------- */
 a {
-  color: #5a1631;
+  color: #ff69b4;
 }
 a:visited {
-  color: #5a1631;
+  color: #ff69b4;
 }
 a:hover {
-  color: #165a3f;
+  color: #69ffb4;
 }
 a:active {
-  color: #165a3f;
+  color: #69ffb4;
 }
 a {
   text-decoration: none;
-  border-bottom: 1px solid #5a1631;
+  border-bottom: 1px solid #ff69b4;
 }
 a:visited {
-  border-bottom-color: #5a1631;
+  border-bottom-color: #ff69b4;
 }
 a:hover {
-  border-bottom-color: #165a3f;
+  border-bottom-color: #69ffb4;
 }
 a:active {
-  border-bottom-color: #165a3f;
+  border-bottom-color: #69ffb4;
 }
 
 /* Headings -------------------------------------------------------------- */
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+  font-weight: normal;
+}
+
 .h1, h1 {
   font-size: 3.375em;
   line-height: 1.524em;
@@ -430,7 +434,7 @@ img.right {
   float: left;
   width: 12.5%;
   margin-right: 5%;
-  height: 60px;
+  height: 120px;
   margin-bottom: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -481,65 +485,33 @@ img.right {
 }
 
 /* SITE-WIDE DESIGN -------------------------------------------------------------- */
-header h1 {
-  text-transform: uppercase;
-}
 header aside {
   text-align: right;
   color: gray;
 }
 
 .group {
-  margin-bottom: 1.714em;
+  *zoom: 1;
+  margin-bottom: 3.429em;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 h5.label {
   color: gray;
+  font-size: 1em;
+  line-height: 1.714em;
+  text-transform: uppercase;
 }
 
-/* graphic examples */
-/* colors */
 .colors ul li {
   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-.colors ul li.color-1 {
-  background-color: #5a1631;
-}
-.colors ul li.color-1:after {
-  content: "#5a1631";
-}
-.colors ul li.color-2 {
-  background-color: gray;
-}
-.colors ul li.color-2:after {
-  content: "gray";
-}
-.colors ul li.color-3 {
-  background-color: gray;
-}
-.colors ul li.color-3:after {
-  content: "gray";
-}
-.colors ul li.color-4 {
-  background-color: gray;
-}
-.colors ul li.color-4:after {
-  content: "gray";
-}
-.colors ul li.color-5 {
-  background-color: gray;
-}
-.colors ul li.color-5:after {
-  content: "gray";
-}
-.colors ul li.color-6 {
-  background-color: gray;
-}
-.colors ul li.color-6:after {
-  content: "gray";
 }
 
 .images ul li {
@@ -547,4 +519,192 @@ h5.label {
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.images ul li:nth-of-type(2n+2) {
+  -moz-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+.images ul li:nth-of-type(3n+3) {
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.images ul li:nth-of-type(5n+5) {
+  -moz-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+
+/* CLIENT NAME ------------------------------------------------------------------------------------------------------------------------------ */
+/* STYLE TILE #1 ------------------------------------------------------------------------------------------------------------------------------ */
+/* type examples */
+.styletile-1 .text-examples .serif, .styletile-1 .text-examples body {
+  font-family: Georgia, serif;
+}
+.styletile-1 .text-examples .sans, .styletile-1 .text-examples header aside, header .styletile-1 .text-examples aside {
+  font-family: sans-serif;
+}
+
+/* graphic examples */
+/* colors */
+.styletile-1 .colors ul li.color-1 {
+  background-color: gray;
+}
+.styletile-1 .colors ul li.color-1:after {
+  content: "gray";
+}
+.styletile-1 .colors ul li.color-2 {
+  background-color: gray;
+}
+.styletile-1 .colors ul li.color-2:after {
+  content: "gray";
+}
+.styletile-1 .colors ul li.color-3 {
+  background-color: gray;
+}
+.styletile-1 .colors ul li.color-3:after {
+  content: "gray";
+}
+.styletile-1 .colors ul li.color-4 {
+  background-color: gray;
+}
+.styletile-1 .colors ul li.color-4:after {
+  content: "gray";
+}
+.styletile-1 .colors ul li.color-5 {
+  background-color: gray;
+}
+.styletile-1 .colors ul li.color-5:after {
+  content: "gray";
+}
+.styletile-1 .colors ul li.color-6 {
+  background-color: gray;
+}
+.styletile-1 .colors ul li.color-6:after {
+  content: "gray";
+}
+
+/* RESPONSIVE GRIDS -------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+  #page {
+    *zoom: 1;
+    margin: auto;
+    width: 138px;
+    max-width: 100%;
+    width: 95%;
+  }
+  #page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #page header h1 {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page header aside {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page #main {
+    clear: both;
+    margin-left: 2.174%;
+    margin-right: 2.174%;
+  }
+  #page #main .text-examples {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page #main .graphic-examples {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+
+  .colors ul li {
+    display: inline;
+    float: left;
+    width: 45.455%;
+    margin-right: 9.091%;
+  }
+  .colors ul li:nth-of-type(even) {
+    display: inline;
+    float: right;
+    margin-right: 2.174%;
+    #margin-left: -12px;
+    margin-right: 0;
+  }
+
+  .images ul {
+    list-style-type: none;
+  }
+  .images ul, .images ul li {
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+  }
+  .images ul li {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #page {
+    *zoom: 1;
+    margin: auto;
+    width: 480px;
+    max-width: 100%;
+    width: 95%;
+  }
+  #page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #page header h1 {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page header aside {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page #main {
+    clear: both;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  #page #main .text-examples {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page #main .graphic-examples {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
 }
