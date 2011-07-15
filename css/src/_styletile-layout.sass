@@ -9,7 +9,7 @@
   header
     +full
     // +trailer
-    h1
+    .client-id
       +columns(8)
     aside
       +columns(4)
@@ -50,11 +50,8 @@
     +inline-list
     li
       +columns(2, 6)
-      max-height: $kit-baseline * 8
       overflow: hidden
       margin-bottom: $kit-baseline
-      +box-sizing(border-box)
-      border: 4px solid $white
       &:nth-of-type(3n+3)
         +omega
-          
+        

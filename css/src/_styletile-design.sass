@@ -4,6 +4,8 @@
 
 
 header
+  +pie-clearfix
+  +trailer
   aside
     text-align: right
     color: $gray
@@ -26,20 +28,37 @@ h5.label
          
 .images
   ul
+    counter-reset: section
     li
-      +box-shadow(rgba($black, 0.1), 0px, 2px, 4px)
+      position: relative
+      overflow: visible
       &:nth-of-type(2n+2)
-        +rotate(2deg)
+        img
+          +rotate(2deg)
       &:nth-of-type(3n+3)
-        +rotate(-3deg)
+        img
+          +rotate(-3deg)
       &:nth-of-type(5n+5)
-        +rotate(1deg)
+        img
+          +rotate(1deg)
+      &:after
+        position: relative
+        top: 102%
+        display: block
+        color: $gray
+        counter-increment: section
+        content: "Image " counter(section)
+      img
+        +box-shadow(rgba($black, 0.1), 0px, 2px, 4px)
+        +box-sizing(border-box)
+        border: 4px solid $white
+        display: block
 /*
   CLIENT NAME ------------------------------------------------------------------------------------------------------------------------------
 
 header
   h1.client-name
-    //
+    // +replace-text-with-dimensions('wwlogo-01.png')
 
 /*
   STYLE TILE #1 ------------------------------------------------------------------------------------------------------------------------------
@@ -61,6 +80,14 @@ header
     .serif
       font-family: $font-serifs
       p
+        //
+    .quotes
+      // 
+      .quote
+        //
+        .quote-mark
+          //
+      .source
         //
     .sans
       font-family: $font-sans
