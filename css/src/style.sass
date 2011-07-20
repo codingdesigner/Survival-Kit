@@ -36,11 +36,13 @@
   First we import the kit's default colors, which contains all the named 
   CSS values as variables. This makes quickly blocking our generic colors
   very easy. 
-@import kit_partials/variables/colors
+@import common/variables/color_names
+@import common/variables/color_schemes
+@import basic/variables/colors
 // The Kit fonts partial establishes variables for simple clean typography
-@import kit_partials/variables/fonts
+@import basic/variables/fonts
 // Import general starter variables from The Kit
-@import kit_partials/variables/base
+@import basic/variables/base
 
 // ✔ 2. COMPASS MIXINS
   Add the compass tools you need
@@ -67,9 +69,9 @@
   ------------------------------------------------------------------------------------
 /* CSS RESET  
 // Eric Meyer reset
-@import kit_partials/reset/_meyer-reset
+@import common/reset/_meyer-reset
 // html5 boilerplate reset
-// @import partials/boilerplate/_boilerplate-reset
+// @import common/boilerplate/_boilerplate-reset
 // compass reset
 // @import compass/reset
 // susy reset
@@ -79,15 +81,15 @@
   Compass comes with Blueprint, and plenty of documentation
   (http://compass-style.org/reference/blueprint/)
 // Set some variables commonly used by most grid systems
-@import kit_partials/grids/_grids-all.sass
+@import basic/grids/_grids-all.sass
 // BLUEPRINT
-@import kit_partials/grids/_grids-blueprint.sass
+@import basic/grids/_grids-blueprint.sass
 // alternately, import all of blueprint - use caution
 // @import blueprint
 // SUSY
   You may want to try Susy (http://susy.oddbird.net/), which 
   is designed to work closely with Compass.
-// @import kit_partials/grids/_grids-susy.sass
+// @import basic/grids/_grids-susy.sass
 
 
 // Chapter IV: IMPORTS THAT SAVE TIME AND TROUBLE
@@ -104,11 +106,11 @@
   
 // ✔ 6. ADD HELPER MIXINS
   Over time I've collected or written a number of useful mixins. 
-@import kit_partials/mixins/helpers
-@import kit_partials/mixins/layout
-@import kit_partials/mixins/typography
-// @import kit_partials/mixins/ui
-// @import kit_partials/mixins/sfx
+@import common/mixins/helpers
+@import common/mixins/layout
+@import common/mixins/typography
+// @import common/mixins/ui
+// @import common/mixins/sfx
 
 
 // Chapter V: IMPORTS THAT SET DEFAULTS FOR YOUR PROJECT
@@ -117,17 +119,17 @@
 
 // ✔ 7. DEFAULTS
   Set your overall site defaults. This covers mostly high level typographic items
-@import kit_partials/defaults/_defaults
-// @import kit_partials/boilerplate/_boilerplate-setup
-// @import kit_partials/boilerplate/_boilerplate-helpers
+@import basic/defaults/_typography
+// @import basic/boilerplate/_boilerplate-setup
+// @import basic/boilerplate/_boilerplate-helpers
 // Set defaults for most HTML elements
-@import kit_partials/defaults/_elements
-@import kit_partials/forms/_form-defaults
+@import basic/defaults/_elements
+@import basic/forms/_form-defaults
 
 
 // ✔ 8. SPRITES
   import any sprites using Compass' automatic sprite generator
-// @import kit_partials/sprites/_sprites
+// @import basic/sprites/_sprites
 
 
 
@@ -139,14 +141,14 @@
 // ✔ 9. Styles just for working in the Survival Kit
   REMOVE THESE IN PRODUCTION
   These are styles designed for use by The Kit
-@import kit_partials/survival_kit/_survival-kit
+@import common/survival_kit/_survival-kit
 
 
 // ✔ 9. CMS-specific overrides and mixins
   These add in some of the default styles from your CMS. 
   They may be REMOVED IN PRODUCTION with caution
 // DRUPAL
-// @import kit_partials/cms/drupal/drupal-helpers
+// @import basic/cms/drupal/drupal-helpers
 
 
 // Chapter VII: HERE IS WHERE YOU DO YOUR MAIN WORK
@@ -156,8 +158,8 @@
   
 // ✔ 11. STYLES FOR THIS SITE --------------------------------------------------
   Create your layout in a separate file from your design details
-@import _layout.sass
-@import _design.sass
+@import basic/_layout.sass
+@import basic/_design.sass
 
 
 // Chapter VIII: MAKE ADJUSTMENTS FOR DIFFERENT ENVIRONMENTS AND CAPABILITIES
@@ -167,19 +169,19 @@
 
 // ✔ 12. RESPONSIVE --------------------------------------------------
   Create layouts for a number of device-size breakpoints
-// @import kit_partials/responsive/_responsive-susy.sass
-@import kit_partials/responsive/_responsive-blueprint.sass
+// @import basic/responsive/_responsive-susy.sass
+@import basic/responsive/_responsive-blueprint.sass
 
 // ✔ 13. Modernizr & Browser Support -------------------------------------------
   Use modernizr (http://modernizr.com) to manage styles for less-capable devices
   Use IE classes on the <html> tag to manage classes for different IE browsers
-// @import kit_partials/browser_adjustments/_modernizr.sass
-// @import kit_partials/browser_adjustments/_ie.sass
+// @import basic/browser_adjustments/_modernizr.sass
+// @import basic/browser_adjustments/_ie.sass
 
 
 // ✔ 14. Print -------------------------------------------
   Add print styles via @media query rather than by it's own stylesheet
-// @import kit_partials/print
+// @import basic/print
 
 
 

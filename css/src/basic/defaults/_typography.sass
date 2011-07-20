@@ -23,6 +23,7 @@ html
   font-family: $font-mono
 
 .caps
+  font-size: 0.9em
   letter-spacing: 0.1em
 
 .headers
@@ -39,30 +40,16 @@ html
 .smallcaps
   @extend .caps
   font-variant: small-caps
+ 
+.dquo
+  margin-left: -0.5em
+  font-family: $font-amp
   
-  
-/* Body --------------------------------------------------------------
-
-body
-  @extend .serif
-  color: $base-color
-  background: $background-color
-
-
-/* Selected Text --------------------------------------------------------------
-/* -moz- must be declared separately
-
-\::-moz-selection
-  // "+accessible-color" located in 'kit_partials/mixins/_helpers.sass'
-  +accessible-color($alt-color)
-  background: $alt-color
-  text-shadow: none
-
-\::selection
-  // "+accessible-color" located in 'kit_partials/mixins/_helpers.sass'
-  +accessible-color($alt-color)
-  background: $alt-color
-  text-shadow: none
+/* Only use the fancy ampersand in <h#> tags
+h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp
+  font-size: 1em
+  font-family: $font-amp
+  font-style: italic
 
 
 /* Establish baseline rhythm 
