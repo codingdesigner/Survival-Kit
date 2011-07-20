@@ -1,0 +1,40 @@
+=tabs
+  // assumes placement on UL
+  +horizontal-list(3px)
+  position: relative
+  li
+    border-bottom: 1px solid $base-color
+    &.active
+      a
+        padding-bottom: 0
+        border-bottom: 1px solid $white
+    a
+      border:
+        width: 1px
+        style: solid
+        color: $base-color
+      +remove-link-underlines
+      float: left
+      padding: 0 0.25em 1px
+      position: relative
+      bottom: -1px
+      +border-top-radius
+  
+=decending-z-order-tab($count: 20)
+  // assumes placement on UL
+  position: relative
+  li
+    position: relative
+    $t: 0
+    $i: $count
+    @while $i > 0
+      &:nth-child(#{$t})
+        z-index: #{$i}
+      $t: $t + 1
+      $i: $i - 1
+      
+            
+=clean-list
+  +no-bullets
+  margin-left: 0
+  padding-left: 0
