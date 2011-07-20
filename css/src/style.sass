@@ -22,12 +22,6 @@
   default code from The Kit and files that add your custom code. The checklist below
   should help you put these files in order. 
   
-  The partials are split into two containing folders: 
-  "kit_partials" contains partials that you shouldn't alter. Leaving these
-  alone will make upgrading The Kit much easier in the future. 
-  "my_partials" contains all the custom alterations and original sass code
-  you write for your project. See below for details.
-  
   
 // Chapter II: IMPORTS THAT DON'T ADD CODE  
   --------------------------------------------------------------
@@ -43,16 +37,10 @@
   CSS values as variables. This makes quickly blocking our generic colors
   very easy. 
 @import kit_partials/variables/colors
-// Then you can add your own custom color variables to your own colors partial.
-@import my_partials/variables/colors
 // The Kit fonts partial establishes variables for simple clean typography
 @import kit_partials/variables/fonts
-// Declare your own font variables here.
-@import my_partials/variables/fonts
 // Import general starter variables from The Kit
 @import kit_partials/variables/base
-// Uncomment below to use custom base values
-// @import my_partials/variables/base
 
 // ✔ 2. COMPASS MIXINS
   Add the compass tools you need
@@ -92,17 +80,14 @@
   (http://compass-style.org/reference/blueprint/)
 // Set some variables commonly used by most grid systems
 @import kit_partials/grids/_grids-all.sass
-// @import my_partials/grids/_grids-all.sass
 // BLUEPRINT
 @import kit_partials/grids/_grids-blueprint.sass
-// @import my_partials/grids/_grids-blueprint.sass
 // alternately, import all of blueprint - use caution
 // @import blueprint
 // SUSY
   You may want to try Susy (http://susy.oddbird.net/), which 
   is designed to work closely with Compass.
 // @import kit_partials/grids/_grids-susy.sass
-// @import my_partials/grids/_grids-susy.sass
 
 
 // Chapter IV: IMPORTS THAT SAVE TIME AND TROUBLE
@@ -133,19 +118,16 @@
 // ✔ 7. DEFAULTS
   Set your overall site defaults. This covers mostly high level typographic items
 @import kit_partials/defaults/_defaults
-// @import my_partials/defaults/_defaults
 // @import kit_partials/boilerplate/_boilerplate-setup
 // @import kit_partials/boilerplate/_boilerplate-helpers
 // Set defaults for most HTML elements
 @import kit_partials/defaults/_elements
-// @import my_partials/defaults/_elements
 @import kit_partials/forms/_form-defaults
 
 
 // ✔ 8. SPRITES
   import any sprites using Compass' automatic sprite generator
 // @import kit_partials/sprites/_sprites
-// @import my_partials/sprites/_sprites
 
 
 
