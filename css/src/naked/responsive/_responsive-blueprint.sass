@@ -1,0 +1,139 @@
+/* RESPONSIVE GRIDS --------------------------------------------------------------
+// based on the Blueprint grid system
+
+// mobile vertical (iphone)
+  small screen devices, like phones, held in portrait mode
+// redefine grid variables for this context 
+$blueprint-grid-columns: 1
+$blueprint-grid-width: 320px
+$blueprint-grid-margin: $kit-gutter-half
+@import blueprint/grid
+// @debug $blueprint-container-size
+$grid-background-total-columns: $blueprint-grid-columns
+$grid-background-column-width: $blueprint-grid-width
+$grid-background-gutter-width: $blueprint-grid-margin
+@import compass/layout/grid-background
+@media screen and (max-width: 320px)
+  // YOUR STYLES BELOW
+  #page
+    +container
+    +column-grid-background
+
+
+// mobile horizontal (iphone)
+  small screen devices, like phones, held in landscape mode
+// redefine grid variables for this context 
+$blueprint-grid-columns: 3
+$blueprint-grid-width: 97px
+$blueprint-grid-margin: 15px
+@import blueprint/grid
+// @debug $blueprint-container-size
+$grid-background-total-columns: $blueprint-grid-columns
+$grid-background-column-width: $blueprint-grid-width
+$grid-background-gutter-width: $blueprint-grid-margin
+@import compass/layout/grid-background
+@media screen and (min-width: 321px) and (max-width: 480px)
+  // YOUR STYLES BELOW
+  #page
+    +container
+    +column-grid-background
+
+
+// smaller tablets
+  like Amazon Kindle (600x800) and Barnes & Noble Nook (768x1024)
+  held in portrait mode
+// redefine grid variables for this context 
+$blueprint-grid-columns: 4
+$blueprint-grid-width: 100px
+$blueprint-grid-margin: $kit-gutter
+@import blueprint/grid
+// @debug $blueprint-container-size
+$grid-background-total-columns: $blueprint-grid-columns
+$grid-background-column-width: $blueprint-grid-width
+$grid-background-gutter-width: $blueprint-grid-margin
+@import compass/layout/grid-background
+@media screen and (min-width: 481px) and (max-width: 600px)
+  // YOUR STYLES BELOW
+  #page
+    +container
+    +column-grid-background
+  
+
+// tablets
+  Ten-inch tables like the iPad (1024x768) held in portrait mode
+// redefine grid variables for this context 
+$blueprint-grid-columns: 5
+$blueprint-grid-width: 100px
+$blueprint-grid-margin: $kit-gutter
+@import blueprint/grid
+// @debug $blueprint-container-size
+$grid-background-total-columns: $blueprint-grid-columns
+$grid-background-column-width: $blueprint-grid-width
+$grid-background-gutter-width: $blueprint-grid-margin
+@import compass/layout/grid-background
+@media screen and (min-width: 601px) and (max-width: 768px)
+  // YOUR STYLES BELOW
+  #page
+    +container
+    +column-grid-background
+   
+
+// tablets, laptops, desktops
+  Tablets like the iPad (1024x768) held in landscape mode, 
+  as well as certain laptop, netbook, and desktop displays  
+  (commented out, since it's the default context)
+// redefine grid variables for this context 
+$blueprint-grid-columns: $kit-total-cols
+$blueprint-grid-width: 105px
+$blueprint-grid-margin: $kit-gutter-width
+@import blueprint/grid
+// @debug $blueprint-container-size
+$grid-background-total-columns: $blueprint-grid-columns
+$grid-background-column-width: $blueprint-grid-width
+$grid-background-gutter-width: $blueprint-grid-margin
+@import compass/layout/grid-background
+@media screen and (min-width: 769px) and (max-width: 960px)
+  // YOUR STYLES BELOW
+  #page
+    +container
+    +column-grid-background
+    
+// tablets, laptops, desktops (larger)
+  Tablets like the iPad (1024x768) held in landscape mode, 
+  as well as certain laptop, netbook, and desktop displays  
+  (commented out, since it's the default context)
+// redefine grid variables for this context 
+$blueprint-grid-columns: $kit-total-cols
+$blueprint-grid-width: $kit-col-width
+$blueprint-grid-margin: $kit-gutter-width
+@import blueprint/grid
+// @debug $blueprint-container-size
+$grid-background-total-columns: $blueprint-grid-columns
+$grid-background-column-width: $blueprint-grid-width
+$grid-background-gutter-width: $blueprint-grid-margin
+@import compass/layout/grid-background
+@media screen and (min-width: 960px) and (max-width: 1200px)
+  // YOUR STYLES BELOW
+  #page
+    +container
+    +column-grid-background
+     
+    
+// wide screen
+  primarily laptop and desktop browsers
+// redefine grid variables for this context 
+$blueprint-grid-columns: 8
+$blueprint-grid-width: 128px
+$blueprint-grid-margin: $kit-gutter
+@import blueprint/grid
+// @debug $blueprint-container-size
+$grid-background-total-columns: $blueprint-grid-columns
+$grid-background-column-width: $blueprint-grid-width
+$grid-background-gutter-width: $blueprint-grid-margin
+@import compass/layout/grid-background
+@media screen and (min-width: 1200px)
+  // YOUR STYLES BELOW
+  #page
+    +container
+    +column-grid-background
+
