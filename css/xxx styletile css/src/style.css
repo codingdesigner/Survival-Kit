@@ -87,7 +87,6 @@ html {
 }
 
 .caps, .allcaps, caption, .smallcaps {
-  font-size: 0.9em;
   letter-spacing: 0.1em;
 }
 
@@ -100,34 +99,11 @@ html {
 }
 
 .amp {
-  font-family: Georgia, serif;
+  font-family: GoudyBookletter1911Regular, "Goudy Old Style", Baskerville, Palatino, Georgia, serif;
 }
 
 .smallcaps {
   font-variant: small-caps;
-}
-
-.dquo {
-  margin-left: -0.5em;
-  font-family: Georgia, serif;
-}
-
-/* Only use the fancy ampersand in <h#> tags */
-h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
-  font-size: 1em;
-  font-family: Georgia, serif;
-  font-style: italic;
-}
-
-/* Establish baseline rhythm
- * from compass/typography/_vertical_rhythm */
-body {
-  font-size: 87.5%;
-  line-height: 1.714em;
-}
-
-html > body {
-  font-size: 14px;
 }
 
 /* Body -------------------------------------------------------------- */
@@ -148,6 +124,17 @@ body {
   color: black;
   background: #ff69b4;
   text-shadow: none;
+}
+
+/* Establish baseline rhythm
+ * from compass/typography/_vertical_rhythm */
+body {
+  font-size: 87.5%;
+  line-height: 1.714em;
+}
+
+html > body {
+  font-size: 14px;
 }
 
 /* Links -------------------------------------------------------------- */
