@@ -38,11 +38,11 @@
   very easy. 
 @import common/variables/color_names
 @import common/variables/color_schemes
-@import naked/variables/colors
+@import tile/variables/colors
 // The Kit fonts partial establishes variables for simple clean typography
-@import naked/variables/fonts
+@import tile/variables/fonts
 // Import general starter variables from The Kit
-@import naked/variables/base
+@import tile/variables/base
 
 // ✔ 2. COMPASS MIXINS
   Add the compass tools you need
@@ -81,15 +81,15 @@
   Compass comes with Blueprint, and plenty of documentation
   (http://compass-style.org/reference/blueprint/)
 // Set some variables commonly used by most grid systems
-// @import naked/grids/_grids-all.sass
+@import tile/grids/_grids-all.sass
 // BLUEPRINT
-// @import naked/grids/_grids-blueprint.sass
+// @import tile/grids/_grids-blueprint.sass
 // alternately, import all of blueprint - use caution
 // @import blueprint
 // SUSY
   You may want to try Susy (http://susy.oddbird.net/), which 
   is designed to work closely with Compass.
-// @import naked/grids/_grids-susy.sass
+@import tile/grids/_grids-susy.sass
 
 
 // Chapter IV: IMPORTS THAT SAVE TIME AND TROUBLE
@@ -119,17 +119,17 @@
 
 // ✔ 7. DEFAULTS
   Set your overall site defaults. This covers mostly high level typographic items
-@import naked/defaults/_typography
-// @import naked/boilerplate/_boilerplate-setup
-// @import naked/boilerplate/_boilerplate-helpers
+@import tile/defaults/_typography
+// @import tile/boilerplate/_boilerplate-setup
+// @import tile/boilerplate/_boilerplate-helpers
 // Set defaults for most HTML elements
-@import naked/defaults/_elements
-@import naked/forms/_form-defaults
+@import tile/defaults/_elements
+// @import tile/forms/_form-defaults
 
 
 // ✔ 8. SPRITES
   import any sprites using Compass' automatic sprite generator
-// @import naked/sprites/_sprites
+// @import tile/sprites/_sprites
 
 
 
@@ -148,7 +148,7 @@
   These add in some of the default styles from your CMS. 
   They may be REMOVED IN PRODUCTION with caution
 // DRUPAL
-// @import naked/cms/drupal/drupal-helpers
+// @import tile/cms/drupal/drupal-helpers
 
 
 // Chapter VII: HERE IS WHERE YOU DO YOUR MAIN WORK
@@ -158,8 +158,8 @@
   
 // ✔ 11. STYLES FOR THIS SITE --------------------------------------------------
   Create your layout in a separate file from your design details
-@import naked/_layout.sass
-@import naked/_design.sass
+@import tile/_layout.sass
+@import tile/_design.sass
 
 
 // Chapter VIII: MAKE ADJUSTMENTS FOR DIFFERENT ENVIRONMENTS AND CAPABILITIES
@@ -169,19 +169,20 @@
 
 // ✔ 12. RESPONSIVE --------------------------------------------------
   Create layouts for a number of device-size breakpoints
-// @import naked/responsive/_responsive-susy.sass
-// @import naked/responsive/_responsive-blueprint.sass
+// @import tile/responsive/_responsive-susy.sass
+// @import tile/responsive/_responsive-blueprint.sass
+@import tile/responsive/_responsive-styletile.sass
 
 // ✔ 13. Modernizr & Browser Support -------------------------------------------
   Use modernizr (http://modernizr.com) to manage styles for less-capable devices
   Use IE classes on the <html> tag to manage classes for different IE browsers
-// @import naked/browser_adjustments/_modernizr.sass
-// @import naked/browser_adjustments/_ie.sass
+// @import tile/browser_adjustments/_modernizr.sass
+// @import tile/browser_adjustments/_ie.sass
 
 
 // ✔ 14. Print -------------------------------------------
   Add print styles via @media query rather than by it's own stylesheet
-// @import naked/print
+// @import tile/print
 
 
 

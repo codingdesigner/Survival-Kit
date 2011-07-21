@@ -1,0 +1,64 @@
+// Set up the layout for your site using your chosen grid framework
+/* LAYOUT --------------------------------------------------------------
+
+
+#page
+  @extend .container
+  // uncomment this line for fluid layout
+  width: 95% 
+  header
+    +full
+    // +trailer
+    .client-id
+      +columns(8)
+    aside
+      +columns(4)
+      +omega
+  #main
+    +full
+    .text-examples
+      +columns(6)
+    .graphic-examples
+      +columns(6)
+      +omega
+  footer
+    +full
+  
+
+/* graphic examples
+
+/* colors
+.colors
+  ul
+    +inline-list
+    li
+      +columns(1, 6)
+      height: $kit-baseline * 5
+      margin-bottom: $kit-baseline
+      +box-sizing(border-box)
+      border: 4px solid $white
+      position: relative
+      &:nth-of-type(6n+6)
+        +omega
+      &:after
+        position: relative
+        top: 102%
+        color: $gray
+
+.images
+  ul
+    +inline-list
+    li
+      +columns(3, 6)
+      overflow: hidden
+      margin-bottom: $kit-baseline
+      &:nth-of-type(2n+2)
+        +omega
+      @media screen and (min-width: 1100px)
+        +reset-column
+        &:nth-of-type(2n+2)
+          +columns(2, 6)
+        +columns(2, 6)
+        &:nth-of-type(3n+3)
+          +omega
+        

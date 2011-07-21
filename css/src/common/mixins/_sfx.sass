@@ -10,7 +10,26 @@
   background-color: $color
 
 
-
+// rotate a group of elements as if they were casually tossed on a table
+=scatter($rotate: 2deg -3deg 1deg, $child: false)
+  &:nth-of-type(2n+2)
+    @if $child
+      #{$child}
+        +rotate(nth($rotate, 1))
+    @else
+      +rotate(nth($rotate, 1))
+  &:nth-of-type(3n+3)
+    @if $child
+      #{$child}
+        +rotate(nth($rotate, 2))
+    @else
+      +rotate(nth($rotate, 2))
+  &:nth-of-type(5n+5)
+    @if $child
+      #{$child}
+        +rotate(nth($rotate, 3))
+    @else
+      +rotate(nth($rotate, 3))
 
 // css3 page curl effect
   page-curl(
