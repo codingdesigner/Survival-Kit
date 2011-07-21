@@ -1,0 +1,142 @@
+/* RESPONSIVE GRIDS --------------------------------------------------------------
+// based on the Susy grid system
+
+// mobile vertical (iphone)
+  small screen devices, like phones, held in portrait mode
+// @media screen and (max-width: 320px)
+//   // redefine grid variables for this context 
+//   $total-cols: 1
+//   $col-width: 314px
+//   $gutter-width: $kit-gutter-half
+//   $side-gutter-width: 3px
+//   // @debug columns-width()
+//   // YOUR STYLES BELOW
+//   #page
+//     +container
+//     +susy-grid-background
+//     > * 
+//       +full
+
+
+// mobile horizontal (iphone)
+  small screen devices, like phones, held in landscape mode
+@media screen and (max-width: 480px)
+  // redefine grid variables for this context 
+  $total-cols: 2
+  $col-width: 60px
+  $gutter-width: 12px
+  $side-gutter-width: 3px
+  // @debug columns-width()
+  // YOUR STYLES BELOW
+  #page
+    +container
+    // +susy-grid-background
+    width: 95% 
+    header
+      h1
+        +reset-column
+      aside
+        +reset-column
+    #main
+      +full
+      .text-examples
+        +reset-column
+      .graphic-examples
+        +reset-column
+  .colors
+    ul
+      li
+        +columns(1, 2)
+        &:nth-of-type(even)
+          +omega
+          margin-right: 0
+
+
+  .images
+    ul
+      +inline-list
+      li
+        +reset-column
+        margin-bottom: $kit-baseline
+
+
+// smaller tablets
+  like Amazon Kindle (600x800) and Barnes & Noble Nook (768x1024)
+  held in portrait mode
+// @media screen and (min-width: 481px) and (max-width: 600px)
+//   // redefine grid variables for this context 
+//   $total-cols: 4
+//   $col-width: 126px
+//   $gutter-width: $kit-gutter
+//   $side-gutter-width: $kit-gutter-half
+//   // @debug columns-width()
+//   // YOUR STYLES BELOW
+//   #page
+//     +container
+//     +susy-grid-background
+//     > * 
+//       +full
+  
+
+// tablets
+  Ten-inch tables like the iPad (1024x768) held in portrait mode
+@media screen and (min-width: 481px) and (max-width: 800px)
+  // redefine grid variables for this context 
+  $total-cols: 6
+  $col-width: 60px
+  $gutter-width: $kit-gutter
+  $side-gutter-width: 0px
+  // @debug columns-width()
+  // YOUR STYLES BELOW
+  #page
+    +container
+    // +susy-grid-background
+    width: 95% 
+    header
+      h1
+        +reset-column
+      aside
+        +reset-column
+    #main
+      +full
+      .text-examples
+        +reset-column
+      .graphic-examples
+        +reset-column
+
+   
+
+// tablets, laptops, desktops
+  Tablets like the iPad (1024x768) held in landscape mode, 
+  as well as certain laptop, netbook, and desktop displays  
+  (commented out, since it's the default context)
+// @media screen and (min-width: 769px) and (max-width: 1200px)
+//   // redefine grid variables for this context 
+//   $total-cols: $kit-total-cols
+//   $col-width: $kit-col-width
+//   $gutter-width: $kit-gutter
+//   $side-gutter-width: $kit-gutter-half
+//   // @debug columns-width()
+//   // YOUR STYLES BELOW
+//   #page
+//     +container
+//     +susy-grid-background
+//     > * 
+//       +full
+     
+    
+// wide screen
+  primarily laptop and desktop browsers
+// @media screen and (min-width: 1200px)
+//   // redefine grid variables for this context 
+//   $total-cols: 8
+//   $col-width: 140px
+//   $gutter-width: $kit-gutter * 1.5
+//   $side-gutter-width: $gutter-width
+//   // @debug columns-width()
+//   // YOUR STYLES BELOW
+//   #page
+//     +container
+//     +susy-grid-background
+//     > * 
+//       +full
