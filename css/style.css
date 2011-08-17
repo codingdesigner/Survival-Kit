@@ -12,6 +12,7 @@
  * Download the source files here: 
  * https://github.com/canarymason/The-Coding-Designers-Survival-Kit
  * Learn more about Sass & Compass at http://compass-style.org/   */
+/* Links -------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------
  * ------------------------------------------------------------------------------------ */
 /* CSS RESET */
@@ -67,7 +68,6 @@ table {
   background-position: left top;
 }
 
-/* Links -------------------------------------------------------------- */
 /* Typography -------------------------------------------------------------- */
 html {
   text-rendering: optimizeLegibility;
@@ -183,33 +183,33 @@ a:active {
 }
 
 .h1, h1 {
-  font-size: 3.375em;
-  line-height: 1.524em;
+  font-size: 2.618em;
+  line-height: 1.31em;
 }
 
 .h2, h2 {
-  font-size: 2.963em;
-  line-height: 1.157em;
+  font-size: 2.441em;
+  line-height: 1.404em;
 }
 
 .h3, h3 {
-  font-size: 2.25em;
-  line-height: 1.524em;
+  font-size: 1.953em;
+  line-height: 1.755em;
 }
 
 .h4, h4 {
-  font-size: 1.975em;
-  line-height: 1.736em;
+  font-size: 1.618em;
+  line-height: 2.119em;
 }
 
 .h5, h5 {
-  font-size: 1.5em;
-  line-height: 2.286em;
+  font-size: 1.563em;
+  line-height: 2.194em;
 }
 
 .h6, h6 {
-  font-size: 1.317em;
-  line-height: 1.302em;
+  font-size: 1.25em;
+  line-height: 1.371em;
 }
 
 /* Inline -------------------------------------------------------------- */
@@ -255,8 +255,8 @@ mark {
 }
 
 small {
-  font-size: 0.878em;
-  line-height: 1.953em;
+  font-size: 0.8em;
+  line-height: 2.143em;
 }
 
 q {
@@ -716,8 +716,8 @@ textarea, input:not([type="radio"]) {
 }
 
 body.markup-elements h1.section-title {
-  font-size: 2.25em;
-  line-height: 1.524em;
+  font-size: 1.953em;
+  line-height: 1.755em;
   background-color: #d3d3d3;
   text-transform: uppercase;
   padding-left: 12px;

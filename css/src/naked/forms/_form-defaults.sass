@@ -23,8 +23,8 @@ label
   
 .textinput
   // @extend .sans
-  // +adjust-font-size-to($ms0, 1)
-  // +rhythm-borders(1px, 0.25, $ms0)
+  // +adjust-font-size-to(ms(0), 1)
+  // +rhythm-borders(1px, 0.25, ms(0))
   // border-width: 1px
   // +trailer(0.5)
   // +box-sizing(border-box)
@@ -32,11 +32,11 @@ label
   // max-width: 100%
   // margin-top: 0
   // border-color: $base-color
-  // height: $base-line-height / $ms0 * 1.5
+  // height: $base-line-height / ms(0) * 1.5
   
 textarea
   // @extend .textinput
-  // height: $base-line-height / $ms0 * 6.5
+  // height: $base-line-height / ms(0) * 6.5
   
 input
   &[type=text], &[type=password], &[type=email], &[type=url], &[type=tel],
@@ -52,7 +52,7 @@ input
 button, input[type=button], input[type=submit]
   // width: auto
   // overflow: visible
-  // +fancy-button($gray, $ms2)
+  // +fancy-button($gray, ms(2))
 
 textarea
   // +box-sizing(border-box) 
