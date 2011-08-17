@@ -12,6 +12,7 @@
  * Download the source files here: 
  * https://github.com/canarymason/The-Coding-Designers-Survival-Kit
  * Learn more about Sass & Compass at http://compass-style.org/   */
+/* Links -------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------
  * ------------------------------------------------------------------------------------ */
 /* CSS RESET */
@@ -53,7 +54,6 @@ table {
   border-spacing: 0;
 }
 
-/* Links -------------------------------------------------------------- */
 /* Typography -------------------------------------------------------------- */
 html {
   text-rendering: optimizeLegibility;
