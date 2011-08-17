@@ -1,0 +1,8 @@
+// Generic function to calculate a percentage based on pixel values
+  (independent of any specific grid system)
+@function calc-percent($target, $container)
+  @return (($target / $container) * 100) + 0%
+  
+// shortcut name
+@function cp($target, $container)
+  @return calc-percent($target, $container)
