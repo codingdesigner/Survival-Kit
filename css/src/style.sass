@@ -21,9 +21,32 @@
   in The Kit. Don't write custom code here. Instead, import files that bring in
   default code from The Kit and files that add your custom code. The checklist below
   should help you put these files in order. 
+
   
+// Chapter II: IMPORTS THAT SAVE TIME AND TROUBLE
+  --------------------------------------------------------------
+  From button styles to better link styles. Use the following imports to 
+  add tools that automate different tasks
+
+
+// ✔ 1. COMPASS PLUG-INS
+// Fancy Buttons
+// @import fancy-buttons
+// Sassy Buttons
+// @import sassybuttons
+
+// ✔ 2. ADD HELPER MIXINS
+  Over time I've collected or written a number of useful mixins. 
+@import common/mixins/helpers
+@import common/mixins/layout
+@import common/mixins/typography
+@import common/mixins/calculations
+@import common/mixins/modular-scale
+@import common/mixins/ui
+@import common/mixins/sfx
+
   
-// Chapter II: IMPORTS THAT DON'T ADD CODE  
+// Chapter III: IMPORTS THAT DON'T ADD CODE  
   --------------------------------------------------------------
   Start by importing a number of set up sass partials. The imported partials
   in the first few steps will not add any css to the compiled css. They 
@@ -31,7 +54,7 @@
   in the process. 
   
 
-// ✔ 1. VARIABLES
+// ✔ 3. VARIABLES
   Set up variables for future use.
   First we import the kit's default colors, which contains all the named 
   CSS values as variables. This makes quickly blocking our generic colors
@@ -44,7 +67,7 @@
 // Import general starter variables from The Kit
 @import basic/variables/base
 
-// ✔ 2. COMPASS MIXINS
+// ✔ 4. COMPASS MIXINS
   Add the compass tools you need
 // all of compass
 @import compass
@@ -56,13 +79,13 @@
 // @import compass/utilities
 
 
-// Chapter III: IMPORTS THAT DO ADD CODE
+// Chapter IV: IMPORTS THAT DO ADD CODE
   --------------------------------------------------------------
   These imported partials will start adding css when compiled. Starting with 
   your choice of CSS reset.
   
   
-// ✔ 3. PICK A CSS RESET
+// ✔ 5. PICK A CSS RESET
   There are subtle differences and approaches with the following CSS resets. 
   Eric Meyer is set by default, but the others are worth trying. 
 /* ------------------------------------------------------------------------------------
@@ -77,7 +100,7 @@
 // susy reset
 // @import susy/reset
 
-// ✔ 4. CHOOSE A GRID FRAMEWORK
+// ✔ 6. CHOOSE A GRID FRAMEWORK
   Compass comes with Blueprint, and plenty of documentation
   (http://compass-style.org/reference/blueprint/)
 // Set some variables commonly used by most grid systems
@@ -90,27 +113,6 @@
   You may want to try Susy (http://susy.oddbird.net/), which 
   is designed to work closely with Compass.
 // @import basic/grids/_grids-susy.sass
-
-
-// Chapter IV: IMPORTS THAT SAVE TIME AND TROUBLE
-  --------------------------------------------------------------
-  From button styles to better link styles. Use the following imports to 
-  add tools that automate different tasks
-
-
-// ✔ 5. COMPASS PLUG-INS
-// Fancy Buttons
-// @import fancy-buttons
-// Sassy Buttons
-// @import sassybuttons
-  
-// ✔ 6. ADD HELPER MIXINS
-  Over time I've collected or written a number of useful mixins. 
-@import common/mixins/helpers
-@import common/mixins/layout
-@import common/mixins/typography
-// @import common/mixins/ui
-@import common/mixins/sfx
 
 
 // Chapter V: IMPORTS THAT SET DEFAULTS FOR YOUR PROJECT
