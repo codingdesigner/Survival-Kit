@@ -12,3 +12,8 @@
   
 @function ce($target, $container)
   @return calc-em($target, $container)  
+  
+// return the width of an arbitrary number of columns in a css grid system  
+@function calc-col-width($number-of-cols)
+  $calc-width: ($kit-col-width * $number-of-cols) + ($kit-gutter-width * ($number-of-cols - 1))
+  @return $calc-width  
