@@ -50,3 +50,6 @@
 	path = sources/scrollability
 	url = https://github.com/joehewitt/scrollability.git
 
+[submodule "sources/BigText"]
+	path = sources/BigText
+	url = https://github.com/zachleat/BigText.git
