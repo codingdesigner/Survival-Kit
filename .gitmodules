@@ -53,3 +53,6 @@
 [submodule "sources/BigText"]
 	path = sources/BigText
 	url = https://github.com/zachleat/BigText.git
+[submodule "sources/flickrbomb"]
+	path = sources/flickrbomb
+	url = https://github.com/zurb/flickrbomb.git
