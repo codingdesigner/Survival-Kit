@@ -34,132 +34,123 @@
 // css3 page curl effect
   page-curl(
     $position: top, right, bottom, left, top-left, top-right, bottom-right, bottom-left, top-left-bottom-right, top-right-bottom-left
-    $box-color: color
     $shadow-color: color
     $box-shadow: true, false
-    $skew: xxdeg
     $rotate: xxdeg
-=page-curl($position: bottom, $box-color: $white, $shadow-color: transparentize($black, 0.7), $box-shadow: true, $skew: 15deg, $rotate: 6deg)
+=page-curl($position: bottom, $shadow-color: rgba($black, 0.7), $rotate: 6deg)
+  $skew: 15deg
   display: block
-  background: $box-color
   position: relative
-  @if $box-shadow
-    +box-shadow(transparentize($shadow-color, 0.15), 0px, 4px, 8px)
   &:before, &:after
     position: absolute
     background: transparent
-    width: 70%
-    height: 55%
+    width: 40%
+    height: 20px
     content: "\0020"
   &:before
     z-index: -1
   &:after
     z-index: -2
-  @if $position == top
+    
+  @if $position == top or $position == left or $position == top-left or $position == top-left-bottom-right
     &:before
-      left: 0px
-      top: 0px
+      left: 0
+      top: 0
       +transform-origin(0%, 0%)
-      +transform(1, $rotate, 0, 0, $skew, 0)
-      +box-shadow($shadow-color, 0px, -8px, 16px)
-    &:after
+      +transform2d( rotate($rotate) skew($skew) ) 
+      
+  @if $position == right or $position == top-right or $position == top-right-bottom-left
+    &:before
       right: 0
       top: 0
       +transform-origin(100%, 0%)
-      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
-      +box-shadow($shadow-color, 0px, -8px, 16px)
-  @if $position == right
+      +transform2d( rotate($rotate * -1) skew($skew * -1) )
+      
+  @if $position == bottom or $position == bottom-left
     &:before
-      right: 0px
-      top: 0px
-      +transform-origin(100%, 0%)
-      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
-      +box-shadow($shadow-color, 8px, 0px, 16px)
-    &:after
-      right: 0
-      bottom: 0
-      +transform-origin(100%, 100%)
-      +transform(1, $rotate, 0, 0, $skew, 0)
-      +box-shadow($shadow-color, 8px, 0px, 16px)
-  @if $position == bottom
-    &:before
-      left: 0px
-      bottom: 0px
-      +transform-origin(0%, 100%)
-      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
-      +box-shadow($shadow-color, 0px, 8px, 16px)
-    &:after
-      right: 0
-      bottom: 0
-      +transform-origin(100%, 100%)
-      +transform(1, $rotate, 0, 0, $skew, 0)
-      +box-shadow($shadow-color, 0px, 8px, 16px)
-  @if $position == left
-    &:before
-      left: 0px
-      top: 0px
-      +transform-origin(0%, 0%)
-      +transform(1, $rotate, 0, 0, $skew, 0)
-      +box-shadow($shadow-color, -8px, 0px, 16px)
-    &:after
       left: 0
       bottom: 0
       +transform-origin(0%, 100%)
-      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
-      +box-shadow($shadow-color, -8px, 0px, 16px)
-  @if $position == top-left
-    &:before
-      left: 0px
-      top: 0px
-      +transform-origin(0%, 0%)
-      +transform(1, $rotate, 0, 0, $skew, 0)
-      +box-shadow($shadow-color, 0px, -8px, 16px)
-  @if $position == top-right
-    &:before
-      right: 0
-      top: 0
-      +transform-origin(100%, 0%)
-      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
-      +box-shadow($shadow-color, 0px, -8px, 16px)
+      +transform2d( rotate($rotate * -1) skew($skew * -1) )
+      
   @if $position == bottom-right
     &:before
       right: 0
       bottom: 0
       +transform-origin(100%, 100%)
-      +transform(1, $rotate, 0, 0, $skew, 0)
-      +box-shadow($shadow-color, 0px, 8px, 16px)
-  @if $position == bottom-left
-    &:before
-      left: 0px
-      bottom: 0px
-      +transform-origin(0%, 100%)
-      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
-      +box-shadow($shadow-color, 0px, 8px, 16px)
-  @if $position == top-left-bottom-right
-    &:before
-      left: 0px
-      top: 0px
-      +transform-origin(0%, 0%)
-      +transform(1, $rotate, 0, 0, $skew, 0)
-      +box-shadow($shadow-color, 0px, -8px, 16px)
+      +transform2d( rotate($rotate) skew($skew) ) 
+  
+  @if $position == top
+    &:after
+      right: 0
+      top: 0
+      +transform-origin(100%, 0%)
+      +transform2d( rotate($rotate * -1) skew($skew * -1) )
+      
+  @if $position == right or $position == bottom or $position == top-left-bottom-right
     &:after
       right: 0
       bottom: 0
       +transform-origin(100%, 100%)
-      +transform(1, $rotate, 0, 0, $skew, 0)
-      +box-shadow($shadow-color, 0px, 8px, 16px)
-  @if $position == top-right-bottom-left
+      +transform2d( rotate($rotate) skew($skew) ) 
+      
+  @if $position == left or $position == top-right-bottom-left
+    &:after
+      left: 0
+      bottom: 0
+      +transform-origin(0%, 100%)
+      +transform2d( rotate($rotate * -1) skew($skew * -1) )
+    
+  @if $position == top
     &:before
-      right: 0
-      top: 0
-      +transform-origin(100%, 0%)
-      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
       +box-shadow($shadow-color, 0px, -8px, 16px)
     &:after
-      left: 0px
-      bottom: 0px
-      +transform-origin(0%, 100%)
-      +transform(1, $rotate * -1, 0, 0, $skew * -1, 0)
+      +box-shadow($shadow-color, 0px, -8px, 16px)
+      
+  @if $position == right
+    &:before
+      +box-shadow($shadow-color, 8px, 0px, 16px)
+    &:after
+      +box-shadow($shadow-color, 8px, 0px, 16px)
+      
+  @if $position == bottom
+    &:before
+      +box-shadow($shadow-color 0px 8px 16px)
+    &:after
+      +box-shadow($shadow-color 0px 8px 16px)
+      
+  @if $position == left
+    &:before
+      +box-shadow($shadow-color, -8px, 0px, 16px)
+    &:after
+      +box-shadow($shadow-color, -8px, 0px, 16px)
+      
+  @if $position == top-left
+    &:before
+      +box-shadow($shadow-color, 0px, -8px, 16px)
+      
+  @if $position == top-right
+    &:before
+      +box-shadow($shadow-color, 0px, -8px, 16px)
+      
+  @if $position == bottom-right
+    &:before
+      +box-shadow($shadow-color, 0px, 8px, 16px)
+      
+  @if $position == bottom-left
+    &:before
+      +box-shadow($shadow-color, 0px, 8px, 16px)
+      
+  @if $position == top-left-bottom-right
+    &:before
+      +box-shadow($shadow-color, 0px, -8px, 16px)
+    &:after
+      +box-shadow($shadow-color, 0px, 8px, 16px)
+      
+  @if $position == top-right-bottom-left
+    &:before
+      +box-shadow($shadow-color, 0px, -8px, 16px)
+    &:after
       +box-shadow($shadow-color, 0px, 8px, 16px)
 
   
