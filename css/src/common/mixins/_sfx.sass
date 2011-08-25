@@ -154,4 +154,46 @@
       +box-shadow($shadow-color, 0px, 8px, 16px)
 
   
-
+// CSS3 Tucked Corners effect
+  inspired by http://css-tricks.com/snippets/css/tucked-corners/ 
+  // expected markup:
+  <div class="this-element-gets-top-corners">
+    <span class="this-element-gets-bottom-corners"> <!-- Span used for bottom corners --></span>
+  </div>
+  Arguments: 
+  $tape: the background css property
+  $inner-element: the selector for the inner element (for bottom corners)
+=tucked-corners($tape: rgba(white, 0.5), $inner-element: 'span.tucked-corners')
+  position: relative
+  +box-sizing(border-box)
+  &:after, &:before, #{$inner-element}:after, #{$inner-element}:before
+    background: $tape
+    content: ''
+    height: 50px
+    position: absolute
+    width: 100px
+    z-index: 10
+    +box-shadow(rgba(black, 0.5) 0 6px 9px -8px)
+  &:after
+    top: -25px
+    left: -50px
+    +rotate(-45deg)
+  &:before
+    top: -25px
+    right: -50px
+    +rotate(45deg)
+  #{$inner-element}
+    display: block
+    position: relative
+    padding: 20px
+    width: 100%
+    +box-sizing(border-box)
+    +box-shadow(rgba(black, 0.25) 0 0 10px 0 inset)  
+    &:after 
+      bottom: -25px
+      left: -50px
+      +rotate(-135deg)
+    &:before
+      bottom: -25px
+      right: -50px
+      +rotate(135deg)
