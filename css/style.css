@@ -74,7 +74,7 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-.serif, body {
+.serif {
   font-family: Georgia, serif;
 }
 
@@ -132,6 +132,7 @@ html > body {
 
 /* Body -------------------------------------------------------------- */
 body {
+  font-family: Georgia, serif;
   color: black;
   background: white;
 }
@@ -679,7 +680,7 @@ label {
   max-width: 100%;
   margin-top: 0;
   border-color: black;
-  height: 2.571;
+  height: 2.571em;
 }
 
 textarea {
