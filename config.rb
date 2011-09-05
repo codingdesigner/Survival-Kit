@@ -6,11 +6,11 @@ require 'susy'
 project_type = :stand_alone
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = ""
-sass_dir = "src"
-images_dir = "images"
-javascripts_dir = "../js"
-fonts_dir = "fonts"
+css_dir = "css"
+sass_dir = "css/src"
+images_dir = "css/images"
+javascripts_dir = "js"
+fonts_dir = "css/type"
 # output_style = :nested
 # output_style = :compact
 # output_style = :expanded
