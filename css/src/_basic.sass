@@ -39,10 +39,10 @@
   Over time I've collected or written a number of useful mixins. 
 @import common/functions/calculations
 @import common/functions/color
+@import common/functions/modular-scale
 @import common/mixins/helpers
 @import common/mixins/layout
 @import common/mixins/typography
-@import common/mixins/modular-scale
 @import common/mixins/ui
 @import common/mixins/sfx
 
@@ -108,13 +108,13 @@
 // Set some variables commonly used by most grid systems
 @import basic/grids/_grids-all.sass
 // BLUEPRINT
-@import basic/grids/_grids-blueprint.sass
+// @import basic/grids/_grids-blueprint.sass
 // alternately, import all of blueprint - use caution
 // @import blueprint
 // SUSY
   You may want to try Susy (http://susy.oddbird.net/), which 
   is designed to work closely with Compass.
-// @import basic/grids/_grids-susy.sass
+@import basic/grids/_grids-susy.sass
 
 
 // Chapter V: IMPORTS THAT SET DEFAULTS FOR YOUR PROJECT
