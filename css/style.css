@@ -81,81 +81,15 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-.serif {
-  font-family: Georgia, serif;
-}
-
-.sans, .textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
-  font-family: sans-serif;
-}
-
-.mono, pre, code, tt, body.markup-elements article.element .example .markup + .show-source {
-  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
-}
-
-.caps, .allcaps, caption, .smallcaps {
-  font-size: 0.9em;
-  letter-spacing: 0.1em;
-}
-
-.headers, .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
-  font-family: sans-serif;
-}
-
-.allcaps, caption {
-  text-transform: uppercase;
-}
-
-.amp {
-  font-family: Georgia, serif;
-}
-
-.smallcaps {
-  font-variant: small-caps;
-}
-
-.dquo {
-  margin-left: -0.5em;
-  font-family: Georgia, serif;
-}
-
-/* Only use the fancy ampersand in <h#> tags */
-h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
-  font-size: 1em;
-  font-family: Georgia, serif;
-  font-style: italic;
-}
-
 /* Establish baseline rhythm
  * from compass/typography/_vertical_rhythm */
 body {
   font-size: 87.5%;
-  line-height: 1.563em;
+  line-height: 1.5em;
 }
 
 html > body {
   font-size: 14px;
-}
-
-/* Body -------------------------------------------------------------- */
-body {
-  font-family: Georgia, serif;
-  color: black;
-  background: white;
-}
-
-/* Selected Text -------------------------------------------------------------- */
-/* -moz- must be declared separately */
-::-moz-selection {
-  color: black;
-  background: #ff69b4;
-  text-shadow: none;
-}
-
-::selection {
-  color: black;
-  background: #ff69b4;
-  text-shadow: none;
 }
 
 /* Links -------------------------------------------------------------- */
@@ -183,41 +117,6 @@ a:hover {
 }
 a:active {
   border-bottom-color: #69ffb4;
-}
-
-/* Headings -------------------------------------------------------------- */
-.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
-  font-weight: normal;
-}
-
-.h1, h1 {
-  font-size: 2.618em;
-  line-height: 1.194em;
-}
-
-.h2, h2 {
-  font-size: 2.441em;
-  line-height: 1.28em;
-}
-
-.h3, h3 {
-  font-size: 1.953em;
-  line-height: 1.6em;
-}
-
-.h4, h4 {
-  font-size: 1.618em;
-  line-height: 1.931em;
-}
-
-.h5, h5 {
-  font-size: 1.563em;
-  line-height: 2em;
-}
-
-.h6, h6 {
-  font-size: 1.25em;
-  line-height: 1.25em;
 }
 
 /* Inline -------------------------------------------------------------- */
@@ -264,7 +163,7 @@ mark {
 
 small {
   font-size: 0.8em;
-  line-height: 1.953em;
+  line-height: 1.875em;
 }
 
 q {
@@ -282,59 +181,15 @@ q em {
 }
 
 /* Block -------------------------------------------------------------- */
-p {
-  margin-bottom: 1.563em;
-}
-
 pre {
   margin: 1.714em;
   white-space: pre;
 }
 
-blockquote {
-  margin: 1.714em 21.875px;
-  font-style: italic;
-  font-weight: 300;
-}
-
-/* Lists -------------------------------------------------------------- */
-ol, ul, dl {
-  margin-bottom: 1.563em;
-  margin-left: 21.875px;
-}
-
-dl {
-  margin-left: 0;
-}
-
-ol {
-  list-style: decimal;
-}
-
-ul {
-  list-style: disc;
-}
-li ul {
-  list-style-type: circle;
-}
-
-dt {
-  margin-top: 1.563em;
-  font-style: italic;
-  color: black;
-}
-dt:first-of-type {
-  margin-top: 0em;
-}
-
-dd {
-  padding-left: 21.875px;
-}
-
 /* Tables -------------------------------------------------------------- */
 /* tables still need 'cellspacing="0"' in the markup */
 table {
-  margin-bottom: 1.563em;
+  margin-bottom: 1.5em;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -356,7 +211,7 @@ th, td, caption {
 table, th {
   border-bottom-style: solid;
   border-bottom-width: 0.071em;
-  padding-bottom: 0.71em;
+  padding-bottom: 0.679em;
   border-color: gray;
   border-style: dotted;
 }
@@ -378,11 +233,11 @@ img {
 }
 img.left {
   float: left;
-  margin: 10.938px 21.875px 10.938px 0;
+  margin: 10.5px 21.875px 10.5px 0;
 }
 img.right {
   float: right;
-  margin: 10.938px 0 10.938px 21.875px;
+  margin: 10.5px 0 10.5px 21.875px;
 }
 
 /* Forms -------------------------------------------------------------- */
@@ -650,10 +505,10 @@ optgroup {
 }
 
 fieldset {
-  margin-bottom: 1.563em;
+  margin-bottom: 1.5em;
   border-style: solid;
   border-width: 0.071em;
-  padding: 1.491em;
+  padding: 1.429em;
   border-color: black;
   border-style: dotted;
 }
@@ -673,12 +528,12 @@ label {
 
 .textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
   font-size: 1em;
-  line-height: 1.563em;
+  line-height: 1.5em;
   border-style: solid;
   border-width: 0.071em;
-  padding: 0.319em;
+  padding: 0.304em;
   border-width: 1px;
-  margin-bottom: 0.781em;
+  margin-bottom: 0.75em;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -687,11 +542,11 @@ label {
   max-width: 100%;
   margin-top: 0;
   border-color: black;
-  height: 2.344em;
+  height: 2.25em;
 }
 
 textarea {
-  height: 10.156;
+  height: 9.75;
 }
 
 input[type=search] {
@@ -937,7 +792,7 @@ textarea, input:not([type="radio"]) {
 }
 body.markup-elements h1.section-title {
   font-size: 1.953em;
-  line-height: 1.6em;
+  line-height: 1.536em;
   background-color: #d3d3d3;
   text-transform: uppercase;
   padding-left: 10.938px;
@@ -970,8 +825,8 @@ body.markup-elements h1.section-title a:active {
 body.markup-elements article.element {
   *zoom: 1;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 21.875px;
-  padding-bottom: 20.875px;
+  margin-bottom: 21px;
+  padding-bottom: 20px;
 }
 body.markup-elements article.element:after {
   content: "";
@@ -985,7 +840,7 @@ body.markup-elements article.element:last-child {
 }
 body.markup-elements article.element h2.element-title {
   font-size: 1em;
-  line-height: 1.563em;
+  line-height: 1.5em;
   background-color: gray;
   color: white;
   text-transform: uppercase;
@@ -1019,8 +874,8 @@ body.markup-elements article.element h2.element-title a:active {
 body.markup-elements article.element .example {
   *zoom: 1;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
-  margin-bottom: 10.938px;
-  padding-bottom: 9.938px;
+  margin-bottom: 10.5px;
+  padding-bottom: 9.5px;
   *zoom: 1;
 }
 body.markup-elements article.element .example:after {

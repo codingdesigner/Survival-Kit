@@ -1,0 +1,31 @@
+html
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  
+
+/* Body --------------------------------------------------------------
+
+/* Establish baseline rhythm 
+ * from compass/typography/_vertical_rhythm
++establish-baseline
+
+body
+  font-family: $font-body
+  color: $base-color
+  background: $background-color
+  
+  
+/* Selected Text --------------------------------------------------------------
+/* -moz- must be declared separately
+
+\::-moz-selection
+  // "+accessible-color" located in 'kit_partials/mixins/_helpers.sass'
+  +accessible-color($alt-color)
+  background: $alt-color
+  text-shadow: none
+
+\::selection
+  // "+accessible-color" located in 'kit_partials/mixins/_helpers.sass'
+  +accessible-color($alt-color)
+  background: $alt-color
+  text-shadow: none
