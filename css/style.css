@@ -92,60 +92,7 @@ html > body {
   font-size: 14px;
 }
 
-/* Links -------------------------------------------------------------- */
-a {
-  color: #ff69b4;
-}
-a:visited {
-  color: #ff69b4;
-}
-a:hover {
-  color: #69ffb4;
-}
-a:active {
-  color: #69ffb4;
-}
-a {
-  text-decoration: none;
-  border-bottom: 1px solid #ff69b4;
-}
-a:visited {
-  border-bottom-color: #ff69b4;
-}
-a:hover {
-  border-bottom-color: #69ffb4;
-}
-a:active {
-  border-bottom-color: #69ffb4;
-}
-
 /* Inline -------------------------------------------------------------- */
-cite, em, dfn, address, i {
-  font-style: italic;
-}
-
-strong, dfn, b {
-  font-weight: bold;
-}
-
-sup, sub {
-  font-size: smaller;
-  line-height: 0;
-}
-
-sup {
-  vertical-align: super;
-}
-
-sub {
-  vertical-align: sub;
-}
-
-abbr, acronym {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-
 ins {
   text-decoration: none;
   border-bottom: 1px solid black;
@@ -153,31 +100,6 @@ ins {
 
 del {
   text-decoration: line-through;
-}
-
-mark {
-  background: red;
-  background-color: rgba(255, 255, 0, 0.5);
-  text-shadow: none;
-}
-
-small {
-  font-size: 0.8em;
-  line-height: 1.875em;
-}
-
-q {
-  font-style: italic;
-  quotes: "“" "”";
-}
-q:before {
-  content: open-quote;
-}
-q:after {
-  content: close-quote;
-}
-q em {
-  font-style: normal;
 }
 
 /* Block -------------------------------------------------------------- */

@@ -4,36 +4,20 @@
 
 
 
-/* Links --------------------------------------------------------------
-a
-  +link-colors($alt-color, complement($alt-color), complement($alt-color), $alt-color, false)
-  +better-links($alt-color, complement($alt-color), complement($alt-color), $alt-color, false)
-  // +link-transitions
+
 
 
 
 
 /* Inline --------------------------------------------------------------
 
-cite, em, dfn, address, i
-  font-style: italic
 
-strong, dfn, b
-  font-weight: bold
 
-sup, sub
-  font-size: smaller
-  line-height: 0
 
-sup
-  vertical-align: super
 
-sub
-  vertical-align: sub
 
-abbr, acronym
-  border-bottom: 1px dotted
-  cursor: help
+
+
 
 ins
   text-decoration: none
@@ -42,30 +26,10 @@ ins
 del
   text-decoration: line-through
 
-mark
-  background: $red
-  background-color: transparentize($yellow, 0.5)
-  text-shadow: none
 
-small
-  +adjust-font-size-to(ms(-1))
 
-q
-  font-style: italic
-  quotes: "“" "”"
-  &:before
-    content: open-quote
-  &:after
-    content: close-quote
 
-  em
-    font-style: normal
-
-pre, code, tt
-  @extend .mono
-
-code
-  // background: $gray
+  
   
 /* Block --------------------------------------------------------------
 
