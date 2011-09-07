@@ -1,0 +1,12 @@
+@import meyer-reset
+@import normalize
+
+$init-type: meyer !default
+
+=init($init-type)
+  @if $init-type == meyer
+    +meyer-reset
+  @if $init-type == normalize
+    +normalize
+    
++init
