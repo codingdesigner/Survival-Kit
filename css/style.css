@@ -75,12 +75,104 @@ table {
   outline: 1px dashed red;
 }
 
-/* Typography -------------------------------------------------------------- */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.italic, address, em, cite, q, dfn, i {
+  font-style: italic;
+}
+
+.bold, strong, dfn, b, th, thead th, tfoot {
+  font-weight: bold;
+}
+
+.serif {
+  font-family: Georgia, serif;
+}
+
+.sans, .textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
+  font-family: sans-serif;
+}
+
+.mono, pre, code, kbd, tt, body.markup-elements article.element .example .markup + .show-source {
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+}
+
+.caps, .allcaps, caption, .smallcaps {
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+}
+
+.headers, .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+  font-family: sans-serif;
+}
+
+.allcaps, caption {
+  text-transform: uppercase;
+}
+
+.amp {
+  font-family: Georgia, serif;
+}
+
+.smallcaps {
+  font-variant: small-caps;
+}
+
+.dquo {
+  margin-left: -0.5em;
+  font-family: Georgia, serif;
+}
+
+/* Only use the fancy ampersand in <h#> tags */
+h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
+  font-size: 1em;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
+/* Body -------------------------------------------------------------- */
 /* Establish baseline rhythm
  * from compass/typography/_vertical_rhythm */
 body {
@@ -92,7 +184,176 @@ html > body {
   font-size: 14px;
 }
 
-/* Inline -------------------------------------------------------------- */
+body {
+  font-family: Georgia, serif;
+  color: black;
+  background: white;
+}
+
+/* Selected Text -------------------------------------------------------------- */
+/* -moz- must be declared separately */
+::-moz-selection {
+  color: black;
+  background: #ff69b4;
+  text-shadow: none;
+}
+
+::selection {
+  color: black;
+  background: #ff69b4;
+  text-shadow: none;
+}
+
+/* Headings -------------------------------------------------------------- */
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+  font-weight: normal;
+}
+
+.h1, h1 {
+  font-size: 2.618em;
+  line-height: 1.146em;
+}
+
+.h2, h2 {
+  font-size: 2.441em;
+  line-height: 1.229em;
+}
+
+.h3, h3 {
+  font-size: 1.953em;
+  line-height: 1.536em;
+}
+
+.h4, h4 {
+  font-size: 1.618em;
+  line-height: 1.854em;
+}
+
+.h5, h5 {
+  font-size: 1.563em;
+  line-height: 1.92em;
+}
+
+.h6, h6 {
+  font-size: 1.25em;
+  line-height: 2.4em;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+pre {
+  margin: 1.714em;
+  white-space: pre;
+}
+
+blockquote {
+  margin: 1.714em 21.875px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Lists -------------------------------------------------------------- */
+ol, ul, dl {
+  margin-bottom: 1.5em;
+  margin-left: 21.875px;
+}
+
+dl {
+  margin-left: 0;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+li ul {
+  list-style-type: circle;
+}
+
+dt {
+  margin-top: 1.5em;
+  font-style: italic;
+  color: black;
+}
+dt:first-of-type {
+  margin-top: 0em;
+}
+
+dd {
+  padding-left: 21.875px;
+}
+
+/* Links -------------------------------------------------------------- */
+a {
+  color: #ff69b4;
+}
+a:visited {
+  color: #ff69b4;
+}
+a:hover {
+  color: #69ffb4;
+}
+a:active {
+  color: #69ffb4;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #ff69b4;
+}
+a:visited {
+  border-bottom-color: #ff69b4;
+}
+a:hover {
+  border-bottom-color: #69ffb4;
+}
+a:active {
+  border-bottom-color: #69ffb4;
+}
+
+small {
+  font-size: 0.8em;
+  line-height: 1.875em;
+}
+
+q {
+  quotes: "“" "”";
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+sup, sub {
+  font-size: smaller;
+  line-height: 0;
+}
+
+sup {
+  vertical-align: super;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+mark {
+  background: red;
+  background-color: rgba(255, 255, 0, 0.5);
+  text-shadow: none;
+}
+
 ins {
   text-decoration: none;
   border-bottom: 1px solid black;
@@ -102,10 +363,20 @@ del {
   text-decoration: line-through;
 }
 
-/* Block -------------------------------------------------------------- */
-pre {
-  margin: 1.714em;
-  white-space: pre;
+/* Images -------------------------------------------------------------- */
+img {
+  vertical-align: text-bottom;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+img.left {
+  float: left;
+  margin: 10.5px 21.875px 10.5px 0;
+}
+img.right {
+  float: right;
+  margin: 10.5px 0 10.5px 21.875px;
 }
 
 /* Tables -------------------------------------------------------------- */
@@ -119,10 +390,6 @@ table {
 
 table, td, th {
   vertical-align: top;
-}
-
-th, thead th {
-  font-weight: bold;
 }
 
 th, td, caption {
@@ -142,24 +409,267 @@ tr.even td {
   background-color: gray;
 }
 
-tfoot {
-  font-weight: bold;
+.input_tiny {
+  width: 50px;
 }
 
-/* Images -------------------------------------------------------------- */
-img {
-  vertical-align: text-bottom;
-  max-width: 100%;
+.input_small {
+  width: 100px;
+}
+
+.input_medium {
+  width: 150px;
+}
+
+.input_large {
+  width: 200px;
+}
+
+.input_xlarge {
+  width: 250px;
+}
+
+.input_xxlarge {
+  width: 300px;
+}
+
+.input_full {
+  width: 100%;
+}
+
+.input_full_wrap {
+  display: block;
+  padding-right: 8px;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  display: none;
+}
+
+input,
+button,
+select,
+textarea {
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  margin: 0;
+  vertical-align: middle;
+}
+
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  -webkit-appearance: none;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -o-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -khtml-border-radius: 11px;
+  border-radius: 11px;
+  background: #dddddd url(../images/button.png) repeat-x;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+  background-image: -moz-linear-gradient(#ffffff, #dddddd);
+  background-image: -o-linear-gradient(#ffffff, #dddddd);
+  background-image: -ms-linear-gradient(#ffffff, #dddddd);
+  background-image: linear-gradient(#ffffff, #dddddd);
+  border: 1px solid;
+  border-color: #dddddd #bbbbbb #999999;
+  cursor: pointer;
+  color: #333333;
+  font: bold 12px/1.2 Arial, sans-serif;
+  outline: 0;
+  overflow: visible;
+  padding: 3px 10px 4px;
+  text-shadow: white 0 1px 1px;
+  width: auto;
+  *padding-top: 2px;
+  *padding-bottom: 0px;
+}
+
+button {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+button[disabled],
+input[type="reset"][disabled],
+input[type="submit"][disabled],
+input[type="button"][disabled] {
+  color: #888888;
+}
+
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -webkit-appearance: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid;
+  border-color: #848484 #c1c1c1 #e1e1e1;
+  color: black;
+  outline: 0;
+  padding: 2px 3px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  height: 1.8em;
+  *padding-top: 2px;
+  *padding-bottom: 1px;
+  *height: auto;
+}
+
+input.placeholder-text,
+textarea.placeholder-text {
+  color: #888888;
+}
+
+::-webkit-input-placeholder {
+  color: #888888;
+}
+
+textarea[disabled],
+select[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled] {
+  background-color: #eeeeee;
+  color: #888888;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active {
+  -moz-box-shadow: #0066ff 0 0 7px;
+  -webkit-box-shadow: #0066ff 0 0 7px;
+  box-shadow: #0066ff 0 0 7px;
+  z-index: 1;
+}
+
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.is_webkit select {
+  background-image: url(../images/select_arrow.gif);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 20px;
+}
+
+textarea,
+select[multiple] {
   height: auto;
-  -ms-interpolation-mode: bicubic;
 }
-img.left {
-  float: left;
-  margin: 10.5px 21.875px 10.5px 0;
+
+select[multiple],
+.is_webkit select[multiple] {
+  background-image: none;
+  padding: 0;
 }
-img.right {
-  float: right;
-  margin: 10.5px 0 10.5px 21.875px;
+
+textarea {
+  min-height: 40px;
+  overflow: auto;
+  resize: vertical;
+  width: 100%;
+}
+
+optgroup {
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.ie6_button,
+* html button {
+  background: #dddddd url(../images/button.png) repeat-x;
+  border: 1px solid;
+  border-color: #dddddd #bbbbbb #999999;
+  cursor: pointer;
+  color: #333333;
+  font: bold 12px/1.2 Arial, sans-serif;
+  padding: 2px 10px 0px;
+  overflow: visible;
+  width: auto;
+}
+
+* html button {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.ie6_input,
+* html textarea,
+* html select {
+  background: white;
+  border: 1px solid;
+  border-color: #848484 #c1c1c1 #e1e1e1;
+  color: black;
+  padding: 2px 3px 1px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  vertical-align: top;
+}
+
+* html select {
+  margin-top: 1px;
+}
+
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled {
+  color: #888888;
+}
+
+.ie6_input_disabled {
+  background: #eeeeee;
 }
 
 /* Forms -------------------------------------------------------------- */
@@ -498,6 +1008,445 @@ input[type="radio"], input[type="checkbox"] {
 
 textarea, input:not([type="radio"]) {
   max-width: 100%;
+}
+
+#autocomplete {
+  border: 1px solid black;
+  overflow: hidden;
+  position: absolute;
+  z-index: 100;
+}
+#autocomplete ul {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+#autocomplete li {
+  cursor: default;
+  white-space: pre;
+}
+
+html.js input.form-autocomplete {
+  background-image: url('images/cms/drupal/throbber.gif?1303351260');
+  background-position: 100% 2px;
+  /* LTR */
+  background-repeat: no-repeat;
+}
+html.js input.throbbing {
+  background-position: 100% -18px;
+  /* LTR */
+}
+html.js fieldset.collapsed {
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  height: 1em;
+}
+html.js fieldset.collapsed .fieldset-wrapper {
+  display: none;
+}
+
+fieldset.collapsible {
+  position: relative;
+}
+fieldset.collapsible .fieldset-legend {
+  display: block;
+}
+
+.form-textarea-wrapper textarea {
+  display: block;
+  margin: 0;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.resizable-textarea .grippie {
+  background: gray url('images/cms/drupal/grippie.png?1303351260') no-repeat center 2px;
+  border: 1px solid black;
+  border-top-width: 0;
+  cursor: s-resize;
+  height: 9px;
+  overflow: hidden;
+}
+
+body.drag {
+  cursor: move;
+}
+
+.draggable a.tabledrag-handle {
+  cursor: move;
+  float: left;
+  /* LTR */
+  height: 1.7em;
+  margin: -0.4em 0 -0.4em -0.5em;
+  /* LTR */
+  padding: 0.42em 1.5em 0.42em 0.5em;
+  /* LTR */
+  text-decoration: none;
+}
+
+a.tabledrag-handle:hover {
+  text-decoration: none;
+}
+a.tabledrag-handle .handle {
+  background: url('images/cms/drupal/draggable.png?1303351260') no-repeat 0 0;
+  height: 13px;
+  margin-top: 4px;
+  width: 13px;
+}
+a.tabledrag-handle-hover .handle {
+  background-position: 0 -20px;
+}
+
+div.indentation {
+  float: left;
+  /* LTR */
+  height: 1.7em;
+  margin: -0.4em 0.2em -0.4em -0.4em;
+  /* LTR */
+  padding: 0.42em 0 0.42em 0.6em;
+  /* LTR */
+  width: 20px;
+}
+div.tree-child {
+  background: url('images/cms/drupal/tree.png?1303351260') no-repeat 11px center;
+  /* LTR */
+}
+div.tree-child-last {
+  background: url('images/cms/drupal/tree-bottom.png?1303351260') no-repeat 11px center;
+  /* LTR */
+}
+div.tree-child-horizontal {
+  background: url('images/cms/drupal/tree.png?1303351260') no-repeat -11px center;
+}
+
+.tabledrag-toggle-weight-wrapper {
+  text-align: right;
+  /* LTR */
+}
+
+table.sticky-header {
+  background-color: white;
+  margin-top: 0;
+}
+
+.progress .bar {
+  background-color: white;
+  border: 1px solid black;
+}
+.progress .filled {
+  background-color: black;
+  height: 1.5em;
+  width: 5px;
+}
+.progress .percentage {
+  float: right;
+  /* LTR */
+}
+
+.progress-disabled {
+  float: left;
+  /* LTR */
+}
+
+.ajax-progress {
+  float: left;
+  /* LTR */
+}
+.ajax-progress .throbber {
+  background: transparent url('images/cms/drupal/throbber.gif?1303351260') no-repeat 0px -18px;
+  float: left;
+  /* LTR */
+  height: 15px;
+  margin: 2px;
+  width: 15px;
+}
+
+tr .ajax-progress .throbber {
+  margin: 0 2px;
+}
+
+.ajax-progress-bar {
+  width: 16em;
+}
+
+.container-inline div, .container-inline label {
+  display: inline;
+}
+.container-inline .fieldset-wrapper {
+  display: block;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+html.js .js-hide, .element-hidden {
+  display: none;
+}
+
+.element-invisible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.element-invisible.element-focusable {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.element-invisible.element-focusable:active, .element-invisible.element-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* REPLACEMENT FOR THE CSS FILE THAT SHIPS W/ TYPOGRIFY.MODULE */
+/*amp_font_family ||= "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua",serif */
+.caps, .allcaps, caption, .smallcaps {
+  font-size: 0.9em;
+}
+
+.dquo {
+  margin-left: -0.5em;
+  font-family: Plantin,'Plantin std','Plantin', 'Warnock Pro', 'Baskerville','Goudy Old Style','Palatino','Book Antiqua',serif;
+}
+
+/* Only use the fancy ampersand in <h#> tags */
+h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
+  font-size: 1em;
+  font-family: Plantin,'Plantin std','Plantin', 'Warnock Pro', 'Baskerville','Goudy Old Style','Palatino','Book Antiqua',serif;
+}
+
+.messages, .status, .warning, .error {
+  border: 1px solid black;
+  padding: 10.5px 0.5em;
+}
+.messages p:last-child, .status p:last-child, .warning p:last-child, .error p:last-child {
+  margin-bottom: 0;
+}
+
+.status {
+  border-color: green;
+  color: green;
+}
+
+.warning {
+  border-color: #ffa500;
+  color: #ffa500;
+}
+
+.error {
+  border-color: red;
+  color: red;
+}
+
+ul.pager {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+ul.pager li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+ul.pager li:first-child, ul.pager li.first {
+  padding-left: 0;
+}
+ul.pager li:last-child {
+  padding-right: 0;
+}
+ul.pager li.last {
+  padding-right: 0;
+}
+ul.pager a {
+  border-bottom: none;
+}
+ul.pager a:hover {
+  border-bottom: none;
+}
+
+#site-name a {
+  border-bottom: none;
+}
+#site-name a:hover {
+  border-bottom: none;
+}
+
+#main-menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+#main-menu li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+#main-menu li:first-child, #main-menu li.first {
+  padding-left: 0;
+}
+#main-menu li:last-child {
+  padding-right: 0;
+}
+#main-menu li.last {
+  padding-right: 0;
+}
+
+ul.tabs {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+}
+ul.tabs li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+ul.tabs li:first-child, ul.tabs li.first {
+  padding-left: 0;
+}
+ul.tabs li:last-child {
+  padding-right: 0;
+}
+ul.tabs li.last {
+  padding-right: 0;
+}
+ul.tabs li {
+  border-bottom: 1px solid black;
+}
+ul.tabs li.active a {
+  padding-bottom: 0;
+  border-bottom: 1px solid white;
+}
+ul.tabs li a {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  float: left;
+  padding: 0 0.25em 1px;
+  position: relative;
+  bottom: -1px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -o-border-top-left-radius: 5px;
+  -ms-border-top-left-radius: 5px;
+  -khtml-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -o-border-top-right-radius: 5px;
+  -ms-border-top-right-radius: 5px;
+  -khtml-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+ul.tabs li a {
+  border-bottom: none;
+}
+ul.tabs li a:hover {
+  border-bottom: none;
+}
+
+.form-required {
+  color: red;
+}
+
+a.feed-icon {
+  border-bottom: none;
+}
+a.feed-icon:hover {
+  border-bottom: none;
+}
+
+ul.inline {
+  list-style-type: none;
+}
+ul.inline, ul.inline li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+
+.field-type-taxonomy-term-reference .field-item {
+  display: inline;
+}
+
+.field-label-above .field-label {
+  display: block;
+}
+
+#comments .comment {
+  *zoom: 1;
+  margin-bottom: 10.5px;
+  padding-bottom: 10.5px;
+  border-bottom: none;
+}
+#comments .comment:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#comments .comment:last-child {
+  padding-bottom: 0;
+  border-bottom-width: 0;
+  margin-bottom: 0;
+}
+#comments .comment:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#comments .indented {
+  padding-left: 1em;
 }
 
 /* Sprites -------------------------------------------------------------- */

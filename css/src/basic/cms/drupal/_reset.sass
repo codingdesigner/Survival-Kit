@@ -198,11 +198,9 @@ html.js .js-hide, .element-hidden
   "!important" is used to prevent unintentional overrides.
 
 .element-invisible
-  +visually-hide
+  +visuallyhidden
   &.element-focusable
-    &:active, &:focus
-      position: static !important
-      clip: auto
+    +visuallyhidden(true)
 
 // The .element-focusable class extends the .element-invisible class to allow
   the element to be focusable when navigated to via the keyboard.

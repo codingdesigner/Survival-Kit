@@ -4,8 +4,6 @@ a
   +better-links($alt-color, complement($alt-color), complement($alt-color), $alt-color, false)
   // +link-transitions
   
-  
-
 em
   @extend .italic
   
@@ -27,31 +25,29 @@ q
     content: open-quote
   &:after
     content: close-quote
-  
+    
 dfn
+  @extend .bold
   @extend .italic
   
 abbr, acronym
   border-bottom: 1px dotted
   cursor: help
-    
-address
-  @extend .italic
   
 time
 
 code
   @extend .mono
-  
-tt
-  @extend .mono
-  
+
 var
 
 samp
-
+  
 kbd
+  @extend .mono
 
+tt
+  @extend .mono
 
 sup, sub
   font-size: smaller
@@ -68,9 +64,6 @@ i
 
 b
   @extend .bold  
-  
-dfn
-  @extend .bold
   
 u
 
@@ -89,8 +82,16 @@ bdi
 
 bdo
 
-pre
-  @extend .mono
+
+
+
+  
+
+
+  
+
+
+
 
 
 
