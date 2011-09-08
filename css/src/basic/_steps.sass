@@ -1,5 +1,6 @@
-// SETUP
-
+// SETUP - 
+// TODO: refactor items in /common/ into a gem library
+// do not edit
 @import ../common/functions/calculations
 @import ../common/functions/modular-scale
 @import ../common/functions/color
@@ -7,23 +8,27 @@
 @import ../common/variables/color_names
 @import ../common/variables/color_schemes
 
-
+// edit these as you see fit
 @import variables/base
 @import variables/colors
 @import variables/fonts
+// define the dimensions of the grid
+@import variables/grids-all.sass
 
+// do not edit
 @import compass
 
+// do not edit
 @import ../common/mixins/helpers
 @import ../common/mixins/typography
 @import ../common/mixins/layout
 @import ../common/mixins/ui
 @import ../common/mixins/sfx
 
-// ADD CSS HERE
+// THE FOLLOWING INPORTS WILL ADD CSS UPON COMPILE
 @import ../common/reset/reset
 
-@import variables/grids-all.sass
+// CHOOSE A GRID SYSTEM
 // @import grids/grids-blueprint.sass
 @import grids/grids-susy.sass
   
@@ -32,6 +37,7 @@
 @import extend/typography
 
 // DEFAULTS
+// edit as you see fit for your project
 @import defaults/common
 @import defaults/markup/headers
 @import defaults/markup/grouping
@@ -57,11 +63,12 @@
 
 
 // @import responsive/responsive-blueprint
-@import responsive/responsive-susy
+// @import responsive/responsive-susy
 
-@import browser_adjustments/modernizr
+// ADJUST FOR LESSER/GREATER SYSTEMS
+// @import browser_adjustments/modernizr
+// @import browser_adjustments/ie
 // NOTE ABOUT SELECTIVIZR
-@import browser_adjustments/ie
 
 @import media/print
 

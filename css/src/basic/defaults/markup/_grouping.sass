@@ -7,6 +7,8 @@ pre
   @extend .mono
   margin: $base-rhythm-unit
   white-space: pre
+  white-space: pre-wrap
+  word-wrap: break-word
 
 blockquote
   margin: $base-rhythm-unit $kit-gutter
@@ -15,9 +17,9 @@ blockquote
   
 /* Lists --------------------------------------------------------------
 
-ol, ul, dl
-  +trailer
-  margin-left: $kit-gutter
+ol, ul
+  // +trailer
+  padding-left: $kit-gutter
 
 dl
   margin-left: 0

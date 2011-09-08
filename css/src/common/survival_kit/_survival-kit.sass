@@ -4,6 +4,11 @@
 @import ../mixins/helpers
 
 body.markup-elements
+  header
+    h1
+      +adjust-font-size-to(ms(6))
+    h2
+      +adjust-font-size-to(ms(5))
   h1.section-title
     +adjust-font-size-to(ms(4))
     background-color: $lightgray

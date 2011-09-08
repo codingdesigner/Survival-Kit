@@ -3,10 +3,16 @@
 
 $init-type: meyer !default
 
-=init($init-type)
+=init($init-type, $headers: true)
   @if $init-type == meyer
     +meyer-reset
   @if $init-type == normalize
     +normalize
+    @if $headers
+      // reset the header sizes 
+      h1, h2, h3, h4, h5, h6
+        font-size: 100%
     
 +init
+
+
