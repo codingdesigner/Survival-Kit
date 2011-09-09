@@ -1,24 +1,33 @@
-=tabs
-  // assumes placement on UL
+/* create simple tabs from <a> unside <ul>
+ * $dir is 'bottom' for standard tabs
+ * 'top' for hanging tabs
+ * assumes placement on UL
+=tabs($dir: bottom)
   +horizontal-list(3px)
   position: relative
   li
-    border-bottom: 1px solid $base-color
+    border-#{$dir}: 1px solid $base-color
     &.active
       a
-        padding-bottom: 0
-        border-bottom: 1px solid $white
+        padding-#{$dir}: 0
+        border-#{$dir}: 1px solid $white
     a
       border:
         width: 1px
         style: solid
         color: $base-color
-      +remove-link-underlines
       float: left
-      padding: 0 0.25em 1px
       position: relative
-      bottom: -1px
-      +border-top-radius
+      #{$dir}: -1px
+      @if $dir == bottom
+        padding: 0 0.25em 1px
+        +border-top-radius
+        +remove-link-underlines
+      @else
+        padding: 1px 0.25em 0
+        +border-bottom-radius
+        border-top-width: 0
+        
   
 =decending-z-order-tab($count: 20)
   // assumes placement on UL
