@@ -13,6 +13,10 @@
  * https://github.com/canarymason/The-Coding-Designers-Survival-Kit
  * Learn more about Sass & Compass at http://compass-style.org/ */
 /* Links -------------------------------------------------------------- */
+/* create simple tabs from <a> unside <ul>
+ * $dir is 'bottom' for standard tabs
+ * 'top' for hanging tabs
+ * assumes placement on UL */
 /* normalize.css 2011-08-12T17:28 UTC · http://github.com/necolas/normalize.css */
 /* =============================================================================
  * HTML5 display definitions
@@ -324,20 +328,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* DEFINE THE GRID CONTAINER -------------------------------------------------------------- */
-.container {
+.container, #page {
   *zoom: 1;
   margin: auto;
   width: 949.375px;
   max-width: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(14.747%, rgba(100, 100, 225, 0.25)), color-stop(14.747%, rgba(0, 0, 0, 0)), color-stop(17.051%, rgba(0, 0, 0, 0)), color-stop(17.051%, rgba(100, 100, 225, 0.25)), color-stop(31.797%, rgba(100, 100, 225, 0.25)), color-stop(31.797%, rgba(0, 0, 0, 0)), color-stop(34.101%, rgba(0, 0, 0, 0)), color-stop(34.101%, rgba(100, 100, 225, 0.25)), color-stop(48.848%, rgba(100, 100, 225, 0.25)), color-stop(48.848%, rgba(0, 0, 0, 0)), color-stop(51.152%, rgba(0, 0, 0, 0)), color-stop(51.152%, rgba(100, 100, 225, 0.25)), color-stop(65.899%, rgba(100, 100, 225, 0.25)), color-stop(65.899%, rgba(0, 0, 0, 0)), color-stop(68.203%, rgba(0, 0, 0, 0)), color-stop(68.203%, rgba(100, 100, 225, 0.25)), color-stop(82.949%, rgba(100, 100, 225, 0.25)), color-stop(82.949%, rgba(0, 0, 0, 0)), color-stop(85.253%, rgba(0, 0, 0, 0)), color-stop(85.253%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 14.747%, rgba(0, 0, 0, 0) 14.747%, rgba(0, 0, 0, 0) 17.051%, rgba(100, 100, 225, 0.25) 17.051%, rgba(100, 100, 225, 0.25) 31.797%, rgba(0, 0, 0, 0) 31.797%, rgba(0, 0, 0, 0) 34.101%, rgba(100, 100, 225, 0.25) 34.101%, rgba(100, 100, 225, 0.25) 48.848%, rgba(0, 0, 0, 0) 48.848%, rgba(0, 0, 0, 0) 51.152%, rgba(100, 100, 225, 0.25) 51.152%, rgba(100, 100, 225, 0.25) 65.899%, rgba(0, 0, 0, 0) 65.899%, rgba(0, 0, 0, 0) 68.203%, rgba(100, 100, 225, 0.25) 68.203%, rgba(100, 100, 225, 0.25) 82.949%, rgba(0, 0, 0, 0) 82.949%, rgba(0, 0, 0, 0) 85.253%, rgba(100, 100, 225, 0.25) 85.253%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 14.747%, rgba(0, 0, 0, 0) 14.747%, rgba(0, 0, 0, 0) 17.051%, rgba(100, 100, 225, 0.25) 17.051%, rgba(100, 100, 225, 0.25) 31.797%, rgba(0, 0, 0, 0) 31.797%, rgba(0, 0, 0, 0) 34.101%, rgba(100, 100, 225, 0.25) 34.101%, rgba(100, 100, 225, 0.25) 48.848%, rgba(0, 0, 0, 0) 48.848%, rgba(0, 0, 0, 0) 51.152%, rgba(100, 100, 225, 0.25) 51.152%, rgba(100, 100, 225, 0.25) 65.899%, rgba(0, 0, 0, 0) 65.899%, rgba(0, 0, 0, 0) 68.203%, rgba(100, 100, 225, 0.25) 68.203%, rgba(100, 100, 225, 0.25) 82.949%, rgba(0, 0, 0, 0) 82.949%, rgba(0, 0, 0, 0) 85.253%, rgba(100, 100, 225, 0.25) 85.253%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 14.747%, rgba(0, 0, 0, 0) 14.747%, rgba(0, 0, 0, 0) 17.051%, rgba(100, 100, 225, 0.25) 17.051%, rgba(100, 100, 225, 0.25) 31.797%, rgba(0, 0, 0, 0) 31.797%, rgba(0, 0, 0, 0) 34.101%, rgba(100, 100, 225, 0.25) 34.101%, rgba(100, 100, 225, 0.25) 48.848%, rgba(0, 0, 0, 0) 48.848%, rgba(0, 0, 0, 0) 51.152%, rgba(100, 100, 225, 0.25) 51.152%, rgba(100, 100, 225, 0.25) 65.899%, rgba(0, 0, 0, 0) 65.899%, rgba(0, 0, 0, 0) 68.203%, rgba(100, 100, 225, 0.25) 68.203%, rgba(100, 100, 225, 0.25) 82.949%, rgba(0, 0, 0, 0) 82.949%, rgba(0, 0, 0, 0) 85.253%, rgba(100, 100, 225, 0.25) 85.253%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 14.747%, rgba(0, 0, 0, 0) 14.747%, rgba(0, 0, 0, 0) 17.051%, rgba(100, 100, 225, 0.25) 17.051%, rgba(100, 100, 225, 0.25) 31.797%, rgba(0, 0, 0, 0) 31.797%, rgba(0, 0, 0, 0) 34.101%, rgba(100, 100, 225, 0.25) 34.101%, rgba(100, 100, 225, 0.25) 48.848%, rgba(0, 0, 0, 0) 48.848%, rgba(0, 0, 0, 0) 51.152%, rgba(100, 100, 225, 0.25) 51.152%, rgba(100, 100, 225, 0.25) 65.899%, rgba(0, 0, 0, 0) 65.899%, rgba(0, 0, 0, 0) 68.203%, rgba(100, 100, 225, 0.25) 68.203%, rgba(100, 100, 225, 0.25) 82.949%, rgba(0, 0, 0, 0) 82.949%, rgba(0, 0, 0, 0) 85.253%, rgba(100, 100, 225, 0.25) 85.253%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 14.747%, rgba(0, 0, 0, 0) 14.747%, rgba(0, 0, 0, 0) 17.051%, rgba(100, 100, 225, 0.25) 17.051%, rgba(100, 100, 225, 0.25) 31.797%, rgba(0, 0, 0, 0) 31.797%, rgba(0, 0, 0, 0) 34.101%, rgba(100, 100, 225, 0.25) 34.101%, rgba(100, 100, 225, 0.25) 48.848%, rgba(0, 0, 0, 0) 48.848%, rgba(0, 0, 0, 0) 51.152%, rgba(100, 100, 225, 0.25) 51.152%, rgba(100, 100, 225, 0.25) 65.899%, rgba(0, 0, 0, 0) 65.899%, rgba(0, 0, 0, 0) 68.203%, rgba(100, 100, 225, 0.25) 68.203%, rgba(100, 100, 225, 0.25) 82.949%, rgba(0, 0, 0, 0) 82.949%, rgba(0, 0, 0, 0) 85.253%, rgba(100, 100, 225, 0.25) 85.253%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-position: left top;
 }
-.container:after {
+.container:after, #page:after {
   content: "";
   display: table;
   clear: both;
@@ -402,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
 }
 
-.mono, pre, code, kbd, tt, body.markup-elements article.element .example .markup + .show-source {
+.mono, pre, code, kbd, tt {
   font-family: Consolas, Menlo, "Courier New", monospace, monospace;
   _font-family: Consolas, Menlo, "Courier New", monospace, monospace;
 }
@@ -1239,6 +1236,8 @@ textarea, input:not([type="radio"]) {
   max-width: 100%;
 }
 
+/* LAYOUT -------------------------------------------------------------- */
+/* SITE-WIDE DESIGN -------------------------------------------------------------- */
 /* Print Defaults -------------------------------------------------------------- */
 @media print {
   * {
@@ -1314,133 +1313,4 @@ textarea, input:not([type="radio"]) {
   h2, h3 {
     page-break-after: avoid;
   }
-}
-body.markup-elements header h1 {
-  font-size: 2.618em;
-  line-height: 1.146em;
-}
-body.markup-elements header h2 {
-  font-size: 2.441em;
-  line-height: 1.229em;
-}
-body.markup-elements h1.section-title {
-  font-size: 1.953em;
-  line-height: 1.536em;
-  background-color: #d3d3d3;
-  text-transform: uppercase;
-  padding-left: 10.938px;
-}
-body.markup-elements h1.section-title a {
-  color: black;
-}
-body.markup-elements h1.section-title a:visited {
-  color: black;
-}
-body.markup-elements h1.section-title a:hover {
-  color: #ff69b4;
-}
-body.markup-elements h1.section-title a:active {
-  color: #ff69b4;
-}
-body.markup-elements h1.section-title a {
-  text-decoration: none;
-  border-bottom: 1px solid black;
-}
-body.markup-elements h1.section-title a:visited {
-  border-bottom-color: black;
-}
-body.markup-elements h1.section-title a:hover {
-  border-bottom-color: #ff69b4;
-}
-body.markup-elements h1.section-title a:active {
-  border-bottom-color: #ff69b4;
-}
-body.markup-elements article.element {
-  *zoom: 1;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 21px;
-  padding-bottom: 20px;
-}
-body.markup-elements article.element:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-body.markup-elements article.element:last-child {
-  padding-bottom: 0;
-  border-bottom-width: 0;
-  margin-bottom: 0;
-}
-body.markup-elements article.element h2.element-title {
-  font-size: 1em;
-  line-height: 1.5em;
-  background-color: gray;
-  color: white;
-  text-transform: uppercase;
-  padding-left: 10.938px;
-}
-body.markup-elements article.element h2.element-title a {
-  color: white;
-}
-body.markup-elements article.element h2.element-title a:visited {
-  color: white;
-}
-body.markup-elements article.element h2.element-title a:hover {
-  color: #ff69b4;
-}
-body.markup-elements article.element h2.element-title a:active {
-  color: #ff69b4;
-}
-body.markup-elements article.element h2.element-title a {
-  text-decoration: none;
-  border-bottom: 1px solid white;
-}
-body.markup-elements article.element h2.element-title a:visited {
-  border-bottom-color: white;
-}
-body.markup-elements article.element h2.element-title a:hover {
-  border-bottom-color: #ff69b4;
-}
-body.markup-elements article.element h2.element-title a:active {
-  border-bottom-color: #ff69b4;
-}
-body.markup-elements article.element .example {
-  *zoom: 1;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
-  margin-bottom: 10.5px;
-  padding-bottom: 9.5px;
-  *zoom: 1;
-}
-body.markup-elements article.element .example:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-body.markup-elements article.element .example:last-child {
-  padding-bottom: 0;
-  border-bottom-width: 0;
-  margin-bottom: 0;
-}
-body.markup-elements article.element .example:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-body.markup-elements article.element .example .markup {
-  display: inline;
-  float: left;
-  width: 64.228%;
-  margin-right: 2.439%;
-}
-body.markup-elements article.element .example .markup + .show-source {
-  display: inline;
-  float: right;
-  width: 30.894%;
-  margin-right: 0;
-}
-body.markup-elements article.element .example .markup + .show-source .show-hide {
-  text-align: right;
-}
-body.markup-elements article.element .example .markup + .show-source + p {
-  clear: both;
 }
