@@ -1,16 +1,16 @@
 # The Coding Designer's Survival Kit (http://thecodingdesigner.com)
- 
+
 ## Overview
 
-This is a collection of Design-in-Browser tools and some great default markup. The idea here is that when you're designing in the browser you need something to design, and some great helpers to get your ideas onto the screen with as little friction as possible. I'm starting with the excellent HTML5 Boilerplate for the default markup. I've forked the css slightly but plan to mostly stay in sync with that project as it applies to the motive here. I'm also including some html files with common markup that needs to be designed for. 
+This is a collection of Design-in-Browser tools and some great default markup. The idea here is that when you're designing in the browser you need something to design, and some great helpers to get your ideas onto the screen with as little friction as possible. I'm starting with the excellent HTML5 Boilerplate for the default markup. I've forked the css slightly but plan to mostly stay in sync with that project as it applies to the motive here. I'm also including some html files with common markup that needs to be designed for.
 
 - __index.html__ is empty and contains no content
 - __elements.html__ includes a collection of standard html elements
 - I will be including others soon, including basic forms, content pages, sidebars, footers, etc
 
-This also includes a Sass / Compass folder that starts with some very clean defaults. I can't include those projects in this one, so you'll need to install Sass and Compass to get started with these, and I encourage you to install Susy and other projects like Fancy Buttons as well. 
+This also includes a Sass / Compass folder that starts with some very clean defaults. I can't include those projects in this one, so you'll need to install Sass and Compass to get started with these, and I encourage you to install Susy and other projects like Fancy Buttons as well.
 
-## Requirements 
+## Requirements
 
 - [Sass](http://sass-lang.com/)
 - [Compass](http://compass-style.org/)
@@ -54,6 +54,6 @@ Major components:
 
 Everything else:
 
-* [The Unlicense](http://unlicense.org) (aka: public domain) 
+* [The Unlicense](http://unlicense.org) (aka: public domain)
 
 
