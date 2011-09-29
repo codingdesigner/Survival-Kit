@@ -4,19 +4,19 @@
   &
     text-decoration: none
     border-bottom: 1px solid $normal
-    @if $visited 
-      &:visited 
+    @if $visited
+      &:visited
         border-bottom-color: $visited
-    @if $focus 
-      &:focus 
+    @if $focus
+      &:focus
         border-bottom-color: $focus
-    @if $hover 
-      &:hover 
+    @if $hover
+      &:hover
         border-bottom-color: $hover
-    @if $active 
-      &:active 
+    @if $active
+      &:active
         border-bottom-color: $active
-  
+
 
 // fade between default and hover colors
 =link-transitions($time: 0.5s, $easing: 'ease-out', $property: 'all')
@@ -37,8 +37,8 @@
     color: $base-color
   @else
     color: white
-    
-// add style and weight to: 
+
+// add style and weight to:
 // http://compass-style.org/reference/compass/css3/font_face/#mixin-font-face
 =kit-font-face($name, $font-files, $eot: false, $style: false, $weight: false)
   $iefont: unquote("#{$eot}?iefix")

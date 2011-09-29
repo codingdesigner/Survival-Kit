@@ -51,116 +51,116 @@
     z-index: -1
   &:after
     z-index: -2
-    
+
   @if $position == top or $position == left or $position == top-left or $position == top-left-bottom-right
     &:before
       left: 0
       top: 0
       +transform-origin(0%, 0%)
-      +transform2d( rotate($rotate) skew($skew) ) 
-      
+      +transform2d( rotate($rotate) skew($skew) )
+
   @if $position == right or $position == top-right or $position == top-right-bottom-left
     &:before
       right: 0
       top: 0
       +transform-origin(100%, 0%)
       +transform2d( rotate($rotate * -1) skew($skew * -1) )
-      
+
   @if $position == bottom or $position == bottom-left
     &:before
       left: 0
       bottom: 0
       +transform-origin(0%, 100%)
       +transform2d( rotate($rotate * -1) skew($skew * -1) )
-      
+
   @if $position == bottom-right
     &:before
       right: 0
       bottom: 0
       +transform-origin(100%, 100%)
-      +transform2d( rotate($rotate) skew($skew) ) 
-  
+      +transform2d( rotate($rotate) skew($skew) )
+
   @if $position == top
     &:after
       right: 0
       top: 0
       +transform-origin(100%, 0%)
       +transform2d( rotate($rotate * -1) skew($skew * -1) )
-      
+
   @if $position == right or $position == bottom or $position == top-left-bottom-right
     &:after
       right: 0
       bottom: 0
       +transform-origin(100%, 100%)
-      +transform2d( rotate($rotate) skew($skew) ) 
-      
+      +transform2d( rotate($rotate) skew($skew) )
+
   @if $position == left or $position == top-right-bottom-left
     &:after
       left: 0
       bottom: 0
       +transform-origin(0%, 100%)
       +transform2d( rotate($rotate * -1) skew($skew * -1) )
-    
+
   @if $position == top
     &:before
       +box-shadow($shadow-color, 0px, -8px, 16px)
     &:after
       +box-shadow($shadow-color, 0px, -8px, 16px)
-      
+
   @if $position == right
     &:before
       +box-shadow($shadow-color, 8px, 0px, 16px)
     &:after
       +box-shadow($shadow-color, 8px, 0px, 16px)
-      
+
   @if $position == bottom
     &:before
       +box-shadow($shadow-color 0px 8px 16px)
     &:after
       +box-shadow($shadow-color 0px 8px 16px)
-      
+
   @if $position == left
     &:before
       +box-shadow($shadow-color, -8px, 0px, 16px)
     &:after
       +box-shadow($shadow-color, -8px, 0px, 16px)
-      
+
   @if $position == top-left
     &:before
       +box-shadow($shadow-color, 0px, -8px, 16px)
-      
+
   @if $position == top-right
     &:before
       +box-shadow($shadow-color, 0px, -8px, 16px)
-      
+
   @if $position == bottom-right
     &:before
       +box-shadow($shadow-color, 0px, 8px, 16px)
-      
+
   @if $position == bottom-left
     &:before
       +box-shadow($shadow-color, 0px, 8px, 16px)
-      
+
   @if $position == top-left-bottom-right
     &:before
       +box-shadow($shadow-color, 0px, -8px, 16px)
     &:after
       +box-shadow($shadow-color, 0px, 8px, 16px)
-      
+
   @if $position == top-right-bottom-left
     &:before
       +box-shadow($shadow-color, 0px, -8px, 16px)
     &:after
       +box-shadow($shadow-color, 0px, 8px, 16px)
 
-  
+
 // CSS3 Tucked Corners effect
-  inspired by http://css-tricks.com/snippets/css/tucked-corners/ 
+  inspired by http://css-tricks.com/snippets/css/tucked-corners/
   // expected markup:
   <div class="this-element-gets-top-corners">
     <span class="this-element-gets-bottom-corners"> <!-- Span used for bottom corners --></span>
   </div>
-  Arguments: 
+  Arguments:
   $tape: the background css property
   $inner-element: the selector for the inner element (for bottom corners)
 =tucked-corners($tape: rgba(white, 0.5), $inner-element: 'span.tucked-corners')
@@ -188,8 +188,8 @@
     padding: 20px
     width: 100%
     +box-sizing(border-box)
-    +box-shadow(rgba(black, 0.25) 0 0 10px 0 inset)  
-    &:after 
+    +box-shadow(rgba(black, 0.25) 0 0 10px 0 inset)
+    &:after
       bottom: -25px
       left: -50px
       +rotate(-135deg)

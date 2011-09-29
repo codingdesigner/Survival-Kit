@@ -3,7 +3,7 @@
 // USE FORMALIZE TO EVEN FORMS ACROSS BROWSERS
 @import _formalize
 
-// aditional form styles 
+// aditional form styles
 
 fieldset
   +trailer
@@ -20,7 +20,7 @@ label, input[type=button], input[type=submit], button
 label
   font-weight: bold
   margin-right: 0.5em
-  
+
 .textinput
   @extend .sans
   +adjust-font-size-to(ms(0), 1)
@@ -33,11 +33,11 @@ label
   margin-top: 0
   border-color: $base-color
   height: $base-line-height / ms(0) * 1.5em
-  
+
 textarea
   @extend .textinput
   height: $base-line-height / ms(0) * 6.5
-  
+
 input
   &[type=text], &[type=password], &[type=email], &[type=url], &[type=tel],
   &[type=date], &[type=datetime], &[type=datetime-local], &[type=month], &[type=week], &[type=time],
@@ -55,13 +55,13 @@ button, input[type=button], input[type=submit]
   // +fancy-button($gray, ms(2))
 
 textarea
-  +box-sizing(border-box) 
+  +box-sizing(border-box)
   width: ($kit-col-width * 2) + ($kit-gutter * 1)
 
 input
   &[type="radio"], &[type="checkbox"]
     margin-left: 0.25em
     margin-right: 0.25em
-  
-textarea, input:not([type="radio"]) 
+
+textarea, input:not([type="radio"])
   max-width: 100%

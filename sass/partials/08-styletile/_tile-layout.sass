@@ -1,28 +1,28 @@
-// Set up the layout for your site using your chosen grid framework     
-                                                                        
-// Style Tile Grid                                                      
+// Set up the layout for your site using your chosen grid framework
+
+// Style Tile Grid
 // Grid Variables ------------------------------------------------------
-$total-cols: 12                                                         
-$col-width: 60px                                                        
-$gutter-width: 14px                                                     
-$side-gutter-width: 0px                                                 
-                                                                        
-@import susy                                                            
-// uncomment to output the full container width to the terminal         
-// @debug columns-width()                                               
+$total-cols: 12
+$col-width: 60px
+$gutter-width: 14px
+$side-gutter-width: 0px
+
+@import susy
+// uncomment to output the full container width to the terminal
+// @debug columns-width()
 /* DEFINE THE GRID CONTAINER -------------------------------------------
-.container                                                              
-  +container                                                            
-                                                                        
-                                                                        
-                                                                        
+.container
+  +container
+
+
+
 /* LAYOUT --------------------------------------------------------------
 
 
 #page
   @extend .container
   // uncomment this line for fluid layout
-  width: 95% 
+  width: 95%
   header
     +full
     // +trailer
@@ -40,7 +40,7 @@ $side-gutter-width: 0px
       +omega
   footer
     +full
-  
+
 
 /* graphic examples
 
@@ -78,4 +78,4 @@ $side-gutter-width: 0px
         +columns(2, 6)
         &:nth-of-type(3n+3)
           +omega
-        
+

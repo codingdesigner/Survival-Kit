@@ -1,7 +1,7 @@
 // Based on: https://github.com/scottkellum/modular-scale
 
 // Ratios
-$golden: 1.618 
+$golden: 1.618
 $octave: (2 / 1)
 $major-seventh: (15 / 8)
 $minor-seventh: (16 / 9)
@@ -79,7 +79,7 @@ $class-slug: ms !default
 
     // Return the new or unchanged value of $modular-scale
     @return $modular-scale
-  
+
 // Shortcut
 @function ms($multiple, $base-size, $ratio)
   // Return the value from the Modular Scale function
@@ -96,11 +96,11 @@ $class-slug: ms !default
   @for $i from 0 through $multiple
     .#{$class-slug}-#{$i}
       +modular-scale($property, $i, $base-size, $ratio)
-      
+
 
 @function sort-list($list, $dir: 'asc')
   // built-in list sorting in Sass would make this go away.
-  // declare some empty lists to put our new order and temporary values 
+  // declare some empty lists to put our new order and temporary values
   $new-order: ()
   $temp: ()
   // fill $temp with the contents of $list
