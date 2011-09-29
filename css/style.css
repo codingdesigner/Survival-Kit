@@ -1223,18 +1223,5 @@ textarea, input:not([type="radio"]) {
   max-width: 100%;
 }
 
-/* DEFINE THE GRID CONTAINER -------------------------------------------------------------- */
-.container, #page {
-  *zoom: 1;
-  margin: auto;
-  width: 949.375px;
-  max-width: 100%;
-}
-.container:after, #page:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* LAYOUT -------------------------------------------------------------- */
 /* SITE-WIDE DESIGN -------------------------------------------------------------- */

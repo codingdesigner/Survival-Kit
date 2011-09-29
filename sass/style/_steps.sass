@@ -1,67 +1,93 @@
 // SETUP - 
 // TODO: refactor items in /common/ into a gem library
+
+// INTRODUCTION
+  This is the central organizing sass file where we manage all the imported partials 
+  in The Kit. Don't write custom code here. Instead, import files that bring in
+  default code from The Kit and files that add your custom code. The checklist below
+  should help you put these files in order.
+  --------------------------------------------------------------
+  
+
+// THE FIRST IMPORTS ADD NO CSS UPON COMPILE
+
+
+// ✔ IMPORT COMMON FUNCTIONS AND VARIABLES
 // enable / disable, but do not edit these files
 @import ../common/functions/all
 @import ../common/variables/all
 
 
+// ✔ 1. ADD YOUR OWN VARIABLES
+// base, color, fonts, grids
 // edit these as you see fit
-// #1
-@import _1-variables/all
+@import 01-variables/all
 
 
+// ✔ IMPORT COMPASS AND OTHER GEMS
 // enable / disable, but do not edit these files
 @import compass
 // add any others here
 
+
+// ✔ IMPORT COMMON MIXINS
 // enable / disable, but do not edit these files
 @import ../common/mixins/all
 
-// THE FOLLOWING INPORTS WILL ADD CSS UPON COMPILE
+
+
+// THE FOLLOWING IMPORTS WILL ADD CSS UPON COMPILE
+
+// ✔ ADD A CSS RESET OR NORMALIZATION
 @import ../common/reset/reset
   
-// TODO:  EXTENDABLES
+
+// ✔ IMPORT COMMON HELPER EXTENDABLES
 @import ../common/extend/all
-@import _2-extend/all
+
+// ✔ 2. ADD YOUR OWN EXTENDABLES
+// typography
+@import 02-extend/all
 
 
-// DEFAULTS
+// ✔ 3. EDIT AND ADD YOUR DEFAULT STYLES
+// This is worth going into in detail
 // edit as you see fit for your project
-@import _3-defaults/all
+@import 03-defaults/all
 
 
-// CHOOSE A GRID SYSTEM
-// @import _4-grids/grids-blueprint.sass
-@import _4-grids/grids-susy.sass
-
-// drupal - make more vanilla
-// move to theme
-// @import cms/drupal/reset
-// @import cms/drupal/modules/typogrify
+// ✔ 4. CHOOSE A GRID SYSTEM
+// @import 04-grids/grids-blueprint.sass
+// @import 04-grids/grids-susy.sass
 
 
-// ui patterns
-// @import _5-ui-patterns/common
-// @import _5-ui-patterns/drupal/ui-patterns
-
-// @import _6-sprites/sprites
+// ✔ 5. STYLE COMMON UI PATTERNS / DRUPAL UI PATTERNS
+// @import 05-ui-patterns/common
+// @import 05-ui-patterns/drupal/ui-patterns
 
 
+// ✔ 6. PROCESS SPRITES WITH COMPASS
+// @import 06-sprites/sprites
+
+
+// ✔ 7. YOUR CUSTOM LAYOUT AND DESIGN SASS
 @import layout
 @import design
 
-// Choose a responsive starter
-// @import _7-responsive/responsive-blueprint
-// @import _7-responsive/responsive-susy
 
-// Enable print styles
-// @import _8-media/print
+// ✔ 8. CHOOSE A RESPONSIVE STARTER
+// @import 08-responsive/responsive-blueprint
+// @import 08-responsive/responsive-susy
 
 
-// ADJUST FOR LESSER/GREATER SYSTEMS
-// @import _9-browser_adjustments/modernizr
-// @import _9-browser_adjustments/ie
-// NOTE ABOUT SELECTIVIZR
+// ✔ 9. ENABLE PRINT STYLES
+// @import 09-media/print
+
+
+// ✔ 10 ADJUST FOR LESSER/GREATER SYSTEMS
+// @import 10-browser_adjustments/modernizr
+// IE STYLES - aren't needed by other browsers, so compile them as a separate file and load via conditionals
+// SELECTIVIZR is nice, but the fallback css should really be compiled to a separate file
 
 
 // 
