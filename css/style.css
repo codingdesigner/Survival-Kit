@@ -327,19 +327,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
 }
 
-/* DEFINE THE GRID CONTAINER -------------------------------------------------------------- */
-.container, #page {
-  *zoom: 1;
-  margin: auto;
-  width: 949.375px;
-  max-width: 100%;
-}
-.container:after, #page:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -452,7 +439,7 @@ html {
  * from compass/typography/_vertical_rhythm */
 body {
   font-size: 87.5%;
-  line-height: 1.5em;
+  line-height: 1.714em;
 }
 
 html > body {
@@ -486,7 +473,7 @@ body {
 }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.714em;
 }
 
 pre {
@@ -523,7 +510,7 @@ li ul {
 }
 
 dt {
-  margin-top: 1.5em;
+  margin-top: 1.714em;
   font-style: italic;
   color: black;
 }
@@ -564,7 +551,7 @@ a:active {
 
 small {
   font-size: 0.8em;
-  line-height: 1.875em;
+  line-height: 2.143em;
 }
 
 q {
@@ -1163,10 +1150,10 @@ optgroup {
 }
 
 fieldset {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.714em;
   border-style: solid;
   border-width: 0.071em;
-  padding: 1.429em;
+  padding: 1.643em;
   border-color: black;
   border-style: dotted;
 }
@@ -1186,12 +1173,12 @@ label {
 
 .textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.714em;
   border-style: solid;
   border-width: 0.071em;
-  padding: 0.304em;
+  padding: 0.357em;
   border-width: 1px;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.857em;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1200,11 +1187,11 @@ label {
   max-width: 100%;
   margin-top: 0;
   border-color: black;
-  height: 2.25em;
+  height: 2.571em;
 }
 
 textarea {
-  height: 9.75;
+  height: 11.143;
 }
 
 input[type=search] {
@@ -1234,6 +1221,19 @@ input[type="radio"], input[type="checkbox"] {
 
 textarea, input:not([type="radio"]) {
   max-width: 100%;
+}
+
+/* DEFINE THE GRID CONTAINER -------------------------------------------------------------- */
+.container, #page {
+  *zoom: 1;
+  margin: auto;
+  width: 949.375px;
+  max-width: 100%;
+}
+.container:after, #page:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* LAYOUT -------------------------------------------------------------- */

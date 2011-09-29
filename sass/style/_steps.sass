@@ -9,11 +9,12 @@
 @import ../common/variables/color_schemes
 
 // edit these as you see fit
-@import variables/base
-@import variables/colors
-@import variables/fonts
+// #1
+@import _1-variables/base
+@import _1-variables/colors
+@import _1-variables/fonts
 // define the dimensions of the grid
-@import variables/grids-all.sass
+@import _1-variables/grids-all.sass
 
 // enable / disable, but do not edit these files
 @import compass
@@ -29,57 +30,59 @@
 
 // THE FOLLOWING INPORTS WILL ADD CSS UPON COMPILE
 @import ../common/reset/reset
-
-// CHOOSE A GRID SYSTEM
-// @import grids/grids-blueprint.sass
-@import grids/grids-susy.sass
   
 // TODO:  EXTENDABLES
 @import ../common/extend/helpers
-@import extend/typography
+@import _2-extend/typography
 
 // DEFAULTS
 // edit as you see fit for your project
-@import defaults/common
-@import defaults/markup/headers
-@import defaults/markup/grouping
-@import defaults/markup/semantics
-@import defaults/markup/edits
-@import defaults/markup/images
-@import defaults/markup/tables
-@import defaults/markup/forms/formalize
-@import defaults/markup/forms/form-defaults
+@import _3-defaults/common
+@import _3-defaults/markup/headers
+@import _3-defaults/markup/grouping
+@import _3-defaults/markup/semantics
+@import _3-defaults/markup/edits
+@import _3-defaults/markup/images
+@import _3-defaults/markup/tables
+@import _3-defaults/markup/forms/formalize
+@import _3-defaults/markup/forms/form-defaults
 
+// CHOOSE A GRID SYSTEM
+// @import _4-grids/grids-blueprint.sass
+@import _4-grids/grids-susy.sass
 
 // drupal - make more vanilla
+// move to theme
 // @import cms/drupal/reset
 // @import cms/drupal/modules/typogrify
-// drupal ui patterns
-// @import ui-patterns/common
-// @import ui-patterns/drupal/ui-patterns
 
-// @import sprites/sprites
+
+// drupal ui patterns
+// @import _5-ui-patterns/common
+// @import _5-ui-patterns/drupal/ui-patterns
+
+// @import _6-sprites/sprites
+
 
 @import layout
 @import design
 
 
-// @import responsive/responsive-blueprint
-// @import responsive/responsive-susy
+// @import _7-responsive/responsive-blueprint
+// @import _7-responsive/responsive-susy
+
+@import _8-media/print
+
 
 // ADJUST FOR LESSER/GREATER SYSTEMS
-// @import browser_adjustments/modernizr
-// @import browser_adjustments/ie
+// @import _9-browser_adjustments/modernizr
+// @import _9-browser_adjustments/ie
 // NOTE ABOUT SELECTIVIZR
 
-@import media/print
+
 
 // @import ../common/survival_kit/survival-kit
 
 
-// ✔ 1. COMPASS PLUG-INS
-// Fancy Buttons
-// @import fancy-buttons
-// Sassy Buttons
-// @import sassybuttons
+
 
