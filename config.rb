@@ -1,6 +1,4 @@
-require 'susy'
-# require 'fancy-buttons'  
-# require 'sassy-buttons'  
+# require 'susy'
 # Require any additional compass plugins here.
 
 project_type = :stand_alone
@@ -15,7 +13,7 @@ fonts_dir = "css/type"
 # output_style = :compact
 # output_style = :expanded
 line_comments = false
-sass_options = {:debug_info => false} 
+sass_options = {:debug_info => false}
 preferred_syntax = :sass
 # To enable relative paths to assets via compass helper functions. Uncomment:
 relative_assets = true
