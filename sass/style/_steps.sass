@@ -1,51 +1,34 @@
 // SETUP - 
 // TODO: refactor items in /common/ into a gem library
 // enable / disable, but do not edit these files
-@import ../common/functions/calculations
-@import ../common/functions/modular-scale
-@import ../common/functions/color
+@import ../common/functions/all
+@import ../common/variables/all
 
-@import ../common/variables/color_names
-@import ../common/variables/color_schemes
 
 // edit these as you see fit
 // #1
-@import _1-variables/base
-@import _1-variables/colors
-@import _1-variables/fonts
-// define the dimensions of the grid
-@import _1-variables/grids-all.sass
+@import _1-variables/all
+
 
 // enable / disable, but do not edit these files
 @import compass
-// @import fancy-buttons
-// @import sassybuttons
+// add any others here
 
 // enable / disable, but do not edit these files
-@import ../common/mixins/helpers
-@import ../common/mixins/typography
-@import ../common/mixins/layout
-@import ../common/mixins/ui
-@import ../common/mixins/sfx
+@import ../common/mixins/all
 
 // THE FOLLOWING INPORTS WILL ADD CSS UPON COMPILE
 @import ../common/reset/reset
   
 // TODO:  EXTENDABLES
-@import ../common/extend/helpers
-@import _2-extend/typography
+@import ../common/extend/all
+@import _2-extend/all
+
 
 // DEFAULTS
 // edit as you see fit for your project
-@import _3-defaults/common
-@import _3-defaults/markup/headers
-@import _3-defaults/markup/grouping
-@import _3-defaults/markup/semantics
-@import _3-defaults/markup/edits
-@import _3-defaults/markup/images
-@import _3-defaults/markup/tables
-@import _3-defaults/markup/forms/formalize
-@import _3-defaults/markup/forms/form-defaults
+@import _3-defaults/all
+
 
 // CHOOSE A GRID SYSTEM
 // @import _4-grids/grids-blueprint.sass
@@ -57,7 +40,7 @@
 // @import cms/drupal/modules/typogrify
 
 
-// drupal ui patterns
+// ui patterns
 // @import _5-ui-patterns/common
 // @import _5-ui-patterns/drupal/ui-patterns
 
@@ -67,11 +50,12 @@
 @import layout
 @import design
 
-
+// Choose a responsive starter
 // @import _7-responsive/responsive-blueprint
 // @import _7-responsive/responsive-susy
 
-@import _8-media/print
+// Enable print styles
+// @import _8-media/print
 
 
 // ADJUST FOR LESSER/GREATER SYSTEMS
@@ -80,7 +64,7 @@
 // NOTE ABOUT SELECTIVIZR
 
 
-
+// 
 // @import ../common/survival_kit/survival-kit
 
 
