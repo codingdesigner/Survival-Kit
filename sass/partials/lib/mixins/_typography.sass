@@ -67,3 +67,11 @@
     @if weight
       font-weight: $weight
 
+// text-overflow
+=text-overflow($method: ellipsis)
+  white-space: nowrap
+  overflow: hidden
+  -o-text-overflow: $method
+  text-overflow:    $method
+  .ie &
+    width: 100%
