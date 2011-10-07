@@ -1,0 +1,20 @@
+.hidden {
+  @include hidden; }
+
+.visuallyhidden {
+  @include visuallyhidden; }
+
+.visuallyhidden.focusable {
+  @include visuallyhidden(true); }
+
+.invisible {
+  @include invisible; }
+
+.italic {
+  font-style: italic; }
+
+.bold {
+  font-weight: bold; }
+
+.wireframe {
+  outline: 1px dashed $red; }

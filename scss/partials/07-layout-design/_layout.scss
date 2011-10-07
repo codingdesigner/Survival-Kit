@@ -1,0 +1,8 @@
+// Set up the layout for your site using your chosen grid framework
+/* LAYOUT -------------------------------------------------------------- */
+
+#page {
+  @extend .container;
+  // uncomment this line for fluid layout
+  // width: 95%
+}
