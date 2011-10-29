@@ -1,5 +1,5 @@
 /*global jQuery */
-/*!	
+/*!
 * Lettering.JS 0.6.1
 *
 * Crawl the elements page and show example source code
