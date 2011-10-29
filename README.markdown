@@ -20,7 +20,7 @@ This also includes a Sass / Compass folder that starts with some very clean defa
 - [Susy](http://susy.oddbird.net/)
 - [Fancy Buttons](https://github.com/imathis/fancy-buttons)
 - [Sassy Buttons](https://github.com/jhardy/Sassy-Buttons)
-- [Livereload](http://livereload.mockko.com/)
+- [Livereload](http://livereload.com/)
 - [xrefresh](http://xrefresh.binaryage.com/)
 
 
