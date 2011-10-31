@@ -1,0 +1,25 @@
+// SET VARIABLES FOR USE BY DEFAULTS, MIXINS, AND FRAMEWORKS
+// value used in compass typography
+// see: basic/default/typography
+// and: http://compass-style.org/reference/compass/typography/vertical_rhythm/
+$base-font-size: 14px;
+
+// --- Modular SCALE (used by _defaults.sass) -----------
+// values used to determine modular scale values
+// see: src/common/mixins/_modular-scale.sass
+// and http://modularscale.com/
+$ratio: $golden $major-third;
+$base-size: $base-font-size;
+
+// Dimensions
+// basic values, independant of any css framework
+$kit-baseline: $base-font-size * 1.5;
+$kit-baseline-half: $kit-baseline * 0.5;
+$kit-baseline-neg: $kit-baseline * -1;
+$kit-gutter: ms(2);
+$kit-gutter-half: $kit-gutter * 0.5;
+$kit-gutter-neg: $kit-gutter * -1;
+
+// pick a reset of normalization
+// accepted values: 'meyer', 'normalize'
+$init-type: normalize;

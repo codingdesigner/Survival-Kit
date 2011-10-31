@@ -6,6 +6,7 @@ project_type = :stand_alone
 http_path = "/"
 css_dir = "css"
 sass_dir = "sass"
+# sass_dir = "sccs"
 images_dir = "css/images"
 javascripts_dir = "js"
 fonts_dir = "css/type"
