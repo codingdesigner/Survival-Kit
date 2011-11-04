@@ -6,9 +6,13 @@ This is a collection of Design-in-Browser tools and some great default markup. T
 
 - __index.html__ is empty and contains no content
 - __elements.html__ includes a collection of standard html elements
-- I will be including others soon, including basic forms, content pages, sidebars, footers, etc
+- You'll find many other, including basic forms, content pages, sidebars, footers, etc
 
 This also includes a Sass / Compass folder that starts with some very clean defaults. I can't include those projects in this one, so you'll need to install Sass and Compass to get started with these, and I encourage you to install Susy and other projects like Fancy Buttons as well.
+
+## Getting Started
+
+I've created an intro [screencast](http://thecodingdesigner.com/tutorials/please-allow-me-introduce-myself) and a video podcast about using the Kit while designing in the browser at [The Coding Designer](http://thecodingdesigner.com/)
 
 ## Requirements
 
@@ -35,7 +39,7 @@ This also includes a Sass / Compass folder that starts with some very clean defa
 - [Selectivizr](http://selectivizr.com/)
 - [Modularscale](http://modularscale.com/)
 - more, more, more
-- [Screencast (coming soon)](http://thecodingdesigner.com/)
+- [Screencast](http://thecodingdesigner.com/)
 
 
 
