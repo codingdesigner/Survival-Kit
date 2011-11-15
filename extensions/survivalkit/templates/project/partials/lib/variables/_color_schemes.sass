@@ -1,0 +1,54 @@
+$primary: #FF0000 !default
+$equalized: hsl(hue($primary), 100%, 50%)
+//------------------------
+
+$mono-darker: darken($equalized, 20%)
+$mono-lighter: lighten($equalized, 20%)
+
+$complimentary: complement($equalized)
+
+$analogous: 22.57
+$analogous-a: adjust-hue($primary, $analogous)
+$analogous-b: adjust-hue($primary, $analogous * -1)
+$analogous-a-e: adjust-hue($equalized, $analogous)
+$analogous-b-e: adjust-hue($equalized, $analogous * -1)
+$analogous-a-custom: hsl(hue($primary) + $analogous, 35.29%, 86.66%)
+$analogous-b-custom: hsl(hue($primary) - $analogous, 35.29%, 86.66%)
+
+
+$split-comp: 22.57
+$split-comp-a: adjust-hue(complement($primary), $split-comp)
+$split-comp-b: adjust-hue(complement($primary), $split-comp * -1)
+$split-comp-a-e: adjust-hue(complement($equalized), $split-comp)
+$split-comp-b-e: adjust-hue(complement($equalized), $split-comp * -1)
+
+$triad: 120
+$triad-pos: adjust-hue($primary, $triad)
+$triad-neg: adjust-hue($primary, $triad * -1)
+$triad-pos-e: adjust-hue($equalized, $triad)
+$triad-neg-e: adjust-hue($equalized, $triad * -1)
+
+$rectangle: 22.57
+$rectangle-a: complement($primary)
+$rectangle-b: adjust-hue($primary, $rectangle)
+$rectangle-c: complement($rectangle-b)
+$rectangle-a-e: complement($equalized)
+$rectangle-b-e: adjust-hue($equalized, $rectangle)
+$rectangle-c-e: complement($rectangle-b-e)
+
+$square-a: complement($primary)
+$square-b: adjust-hue($primary, 90)
+$square-c: complement($square-b)
+$square-a-e: complement($equalized)
+$square-b-e: adjust-hue($equalized, 90)
+$square-c-e: complement($square-b-e)
+
+$compound-adjust-a: 17
+$compound-adjust-b: 120
+$compound-adjust-c: 99
+$compound-a: adjust-hue($primary, $compound-adjust-a)
+$compound-b: adjust-hue($primary, $compound-adjust-b)
+$compound-c: adjust-hue($primary, $compound-adjust-c)
+$compound-a-e: adjust-hue($equalized, $compound-adjust-a)
+$compound-b-e: adjust-hue($equalized, $compound-adjust-b)
+$compound-c-e: adjust-hue($equalized, $compound-adjust-c)
