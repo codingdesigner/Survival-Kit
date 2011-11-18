@@ -54,14 +54,6 @@ html 'files/html/styletile.html', :to => 'survivalkit/styletile.html'
 html 'files/html/formalize_jquery_demo.html', :to => 'survivalkit/formalize/formalize_jquery_demo.html'
 html 'files/html/formalize_jquery_disabled.html', :to => 'survivalkit/formalize/formalize_jquery_disabled.html'
 html 'files/html/formalize_jquery_errors.html', :to => 'survivalkit/formalize/formalize_jquery_errors.html'
-# javascript 'javascripts/kit/kit-source.jquery.js', :to => 'kit/kit-source.jquery.js'
-# javascript 'javascripts/libs/jquery-1.6.min.js', :to => 'libs/jquery.min.js'
-# javascript 'javascripts/libs/modernizr-2.0.min.js', :to => 'libs/modernizr.min.js'
-# javascript 'javascripts/libs/mootools-core-1.3.1-full-compat-yc.js', :to => 'libs/mootools.js'
-# # javascript 'javascripts/libs/plugins.js', :to => 'libs/plugins.js'
-# javascript 'javascripts/libs/respond.min.js', :to => 'libs/respond.min.js'
-# javascript 'javascripts/libs/selectivizr.js', :to => 'libs/selectivizr.js'
-# javascript 'javascripts/script.js', :to => 'script.js'
 discover :javascripts
 
 
