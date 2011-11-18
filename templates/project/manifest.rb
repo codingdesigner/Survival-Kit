@@ -36,6 +36,7 @@ stylesheet 'partials/10-media/_print.sass'
 stylesheet 'partials/11-browser-adjustments/_ie.sass'
 stylesheet 'partials/11-browser-adjustments/_modernizr.sass'
 stylesheet 'partials/11-browser-adjustments/_selectivizr.sass'
+# discover :stylesheets
 
 html 'index.html.haml'
 html 'files/htaccess', :to => '.htaccess'
