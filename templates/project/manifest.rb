@@ -91,23 +91,17 @@ discover :javascripts
 # html 'files/favicon.ico', :to => 'favicon.ico'
 
 help %Q{
-This is a Compass extension for HTML5 Boilerplate by Paul Irish
+This is a Compass extension for The Coding Designer's Survival Kit by Mason Wendell
 (See full docs at: http://github.com/sporkd/compass-html5-boilerplate)
-
-Rails Installation
-========================
-$ gem install html5-boilerplate
-$ cd my_rails_project
-$ compass init rails -r html5-boilerplate -u html5-boilerplate --force
 
 Stand Alone Installation
 ========================
-$ gem install html5-boilerplate
-$ compass create my_project -r html5-boilerplate -u html5-boilerplate --javascripts-dir js --css-dir css
+$ gem install survivalkit
+$ compass create my_project -r survivalkit -u survivalkit --javascripts-dir js --css-dir css
 
 }
 
 welcome_message %Q{
-You've installed HTML5 Boilerplate. Good for you!
+You've installed The Coding Designer's Survival Kit. Good for you!
 
 }
