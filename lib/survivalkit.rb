@@ -1,6 +1,9 @@
+require 'compass'
 Compass::Frameworks.register("survivalkit", :path => "#{File.dirname(__FILE__)}/..")
 
-if defined?(ActionController)
-  require File.join(File.dirname(__FILE__), 'app', 'helpers', 'survivalkit_helper')
-  ActionController::Base.helper(survivalkitHelper)
+module SurvivalKit
+
+  VERSION = "0.0.1"
+  DATE = "11-18-2011"
+
 end
