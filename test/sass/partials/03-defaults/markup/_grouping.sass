@@ -1,0 +1,52 @@
+p
+  +trailer
+
+hr
+
+pre
+  @extend .mono
+  margin: $base-rhythm-unit
+  white-space: pre
+  white-space: pre-wrap
+  word-wrap: break-word
+
+blockquote
+  margin: $base-rhythm-unit $kit-gutter
+  font-style: italic
+  font-weight: 300
+
+/* Lists --------------------------------------------------------------
+
+ol, ul
+  // +trailer
+  padding-left: $kit-gutter
+
+dl
+  margin-left: 0
+
+ol
+  list-style: decimal
+
+ul
+  list-style: disc
+  li &
+    list-style-type: circle
+
+dt
+  +leader
+  font-style: italic
+  color: $base-color
+  &:first-of-type
+    +leader(0)
+
+dd
+  padding-left: $kit-gutter
+
+//
+figure
+
+figcaption
+
+address
+  @extend .italic
+
