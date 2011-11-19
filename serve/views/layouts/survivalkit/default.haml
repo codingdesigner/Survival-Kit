@@ -41,13 +41,13 @@
 
   %body.survival-kit
     #page
-      = render :template => "/survivalkit/partials/header.haml"
-      = render :template => "/survivalkit/partials/menu.haml"
+      = render :template => "/survivalkit/partials/_header.haml"
+      = render :template => "/survivalkit/partials/_menu.haml"
       #main{:role => "main"}
         = yield
-        
+
       %footer= @footer
-      
+
     /
       Javascript at the bottom for fast page loading
       Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary

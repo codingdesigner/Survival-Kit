@@ -1,4 +1,4 @@
-#\ -p 4000
+# \ -p 4000
 
 require 'rubygems'
 require 'bundler'
@@ -24,10 +24,10 @@ if ENV['RACK_ENV'] != 'production'
   require 'sass/plugin/rack'
   require 'compass'
   require 'susy'
-  
+
   Compass.add_project_configuration(root + '/config.rb')
   Compass.configure_sass_plugin!
-  
+
   use Sass::Plugin::Rack  # Sass Middleware
 end
 
