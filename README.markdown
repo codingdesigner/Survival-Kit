@@ -22,10 +22,10 @@ I've created an intro [screencast](http://thecodingdesigner.com/tutorials/please
 ### Helpful
 
 - [Susy](http://susy.oddbird.net/)
+- [Sassy Modular Scale](https://github.com/scottkellum/modular-scale)
+- [Color Schemer](https://github.com/scottkellum/color-schemer)
 - [Fancy Buttons](https://github.com/imathis/fancy-buttons)
-- [Sassy Buttons](https://github.com/jhardy/Sassy-Buttons)
 - [Livereload](http://livereload.com/)
-- [xrefresh](http://xrefresh.binaryage.com/)
 
 
 ## Acknowledgements, Installation, & Documentation
@@ -45,19 +45,37 @@ I've created an intro [screencast](http://thecodingdesigner.com/tutorials/please
 
 
 
-## License (inherited from HTML5 Boilerplate):
+## License
 
-Major components:
+Licensed under MIT/GPL.
 
-* Modernizr: MIT/BSD license
-* jQuery: MIT/GPL license
-* DD_belatedPNG: MIT license
-* YUI Profiling: BSD license
-* HTML5Doctor CSS reset: Creative Commons 3.0 BY
-* CSS Reset Reloaded: Public Domain
+GPL license:
+http://www.gnu.org/licenses/gpl.html
 
-Everything else:
+MIT license:
+http://www.opensource.org/licenses/mit-license.php
 
-* [The Unlicense](http://unlicense.org) (aka: public domain)
+
+Except included open source projects:
+* BigText: MIT/GPL
+* Dynamic-Carousel: MIT
+* flexie: MIT
+* flickrbomb: MIT
+* formalize: MIT/GPL
+* FitText: WTFPL license
+* Geared-Scrolling: MIT
+* Lettering.js: WTFPL license
+* PaintbrushJS: MIT
+* Respond: MIT/GPLv2
+* Sticky-Footer-jQuery-Plugin: MIT
+* html5-boilerplate: public domain
+* iSwipe-jQuery-Plugin: MIT
+* infinite-scroll: MIT
+* jquery-lightbox: BSD
+* jquery-ui: MIT/GPL
+* modernizr: BSD/MIT
+* pie: Apache/GPL
+* scrollability: Apache
+
 
 

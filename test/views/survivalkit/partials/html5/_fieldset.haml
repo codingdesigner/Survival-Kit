@@ -1,0 +1,49 @@
+%article#fieldset.element
+  %h2.element-title
+    %a{:href => "http://developers.whatwg.org/forms.html#the-fieldset-element"} fieldset
+  .markup
+    %fieldset{:disabled => "", :name => "clubfields"}
+      %legend
+        %label
+          %input{:name => "club", :onchange => "form.clubfields.disabled = !checked", :type => "checkbox"}
+            Use Club Card
+      %p
+        %label
+          Name on card:
+          %input{:name => "clubname", :required => ""}/
+      %p
+        %label
+          Card number:
+          %input{:name => "clubnum", :pattern => "[-0-9]+", :required => ""}/
+      %p
+        %label
+          Expiry date:
+          %input{:name => "clubexp", :type => "month"}/
+  .markup
+    %fieldset{:disabled => "", :name => "clubfields"}
+      %legend
+        %label
+          %input{:name => "club", :onchange => "form.clubfields.disabled = !checked", :type => "checkbox"}
+            Use Club Card
+      %p
+        %label
+          Name on card:
+          %input{:name => "clubname", :required => ""}/
+      %fieldset{:name => "numfields"}
+        %legend
+          %label
+            %input{:checked => "", :name => "clubtype", :onchange => "form.numfields.disabled = !checked", :type => "radio"}
+              My card has numbers on it
+        %p
+          %label
+            Card number:
+            %input{:name => "clubnum", :pattern => "[-0-9]+", :required => ""}/
+      %fieldset{:disabled => "", :name => "letfields"}
+        %legend
+          %label
+            %input{:name => "clubtype", :onchange => "form.letfields.disabled = !checked", :type => "radio"}
+              My card has letters on it
+        %p
+          %label
+            Card code:
+            %input{:name => "clublet", :pattern => "[A-Za-z]+", :required => ""}/

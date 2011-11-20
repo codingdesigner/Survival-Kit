@@ -1,0 +1,41 @@
+%article#p.element
+  %h2.element-title
+    %a{:href => "http://developers.whatwg.org/grouping-content.html#the-p-element"} p
+  %p
+    The
+    %code
+      %a{:href => "http://developers.whatwg.org/grouping-content.html#the-p-element"} p
+    element
+    %a{:href => "http://developers.whatwg.org/grouping-content.html#represents"} represents
+    a
+    = succeed "." do
+      %a{:href => "content-models.html#paragraph"} paragraph
+  .markup
+    %p
+      The little kitten gently seated himself on a piece of
+      carpet. Later in his life, this would be referred to as the time the
+      cat sat on the mat.
+  .markup
+    %fieldset
+      %legend Personal information
+      %p
+        %label
+          Name:
+          %input{:name => "n"}/
+        %label
+          %input{:name => "anon", :type => "checkbox"} Hide from other users
+      %p
+        %label
+          Address:
+          %textarea{:name => "a"}
+  .markup
+    %p
+      There was once an example from Femley,
+      %br
+        Whose markup was of dubious quality.
+        %br
+          The validator complained,
+          %br
+            So the author was pained,
+            %br
+              To move the error from the markup to the rhyming.

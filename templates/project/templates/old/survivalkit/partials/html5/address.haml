@@ -1,0 +1,27 @@
+%article#address.element
+  %h2.element-title
+    %a{:href => "http://developers.whatwg.org/sections.html#the-address-element"} Address
+  %p
+    The
+    %code
+      %a{:href => "http://developers.whatwg.org/sections.html#the-address-element"} address
+    element
+    %a{:href => "http://developers.whatwg.org/sections.html#represents"} represents
+    the contact information for its nearest
+    %code
+      %a{:href => "http://developers.whatwg.org/sections.html#the-article-element"} article
+    or
+    %code
+      %a{:href => "http://developers.whatwg.org/sections.html#the-body-element-0"} body
+    element ancestor. If that is
+    = succeed "," do
+      %a{:href => "dom.html#the-body-element"} the body element
+    then the contact information applies to the document as a whole.
+  .markup
+    %address
+      %a{:href => ""}> Dave Raggett
+      ,
+      = succeed "," do
+        %a{:href => ""} Arnaud Le Hors
+      contact persons for the
+      %a{:href => ""} W3C HTML Activity

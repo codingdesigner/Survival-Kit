@@ -1,58 +1,58 @@
-[submodule "sources/PaintbrushJS"]
-	path = sources/PaintbrushJS
-	url = https://github.com/mezzoblue/PaintbrushJS.git
-[submodule "sources/flexie"]
-	path = sources/flexie
-	url = https://github.com/doctyper/flexie.git
-[submodule "sources/formalize"]
-	path = sources/formalize
-	url = https://github.com/nathansmith/formalize.git
-[submodule "sources/Geared-Scrolling"]
-	path = sources/Geared-Scrolling
-	url = https://github.com/heyday/Geared-Scrolling.git
-[submodule "sources/html5-boilerplate"]
-	path = sources/html5-boilerplate
-	url = https://github.com/paulirish/html5-boilerplate.git
-[submodule "sources/iSwipe-jQuery-Plugin"]
-	path = sources/iSwipe-jQuery-Plugin
-	url = https://github.com/heyday/iSwipe-jQuery-Plugin.git
-[submodule "sources/Lettering.js"]
-	path = sources/Lettering.js
-	url = https://github.com/davatron5000/Lettering.js.git
-[submodule "sources/Sticky-Footer-jQuery-Plugin"]
-	path = sources/Sticky-Footer-jQuery-Plugin
-	url = https://github.com/heyday/Sticky-Footer-jQuery-Plugin.git
-[submodule "sources/infinite-scroll"]
-	path = sources/infinite-scroll
-	url = https://github.com/paulirish/infinite-scroll.git
-[submodule "sources/jquery-ui"]
-	path = sources/jquery-ui
-	url = https://github.com/jquery/jquery-ui.git
-[submodule "sources/pie"]
-	path = sources/pie
-	url = https://github.com/lojjic/PIE.git
-[submodule "sources/modernizr"]
-	path = sources/modernizr
-	url = https://github.com/Modernizr/Modernizr.git
-[submodule "sources/FitText"]
-	path = sources/FitText
-	url = https://github.com/davatron5000/FitText.js.git
-[submodule "sources/Dynamic-Carousel"]
-	path = sources/Dynamic-Carousel
-	url = https://github.com/Wilto/Dynamic-Carousel.git
-[submodule "sources/Respond"]
-	path = sources/Respond
-	url = https://github.com/scottjehl/Respond.git
-[submodule "sources/jquery-lightbox"]
-	path = sources/jquery-lightbox
-	url = https://github.com/krewenki/jquery-lightbox.git
-[submodule "sources/scrollability"]
-	path = sources/scrollability
-	url = https://github.com/joehewitt/scrollability.git
+[submodule "templates/project/sources/PaintbrushJS"]
+  path = templates/project/sources/PaintbrushJS
+  url = https://github.com/mezzoblue/PaintbrushJS.git
+[submodule "templates/project/sources/flexie"]
+  path = templates/project/sources/flexie
+  url = https://github.com/doctyper/flexie.git
+[submodule "templates/project/sources/formalize"]
+  path = templates/project/sources/formalize
+  url = https://github.com/nathansmith/formalize.git
+[submodule "templates/project/sources/Geared-Scrolling"]
+  path = templates/project/sources/Geared-Scrolling
+  url = https://github.com/heyday/Geared-Scrolling.git
+[submodule "templates/project/sources/html5-boilerplate"]
+  path = templates/project/sources/html5-boilerplate
+  url = https://github.com/paulirish/html5-boilerplate.git
+[submodule "templates/project/sources/iSwipe-jQuery-Plugin"]
+  path = templates/project/sources/iSwipe-jQuery-Plugin
+  url = https://github.com/heyday/iSwipe-jQuery-Plugin.git
+[submodule "templates/project/sources/Lettering.js"]
+  path = templates/project/sources/Lettering.js
+  url = https://github.com/davatron5000/Lettering.js.git
+[submodule "templates/project/sources/Sticky-Footer-jQuery-Plugin"]
+  path = templates/project/sources/Sticky-Footer-jQuery-Plugin
+  url = https://github.com/heyday/Sticky-Footer-jQuery-Plugin.git
+[submodule "templates/project/sources/infinite-scroll"]
+  path = templates/project/sources/infinite-scroll
+  url = https://github.com/paulirish/infinite-scroll.git
+[submodule "templates/project/sources/jquery-ui"]
+  path = templates/project/sources/jquery-ui
+  url = https://github.com/jquery/jquery-ui.git
+[submodule "templates/project/sources/pie"]
+  path = templates/project/sources/pie
+  url = https://github.com/lojjic/PIE.git
+[submodule "templates/project/sources/modernizr"]
+  path = templates/project/sources/modernizr
+  url = https://github.com/Modernizr/Modernizr.git
+[submodule "templates/project/sources/FitText"]
+  path = templates/project/sources/FitText
+  url = https://github.com/davatron5000/FitText.js.git
+[submodule "templates/project/sources/Dynamic-Carousel"]
+  path = templates/project/sources/Dynamic-Carousel
+  url = https://github.com/Wilto/Dynamic-Carousel.git
+[submodule "templates/project/sources/Respond"]
+  path = templates/project/sources/Respond
+  url = https://github.com/scottjehl/Respond.git
+[submodule "templates/project/sources/jquery-lightbox"]
+  path = templates/project/sources/jquery-lightbox
+  url = https://github.com/krewenki/jquery-lightbox.git
+[submodule "templates/project/sources/scrollability"]
+  path = templates/project/sources/scrollability
+  url = https://github.com/joehewitt/scrollability.git
 
-[submodule "sources/BigText"]
-	path = sources/BigText
-	url = https://github.com/zachleat/BigText.git
-[submodule "sources/flickrbomb"]
-	path = sources/flickrbomb
-	url = https://github.com/zurb/flickrbomb.git
+[submodule "templates/project/sources/BigText"]
+  path = templates/project/sources/BigText
+  url = https://github.com/zachleat/BigText.git
+[submodule "templates/project/sources/flickrbomb"]
+  path = templates/project/sources/flickrbomb
+  url = https://github.com/zurb/flickrbomb.git

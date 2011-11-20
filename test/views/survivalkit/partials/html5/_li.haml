@@ -1,0 +1,91 @@
+%article#li.element
+  %h2.element-title
+    %a{:href => "http://developers.whatwg.org/grouping-content.html#the-li-element"} li
+  %p
+    The
+    %code
+      %a{:href => "http://developers.whatwg.org/grouping-content.html#the-li-element"} li
+    element
+    %a{:href => "http://developers.whatwg.org/grouping-content.html#represents"} represents
+    a list item. If its parent element is an
+    = succeed "," do
+      %code
+        %a{:href => "http://developers.whatwg.org/grouping-content.html#the-ol-element"} ol
+    = succeed "," do
+      %code
+        %a{:href => "http://developers.whatwg.org/grouping-content.html#the-ul-element"} ul
+    or
+    %code
+      %a{:href => "interactive-elements.html#menus"} menu
+    element, then the element is an item of the parent element's list, as defined for those elements. Otherwise, the list item has no defined list-related relationship to any other
+    %code
+      %a{:href => "http://developers.whatwg.org/grouping-content.html#the-li-element"} li
+    element.
+  .markup
+    %figure
+      %figcaption The top 10 movies of all time
+      %ol
+        %li{:value => "10"}
+          %cite> Josie and the Pussycats
+          , 2001
+        %li{:value => "9"}
+          %cite{:lang => "sh"}> Црна мачка, бели мачор
+          , 1998
+        %li{:value => "8"}
+          %cite> A Bug's Life
+          , 1998
+        %li{:value => "7"}
+          %cite> Toy Story
+          , 1995
+        %li{:value => "6"}
+          %cite> Monsters, Inc
+          , 2001
+        %li{:value => "5"}
+          %cite> Cars
+          , 2006
+        %li{:value => "4"}
+          %cite> Toy Story 2
+          , 1999
+        %li{:value => "3"}
+          %cite> Finding Nemo
+          , 2003
+        %li{:value => "2"}
+          %cite> The Incredibles
+          , 2004
+        %li{:value => "1"}
+          %cite> Ratatouille
+          , 2007
+  .markup
+    %figure
+      %figcaption The top 10 movies of all time
+      %ol{:reversed => ""}
+        %li
+          %cite> Josie and the Pussycats
+          , 2001
+        %li
+          %cite{:lang => "sh"}> Црна мачка, бели мачор
+          , 1998
+        %li
+          %cite> A Bug's Life
+          , 1998
+        %li
+          %cite> Toy Story
+          , 1995
+        %li
+          %cite> Monsters, Inc
+          , 2001
+        %li
+          %cite> Cars
+          , 2006
+        %li
+          %cite> Toy Story 2
+          , 1999
+        %li
+          %cite> Finding Nemo
+          , 2003
+        %li
+          %cite> The Incredibles
+          , 2004
+        %li
+          %cite> Ratatouille
+          , 2007

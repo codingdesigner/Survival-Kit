@@ -1,0 +1,37 @@
+%article#footer.element
+  %h2.element-title
+    %a{:href => "http://developers.whatwg.org/sections.html#the-footer-element"} Footer
+  %p
+    The
+    %code
+      %a{:href => "http://developers.whatwg.org/sections.html#the-footer-element"} footer
+    element
+    %a{:href => "http://developers.whatwg.org/sections.html#represents"} represents
+    a footer for its nearest ancestor
+    %a{:href => "content-models.html#sectioning-content"} sectioning content
+    or
+    %a{:href => "http://developers.whatwg.org/sections.html#sectioning-root"} sectioning root
+    element. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.
+  %p Here is an example which shows the footer element being used both for a site-wide footer and for a section footer.
+  .markup
+    %article
+      %h1 My Favorite Trains
+      %p I love my trains. My favorite train of all time is a Köf.
+      %p
+        It is fun to see them pull some coal cars because they look so
+        dwarfed in comparison.
+      %footer
+        / footer for article
+        %P
+          Published
+          %time{:datetime => "2009-09-15T14:54-07:00", :pubdate => ""}
+    %footer
+      / site wide footer
+      %nav
+        %p
+          %a{:href => "/credits.html"} Credits
+          —
+          %a{:href => "/tos.html"} Terms of Service
+          —
+          %a{:href => "/index.html"} Blog Index
+      %p Copyright © 2009 Gordon Freeman

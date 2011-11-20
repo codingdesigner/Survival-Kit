@@ -1,0 +1,39 @@
+// The following classes are for use with @extend.
+.serif
+  font-family: $font-serifs
+
+.sans
+  font-family: $font-sans
+
+.mono
+  font-family: $font-mono
+  _font-family: $font-mono
+
+.caps
+  font-size: 0.9em
+  letter-spacing: 0.1em
+
+.headers
+  font-family: $font-headline
+  // +sans-family
+
+.allcaps
+  @extend .caps
+  text-transform: uppercase
+
+.amp
+  font-family: $font-amp
+
+.smallcaps
+  @extend .caps
+  font-variant: small-caps
+
+.dquo
+  margin-left: -0.5em
+  font-family: $font-amp
+
+/* Only use the fancy ampersand in <h#> tags
+h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp
+  font-size: 1em
+  font-family: $font-amp
+  font-style: italic

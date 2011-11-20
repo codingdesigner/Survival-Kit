@@ -1,0 +1,2959 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+  <!--<![endif]-->
+  <head>
+    <meta charset='utf-8' />
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <title>HTML5 Elements</title>
+    <meta content='' name='description' />
+    <meta content='' name='author' />
+    <meta content='woodcock, washburn, intellectual property law, ip, law' name='Keywords' />
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <!-- CSS -->
+    <link href='/css/style.css?v=1' rel='stylesheet' />
+    <!-- All JavaScript at the bottom, except for Modernizr and Respond. -->
+    <script src='/js/libs/modernizr-2.0.min.js'></script>
+    <script src='/js/libs/respond.min.js'></script>
+    <!-- Typekit -->
+    <script src='http://use.typekit.com/xxxxxxx.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        try{Typekit.load();}catch(e){}
+      //]]>
+    </script>
+  </head>
+  <body class='survival-kit'>
+    <div id='page'>
+      <header>
+        <hgroup>
+          <h1>
+            <a href='/survivalkit/'>The Coding Designer's Survival Guide</a>
+          </h1>
+          <h2>HTML5 Elements</h2>
+        </hgroup>
+        Based on examples from <a href='http://developers.whatwg.org/'>developers.whatwg.org</a>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href='/survivalkit/elements-common'>Common Markup</a>
+          </li>
+          <li>
+            <a href='/survivalkit/elements-html5'>Common HTML5</a>
+          </li>
+          <li>
+            <a href='/survivalkit/elements-typography'>Typography</a>
+          </li>
+          <li>
+            <a href='/survivalkit/elements-ui-patterns-drupal'>Drupal UI Patterns</a>
+          </li>
+          <li>
+            <a href='/survivalkit/elements-ui-patterns'>UI Patterns</a>
+          </li>
+          <li>
+            <a href='/survivalkit/styletile'>Style Tile</a>
+          </li>
+        </ul>
+      </nav>
+      <div id='main' role='main'>
+        <section class='element-group' id='sections'>
+          <h1 class='section-title'>
+            <a href='http://developers.whatwg.org/sections.html'>Sections</a>
+          </h1>
+          <article class='element' id='section'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/sections.html#the-section-element'>Section</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/sections.html#the-section-element'>section</a></code>
+              element
+              <a href='http://developers.whatwg.org/sections.html#represents'>represents</a>
+              a generic section of a document or application. A section, in this context, is a thematic grouping of content, typically with a heading.
+            </p>
+            <div class='markup'>
+              <section>
+                <h1>Red Delicious</h1>
+                <p>
+                  These bright red apples are the most common found in many
+                  supermarkets.
+                </p>
+              </section>
+              <section>
+                <h1>Granny Smith</h1>
+                <p>
+                  These juicy, green apples make a great filling for
+                  apple pies.
+                </p>
+              </section>
+            </div>
+          </article>
+          <article class='element' id='nav'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/sections.html#the-nav-element'>Nav</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/sections.html#the-nav-element'>nav</a></code>
+              element
+              <a href='http://developers.whatwg.org/sections.html#represents'>represents</a>
+              a section of a page that links to other pages or to parts within the page: a section with navigation links.
+            </p>
+            <p>
+              Not all groups of links on a page need to be in a
+              <code><a href='http://developers.whatwg.org/sections.html#the-nav-element'>nav</a></code>
+              element — only sections that consist of major navigation blocks are appropriate for the
+              <code><a href='http://developers.whatwg.org/sections.html#the-nav-element'>nav</a></code>
+              element. In particular, it is common for footers to have a short list of links to various pages of a site, such as the terms of service, the home page, and a copyright page. The
+              <code><a href='http://developers.whatwg.org/sections.html#the-footer-element'>footer</a></code>
+              element alone is sufficient for such cases, without a
+              <code><a href='http://developers.whatwg.org/sections.html#the-nav-element'>nav</a></code>
+              element.
+            </p>
+            <div class='markup'>
+              <nav>
+                <h1>Navigation</h1>
+                <ul>
+                  <li>
+                    <a href=''>Index of all articles</a>
+                  </li>
+                  <li>
+                    <a href=''>Things sheeple need to wake up for today</a>
+                  </li>
+                  <li>
+                    <a href=''>Sheeple we have managed to wake</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <p>A nav element doesn't have to contain a list, it can contain other kinds of content as well. In this navigation block, links are provided in prose:</p>
+            <div class='markup'>
+              <nav>
+                <h1>Navigation</h1>
+                <p>
+                  You are on my home page. To the north lies
+                  <a href='/blog'>
+                    my
+                    blog
+                  </a>,
+                  from whence the sounds of battle can be heard. To the east
+                  you can see a large mountain, upon which many
+                  <a href='/school'>school papers</a>
+                  are littered. Far up thus mountain
+                  you can spy a little figure who appears to be me, desperately
+                  scribbling a
+                  <a href='/school/thesis'>thesis</a>.
+                </p>
+                <p>
+                  To the west are several exits. One fun-looking exit is labeled
+                  <a href='http://games.example.com/'>"games"</a>.
+                  Another more
+                  boring-looking exit is labeled
+                  <a href='http://isp.example.net/'>ISP™</a>.
+                </p>
+                <p>
+                  To the south lies a dark and dank
+                  <a href='/about'>
+                    contacts
+                    page
+                  </a>.
+                  Cobwebs cover its disused entrance, and at one point you
+                  see a rat run quickly out of the page.
+                </p>
+              </nav>
+            </div>
+          </article>
+          <article class='element' id='article'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/sections.html#the-article-element'>Article</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/sections.html#the-article-element'>article</a></code>
+              element
+              <a href='http://developers.whatwg.org/sections.html#represents'>represents</a>
+              a self-contained composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.
+            </p>
+            <div class='markup'>
+              <article>
+                <header>
+                  <h1>The Very First Rule of Life</h1>
+                  <p>
+                    <time datetime='2009-10-09T14:28-08:00' pubdate=''></time>
+                  </p>
+                </header>
+                <p>
+                  If there's a microphone anywhere near you, assume it's hot and
+                  sending whatever you're saying to the world. Seriously.
+                </p>
+                <p>…</p>
+                <footer>
+                  <a href='?comments=1'>Show comments...</a>
+                </footer>
+              </article>
+            </div>
+          </article>
+          <article class='element' id='aside'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/sections.html#the-aside-element'>Aside</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/sections.html#the-aside-element'>aside</a></code>
+              element
+              <a href='http://developers.whatwg.org/sections.html#represents'>represents</a>
+              a section of a page that consists of content that is tangentially related to the content around the
+              <code><a href='http://developers.whatwg.org/sections.html#the-aside-element'>aside</a></code>
+              element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.
+            </p>
+            <div class='markup'>
+              <aside>
+                <h1>Switzerland</h1>
+                <p>
+                  Switzerland, a land-locked country in the middle of geographic
+                  Europe, has not joined the geopolitical European Union, though it is
+                  a signatory to a number of European treaties.
+                </p>
+              </aside>
+            </div>
+          </article>
+          <article class='element' id='all-headings'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements'>The h1, h2, h3, h4, h5, and h6 elements</a>
+            </h2>
+            <p>
+              These elements
+              <a href='http://developers.whatwg.org/sections.html#represents' title='represents'>represent</a>
+              headings for their sections.
+            </p>
+            <p>
+              The semantics and meaning of these elements are defined in the section on
+              <a href='http://developers.whatwg.org/sections.html#headings-and-sections'>headings and sections</a>.
+            </p>
+            <p>These two snippets are equivalent in the outline:</p>
+            <div class='markup'>
+              <h1>Let's call it a draw(ing surface)</h1>
+              <h2>Diving in</h2>
+              <h2>Simple shapes</h2>
+              <h2>Canvas coordinates</h2>
+              <h3>Canvas coordinates diagram</h3>
+              <h2>Paths</h2>
+            </div>
+            <div class='markup'>
+              <h1>Let's call it a draw(ing surface)</h1>
+              <section>
+                <h1>Diving in</h1>
+              </section>
+              <section>
+                <h1>Simple shapes</h1>
+              </section>
+              <section>
+                <h1>Canvas coordinates</h1>
+                <section>
+                  <h1>Canvas coordinates diagram</h1>
+                </section>
+              </section>
+              <section>
+                <h1>Paths</h1>
+              </section>
+            </div>
+          </article>
+          <article class='element' id='hgroup'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/sections.html#the-hgroup-element'>hgroup</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/sections.html#the-hgroup-element'>hgroup</a></code>
+              element
+              <a href='http://developers.whatwg.org/sections.html#represents'>represents</a>
+              the heading of a section. The element is used to group a set of
+              <code><a href='http://developers.whatwg.org/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements'>h1</a></code>u{2013}
+              <code><a href='http://developers.whatwg.org/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements'>h6</a></code>
+              elements when the heading has multiple levels, such as subheadings, alternative titles, or taglines.
+            </p>
+            <div class='markup'>
+              <hgroup>
+                <h1>Dr. Strangelove</h1>
+                <h2>Or: How I Learned to Stop Worrying and Love the Bomb</h2>
+              </hgroup>
+            </div>
+          </article>
+          <article class='element' id='header'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/sections.html#the-header-element'>Header</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/sections.html#the-header-element'>header</a></code>
+              element
+              <a href='http://developers.whatwg.org/sections.html#represents'>represents</a>
+              a group of introductory or navigational aids.
+            </p>
+            <p>
+              A
+              <code><a href='http://developers.whatwg.org/sections.html#the-header-element'>header</a></code>
+              element is intended to usually contain the section's heading (an
+              <code><a href='http://developers.whatwg.org/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements'>h1</a></code>&ndash;
+              <code><a href='http://developers.whatwg.org/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements'>h6</a></code>
+              element or an
+              <code><a href='http://developers.whatwg.org/sections.html#the-hgroup-element'>hgroup</a></code>
+              element), but this is not required. The
+              <code><a href='http://developers.whatwg.org/sections.html#the-header-element'>header</a></code>
+              element can also be used to wrap a section's table of contents, a search form, or any relevant logos.
+            </p>
+            <div class='markup'>
+              <header>
+                <h1>Little Green Guys With Guns</h1>
+                <nav>
+                  <ul>
+                    <li>
+                      <a href='/games'>Games</a>
+                      <li>
+                        <a href='/forum'>Forum</a>
+                        <li>
+                          <a href='/download'>Download</a>
+                        </li>
+                      </li>
+                    </li>
+                  </ul>
+                </nav>
+                <h2>Important News</h2>
+                <!-- this starts a second subsection -->
+                <!-- this is part of the subsection entitled "Important News" -->
+                <p>To play today's games you will need to update your client.</p>
+                <h2>Games</h2>
+                <!-- this starts a third subsection -->
+              </header>
+            </div>
+          </article>
+          <article class='element' id='footer'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/sections.html#the-footer-element'>Footer</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/sections.html#the-footer-element'>footer</a></code>
+              element
+              <a href='http://developers.whatwg.org/sections.html#represents'>represents</a>
+              a footer for its nearest ancestor
+              <a href='content-models.html#sectioning-content'>sectioning content</a>
+              or
+              <a href='http://developers.whatwg.org/sections.html#sectioning-root'>sectioning root</a>
+              element. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.
+            </p>
+            <p>Here is an example which shows the footer element being used both for a site-wide footer and for a section footer.</p>
+            <div class='markup'>
+              <article>
+                <h1>My Favorite Trains</h1>
+                <p>I love my trains. My favorite train of all time is a Köf.</p>
+                <p>
+                  It is fun to see them pull some coal cars because they look so
+                  dwarfed in comparison.
+                </p>
+                <footer>
+                  <!-- footer for article -->
+                  <P>
+                    Published
+                    <time datetime='2009-09-15T14:54-07:00' pubdate=''></time>
+                  </P>
+                </footer>
+              </article>
+              <footer>
+                <!-- site wide footer -->
+                <nav>
+                  <p>
+                    <a href='/credits.html'>Credits</a>
+                    —
+                    <a href='/tos.html'>Terms of Service</a>
+                    —
+                    <a href='/index.html'>Blog Index</a>
+                  </p>
+                </nav>
+                <p>Copyright © 2009 Gordon Freeman</p>
+              </footer>
+            </div>
+          </article>
+          <article class='element' id='address'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/sections.html#the-address-element'>Address</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/sections.html#the-address-element'>address</a></code>
+              element
+              <a href='http://developers.whatwg.org/sections.html#represents'>represents</a>
+              the contact information for its nearest
+              <code><a href='http://developers.whatwg.org/sections.html#the-article-element'>article</a></code>
+              or
+              <code><a href='http://developers.whatwg.org/sections.html#the-body-element-0'>body</a></code>
+              element ancestor. If that is
+              <a href='dom.html#the-body-element'>the body element</a>,
+              then the contact information applies to the document as a whole.
+            </p>
+            <div class='markup'>
+              <address><a href=''>Dave Raggett</a>,
+                <a href=''>Arnaud Le Hors</a>,
+                contact persons for the
+                <a href=''>W3C HTML Activity</a>
+              </address>
+            </div>
+          </article>
+        </section>
+        <section class='element-group' id='grouping'>
+          <h1 class='section-title'>
+            <a href='http://developers.whatwg.org/grouping-content.html'>Grouping</a>
+          </h1>
+          <article class='element' id='p'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/grouping-content.html#the-p-element'>p</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-p-element'>p</a></code>
+              element
+              <a href='http://developers.whatwg.org/grouping-content.html#represents'>represents</a>
+              a
+              <a href='content-models.html#paragraph'>paragraph</a>.
+            </p>
+            <div class='markup'>
+              <p>
+                The little kitten gently seated himself on a piece of
+                carpet. Later in his life, this would be referred to as the time the
+                cat sat on the mat.
+              </p>
+            </div>
+            <div class='markup'>
+              <fieldset>
+                <legend>Personal information</legend>
+                <p>
+                  <label>
+                    Name:
+                    <input name='n' />
+                  </label>
+                  <label>
+                    <input name='anon' type='checkbox'>Hide from other users</input>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Address:
+                    <textarea name='a'></textarea>
+                  </label>
+                </p>
+              </fieldset>
+            </div>
+            <div class='markup'>
+              <p>
+                There was once an example from Femley,
+                <br>
+                  Whose markup was of dubious quality.
+                  <br>
+                    The validator complained,
+                    <br>
+                      So the author was pained,
+                      <br>
+                        To move the error from the markup to the rhyming.
+                      </br>
+                    </br>
+                  </br>
+                </br>
+              </p>
+            </div>
+          </article>
+          <article class='element' id='hr'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/grouping-content.html#the-hr-element'>hr</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-hr-element'>hr</a></code>
+              element
+              <a href='http://developers.whatwg.org/grouping-content.html#represents'>represents</a>
+              a
+              <a href='content-models.html#paragraph'>paragraph</a>-level
+              thematic break, e.g. a scene change in a story, or a transition to another topic within a section of a reference book.
+            </p>
+            <div class='markup'>
+              <section>
+                <h1>Communication</h1>
+                <p>
+                  There are various methods of communication. This section
+                  covers a few of the important ones used by the project.
+                </p>
+                <hr>
+                  <p>
+                    Communication stones seem to come in pairs and have mysterious
+                    properties:
+                  </p>
+                  <ul>
+                    <li>
+                      They can transfer thoughts in two directions once activated
+                      if used alone.
+                    </li>
+                    <li>
+                      If used with another device, they can transfer one's
+                      consciousness to another body.
+                    </li>
+                    <li>
+                      If both stones are used with another device, the
+                      consciousnesses switch bodies.
+                    </li>
+                  </ul>
+                  <hr>
+                    <p>
+                      Radios use the electromagnetic spectrum in the meter range and
+                      longer.
+                    </p>
+                    <hr>
+                      <p>
+                        Signal flares use the electromagnetic spectrum in the
+                        nanometer range.
+                      </p>
+                    </hr>
+                  </hr>
+                </hr>
+              </section>
+            </div>
+            <div class='markup'>
+              <section>
+                <h1>Food</h1>
+                <p>All food at the project is rationed:</p>
+                <dl>
+                  <dt>Potatoes</dt>
+                  <dd>Two per day</dd>
+                  <dt>Soup</dt>
+                  <dd>One bowl per day</dd>
+                </dl>
+                <hr>
+                  <p>Cooking is done by the chefs on a set rotation.</p>
+                </hr>
+              </section>
+            </div>
+          </article>
+          <article class='element' id='pre'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/grouping-content.html#the-pre-element'>pre</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-pre-element'>pre</a></code>
+              element
+              <a href='http://developers.whatwg.org/grouping-content.html#represents'>represents</a>
+              a block of preformatted text, in which structure is represented by typographic conventions rather than by elements.
+            </p>
+            <div class='markup'>
+              <p>
+                This is the
+                <code>Panel</code>
+                constructor:
+              </p>
+              <pre><code>function Panel(element, canClose, closeHandler) {&#x000A;              this.element = element;&#x000A;              this.canClose = canClose;&#x000A;              this.closeHandler = function () { if (closeHandler) closeHandler() };&#x000A;            }    .markup</code></pre>
+              <pre><samp>
+                You are in an open field west of a big white house with a boarded
+                front door.
+                There is a small mailbox here.
+                >
+              </samp>
+              <kbd>open mailbox</kbd>
+              <samp>
+                Opening the mailbox reveals:
+                A leaflet.
+                >
+              </samp></pre>
+            </div>
+            <div class='markup'>
+              <pre>                                           ,,                      ,,                     ,,            &#x000A;  .M"""bgd                                 db                    `7MM      `7MMF' `YMM'   db   mm       &#x000A; ,MI    "Y                                                         MM        MM   .M'          MM       &#x000A; `MMb.   `7MM  `7MM  `7Mb,od8 `7M'   `MF'`7MM `7M'   `MF',6"Yb.    MM        MM .d"     `7MM mmMMmm     &#x000A;   `YMMNq. MM    MM    MM' "'   VA   ,V    MM   VA   ,V 8)   MM    MM        MMMMM.       MM   MM       &#x000A; .     `MM MM    MM    MM        VA ,V     MM    VA ,V   ,pm9MM    MM        MM  VMA      MM   MM       &#x000A; Mb     dM MM    MM    MM         VVV      MM     VVV   8M   MM    MM        MM   `MM.    MM   MM       &#x000A; P"Ybmmd"  `Mbod"YML..JMML.        W     .JMML.    W    `Moo9^Yo..JMML.    .JMML.   MMb..JMML. `Mbmo</pre>
+            </div>
+          </article>
+          <article class='element' id='blockquote'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/grouping-content.html#the-blockquote-element'>blockquote</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-blockquote-element'>blockquote</a></code>
+              element
+              <a href='http://developers.whatwg.org/grouping-content.html#represents'>represents</a>
+              a section that is quoted from another source.
+            </p>
+            <div class='markup'>
+              <p>
+                His next piece was the aptly named
+                <cite>Sonnet 130</cite>:
+              </p>
+              <blockquote cite='http://quotes.example.org/s/sonnet130.html'>
+                <p>
+                  My mistress' eyes are nothing like the sun,
+                  <br>
+                    Coral is far more red, than her lips red...
+                  </br>
+                </p>
+              </blockquote>
+            </div>
+            <div class='markup'>
+              <p>He began his list of "lessons" with the following:</p>
+              <blockquote>
+                One should never assume that his side of
+                the issue will be recognized, let alone that it will
+                be conceded to have merits.
+              </blockquote>
+              <p>He continued with a number of similar points, ending with:</p>
+              <blockquote>
+                Finally, one should be prepared for the threat
+                of breakdown in negotiations at any given moment and not
+                be cowed by the possiblity.
+              </blockquote>
+              <p>We shall now discuss these points</p>
+            </div>
+          </article>
+          <article class='element' id='ol'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/grouping-content.html#the-ol-element'>ol</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-ol-element'>ol</a></code>
+              element
+              <a href='http://developers.whatwg.org/grouping-content.html#represents'>represents</a>
+              a list of items, where the items have been intentionally ordered, such that changing the order would change the meaning of the document.
+            </p>
+            <div class='markup'>
+              <p>
+                I have lived in the following countries (given in the order of when
+                I first lived there):
+              </p>
+              <ol>
+                <li>
+                  Switzerland
+                  <li>
+                    United Kingdom
+                    <li>
+                      United States
+                      <li>
+                        Norway
+                      </li>
+                    </li>
+                  </li>
+                </li>
+              </ol>
+            </div>
+          </article>
+          <article class='element' id='ul'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/grouping-content.html#the-ul-element'>ul</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-ul-element'>ul</a></code>
+              element
+              <a href='http://developers.whatwg.org/grouping-content.html#represents'>represents</a>
+              a list of items, where the order of the items is not important — that is, where changing the order would not materially change the meaning of the document.
+            </p>
+            <div class='markup'>
+              <p>I have lived in the following countries:</p>
+              <ul>
+                <li>
+                  Norway
+                  <li>
+                    Switzerland
+                    <li>
+                      United Kingdom
+                      <li>
+                        United States
+                      </li>
+                    </li>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class='element' id='li'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/grouping-content.html#the-li-element'>li</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-li-element'>li</a></code>
+              element
+              <a href='http://developers.whatwg.org/grouping-content.html#represents'>represents</a>
+              a list item. If its parent element is an
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-ol-element'>ol</a></code>,
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-ul-element'>ul</a></code>,
+              or
+              <code><a href='interactive-elements.html#menus'>menu</a></code>
+              element, then the element is an item of the parent element's list, as defined for those elements. Otherwise, the list item has no defined list-related relationship to any other
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-li-element'>li</a></code>
+              element.
+            </p>
+            <div class='markup'>
+              <figure>
+                <figcaption>The top 10 movies of all time</figcaption>
+                <ol>
+                  <li value='10'><cite>Josie and the Pussycats</cite>, 2001
+                  </li>
+                  <li value='9'><cite lang='sh'>Црна мачка, бели мачор</cite>, 1998
+                  </li>
+                  <li value='8'><cite>A Bug's Life</cite>, 1998
+                  </li>
+                  <li value='7'><cite>Toy Story</cite>, 1995
+                  </li>
+                  <li value='6'><cite>Monsters, Inc</cite>, 2001
+                  </li>
+                  <li value='5'><cite>Cars</cite>, 2006
+                  </li>
+                  <li value='4'><cite>Toy Story 2</cite>, 1999
+                  </li>
+                  <li value='3'><cite>Finding Nemo</cite>, 2003
+                  </li>
+                  <li value='2'><cite>The Incredibles</cite>, 2004
+                  </li>
+                  <li value='1'><cite>Ratatouille</cite>, 2007
+                  </li>
+                </ol>
+              </figure>
+            </div>
+            <div class='markup'>
+              <figure>
+                <figcaption>The top 10 movies of all time</figcaption>
+                <ol reversed=''>
+                  <li><cite>Josie and the Pussycats</cite>, 2001
+                  </li>
+                  <li><cite lang='sh'>Црна мачка, бели мачор</cite>, 1998
+                  </li>
+                  <li><cite>A Bug's Life</cite>, 1998
+                  </li>
+                  <li><cite>Toy Story</cite>, 1995
+                  </li>
+                  <li><cite>Monsters, Inc</cite>, 2001
+                  </li>
+                  <li><cite>Cars</cite>, 2006
+                  </li>
+                  <li><cite>Toy Story 2</cite>, 1999
+                  </li>
+                  <li><cite>Finding Nemo</cite>, 2003
+                  </li>
+                  <li><cite>The Incredibles</cite>, 2004
+                  </li>
+                  <li><cite>Ratatouille</cite>, 2007
+                  </li>
+                </ol>
+              </figure>
+            </div>
+          </article>
+          <article class='element' id='dl'>
+            <hgroup>
+              <h2 class='element-title'>
+                <a href='http://developers.whatwg.org/grouping-content.html#the-dl-element'>dl</a>
+              </h2>
+              <h3 class='element-title'>
+                <a href='http://developers.whatwg.org/grouping-content.html#the-dt-element'>dt</a>
+              </h3>
+              <h3 class='element-title'>
+                <a href='http://developers.whatwg.org/grouping-content.html#the-dd-element'>dd</a>
+              </h3>
+            </hgroup>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-dl-element'>dl</a></code>
+              element
+              <a href='http://developers.whatwg.org/grouping-content.html#represents'>represents</a>
+              an association list consisting of zero or more name-value groups (a description list). Each group must consist of one or more names (
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-dt-element'>dt</a></code>
+              elements) followed by one or more values (
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-dd-element'>dd</a></code>
+              elements). Within a single
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-dl-element'>dl</a></code>
+              element, there should not be more than one
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-dt-element'>dt</a></code>
+              element for each name.
+            </p>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-dt-element'>dt</a></code>
+              element
+              <a href='http://developers.whatwg.org/grouping-content.html#represents'>represents</a>
+              the term, or name, part of a term-description group in a description list (
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-dl-element'>dl</a></code>
+              element).
+            </p>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-dd-element'>dd</a></code>
+              element
+              <a href='http://developers.whatwg.org/grouping-content.html#represents'>represents</a>
+              the description, definition, or value, part of a term-description group in a description list (
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-dl-element'>dl</a></code>
+              element).
+            </p>
+            <div class='markup'>
+              <dl>
+                <dt>
+                  Authors
+                  <dd>
+                    John
+                    <dd>
+                      Luke
+                      <dt>
+                        Editor
+                        <dd>
+                          Frank
+                        </dd>
+                      </dt>
+                    </dd>
+                  </dd>
+                </dt>
+              </dl>
+            </div>
+            <div class='markup'>
+              <dl>
+                <dt lang='en-US'>
+                  <dfn>color</dfn>
+                </dt>
+                <dt lang='en-GB'>
+                  <dfn>colour</dfn>
+                </dt>
+                <dd>
+                  A sensation which (in humans) derives from the ability of
+                  the fine structure of the eye to distinguish three differently
+                  filtered analyses of a view.
+                </dd>
+              </dl>
+            </div>
+          </article>
+          <article class='element' id='figure'>
+            <hgroup>
+              <h2 class='element-title'>
+                <a href='http://developers.whatwg.org/grouping-content.html#the-figure-element'>figure</a>
+              </h2>
+              <h3 class='element-title'>
+                <a href='http://developers.whatwg.org/grouping-content.html#the-figcaption-element'>figcaption</a>
+              </h3>
+            </hgroup>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-figure-element'>figure</a></code>
+              element
+              <a href='http://developers.whatwg.org/grouping-content.html#represents'>represents</a>
+              some
+              <a href='content-models.html#flow-content'>flow content</a>,
+              optionally with a caption, that is self-contained and is typically referenced as a single unit from the main flow of the document.
+            </p>
+            <p>The element can thus be used to annotate illustrations, diagrams, photos, code listings, etc, that are referred to from the main content of the document, but that could, without affecting the flow of the document, be moved away from that primary content, e.g. to the side of the page, to dedicated pages, or to an appendix.</p>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-figcaption-element'>figcaption</a></code>
+              element child of the element, if any, represents the caption of the
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-figure-element'>figure</a></code>
+              element's contents. If there is no child
+              <code><a href='http://developers.whatwg.org/grouping-content.html#the-figcaption-element'>figcaption</a></code>
+              element, then there is no caption.
+            </p>
+            <div class='markup'>
+              <p>
+                In
+                <a href='http://developers.whatwg.org/grouping-content.html#l4'>listing 4</a>
+                we see the primary core interface
+                API declaration.
+              </p>
+              <figure id='l4'>
+                <figcaption>Listing 4. The primary core interface API declaration.</figcaption>
+                <pre><code>interface PrimaryCore {&#x000A;             boolean verifyDataLine();&#x000A;             void sendData(in sequence<byte> data);&#x000A;             void initSelfDestruct();&#x000A;            }      %p The API is designed to use UTF-8.</code></pre>
+              </figure>
+            </div>
+            <div class='markup'>
+              <figure>
+                <img alt='Bubbles, sitting in his office chair, works on his latest project intently.' src='http://dummyimage.com/100x100/ccc/fff' />
+                <figcaption>Bubbles at work</figcaption>
+              </figure>
+            </div>
+          </article>
+        </section>
+        <section class='element-group' id='text'>
+          <h1 class='section-title'>Text-level semantics</h1>
+          <article class='element' id='a'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-a-element'>a</a>
+            </h2>
+            <div class='markup'>
+              <nav>
+                <ul>
+                  <li>
+                    <a href='/'>Home</a>
+                  </li>
+                  <li>
+                    <a href='/news'>News</a>
+                  </li>
+                  <li>
+                    <a>Examples</a>
+                  </li>
+                  <li>
+                    <a href='/legal'>Legal</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-a-element'>a</a></code>
+              element may be wrapped around entire
+              paragraphs, lists, tables, and so forth, even entire sections, so
+              long as there is no interactive content within (e.g. buttons or
+              other links). This example shows how this can be used to make an
+              entire advertising block into a link:
+            </p>
+            <div class='markup'>
+              <aside class='advertising'>
+                <h1>Advertising</h1>
+                <a href='http://ad.example.com/?adid=1929&amp;pubid=1422'>
+                  <section>
+                    <h1>Mellblomatic 9000!</h1>
+                    <p>Turn all your widgets into mellbloms!</p>
+                    <p>Only $9.99 plus shipping and handling.</p>
+                  </section>
+                </a>
+                <a href='http://ad.example.com/?adid=375&amp;pubid=1422'>
+                  <section>
+                    <h1>The Mellblom Browser</h1>
+                    <p>Web browsing at the speed of light.</p>
+                    <p>No other browser goes faster!</p>
+                  </section>
+                </a>
+              </aside>
+            </div>
+          </article>
+          <article class='element' id='em'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-em-element'>em</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-em-element'>em</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              stress
+              emphasis of its contents.
+            </p>
+            <div class='markup'>
+              <p>
+                <em>Cats</em>
+                are cute animals.
+              </p>
+            </div>
+          </article>
+          <article class='element' id='strong'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-strong-element'>strong</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-strong-element'>strong</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              strong
+              importance for its contents.
+            </p>
+            <div class='markup'>
+              <p>
+                <strong>Warning.</strong>
+                This dungeon is dangerous.
+                <strong>Avoid the ducks.</strong>
+                Take any gold you find.
+                <strong><strong>Do not take any of the diamonds</strong>,
+                  they are explosive and
+                  <strong>
+                    will destroy anything within
+                    ten meters.
+                  </strong>
+                </strong>
+                You have been warned.
+              </p>
+            </div>
+          </article>
+          <article class='element' id='small'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-small-element'>small</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-small-element'>small</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              side
+              comments such as small print.
+            </p>
+            <div class='markup'>
+              <dl>
+                <dt>
+                  Single room
+                  <dd>
+                    199 €
+                    <small>breakfast included, VAT not included</small>
+                    <dt>
+                      Double room
+                      <dd>
+                        239 €
+                        <small>breakfast included, VAT not included</small>
+                      </dd>
+                    </dt>
+                  </dd>
+                </dt>
+              </dl>
+            </div>
+            <div class='markup'>
+              <p>
+                Example Corp today announced record profits for the
+                second quarter
+                <small>
+                  (Full Disclosure: Foo News is a subsidiary of
+                  Example Corp)
+                </small>,
+                leading to speculation about a third quarter
+                merger with Demo Group.
+              </p>
+            </div>
+          </article>
+          <article class='element' id='s'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-s-element'>s</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-s-element'>s</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              contents that
+              are no longer accurate or no longer relevant.
+            </p>
+            <div class='markup'>
+              <p>Buy our Iced Tea and Lemonade!</p>
+              <p>
+                <s>Recommended retail price: $3.99 per bottle</s>
+              </p>
+              <p>
+                <strong>Now selling for just $2.99 a bottle!</strong>
+              </p>
+            </div>
+          </article>
+          <article class='element' id='cite'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-cite-element'>cite</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-cite-element'>cite</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              the title
+              of a work (e.g.
+              a book,
+              a paper,
+              an essay,
+              a poem,
+              a score,
+              a song,
+              a script,
+              a film,
+              a TV show,
+              a game,
+              a sculpture,
+              a painting,
+              a theatre production,
+              a play,
+              an opera,
+              a musical,
+              an exhibition,
+              a legal case report,
+              etc). This can be a work that is being quoted or
+              referenced in detail (i.e. a citation), or it can just be a work
+              that is mentioned in passing.
+            </p>
+            <div class='markup'>
+              <p>
+                My favorite book is
+                <cite>The Reality Dysfunction</cite>
+                by
+                Peter F. Hamilton. My favorite comic is
+                <cite>
+                  Pearls Before
+                  Swine
+                </cite>
+                by Stephan Pastis. My favorite track is
+                <cite>
+                  Jive
+                  Samba
+                </cite>
+                by the Cannonball Adderley Sextet.
+              </p>
+            </div>
+          </article>
+          <article class='element' id='q'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-q-element'>q</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-q-element'>q</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              some
+              <a href='content-models.html#phrasing-content' title='phrasing content'>phrasing content</a>
+              quoted from another
+              source.
+            </p>
+            <div class='markup'>
+              <p>
+                The man said
+                <q>
+                  Things that are impossible just take
+                  longer
+                </q>.
+                I disagreed with him.
+              </p>
+            </div>
+            <div class='markup'>
+              <p>
+                The W3C page
+                <cite>About W3C</cite>
+                says the W3C's
+                mission is
+                <q cite='http://www.w3.org/Consortium/'>
+                  To lead the
+                  World Wide Web to its full potential by developing protocols and
+                  guidelines that ensure long-term growth for the Web
+                </q>.
+                I
+                disagree with this mission.
+              </p>
+            </div>
+          </article>
+          <article class='element' id='dfn'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-dfn-element'>dfn</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-dfn-element'>dfn</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              the defining
+              instance of a term. The
+              <a href='content-models.html#paragraph' title='paragraph'>paragraph</a>,
+              <a href='grouping-content.html#the-dl-element' title='dl'>description list group</a>,
+              or
+              <a href='content-models.html#sectioning-content' title='sectioning content'>section</a>
+              that is the nearest
+              ancestor of the
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-dfn-element'>dfn</a></code>
+              element must also contain the
+              definition(s) for the
+              <a href='http://developers.whatwg.org/text-level-semantics.html#defining-term' title='defining term'>term</a>
+              given
+              by the
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-dfn-element'>dfn</a></code>
+              element.
+            </p>
+            <div class='markup'>
+              <p>
+                The
+                <dfn>
+                  <abbr title='Garage Door Opener'>GDO</abbr>
+                </dfn>
+                is a device that allows off-world teams to open the iris.
+              </p>
+              <!-- ... later in the document: -->
+              <p>
+                Teal'c activated his
+                <abbr title='Garage Door Opener'>GDO</abbr>
+                and so Hammond ordered the iris to be opened.
+              </p>
+            </div>
+            <div class='markup'>
+              <p>
+                The
+                <dfn id='gdo'>
+                  <abbr title='Garage Door Opener'>GDO</abbr>
+                </dfn>
+                is a device that allows off-world teams to open the iris.
+              </p>
+              <!-- ... later in the document: -->
+              <p>
+                Teal'c activated his
+                <a href='#gdo'>
+                  <abbr title='Garage Door Opener'>GDO</abbr>
+                </a>
+                and so Hammond ordered the iris to be opened.
+              </p>
+            </div>
+          </article>
+          <article class='element' id='abbr'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-abbr-element'>abbr</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-abbr-element'>abbr</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              an
+              abbreviation or acronym, optionally with its expansion. The
+              <dfn id='attr-abbr-title' title='attr-abbr-title'>
+                <code>title</code>
+              </dfn>
+              attribute may be
+              used to provide an expansion of the abbreviation. The attribute, if
+              specified, must contain an expansion of the abbreviation, and
+              nothing else.
+            </p>
+            <div class='markup'>
+              <p>
+                The
+                <dfn id='whatwg'>
+                  <abbr title='Web Hypertext Application Technology Working Group'>WHATWG</abbr>
+                </dfn>
+                is a loose unofficial collaboration of Web browser manufacturers and
+                interested parties who wish to develop new technologies designed to
+                allow authors to write and deploy Applications over the World Wide
+                Web.
+              </p>
+            </div>
+          </article>
+          <article class='element' id='time'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-time-element'>time</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-time-element'>time</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              either a
+              time on a 24 hour clock, or a precise date in the proleptic
+              Gregorian calendar, optionally with a time and a time-zone
+              offset.
+              <a href='references.html#refsGREGORIAN'>[GREGORIAN]</a>
+            </p>
+            <div class='markup'>
+              <div class='vevent'>
+                <a class='url' href='http://www.web2con.com/'>http://www.web2con.com/</a>
+                <span class='summary'>Web 2.0 Conference</span>:
+                <time class='dtstart' datetime='2007-10-05'>October 5</time>
+                -
+                <time class='dtend' datetime='2007-10-20'>19</time>,
+                at the
+                <span class='location'>Argent Hotel, San Francisco, CA</span>
+              </div>
+            </div>
+            <div class='markup'>
+              <p>
+                I usually have a snack at
+                <time>16:00</time>.
+              </p>
+              <p>I've liked model trains since at least 1983.</p>
+            </div>
+          </article>
+          <article class='element' id='code'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-code-element'>code</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-code-element'>code</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              a fragment
+              of computer code. This could be an XML element name, a filename, a
+              computer program, or any other string that a computer would
+              recognize.
+            </p>
+            <div class='markup'>
+              <p>
+                When you call the
+                <code>activate()</code>
+                method on the
+                <code>robotSnowman</code>
+                object, the eyes glow.
+              </p>
+            </div>
+            <div class='markup'>
+              <pre><code class='language-pascal'>var i: Integer;&#x000A;begin&#x000A;   i := 1;&#x000A;end.  %article#var.element</code></pre>
+            </div>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-var-element'>var</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-var-element'>var</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              a
+              variable. This could be an actual variable in a mathematical
+              expression or programming context, or it could just be a term used
+              as a placeholder in prose.
+            </p>
+            <div class='markup'>
+              <p>
+                If there are
+                <var>n</var>
+                pipes leading to the ice
+                cream factory then I expect at
+                <em>least</em>
+                <var>n</var>
+                flavors of ice cream to be available for purchase!
+              </p>
+            </div>
+            <div class='markup'>
+              <figure>
+                <math>
+                  <mi>a</mi>
+                  <mo>=</mo>
+                  <msqrt>
+                    <msup>
+                      <mi>b</mi>
+                      <mn>2</mn>
+                    </msup>
+                    <mi>+</mi>
+                    <msup>
+                      <mi>c</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </msqrt>
+                </math>
+                <figcaption>
+                  Using Pythagoras' theorem to solve for the hypotenuse
+                  <var>a</var>
+                  of
+                  a triangle with sides
+                  <var>b</var>
+                  and
+                  <var>c</var>
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class='element' id='samp'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-samp-element'>samp</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-samp-element'>samp</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              (sample)
+              output from a program or computing system.
+            </p>
+            <div class='markup'>
+              <p>
+                The computer said
+                <samp>
+                  Too much cheese in tray
+                  two
+                </samp>
+                but I didn't know what that meant.
+              </p>
+            </div>
+            <div class='markup'>
+              <pre><samp>
+                <span class='prompt'>jdoe@mowmow:~$</span>
+                <kbd>ssh demo.example.com</kbd>
+                Last login: Tue Apr 12 09:10:17 2005 from mowmow.example.com on pts/1
+                Linux demo 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189 #1 SMP Tue Feb 1 11:22:36 PST 2005 i686 unknown
+                <span class='prompt'>jdoe@demo:~$</span>
+                <span class='cursor'>_</span>
+              </samp></pre>
+            </div>
+          </article>
+          <article class='element' id='kbd'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-kbd-element'>kbd</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-kbd-element'>kbd</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              user input
+              (typically keyboard input, although it may also be used to represent
+              other input, such as voice commands).
+            </p>
+            <div class='markup'>
+              <p>
+                To make George eat an apple, press
+                <kbd><kbd>Shift</kbd>+
+                  <kbd>F3</kbd>
+                </kbd>
+              </p>
+            </div>
+          </article>
+          <article class='element' id='sub-sup'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-sub-and-sup-elements'>sub and sup</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-sub-and-sup-elements'>sup</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              a
+              superscript and the
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-sub-and-sup-elements'>sub</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              a subscript.
+            </p>
+            <div class='markup'>
+              <p>
+                The most beautiful women are
+                <span lang='fr'>
+                  <abbr>
+                    M
+                    <sup>lle</sup>
+                  </abbr>
+                  Gwendoline
+                </span>
+                and
+                <span lang='fr'>
+                  <abbr>
+                    M
+                    <sup>me</sup>
+                  </abbr>
+                  Denise
+                </span>.
+              </p>
+            </div>
+            <div class='markup'>
+              <p>
+                The coordinate of the
+                <var>i</var>th
+                point is
+                (<var>
+                  x
+                  <sub>
+                    <var>i</var>
+                  </sub>
+                </var>,
+                <var>
+                  y
+                  <sub>
+                    <var>i</var>
+                  </sub>
+                </var>).
+                For example, the 10th point has coordinate
+                (<var>
+                  x
+                  <sub>10</sub>
+                </var>,
+                <var>
+                  y
+                  <sub>10</sub>
+                </var>).
+              </p>
+            </div>
+          </article>
+          <article class='element' id='i'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-i-element'>i</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-i-element'>i</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              a span of text
+              in an alternate voice or mood, or otherwise offset from the normal
+              prose, such as a taxonomic designation, a technical term, an
+              idiomatic phrase from another language, a thought, a ship name, or
+              some other prose whose typical typographic presentation is
+              italicized.
+            </p>
+            <div class='markup'>
+              <p>
+                The
+                <i class='taxonomy'>Felis silvestris catus</i>
+                is cute.
+              </p>
+              <p>
+                The term
+                <i>prose content</i>
+                is defined above.
+              </p>
+              <p>
+                There is a certain
+                <i lang='fr'>je ne sais quoi</i>
+                in the air.
+              </p>
+            </div>
+          </article>
+          <article class='element' id='b'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-b-element'>b</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-b-element'>b</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              a span of text
+              to be stylistically offset from the normal prose without conveying
+              any extra importance, such as key words in a document abstract,
+              product names in a review, or other spans of text whose typical
+              typographic presentation is boldened.
+            </p>
+            <div class='markup'>
+              <p>
+                The
+                <b>frobonitor</b>
+                and
+                <b>barbinator</b>
+                components are fried.
+              </p>
+            </div>
+          </article>
+          <article class='element' id='mark'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-mark-element'>mark</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-mark-element'>mark</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              a run of
+              text in one document marked or highlighted for reference purposes,
+              due to its relevance in another context. When used in a quotation or
+              other block of text referred to from the prose, it indicates a
+              highlight that was not originally present but which has been added
+              to bring the reader's attention to a part of the text that might not
+              have been considered important by the original author when the block
+              was originally written, but which is now under previously unexpected
+              scrutiny. When used in the main prose of a document, it indicates a
+              part of the document that has been highlighted due to its likely
+              relevance to the user's current activity.
+            </p>
+            <div class='markup'>
+              <p>
+                I also have some
+                <mark>kitten</mark>s
+                who are visiting me
+                these days. They're really cute. I think they like my garden! Maybe I
+                should adopt a
+                <mark>kitten</mark>.
+              </p>
+            </div>
+          </article>
+          <article class='element' id='ruby'>
+            <hgroup>
+              <h2 class='element-title'>
+                <a href='http://developers.whatwg.org/text-level-semantics.html#the-ruby-element'>ruby</a>
+              </h2>
+              <h3 class='element-title'>
+                <a href='http://developers.whatwg.org/text-level-semantics.html#the-rt-element'>rt</a>
+              </h3>
+              <h3 class='element-title'>
+                <a href='http://developers.whatwg.org/text-level-semantics.html#the-rp-element'>rp</a>
+              </h3>
+            </hgroup>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-ruby-element'>ruby</a></code>
+              element allows one or more spans of
+              phrasing content to be marked with ruby annotations. Ruby
+              annotations are short runs of text presented alongside base text,
+              primarily used in East Asian typography as a guide for
+              pronunciation or to include other annotations. In Japanese, this
+              form of typography is also known as
+              <i>furigana</i>.
+            </p>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-rt-element'>rt</a></code>
+              element marks the ruby text component of a
+              ruby annotation.
+            </p>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-rp-element'>rp</a></code>
+              element can be used to provide parentheses
+              around a ruby text component of a ruby annotation, to be shown by
+              user agents that don't support ruby annotations.
+            </p>
+            <div class='markup'>
+              <ruby>
+                漢<rt>かん</rt>字
+                <rt>じ　</rt>
+              </ruby>
+            </div>
+            <div class='markup'>
+              <ruby>
+                汉<rt>hàn</rt>字
+                <rt>zì</rt>
+              </ruby>
+            </div>
+            <div class='markup'>
+              <ruby>
+                漢
+                <rp>(</rp>
+                <rt>かん</rt>
+                <rp>)</rp>
+                字
+                <rp>(</rp>
+                <rt>じ</rt>
+                <rp>)</rp>
+              </ruby>
+            </div>
+          </article>
+          <article class='element' id='bdi'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/text-level-semantics.html#the-bdi-element'>bdi</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-bdi-element'>bdi</a></code>
+              element
+              <a href='http://developers.whatwg.org/text-level-semantics.html#represents'>represents</a>
+              a span of
+              text that is to be isolated from its surroundings for the purposes
+              of bidirectional text formatting.
+              <a href='references.html#refsBIDI'>[BIDI]</a>
+            </p>
+            <div class='markup'>
+              <ul>
+                <li>
+                  User
+                  <bdi>jcranmer</bdi>:
+                  12 posts.
+                  <li>
+                    User
+                    <bdi>hober</bdi>:
+                    5 posts.
+                    <li>
+                      User
+                      <bdi>إيان</bdi>:
+                      3 posts.
+                    </li>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class='element' id='text-summary'>
+            <h2 class='element-title'>Usage summary</h2>
+            <div class='markup'>
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Element
+                    </th>
+                    <th>
+                      Purpose
+                    </th>
+                    <th>
+                      Example
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-a-element'>a</a></code>
+                    </td>
+                    <td>
+                      Hyperlinks
+                    </td>
+                    <td>
+                      <pre class='example'>Visit my
+                      <strong><a href="drinks.html">drinks</a></strong>
+                      page.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-em-element'>em</a></code>
+                    </td>
+                    <td>
+                      Stress emphasis
+                    </td>
+                    <td>
+                      <pre class='example'>I must say I
+                      <strong><em>adore</em></strong>
+                      lemonade.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-strong-element'>strong</a></code>
+                    </td>
+                    <td>
+                      Importance
+                    </td>
+                    <td>
+                      <pre class='example'>This tea is
+                      <strong><strong>very hot</strong></strong>.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-small-element'>small</a></code>
+                    </td>
+                    <td>
+                      Side comments
+                    </td>
+                    <td>
+                      <pre class='example'>These grapes are made into wine.
+                      <strong><small>Alcohol is addictive.</small></strong></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-s-element'>s</a></code>
+                    </td>
+                    <td>
+                      Inaccurate text
+                    </td>
+                    <td>
+                      <pre class='example'>Price:
+                      <strong><s>£4.50</s></strong>
+                      £2.00!</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-cite-element'>cite</a></code>
+                    </td>
+                    <td>
+                      Titles of works
+                    </td>
+                    <td>
+                      <pre class='example'>The case
+                      <strong><cite>Hugo v. Danielle</cite></strong>
+                      is relevant here.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-q-element'>q</a></code>
+                    </td>
+                    <td>
+                      Quotations
+                    </td>
+                    <td>
+                      <pre class='example'>The judge said
+                      <strong><q>You can drink water from the fish tank</q></strong>
+                      but advised against it.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-dfn-element'>dfn</a></code>
+                    </td>
+                    <td>
+                      Defining instance
+                    </td>
+                    <td>
+                      <pre class='example'>The term
+                      <strong><dfn>organic food</dfn></strong>
+                      refers to food produced without synthetic chemicals.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-abbr-element'>abbr</a></code>
+                    </td>
+                    <td>
+                      Abbreviations
+                    </td>
+                    <td>
+                      <pre class='example'>Organic food in Ireland is certified by the
+                      <strong><abbr title="Irish Organic Farmers and Growers Association">IOFGA</abbr></strong>.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-time-element'>time</a></code>
+                    </td>
+                    <td>
+                      Date and/or time
+                    </td>
+                    <td>
+                      <pre class='example'>Published
+                      <strong><time>2009-10-21</time></strong>.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-code-element'>code</a></code>
+                    </td>
+                    <td>
+                      Computer code
+                    </td>
+                    <td>
+                      <pre class='example'>The
+                      <strong><code>fruitdb</code></strong>
+                      program can be used for tracking fruit production.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-var-element'>var</a></code>
+                    </td>
+                    <td>
+                      Variables
+                    </td>
+                    <td>
+                      <pre class='example'>If there are
+                      <strong><var>n</var></strong>
+                      fruit in the bowl, at least
+                      <strong><var>n</var></strong>u{f7}2
+                      will be ripe.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-samp-element'>samp</a></code>
+                    </td>
+                    <td>
+                      Computer output
+                    </td>
+                    <td>
+                      <pre class='example'>The computer said
+                      <strong><samp>Unknown error -3</samp></strong>.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-kbd-element'>kbd</a></code>
+                    </td>
+                    <td>
+                      User input
+                    </td>
+                    <td>
+                      <pre class='example'>Hit
+                      <strong><kbd>F1</kbd></strong>
+                      to continue.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-sub-and-sup-elements'>sub</a></code>
+                    </td>
+                    <td>
+                      Subscripts
+                    </td>
+                    <td>
+                      <pre class='example'>Water is H<strong><sub>2</sub></strong>O.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-sub-and-sup-elements'>sup</a></code>
+                    </td>
+                    <td>
+                      Superscripts
+                    </td>
+                    <td>
+                      <pre class='example'>The Hydrogen in heavy water is usually
+                      <strong><sup>2</sup></strong>H.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-i-element'>i</a></code>
+                    </td>
+                    <td>
+                      Alternative voice
+                    </td>
+                    <td>
+                      <pre class='example'>Lemonade consists primarily of
+                      <strong><i>Citrus limon</i></strong>.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-b-element'>b</a></code>
+                    </td>
+                    <td>
+                      Keywords
+                    </td>
+                    <td>
+                      <pre class='example'>Take a
+                      <strong><b>lemon</b></strong>
+                      and squeeze it with a
+                      <strong><b>juicer</b></strong>.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-mark-element'>mark</a></code>
+                    </td>
+                    <td>
+                      Highlight
+                    </td>
+                    <td>
+                      <pre class='example'>Elderflower cordial, with one
+                      <strong><mark>part</mark></strong>
+                      cordial to ten
+                      <strong><mark>part</mark></strong>s
+                      water, stands a
+                      <strong><mark>part</mark></strong>
+                      from the rest.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code><a href='http://developers.whatwg.org/text-level-semantics.html#the-ruby-element'>ruby</a></code>,
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-rt-element'>rt</a></code>,
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-rp-element'>rp</a></code>
+                    </td>
+                    <td>
+                      Ruby annotations
+                    </td>
+                    <td>
+                      <pre class='example'><strong><ruby> OJ <rp>(<rt>Orange Juice<rp>)</ruby></strong></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-bdi-element'>bdi</a></code>
+                    </td>
+                    <td>
+                      Text directionality isolation
+                    </td>
+                    <td>
+                      <pre class='example'>The recommended restaurant is
+                      <strong><bdi lang="">My Juice Café (At The Beach)</bdi></strong>.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-bdo-element'>bdo</a></code>
+                    </td>
+                    <td>
+                      Text directionality formatting
+                    </td>
+                    <td>
+                      <pre class='example'>The proposal is to write English, but in reverse order. "Juice" would become "<strong><bdo dir=rtl>Juice</bdo></strong>"</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-span-element'>span</a></code>
+                    </td>
+                    <td>
+                      Other
+                    </td>
+                    <td>
+                      <pre class='example'>In French we call it
+                      <strong><span lang="fr">sirop de sureau</span></strong>.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-br-element'>br</a></code>
+                    </td>
+                    <td>
+                      Line break
+                    </td>
+                    <td>
+                      <pre class='example'>Simply Orange Juice Company<strong><br></strong>Apopka, FL 32703<strong><br></strong>U.S.A.</pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code><a href='http://developers.whatwg.org/text-level-semantics.html#the-wbr-element'>wbr</a></code>
+                    </td>
+                    <td>
+                      Line breaking opportunity
+                    </td>
+                    <td>
+                      <pre class='example'>www.simply<strong><wbr></strong>orange<strong><wbr></strong>juice.com</pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+        <section class='element-group' id='tabular'>
+          <h1 class='section-title'>
+            <a href='http://developers.whatwg.org/tabular-data.html'>Tabular Data</a>
+          </h1>
+          <article class='element' id='table'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/tabular-data.html#the-table-element'>Table</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/tabular-data.html#the-table-element'>table</a></code>
+              element
+              <a href='http://developers.whatwg.org/tabular-data.html#represents'>represents</a>
+              data with
+              more than one dimension, in the form of a
+              <a href='http://developers.whatwg.org/tabular-data.html#concept-table' title='concept-table'>table</a>.
+            </p>
+            <div class='markup'>
+              <p>
+                In the following table, characteristics are given in the second
+                column, with the negative side in the left column and the positive
+                side in the right column.
+              </p>
+              <table>
+                <caption>Characteristics with positive and negative sides</caption>
+                <thead>
+                  <tr>
+                    <th id='n'>
+                      Negative
+                      <th>
+                        Characteristic
+                        <th>
+                          Positive
+                          <tbody>
+                            <tr>
+                              <td headers='n r1'>
+                                Sad
+                                <th id='r1'>
+                                  Mood
+                                  <td>
+                                    Happy
+                                    <tr>
+                                      <td headers='n r2'>
+                                        Failing
+                                        <th id='r2'>
+                                          Grade
+                                          <td>
+                                            Passing
+                                          </td>
+                                        </th>
+                                      </td>
+                                    </tr>
+                                  </td>
+                                </th>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </th>
+                      </th>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class='markup'>
+              <table>
+                <caption>
+                  <strong>Characteristics with positive and negative sides.</strong>
+                  <p>
+                    Characteristics are given in the second column, with the
+                    negative side in the left column and the positive side in the right
+                    column.
+                  </p>
+                </caption>
+                <thead>
+                  <tr>
+                    <th id='n'>
+                      Negative
+                      <th>
+                        Characteristic
+                        <th>
+                          Positive
+                          <tbody>
+                            <tr>
+                              <td headers='n r1'>
+                                Sad
+                                <th id='r1'>
+                                  Mood
+                                  <td>
+                                    Happy
+                                    <tr>
+                                      <td headers='n r2'>
+                                        Failing
+                                        <th id='r2'>
+                                          Grade
+                                          <td>
+                                            Passing
+                                          </td>
+                                        </th>
+                                      </td>
+                                    </tr>
+                                  </td>
+                                </th>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </th>
+                      </th>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class='markup'>
+              <table>
+                <caption>
+                  <strong>Characteristics with positive and negative sides.</strong>
+                  <details>
+                    <summary>Help</summary>
+                    <p>
+                      Characteristics are given in the second column, with the
+                      negative side in the left column and the positive side in the right
+                      column.
+                    </p>
+                  </details>
+                </caption>
+                <thead>
+                  <tr>
+                    <th id='n'>
+                      Negative
+                      <th>
+                        Characteristic
+                        <th>
+                          Positive
+                          <tbody>
+                            <tr>
+                              <td headers='n r1'>
+                                Sad
+                                <th id='r1'>
+                                  Mood
+                                  <td>
+                                    Happy
+                                    <tr>
+                                      <td headers='n r2'>
+                                        Failing
+                                        <th id='r2'>
+                                          Grade
+                                          <td>
+                                            Passing
+                                          </td>
+                                        </th>
+                                      </td>
+                                    </tr>
+                                  </td>
+                                </th>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </th>
+                      </th>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class='markup'>
+              <figure>
+                <figcaption>Characteristics with positive and negative sides</figcaption>
+                <p>
+                  Characteristics are given in the second column, with the
+                  negative side in the left column and the positive side in the right
+                  column.
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th id='n'>
+                        Negative
+                        <th>
+                          Characteristic
+                          <th>
+                            Positive
+                            <tbody>
+                              <tr>
+                                <td headers='n r1'>
+                                  Sad
+                                  <th id='r1'>
+                                    Mood
+                                    <td>
+                                      Happy
+                                      <tr>
+                                        <td headers='n r2'>
+                                          Failing
+                                          <th id='r2'>
+                                            Grade
+                                            <td>
+                                              Passing
+                                            </td>
+                                          </th>
+                                        </td>
+                                      </tr>
+                                    </td>
+                                  </th>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </th>
+                        </th>
+                      </th>
+                    </tr>
+                  </thead>
+                </table>
+              </figure>
+            </div>
+            <div class='markup'>
+              <figure>
+                <figcaption>
+                  <strong>Characteristics with positive and negative sides</strong>
+                  <p>
+                    Characteristics are given in the second column, with the
+                    negative side in the left column and the positive side in the right
+                    column.
+                  </p>
+                </figcaption>
+                <table>
+                  <thead>
+                    <tr>
+                      <th id='n'>
+                        Negative
+                        <th>
+                          Characteristic
+                          <th>
+                            Positive
+                            <tbody>
+                              <tr>
+                                <td headers='n r1'>
+                                  Sad
+                                  <th id='r1'>
+                                    Mood
+                                    <td>
+                                      Happy
+                                      <tr>
+                                        <td headers='n r2'>
+                                          Failing
+                                          <th id='r2'>
+                                            Grade
+                                            <td>
+                                              Passing
+                                            </td>
+                                          </th>
+                                        </td>
+                                      </tr>
+                                    </td>
+                                  </th>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </th>
+                        </th>
+                      </th>
+                    </tr>
+                  </thead>
+                </table>
+              </figure>
+            </div>
+            <div class='markup'>
+              <table>
+                <caption>Characteristics with positive and negative sides</caption>
+                <thead>
+                  <tr>
+                    <th>
+                      Characteristic
+                      <th>
+                        Negative
+                        <th>
+                          Positive
+                          <tbody>
+                            <tr>
+                              <th>
+                                Mood
+                                <td>
+                                  Sad
+                                  <td>
+                                    Happy
+                                    <tr>
+                                      <th>
+                                        Grade
+                                        <td>
+                                          Failing
+                                          <td>
+                                            Passing
+                                          </td>
+                                        </td>
+                                      </th>
+                                    </tr>
+                                  </td>
+                                </td>
+                              </th>
+                            </tr>
+                          </tbody>
+                        </th>
+                      </th>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </article>
+          <article class='element' id='thead'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/tabular-data.html#the-thead-element'>thead</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/tabular-data.html#the-thead-element'>thead</a></code>
+              element
+              <a href='http://developers.whatwg.org/tabular-data.html#represents'>represents</a>
+              the
+              <a href='http://developers.whatwg.org/tabular-data.html#concept-row-group' title='concept-row-group'>block</a>
+              of
+              <a href='http://developers.whatwg.org/tabular-data.html#concept-row' title='concept-row'>rows</a>
+              that consist of the column labels
+              (headers) for the parent
+              <code><a href='http://developers.whatwg.org/tabular-data.html#the-table-element'>table</a></code>
+              element, if the
+              <code><a href='http://developers.whatwg.org/tabular-data.html#the-thead-element'>thead</a></code>
+              element has a parent and it is a
+              <code><a href='http://developers.whatwg.org/tabular-data.html#the-table-element'>table</a></code>.
+            </p>
+            <div class='markup'>
+              <table>
+                <caption>School auction sign-up sheet</caption>
+                <thead>
+                  <tr>
+                    <th>
+                      <label for='e1'>Name</label>
+                      <th>
+                        <label for='e2'>Product</label>
+                        <th>
+                          <label for='e3'>Picture</label>
+                          <th>
+                            <label for='e4'>Price</label>
+                            <tr>
+                              <td>
+                                Your name here
+                                <td>
+                                  What are you selling?
+                                  <td>
+                                    Link to a picture
+                                    <td>
+                                      Your reserve price
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            Ms Danus
+                                            <td>
+                                              Doughnuts
+                                              <td>
+                                                <img src='http://example.com/mydoughnuts.png' title='Doughnuts from Ms Danus'>
+                                                  <td>
+                                                    $45
+                                                    <tr>
+                                                      <td>
+                                                        <input form='f' id='e1' name='who' required='' type='text'>
+                                                          <td>
+                                                            <input form='f' id='e2' name='what' required='' type='text'>
+                                                              <td>
+                                                                <input form='f' id='e3' name='pic' type='url'>
+                                                                  <td>
+                                                                    <input form='f' id='e4' min='0' required='' step='0.01' type='number' value='0' />
+                                                                  </td>
+                                                                </input>
+                                                              </td>
+                                                            </input>
+                                                          </td>
+                                                        </input>
+                                                      </td>
+                                                    </tr>
+                                                  </td>
+                                                </img>
+                                              </td>
+                                            </td>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </td>
+                                  </td>
+                                </td>
+                              </td>
+                            </tr>
+                          </th>
+                        </th>
+                      </th>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+              <form action='/auction.cgi' id='f'>
+                <input name='add' type='button' value='Submit' />
+              </form>
+            </div>
+          </article>
+          <article class='element' id='sample-tables'>
+            <h2 class='element-title'>Sample Tables</h2>
+            <div class='markup'>
+              <table>
+                <caption>
+                  Specification values:
+                  <b>Steel</b>,
+                  <b>Castings</b>,
+                  Ann. A.S.T.M. A27-16, Class B;* P max. 0.06; S max. 0.05.
+                </caption>
+                <thead>
+                  <tr>
+                    <th rowspan='2'>Grade.</th>
+                    <th rowspan='2'>Yield Point.</th>
+                    <th colspan='2'>Ultimate tensile strength</th>
+                    <th rowspan='2'>Per cent elong. 50.8mm or 2 in.</th>
+                    <th rowspan='2'>Per cent reduct. area.</th>
+                  </tr>
+                  <tr>
+                    <th>
+                      kg/mm
+                      <sup>2</sup>
+                    </th>
+                    <th>
+                      lb/in
+                      <sup>2</sup>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Hard</td>
+                    <td>0.45 ultimate</td>
+                    <td>56.2</td>
+                    <td>80,000</td>
+                    <td>15</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>Medium</td>
+                    <td>0.45 ultimate</td>
+                    <td>49.2</td>
+                    <td>70,000</td>
+                    <td>18</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>Soft</td>
+                    <td>0.45 ultimate</td>
+                    <td>42.2</td>
+                    <td>60,000</td>
+                    <td>22</td>
+                    <td>30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class='markup'>
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      <th>
+                        2008
+                        <th>
+                          2007
+                          <th>
+                            2006
+                            <tbody>
+                              <tr>
+                                <th>
+                                  Net sales
+                                  <td>
+                                    $ 32,479
+                                    <td>
+                                      $ 24,006
+                                      <td>
+                                        $ 19,315
+                                        <tr>
+                                          <th>
+                                            Cost of sales
+                                            <td>
+                                              21,334
+                                              <td>
+                                                15,852
+                                                <td>
+                                                  13,717
+                                                  <tbody>
+                                                    <tr>
+                                                      <th>
+                                                        Gross margin
+                                                        <td>
+                                                          $ 11,145
+                                                          <td>
+                                                            $  8,154
+                                                            <td>
+                                                              $  5,598
+                                                              <tfoot>
+                                                                <tr>
+                                                                  <th>
+                                                                    Gross margin percentage
+                                                                    <td>
+                                                                      34.3%
+                                                                      <td>
+                                                                        34.0%
+                                                                        <td>
+                                                                          29.0%
+                                                                        </td>
+                                                                      </td>
+                                                                    </td>
+                                                                  </th>
+                                                                </tr>
+                                                              </tfoot>
+                                                            </td>
+                                                          </td>
+                                                        </td>
+                                                      </th>
+                                                    </tr>
+                                                  </tbody>
+                                                </td>
+                                              </td>
+                                            </td>
+                                          </th>
+                                        </tr>
+                                      </td>
+                                    </td>
+                                  </td>
+                                </th>
+                              </tr>
+                            </tbody>
+                          </th>
+                        </th>
+                      </th>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class='markup'>
+              <table>
+                <colgroup>
+                  <col>
+                    <colgroup>
+                      <col>
+                        <col>
+                          <col>
+                            <thead>
+                              <tr>
+                                <th>
+                                  <th>
+                                    2008
+                                    <th>
+                                      2007
+                                      <th>
+                                        2006
+                                        <tbody>
+                                          <tr>
+                                            <th scope='rowgroup'>
+                                              Research and development
+                                              <td>
+                                                $ 1,109
+                                                <td>
+                                                  $ 782
+                                                  <td>
+                                                    $ 712
+                                                    <tr>
+                                                      <th scope='row'>
+                                                        Percentage of net sales
+                                                        <td>
+                                                          3.4%
+                                                          <td>
+                                                            3.3%
+                                                            <td>
+                                                              3.7%
+                                                              <tbody>
+                                                                <tr>
+                                                                  <th scope='rowgroup'>
+                                                                    Selling, general, and administrative
+                                                                    <td>
+                                                                      $ 3,761
+                                                                      <td>
+                                                                        $ 2,963
+                                                                        <td>
+                                                                          $ 2,433
+                                                                          <tr>
+                                                                            <th scope='row'>
+                                                                              Percentage of net sales
+                                                                              <td>
+                                                                                11.6%
+                                                                                <td>
+                                                                                  12.3%
+                                                                                  <td>
+                                                                                    12.6%
+                                                                                  </td>
+                                                                                </td>
+                                                                              </td>
+                                                                            </th>
+                                                                          </tr>
+                                                                        </td>
+                                                                      </td>
+                                                                    </td>
+                                                                  </th>
+                                                                </tr>
+                                                              </tbody>
+                                                            </td>
+                                                          </td>
+                                                        </td>
+                                                      </th>
+                                                    </tr>
+                                                  </td>
+                                                </td>
+                                              </td>
+                                            </th>
+                                          </tr>
+                                        </tbody>
+                                      </th>
+                                    </th>
+                                  </th>
+                                </th>
+                              </tr>
+                            </thead>
+                          </col>
+                        </col>
+                      </col>
+                    </colgroup>
+                  </col>
+                </colgroup>
+              </table>
+            </div>
+          </article>
+        </section>
+        <section class='element-group' id='forms'>
+          <h1 class='section-title'>
+            <a href='http://developers.whatwg.org/forms.html'>Forms</a>
+          </h1>
+          <article class='element' id='sample-forms'>
+            <h2 class='element-title'>Sample Forms</h2>
+            <div class='markup'>
+              <form action='https://pizza.example.com/order.cgi' enctype='application/x-www-form-urlencoded' method='post'>
+                <p>
+                  <label>
+                    Customer name:
+                    <input name='custname' required='' />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Telephone:
+                    <input name='custtel' type='tel' />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    E-mail address:
+                    <input name='custemail' type='email' />
+                  </label>
+                </p>
+                <fieldset>
+                  <legend>Pizza Size</legend>
+                  <p>
+                    <label>
+                      <input name='size' type='radio' value='small'>Small</input>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name='size' type='radio' value='medium'>Medium</input>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name='size' type='radio' value='large'>Large</input>
+                    </label>
+                  </p>
+                </fieldset>
+                <fieldset>
+                  <legend>Pizza Toppings</legend>
+                  <p>
+                    <label>
+                      <input name='topping' type='checkbox' value='bacon'>Bacon</input>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name='topping' type='checkbox' value='cheese'>Extra Cheese</input>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name='topping' type='checkbox' value='onion'>Onion</input>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name='topping' type='checkbox' value='mushroom'>Mushroom</input>
+                    </label>
+                  </p>
+                </fieldset>
+                <p>
+                  <label>
+                    Preferred delivery time:
+                    <input max='21:00' min='11:00' name='delivery' required='' step='900' type='time' />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Delivery instructions:
+                    <textarea maxlength='1000' name='comments'></textarea>
+                  </label>
+                </p>
+                <p>
+                  <button>Submit order</button>
+                  <p></p>
+                </p>
+              </form>
+            </div>
+          </article>
+          <article class='element' id='fieldset'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/forms.html#the-fieldset-element'>fieldset</a>
+            </h2>
+            <div class='markup'>
+              <fieldset disabled='' name='clubfields'>
+                <legend>
+                  <label>
+                    <input name='club' onchange='form.clubfields.disabled = !checked' type='checkbox'>
+                      Use Club Card
+                    </input>
+                  </label>
+                </legend>
+                <p>
+                  <label>
+                    Name on card:
+                    <input name='clubname' required='' />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Card number:
+                    <input name='clubnum' pattern='[-0-9]+' required='' />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Expiry date:
+                    <input name='clubexp' type='month' />
+                  </label>
+                </p>
+              </fieldset>
+            </div>
+            <div class='markup'>
+              <fieldset disabled='' name='clubfields'>
+                <legend>
+                  <label>
+                    <input name='club' onchange='form.clubfields.disabled = !checked' type='checkbox'>
+                      Use Club Card
+                    </input>
+                  </label>
+                </legend>
+                <p>
+                  <label>
+                    Name on card:
+                    <input name='clubname' required='' />
+                  </label>
+                </p>
+                <fieldset name='numfields'>
+                  <legend>
+                    <label>
+                      <input checked='' name='clubtype' onchange='form.numfields.disabled = !checked' type='radio'>
+                        My card has numbers on it
+                      </input>
+                    </label>
+                  </legend>
+                  <p>
+                    <label>
+                      Card number:
+                      <input name='clubnum' pattern='[-0-9]+' required='' />
+                    </label>
+                  </p>
+                </fieldset>
+                <fieldset disabled='' name='letfields'>
+                  <legend>
+                    <label>
+                      <input name='clubtype' onchange='form.letfields.disabled = !checked' type='radio'>
+                        My card has letters on it
+                      </input>
+                    </label>
+                  </legend>
+                  <p>
+                    <label>
+                      Card code:
+                      <input name='clublet' pattern='[A-Za-z]+' required='' />
+                    </label>
+                  </p>
+                </fieldset>
+              </fieldset>
+            </div>
+          </article>
+          <article class='element' id='label'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/forms.html#the-label-element'>label</a>
+            </h2>
+            <div class='markup'>
+              <p>
+                <label>
+                  Full name:
+                  <input name='fn'>
+                    <small>Format: First Last</small>
+                  </input>
+                </label>
+              </p>
+              <p>
+                <label>
+                  Age:
+                  <input min='0' name='age' type='number' />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Post code:
+                  <input name='pc'>
+                    <small>Format: AB12 3CD</small>
+                  </input>
+                </label>
+              </p>
+            </div>
+          </article>
+        </section>
+        <section class='element-group' id='interactive'>
+          <h1 class='section-title'>
+            <a href='http://developers.whatwg.org/interactive-elements.html'>Interactive</a>
+          </h1>
+          <article class='element' id='details'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/interactive-elements.html#the-details-element'>details</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/interactive-elements.html#the-details-element'>details</a></code>
+              element
+              <a href='http://developers.whatwg.org/interactive-elements.html#represents'>represents</a>
+              a
+              disclosure widget from which the user can obtain additional
+              information or controls.
+            </p>
+            <div class='markup'>
+              <section class='progress window'>
+                <h1>Copying "Really Achieving Your Childhood Dreams"</h1>
+                <details>
+                  <summary>
+                    Copying...
+                    <progress max='375505392' value='97543282'></progress>
+                    25%
+                  </summary>
+                  <dl>
+                    <dt>Transfer rate:</dt>
+                    <dd>452KB/s</dd>
+                    <dt>Local filename:</dt>
+                    <dd>/home/rpausch/raycd.m4v</dd>
+                    <dt>Remote filename:</dt>
+                    <dd>/var/www/lectures/raycd.m4v</dd>
+                    <dt>Duration:</dt>
+                    <dd>01:16:27</dd>
+                    <dt>Color profile:</dt>
+                    <dd>SD (6-1-6)</dd>
+                    <dt>Dimensions:</dt>
+                    <dd>320×240</dd>
+                  </dl>
+                </details>
+              </section>
+            </div>
+            <div class='markup'>
+              <details>
+                <summary>
+                  <label for='fn'>Name & Extension:</label>
+                </summary>
+                <p>
+                  <input id='fn' name='fn' type='text' value='Pillar Magazine.pdf'>
+                    <p>
+                      <label>
+                        <input checked='' name='ext' type='checkbox'>Hide extension</input>
+                      </label>
+                    </p>
+                  </input>
+                </p>
+              </details>
+            </div>
+          </article>
+          <article class='element' id='menu'>
+            <h2 class='element-title'>
+              <a href='http://developers.whatwg.org/interactive-elements.html#menus'>menu</a>
+            </h2>
+            <p>
+              The
+              <code><a href='http://developers.whatwg.org/interactive-elements.html#menus'>menu</a></code>
+              element represents a list of commands.
+            </p>
+            <div class='markup'>
+              <menu type='toolbar'>
+                <li>
+                  <menu label='File'>
+                    <button onclick='fnew()' type='button'>New...</button>
+                    <button onclick='fopen()' type='button'>Open...</button>
+                    <button onclick='fsave()' type='button'>Save</button>
+                    <button onclick='fsaveas()' type='button'>Save as...</button>
+                  </menu>
+                </li>
+                <li>
+                  <menu label='Edit'>
+                    <button onclick='ecopy()' type='button'>Copy</button>
+                    <button onclick='ecut()' type='button'>Cut</button>
+                    <button onclick='epaste()' type='button'>Paste</button>
+                  </menu>
+                </li>
+                <li>
+                  <menu label='Help'>
+                    <li>
+                      <a href='help.html'>Help</a>
+                    </li>
+                    <li>
+                      <a href='about.html'>About</a>
+                    </li>
+                  </menu>
+                </li>
+              </menu>
+            </div>
+            <div class='markup'>
+              <form action=''>
+                <menu type='toolbar'>
+                  <label for='goto'>Go to...</label>
+                  <menu label='Go'>
+                    <select id='goto'>
+                      <option selected='selected' value=''>Select site:</option>
+                      <option value='http://www.apple.com/'>Apple</option>
+                      <option value='http://www.mozilla.org/'>Mozilla</option>
+                      <option value='http://www.opera.com/'>Opera</option>
+                    </select>
+                    <span>
+                      <input type='submit' value='Go' />
+                    </span>
+                  </menu>
+                </menu>
+              </form>
+            </div>
+          </article>
+        </section>
+      </div>
+      <footer></footer>
+    </div>
+    <!--
+      Javascript at the bottom for fast page loading
+      Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
+    -->
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        window.jQuery || document.write("<script src='js/libs/jquery-1.6.min.js'>\x3C/script>")
+      //]]>
+    </script>
+    <script src='/js/libs/plugins.js?v=1'></script>
+    <script src='/js/script.js?v=1'></script>
+    <script src='/js/kit/kit-source.jquery.js?v=1'></script>
+    <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet -->
+    <!-- change the UA-XXXXX-X to be your site's ID -->
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"],["_trackPageLoadTime"]];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+        s.parentNode.insertBefore(g,s)}(document,"script"));
+      //]]>
+    </script>
+  </body>
+</html>
