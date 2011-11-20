@@ -1,4 +1,4 @@
-description "Compass extension for The Coding Designer's Survival Kit located at http://thecodingdesigner.com"
+description "Tools for desiging in the browser: The Coding Designer's Survival Kit"
 
 stylesheet 'style.sass', :media => 'all'
 stylesheet 'selectivizr.sass', :media => 'all'
@@ -51,7 +51,7 @@ html 'files/html/formalize_jquery_demo.html', :to => 'survivalkit/formalize/form
 html 'files/html/formalize_jquery_disabled.html', :to => 'survivalkit/formalize/formalize_jquery_disabled.html'
 html 'files/html/formalize_jquery_errors.html', :to => 'survivalkit/formalize/formalize_jquery_errors.html'
 
-html 'files/htaccess', :to => '.htaccess'
+html 'files/htaccess.htaccess', :to => '.htaccess'
 html 'files/crossdomain.xml', :to => 'crossdomain.xml'
 html 'files/robots.txt', :to => 'robots.txt'
 html 'files/humans.txt', :to => 'humans.txt'

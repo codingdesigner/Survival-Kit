@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
 
   # Gem Files
   s.files = ["README.markdown"]
+  s.files += ["CHANGELOG.markdown"]
   s.files += ["VERSION"]
   s.files += Dir.glob("lib/**/*.*")
   s.files += Dir.glob("stylesheets/survivalkit/**/*.*")
