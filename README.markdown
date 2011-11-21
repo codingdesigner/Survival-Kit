@@ -56,26 +56,26 @@ MIT license:
 http://www.opensource.org/licenses/mit-license.php
 
 
-Except included open source projects:
-* BigText: MIT/GPL
-* Dynamic-Carousel: MIT
-* flexie: MIT
-* flickrbomb: MIT
-* formalize: MIT/GPL
-* FitText: WTFPL license
-* Geared-Scrolling: MIT
-* Lettering.js: WTFPL license
-* PaintbrushJS: MIT
-* Respond: MIT/GPLv2
-* Sticky-Footer-jQuery-Plugin: MIT
-* html5-boilerplate: public domain
-* iSwipe-jQuery-Plugin: MIT
-* infinite-scroll: MIT
-* jquery-lightbox: BSD
-* jquery-ui: MIT/GPL
-* modernizr: BSD/MIT
-* pie: Apache/GPL
-* scrollability: Apache
+Except included open source projects:  
 
+- BigText: MIT/GPL
+- Dynamic-Carousel: MIT
+- flexie: MIT
+- flickrbomb: MIT
+- formalize: MIT/GPL
+- FitText: WTFPL license
+- Geared-Scrolling: MIT
+- Lettering.js: WTFPL license
+- PaintbrushJS: MIT
+- Respond: MIT/GPLv2
+- Sticky-Footer-jQuery-Plugin: MIT
+- html5-boilerplate: public domain
+- iSwipe-jQuery-Plugin: MIT
+- infinite-scroll: MIT
+- jquery-lightbox: BSD
+- jquery-ui: MIT/GPL
+- modernizr: BSD/MIT
+- pie: Apache/GPL
+- scrollability: Apache
 
 
