@@ -63,7 +63,6 @@ discover :javascripts
 
 help %Q{
 This is a Compass extension for The Coding Designer's Survival Kit by Mason Wendell
-(See full docs at: http://github.com/sporkd/compass-html5-boilerplate)
 
 Stand Alone Installation
 ========================

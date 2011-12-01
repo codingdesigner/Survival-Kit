@@ -2,13 +2,24 @@
 
 ## Overview
 
-This is a collection of Design-in-Browser tools and some great default markup. The idea here is that when you're designing in the browser you need something to design, and some great helpers to get your ideas onto the screen with as little friction as possible. I'm starting with the excellent HTML5 Boilerplate for the default markup. I've forked the css slightly but plan to mostly stay in sync with that project as it applies to the motive here. I'm also including some html files with common markup that needs to be designed for.
+This is a collection of Design-in-Browser tools and some great default markup. The idea here is that when you're designing in the browser you need something to design, and some great helpers to get your ideas onto the screen with as little friction as possible. I'm starting with the excellent HTML5 Boilerplate for the default markup. I'm also including some html files with common markup that needs to be designed for. 
 
 - __index.html__ is empty and contains no content
 - __elements.html__ includes a collection of standard html elements
 - You'll find many other, including basic forms, content pages, sidebars, footers, etc
 
-This also includes a Sass / Compass folder that starts with some very clean defaults. I can't include those projects in this one, so you'll need to install Sass and Compass to get started with these, and I encourage you to install Susy and other projects like Fancy Buttons as well.
+The CSS is built using Sass and Compass, and is the main focus. **Survival Kit is a system for creatively creating CSS using Sass.** You'll need to install Sass and Compass to get started with these, and I encourage you to install Susy and other projects like Sassy Modular Scale as well.
+
+## Installation
+
+  1. `gem install survivalkit`  
+  
+### For Existing Compass Projects  
+  1. Add require 'survivalkit' in Compass's config.rb file
+  2. `compass install survivalkit`
+  
+### For New Compass Projects  
+  2. `compass create my_project -r survivalkit -u survivalkit --javascripts-dir js --css-dir css`
 
 ## Getting Started
 
