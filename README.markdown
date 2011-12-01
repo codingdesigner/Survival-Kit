@@ -15,7 +15,7 @@ The CSS is built using Sass and Compass, and is the main focus. **Survival Kit i
   1. `gem install survivalkit`  
   
 ### For Existing Compass Projects  
-  1. Add require 'survivalkit' in Compass's config.rb file
+  1. Add `require 'survivalkit'` in Compass's config.rb file
   2. `compass install survivalkit`
   
 ### For New Compass Projects  
