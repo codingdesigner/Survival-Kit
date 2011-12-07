@@ -1,25 +1,42 @@
-# The Coding Designer's Survival Kit (http://thecodingdesigner.com)
+# [The Coding Designer's Survival Kit](http://thecodingdesigner.com)
 
-## Overview
+<!-- ## Overview
 
-This is a collection of Design-in-Browser tools and some great default markup. The idea here is that when you're designing in the browser you need something to design, and some great helpers to get your ideas onto the screen with as little friction as possible. I'm starting with the excellent HTML5 Boilerplate for the default markup. I'm also including some html files with common markup that needs to be designed for. 
+  - design in the browser
+  - content out
+  - a blank page +
+  - mobile first and responsive, or not
+  - living style guide
+  - style tiles
+  - html5
+  - sass and compass
+  - javascript libraries in a "side drawer" -->
 
-- __index.html__ is empty and contains no content
-- __elements.html__ includes a collection of standard html elements
-- You'll find many other, including basic forms, content pages, sidebars, footers, etc
+## Tools
 
-The CSS is built using Sass and Compass, and is the main focus. **Survival Kit is a system for creatively creating CSS using Sass.** You'll need to install Sass and Compass to get started with these, and I encourage you to install Susy and other projects like Sassy Modular Scale as well.
+  1. A set of starter HTML files to rapidly create a [living style guide](http://24ways.org/2011/front-end-style-guides) with most common **HTML elements and ui patterns**. It's easy to design and style these as is or customize them to your needs. Plus there's a blank page, based on the [HTML5 Boilerplate](http://html5boilerplate.com). Fill that with content and it won't be blank anymore.
+  2. A set of **[Sass](http://sass-lang.com/)** mixins and patterns.
+  3. A flexible and comprehensive **Sass workflow** that focuses on giving you a ton of tools, but makes very few assumptions on how you'll use them. Keep your css as clean as you like, go mobile first, or build a very custom responsive site.
+  4. Your favorite open source **javascript libraries**. But you don't need them all, all the time. The Survival Kit keeps them in a "side drawer" and you can experiment or use them as you need them.
 
-## Installation
 
-  1. `gem install survivalkit`  
-  
-### For Existing Compass Projects  
+## Using the Survival Kit
+
+The Survival Kit is a Compass extension. That means that you need to be using [Sass](http://sass-lang.com/) and [Compass](http://compass-style.org/), but you already are, right? It uses the "install" command from Compass to write the html, sass or scss, javascript and other assets into the directories you specify in your Compass configuration file.
+
+### Installation
+
+  0. [Install Sass and Compass](http://compass-style.org/install/), if you haven't already.
+  1. **Terminal**: `gem install survivalkit`
+
+#### For Existing Compass Projects
   1. Add `require 'survivalkit'` in Compass's config.rb file
-  2. `compass install survivalkit`
-  
-### For New Compass Projects  
-  2. `compass create my_project -r survivalkit -u survivalkit --javascripts-dir js --css-dir css`
+  2. **Terminal**: navigate to your project directory:  `cd PATH_TO_YOUR_PROJECT`
+  2. **Terminal**: `compass install survivalkit`
+
+#### For New Compass Projects
+  2. **Terminal**: `compass create my_project -r survivalkit -u survivalkit --javascripts-dir js --css-dir css`
+
 
 ## Getting Started
 
@@ -67,7 +84,7 @@ MIT license:
 http://www.opensource.org/licenses/mit-license.php
 
 
-Except included open source projects:  
+Except included open source projects:
 
 - BigText: MIT/GPL
 - Dynamic-Carousel: MIT
