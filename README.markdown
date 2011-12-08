@@ -59,10 +59,7 @@ I'll be recording a new video soon.
 - [Modernizr](http://modernizr.com/)
 - [Selectivizr](http://selectivizr.com/)
 - [Modularscale](http://modularscale.com/)
-- more, more, more
 - [Screencast](http://thecodingdesigner.com/)
-
-
 
 
 
