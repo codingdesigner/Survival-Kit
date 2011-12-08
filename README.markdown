@@ -9,7 +9,7 @@
   2. A set of **[Sass](http://sass-lang.com/)** mixins and patterns.
   3. A flexible and comprehensive **Sass workflow** that focuses on giving you a ton of tools, but makes very few assumptions on how you'll use them. Keep your css as clean as you like, go mobile first, or build a very custom responsive site.
   4. Your favorite open source **javascript libraries**. But you don't need them all, all the time. The Survival Kit keeps them in a "side drawer" and you can experiment or use them as you need them.
-  5. A set of templates for creating [Style Tiles](tktktk), a very useful tool for conveying design concepts to clients. 
+  5. A set of templates for creating [Style Tiles](http://badassideas.com/style-tiles-as-a-web-design-process-tool/), a very useful tool for conveying design concepts to clients. 
 
 
 ## Using the Survival Kit
