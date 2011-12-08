@@ -1,16 +1,7 @@
 # [The Coding Designer's Survival Kit](http://thecodingdesigner.com)
 
-<!-- ## Overview
+**A Toolset for Designing Web Sites in the Browser**
 
-  - design in the browser
-  - content out
-  - a blank page +
-  - mobile first and responsive, or not
-  - living style guide
-  - style tiles
-  - html5
-  - sass and compass
-  - javascript libraries in a "side drawer" -->
 
 ## Tools
 
@@ -18,6 +9,7 @@
   2. A set of **[Sass](http://sass-lang.com/)** mixins and patterns.
   3. A flexible and comprehensive **Sass workflow** that focuses on giving you a ton of tools, but makes very few assumptions on how you'll use them. Keep your css as clean as you like, go mobile first, or build a very custom responsive site.
   4. Your favorite open source **javascript libraries**. But you don't need them all, all the time. The Survival Kit keeps them in a "side drawer" and you can experiment or use them as you need them.
+  5. A set of templates for creating [Style Tiles](tktktk), a very useful tool for conveying design concepts to clients. 
 
 
 ## Using the Survival Kit
@@ -40,7 +32,7 @@ The Survival Kit is a Compass extension. That means that you need to be using [S
 
 ## Getting Started
 
-I've created an intro [screencast](http://thecodingdesigner.com/tutorials/please-allow-me-introduce-myself) and a video podcast about using the Kit while designing in the browser at [The Coding Designer](http://thecodingdesigner.com/)
+~~I've created an intro [screencast](http://thecodingdesigner.com/tutorials/please-allow-me-introduce-myself) and a video podcast about using the Kit while designing in the browser at [The Coding Designer](http://thecodingdesigner.com/)~~ I'll be recording a new video soon.
 
 ## Requirements
 
