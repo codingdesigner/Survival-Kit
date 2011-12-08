@@ -7,9 +7,9 @@
 
   1. A set of starter HTML files to rapidly create a [living style guide](http://24ways.org/2011/front-end-style-guides) with most common **HTML elements and ui patterns**. It's easy to design and style these as is or customize them to your needs. Plus there's a blank page, based on the [HTML5 Boilerplate](http://html5boilerplate.com). Fill that with content and it won't be blank anymore.
   2. A set of **[Sass](http://sass-lang.com/)** mixins and patterns.
-  3. A flexible and comprehensive **Sass workflow** that focuses on giving you a ton of tools, but makes very few assumptions on how you'll use them. Keep your css as clean as you like, go mobile first, or build a very custom responsive site.
+  3. A flexible and comprehensive **Sass workflow** that focuses on giving you a ton of tools, but makes very few assumptions on how you'll use them. Keep your css clean and minimal, go mobile first, or build a very custom responsive site.
   4. Your favorite open source **javascript libraries**. But you don't need them all, all the time. The Survival Kit keeps them in a "side drawer" and you can experiment or use them as you need them.
-  5. A set of templates for creating [Style Tiles](http://badassideas.com/style-tiles-as-a-web-design-process-tool/), a very useful tool for conveying design concepts to clients. 
+  5. A set of templates for creating [Style Tiles](http://badassideas.com/style-tiles-as-a-web-design-process-tool/), a very useful tool for conveying design concepts to clients.
 
 
 ## Using the Survival Kit
@@ -32,7 +32,7 @@ The Survival Kit is a Compass extension. That means that you need to be using [S
 
 ## Getting Started
 
-~~I've created an intro [screencast](http://thecodingdesigner.com/tutorials/please-allow-me-introduce-myself) and a video podcast about using the Kit while designing in the browser at [The Coding Designer](http://thecodingdesigner.com/)~~ 
+~~I've created an intro [screencast](http://thecodingdesigner.com/tutorials/please-allow-me-introduce-myself) and a video podcast about using the Kit while designing in the browser at [The Coding Designer](http://thecodingdesigner.com/)~~
 I'll be recording a new video soon.
 
 ## Requirements
