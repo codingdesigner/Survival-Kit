@@ -32,7 +32,8 @@ The Survival Kit is a Compass extension. That means that you need to be using [S
 
 ## Getting Started
 
-~~I've created an intro [screencast](http://thecodingdesigner.com/tutorials/please-allow-me-introduce-myself) and a video podcast about using the Kit while designing in the browser at [The Coding Designer](http://thecodingdesigner.com/)~~ I'll be recording a new video soon.
+~~I've created an intro [screencast](http://thecodingdesigner.com/tutorials/please-allow-me-introduce-myself) and a video podcast about using the Kit while designing in the browser at [The Coding Designer](http://thecodingdesigner.com/)~~ 
+I'll be recording a new video soon.
 
 ## Requirements
 
