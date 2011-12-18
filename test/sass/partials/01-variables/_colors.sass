@@ -3,7 +3,16 @@
 // COLOR SCHEMES
 // experimental math-generated color schemes
 // define a primary color to base these on
-$primary: $white
+$primary:   $white
+$secondary: $white
+$tertiary:  $white
+$quadrary:  $white
+
+@if $color-schemer-loaded
+  $primary:   color-schemer(primary)
+  $secondary: color-schemer(secondary)
+  $tertiary:  color-schemer(tertiary)
+  $quadrary:  color-schemer(quadrary)
 
 // COLOR VARIABLES FOR STYLE TILES
 // enable and customize as needed
