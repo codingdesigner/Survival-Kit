@@ -485,14 +485,14 @@ pre {
 }
 
 blockquote {
-  margin: 1.714em 21.875px;
+  margin: 1.714em 22px;
   font-style: italic;
   font-weight: 300;
 }
 
 /* Lists -------------------------------------------------------------- */
 ol, ul {
-  padding-left: 21.875px;
+  padding-left: 22px;
 }
 
 dl {
@@ -520,7 +520,7 @@ dt:first-of-type {
 }
 
 dd {
-  padding-left: 21.875px;
+  padding-left: 22px;
 }
 
 /* Links -------------------------------------------------------------- */
@@ -551,8 +551,8 @@ a:active {
 }
 
 small {
-  font-size: 0.8em;
-  line-height: 2.143em;
+  font-size: 0.786em;
+  line-height: 2.182em;
 }
 
 q {
@@ -610,11 +610,11 @@ img {
 }
 img.left {
   float: left;
-  margin: 10.5px 21.875px 10.5px 0;
+  margin: 10.5px 22px 10.5px 0;
 }
 img.right {
   float: right;
-  margin: 10.5px 0 10.5px 21.875px;
+  margin: 10.5px 0 10.5px 22px;
 }
 
 /* Tables -------------------------------------------------------------- */
@@ -1184,7 +1184,7 @@ label {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  width: 301.875px;
+  width: 302px;
   max-width: 100%;
   margin-top: 0;
   border-color: gray;
@@ -1212,7 +1212,7 @@ textarea {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  width: 301.875px;
+  width: 302px;
 }
 
 input[type="radio"], input[type="checkbox"] {
@@ -1227,19 +1227,19 @@ textarea, input:not([type="radio"]) {
 /* LAYOUT -------------------------------------------------------------- */
 /* SITE-WIDE DESIGN -------------------------------------------------------------- */
 body.survival-kit header h1 {
-  font-size: 2.618em;
-  line-height: 1.31em;
+  font-size: 2.643em;
+  line-height: 1.297em;
 }
 body.survival-kit header h2 {
-  font-size: 2.441em;
-  line-height: 1.404em;
+  font-size: 2.429em;
+  line-height: 1.412em;
 }
 body.survival-kit h1.section-title {
-  font-size: 1.953em;
-  line-height: 1.755em;
+  font-size: 1.929em;
+  line-height: 1.778em;
   background-color: #d3d3d3;
   text-transform: uppercase;
-  padding-left: 10.938px;
+  padding-left: 11px;
 }
 body.survival-kit h1.section-title a {
   color: black;
@@ -1288,7 +1288,7 @@ body.survival-kit article.element h2.element-title {
   background-color: gray;
   color: white;
   text-transform: uppercase;
-  padding-left: 10.938px;
+  padding-left: 11px;
 }
 body.survival-kit article.element h2.element-title a {
   color: white;
