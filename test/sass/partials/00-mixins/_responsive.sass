@@ -1,0 +1,16 @@
+// experimental - depends on Sass 3.2 or higher
+=respond-to($media)
+  @if $media == handhelds
+    @media only screen and (max-width: 320px)
+      @debug 'you still need to define the proper width'
+      @content
+  @else if $media == medium-screens
+    @media only screen and (min-width: 321px) and (max-width: 1024px)
+      @debug 'you still need to define the proper width'
+      @content
+  @else if $media == wide-screens
+    @media only screen and (min-width: 1200px) and (max-width: 1635px)
+      @content
+  @else if $media == superwide-screens
+    @media only screen and (min-width: 1635px)
+      @content
