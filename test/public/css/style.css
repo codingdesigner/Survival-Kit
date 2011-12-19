@@ -327,6 +327,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
 }
 
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "\0020";
+  display: table;
+  clear: both;
+}
+
 .hidden {
   display: none !important;
   visibility: hidden;

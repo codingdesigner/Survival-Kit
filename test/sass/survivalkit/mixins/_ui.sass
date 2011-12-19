@@ -2,31 +2,62 @@
  * $dir is 'bottom' for standard tabs
  * 'top' for hanging tabs
  * assumes placement on UL
-=tabs($dir: bottom)
+=tabs($dir: bottom, $border-color: $base-color, $border-color-active: $white, $background-color: $gray, $background-color-active: $white)
   +horizontal-list(3px)
   position: relative
   li
     border-#{$dir}: 1px solid $border-color
+    margin-top: 1px
     &.active
       a
-        padding-#{$dir}: 0
-        border-#{$dir}: 1px solid $white
+        border-#{$dir}: 1px solid $border-color-active
+        background-color: $background-color-active
+        // padding-#{$dir}: 0
     a
       border:
         width: 1px
         style: solid
-        color: $text-color
-      float: left
-      position: relative
-      #{$dir}: -1px
+        color: $border-color
+      background-color: $background-color
+      // float: left
+      // margin-top: -1px
+      // position: relative
+      // #{$dir}: -1px
+      padding: 0 0.25em
       @if $dir == bottom
-        padding: 0 0.25em 1px
         +border-top-radius
         +remove-link-underlines
       @else
-        padding: 1px 0.25em 0
         +border-bottom-radius
         border-top-width: 0
+      &:hover
+        background-color: $background-color-active
+        border-#{$dir}: 1px solid $border-color-active
+
+// remove drupal tab styling
+  apply to <ul>
+=drupal-tab-reset
+  border-bottom: 0 solid transparent
+  li
+    a
+      background-color: transparent
+      border-style: none
+      border-color: transparent
+      border-width: 0
+      float: none
+      position: static
+      bottom: auto
+      padding: 0
+      margin-right: 0
+      &:hover
+        background-color: transparent
+        border-color: transparent
+        border-bottom-color: transparent
+    &.active
+      a
+        background-color: transparent
+        border-color: transparent
+        border-bottom-color: transparent
 
 
 =decending-z-order-tab($count: 20)
