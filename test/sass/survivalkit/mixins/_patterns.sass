@@ -1,0 +1,22 @@
+// CSS3 Patterns
+
+
+
+=stripes-straight($dir: left, $bg-color: $gray, $stripe-color: rgba($white, 0.5), $size: 50px)
+  background-color: $bg-color
+  +background-image(linear-gradient($dir, $transparent 50%, $stripe-color 50%))
+  background-size: $size $size
+
+=stripes-diagonal($dir: 45deg, $bg-color: $gray, $stripe-color: rgba($white, 0.5), $size: 50px)
+  background-color: $bg-color
+  +background-image(repeating-linear-gradient($dir, $transparent, rgba($black, 0) $size / 2, $stripe-color $size / 2, $stripe-color $size))
+
+=stripes-cicada($bg-color: $gray, $stripe-color: $white, $dir: left)
+  $stripe-color1: rgba($stripe-color, 0.07)
+  $stripe-color2: rgba($stripe-color, 0.13)
+  $stripe-color3: rgba($stripe-color, 0.17)
+  $stripe-color4: rgba($stripe-color, 0.19)
+  background-color: $bg-color
+  +background-image(linear-gradient($dir, $stripe-color1 50%, $transparent 50%), linear-gradient($dir, $stripe-color2 50%, $transparent 50%), linear-gradient($dir, $transparent 50%, $stripe-color3 50%), linear-gradient($dir, $transparent 50%, $stripe-color4 50%))
+  background-size: 13px, 29px, 37px, 53px
+

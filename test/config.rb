@@ -29,3 +29,6 @@ relative_assets       = true
 
 # Learn more:
 #   http://compass-style.org/docs/tutorials/configuration-reference/
+
+
+Compass::BrowserSupport.add_support("repeating-linear-gradient", "webkit", "moz", "ms")
