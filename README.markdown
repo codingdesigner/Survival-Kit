@@ -29,6 +29,12 @@ The Survival Kit is a Compass extension. That means that you need to be using [S
 #### For New Compass Projects
   2. **Terminal**: `compass create my_project -r survivalkit -u survivalkit --javascripts-dir js --css-dir css`
 
+#### Note on Sass Warnings
+  When you first install or compile you may see some Sass warnings in your compiler. like: `WARNING on line 4:
+This selector doesn't have any properties and will not be rendered.`
+
+  These are compilation warnings, but they're intentional. I set up the sass files with many stub selectors that have no css properties. This way you can fill them in with the values you want, or simply leave them blank. If you leave them blank Sass omits them at compilation, but issues a warning on the assumption that you wanted to add a style there. I don't know of a way to suppress that warning during installation.
+
 
 ## Getting Started
 
