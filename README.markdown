@@ -29,7 +29,7 @@ The Survival Kit is a Compass extension. That means that you need to be using [S
 #### For New Compass Projects
   2. **Terminal**: `compass create my_project -r survivalkit -u survivalkit --javascripts-dir js --css-dir css`
 
-#### Note on Sass Warnings
+##### Note on Sass Warnings
   When you first install or compile you may see some Sass warnings in your compiler. like: `WARNING on line 4:
 This selector doesn't have any properties and will not be rendered.`
 
