@@ -34,3 +34,43 @@
     });
   }
 })(jQuery);
+
+
+/*!
+* Collapse markup sections
+*/
+(function($){
+  $('article.element').find('.element-title').append('<a href="#" class="fold-article fold-article-open">☒</a>');
+  $('.fold-article-close').toggle(
+    function() {
+      $(this).parent().siblings().slideUp();
+      $(this).html('☑').removeClass('fold-article-close').addClass('fold-article-open');
+    },
+    function() {
+      $(this).parent().siblings().slideDown();
+      $(this).html('☒').removeClass('fold-article-open').addClass('fold-article-close');
+    }
+  );
+  $('.fold-article-open').toggle(
+    function() {
+      $(this).parent().siblings().slideDown();
+      $(this).html('☒').removeClass('fold-article-open').addClass('fold-article-close');
+    },
+    function() {
+      $(this).parent().siblings().slideUp();
+      $(this).html('☑').removeClass('fold-article-close').addClass('fold-article-open');
+    }
+  );
+  // element groups
+  $('.section-title').append('<a href="#" class="fold-section fold-section-close">☒</a>');
+  $('.fold-section').toggle(
+    function() {
+      $(this).parent().siblings('.element').children(':not(.element-title)').slideUp().end().find('.element-title').find('.fold-article').html('☑');
+      $(this).html('☑').removeClass('fold-section-close').addClass('fold-section-open');
+    },
+    function() {
+      $(this).parent().siblings('.element').children().slideDown().end().find('.element-title').find('.fold-article').html('☒');
+      $(this).html('☒').removeClass('fold-section-open').addClass('fold-section-close');
+    }
+  );
+})(jQuery);
