@@ -1,7 +1,5 @@
 /*global jQuery */
 /*!
-* Lettering.JS 0.6.1
-*
 * Crawl the elements page and show example source code
 */
 (function($){
@@ -18,4 +16,21 @@
       $(this).find('+ textarea.show-source-textarea').slideUp();
     });
   });
+})(jQuery);
+
+/*!
+* Create submenus based on the available sections
+*/
+(function($){
+  if($sectionNav = $('nav.section-nav')) {
+    $sectionNav.append('<h3>Jump to a section</h3>');
+    $('.element-group').each(function(index) {
+      $sectionNav.append('<h4>' + $(this).find('.section-title').text() + '</h4>');
+      $thisUL = $sectionNav.append('<ul>').find('ul').last();
+      $(this).find('article.element').each(function(index) {
+        $thisID = $(this).attr('id');
+        $thisUL.append('<li><a href="#' + $thisID + '">' + $thisID + '</a></li>')
+      });
+    });
+  }
 })(jQuery);
