@@ -6,17 +6,24 @@
 body.survival-kit
   header
     h1
-      +adjust-font-size-to(ms(6))
+      +adjust-font-size-to(ms(1))
     h2
-      +adjust-font-size-to(ms(5))
+      +adjust-font-size-to(ms(2))
   h1.section-title
-    +adjust-font-size-to(ms(4))
+    +adjust-font-size-to(ms(3))
     background-color: $lightgray
     text-transform: uppercase
     padding-left: $kit-gutter-half
     a
       +link-colors($black, $alt-color, $alt-color, $black, false)
       +better-links($black, $alt-color, $alt-color, $black, false)
+  .kit-nav, .section-nav
+    +trailer
+    ul
+      +horizontal-list(0.5em)
+  .section-nav
+    h4, ul
+      margin-left: 1em
   article.element
     +vertical-separation($kit-baseline * 2, 1px, transparentize($border-color, 0.9))
     h2.element-title

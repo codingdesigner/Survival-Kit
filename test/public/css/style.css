@@ -326,6 +326,8 @@ table {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .clearfix {
@@ -1237,16 +1239,16 @@ textarea, input:not([type="radio"]) {
 /* LAYOUT -------------------------------------------------------------- */
 /* SITE-WIDE DESIGN -------------------------------------------------------------- */
 body.survival-kit header h1 {
-  font-size: 2.643em;
-  line-height: 1.297em;
+  font-size: 1.286em;
+  line-height: 1.333em;
 }
 body.survival-kit header h2 {
-  font-size: 2.429em;
-  line-height: 1.412em;
+  font-size: 1.571em;
+  line-height: 2.182em;
 }
 body.survival-kit h1.section-title {
-  font-size: 1.929em;
-  line-height: 1.778em;
+  font-size: 1.643em;
+  line-height: 2.087em;
   background-color: #d3d3d3;
   text-transform: uppercase;
   padding-left: 11px;
@@ -1275,6 +1277,38 @@ body.survival-kit h1.section-title a:hover {
 }
 body.survival-kit h1.section-title a:active {
   border-bottom-color: #bada55;
+}
+body.survival-kit .kit-nav, body.survival-kit .section-nav {
+  margin-bottom: 1.714em;
+}
+body.survival-kit .kit-nav ul, body.survival-kit .section-nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+body.survival-kit .kit-nav ul li, body.survival-kit .section-nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+body.survival-kit .kit-nav ul li:first-child, body.survival-kit .kit-nav ul li.first, body.survival-kit .section-nav ul li:first-child, body.survival-kit .section-nav ul li.first {
+  padding-left: 0;
+}
+body.survival-kit .kit-nav ul li:last-child, body.survival-kit .section-nav ul li:last-child {
+  padding-right: 0;
+}
+body.survival-kit .kit-nav ul li.last, body.survival-kit .section-nav ul li.last {
+  padding-right: 0;
+}
+body.survival-kit .section-nav h4, body.survival-kit .section-nav ul {
+  margin-left: 1em;
 }
 body.survival-kit article.element {
   *zoom: 1;
