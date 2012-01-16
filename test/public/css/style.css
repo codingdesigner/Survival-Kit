@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* The Coding Designer's Survival Kit
  * A framework for designing websites in the browser.
  *
@@ -375,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 
-.italic, address, em, cite, q, dfn, i {
+.italic, em, address, cite, q, dfn, i {
   font-style: italic;
 }
 
@@ -475,6 +476,33 @@ body {
   text-shadow: none;
 }
 
+/* Links -------------------------------------------------------------- */
+a {
+  color: #bada55;
+}
+a:visited {
+  color: #bada55;
+}
+a:hover {
+  color: #7555da;
+}
+a:active {
+  color: #7555da;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #bada55;
+}
+a:visited {
+  border-bottom-color: #bada55;
+}
+a:hover {
+  border-bottom-color: #7555da;
+}
+a:active {
+  border-bottom-color: #7555da;
+}
+
 /* import font files using @font-face, if not using a service such as typekit */
 /* Headings -------------------------------------------------------------- */
 .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
@@ -530,33 +558,6 @@ dt:first-of-type {
 
 dd {
   padding-left: 22px;
-}
-
-/* Links -------------------------------------------------------------- */
-a {
-  color: #bada55;
-}
-a:visited {
-  color: #bada55;
-}
-a:hover {
-  color: #7555da;
-}
-a:active {
-  color: #7555da;
-}
-a {
-  text-decoration: none;
-  border-bottom: 1px solid #bada55;
-}
-a:visited {
-  border-bottom-color: #bada55;
-}
-a:hover {
-  border-bottom-color: #7555da;
-}
-a:active {
-  border-bottom-color: #7555da;
 }
 
 small {

@@ -1,4 +1,15 @@
 // experimental - depends on Sass 3.2 or higher
+  define your own breakpoints
+  styles nested in the mixin will pass thru in @content
+  resist the urge to settle on common device sizes
+  http://marcdrummond.com/responsive-web-design/2011/12/29/default-breakpoints-are-dead
+
+  USAGE:
+  .some-class
+    color: red
+    +respond-to(handhelds)
+      color: green
+
 =respond-to($media)
   @if $media == handhelds
     @media only screen and (max-width: 320px)

@@ -16,7 +16,8 @@ html
 
 /* Establish baseline rhythm
  * from compass/typography/_vertical_rhythm
-+establish-baseline
+@if $establish-baseline
+  +establish-baseline
 
 body
   font-family: $font-body
@@ -38,3 +39,16 @@ body
   +accessible-color($alt-color)
   background: $alt-color
   text-shadow: none
+
+
+/* Links --------------------------------------------------------------
+a
+  +link-colors($alt-color, complement($alt-color), complement($alt-color), $alt-color, false)
+  +better-links($alt-color, complement($alt-color), complement($alt-color), $alt-color, false)
+  // +link-transitions
+
+em
+  @extend .italic
+
+strong
+  @extend .bold

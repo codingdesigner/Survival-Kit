@@ -16,7 +16,7 @@
     @if $active
       &:active
         border-bottom-color: $active
-        
+
 =undo-better-links
   &
     text-decoration: none
@@ -75,3 +75,13 @@
   text-overflow:    $method
   .ie &
     width: 100%
+
+
+=replace-list-numbers($padding-left: auto)
+  counter-reset: li
+  list-style-type: none
+  padding-left: $padding-left
+  li
+    &:before
+      content: counter(li) ". "
+      counter-increment: li
