@@ -29,7 +29,7 @@
       $thisUL = $sectionNav.append('<ul>').find('ul').last();
       $(this).find('article.element').each(function(index) {
         $thisID = $(this).attr('id');
-        $thisUL.append('<li><a href="#' + $thisID + '">' + $thisID + '</a></li>')
+        $thisUL.append('<li><a href="#' + $thisID + '">' + $thisID + '</a></li>');
       });
     });
   }
