@@ -23,7 +23,13 @@
 =invisible
   visibility: hidden
 
-
 =scale-image-ie($image)
   background: none
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="#{image_url($image, true, false)}",  sizingMethod="scale")
+
+=kit-clearfix
+  &:after
+    content: "\0020"
+    display: table
+    clear: both
+  zoom: 1

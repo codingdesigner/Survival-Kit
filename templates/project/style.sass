@@ -16,7 +16,7 @@
   Learn more about Sass & Compass at http://compass-style.org/
 
 
-
+@charset "UTF-8"
 
 // FOLLOW THE STEP-BY-STEP IN THE CORRESPONDING PARTIAL TO YOUR CHOSEN FLAVOR
   ---------------------------------------------------------------------------------------
@@ -58,12 +58,13 @@
 // enable / disable, but do not edit these files
 @import survivalkit/mixins/all
 
-
+// ✔ 2. ADD YOUR OWN MIXINS
+// @import partials/00-mixins/all
 
 // THE FOLLOWING IMPORTS WILL ADD CSS UPON COMPILE
 
 // ✔ ADD A CSS RESET OR NORMALIZATION
-@import survivalkit/reset/reset
+@import partials/02-reset/reset
 
 
 // ✔ IMPORT COMMON HELPER EXTENDABLES
@@ -71,29 +72,29 @@
 
 // ✔ 2. ADD YOUR OWN EXTENDABLES
 // typography
-@import partials/02-extend/all
+@import partials/03-extend/all
 
 
 // ✔ 3. EDIT AND ADD YOUR DEFAULT STYLES
 // This is worth going into in detail
 // edit as you see fit for your project
-@import partials/03-defaults/all
+@import partials/04-defaults/all
 
 
 // ✔ 4. CHOOSE A GRID SYSTEM
-// @import partials/04-grids/grids-blueprint.sass
+// @import partials/05-grids/grids-blueprint.sass
 // Susy: Install the Susy Gem (https://rubygems.org/gems/compass-susy-plugin)
 //   and uncomment the Susy line in /config.rb (# require 'susy')
-// @import partials/04-grids/grids-susy.sass
+// @import partials/05-grids/grids-susy.sass
 
 
 // ✔ 5. STYLE COMMON UI PATTERNS / DRUPAL UI PATTERNS
-// @import partials/05-ui-patterns/common
-// @import partials/05-ui-patterns/drupal/ui-patterns
+// @import partials/06-ui-patterns/common
+// @import partials/06-ui-patterns/drupal/ui-patterns
 
 
 // ✔ 6. PROCESS SPRITES WITH COMPASS
-// @import partials/06-sprites/sprites
+// @import partials/07-sprites/sprites
 
 
 
@@ -101,8 +102,8 @@
 // ✔ 7. YOUR CUSTOM LAYOUT AND DESIGN SASS
 // THIS IS WHERE MOST CUSTOM WORK WILL GO
 // -- PRIMARY DESIGN --
-@import partials/07-layout-design/layout
-@import partials/07-layout-design/design
+@import partials/08-layout-design/layout
+@import partials/08-layout-design/design
 // ------ OR ------
 // -- STYLE TILE DESIGN --
 // enable these partials for styletile layout and design
@@ -114,16 +115,16 @@
 
 
 // ✔ 8. CHOOSE A RESPONSIVE STARTER
-// @import partials/09-responsive/responsive-blueprint
-// @import partials/09-responsive/responsive-susy
+// @import partials/10-responsive/responsive-blueprint
+// @import partials/10-responsive/responsive-susy
 
 
 // ✔ 9. ENABLE PRINT STYLES
-// @import partials/10-media/print
+// @import partials/11-media/print
 
 
 // ✔ 10 ADJUST FOR LESSER/GREATER SYSTEMS
-// @import partials/11-browser_adjustments/modernizr
+// @import partials/12-browser_adjustments/modernizr
 // IE STYLES - aren't needed by other browsers, so compile them as a separate file and load via conditionals
 // SELECTIVIZR is nice, but the fallback css should really be compiled to a separate file
 

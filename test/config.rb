@@ -11,7 +11,9 @@ http_images_path      = '/images'
 http_javascripts_path = '/js'
 
 # File system locations
-sass_dir              = 'sass'
+# sass_dir              = 'sass'
+sass_dir              = '../templates/project'
+add_import_path         '../stylesheets'
 css_dir               = 'public/css'
 images_dir            = 'public/images'
 javascripts_dir       = 'public/js'

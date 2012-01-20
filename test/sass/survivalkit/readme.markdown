@@ -1,1 +1,0 @@
-The files in this folder "lib" are not meant to be altered. Create your own mixins, functions, etc in the numbered folders or in another folder.
