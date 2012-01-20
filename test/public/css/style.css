@@ -1326,6 +1326,11 @@ body.survival-kit article.element:last-child {
   border-bottom-width: 0;
   margin-bottom: 0;
 }
+body.survival-kit article.element.closed {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 body.survival-kit article.element h2.element-title {
   font-size: 1em;
   line-height: 1.714em;
