@@ -19,12 +19,14 @@ body.survival-kit
       padding-right: $kit-gutter
       margin-right: $kit-gutter
       border-right: 1px solid white
+      font-family: $kit-font-family
       a
         +remove-link-underlines
         +replace-text-with-dimensions('survival-kit-logo.png')
         display: block
     h2
       +adjust-font-size-to(ms(2))
+      font-family: $kit-font-family
     .intro
       margin-left: calc-em(265px, $base-font-size)
   h1.section-title
@@ -35,10 +37,9 @@ body.survival-kit
     a
       +link-colors($black, $alt-color, $alt-color, $black, false)
       +better-links($black, $alt-color, $alt-color, $black, false)
-    .fold-section
-      +remove-link-underlines
-      float: right
-      margin-right: 1em
+  h1.section-title .fold-section, h2.element-title .fold-article
+    +remove-link-underlines
+    margin-left: 1em
   .kit-nav, .section-nav
     +trailer
     padding: 0 0.5em

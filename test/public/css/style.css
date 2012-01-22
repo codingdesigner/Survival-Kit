@@ -1275,12 +1275,13 @@ body.survival-kit header h1 {
   padding-right: 22px;
   margin-right: 22px;
   border-right: 1px solid white;
+  font-family: futura, sans-serif;
 }
 body.survival-kit header h1 a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/survival-kit-logo.png?1327211590');
+  background-image: url('../images/survival-kit-logo.png?1327216968');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 220px;
@@ -1296,6 +1297,7 @@ body.survival-kit header h1 a:hover {
 body.survival-kit header h2 {
   font-size: 1.571em;
   line-height: 2.182em;
+  font-family: futura, sans-serif;
 }
 body.survival-kit header .intro {
   margin-left: 18.929em;
@@ -1332,14 +1334,13 @@ body.survival-kit h1.section-title a:hover {
 body.survival-kit h1.section-title a:active {
   border-bottom-color: #bada55;
 }
-body.survival-kit h1.section-title .fold-section {
-  float: right;
-  margin-right: 1em;
+body.survival-kit h1.section-title .fold-section, body.survival-kit h2.element-title .fold-article {
+  margin-left: 1em;
 }
-body.survival-kit h1.section-title .fold-section {
+body.survival-kit h1.section-title .fold-section, body.survival-kit h2.element-title .fold-article {
   border-bottom: none;
 }
-body.survival-kit h1.section-title .fold-section:hover {
+body.survival-kit h1.section-title .fold-section:hover, body.survival-kit h2.element-title .fold-article:hover {
   border-bottom: none;
 }
 body.survival-kit .kit-nav, body.survival-kit .section-nav {
