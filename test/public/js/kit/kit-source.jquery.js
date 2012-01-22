@@ -23,10 +23,20 @@
 */
 (function($){
   if($sectionNav = $('nav.section-nav')) {
-    $sectionNav.append('<h3>Jump to a section</h3>');
+    $sectionNav.append('<h3>Jump to a section</h3>')
+      .append('<div class="section-menus"></div>')
+      .find('h3').toggle(
+        function(){
+          $(this).siblings().slideDown();
+        },
+        function(){
+          $(this).siblings().slideUp();
+        }
+      );
+    $sectionMenus = $sectionNav.find('.section-menus').hide();
     $('.element-group').each(function(index) {
-      $sectionNav.append('<h4>' + $(this).find('.section-title').text().trim() + ': </h4>');
-      $thisUL = $sectionNav.append('<ul>').find('ul').last();
+      $sectionMenus.append('<h4>' + $(this).find('.section-title').text().trim() + ': </h4>');
+      $thisUL = $sectionMenus.append('<ul>').find('ul').last();
       $(this).find('article.element').each(function(index) {
         $thisID = $(this).attr('id');
         $thisUL.append('<li><a href="#' + $thisID + '">' + $thisID + '</a></li>');
