@@ -3,12 +3,30 @@
 
 @import ../mixins/helpers
 
+$kit-font-family: futura, $font-sans
+
 body.survival-kit
   header
+    background: $lightgray
+    font-family: $kit-font-family
+    padding: 0 0.5em
+    a
+      +link-colors($white, $white, $white, $white)
+      +better-links($white, $white, $white, $white)
     h1
       +adjust-font-size-to(ms(1))
+      float: left
+      padding-right: $kit-gutter
+      margin-right: $kit-gutter
+      border-right: 1px solid white
+      a
+        +remove-link-underlines
+        +replace-text-with-dimensions('survival-kit-logo.png')
+        display: block
     h2
       +adjust-font-size-to(ms(2))
+    .intro
+      margin-left: calc-em(265px, $base-font-size)
   h1.section-title
     +adjust-font-size-to(ms(3))
     background-color: $lightgray
@@ -17,13 +35,33 @@ body.survival-kit
     a
       +link-colors($black, $alt-color, $alt-color, $black, false)
       +better-links($black, $alt-color, $alt-color, $black, false)
+    .fold-section
+      +remove-link-underlines
+      float: right
+      margin-right: 1em
   .kit-nav, .section-nav
     +trailer
+    padding: 0 0.5em
+    font-family: $kit-font-family
+    color: $lightgray
+    #{headings()}
+      font-size: $base-font-size
+    a
+      +link-colors($white, $badass, $badass, $white)
+      +better-links($white, $badass, $badass, $white)
     ul
       +horizontal-list(0.5em)
+  .kit-nav
+    background: shade($gray, 20%)
   .section-nav
-    h4, ul
-      margin-left: 1em
+    background: $gray
+    margin-top: calc-em(-24px, $base-font-size)
+    h3
+      color: shade($gray, 40%)
+      +adjust-font-size-to($base-font-size - 2)
+    h4
+      float: left
+      margin-right: 0.5em
   article.element
     +vertical-separation($kit-baseline * 2, 1px, transparentize($border-color, 0.9))
     &.closed

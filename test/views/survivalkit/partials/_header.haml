@@ -1,6 +1,7 @@
 %header
   %hgroup
-    %h1 
-      %a{:href => "/survivalkit/"} The Coding Designer's Survival Guide
+    %h1
+      %a{:href => "/survivalkit/"} The Coding Designer's Survival Kit
     %h2= @title
-  = @headertext
+  - headertext = defined?(@headertext) ? "<div class=\"intro\">#{@headertext}</div>" : nil
+  = headertext

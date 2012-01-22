@@ -25,7 +25,7 @@
   if($sectionNav = $('nav.section-nav')) {
     $sectionNav.append('<h3>Jump to a section</h3>');
     $('.element-group').each(function(index) {
-      $sectionNav.append('<h4>' + $(this).find('.section-title').text() + '</h4>');
+      $sectionNav.append('<h4>' + $(this).find('.section-title').text().trim() + ': </h4>');
       $thisUL = $sectionNav.append('<ul>').find('ul').last();
       $(this).find('article.element').each(function(index) {
         $thisID = $(this).attr('id');
