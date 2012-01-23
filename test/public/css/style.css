@@ -330,10 +330,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-.clearfix {
+.clearfix, body.survival-kit header hgroup {
   zoom: 1;
 }
-.clearfix:after {
+.clearfix:after, body.survival-kit header hgroup:after {
   content: "\0020";
   display: table;
   clear: both;
@@ -1282,7 +1282,7 @@ body.survival-kit header h1 a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/survival-kit-logo.png?1327219167');
+  background-image: url('../images/survival-kit-logo.png?1327349577');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 220px;
