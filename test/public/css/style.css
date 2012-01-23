@@ -521,6 +521,7 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
+  line-height: 1;
 }
 
 blockquote {
@@ -1239,7 +1240,7 @@ textarea, input:not([type="radio"]) {
 /* LAYOUT -------------------------------------------------------------- */
 /* SITE-WIDE DESIGN -------------------------------------------------------------- */
 body.survival-kit header {
-  background: #d3d3d3;
+  background: #d0d3c6;
   font-family: futura, sans-serif;
   padding: 0 0.5em;
 }
@@ -1250,10 +1251,10 @@ body.survival-kit header a:visited {
   color: white;
 }
 body.survival-kit header a:hover {
-  color: white;
+  color: #aaada0;
 }
 body.survival-kit header a:active {
-  color: white;
+  color: #aaada0;
 }
 body.survival-kit header a {
   text-decoration: none;
@@ -1263,10 +1264,10 @@ body.survival-kit header a:visited {
   border-bottom-color: white;
 }
 body.survival-kit header a:hover {
-  border-bottom-color: white;
+  border-bottom-color: #aaada0;
 }
 body.survival-kit header a:active {
-  border-bottom-color: white;
+  border-bottom-color: #aaada0;
 }
 body.survival-kit header h1 {
   font-size: 1.286em;
@@ -1281,12 +1282,13 @@ body.survival-kit header h1 a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/survival-kit-logo.png?1327216968');
+  background-image: url('../images/survival-kit-logo.png?1327219167');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 220px;
   height: 40px;
   display: block;
+  padding: 0.3em;
 }
 body.survival-kit header h1 a {
   border-bottom: none;
@@ -1305,7 +1307,7 @@ body.survival-kit header .intro {
 body.survival-kit h1.section-title {
   font-size: 1.643em;
   line-height: 2.087em;
-  background-color: #d3d3d3;
+  background-color: #d0d3c6;
   text-transform: uppercase;
   padding-left: 11px;
 }
@@ -1347,7 +1349,7 @@ body.survival-kit .kit-nav, body.survival-kit .section-nav {
   margin-bottom: 1.714em;
   padding: 0 0.5em;
   font-family: futura, sans-serif;
-  color: #d3d3d3;
+  color: #d0d3c6;
 }
 body.survival-kit .kit-nav h1, body.survival-kit .kit-nav h2, body.survival-kit .kit-nav h3, body.survival-kit .kit-nav h4, body.survival-kit .kit-nav h5, body.survival-kit .kit-nav h6, body.survival-kit .section-nav h1, body.survival-kit .section-nav h2, body.survival-kit .section-nav h3, body.survival-kit .section-nav h4, body.survival-kit .section-nav h5, body.survival-kit .section-nav h6 {
   font-size: 14px;
@@ -1404,14 +1406,14 @@ body.survival-kit .kit-nav ul li.last, body.survival-kit .section-nav ul li.last
   padding-right: 0;
 }
 body.survival-kit .kit-nav {
-  background: #666666;
+  background: #6a6d62;
 }
 body.survival-kit .section-nav {
-  background: gray;
+  background: #85897b;
   margin-top: -1.714em;
 }
 body.survival-kit .section-nav h3 {
-  color: #4c4c4c;
+  color: #4f5249;
   font-size: 0.857em;
   line-height: 2em;
 }
@@ -1443,7 +1445,7 @@ body.survival-kit article.element.closed {
 body.survival-kit article.element h2.element-title {
   font-size: 1em;
   line-height: 1.714em;
-  background-color: gray;
+  background-color: #85897b;
   color: white;
   text-transform: uppercase;
   padding-left: 11px;

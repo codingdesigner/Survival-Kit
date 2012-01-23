@@ -5,14 +5,18 @@
 
 $kit-font-family: futura, $font-sans
 
+$sk-lightgray: mix($lightgray, $alt-color, 90%)
+$sk-gray: mix($gray, $alt-color, 90%)
+$sk-darkgray: mix($darkgray, $alt-color, 90%)
+
 body.survival-kit
   header
-    background: $lightgray
+    background: $sk-lightgray
     font-family: $kit-font-family
     padding: 0 0.5em
     a
-      +link-colors($white, $white, $white, $white)
-      +better-links($white, $white, $white, $white)
+      +link-colors($white, $sk-darkgray, $sk-darkgray, $white)
+      +better-links($white, $sk-darkgray, $sk-darkgray, $white)
     h1
       +adjust-font-size-to(ms(1))
       float: left
@@ -24,6 +28,7 @@ body.survival-kit
         +remove-link-underlines
         +replace-text-with-dimensions('survival-kit-logo.png')
         display: block
+        padding: 0.3em
     h2
       +adjust-font-size-to(ms(2))
       font-family: $kit-font-family
@@ -31,7 +36,7 @@ body.survival-kit
       margin-left: calc-em(265px, $base-font-size)
   h1.section-title
     +adjust-font-size-to(ms(3))
-    background-color: $lightgray
+    background-color: $sk-lightgray
     text-transform: uppercase
     padding-left: $kit-gutter-half
     a
@@ -44,21 +49,21 @@ body.survival-kit
     +trailer
     padding: 0 0.5em
     font-family: $kit-font-family
-    color: $lightgray
+    color: $sk-lightgray
     #{headings()}
       font-size: $base-font-size
     a
-      +link-colors($white, $badass, $badass, $white)
-      +better-links($white, $badass, $badass, $white)
+      +link-colors($white, $alt-color, $alt-color, $white)
+      +better-links($white, $alt-color, $alt-color, $white)
     ul
       +horizontal-list(0.5em)
   .kit-nav
-    background: shade($gray, 20%)
+    background: shade($sk-gray, 20%)
   .section-nav
-    background: $gray
+    background: $sk-gray
     margin-top: calc-em(-24px, $base-font-size)
     h3
-      color: shade($gray, 40%)
+      color: shade($sk-gray, 40%)
       +adjust-font-size-to($base-font-size - 2)
     h4
       float: left
@@ -69,7 +74,7 @@ body.survival-kit
       +un-vertical-separation
     h2.element-title
       +adjust-font-size-to(ms(0))
-      background-color: $gray
+      background-color: $sk-gray
       color: $white
       text-transform: uppercase
       padding-left: $kit-gutter-half
