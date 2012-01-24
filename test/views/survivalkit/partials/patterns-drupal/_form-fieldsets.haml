@@ -1,0 +1,115 @@
+%article#form-fieldsets.element
+  %h2.element-title Form, Fieldsets
+  .markup
+    %form#styleguide-form--6{"accept-charset" => "UTF-8", :action => "", :method => "post"}
+      %div
+        %fieldset#edit-fieldset-collapsed.collapsible.collapsed.form-wrapper.collapse-processed
+          %legend
+            %span.fieldset-legend
+              %a.fieldset-title{:href => "#"}
+                %span.fieldset-legend-prefix.element-invisible Show
+                Fieldset collapsed
+              %span.summary
+          .fieldset-wrapper
+            .fieldset-description Suspendisse potenti.
+            .form-item.form-type-select.form-item-select-fieldset-collapsed
+              %label{:for => "edit-select-fieldset-collapsed"} Select
+              %select#edit-select-fieldset-collapsed.form-select{:name => "select-fieldset-collapsed"}
+                %option{:value => "velit"} velit
+                %option{:value => "dictum"} dictum
+                %option{:value => "nunc"} nunc
+                %option{:value => "lacus"} lacus
+                %option{:value => "urna"} urna
+              .description Pellentesque ac dictum ante.
+            .form-item.form-type-checkboxes.form-item-checkboxes-fieldset-collapsed
+              %label{:for => "edit-checkboxes-fieldset-collapsed"} Checkboxes
+              #edit-checkboxes-fieldset-collapsed.form-checkboxes
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-collapsed-velit
+                  %input#edit-checkboxes-fieldset-collapsed-velit.form-checkbox{:name => "checkboxes-fieldset-collapsed[velit]", :type => "checkbox", :value => "velit"}
+                    %label.option{:for => "edit-checkboxes-fieldset-collapsed-velit"} velit
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-collapsed-dictum
+                  %input#edit-checkboxes-fieldset-collapsed-dictum.form-checkbox{:name => "checkboxes-fieldset-collapsed[dictum]", :type => "checkbox", :value => "dictum"}
+                    %label.option{:for => "edit-checkboxes-fieldset-collapsed-dictum"} dictum
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-collapsed-nunc
+                  %input#edit-checkboxes-fieldset-collapsed-nunc.form-checkbox{:name => "checkboxes-fieldset-collapsed[nunc]", :type => "checkbox", :value => "nunc"}
+                    %label.option{:for => "edit-checkboxes-fieldset-collapsed-nunc"} nunc
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-collapsed-lacus
+                  %input#edit-checkboxes-fieldset-collapsed-lacus.form-checkbox{:name => "checkboxes-fieldset-collapsed[lacus]", :type => "checkbox", :value => "lacus"}
+                    %label.option{:for => "edit-checkboxes-fieldset-collapsed-lacus"} lacus
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-collapsed-urna
+                  %input#edit-checkboxes-fieldset-collapsed-urna.form-checkbox{:name => "checkboxes-fieldset-collapsed[urna]", :type => "checkbox", :value => "urna"}
+                    %label.option{:for => "edit-checkboxes-fieldset-collapsed-urna"} urna
+              .description Vestibulum sit amet massa est.
+        %fieldset#edit-fieldset-collapsible.collapsible.form-wrapper.collapse-processed
+          %legend
+            %span.fieldset-legend
+              %a.fieldset-title{:href => "#"}
+                %span.fieldset-legend-prefix.element-invisible Hide
+                Fieldset collapsible
+              %span.summary
+          .fieldset-wrapper
+            .fieldset-description Phasellus sagittis, orci vel laoreet molestie, urna orci imperdiet elit, quis ultricies orci mauris vel ante.
+            .form-item.form-type-select.form-item-select-fieldset-collapsible
+              %label{:for => "edit-select-fieldset-collapsible"} Select
+              %select#edit-select-fieldset-collapsible.form-select{:name => "select-fieldset-collapsible"}
+                %option{:value => "velit"} velit
+                %option{:value => "dictum"} dictum
+                %option{:value => "nunc"} nunc
+                %option{:value => "lacus"} lacus
+                %option{:value => "urna"} urna
+              .description Pellentesque ac dictum ante.
+            .form-item.form-type-checkboxes.form-item-checkboxes-fieldset-collapsible
+              %label{:for => "edit-checkboxes-fieldset-collapsible"} Checkboxes
+              #edit-checkboxes-fieldset-collapsible.form-checkboxes
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-collapsible-velit
+                  %input#edit-checkboxes-fieldset-collapsible-velit.form-checkbox{:name => "checkboxes-fieldset-collapsible[velit]", :type => "checkbox", :value => "velit"}
+                    %label.option{:for => "edit-checkboxes-fieldset-collapsible-velit"} velit
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-collapsible-dictum
+                  %input#edit-checkboxes-fieldset-collapsible-dictum.form-checkbox{:name => "checkboxes-fieldset-collapsible[dictum]", :type => "checkbox", :value => "dictum"}
+                    %label.option{:for => "edit-checkboxes-fieldset-collapsible-dictum"} dictum
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-collapsible-nunc
+                  %input#edit-checkboxes-fieldset-collapsible-nunc.form-checkbox{:name => "checkboxes-fieldset-collapsible[nunc]", :type => "checkbox", :value => "nunc"}
+                    %label.option{:for => "edit-checkboxes-fieldset-collapsible-nunc"} nunc
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-collapsible-lacus
+                  %input#edit-checkboxes-fieldset-collapsible-lacus.form-checkbox{:name => "checkboxes-fieldset-collapsible[lacus]", :type => "checkbox", :value => "lacus"}
+                    %label.option{:for => "edit-checkboxes-fieldset-collapsible-lacus"} lacus
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-collapsible-urna
+                  %input#edit-checkboxes-fieldset-collapsible-urna.form-checkbox{:name => "checkboxes-fieldset-collapsible[urna]", :type => "checkbox", :value => "urna"}
+                    %label.option{:for => "edit-checkboxes-fieldset-collapsible-urna"} urna
+              .description Vestibulum sit amet massa est.
+        %fieldset#edit-fieldset.form-wrapper
+          %legend
+            %span.fieldset-legend Fieldset
+          .fieldset-wrapper
+            .fieldset-description Phasellus blandit ullamcorper diam vel porta.
+            .form-item.form-type-select.form-item-select-fieldset
+              %label{:for => "edit-select-fieldset"} Select
+              %select#edit-select-fieldset.form-select{:name => "select-fieldset"}
+                %option{:value => "velit"} velit
+                %option{:value => "dictum"} dictum
+                %option{:value => "nunc"} nunc
+                %option{:value => "lacus"} lacus
+                %option{:value => "urna"} urna
+              .description Pellentesque ac dictum ante.
+            .form-item.form-type-checkboxes.form-item-checkboxes-fieldset
+              %label{:for => "edit-checkboxes-fieldset"} Checkboxes
+              #edit-checkboxes-fieldset.form-checkboxes
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-velit
+                  %input#edit-checkboxes-fieldset-velit.form-checkbox{:name => "checkboxes-fieldset[velit]", :type => "checkbox", :value => "velit"}
+                    %label.option{:for => "edit-checkboxes-fieldset-velit"} velit
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-dictum
+                  %input#edit-checkboxes-fieldset-dictum.form-checkbox{:name => "checkboxes-fieldset[dictum]", :type => "checkbox", :value => "dictum"}
+                    %label.option{:for => "edit-checkboxes-fieldset-dictum"} dictum
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-nunc
+                  %input#edit-checkboxes-fieldset-nunc.form-checkbox{:name => "checkboxes-fieldset[nunc]", :type => "checkbox", :value => "nunc"}
+                    %label.option{:for => "edit-checkboxes-fieldset-nunc"} nunc
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-lacus
+                  %input#edit-checkboxes-fieldset-lacus.form-checkbox{:name => "checkboxes-fieldset[lacus]", :type => "checkbox", :value => "lacus"}
+                    %label.option{:for => "edit-checkboxes-fieldset-lacus"} lacus
+                .form-item.form-type-checkbox.form-item-checkboxes-fieldset-urna
+                  %input#edit-checkboxes-fieldset-urna.form-checkbox{:name => "checkboxes-fieldset[urna]", :type => "checkbox", :value => "urna"}
+                    %label.option{:for => "edit-checkboxes-fieldset-urna"} urna
+              .description Vestibulum sit amet massa est.
+        %input{:name => "form_build_id", :type => "hidden", :value => "form-gi6SpKK3VOnnH-PGQIoE7IoT2c03RBzHEdVeGo8rv3o"}
+          %input{:name => "form_token", :type => "hidden", :value => "JgHDsNA3K2wOnE1ML25JvEfxbCUwElNU2YFSdWy0Ivk"}
+            %input{:name => "form_id", :type => "hidden", :value => "styleguide_form"}
