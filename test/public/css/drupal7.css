@@ -1,0 +1,10 @@
+/*////////////////////////////
+// DRUPAL 7 DEFAULT CSS
+////////////////////////////*/
+body {
+  background: #b80000 !important;
+}
+
+* {
+  outline: 1px dashed #bada55;
+}
