@@ -101,5 +101,9 @@ Except included open source projects:
 - modernizr: BSD/MIT
 - pie: Apache/GPL
 - scrollability: Apache
-
-
+- joyride: MIT
+- orbit: MIT
+- reveal: MIT
+- flexslider: MIT
+- fitvids: WTFPL license
+- deorphan: MIT/GPL
