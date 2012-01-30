@@ -49,10 +49,27 @@
 [submodule "templates/project/sources/scrollability"]
   path = templates/project/sources/scrollability
   url = https://github.com/joehewitt/scrollability.git
-
 [submodule "templates/project/sources/BigText"]
   path = templates/project/sources/BigText
   url = https://github.com/zachleat/BigText.git
 [submodule "templates/project/sources/flickrbomb"]
   path = templates/project/sources/flickrbomb
   url = https://github.com/zurb/flickrbomb.git
+[submodule "templates/project/sources/joyride"]
+  path = templates/project/sources/joyride
+  url = https://github.com/zurb/joyride.git
+[submodule "templates/project/sources/orbit"]
+  path = templates/project/sources/orbit
+  url = https://github.com/zurb/orbit.git
+[submodule "templates/project/sources/reveal"]
+  path = templates/project/sources/reveal
+  url = https://github.com/zurb/reveal.git
+[submodule "templates/project/sources/flexslider"]
+  path = templates/project/sources/flexslider
+  url = https://github.com/mbmufffin/FlexSlider.git
+[submodule "templates/project/sources/fitvids"]
+  path = templates/project/sources/fitvids
+  url = https://github.com/davatron5000/FitVids.js.git
+[submodule "templates/project/sources/deorphan"]
+  path = templates/project/sources/deorphan
+  url = https://github.com/megasmack/jquery.deorphan.js.git
