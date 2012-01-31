@@ -9,15 +9,15 @@
     <meta charset='utf-8' />
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
-    <title>The Coding Designer's Survival Kit</title>
+    <title></title>
     <meta content='' name='description' />
     <meta content='' name='author' />
-
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon' />
     <!-- CSS -->
     <link href='/css/style.css?v=1' rel='stylesheet' />
+    <link href='/css/survivalkit.css?v=1' rel='stylesheet' />
     <!-- All JavaScript at the bottom, except for Modernizr and Respond. -->
     <script src='/js/libs/modernizr-2.0.min.js'></script>
     <script src='/js/libs/respond.min.js'></script>
@@ -29,11 +29,40 @@
       //]]>
     </script>
   </head>
-  <body>
+  <body class='survival-kit'>
     <div id='page'>
-      <header></header>
+      <header>
+        <hgroup>
+          <h1>
+            <a href='/survivalkit/'>The Coding Designer's Survival Kit</a>
+          </h1>
+          <h2></h2>
+        </hgroup>
+        
+      </header>
+      <nav class='kit-nav'>
+        <ul>
+          <li>
+            <a href='/survivalkit/elements-common.html'>Common Markup</a>
+          </li>
+          <li>
+            <a href='/survivalkit/elements-html5.html'>Common HTML5</a>
+          </li>
+          <li>
+            <a href='/survivalkit/elements-typography.html'>Typography</a>
+          </li>
+          <li>
+            <a href='/survivalkit/elements-ui-patterns-drupal.html'>Drupal UI Patterns</a>
+          </li>
+          <!-- %li -->
+          <!-- %a{:href => "/survivalkit/elements-ui-patterns.html"} UI Patterns -->
+          <li>
+            <a href='/survivalkit/styletile/styletile.html'>Style Tile</a>
+          </li>
+        </ul>
+      </nav>
       <div id='main' role='main'>
-        <p>Put your content here. See <a href='/survivalkit'>survivalkit</a> for example markup to style and design with.</p>
+        <p>Use the pages above as tools to establish your design across all html elements and many situations. Add your own markup below as needed for custom modules.</p>
       </div>
       <footer></footer>
     </div>
@@ -49,6 +78,7 @@
     </script>
     <script src='/js/libs/plugins.js?v=1'></script>
     <script src='/js/script.js?v=1'></script>
+    <script src='/js/kit/kit-source.jquery.js?v=1'></script>
     <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet -->
     <!-- change the UA-XXXXX-X to be your site's ID -->
     <script type='text/javascript'>

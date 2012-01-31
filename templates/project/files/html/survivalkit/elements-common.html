@@ -12,12 +12,12 @@
     <title>Common Markup</title>
     <meta content='' name='description' />
     <meta content='' name='author' />
-
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon' />
     <!-- CSS -->
     <link href='/css/style.css?v=1' rel='stylesheet' />
+    <link href='/css/survivalkit.css?v=1' rel='stylesheet' />
     <!-- All JavaScript at the bottom, except for Modernizr and Respond. -->
     <script src='/js/libs/modernizr-2.0.min.js'></script>
     <script src='/js/libs/respond.min.js'></script>
@@ -34,13 +34,13 @@
       <header>
         <hgroup>
           <h1>
-            <a href='/survivalkit/'>The Coding Designer's Survival Guide</a>
+            <a href='/survivalkit/'>The Coding Designer's Survival Kit</a>
           </h1>
           <h2>Common Markup</h2>
         </hgroup>
-
+        
       </header>
-      <nav>
+      <nav class='kit-nav'>
         <ul>
           <li>
             <a href='/survivalkit/elements-common.html'>Common Markup</a>
@@ -54,14 +54,14 @@
           <li>
             <a href='/survivalkit/elements-ui-patterns-drupal.html'>Drupal UI Patterns</a>
           </li>
-          <li>
-            <a href='/survivalkit/elements-ui-patterns.html'>UI Patterns</a>
-          </li>
+          <!-- %li -->
+          <!-- %a{:href => "/survivalkit/elements-ui-patterns.html"} UI Patterns -->
           <li>
             <a href='/survivalkit/styletile/styletile.html'>Style Tile</a>
           </li>
         </ul>
       </nav>
+      <nav class='section-nav'></nav>
       <div id='main' role='main'>
         <!-- Common HTML Elements -->
         <section class='element-group' id='common'>
@@ -221,7 +221,7 @@
                 constructor:
               </p>
               <pre><code>function Panel(element, canClose, closeHandler) {&#x000A;              this.element = element;&#x000A;              this.canClose = canClose;&#x000A;              this.closeHandler = function () { if (closeHandler) closeHandler() };&#x000A;            }            .markup</code></pre>
-              <pre>                                           ,,                      ,,                     ,,            &#x000A;  .M"""bgd                                 db                    `7MM      `7MMF' `YMM'   db   mm       &#x000A; ,MI    "Y                                                         MM        MM   .M'          MM       &#x000A; `MMb.   `7MM  `7MM  `7Mb,od8 `7M'   `MF'`7MM `7M'   `MF',6"Yb.    MM        MM .d"     `7MM mmMMmm     &#x000A;   `YMMNq. MM    MM    MM' "'   VA   ,V    MM   VA   ,V 8)   MM    MM        MMMMM.       MM   MM       &#x000A; .     `MM MM    MM    MM        VA ,V     MM    VA ,V   ,pm9MM    MM        MM  VMA      MM   MM       &#x000A; Mb     dM MM    MM    MM         VVV      MM     VVV   8M   MM    MM        MM   `MM.    MM   MM       &#x000A; P"Ybmmd"  `Mbod"YML..JMML.        W     .JMML.    W    `Moo9^Yo..JMML.    .JMML.   MMb..JMML. `Mbmo</pre>
+              <pre>  ()                   o             | |   /|   / o&#x000A;  /\         ,_                 __,  | |    |__/    _|_&#x000A; /  \|   |  /  |  |  |_|  |  |_/  |  |/     | \   |  |&#x000A;/(__/ \_/|_/   |_/ \/  |_/ \/  \_/|_/|__/   |  \_/|_/|_/</pre>
             </div>
           </article>
         </section>

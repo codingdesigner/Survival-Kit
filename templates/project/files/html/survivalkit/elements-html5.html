@@ -12,12 +12,12 @@
     <title>HTML5 Elements</title>
     <meta content='' name='description' />
     <meta content='' name='author' />
-
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon' />
     <!-- CSS -->
     <link href='/css/style.css?v=1' rel='stylesheet' />
+    <link href='/css/survivalkit.css?v=1' rel='stylesheet' />
     <!-- All JavaScript at the bottom, except for Modernizr and Respond. -->
     <script src='/js/libs/modernizr-2.0.min.js'></script>
     <script src='/js/libs/respond.min.js'></script>
@@ -34,13 +34,13 @@
       <header>
         <hgroup>
           <h1>
-            <a href='/survivalkit/'>The Coding Designer's Survival Guide</a>
+            <a href='/survivalkit/'>The Coding Designer's Survival Kit</a>
           </h1>
           <h2>HTML5 Elements</h2>
         </hgroup>
-        Based on examples from <a href='http://developers.whatwg.org/'>developers.whatwg.org</a>
+        <div class="intro">Based on examples from <a href='http://developers.whatwg.org/'>developers.whatwg.org</a></div>
       </header>
-      <nav>
+      <nav class='kit-nav'>
         <ul>
           <li>
             <a href='/survivalkit/elements-common.html'>Common Markup</a>
@@ -54,22 +54,20 @@
           <li>
             <a href='/survivalkit/elements-ui-patterns-drupal.html'>Drupal UI Patterns</a>
           </li>
-          <li>
-            <a href='/survivalkit/elements-ui-patterns.html'>UI Patterns</a>
-          </li>
+          <!-- %li -->
+          <!-- %a{:href => "/survivalkit/elements-ui-patterns.html"} UI Patterns -->
           <li>
             <a href='/survivalkit/styletile/styletile.html'>Style Tile</a>
           </li>
         </ul>
       </nav>
+      <nav class='section-nav'></nav>
       <div id='main' role='main'>
         <section class='element-group' id='sections'>
-          <h1 class='section-title'>
-            <a href='http://developers.whatwg.org/sections.html'>Sections</a>
-          </h1>
+          <h1 class='section-title'>Sections</h1>
           <article class='element' id='section'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/sections.html#the-section-element'>Section</a>
+              Section
             </h2>
             <p>
               The
@@ -97,7 +95,7 @@
           </article>
           <article class='element' id='nav'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/sections.html#the-nav-element'>Nav</a>
+              Nav
             </h2>
             <p>
               The
@@ -172,7 +170,7 @@
           </article>
           <article class='element' id='article'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/sections.html#the-article-element'>Article</a>
+              Article
             </h2>
             <p>
               The
@@ -202,7 +200,7 @@
           </article>
           <article class='element' id='aside'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/sections.html#the-aside-element'>Aside</a>
+              Aside
             </h2>
             <p>
               The
@@ -226,7 +224,7 @@
           </article>
           <article class='element' id='all-headings'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements'>The h1, h2, h3, h4, h5, and h6 elements</a>
+              The h1, h2, h3, h4, h5, and h6 elements
             </h2>
             <p>
               These elements
@@ -267,7 +265,7 @@
           </article>
           <article class='element' id='hgroup'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/sections.html#the-hgroup-element'>hgroup</a>
+              hgroup
             </h2>
             <p>
               The
@@ -288,7 +286,7 @@
           </article>
           <article class='element' id='header'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/sections.html#the-header-element'>Header</a>
+              Header
             </h2>
             <p>
               The
@@ -336,7 +334,7 @@
           </article>
           <article class='element' id='footer'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/sections.html#the-footer-element'>Footer</a>
+              Footer
             </h2>
             <p>
               The
@@ -383,7 +381,7 @@
           </article>
           <article class='element' id='address'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/sections.html#the-address-element'>Address</a>
+              Address
             </h2>
             <p>
               The
@@ -408,12 +406,10 @@
           </article>
         </section>
         <section class='element-group' id='grouping'>
-          <h1 class='section-title'>
-            <a href='http://developers.whatwg.org/grouping-content.html'>Grouping</a>
-          </h1>
+          <h1 class='section-title'>Grouping</h1>
           <article class='element' id='p'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/grouping-content.html#the-p-element'>p</a>
+              p
             </h2>
             <p>
               The
@@ -470,7 +466,7 @@
           </article>
           <article class='element' id='hr'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/grouping-content.html#the-hr-element'>hr</a>
+              hr
             </h2>
             <p>
               The
@@ -540,7 +536,7 @@
           </article>
           <article class='element' id='pre'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/grouping-content.html#the-pre-element'>pre</a>
+              pre
             </h2>
             <p>
               The
@@ -570,12 +566,12 @@
               </samp></pre>
             </div>
             <div class='markup'>
-              <pre>                                           ,,                      ,,                     ,,            &#x000A;  .M"""bgd                                 db                    `7MM      `7MMF' `YMM'   db   mm       &#x000A; ,MI    "Y                                                         MM        MM   .M'          MM       &#x000A; `MMb.   `7MM  `7MM  `7Mb,od8 `7M'   `MF'`7MM `7M'   `MF',6"Yb.    MM        MM .d"     `7MM mmMMmm     &#x000A;   `YMMNq. MM    MM    MM' "'   VA   ,V    MM   VA   ,V 8)   MM    MM        MMMMM.       MM   MM       &#x000A; .     `MM MM    MM    MM        VA ,V     MM    VA ,V   ,pm9MM    MM        MM  VMA      MM   MM       &#x000A; Mb     dM MM    MM    MM         VVV      MM     VVV   8M   MM    MM        MM   `MM.    MM   MM       &#x000A; P"Ybmmd"  `Mbod"YML..JMML.        W     .JMML.    W    `Moo9^Yo..JMML.    .JMML.   MMb..JMML. `Mbmo</pre>
+              <pre>  ()                   o             | |   /|   / o&#x000A;  /\         ,_                 __,  | |    |__/    _|_&#x000A; /  \|   |  /  |  |  |_|  |  |_/  |  |/     | \   |  |&#x000A;/(__/ \_/|_/   |_/ \/  |_/ \/  \_/|_/|__/   |  \_/|_/|_/</pre>
             </div>
           </article>
           <article class='element' id='blockquote'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/grouping-content.html#the-blockquote-element'>blockquote</a>
+              blockquote
             </h2>
             <p>
               The
@@ -616,7 +612,7 @@
           </article>
           <article class='element' id='ol'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/grouping-content.html#the-ol-element'>ol</a>
+              ol
             </h2>
             <p>
               The
@@ -648,7 +644,7 @@
           </article>
           <article class='element' id='ul'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/grouping-content.html#the-ul-element'>ul</a>
+              ul
             </h2>
             <p>
               The
@@ -677,7 +673,7 @@
           </article>
           <article class='element' id='li'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/grouping-content.html#the-li-element'>li</a>
+              li
             </h2>
             <p>
               The
@@ -751,13 +747,13 @@
           <article class='element' id='dl'>
             <hgroup>
               <h2 class='element-title'>
-                <a href='http://developers.whatwg.org/grouping-content.html#the-dl-element'>dl</a>
+                dl
               </h2>
               <h3 class='element-title'>
-                <a href='http://developers.whatwg.org/grouping-content.html#the-dt-element'>dt</a>
+                dt
               </h3>
               <h3 class='element-title'>
-                <a href='http://developers.whatwg.org/grouping-content.html#the-dd-element'>dd</a>
+                dd
               </h3>
             </hgroup>
             <p>
@@ -831,10 +827,10 @@
           <article class='element' id='figure'>
             <hgroup>
               <h2 class='element-title'>
-                <a href='http://developers.whatwg.org/grouping-content.html#the-figure-element'>figure</a>
+                figure
               </h2>
               <h3 class='element-title'>
-                <a href='http://developers.whatwg.org/grouping-content.html#the-figcaption-element'>figcaption</a>
+                figcaption
               </h3>
             </hgroup>
             <p>
@@ -880,7 +876,7 @@
           <h1 class='section-title'>Text-level semantics</h1>
           <article class='element' id='a'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-a-element'>a</a>
+              a
             </h2>
             <div class='markup'>
               <nav>
@@ -931,7 +927,7 @@
           </article>
           <article class='element' id='em'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-em-element'>em</a>
+              em
             </h2>
             <p>
               The
@@ -950,7 +946,7 @@
           </article>
           <article class='element' id='strong'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-strong-element'>strong</a>
+              strong
             </h2>
             <p>
               The
@@ -979,7 +975,7 @@
           </article>
           <article class='element' id='small'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-small-element'>small</a>
+              small
             </h2>
             <p>
               The
@@ -1022,7 +1018,7 @@
           </article>
           <article class='element' id='s'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-s-element'>s</a>
+              s
             </h2>
             <p>
               The
@@ -1044,7 +1040,7 @@
           </article>
           <article class='element' id='cite'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-cite-element'>cite</a>
+              cite
             </h2>
             <p>
               The
@@ -1096,7 +1092,7 @@
           </article>
           <article class='element' id='q'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-q-element'>q</a>
+              q
             </h2>
             <p>
               The
@@ -1136,7 +1132,7 @@
           </article>
           <article class='element' id='dfn'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-dfn-element'>dfn</a>
+              dfn
             </h2>
             <p>
               The
@@ -1195,7 +1191,7 @@
           </article>
           <article class='element' id='abbr'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-abbr-element'>abbr</a>
+              abbr
             </h2>
             <p>
               The
@@ -1227,7 +1223,7 @@
           </article>
           <article class='element' id='time'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-time-element'>time</a>
+              time
             </h2>
             <p>
               The
@@ -1261,7 +1257,7 @@
           </article>
           <article class='element' id='code'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-code-element'>code</a>
+              code
             </h2>
             <p>
               The
@@ -1340,7 +1336,7 @@
           </article>
           <article class='element' id='samp'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-samp-element'>samp</a>
+              samp
             </h2>
             <p>
               The
@@ -1373,7 +1369,7 @@
           </article>
           <article class='element' id='kbd'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-kbd-element'>kbd</a>
+              kbd
             </h2>
             <p>
               The
@@ -1395,7 +1391,7 @@
           </article>
           <article class='element' id='sub-sup'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-sub-and-sup-elements'>sub and sup</a>
+              sub and sup
             </h2>
             <p>
               The
@@ -1460,7 +1456,7 @@
           </article>
           <article class='element' id='i'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-i-element'>i</a>
+              i
             </h2>
             <p>
               The
@@ -1494,7 +1490,7 @@
           </article>
           <article class='element' id='b'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-b-element'>b</a>
+              b
             </h2>
             <p>
               The
@@ -1519,7 +1515,7 @@
           </article>
           <article class='element' id='mark'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-mark-element'>mark</a>
+              mark
             </h2>
             <p>
               The
@@ -1552,13 +1548,13 @@
           <article class='element' id='ruby'>
             <hgroup>
               <h2 class='element-title'>
-                <a href='http://developers.whatwg.org/text-level-semantics.html#the-ruby-element'>ruby</a>
+                ruby
               </h2>
               <h3 class='element-title'>
-                <a href='http://developers.whatwg.org/text-level-semantics.html#the-rt-element'>rt</a>
+                rt
               </h3>
               <h3 class='element-title'>
-                <a href='http://developers.whatwg.org/text-level-semantics.html#the-rp-element'>rp</a>
+                rp
               </h3>
             </hgroup>
             <p>
@@ -1612,7 +1608,7 @@
           </article>
           <article class='element' id='bdi'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/text-level-semantics.html#the-bdi-element'>bdi</a>
+              bdi
             </h2>
             <p>
               The
@@ -1982,12 +1978,10 @@
           </article>
         </section>
         <section class='element-group' id='tabular'>
-          <h1 class='section-title'>
-            <a href='http://developers.whatwg.org/tabular-data.html'>Tabular Data</a>
-          </h1>
+          <h1 class='section-title'>Tabular Data</h1>
           <article class='element' id='table'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/tabular-data.html#the-table-element'>Table</a>
+              Table
             </h2>
             <p>
               The
@@ -2291,7 +2285,7 @@
           </article>
           <article class='element' id='thead'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/tabular-data.html#the-thead-element'>thead</a>
+              thead
             </h2>
             <p>
               The
@@ -2615,9 +2609,7 @@
           </article>
         </section>
         <section class='element-group' id='forms'>
-          <h1 class='section-title'>
-            <a href='http://developers.whatwg.org/forms.html'>Forms</a>
-          </h1>
+          <h1 class='section-title'>Forms</h1>
           <article class='element' id='sample-forms'>
             <h2 class='element-title'>Sample Forms</h2>
             <div class='markup'>
@@ -2702,7 +2694,7 @@
           </article>
           <article class='element' id='fieldset'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/forms.html#the-fieldset-element'>fieldset</a>
+              fieldset
             </h2>
             <div class='markup'>
               <fieldset disabled='' name='clubfields'>
@@ -2783,7 +2775,7 @@
           </article>
           <article class='element' id='label'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/forms.html#the-label-element'>label</a>
+              label
             </h2>
             <div class='markup'>
               <p>
@@ -2812,12 +2804,10 @@
           </article>
         </section>
         <section class='element-group' id='interactive'>
-          <h1 class='section-title'>
-            <a href='http://developers.whatwg.org/interactive-elements.html'>Interactive</a>
-          </h1>
+          <h1 class='section-title'>Interactive</h1>
           <article class='element' id='details'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/interactive-elements.html#the-details-element'>details</a>
+              details
             </h2>
             <p>
               The
@@ -2873,7 +2863,7 @@
           </article>
           <article class='element' id='menu'>
             <h2 class='element-title'>
-              <a href='http://developers.whatwg.org/interactive-elements.html#menus'>menu</a>
+              menu
             </h2>
             <p>
               The
