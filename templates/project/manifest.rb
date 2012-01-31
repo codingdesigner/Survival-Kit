@@ -105,7 +105,6 @@ image 'drupal/powered-gray-135x42.png'
 image 'drupal/powered-gray-80x15.png'
 image 'drupal/powered-gray-88x31.png'
 image 'drupal/progress.gif'
-image 'drupal/temp.txt'
 image 'drupal/throbber.gif'
 image 'drupal/tree-bottom.png'
 image 'drupal/tree.png'
@@ -113,6 +112,7 @@ image 'drupal/watchdog-error.png'
 image 'drupal/watchdog-ok.png'
 image 'drupal/watchdog-warning.png'
 
+file 'files/this-is-a-test.sass', :to => 'extensions/this-is-a-test/this-is-a-test.sass'
 
 help %Q{
 This is a Compass extension for The Coding Designer's Survival Kit by Mason Wendell
