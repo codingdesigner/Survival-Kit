@@ -48,11 +48,17 @@ I'll be recording a new video soon.
 
 ### Helpful
 
+These Compass extensions (and more) are pretty awesome.
+
 - [Susy](http://susy.oddbird.net/)
 - [Sassy Modular Scale](https://github.com/scottkellum/modular-scale)
 - [Color Schemer](https://github.com/scottkellum/color-schemer)
+- [Compass recipes](http://moox.github.com/compass-recipes/)
+- [OMG Text](http://jaredhardy.com/omg-text/)
+- [Sassy Buttons](http://jaredhardy.com/sassy-buttons/)
 - [Fancy Buttons](https://github.com/imathis/fancy-buttons)
 - [Livereload](http://livereload.com/)
+- [Sassy Text Shadow](http://sassymothereffingtextshadow.com/)
 
 
 ## Acknowledgements, Installation, & Documentation
