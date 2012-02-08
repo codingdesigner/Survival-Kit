@@ -23,13 +23,13 @@ label
 
 .textinput
   @extend .sans
+  @extend .constrain-to-parent
   +adjust-font-size-to(ms(0), 1)
   +rhythm-borders(1px, 0.25, ms(0))
   border-width: 1px
   +trailer(0.5)
   +box-sizing(border-box)
   width: ($kit-col-width * 2) + ($kit-gutter * 1)
-  max-width: 100%
   margin-top: 0
   border-color: $border-color
   height: $base-line-height / ms(0) * 1.5em
@@ -64,4 +64,4 @@ input
     margin-right: 0.25em
 
 textarea, input:not([type="radio"])
-  max-width: 100%
+  @extend .constrain-to-parent
