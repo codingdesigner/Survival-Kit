@@ -46,12 +46,6 @@
       border-bottom: none
 
 
-=accessible-color($background: $white)
-  @if lightness($background) >= 65%
-    color: $text-color
-  @else
-    color: white
-
 // add style and weight to:
 // http://compass-style.org/reference/compass/css3/font_face/#mixin-font-face
 =kit-font-face($name, $font-files, $eot: false, $style: false, $weight: false)

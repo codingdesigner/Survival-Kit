@@ -33,3 +33,14 @@
     display: table
     clear: both
   zoom: 1
+
+  =accessible-color($background: $white)
+    @if lightness($background) >= 65%
+      color: $text-color
+    @else
+      color: white
+
+=clean-list
+  +no-bullets
+  margin-left: 0
+  padding-left: 0
