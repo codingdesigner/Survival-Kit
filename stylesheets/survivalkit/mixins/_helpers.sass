@@ -34,11 +34,11 @@
     clear: both
   zoom: 1
 
-  =accessible-color($background: $white)
-    @if lightness($background) >= 65%
-      color: $text-color
-    @else
-      color: white
+=accessible-color($background: $white)
+  @if lightness($background) >= 65%
+    color: $text-color
+  @else
+    color: white
 
 =clean-list
   +no-bullets

@@ -378,6 +378,10 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 
+.constrain-to-parent, img, table, .textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color], input:not([type="radio"]) {
+  max-width: 100%;
+}
+
 .italic, em, address, cite, q, dfn, i {
   font-style: italic;
 }
@@ -444,6 +448,13 @@ html {
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Body -------------------------------------------------------------- */
@@ -617,7 +628,6 @@ del {
 img {
   border: 0;
   vertical-align: text-bottom;
-  max-width: 100%;
   height: auto;
   -ms-interpolation-mode: bicubic;
 }
@@ -632,10 +642,6 @@ img.right {
 
 /* Tables -------------------------------------------------------------- */
 /* tables still need 'cellspacing="0"' in the markup */
-table {
-  max-width: 100%;
-}
-
 .input_tiny {
   width: 50px;
 }
@@ -1198,7 +1204,6 @@ label {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   width: 302px;
-  max-width: 100%;
   margin-top: 0;
   border-color: gray;
   height: 2.571em;
@@ -1231,10 +1236,6 @@ textarea {
 input[type="radio"], input[type="checkbox"] {
   margin-left: 0.25em;
   margin-right: 0.25em;
-}
-
-textarea, input:not([type="radio"]) {
-  max-width: 100%;
 }
 
 /* LAYOUT -------------------------------------------------------------- */
