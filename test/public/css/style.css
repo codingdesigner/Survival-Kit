@@ -760,10 +760,6 @@ input[type="week"] {
   -ms-border-radius: 0;
   -khtml-border-radius: 0;
   border-radius: 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
   background-color: white;
   border: 1px solid;
   border-color: #848484 #c1c1c1 #e1e1e1;
@@ -1199,10 +1195,6 @@ label {
   padding: 0.357em;
   border-width: 1px;
   margin-bottom: 0.857em;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
   width: 302px;
   margin-top: 0;
   border-color: gray;
@@ -1226,10 +1218,6 @@ button, input[type=button], input[type=submit] {
 }
 
 textarea {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
   width: 302px;
 }
 
