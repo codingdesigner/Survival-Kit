@@ -1,7 +1,7 @@
 /* Forms --------------------------------------------------------------
 
 // USE FORMALIZE TO EVEN FORMS ACROSS BROWSERS
-@import _formalize
+// @import _formalize
 
 // aditional form styles
 
@@ -14,7 +14,7 @@ fieldset
 legend
   padding: 0 0.25em
 
-label, input[type=button], input[type=submit], button
+label
   cursor: pointer
 
 label
@@ -22,20 +22,19 @@ label
   margin-right: 0.5em
 
 .textinput
-  @extend .sans
   @extend .constrain-to-parent
-  +adjust-font-size-to(ms(0), 1)
-  +rhythm-borders(1px, 0.25, ms(0))
+  +adjust-font-size-to($base-font-size, 1)
+  +rhythm-borders(1px, 0.25, $base-font-size)
   border-width: 1px
   +trailer(0.5)
   width: ($kit-col-width * 2) + ($kit-gutter * 1)
   margin-top: 0
   border-color: $border-color
-  height: $base-line-height / ms(0) * 1.5em
+  height: $base-line-height / $base-font-size * 1.5em
 
 textarea
   @extend .textinput
-  height: $base-line-height / ms(0) * 6.5
+  height: $base-line-height / $base-font-size * 6.5
 
 input
   &[type=text], &[type=password], &[type=email], &[type=url], &[type=tel],
@@ -47,11 +46,6 @@ input
     -webkit-appearance: none
     &::-webkit-search-decoration
       display: none
-
-button, input[type=button], input[type=submit]
-  width: auto
-  overflow: visible
-  // +fancy-button($gray, ms(2))
 
 textarea
   width: ($kit-col-width * 2) + ($kit-gutter * 1)
