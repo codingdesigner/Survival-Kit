@@ -12,23 +12,22 @@
 // SEARCH FIELD
 
 // MESSAGES
-// uncomment to override or replace styles from _ui-patterns-common
-// .messages
-//   border: 1px solid $border-color
-//   padding: $kit-baseline-half 0.5em
-//   p:last-child
-//     margin-bottom: 0
-// .status, .warning, .error
-//   @extend .messages
-// .status
-//   border-color: $green
-//   color: $green
-// .warning
-//   border-color: $orange
-//   color: $orange
-// .error
-//   border-color: $red
-//   color: $red
+.messages
+  border: 1px solid $border-color
+  padding: $kit-baseline-half 0.5em
+  p:last-child
+    margin-bottom: 0
+.status, .warning, .error
+  @extend .messages
+.status
+  border-color: $green
+  color: $green
+.warning
+  border-color: $orange
+  color: $orange
+.error
+  border-color: $red
+  color: $red
 
 // BLOCK
 
@@ -45,11 +44,10 @@ ul.tabs
 // NEW PASSWORD FORM
 
 // PAGERS
-// uncomment to override or replace styles from _ui-patterns-common
-// ul.pager
-//   +horizontal-list(0.5em)
-//   a
-//     +remove-link-underlines
+ul.pager
+  +horizontal-list(0.5em)
+  a
+    +remove-link-underlines
 
 // RSS LINK
 a.feed-icon

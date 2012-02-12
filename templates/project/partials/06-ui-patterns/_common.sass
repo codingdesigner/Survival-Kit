@@ -1,26 +1,2 @@
 // see: elements-ui-patterns.html for markup
 
-// MESSAGES
-.messages
-  border: 1px solid $border-color
-  padding: $kit-baseline-half 0.5em
-  p:last-child
-    margin-bottom: 0
-.status, .warning, .error
-  @extend .messages
-.status
-  border-color: $green
-  color: $green
-.warning
-  border-color: $orange
-  color: $orange
-.error
-  border-color: $red
-  color: $red
-
-// PAGERS
-ul.pager
-  +horizontal-list(0.5em)
-  a
-    +remove-link-underlines
-
