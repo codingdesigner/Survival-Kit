@@ -71,10 +71,10 @@
     width: 100%
 
 
-=replace-list-numbers($padding-left: auto)
+// replace OL > LI numbers so they can be styled
+=replace-list-numbers
   counter-reset: li
   list-style-type: none
-  padding-left: $padding-left
   li
     &:before
       content: counter(li) ". "
