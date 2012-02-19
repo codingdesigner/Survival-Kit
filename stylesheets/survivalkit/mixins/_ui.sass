@@ -72,3 +72,9 @@
         z-index: #{$i}
       $t: $t + 1
       $i: $i - 1
+
+
+// universal transitions
+=transition-all($time: 0.2s, $ease: ease)
+  *
+    +transition(all $time $ease)
