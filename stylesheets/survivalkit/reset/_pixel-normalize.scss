@@ -1,0 +1,31 @@
+@mixin pixel-normalize {
+  // http://www.alistapart.com/articles/a-pixel-identity-crisis/
+
+  // Using a new pixel ratio of 6/5
+  // Standard 7" 1024x600 tablet (KINDLE FIRE)
+  @media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape),
+    screen and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait),
+    screen and (-o-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape),
+    screen and (-o-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait),
+    screen and (device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape),
+    screen and (device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait) {
+    html {
+      font-size: $base-font-size * (6/5);
+    }
+  }
+
+  // 1024x600 tablet with pixel ratio of 3/2 (GALAXY TAB)
+  // Because we have a solid device-pixel-ratio we can avoid the device height
+  @media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape),
+    screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait),
+    screen and (-o-device-pixel-ratio: 3/2) and (device-width: 683px) and (orientation: landscape),
+    screen and (-o-device-pixel-ratio: 3/2) and (device-width: 400px) and (orientation: portrait),
+    screen and (device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape),
+    screen and (device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait),
+    screen and (device-pixel-ratio: 3/2) and (device-width: 683px) and (orientation: landscape),
+    screen and (device-pixel-ratio: 3/2) and (device-width: 400px) and (orientation: portrait) {
+    html {
+      font-size: $base-font-size * (2/3) * (6/5);
+    }
+  }
+}

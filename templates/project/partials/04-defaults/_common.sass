@@ -1,14 +1,10 @@
-/*
- * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
- * 2. Force vertical scrollbar in non-IE
- * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
-
-html
-  font-size: 100%
-  overflow-y: scroll
-  -webkit-text-size-adjust: 100%
-  -ms-text-size-adjust: 100%
-  // -webkit-font-smoothing: antialiased
+@if $init-type != normalize
+  html
+    font-size: 100%
+    overflow-y: scroll
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+    // -webkit-font-smoothing: antialiased
 
 ////////////////////////////
 // DEFAULT BOX SIZING TO BORDER BOX
@@ -29,6 +25,8 @@ body
   color: $text-color
   background: $background-color
 
+@if $pixel-normalize
+  +pixel-normalize
 
 /* Selected Text --------------------------------------------------------------
 /* -moz- must be declared separately

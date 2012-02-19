@@ -13,11 +13,6 @@
  * Download the source files here:
  * https://github.com/canarymason/The-Coding-Designers-Survival-Kit
  * Learn more about Sass & Compass at http://compass-style.org/ */
-/* Links -------------------------------------------------------------- */
-/* create simple tabs from <a> unside <ul>
- * $dir is 'bottom' for standard tabs
- * 'top' for hanging tabs
- * assumes placement on UL */
 .clearfix, body.survival-kit header hgroup {
   zoom: 1;
 }
@@ -159,11 +154,11 @@ body.survival-kit header a:active {
   border-bottom-color: #aaada0;
 }
 body.survival-kit header h1 {
-  font-size: 1.286em;
-  line-height: 1.333em;
+  font-size: 1.25em;
+  line-height: 1.2em;
   float: left;
-  padding-right: 22px;
-  margin-right: 22px;
+  padding-right: 25px;
+  margin-right: 25px;
   border-right: 1px solid white;
   font-family: futura, sans-serif;
 }
@@ -186,19 +181,19 @@ body.survival-kit header h1 a:hover {
   border-bottom: none;
 }
 body.survival-kit header h2 {
-  font-size: 1.571em;
-  line-height: 2.182em;
+  font-size: 1.563em;
+  line-height: 1.92em;
   font-family: futura, sans-serif;
 }
 body.survival-kit header .intro {
-  margin-left: 18.929em;
+  margin-left: 16.563em;
 }
 body.survival-kit h1.section-title {
-  font-size: 1.643em;
-  line-height: 2.087em;
+  font-size: 1.625em;
+  line-height: 1.846em;
   background-color: #d0d3c6;
   text-transform: uppercase;
-  padding-left: 11px;
+  padding-left: 12.5px;
 }
 body.survival-kit h1.section-title a {
   color: black;
@@ -235,13 +230,13 @@ body.survival-kit h1.section-title .fold-section:hover, body.survival-kit h2.ele
   border-bottom: none;
 }
 body.survival-kit .kit-nav, body.survival-kit .section-nav {
-  margin-bottom: 1.714em;
+  margin-bottom: 1.5em;
   padding: 0 0.5em;
   font-family: futura, sans-serif;
   color: #d0d3c6;
 }
 body.survival-kit .kit-nav h1, body.survival-kit .kit-nav h2, body.survival-kit .kit-nav h3, body.survival-kit .kit-nav h4, body.survival-kit .kit-nav h5, body.survival-kit .kit-nav h6, body.survival-kit .section-nav h1, body.survival-kit .section-nav h2, body.survival-kit .section-nav h3, body.survival-kit .section-nav h4, body.survival-kit .section-nav h5, body.survival-kit .section-nav h6 {
-  font-size: 14px;
+  font-size: 16px;
 }
 body.survival-kit .kit-nav a, body.survival-kit .section-nav a {
   color: white;
@@ -299,12 +294,12 @@ body.survival-kit .kit-nav {
 }
 body.survival-kit .section-nav {
   background: #85897b;
-  margin-top: -1.714em;
+  margin-top: -1.5em;
 }
 body.survival-kit .section-nav h3 {
   color: #4f5249;
-  font-size: 0.857em;
-  line-height: 2em;
+  font-size: 0.875em;
+  line-height: 1.714em;
 }
 body.survival-kit .section-nav h4 {
   float: left;
@@ -313,8 +308,8 @@ body.survival-kit .section-nav h4 {
 body.survival-kit article.element {
   *zoom: 1;
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
-  margin-bottom: 21px;
-  padding-bottom: 20px;
+  margin-bottom: 24px;
+  padding-bottom: 23px;
 }
 body.survival-kit article.element:after {
   content: "";
@@ -333,11 +328,11 @@ body.survival-kit article.element.closed {
 }
 body.survival-kit article.element h2.element-title {
   font-size: 1em;
-  line-height: 1.714em;
+  line-height: 1.5em;
   background-color: #85897b;
   color: white;
   text-transform: uppercase;
-  padding-left: 11px;
+  padding-left: 12.5px;
 }
 body.survival-kit article.element h2.element-title a {
   color: white;
@@ -367,8 +362,8 @@ body.survival-kit article.element h2.element-title a:active {
 body.survival-kit article.element .example {
   *zoom: 1;
   border-bottom: 1px dashed rgba(128, 128, 128, 0.1);
-  margin-bottom: 10.5px;
-  padding-bottom: 9.5px;
+  margin-bottom: 12px;
+  padding-bottom: 11px;
   *zoom: 1;
 }
 body.survival-kit article.element .example:after {
