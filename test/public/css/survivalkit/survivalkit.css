@@ -77,6 +77,25 @@
   outline: 1px dashed red;
 }
 
+.html-frame {
+  height: 100%;
+  margin: 0pt;
+}
+
+.frame {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.row, .row-expand {
+  display: table-row;
+}
+
+.row-expand {
+  height: 100%;
+}
+
 .serif {
   font-family: Georgia, serif;
 }
