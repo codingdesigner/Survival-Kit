@@ -71,5 +71,14 @@
   path = templates/project/sources/fitvids
   url = https://github.com/davatron5000/FitVids.js.git
 [submodule "templates/project/sources/deorphan"]
-  path = templates/project/sources/deorphan
-  url = https://github.com/megasmack/jquery.deorphan.js.git
+	path = templates/project/sources/deorphan
+	url = https://github.com/megasmack/jquery.deorphan.js.git
+[submodule "templates/project/sources/iOS-Orientationchange-Fix"]
+	path = templates/project/sources/iOS-Orientationchange-Fix
+	url = https://github.com/scottjehl/iOS-Orientationchange-Fix.git
+[submodule "templates/project/sources/scrollorama"]
+	path = templates/project/sources/scrollorama
+	url = https://github.com/johnpolacek/scrollorama.git
+[submodule "templates/project/sources/FitVids"]
+	path = templates/project/sources/FitVids
+	url = https://github.com/davatron5000/FitVids.js.git
