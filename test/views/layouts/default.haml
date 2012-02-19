@@ -46,14 +46,17 @@
     -# = stylesheet_link_tag("/css/style.css")
 
     / All JavaScript at the bottom, except for Modernizr and Respond.
+    /[if (lt IE 9) & (!IEMobile)]
+      <script src="/js/libs/selectivizr-min.js"></script>
     -# Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
     %script{ :src => "/js/libs/modernizr-2.0.min.js" }
     %script{ :src => "/js/libs/respond.min.js" }
 
     / Typekit
-    %script{:src => "http://use.typekit.com/xxxxxxx.js", :type => "text/javascript"}
-    :javascript
-      try{Typekit.load();}catch(e){}
+    /
+      %script{:src => "http://use.typekit.com/xxxxxxx.js", :type => "text/javascript"}
+      :javascript
+        try{Typekit.load();}catch(e){}
 
   %body
     #page
@@ -71,6 +74,20 @@
 
     %script{ :src => "/js/libs/plugins.js?v=1" }
     %script{ :src => "/js/script.js?v=1" }
+    %script{ :src => "/js/libs/320-up/helper.js?v=1" }
+
+    /[if (lt IE 9) & (!IEMobile)]
+      <script src="/js/libs/imgsizer.js"></script>
+
+    :javascript
+      // iOS scale bug fix
+      MBP.scaleFix();
+
+      // Respond.js
+      yepnope({
+        test : Modernizr.mq('(only all)'),
+        nope : [/js/libs/respond.min.js']
+      });
 
     /  asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
     /  change the UA-XXXXX-X to be your site's ID
@@ -79,4 +96,3 @@
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
       g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
       s.parentNode.insertBefore(g,s)}(document,"script"));
-
