@@ -82,3 +82,6 @@
 [submodule "templates/project/sources/FitVids"]
 	path = templates/project/sources/FitVids
 	url = https://github.com/davatron5000/FitVids.js.git
+[submodule "templates/project/sources/jQuery-widowFix"]
+	path = templates/project/sources/jQuery-widowFix
+	url = https://github.com/matthewlein/jQuery-widowFix.git
