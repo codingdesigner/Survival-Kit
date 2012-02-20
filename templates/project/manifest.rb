@@ -61,6 +61,8 @@ html 'files/crossdomain.xml', :to => 'crossdomain.xml'
 html 'files/robots.txt', :to => 'robots.txt'
 html 'files/humans.txt', :to => 'humans.txt'
 html 'files/apple-touch-icon.png', :to => 'apple-touch-icon.png'
+html 'files/apple-touch-icon-72x72-precomposed.png', :to => 'apple-touch-icon-72x72-precomposed.png'
+html 'files/apple-touch-icon-114x114-precomposed.png', :to => 'apple-touch-icon-114x114-precomposed.png'
 html 'files/favicon.ico', :to => 'favicon.ico'
 
 discover :javascripts
@@ -111,8 +113,6 @@ image 'drupal/tree.png'
 image 'drupal/watchdog-error.png'
 image 'drupal/watchdog-ok.png'
 image 'drupal/watchdog-warning.png'
-
-file 'files/this-is-a-test.sass', :to => 'extensions/this-is-a-test/this-is-a-test.sass'
 
 help %Q{
 This is a Compass extension for The Coding Designer's Survival Kit by Mason Wendell
