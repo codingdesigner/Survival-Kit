@@ -1,23 +1,26 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (3.0.9)
-    chunky_png (1.2.1)
-    compass (0.11.5)
+    activesupport (3.2.1)
+      i18n (~> 0.6)
+      multi_json (~> 1.0)
+    chunky_png (1.2.5)
+    compass (0.11.7)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
     compass-susy-plugin (0.9)
       compass (>= 0.11.1)
-    fssm (0.2.7)
-    haml (3.1.2)
+    fssm (0.2.8.1)
+    haml (3.1.4)
     i18n (0.6.0)
     maruku (0.6.0)
       syntax (>= 1.0.0)
-    rack (1.3.3)
+    multi_json (1.1.0)
+    rack (1.4.1)
     rack-test (0.6.1)
       rack (>= 1.0)
-    sass (3.1.7)
+    sass (3.1.15)
     serve (1.5.1)
       activesupport (~> 3.0)
       i18n
@@ -26,8 +29,8 @@ GEM
       tilt (~> 1.3)
       tzinfo
     syntax (1.0.0)
-    tilt (1.3.2)
-    tzinfo (0.3.29)
+    tilt (1.3.3)
+    tzinfo (0.3.31)
 
 PLATFORMS
   ruby
