@@ -88,3 +88,12 @@
     }
   );
 })(jQuery);
+
+
+/*!
+* back to top links
+*/
+(function($){
+  $('article.element').find('.element-title').append('<a href="#" class="back-to-top">top</a>');
+  $('.section-title').append('<a href="#" class="back-to-top">top</a>');
+})(jQuery);

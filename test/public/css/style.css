@@ -373,24 +373,12 @@ body {
   background: white;
 }
 
-@media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape),
-    screen and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait),
-    screen and (-o-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape),
-    screen and (-o-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait),
-    screen and (device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape),
-    screen and (device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait) {
+@media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait), screen and (-o-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), screen and (-o-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait), screen and (device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), screen and (device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait) {
   html {
     font-size: 19.2px;
   }
 }
-@media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape),
-    screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait),
-    screen and (-o-device-pixel-ratio: 3/2) and (device-width: 683px) and (orientation: landscape),
-    screen and (-o-device-pixel-ratio: 3/2) and (device-width: 400px) and (orientation: portrait),
-    screen and (device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape),
-    screen and (device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait),
-    screen and (device-pixel-ratio: 3/2) and (device-width: 683px) and (orientation: landscape),
-    screen and (device-pixel-ratio: 3/2) and (device-width: 400px) and (orientation: portrait) {
+@media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait), screen and (-o-device-pixel-ratio: 3/2) and (device-width: 683px) and (orientation: landscape), screen and (-o-device-pixel-ratio: 3/2) and (device-width: 400px) and (orientation: portrait), screen and (device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait), screen and (device-pixel-ratio: 3/2) and (device-width: 683px) and (orientation: landscape), screen and (device-pixel-ratio: 3/2) and (device-width: 400px) and (orientation: portrait) {
   html {
     font-size: 12.8px;
   }

@@ -239,13 +239,14 @@ body.survival-kit h1.section-title a:hover {
 body.survival-kit h1.section-title a:active {
   border-bottom-color: #bada55;
 }
-body.survival-kit h1.section-title .fold-section, body.survival-kit h2.element-title .fold-article {
-  margin-left: 1em;
+body.survival-kit .back-to-top {
+  float: right;
+  font-size: 10px;
 }
-body.survival-kit h1.section-title .fold-section, body.survival-kit h2.element-title .fold-article {
+body.survival-kit .back-to-top {
   border-bottom: none;
 }
-body.survival-kit h1.section-title .fold-section:hover, body.survival-kit h2.element-title .fold-article:hover {
+body.survival-kit .back-to-top:hover {
   border-bottom: none;
 }
 body.survival-kit .kit-nav, body.survival-kit .section-nav {
@@ -292,7 +293,7 @@ body.survival-kit .kit-nav ul, body.survival-kit .section-nav ul {
 body.survival-kit .kit-nav ul li, body.survival-kit .section-nav ul li {
   list-style-image: none;
   list-style-type: none;
-  margin-left: 0px;
+  margin-left: 0;
   white-space: nowrap;
   display: inline;
   float: left;
