@@ -16,11 +16,9 @@ Gem::Specification.new do |s|
   # Gem Files
   s.files = ["README.markdown"]
   s.files += ["CHANGELOG.markdown"]
-  s.files += ["VERSION"]
   s.files += Dir.glob("lib/**/*.*")
   s.files += Dir.glob("stylesheets/survivalkit/**/*.*")
   s.files += Dir.glob("templates/project/**/*.*")
-  s.files += Dir.glob("templates/test/**/*.*")
 
   # Gem Bookkeeping
   s.required_rubygems_version = ">= 1.3.6"
