@@ -984,6 +984,123 @@ input[type="radio"], input[type="checkbox"] {
   }
 }
 
+/* RESPONSIVE GRIDS -------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+  #page {
+    *zoom: 1;
+    margin: auto;
+    width: 138px;
+    max-width: 100%;
+    width: 95%;
+  }
+  #page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #page header h1 {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page header aside {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page #main {
+    clear: both;
+    margin-left: 2.174%;
+    margin-right: 2.174%;
+  }
+  #page #main .text-examples {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page #main .graphic-examples {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+
+  .colors ul li {
+    display: inline;
+    float: left;
+    width: 45.455%;
+    margin-right: 9.091%;
+  }
+  .colors ul li:nth-of-type(even) {
+    display: inline;
+    float: right;
+    margin-right: 2.174%;
+    #margin-left: -12px;
+    margin-right: 0;
+  }
+
+  .images ul {
+    list-style-type: none;
+  }
+  .images ul, .images ul li {
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+  }
+  .images ul li {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #page {
+    *zoom: 1;
+    margin: auto;
+    width: 485px;
+    max-width: 100%;
+    width: 95%;
+  }
+  #page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #page header h1 {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page header aside {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page #main {
+    clear: both;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  #page #main .text-examples {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+  #page #main .graphic-examples {
+    float: none;
+    display: block;
+    width: auto;
+    margin-right: auto;
+  }
+}
 /* SITE-WIDE DESIGN -------------------------------------------------------------- */
 header {
   *zoom: 1;
@@ -1009,11 +1126,12 @@ header aside {
   clear: both;
 }
 
-h5.label {
+.label, .styletile-1 .text-examples .logos h1:before {
   color: gray;
   font-size: 1em;
   line-height: 1.5em;
   text-transform: uppercase;
+  font-family: sans-serif;
 }
 
 .colors ul li {
@@ -1050,11 +1168,31 @@ h5.label {
 /* CLIENT NAME ------------------------------------------------------------------------------------------------------------------------------ */
 /* STYLE TILE #1 ------------------------------------------------------------------------------------------------------------------------------ */
 /* type examples */
+.styletile-1 .text-examples .logos {
+  counter-reset: logos;
+}
+.styletile-1 .text-examples .logos h1 {
+  counter-increment: logos;
+}
+.styletile-1 .text-examples .logos h1:before {
+  display: block;
+  font-weight: normal;
+  line-height: 1;
+}
+.styletile-1 .text-examples .logos h1.opt-1:before {
+  content: counter(logos) " - sans-serif";
+}
 .styletile-1 .text-examples .serif {
   font-family: Georgia, serif;
 }
+.styletile-1 .text-examples .serif .label:after, .styletile-1 .text-examples .serif .logos h1:after:before, .styletile-1 .text-examples .logos .serif h1:after:before {
+  content: " - Georgia, serif";
+}
 .styletile-1 .text-examples .sans, .styletile-1 .text-examples header aside, header .styletile-1 .text-examples aside {
   font-family: sans-serif;
+}
+.styletile-1 .text-examples .sans .label:after, .styletile-1 .text-examples header aside .label:after, header .styletile-1 .text-examples aside .label:after, .styletile-1 .text-examples .sans .logos h1:after:before, .styletile-1 .text-examples .logos .sans h1:after:before, .styletile-1 .text-examples header aside .logos h1:after:before, .styletile-1 .text-examples .logos header aside h1:after:before, header .styletile-1 .text-examples aside .logos h1:after:before, header .styletile-1 .text-examples .logos aside h1:after:before {
+  content: " - sans-serif";
 }
 
 /* graphic examples */

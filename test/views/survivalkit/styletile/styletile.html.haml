@@ -3,6 +3,9 @@
 - @version = "1"
 
 %article.text-examples
+  .logos.group
+    %h5.label Header text options
+    %h1.logo.opt-1 INSERT CLIENT NAME
   .headers.group
     %h5.label Header text options
     %h1 This is a Page Title
@@ -20,14 +23,16 @@
           %span.comma ,
         %span.year 2011
   .serif.group
-    %h5.label Body Text Option - Serif - Georgia
+    %h5.label Body Text Option
+    %h2 This is a Header
     %p.serif
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
       = succeed "." do
         %a{:href => ""} Donec odio
       Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
   .sans.group
-    %h5.label Body Text Option - Sans Serif - Helvetica
+    %h5.label Body Text Option
+    %h2 This is a Header
     %p.sans
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
       = succeed "." do

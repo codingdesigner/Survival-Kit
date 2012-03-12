@@ -16,10 +16,11 @@ header
   +pie-clearfix
   +trailer(2)
 
-h5.label
+.label
   color: $gray
   +adjust-font-size-to(ms(0))
   text-transform: uppercase
+  font-family: $font-sans
 
 .colors
   ul
@@ -59,6 +60,21 @@ header
 .styletile-1
   // color: $color-tile1-6
   .text-examples
+    .logos
+      counter-reset: logos
+      h1
+        counter-increment: logos
+        &:before
+          @extend .label
+          display: block
+          font-weight: normal
+          line-height: 1
+        &.opt-1
+          // font-family:
+          // font-weight:
+          // color:
+          &:before
+            content: counter(logos) " - #{$font-sans}"
     .headers
       h1
         // font-family:
@@ -71,6 +87,8 @@ header
       a
     .serif
       font-family: $font-serifs
+      .label:after
+        content: " - #{$font-serifs}"
       p
         //
     .quotes
@@ -83,6 +101,8 @@ header
         //
     .sans
       font-family: $font-sans
+      .label:after
+        content: " - #{$font-sans}"
       p
         //
 
