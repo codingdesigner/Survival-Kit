@@ -1,28 +1,32 @@
 @import ../mixins/helpers
 
-.clearfix
+%clearfix
   +kit-clearfix
+.clearfix
+  @extend %clearfix
 
-.hidden
+%hidden
   +hidden
+.hidden
+  @extend %hidden
 
-.visuallyhidden
+%visuallyhidden
   +visuallyhidden
 
-.visuallyhidden.focusable
+%visuallyhidden.focusable
   +visuallyhidden(true)
 
-.invisible
+%invisible
   +invisible
 
-.constrain-to-parent
+%constrain-to-parent
   max-width: 100%
 
-.italic
+%italic
   font-style: italic
 
-.bold
+%bold
   font-weight: bold
 
-.wireframe
+%wireframe
   outline: 1px dashed $red

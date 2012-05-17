@@ -252,56 +252,6 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.visuallyhidden.focusable {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.constrain-to-parent, img, table, .textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color], input:not([type="radio"]) {
-  max-width: 100%;
-}
-
-.italic, em, address, cite, q, dfn, i {
-  font-style: italic;
-}
-
-.bold, strong, dfn, b {
-  font-weight: bold;
-}
-
-.wireframe {
-  outline: 1px dashed red;
-}
-
 .serif {
   font-family: Georgia, serif;
 }
@@ -349,22 +299,17 @@ h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
 }
 
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 /* Body -------------------------------------------------------------- */
 /* Establish baseline rhythm
  * from compass/typography/_vertical_rhythm */
-body {
+html {
   font-size: 100%;
   line-height: 1.5em;
-}
-
-html > body {
-  font-size: 16px;
 }
 
 body {
@@ -581,11 +526,10 @@ input[type="reset"],
 input[type="submit"],
 input[type="button"] {
   -webkit-appearance: none;
-  -moz-border-radius: 11px;
   -webkit-border-radius: 11px;
-  -o-border-radius: 11px;
+  -moz-border-radius: 11px;
   -ms-border-radius: 11px;
-  -khtml-border-radius: 11px;
+  -o-border-radius: 11px;
   border-radius: 11px;
   background: #dddddd url(../images/button.png) repeat-x;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
@@ -636,11 +580,10 @@ input[type="time"],
 input[type="url"],
 input[type="week"] {
   -webkit-appearance: none;
-  -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  -o-border-radius: 0;
+  -moz-border-radius: 0;
   -ms-border-radius: 0;
-  -khtml-border-radius: 0;
+  -o-border-radius: 0;
   border-radius: 0;
   background-color: white;
   border: 1px solid;
@@ -1135,9 +1078,8 @@ header aside {
 }
 
 .colors ul li {
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
 }
 
@@ -1157,9 +1099,8 @@ header aside {
   content: "Image " counter(section);
 }
 .images ul li img {
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   border: 4px solid white;
   display: block;

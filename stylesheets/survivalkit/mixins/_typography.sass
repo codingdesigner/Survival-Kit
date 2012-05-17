@@ -1,6 +1,6 @@
 // Links --------------------------------------------------------------
 // replace underlines on links with bottom borders
-=better-links($normal, $hover: false, $active: false, $visited: false, $focus: false)
+=underline-links($normal, $hover: false, $active: false, $visited: false, $focus: false)
   &
     text-decoration: none
     border-bottom: 1px solid $normal
@@ -17,7 +17,7 @@
       &:active
         border-bottom-color: $active
 
-=undo-better-links
+=undo-underline-links
   &
     text-decoration: none
     // border-bottom: inherit

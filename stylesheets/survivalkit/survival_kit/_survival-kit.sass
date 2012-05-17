@@ -16,7 +16,7 @@ body.survival-kit
     padding: 0 0.5em
     a
       +link-colors($white, $sk-darkgray, $sk-darkgray, $white)
-      +better-links($white, $sk-darkgray, $sk-darkgray, $white)
+      +underline-links($white, $sk-darkgray, $sk-darkgray, $white)
     hgroup
       @extend .clearfix
     h1
@@ -43,7 +43,7 @@ body.survival-kit
     padding-left: $kit-gutter-half
     a
       +link-colors($black, $alt-color, $alt-color, $black, false)
-      +better-links($black, $alt-color, $alt-color, $black, false)
+      +underline-links($black, $alt-color, $alt-color, $black, false)
   .back-to-top
     +remove-link-underlines
     float: right
@@ -58,7 +58,7 @@ body.survival-kit
       font-size: $base-font-size
     a
       +link-colors($white, $alt-color, $alt-color, $white)
-      +better-links($white, $alt-color, $alt-color, $white)
+      +underline-links($white, $alt-color, $alt-color, $white)
     ul
       +horizontal-list(0.5em)
   .kit-nav
@@ -84,7 +84,7 @@ body.survival-kit
       padding-left: $kit-gutter-half
       a
         +link-colors($white, $alt-color, $alt-color, $white, false)
-        +better-links($white, $alt-color, $alt-color, $white, false)
+        +underline-links($white, $alt-color, $alt-color, $white, false)
     .example
       +vertical-separation($kit-baseline, 1px, transparentize($border-color, 0.9), dashed)
       +pie-clearfix
