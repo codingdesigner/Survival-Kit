@@ -21,19 +21,12 @@ $side-gutter-width: $kit-side-gutter-width
 
 /* DEFINE THE GRID CONTAINER --------------------------------------------------------------
 // BUILD THE GRID FOR YOUR SITE
-// HELPER CLASSES INTENDED FOR USE IN @EXTEND
-.container
-  +container
-  // uncomment to show grid background
-  // @if $show-grid == true
-  //   +susy-grid-background
 
 // BUILD THE GRID BY CALLING SUSY MIXINS ON DOM ELEMENTS
 // example:
   body
     #container
-      @extend .container
-      >
-        header, #main, footer
-          +full
+      +container
+        @if $show-grid == true
+          +susy-grid-background
 

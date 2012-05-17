@@ -27,45 +27,6 @@
   visibility: hidden;
 }
 
-.serif {
-  font-family: Georgia, serif;
-}
-
-.sans {
-  font-family: sans-serif;
-}
-
-.mono, body.survival-kit article.element .example .markup + .show-source {
-  font-family: Consolas, Menlo, "Courier New", monospace, monospace;
-  _font-family: Consolas, Menlo, "Courier New", monospace, monospace;
-}
-
-.caps, .allcaps, .smallcaps {
-  font-size: 0.9em;
-  letter-spacing: 0.1em;
-}
-
-.headers {
-  font-family: sans-serif;
-}
-
-.allcaps {
-  text-transform: uppercase;
-}
-
-.amp {
-  font-family: Georgia, serif;
-}
-
-.smallcaps {
-  font-variant: small-caps;
-}
-
-.dquo {
-  margin-left: -0.5em;
-  font-family: Georgia, serif;
-}
-
 /* Only use the fancy ampersand in <h#> tags */
 h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
   font-size: 1em;

@@ -232,12 +232,6 @@ table {
   border-spacing: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .clearfix {
   zoom: 1;
 }
@@ -250,45 +244,6 @@ h1, h2, h3, h4, h5, h6 {
 .hidden {
   display: none !important;
   visibility: hidden;
-}
-
-.serif {
-  font-family: Georgia, serif;
-}
-
-.sans, header aside {
-  font-family: sans-serif;
-}
-
-.mono, pre, code, kbd, tt {
-  font-family: Consolas, Menlo, "Courier New", monospace, monospace;
-  _font-family: Consolas, Menlo, "Courier New", monospace, monospace;
-}
-
-.caps, .allcaps, .smallcaps {
-  font-size: 0.9em;
-  letter-spacing: 0.1em;
-}
-
-.headers, .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
-  font-family: sans-serif;
-}
-
-.allcaps {
-  text-transform: uppercase;
-}
-
-.amp {
-  font-family: Georgia, serif;
-}
-
-.smallcaps {
-  font-variant: small-caps;
-}
-
-.dquo {
-  margin-left: -0.5em;
-  font-family: Georgia, serif;
 }
 
 /* Only use the fancy ampersand in <h#> tags */

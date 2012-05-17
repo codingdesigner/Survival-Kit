@@ -1,34 +1,34 @@
 // The following classes are for use with @extend.
-.serif
+%serif
   font-family: $font-serifs
 
-.sans
+%sans
   font-family: $font-sans
 
-.mono
+%mono
   font-family: $font-mono
   _font-family: $font-mono
 
-.caps
+%caps
   font-size: 0.9em
   letter-spacing: 0.1em
 
-.headers
+%headers
   font-family: $font-headline
   // +sans-family
 
-.allcaps
+%allcaps
   @extend .caps
   text-transform: uppercase
 
-.amp
+%amp
   font-family: $font-amp
 
-.smallcaps
+%smallcaps
   @extend .caps
   font-variant: small-caps
 
-.dquo
+%dquo
   margin-left: -0.5em
   font-family: $font-amp
 
