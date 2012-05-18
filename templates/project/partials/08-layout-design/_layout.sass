@@ -2,30 +2,27 @@
 /* LAYOUT --------------------------------------------------------------
 
 
-#main
-  @extend .container
-  // uncomment this line for fluid layout
-  width: 95%
-  @media screen and (min-width: 750px)
-    article
-      +columns(4)
-    > footer
-      +columns(2)
-      +omega(6)
-  .sidenote
-    clear: both
-    @media screen and (min-width: 500px) and (max-width: 750px)
-      +columns(3, 6)
-      +omega
-      margin-left: gutter(4)
-    @media screen and (min-width: 750px)
-      +columns(2, 4)
-      +omega(4)
-      margin-left: gutter(4)
-
-
-// .sidenote
+////////////////////////////
+// remove header for the demo
+////////////////////////////
+// #page > header,
+// .kit-nav
+//   display: none
 
 
 
+// #page
+//   +container
 
+// #page > header
+//   +span-columns(4, 8)
+// .kit-nav
+//   +span-columns(4 omega, 8)
+
+// #main
+//   +span-columns(6, 8)
+//   .sidenote
+//     +span-columns(3 omega, 6)
+
+// footer
+//   +span-columns(2 omega, 8)

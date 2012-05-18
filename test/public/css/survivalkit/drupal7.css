@@ -197,7 +197,7 @@ html.js #edit-book-pick-book {
   height: 16px;
 }
 #palette .down, #palette .up, #palette .both {
-  background: url('../../images/drupal/hook.png?1328032083') no-repeat 100% 0;
+  background: url('../../images/drupal/hook.png?1337319895') no-repeat 100% 0;
   /* LTR */
 }
 #palette .up {
@@ -217,7 +217,7 @@ html.js #edit-book-pick-book {
   /* LTR */
   width: 20px;
   height: 25px;
-  background: url('../../images/drupal/lock.png?1328032083') no-repeat 50% 2px;
+  background: url('../../images/drupal/lock.png?1337319895') no-repeat 50% 2px;
   cursor: pointer;
 }
 #palette .unlocked {
@@ -287,7 +287,7 @@ html.js div.contextual-links-wrapper {
 }
 
 a.contextual-links-trigger {
-  background: transparent url('../../images/drupal/gear-select.png?1328032083') no-repeat 2px 0;
+  background: transparent url('../../images/drupal/gear-select.png?1337319895') no-repeat 2px 0;
   border: 1px solid transparent;
   display: none;
   height: 18px;
@@ -458,15 +458,15 @@ ul.contextual-links li a:hover {
   min-height: 1px;
 }
 #dashboard .ui-sortable .block h2 {
-  background: transparent url('../../images/drupal/draggable.png?1328032083') no-repeat 0px -39px;
+  background: transparent url('../../images/drupal/draggable.png?1337319895') no-repeat 0px -39px;
   padding: 0 17px;
 }
 #dashboard.customize-inactive #disabled-blocks .block:hover h2 {
-  background: #0074bd url('../../images/drupal/draggable.png?1328032083') no-repeat 0px -39px;
+  background: #0074bd url('../../images/drupal/draggable.png?1337319895') no-repeat 0px -39px;
   color: white;
 }
 #dashboard.customize-inactive .dashboard-region .ui-sortable .block:hover h2 {
-  background: #0074bd url('../../images/drupal/draggable.png?1328032083') no-repeat;
+  background: #0074bd url('../../images/drupal/draggable.png?1337319895') no-repeat;
   background-position: 3px -36px;
   color: white;
 }
@@ -533,10 +533,10 @@ table#admin-dblog td.icon {
   width: 16px;
 }
 table#admin-dblog tr.dblog-warning td.icon {
-  background-image: url('../../images/drupal/message-16-warning.png?1328032083');
+  background-image: url('../../images/drupal/message-16-warning.png?1337319895');
 }
 table#admin-dblog tr.dblog-error td.icon {
-  background-image: url('../../images/drupal/message-16-error.png?1328032083');
+  background-image: url('../../images/drupal/message-16-error.png?1337319895');
 }
 
 /* Field display */
@@ -677,7 +677,7 @@ table.field-ui-overview tr.region-populated, table.field-ui-overview tr.region-a
   margin: 0;
 }
 .filter-help a {
-  background: transparent url('../../images/drupal/help.png?1328032083') right center no-repeat;
+  background: transparent url('../../images/drupal/help.png?1337319895') right center no-repeat;
   padding: 0 20px;
 }
 
@@ -718,7 +718,7 @@ input#edit-filters-filter-html-settings-allowed-html {
   white-space: nowrap;
 }
 #forum td.forum .icon {
-  background-image: url('../../images/drupal/forum-icons.png?1328032083');
+  background-image: url('../../images/drupal/forum-icons.png?1337319895');
   background-repeat: no-repeat;
   float: left;
   /* LTR */
@@ -734,7 +734,7 @@ input#edit-filters-filter-html-settings-allowed-html {
   margin-left: 20px;
 }
 #forum .icon div {
-  background-image: url('../../images/drupal/forum-icons.png?1328032083');
+  background-image: url('../../images/drupal/forum-icons.png?1337319895');
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -1025,7 +1025,7 @@ html.js body {
 }
 
 #overlay-close {
-  background: transparent url('../../images/drupal/close.png?1328032083') no-repeat;
+  background: transparent url('../../images/drupal/close.png?1337319895') no-repeat;
   /* LTR */
   -moz-border-radius-topleft: 0;
   /* LTR */
@@ -1042,7 +1042,7 @@ html.js body {
   width: 26px;
 }
 #overlay-close:hover {
-  background: transparent url('../../images/drupal/close.png?1328032083') no-repeat;
+  background: transparent url('../../images/drupal/close.png?1337319895') no-repeat;
   /* LTR */
   -moz-border-radius-topleft: 0;
   /* LTR */
@@ -1182,7 +1182,7 @@ html.overlay-open body {
 
 .overlay-modal-background {
   /* Using a transparent png renders faster than using opacity */
-  background: transparent url('../../images/drupal/background.png?1328032083') repeat;
+  background: transparent url('../../images/drupal/background.png?1337319895') repeat;
 }
 
 .overlay-element {
@@ -1517,15 +1517,15 @@ a.module-link {
   white-space: nowrap;
 }
 a.module-link-help {
-  background: url('../../images/drupal/help.png?1328032083') 0 50% no-repeat;
+  background: url('../../images/drupal/help.png?1337319895') 0 50% no-repeat;
   /* LTR */
 }
 a.module-link-permissions {
-  background: url('../../images/drupal/permissions.png?1328032083') 0 50% no-repeat;
+  background: url('../../images/drupal/permissions.png?1337319895') 0 50% no-repeat;
   /* LTR */
 }
 a.module-link-configure {
-  background: url('../../images/drupal/configure.png?1328032083') 0 50% no-repeat;
+  background: url('../../images/drupal/configure.png?1337319895') 0 50% no-repeat;
   /* LTR */
 }
 
@@ -1557,10 +1557,10 @@ table.system-status-report td.status-icon div {
   width: 16px;
 }
 table.system-status-report tr.error td.status-icon div {
-  background-image: url('../../images/drupal/message-16-error.png?1328032083');
+  background-image: url('../../images/drupal/message-16-error.png?1337319895');
 }
 table.system-status-report tr.warning td.status-icon div {
-  background-image: url('../../images/drupal/message-16-warning.png?1328032083');
+  background-image: url('../../images/drupal/message-16-warning.png?1337319895');
 }
 
 tr.merge-down {
@@ -1776,7 +1776,7 @@ table.screenshot {
 
 /* Animated throbber */
 html.js input.form-autocomplete {
-  background-image: url('../../images/drupal/throbber.gif?1328032083');
+  background-image: url('../../images/drupal/throbber.gif?1337319895');
   background-position: 100% 2px;
   /* LTR */
   background-repeat: no-repeat;
@@ -1820,7 +1820,7 @@ fieldset.collapsible .fieldset-legend {
 }
 
 .resizable-textarea .grippie {
-  background: #eeeeee url('../../images/drupal/grippie.png?1328032083') no-repeat center 2px;
+  background: #eeeeee url('../../images/drupal/grippie.png?1337319895') no-repeat center 2px;
   border: 1px solid #dddddd;
   border-top-width: 0;
   cursor: s-resize;
@@ -1852,7 +1852,7 @@ a.tabledrag-handle:hover {
   text-decoration: none;
 }
 a.tabledrag-handle .handle {
-  background: url('../../images/drupal/draggable.png?1328032083') no-repeat 0 0;
+  background: url('../../images/drupal/draggable.png?1337319895') no-repeat 0 0;
   height: 13px;
   margin-top: 4px;
   width: 13px;
@@ -1872,15 +1872,15 @@ div.indentation {
   width: 20px;
 }
 div.tree-child {
-  background: url('../../images/drupal/tree.png?1328032083') no-repeat 11px center;
+  background: url('../../images/drupal/tree.png?1337319895') no-repeat 11px center;
   /* LTR */
 }
 div.tree-child-last {
-  background: url('../../images/drupal/tree-bottom.png?1328032083') no-repeat 11px center;
+  background: url('../../images/drupal/tree-bottom.png?1337319895') no-repeat 11px center;
   /* LTR */
 }
 div.tree-child-horizontal {
-  background: url('../../images/drupal/tree.png?1328032083') no-repeat -11px center;
+  background: url('../../images/drupal/tree.png?1337319895') no-repeat -11px center;
 }
 
 .tabledrag-toggle-weight-wrapper {
@@ -1927,7 +1927,7 @@ table.sticky-header {
   /* LTR */
 }
 .ajax-progress .throbber {
-  background: transparent url('../../images/drupal/throbber.gif?1328032083') no-repeat 0px -18px;
+  background: transparent url('../../images/drupal/throbber.gif?1337319895') no-repeat 0px -18px;
   float: left;
   /* LTR */
   height: 15px;
@@ -2085,16 +2085,16 @@ ul.menu li {
   /* LTR */
 }
 ul li.expanded {
-  list-style-image: url('../../images/drupal/menu-expanded.png?1328032083');
+  list-style-image: url('../../images/drupal/menu-expanded.png?1337319895');
   list-style-type: circle;
 }
 ul li.collapsed {
-  list-style-image: url('../../images/drupal/menu-collapsed.png?1328032083');
+  list-style-image: url('../../images/drupal/menu-collapsed.png?1337319895');
   /* LTR */
   list-style-type: disc;
 }
 ul li.leaf {
-  list-style-image: url('../../images/drupal/menu-leaf.png?1328032083');
+  list-style-image: url('../../images/drupal/menu-leaf.png?1337319895');
   list-style-type: square;
 }
 
@@ -2198,7 +2198,7 @@ div.messages {
   /* LTR */
 }
 div.status {
-  background-image: url('../../images/drupal/message-24-ok.png?1328032083');
+  background-image: url('../../images/drupal/message-24-ok.png?1337319895');
   border-color: #bbee77;
   color: #234600;
 }
@@ -2212,7 +2212,7 @@ div.status, table tr.ok {
 }
 
 div.warning {
-  background-image: url('../../images/drupal/message-24-warning.png?1328032083');
+  background-image: url('../../images/drupal/message-24-warning.png?1337319895');
   border-color: #eedd55;
   color: #884400;
 }
@@ -2226,7 +2226,7 @@ div.warning, table tr.warning {
 }
 
 div.error {
-  background-image: url('../../images/drupal/message-24-error.png?1328032083');
+  background-image: url('../../images/drupal/message-24-error.png?1337319895');
   border-color: #ed541d;
   color: #8c2e0b;
 }
@@ -2390,7 +2390,7 @@ input.form-checkbox, input.form-radio {
   /* LTR */
 }
 .more-help-link a {
-  background: url('../../images/drupal/help.png?1328032083') 0 50% no-repeat;
+  background: url('../../images/drupal/help.png?1337319895') 0 50% no-repeat;
   /* LTR */
   padding: 1px 0 1px 20px;
   /* LTR */
@@ -2428,13 +2428,13 @@ input.form-checkbox, input.form-radio {
  *
  * @see collapse.js */
 html.js fieldset.collapsible .fieldset-legend {
-  background: url('../../images/drupal/menu-expanded.png?1328032083') 5px 65% no-repeat;
+  background: url('../../images/drupal/menu-expanded.png?1337319895') 5px 65% no-repeat;
   /* LTR */
   padding-left: 15px;
   /* LTR */
 }
 html.js fieldset.collapsed .fieldset-legend {
-  background-image: url('../../images/drupal/menu-collapsed.png?1328032083');
+  background-image: url('../../images/drupal/menu-collapsed.png?1337319895');
   /* LTR */
   background-position: 5px 50%;
   /* LTR */
@@ -2451,7 +2451,7 @@ html.js fieldset.collapsed .fieldset-legend {
  *
  * @see tabledrag.js */
 tr.drag {
-  background-color: #fffff0;
+  background-color: ivory;
 }
 tr.drag-previous {
   background-color: #ffffdd;
@@ -2493,7 +2493,7 @@ td.checkbox, th.checkbox {
   border-radius: 3px;
 }
 .progress .filled {
-  background: #0072b9 url('../../images/drupal/progress.gif?1328032083');
+  background: #0072b9 url('../../images/drupal/progress.gif?1337319895');
 }
 
 tr.taxonomy-term-preview {

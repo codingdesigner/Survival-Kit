@@ -1,13 +1,6 @@
 // Create the design for your site below
 /* SITE-WIDE DESIGN --------------------------------------------------------------
 
-////////////////////////////
-// remove header for the demo
-////////////////////////////
-#page > header,
-.kit-nav
-  display: none
-
 // VARIABLES
 $red: #b80000
 $darkgray: scale-color($black, $lightness: 10%)
@@ -39,6 +32,21 @@ body
   line-height: 1.5
   // +background-image(linear-gradient(left, $lightgray, $red-trans))
 
+// @EXTEND
+// %h1
+//   font-size: 36px
+// %h2
+//   font-size: 24px
+// h1
+//   @extend %h1
+// h2
+//   @extend %h2
+
+// .sidenote:first-of-type
+//   h1
+//     @extend %h2
+
+
 h1, h2
   font-family: $font-serifs
 h1
@@ -52,58 +60,132 @@ h2
   font-size: $font-size * 1.2
   line-height: 1.3
 
-figure
-  @media screen and (min-width: 500px)
-    max-width: 50%
-    float: right
-  img
-    max-width: 100%
-  figcaption
-    background: $red-trans
+// body .kicker
+//   color: $red
 
-.sidenote
-  border: 4px solid $red-derived
-  padding: 0 0.5em
-  margin-bottom: 1em
-  +border-radius($font-size * 0.5)
-  +box-sizing(border-box)
-  clear: both
-  // @media screen and (min-width: 500px)
-    // +float-aside
-  h1
-    color: $red-derived
-    font-family: $font-sans
-    +text-shadow($darkgray 1px 1px 1px)
-  ol, ul
-    margin-left: 0
+// #foo
+//   @media screen and (min-width: 500px)
+//     .kicker
+//       padding: 1em
 
-blockquote
-  @extend .kicker
-  border-left: 4px solid $red-dark
-  padding-left: 0.25em
 
-ol, ul
-  margin-left: 1em
-  &.footnote
-    font-family: $font-serifs
-    font-style: italic
-    font-size: $font-size * 0.8
+// figure
+//   @media screen and (min-width: 500px)
+//     max-width: 50%
+//     float: right
+//   img
+//     max-width: 100%
+//   figcaption
+//     background: $red-trans
 
-header
-  h1
-    +replace-text-with-dimensions("logo.png")
+// .sidenote
+//   border: 4px solid $red-derived
+//   padding: 0 0.5em
+//   margin-bottom: 1em
+//   +border-radius($font-size * 0.5)
+//   +box-sizing(border-box)
+//   clear: both
+//   // @media screen and (min-width: 500px)
+//     // +float-aside
+//   h1
+//     color: $red-derived
+//     font-family: $font-sans
+//     +text-shadow($darkgray 1px 1px 1px)
+//   ol, ul
+//     margin-left: 0
 
-@import "badges/*.png"
-$badges-sprite-dimensions: true
-@include all-badges-sprites
+// blockquote
+//   @extend .kicker
+//   border-left: 4px solid $red-dark
+//   padding-left: 0.25em
+
+// ol, ul
+//   margin-left: 1em
+//   &.footnote
+//     font-family: $font-serifs
+//     font-style: italic
+//     font-size: $font-size * 0.8
+
+// article
+//   > h1
+//     +replace-text-with-dimensions("logo.png")
+
+// @import "badges/*.png"
+// $badges-sprite-dimensions: true
+// // @include all-badges-sprites
 
 // $badges: clean-start code-viewer color drupal-ui-patterns fonts html5 jquery-plugins sass-mixins step-by-step ui-patterns
 
-.badges
-  +horizontal-list
-  +hide-text
-  // @each $badge in $badges
-  //   .#{$badge}
-  //     @extend .badges-#{$badge}
+// .badges
+//   +horizontal-list
+//   +hide-text
+//   @each $badge in $badges
+//     .#{$badge}
+//       // @extend .badges-#{$badge}
+//       +badges-sprite(#{$badge})
 
+
+
+////////////////////////////
+// @media mixins
+////////////////////////////
+// $handheld-width: 320px
+// $handheld-width-wide: 480px
+// $medium-screens-width: 840px
+// $wide-screens-width: 1200px
+
+// =respond-to($media)
+//   // @debug $media
+//   @if $media == handhelds
+//     @media only screen and (max-width: $handheld-width-wide)
+//       @content
+
+//   @if $media == not-handhelds
+//     @media only screen and (min-width: $handheld-width-wide + 1)
+//       @content
+
+//   @else if $media == medium-screens-at-least
+//     @media only screen and (min-width: $medium-screens-width)
+//       @content
+
+//   @else if $media == medium-screens
+//     @media only screen and (min-width: $medium-screens-width) and (max-width: $wide-screens-width - 1)
+//       @content
+
+//   @else if $media == wide-screens
+//     @media only screen and (min-width: $wide-screens-width)
+//       @content
+
+// blockquote
+//   +respond-to(medium-screens-at-least)
+//     font-family: $font-serifs
+//     font-style: italic
+
+
+////////////////////////////
+// animation
+////////////////////////////
+// =keyframes($name)
+//   @-moz-keyframes #{$name}
+//     @content
+
+//   @-webkit-keyframes #{$name}
+//     @content
+
+// +keyframes(fade-in)
+//   0%
+//     opacity: 1
+//     // +skewY(-2.5deg)
+//   50%
+//     opacity: 0.25
+//     // +skewY(2.5deg)
+//   100%
+//     opacity: 1
+//     // +skewY(-2.5deg)
+
+
+// .sidenote
+//   // +experimental("animation", fade-in 4s infinite)
+// p
+//   // +experimental("animation", fade-in 5s infinite)
 
