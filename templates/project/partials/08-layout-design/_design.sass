@@ -1,2 +1,102 @@
 // Create the design for your site below
 /* SITE-WIDE DESIGN --------------------------------------------------------------
+
+// VARIABLES
+$red: #b80000
+$darkgray: scale-color($black, $lightness: 10%)
+$lightgray: scale-color($white, $lightness: -10%)
+$red-dark: scale-color($red, $lightness: -20%)
+$red-trans: rgba($red, 0.5)
+$red-derived: adjust-hue($red, 40deg)
+
+$font-sans: sans-serif
+$font-serifs: Georgia, serif
+
+$font-size: 16px
+
+// MIXINS
+=float-aside
+  width: 33%
+  clear: both
+  float: right
+  margin-left: 1em
+
+
+// Styles
+body
+  background: $lightgray
+  // background: adjust-color($hotpink, $lightness: -20%, $alpha: -0.5)
+  color: $darkgray
+  font-family: $font-sans
+  font-size: $font-size
+  line-height: 1.5
+  // +background-image(linear-gradient(left, $lightgray, $red-trans))
+
+h1, h2
+  font-family: $font-serifs
+h1
+  color: $red-dark
+
+h2
+  color: $red
+
+
+.kicker
+  font-size: $font-size * 1.2
+  line-height: 1.3
+
+figure
+  @media screen and (min-width: 500px)
+    max-width: 50%
+    float: right
+  img
+    max-width: 100%
+  figcaption
+    background: $red-trans
+
+.sidenote
+  border: 4px solid $red-derived
+  padding: 0 0.5em
+  margin-bottom: 1em
+  +border-radius($font-size * 0.5)
+  +box-sizing(border-box)
+  clear: both
+  // @media screen and (min-width: 500px)
+    // +float-aside
+  h1
+    color: $red-derived
+    font-family: $font-sans
+    +text-shadow($darkgray 1px 1px 1px)
+  ol, ul
+    margin-left: 0
+
+blockquote
+  @extend .kicker
+  border-left: 4px solid $red-dark
+  padding-left: 0.25em
+
+ol, ul
+  margin-left: 1em
+  &.footnote
+    font-family: $font-serifs
+    font-style: italic
+    font-size: $font-size * 0.8
+
+header
+  h1
+    +replace-text-with-dimensions("logo.png")
+
+@import "badges/*.png"
+$badges-sprite-dimensions: true
+@include all-badges-sprites
+
+// $badges: clean-start code-viewer color drupal-ui-patterns fonts html5 jquery-plugins sass-mixins step-by-step ui-patterns
+
+.badges
+  +horizontal-list
+  +hide-text
+  // @each $badge in $badges
+  //   .#{$badge}
+  //     @extend .badges-#{$badge}
+
+
