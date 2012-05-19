@@ -9,7 +9,7 @@ gem 'serve', '1.5.1'
 gem 'compass'
 
 # Susy Grid
-gem 'compass-susy-plugin'
+gem 'susy'
 
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
