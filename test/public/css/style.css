@@ -1,1131 +1,136 @@
-@charset "UTF-8";
-/* The Coding Designer's Survival Kit
- * A framework for designing websites in the browser.
- *
- * Much love to:
- * Sass, Compass, HTML5 Boilerplate, Modernizr, Formalize, and more
- *
- * Available at http://thecodingdesigner.com
- * twitter: http://twitter.com/canarymason */
-/* -------------------------------------------------------------------------------------
- * -------------------------------------------------------------------------------------- */
-/* This CSS was authored using Sass & Compass
- * Download the source files here:
- * https://github.com/canarymason/The-Coding-Designers-Survival-Kit
- * Learn more about Sass & Compass at http://compass-style.org/ */
-/* normalize.css 2011-08-12T17:28 UTC · http://github.com/necolas/normalize.css */
-/* =============================================================================
- * HTML5 display definitions
- * ========================================================================== */
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
-  display: block;
-}
+/*
+Syntax error: Incompatible units: 'px' and 'em'.
+        on line 20 of /Library/Ruby/Gems/1.8/gems/susy-1.0.rc.0/sass/susy/_functions.scss, in `set-container-width'
+        from line 30 of /Library/Ruby/Gems/1.8/gems/susy-1.0.rc.0/sass/susy/_grid.scss, in `apply-container'
+        from line 56 of /Library/Ruby/Gems/1.8/gems/susy-1.0.rc.0/sass/susy/_grid.scss, in `container'
+        from line 15 of /Users/mason/www-local/coding_designer/Survival-Kit/templates/project/partials/09-styletile/_tile-layout.sass
+        from line 115 of /Users/mason/www-local/coding_designer/Survival-Kit/templates/project/style.sass
 
-audio, canvas, video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-audio:not([controls]), [hidden] {
-  display: none;
-}
-
-/* =============================================================================
- * Base
- * ========================================================================== */
-html {
-  font-size: 100%;
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
-button, input, select, textarea {
-  font-family: sans-serif;
-}
-
-/* =============================================================================
- * Links
- * ========================================================================== */
-a:focus {
-  outline: thin dotted;
-}
-a:hover, a:active {
-  outline: 0;
-}
-
-/* =============================================================================
- * Typography
- * ========================================================================== */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-b, strong {
-  font-weight: bold;
-}
-
-blockquote {
-  margin: 1em 40px;
-}
-
-dfn {
-  font-style: italic;
-}
-
-mark {
-  background: yellow;
-  color: black;
-}
-
-pre, code, kbd, samp {
-  font-family: monospace, serif;
-  _font-family: "courier new", monospace;
-  font-size: 1em;
-}
-
-pre {
+Backtrace:
+/Library/Ruby/Gems/1.8/gems/susy-1.0.rc.0/sass/susy/_functions.scss:20:in `set-container-width'
+/Library/Ruby/Gems/1.8/gems/susy-1.0.rc.0/sass/susy/_grid.scss:30:in `apply-container'
+/Library/Ruby/Gems/1.8/gems/susy-1.0.rc.0/sass/susy/_grid.scss:56:in `container'
+/Users/mason/www-local/coding_designer/Survival-Kit/templates/project/partials/09-styletile/_tile-layout.sass:15
+/Users/mason/www-local/coding_designer/Survival-Kit/templates/project/style.sass:115
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/number.rb:394:in `coercion_factor'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/number.rb:325:in `coerce'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/number.rb:375:in `operate'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/number.rb:97:in `plus'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/operation.rb:90:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/operation.rb:90:in `_perform'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/node.rb:40:in `perform'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:244:in `visit_return'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:20:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/funcall.rb:177:in `perform_sass_fn'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/funcall.rb:177:in `each'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/funcall.rb:177:in `perform_sass_fn'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/funcall.rb:176:in `catch'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/funcall.rb:176:in `perform_sass_fn'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/funcall.rb:79:in `_perform'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/node.rb:40:in `perform'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/funcall.rb:76:in `_perform'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/funcall.rb:76:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/funcall.rb:76:in `_perform'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/script/node.rb:40:in `perform'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:266:in `visit_variable'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:20:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:41:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:20:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:41:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:20:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:29:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:41:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:28:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:125:in `visit_if'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:20:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:41:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:20:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:29:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:41:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:28:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:259:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:20:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:146:in `visit_import'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:146:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:146:in `visit_import'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:20:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:29:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:41:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:28:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:49:in `visit_root'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:20:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/engine.rb:308:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0.alpha.237/lib/sass/../sass/engine.rb:255:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:140:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:139:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:138:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:118:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:103:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:100:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/update_project.rb:45:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/bin/compass:29
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/bin/compass:43:in `call'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/bin/compass:43
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
   white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-q {
-  quotes: none;
-}
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-small {
-  font-size: 75%;
-}
-
-sub {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-/* =============================================================================
- * Lists
- * ========================================================================== */
-ul, ol {
-  margin: 1em 0;
-  padding: 0 0 0 40px;
-}
-
-dd {
-  margin: 0 0 0 40px;
-}
-
-nav ul, nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-/* =============================================================================
- * Embedded content
- * ========================================================================== */
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* =============================================================================
- * Figures
- * ========================================================================== */
-figure, form {
-  margin: 0;
-}
-
-/* =============================================================================
- * Forms
- * ========================================================================== */
-fieldset {
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-  border: 0;
-  *margin-left: -7px;
-}
-
-button, input, select, textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-
-button, input {
-  *overflow: visible;
-}
-
-table button, table input {
-  *overflow: auto;
-}
-
-button, html input[type="button"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-}
-
-input[type="reset"], input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-}
-input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-
-/* =============================================================================
- * Tables
- * ========================================================================== */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.clearfix {
-  zoom: 1;
-}
-.clearfix:after {
-  content: "\0020";
-  display: table;
-  clear: both;
-}
-
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-/* Only use the fancy ampersand in <h#> tags */
-h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
-  font-size: 1em;
-  font-family: Georgia, serif;
-  font-style: italic;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* Body -------------------------------------------------------------- */
-/* Establish baseline rhythm
- * from compass/typography/_vertical_rhythm */
-html {
-  font-size: 100%;
-  line-height: 1.5em;
-}
-
-body {
-  font-family: Georgia, serif;
-  color: black;
-  background: white;
-}
-
-@media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait), screen and (-o-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), screen and (-o-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait), screen and (device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), screen and (device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait) {
-  html {
-    font-size: 19.2px;
-  }
-}
-@media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait), screen and (-o-device-pixel-ratio: 3/2) and (device-width: 683px) and (orientation: landscape), screen and (-o-device-pixel-ratio: 3/2) and (device-width: 400px) and (orientation: portrait), screen and (device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait), screen and (device-pixel-ratio: 3/2) and (device-width: 683px) and (orientation: landscape), screen and (device-pixel-ratio: 3/2) and (device-width: 400px) and (orientation: portrait) {
-  html {
-    font-size: 12.8px;
-  }
-}
-/* Selected Text -------------------------------------------------------------- */
-/* -moz- must be declared separately */
-::-moz-selection {
-  color: white;
-  background: #bada55;
-  text-shadow: none;
-}
-
-::selection {
-  color: white;
-  background: #bada55;
-  text-shadow: none;
-}
-
-/* Links -------------------------------------------------------------- */
-a {
-  color: #bada55;
-}
-a:visited {
-  color: #bada55;
-}
-a:hover {
-  color: #7555da;
-}
-a:active {
-  color: #7555da;
-}
-a {
-  text-decoration: none;
-  border-bottom: 1px solid #bada55;
-}
-a:visited {
-  border-bottom-color: #bada55;
-}
-a:hover {
-  border-bottom-color: #7555da;
-}
-a:active {
-  border-bottom-color: #7555da;
-}
-
-/* import font files using @font-face, if not using a service such as typekit */
-/* Headings -------------------------------------------------------------- */
-.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-}
-
-p {
-  margin-bottom: 1.5em;
-}
-
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  line-height: 1;
-}
-
-/* Lists -------------------------------------------------------------- */
-dl {
-  margin-left: 0;
-}
-
-ol {
-  list-style: decimal;
-}
-
-ul {
-  list-style: disc;
-}
-li ul {
-  list-style-type: circle;
-}
-
-small {
-  font-size: 0.813em;
-  line-height: 1.846em;
-}
-
-q {
-  quotes: "“" "”";
-}
-q:before {
-  content: open-quote;
-}
-q:after {
-  content: close-quote;
-}
-
-abbr, acronym {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-
-sup, sub {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-mark {
-  background: red;
-  background-color: rgba(255, 255, 0, 0.5);
-  text-shadow: none;
-}
-
-ins {
-  text-decoration: none;
-  border-bottom: 1px solid gray;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-/* Images -------------------------------------------------------------- */
-img {
-  vertical-align: text-bottom;
-  height: auto;
-}
-img.left {
-  float: left;
-  margin: 12px 25px 12px 0;
-}
-img.right {
-  float: right;
-  margin: 12px 0 12px 25px;
-}
-
-/* Tables -------------------------------------------------------------- */
-/* tables still need 'cellspacing="0"' in the markup */
-.input_tiny {
-  width: 50px;
-}
-
-.input_small {
-  width: 100px;
-}
-
-.input_medium {
-  width: 150px;
-}
-
-.input_large {
-  width: 200px;
-}
-
-.input_xlarge {
-  width: 250px;
-}
-
-.input_xxlarge {
-  width: 300px;
-}
-
-.input_full {
-  width: 100%;
-}
-
-.input_full_wrap {
-  display: block;
-  padding-right: 8px;
-}
-
-::-moz-focus-inner {
-  border: 0;
-}
-
-input[type="search"]::-webkit-search-decoration {
-  display: none;
-}
-
-input,
-button,
-select,
-textarea {
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding;
-  background-clip: padding-box;
-  margin: 0;
-  vertical-align: middle;
-}
-
-button,
-input[type="reset"],
-input[type="submit"],
-input[type="button"] {
-  -webkit-appearance: none;
-  -webkit-border-radius: 11px;
-  -moz-border-radius: 11px;
-  -ms-border-radius: 11px;
-  -o-border-radius: 11px;
-  border-radius: 11px;
-  background: #dddddd url(../images/button.png) repeat-x;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
-  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
-  background-image: -moz-linear-gradient(#ffffff, #dddddd);
-  background-image: -o-linear-gradient(#ffffff, #dddddd);
-  background-image: -ms-linear-gradient(#ffffff, #dddddd);
-  background-image: linear-gradient(#ffffff, #dddddd);
-  border: 1px solid;
-  border-color: #dddddd #bbbbbb #999999;
-  cursor: pointer;
-  color: #333333;
-  font: bold 12px/1.2 Arial, sans-serif;
-  outline: 0;
-  overflow: visible;
-  padding: 3px 10px 4px;
-  text-shadow: white 0 1px 1px;
-  width: auto;
-  *padding-top: 2px;
-  *padding-bottom: 0px;
-}
-
-button {
-  *padding-top: 1px;
-  *padding-bottom: 1px;
-}
-
-button[disabled],
-input[type="reset"][disabled],
-input[type="submit"][disabled],
-input[type="button"][disabled] {
-  color: #888888;
-}
-
-textarea,
-select,
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"] {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  background-color: white;
-  border: 1px solid;
-  border-color: #848484 #c1c1c1 #e1e1e1;
-  color: black;
-  outline: 0;
-  padding: 2px 3px;
-  font-size: 13px;
-  font-family: Arial, sans-serif;
-  height: 1.8em;
-  *padding-top: 2px;
-  *padding-bottom: 1px;
-  *height: auto;
-}
-
-input.placeholder-text,
-textarea.placeholder-text {
-  color: #888888;
-}
-
-::-webkit-input-placeholder {
-  color: #888888;
-}
-
-textarea[disabled],
-select[disabled],
-input[type="date"][disabled],
-input[type="datetime"][disabled],
-input[type="datetime-local"][disabled],
-input[type="email"][disabled],
-input[type="month"][disabled],
-input[type="number"][disabled],
-input[type="password"][disabled],
-input[type="search"][disabled],
-input[type="tel"][disabled],
-input[type="text"][disabled],
-input[type="time"][disabled],
-input[type="url"][disabled],
-input[type="week"][disabled] {
-  background-color: #eeeeee;
-  color: #888888;
-}
-
-button:focus,
-button:active,
-input:focus,
-input:active,
-select:focus,
-select:active,
-textarea:focus,
-textarea:active {
-  -moz-box-shadow: #0066ff 0 0 7px;
-  -webkit-box-shadow: #0066ff 0 0 7px;
-  box-shadow: #0066ff 0 0 7px;
-  z-index: 1;
-}
-
-input[type="radio"]:focus,
-input[type="radio"]:active,
-input[type="checkbox"]:focus,
-input[type="checkbox"]:active {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.is_webkit select {
-  background-image: url(../images/select_arrow.gif);
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding-right: 20px;
-}
-
-textarea,
-select[multiple] {
-  height: auto;
-}
-
-select[multiple],
-.is_webkit select[multiple] {
-  background-image: none;
-  padding: 0;
-}
-
-textarea {
-  min-height: 40px;
-  overflow: auto;
-  resize: vertical;
-  width: 100%;
-}
-
-optgroup {
-  color: black;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.ie6_button,
-* html button {
-  background: #dddddd url(../images/button.png) repeat-x;
-  border: 1px solid;
-  border-color: #dddddd #bbbbbb #999999;
-  cursor: pointer;
-  color: #333333;
-  font: bold 12px/1.2 Arial, sans-serif;
-  padding: 2px 10px 0px;
-  overflow: visible;
-  width: auto;
-}
-
-* html button {
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
-.ie6_input,
-* html textarea,
-* html select {
-  background: white;
-  border: 1px solid;
-  border-color: #848484 #c1c1c1 #e1e1e1;
-  color: black;
-  padding: 2px 3px 1px;
-  font-size: 13px;
-  font-family: Arial, sans-serif;
-  vertical-align: top;
-}
-
-* html select {
-  margin-top: 1px;
-}
-
-.placeholder_text,
-.ie6_input_disabled,
-.ie6_button_disabled {
-  color: #888888;
-}
-
-.ie6_input_disabled {
-  background: #eeeeee;
-}
-
-/* Forms -------------------------------------------------------------- */
-fieldset {
-  margin-bottom: 1.5em;
-  border-style: solid;
-  border-width: 0.063em;
-  padding: 1.438em;
-  border-color: gray;
-  border-style: dotted;
-}
-
-legend {
-  padding: 0 0.25em;
-}
-
-label {
-  cursor: pointer;
-}
-
-label {
-  font-weight: bold;
-  margin-right: 0.5em;
-}
-
-.textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
-  font-size: 1em;
-  line-height: 1.5em;
-  border-style: solid;
-  border-width: 0.063em;
-  padding: 0.313em;
-  border-width: 1px;
-  margin-bottom: 0.75em;
-  width: 305px;
-  margin-top: 0;
-  border-color: gray;
-  height: 2.25em;
-}
-
-textarea {
-  height: 9.75;
-}
-
-input[type=search] {
-  -webkit-appearance: none;
-}
-input[type=search]::-webkit-search-decoration {
-  display: none;
-}
-
-textarea {
-  width: 305px;
-}
-
-input[type="radio"], input[type="checkbox"] {
-  margin-left: 0.25em;
-  margin-right: 0.25em;
-}
-
-/* DEFINE THE GRID CONTAINER ------------------------------------------- */
-.container, #page {
-  *zoom: 1;
-  margin: auto;
-  width: 874px;
-  max-width: 100%;
-}
-.container:after, #page:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* LAYOUT -------------------------------------------------------------- */
-#page {
-  width: 95%;
-}
-#page header {
-  clear: both;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-#page header .client-id {
-  display: inline;
-  float: left;
-  width: 66.133%;
-  margin-right: 1.602%;
-}
-#page header aside {
-  display: inline;
-  float: left;
-  width: 32.265%;
-  margin-right: 1.602%;
-  display: inline;
-  float: right;
-  margin-right: 0%;
-  #margin-left: -14px;
-}
-#page #main {
-  clear: both;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-#page #main .text-examples {
-  display: inline;
-  float: left;
-  width: 49.199%;
-  margin-right: 1.602%;
-}
-#page #main .graphic-examples {
-  display: inline;
-  float: left;
-  width: 49.199%;
-  margin-right: 1.602%;
-  display: inline;
-  float: right;
-  margin-right: 0%;
-  #margin-left: -14px;
-}
-#page footer {
-  clear: both;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-
-/* graphic examples */
-/* colors */
-.colors ul {
-  list-style-type: none;
-}
-.colors ul, .colors ul li {
-  margin: 0px;
-  padding: 0px;
-  display: inline;
-}
-.colors ul li {
-  display: inline;
-  float: left;
-  width: 13.953%;
-  margin-right: 3.256%;
-  height: 120px;
-  margin-bottom: 24px;
-  border: 4px solid white;
-  position: relative;
-}
-.colors ul li:nth-of-type(6n+6) {
-  display: inline;
-  float: right;
-  margin-right: 0%;
-  #margin-left: -14px;
-}
-.colors ul li:after {
-  position: relative;
-  top: 102%;
-  color: gray;
-}
-
-.images ul {
-  list-style-type: none;
-}
-.images ul, .images ul li {
-  margin: 0px;
-  padding: 0px;
-  display: inline;
-}
-.images ul li {
-  display: inline;
-  float: left;
-  width: 48.372%;
-  margin-right: 3.256%;
-  overflow: hidden;
-  margin-bottom: 24px;
-}
-.images ul li:nth-of-type(2n+2) {
-  display: inline;
-  float: right;
-  margin-right: 0%;
-  #margin-left: -14px;
-}
-@media screen and (min-width: 1100px) {
-  .images ul li {
-    float: none;
-    display: block;
-    width: auto;
-    margin-right: auto;
-    display: inline;
-    float: left;
-    width: 31.163%;
-    margin-right: 3.256%;
-  }
-  .images ul li:nth-of-type(2n+2) {
-    display: inline;
-    float: left;
-    width: 31.163%;
-    margin-right: 3.256%;
-  }
-  .images ul li:nth-of-type(3n+3) {
-    display: inline;
-    float: right;
-    margin-right: 0%;
-    #margin-left: -14px;
-  }
-}
-
-/* RESPONSIVE GRIDS -------------------------------------------------------------- */
-@media screen and (max-width: 480px) {
-  #page {
-    *zoom: 1;
-    margin: auto;
-    width: 138px;
-    max-width: 100%;
-    width: 95%;
-  }
-  #page:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  #page header h1 {
-    float: none;
-    display: block;
-    width: auto;
-    margin-right: auto;
-  }
-  #page header aside {
-    float: none;
-    display: block;
-    width: auto;
-    margin-right: auto;
-  }
-  #page #main {
-    clear: both;
-    margin-left: 2.174%;
-    margin-right: 2.174%;
-  }
-  #page #main .text-examples {
-    float: none;
-    display: block;
-    width: auto;
-    margin-right: auto;
-  }
-  #page #main .graphic-examples {
-    float: none;
-    display: block;
-    width: auto;
-    margin-right: auto;
-  }
-
-  .colors ul li {
-    display: inline;
-    float: left;
-    width: 45.455%;
-    margin-right: 9.091%;
-  }
-  .colors ul li:nth-of-type(even) {
-    display: inline;
-    float: right;
-    margin-right: 2.174%;
-    #margin-left: -12px;
-    margin-right: 0;
-  }
-
-  .images ul {
-    list-style-type: none;
-  }
-  .images ul, .images ul li {
-    margin: 0px;
-    padding: 0px;
-    display: inline;
-  }
-  .images ul li {
-    float: none;
-    display: block;
-    width: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 800px) {
-  #page {
-    *zoom: 1;
-    margin: auto;
-    width: 485px;
-    max-width: 100%;
-    width: 95%;
-  }
-  #page:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  #page header h1 {
-    float: none;
-    display: block;
-    width: auto;
-    margin-right: auto;
-  }
-  #page header aside {
-    float: none;
-    display: block;
-    width: auto;
-    margin-right: auto;
-  }
-  #page #main {
-    clear: both;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-  #page #main .text-examples {
-    float: none;
-    display: block;
-    width: auto;
-    margin-right: auto;
-  }
-  #page #main .graphic-examples {
-    float: none;
-    display: block;
-    width: auto;
-    margin-right: auto;
-  }
-}
-/* SITE-WIDE DESIGN -------------------------------------------------------------- */
-header {
-  *zoom: 1;
-  margin-bottom: 1.5em;
-}
-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-header aside {
-  text-align: right;
-  color: gray;
-}
-
-.group {
-  *zoom: 1;
-  margin-bottom: 3em;
-}
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.label, .styletile-1 .text-examples .logos h1:before {
-  color: gray;
-  font-size: 1em;
-  line-height: 1.5em;
-  text-transform: uppercase;
-  font-family: sans-serif;
-}
-
-.colors ul li {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
-}
-
-.images ul {
-  counter-reset: section;
-}
-.images ul li {
-  position: relative;
-  overflow: visible;
-}
-.images ul li:after {
-  position: relative;
-  top: 102%;
-  display: block;
-  color: gray;
-  counter-increment: section;
-  content: "Image " counter(section);
-}
-.images ul li img {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
-  border: 4px solid white;
-  display: block;
-}
-
-/* CLIENT NAME ------------------------------------------------------------------------------------------------------------------------------ */
-/* STYLE TILE #1 ------------------------------------------------------------------------------------------------------------------------------ */
-/* type examples */
-.styletile-1 .text-examples .logos {
-  counter-reset: logos;
-}
-.styletile-1 .text-examples .logos h1 {
-  counter-increment: logos;
-}
-.styletile-1 .text-examples .logos h1:before {
-  display: block;
-  font-weight: normal;
-  line-height: 1;
-}
-.styletile-1 .text-examples .logos h1.opt-1:before {
-  content: counter(logos) " - sans-serif";
-}
-.styletile-1 .text-examples .serif {
-  font-family: Georgia, serif;
-}
-.styletile-1 .text-examples .serif .label:after, .styletile-1 .text-examples .serif .logos h1:after:before, .styletile-1 .text-examples .logos .serif h1:after:before {
-  content: " - Georgia, serif";
-}
-.styletile-1 .text-examples .sans, .styletile-1 .text-examples header aside, header .styletile-1 .text-examples aside {
-  font-family: sans-serif;
-}
-.styletile-1 .text-examples .sans .label:after, .styletile-1 .text-examples header aside .label:after, header .styletile-1 .text-examples aside .label:after, .styletile-1 .text-examples .sans .logos h1:after:before, .styletile-1 .text-examples .logos .sans h1:after:before, .styletile-1 .text-examples header aside .logos h1:after:before, .styletile-1 .text-examples .logos header aside h1:after:before, header .styletile-1 .text-examples aside .logos h1:after:before, header .styletile-1 .text-examples .logos aside h1:after:before {
-  content: " - sans-serif";
-}
-
-/* graphic examples */
-/* colors */
-.styletile-1 .colors ul li.color-1 {
-  background-color: gray;
-}
-.styletile-1 .colors ul li.color-1:after {
-  content: "gray";
-}
-.styletile-1 .colors ul li.color-2 {
-  background-color: gray;
-}
-.styletile-1 .colors ul li.color-2:after {
-  content: "gray";
-}
-.styletile-1 .colors ul li.color-3 {
-  background-color: gray;
-}
-.styletile-1 .colors ul li.color-3:after {
-  content: "gray";
-}
-.styletile-1 .colors ul li.color-4 {
-  background-color: gray;
-}
-.styletile-1 .colors ul li.color-4:after {
-  content: "gray";
-}
-.styletile-1 .colors ul li.color-5 {
-  background-color: gray;
-}
-.styletile-1 .colors ul li.color-5:after {
-  content: "gray";
-}
-.styletile-1 .colors ul li.color-6 {
-  background-color: gray;
-}
-.styletile-1 .colors ul li.color-6:after {
-  content: "gray";
-}
+  font-family: monospace;
+  content: "Syntax error: Incompatible units: 'px' and 'em'.\A         on line 20 of /Library/Ruby/Gems/1.8/gems/susy-1.0.rc.0/sass/susy/_functions.scss, in `set-container-width'\A         from line 30 of /Library/Ruby/Gems/1.8/gems/susy-1.0.rc.0/sass/susy/_grid.scss, in `apply-container'\A         from line 56 of /Library/Ruby/Gems/1.8/gems/susy-1.0.rc.0/sass/susy/_grid.scss, in `container'\A         from line 15 of /Users/mason/www-local/coding_designer/Survival-Kit/templates/project/partials/09-styletile/_tile-layout.sass\A         from line 115 of /Users/mason/www-local/coding_designer/Survival-Kit/templates/project/style.sass"; }
