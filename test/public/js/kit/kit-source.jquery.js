@@ -3,8 +3,8 @@
 * Crawl the elements page and show example source code
 */
 (function($){
-  $('article.element .markup').wrap('<div class="example">');
-  $('article.element .markup').each(function(){
+  $('div.element .markup').wrap('<div class="example">');
+  $('div.element .markup').each(function(){
     var thisHTML = $(this).html().replace('</textarea>', '&lt;/textarea&gt;');
     $(this).after('<div class="show-source"><div class="show-hide">show source</div><textarea class="show-source-textarea">'+ thisHTML +'</textarea></div>');
     $(this).find('+ .show-source textarea.show-source-textarea').height($(this).height()).css('min-height', '100px').hide();
@@ -37,7 +37,7 @@
     $('.element-group').each(function(index) {
       $sectionMenus.append('<h4>' + $(this).find('.section-title').text().trim() + ': </h4>');
       $thisUL = $sectionMenus.append('<ul>').find('ul').last();
-      $(this).find('article.element').each(function(index) {
+      $(this).find('div.element').each(function(index) {
         $thisID = $(this).attr('id');
         $thisUL.append('<li><a href="#' + $thisID + '">' + $thisID + '</a></li>');
       });
@@ -50,7 +50,7 @@
 * Collapse markup sections
 */
 (function($){
-  $('article.element').find('.element-title').append('<a href="#" class="fold-article fold-article-open">☒</a>');
+  $('div.element').find('.element-title').append('<a href="#" class="fold-article fold-article-open">☒</a>');
   $('.fold-article-close').toggle(
     function() {
       $(this).parents('.element').addClass('closed');
@@ -94,6 +94,6 @@
 * back to top links
 */
 (function($){
-  $('article.element').find('.element-title').append('<a href="#" class="back-to-top">top</a>');
+  $('div.element').find('.element-title').append('<a href="#" class="back-to-top">top</a>');
   $('.section-title').append('<a href="#" class="back-to-top">top</a>');
 })(jQuery);

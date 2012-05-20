@@ -13,10 +13,10 @@
  * Download the source files here:
  * https://github.com/canarymason/The-Coding-Designers-Survival-Kit
  * Learn more about Sass & Compass at http://compass-style.org/ */
-.clearfix, body.survival-kit header hgroup {
+.clearfix, body.survival-kit #page > header hgroup {
   zoom: 1;
 }
-.clearfix:after, body.survival-kit header hgroup:after {
+.clearfix:after, body.survival-kit #page > header hgroup:after {
   content: "\0020";
   display: table;
   clear: both;
@@ -34,37 +34,38 @@ h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
   font-style: italic;
 }
 
-body.survival-kit header {
+body.survival-kit #page > header {
   background: #d0d3c6;
   font-family: futura, sans-serif;
   padding: 0 0.5em;
+  margin-bottom: 0;
 }
-body.survival-kit header a {
+body.survival-kit #page > header a {
   color: white;
 }
-body.survival-kit header a:visited {
+body.survival-kit #page > header a:visited {
   color: white;
 }
-body.survival-kit header a:hover {
+body.survival-kit #page > header a:hover {
   color: #aaada0;
 }
-body.survival-kit header a:active {
+body.survival-kit #page > header a:active {
   color: #aaada0;
 }
-body.survival-kit header a {
+body.survival-kit #page > header a {
   text-decoration: none;
   border-bottom: 1px solid white;
 }
-body.survival-kit header a:visited {
+body.survival-kit #page > header a:visited {
   border-bottom-color: white;
 }
-body.survival-kit header a:hover {
+body.survival-kit #page > header a:hover {
   border-bottom-color: #aaada0;
 }
-body.survival-kit header a:active {
+body.survival-kit #page > header a:active {
   border-bottom-color: #aaada0;
 }
-body.survival-kit header h1 {
+body.survival-kit #page > header h1 {
   font-size: 1.25em;
   line-height: 1.2em;
   float: left;
@@ -73,7 +74,7 @@ body.survival-kit header h1 {
   border-right: 1px solid white;
   font-family: futura, sans-serif;
 }
-body.survival-kit header h1 a {
+body.survival-kit #page > header h1 a {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
@@ -85,18 +86,19 @@ body.survival-kit header h1 a {
   display: block;
   padding: 0.3em;
 }
-body.survival-kit header h1 a {
+body.survival-kit #page > header h1 a {
   border-bottom: none;
 }
-body.survival-kit header h1 a:hover {
+body.survival-kit #page > header h1 a:hover {
   border-bottom: none;
 }
-body.survival-kit header h2 {
+body.survival-kit #page > header h2 {
   font-size: 1.563em;
   line-height: 1.92em;
+  margin-top: 0;
   font-family: futura, sans-serif;
 }
-body.survival-kit header .intro {
+body.survival-kit #page > header .intro {
   margin-left: 16.563em;
 }
 body.survival-kit h1.section-title {
@@ -105,6 +107,7 @@ body.survival-kit h1.section-title {
   background-color: #d0d3c6;
   text-transform: uppercase;
   padding-left: 12.5px;
+  margin-top: 0;
 }
 body.survival-kit h1.section-title a {
   color: black;
@@ -207,6 +210,7 @@ body.survival-kit .kit-nav {
 body.survival-kit .section-nav {
   background: #85897b;
   margin-top: -1.5em;
+  margin-bottom: 0;
 }
 body.survival-kit .section-nav h3 {
   color: #4f5249;
@@ -216,29 +220,31 @@ body.survival-kit .section-nav h3 {
 body.survival-kit .section-nav h4 {
   float: left;
   margin-right: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-body.survival-kit article.element {
+body.survival-kit div.element {
   *zoom: 1;
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
   margin-bottom: 24px;
   padding-bottom: 23px;
 }
-body.survival-kit article.element:after {
+body.survival-kit div.element:after {
   content: "";
   display: table;
   clear: both;
 }
-body.survival-kit article.element:last-child {
+body.survival-kit div.element:last-child {
   padding-bottom: 0;
   border-bottom-width: 0;
   margin-bottom: 0;
 }
-body.survival-kit article.element.closed {
+body.survival-kit div.element.closed {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-body.survival-kit article.element h2.element-title {
+body.survival-kit div.element h2.element-title {
   font-size: 1em;
   line-height: 1.5em;
   background-color: #85897b;
@@ -246,68 +252,68 @@ body.survival-kit article.element h2.element-title {
   text-transform: uppercase;
   padding-left: 12.5px;
 }
-body.survival-kit article.element h2.element-title a {
+body.survival-kit div.element h2.element-title a {
   color: white;
 }
-body.survival-kit article.element h2.element-title a:visited {
+body.survival-kit div.element h2.element-title a:visited {
   color: white;
 }
-body.survival-kit article.element h2.element-title a:hover {
+body.survival-kit div.element h2.element-title a:hover {
   color: #bada55;
 }
-body.survival-kit article.element h2.element-title a:active {
+body.survival-kit div.element h2.element-title a:active {
   color: #bada55;
 }
-body.survival-kit article.element h2.element-title a {
+body.survival-kit div.element h2.element-title a {
   text-decoration: none;
   border-bottom: 1px solid white;
 }
-body.survival-kit article.element h2.element-title a:visited {
+body.survival-kit div.element h2.element-title a:visited {
   border-bottom-color: white;
 }
-body.survival-kit article.element h2.element-title a:hover {
+body.survival-kit div.element h2.element-title a:hover {
   border-bottom-color: #bada55;
 }
-body.survival-kit article.element h2.element-title a:active {
+body.survival-kit div.element h2.element-title a:active {
   border-bottom-color: #bada55;
 }
-body.survival-kit article.element .example {
+body.survival-kit div.element .example {
   *zoom: 1;
   border-bottom: 1px dashed rgba(128, 128, 128, 0.1);
   margin-bottom: 12px;
   padding-bottom: 11px;
   *zoom: 1;
 }
-body.survival-kit article.element .example:after {
+body.survival-kit div.element .example:after {
   content: "";
   display: table;
   clear: both;
 }
-body.survival-kit article.element .example:last-child {
+body.survival-kit div.element .example:last-child {
   padding-bottom: 0;
   border-bottom-width: 0;
   margin-bottom: 0;
 }
-body.survival-kit article.element .example:after {
+body.survival-kit div.element .example:after {
   content: "";
   display: table;
   clear: both;
 }
-body.survival-kit article.element .example .markup {
+body.survival-kit div.element .example .markup {
   display: inline;
   float: left;
   width: 64.228%;
   margin-right: 2.439%;
 }
-body.survival-kit article.element .example .markup + .show-source {
+body.survival-kit div.element .example .markup + .show-source {
   display: inline;
   float: right;
   width: 30.894%;
   margin-right: 0;
 }
-body.survival-kit article.element .example .markup + .show-source .show-hide {
+body.survival-kit div.element .example .markup + .show-source .show-hide {
   text-align: right;
 }
-body.survival-kit article.element .example .markup + .show-source + p {
+body.survival-kit div.element .example .markup + .show-source + p {
   clear: both;
 }
