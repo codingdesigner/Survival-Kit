@@ -3,6 +3,7 @@
 // see: basic/default/typography
 // and: http://compass-style.org/reference/compass/typography/vertical_rhythm/
 $base-font-size: 16px
+$base-line-height: $base-font-size * 1.5
 
 
 // --- Modular SCALE (used by _defaults.sass) -----------
@@ -15,7 +16,7 @@ $base-size: $base-font-size
 
 // Dimensions
 // basic values, independant of any css framework
-$kit-baseline: $base-font-size * 1.5
+$kit-baseline: $base-line-height
 $kit-baseline-half: $kit-baseline * 0.5
 $kit-baseline-neg: $kit-baseline * -1
 $kit-gutter: ms(2)
@@ -36,3 +37,15 @@ $pixel-normalize: true
 $init-type: normalize
 
 
+// Grid Variables --------------------------------------------------------------
+// Define the dimensions of the grid.
+// These values populate other supported grid systems
+$kit-total-cols: 6
+$kit-col-width: 140px
+$kit-gutter-width: $kit-gutter
+$kit-side-gutter-width: 0px
+
+$kit-container-width: ($kit-col-width * $kit-total-cols) + ($kit-gutter-width * ($kit-total-cols - 1))
+
+$show-grid: true
+// $show-baseline: false

@@ -44,3 +44,8 @@
   +no-bullets
   margin-left: 0
   padding-left: 0
+
+=susy-grid-background-baseline()
+  +grid-background($total-columns, $column-width, $gutter-width, $base-line-height, $column-width*0, rgba($c-primary, 0.5), transparent, rgba($c-primary, 0.8), $force-fluid: true)
+  +background-origin(content-box)
+  +background-clip(content-box)
