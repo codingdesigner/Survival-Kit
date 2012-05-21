@@ -1011,55 +1011,55 @@ del {
   text-decoration: line-through;
 }
 
-@media only screen and (max-width:  500px) {
+@media screen and (max-width:  500px) {
   .foo {
     content: "foo";
   }
 }
 
-@media only screen and (max-width:  30em) {
+@media screen and (max-width:  30em) {
   .bar {
     content: "bar";
   }
 }
 
-@media only screen and (min-width:  500px) and (max-width:  700px) {
+@media screen and (min-width:  500px) and (max-width:  700px) {
   .baz {
     content: "baz";
   }
 }
 
-@media only screen and (min-width:  700px) {
+@media screen and (min-width:  700px) {
   .omg {
     content: "omg";
   }
 }
 
-@media only screen and (max-width:  700px) {
+@media screen and (max-width:  700px) {
   .wtf {
     content: "wtf";
   }
 }
 
-@media only screen and (max-width:  700px) and (orientation:  portrait) {
+@media screen and (max-width:  700px) and (orientation:  portrait) {
   .bbq {
     content: "bbq";
   }
 }
 
-@media only screen and (max-width:  700px) and (orientation:  portrait) and (monochrome) {
+@media screen and (max-width:  700px) and (orientation:  portrait) and (monochrome) {
   .zztop {
     content: "zztop";
   }
 }
 
-@media only print and (max-width:  500px) {
+@media print and (max-width:  500px) {
   .elp {
     content: "elp";
   }
 }
 
-@media only screen and (monochrome) {
+@media screen and (monochrome) {
   .csny {
     content: "csny";
   }
