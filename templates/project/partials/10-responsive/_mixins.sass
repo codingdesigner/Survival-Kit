@@ -4,24 +4,81 @@
   resist the urge to settle on common device sizes
   http://marcdrummond.com/responsive-web-design/2011/12/29/default-breakpoints-are-dead
 
-  USAGE:
-  .some-class
-    color: red
-    +respond-to(handhelds)
-      color: green
 
-=respond-to($media)
-  @if $media == handhelds
-    @media only screen and (max-width: 320px)
-      @debug 'you still need to define the proper width'
-      @content
-  @else if $media == medium-screens
-    @media only screen and (min-width: 321px) and (max-width: 1024px)
-      @debug 'you still need to define the proper width'
-      @content
-  @else if $media == wide-screens
-    @media only screen and (min-width: 1200px) and (max-width: 1635px)
-      @content
-  @else if $media == superwide-screens
-    @media only screen and (min-width: 1635px)
-      @content
+////////////////////////////
+// SURVIVAL KIT - BREAKPOINT
+////////////////////////////
+
+// create $breakpoint variables like so
+// assume max-width if only a number
+$breakpoint1: 500px
+$breakpoint2: 30em
+// set min-width/max-width if both values are numbers
+$breakpoint3: 500px 700px
+// if one value is a string, assume a feature/value pair
+$breakpoint4: min-width 700px
+$breakpoint5: max-width 700px
+// for multidimensional lists, assume each item is a feature value pair
+$breakpoint6: max-width 700px, orientation portrait
+// handle one-sided features (ie. monochrome)
+$breakpoint7: max-width 700px, orientation portrait, monochrome
+$breakpoint8: monochrome
+
+=breakpoint($breakpoint, $media: 'screen')
+  // initialize string
+  $query-string: 'only #{$media} '
+  @if type-of($breakpoint) == number
+    // assume max-width if only a number
+    $query-string: #{$query-string}unquote("and (max-width:  #{$breakpoint}) ")
+  @if type-of($breakpoint) == string
+    // handle one-sided features (ie. monochrome)
+    $query-string: #{$query-string}unquote("and (#{$breakpoint}) ")
+  @else if type-of($breakpoint) == list
+    @if (type-of(nth($breakpoint, 1)) == number) and (type-of(nth($breakpoint, 2)) == number)
+      // set min/max if both values are numbers
+      $breakpoint: sort-list($breakpoint)
+      $query-string: #{$query-string}unquote("and (min-width:  #{nth($breakpoint, 1)}) ")
+      $query-string: #{$query-string}unquote("and (max-width:  #{nth($breakpoint, 2)}) ")
+    @else if (type-of(nth($breakpoint, 1)) == string)
+      // if one value is a string, assume a feature/value pair
+      $query-string: #{$query-string}unquote("and (#{nth($breakpoint, 1)}:  #{nth($breakpoint, 2)}) ")
+    @else if (type-of(nth($breakpoint, 1)) == list)
+      // for multidimensional lists, assume each item is a feature value pair
+      @each $item in $breakpoint
+        @if type-of($item) == list
+          $query-string: #{$query-string}unquote("and (#{nth($item, 1)}:  #{nth($item, 2)}) ")
+        @else
+          // handle one-sided features (ie. monochrome)
+          $query-string: #{$query-string}unquote("and (#{$item}) ")
+  // write out the media query
+  @media #{$query-string}
+    @content
+
+
+.foo
+  +breakpoint($breakpoint1)
+    content: 'foo'
+.bar
+  +breakpoint($breakpoint2)
+    content: 'bar'
+.baz
+  +breakpoint($breakpoint3)
+    content: 'baz'
+.omg
+  +breakpoint($breakpoint4)
+    content: 'omg'
+.wtf
+  +breakpoint($breakpoint5)
+    content: 'wtf'
+.bbq
+  +breakpoint($breakpoint6)
+    content: 'bbq'
+.zztop
+  +breakpoint($breakpoint7)
+    content: 'zztop'
+.elp
+  +breakpoint($breakpoint1, print)
+    content: 'elp'
+.csny
+  +breakpoint($breakpoint8)
+    content: 'csny'
