@@ -498,6 +498,19 @@ table {
   visibility: hidden;
 }
 
+em, address {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+pre {
+  font-family: Consolas, Menlo, "Courier New", monospace, monospace;
+  _font-family: Consolas, Menlo, "Courier New", monospace, monospace;
+}
+
 /* Only use the fancy ampersand in <h#> tags */
 h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
   font-size: 1em;
@@ -505,6 +518,7 @@ h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
   font-style: italic;
 }
 
+/* import font files using @font-face, if not using a service such as typekit */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -576,13 +590,6 @@ a:active {
   border-bottom-color: #7555da;
 }
 
-/* import font files using @font-face, if not using a service such as typekit */
-/* Headings -------------------------------------------------------------- */
-.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-}
-
 p {
   margin-bottom: 1.5em;
 }
@@ -608,6 +615,26 @@ ul {
 }
 li ul {
   list-style-type: circle;
+}
+
+/* Headings -------------------------------------------------------------- */
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Images -------------------------------------------------------------- */
+img {
+  vertical-align: text-bottom;
+  height: auto;
+}
+img.left {
+  float: left;
+  margin: 12px 25px 12px 0;
+}
+img.right {
+  float: right;
+  margin: 12px 0 12px 25px;
 }
 
 small {
@@ -651,31 +678,6 @@ mark {
   text-shadow: none;
 }
 
-ins {
-  text-decoration: none;
-  border-bottom: 1px solid gray;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-/* Images -------------------------------------------------------------- */
-img {
-  vertical-align: text-bottom;
-  height: auto;
-}
-img.left {
-  float: left;
-  margin: 12px 25px 12px 0;
-}
-img.right {
-  float: right;
-  margin: 12px 0 12px 25px;
-}
-
-/* Tables -------------------------------------------------------------- */
-/* tables still need 'cellspacing="0"' in the markup */
 .input_tiny {
   width: 50px;
 }
@@ -988,4 +990,15 @@ textarea {
 input[type="radio"], input[type="checkbox"] {
   margin-left: 0.25em;
   margin-right: 0.25em;
+}
+
+/* Tables -------------------------------------------------------------- */
+/* tables still need 'cellspacing="0"' in the markup */
+ins {
+  text-decoration: none;
+  border-bottom: 1px solid gray;
+}
+
+del {
+  text-decoration: line-through;
 }
