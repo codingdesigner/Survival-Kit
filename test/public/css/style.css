@@ -498,17 +498,25 @@ table {
   visibility: hidden;
 }
 
-em, address {
+img, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color], input:not([type="radio"]), table {
+  max-width: 100%;
+}
+
+em, address, cite, q, dfn, i {
   font-style: italic;
 }
 
-strong {
+strong, dfn, b {
   font-weight: bold;
 }
 
-pre {
+pre, code, kbd, tt {
   font-family: Consolas, Menlo, "Courier New", monospace, monospace;
   _font-family: Consolas, Menlo, "Courier New", monospace, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
 }
 
 /* Only use the fancy ampersand in <h#> tags */
@@ -618,7 +626,7 @@ li ul {
 }
 
 /* Headings -------------------------------------------------------------- */
-.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
@@ -958,7 +966,7 @@ label {
   margin-right: 0.5em;
 }
 
-.textinput, textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
+textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=time], input[type=number], input[type=range], input[type=search], input[type=color] {
   font-size: 1em;
   line-height: 1.5em;
   border-style: solid;
