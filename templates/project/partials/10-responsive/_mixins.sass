@@ -8,25 +8,24 @@
 ////////////////////////////
 // SURVIVAL KIT - BREAKPOINT
 // breakpoint($breakpoint, $media: 'screen')
+//
+// // create $breakpoint variables like so
+// // assume $breakpoint-default-feature if only a number
+// $breakpoint1: 500px
+// $breakpoint2: 30em
+// // set min-width/max-width if both values are numbers
+// $breakpoint3: 500px 700px
+// // if one value is a string, assume a feature/value pair
+// $breakpoint4: min-width 700px
+// $breakpoint5: max-width 700px
+// // for multidimensional lists, assume each item is a feature/value pair
+// $breakpoint6: max-width 700px, orientation portrait
+// // handle one-sided features (ie. monochrome)
+// $breakpoint7: max-width 700px, orientation portrait, monochrome
+// $breakpoint8: monochrome
 ////////////////////////////
 
 $breakpoint-default-feature: min-width !default
-
-// create $breakpoint variables like so
-// assume $breakpoint-default-feature if only a number
-$breakpoint1: 500px
-$breakpoint2: 30em
-// set min-width/max-width if both values are numbers
-$breakpoint3: 500px 700px
-// if one value is a string, assume a feature/value pair
-$breakpoint4: min-width 700px
-$breakpoint5: max-width 700px
-// for multidimensional lists, assume each item is a feature value pair
-$breakpoint6: max-width 700px, orientation portrait
-// handle one-sided features (ie. monochrome)
-$breakpoint7: max-width 700px, orientation portrait, monochrome
-$breakpoint8: monochrome
-
 
 @function breakpoint-concatenate($query-string, $new-value, $feature: $breakpoint-default-feature)
   $new-string: ''
@@ -67,32 +66,3 @@ $breakpoint8: monochrome
   // write out the media query
   @media #{$query-string}
     @content
-
-
-.foo
-  +breakpoint($breakpoint1)
-    content: 'foo'
-.bar
-  +breakpoint($breakpoint2)
-    content: 'bar'
-.baz
-  +breakpoint($breakpoint3)
-    content: 'baz'
-.omg
-  +breakpoint($breakpoint4)
-    content: 'omg'
-.wtf
-  +breakpoint($breakpoint5)
-    content: 'wtf'
-.bbq
-  +breakpoint($breakpoint6)
-    content: 'bbq'
-.zztop
-  +breakpoint($breakpoint7)
-    content: 'zztop'
-.elp
-  +breakpoint($breakpoint1, print)
-    content: 'elp'
-.csny
-  +breakpoint($breakpoint8)
-    content: 'csny'
