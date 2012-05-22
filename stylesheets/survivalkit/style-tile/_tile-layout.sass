@@ -23,30 +23,27 @@ $media-layout-desktop: $bp-desktop 12
 
 @import susy
 
+
 /* LAYOUT --------------------------------------------------------------
 #page
   .ie6 &, .ie7 &, .ie8 &
     +container
-    @if $show-grid
-      +susy-grid-background-baseline
+    +susy-grid-backgrounds
   +at-breakpoint($media-layout-handheld)
     $container-style: fluid
     $grid-padding: 0
     +container
-    @if $show-grid
-      +susy-grid-background-baseline
+    +susy-grid-backgrounds
   +at-breakpoint($media-layout-handheld-wide)
     $container-style: fluid
     $grid-padding: 0
     +container
-    @if $show-grid
-      +susy-grid-background-baseline
+    +susy-grid-backgrounds
   +at-breakpoint($media-layout-medium)
     $grid-padding: 1em
     $container-style: fluid
     +container
-    @if $show-grid
-      +susy-grid-background-baseline
+    +susy-grid-backgrounds
     header
       .client-id
         +span-columns(3, 6)
@@ -61,8 +58,7 @@ $media-layout-desktop: $bp-desktop 12
     $grid-padding: 1em
     $container-style: fluid
     +container
-    @if $show-grid
-      +susy-grid-background-baseline
+    +susy-grid-backgrounds
     header
       .client-id
         +span-columns(5, 8)
@@ -77,8 +73,7 @@ $media-layout-desktop: $bp-desktop 12
     $grid-padding: 1em
     $container-style: magic
     +container
-    @if $show-grid
-      +susy-grid-background-baseline
+    +susy-grid-backgrounds
     header
       .client-id
         +span-columns(8, 12)
