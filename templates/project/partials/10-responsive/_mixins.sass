@@ -7,10 +7,13 @@
 
 ////////////////////////////
 // SURVIVAL KIT - BREAKPOINT
+// breakpoint($breakpoint, $media: 'screen')
 ////////////////////////////
 
+$breakpoint-default-feature: min-width !default
+
 // create $breakpoint variables like so
-// assume max-width if only a number
+// assume $breakpoint-default-feature if only a number
 $breakpoint1: 500px
 $breakpoint2: 30em
 // set min-width/max-width if both values are numbers
@@ -24,7 +27,8 @@ $breakpoint6: max-width 700px, orientation portrait
 $breakpoint7: max-width 700px, orientation portrait, monochrome
 $breakpoint8: monochrome
 
-@function breakpoint-concatenate($query-string, $new-value, $feature: 'max-width')
+
+@function breakpoint-concatenate($query-string, $new-value, $feature: $breakpoint-default-feature)
   $new-string: ''
   @if $feature != false
     $new-string: #{$query-string}unquote("and (#{$feature}:  #{$new-value}) ")

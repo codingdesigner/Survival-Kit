@@ -1011,13 +1011,13 @@ del {
   text-decoration: line-through;
 }
 
-@media screen and (max-width:  500px) {
+@media screen and (min-width:  500px) {
   .foo {
     content: "foo";
   }
 }
 
-@media screen and (max-width:  30em) {
+@media screen and (min-width:  30em) {
   .bar {
     content: "bar";
   }
@@ -1053,7 +1053,7 @@ del {
   }
 }
 
-@media print and (max-width:  500px) {
+@media print and (min-width:  500px) {
   .elp {
     content: "elp";
   }
