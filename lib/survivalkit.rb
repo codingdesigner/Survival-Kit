@@ -3,7 +3,7 @@ Compass::Frameworks.register("survivalkit", :path => "#{File.dirname(__FILE__)}/
 
 module SurvivalKit
 
-  VERSION = "0.2.1"
-  DATE = "2012-03-03"
+  VERSION = "0.3"
+  DATE = "2012-05-22"
 
 end
