@@ -3,3 +3,4 @@
 *.livereload
 *.gem
 .sass-cache
+.DS_Store
