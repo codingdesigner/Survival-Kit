@@ -1,0 +1,21 @@
+@import survivalkit/reset/meyer-reset
+@import survivalkit/reset/normalize
+@import survivalkit/reset/pixel-normalize
+
+$init-type: meyer !default
+$init-headers: true !default
+
+=init($init-type, $init-headers)
+  @if $init-type == meyer
+    +meyer-reset
+  @if $init-type == normalize
+    +normalize
+    @if $init-headers
+      // reset the header sizes
+      h1, h2, h3, h4, h5, h6
+        font-size: 100%
+        margin-top: 0
+        margin-bottom: 0
+
+
++init(normalize, false)

@@ -1,0 +1,14 @@
+%div#search.element
+  %h2.element-title Search Field
+  .markup
+    #block-search-form.block.block-search.contextual-links-region
+      .content
+        %form#search-block-form{"accept-charset" => "UTF-8", :action => "", :method => "post"}
+          %div
+            .container-inline
+              %h2.element-invisible Search form
+              .form-item.form-type-searchfield.form-item-search-block-form
+                %label.element-invisible{:for => "edit-search-block-form--2"} Search
+                %input#edit-search-block-form--2.form-text.form-search{:maxlength => "128", :name => "search_block_form", :size => "15", :title => "Enter the terms you wish to search for.", :type => "search", :value => ""}
+              #edit-actions.form-actions.form-wrapper
+                %input#edit-submit.form-submit{:name => "op", :type => "submit", :value => "Search"}

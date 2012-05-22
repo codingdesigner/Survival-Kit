@@ -1,0 +1,28 @@
+%div#node.element
+  %h2.element-title Node Page
+  .markup
+    %h1 This is the node title
+    #node-1.node.node-article.node-promoted.clearfix
+      .submitted
+        Submitted by
+        %span.username Anonymous (not verified)
+        on Sat, 01/15/2011 - 16:14
+      .content
+        .field.field-name-field-image.field-type-image.field-label-hidden
+          .field-items
+            .field-item.even
+              %img{:alt => "placeholder image", :src => "http://dummyimage.com/100x100/ccc/fff"}/
+        .field.field-name-body.field-type-text-with-summary.field-label-hidden
+          .field-items
+            .field-item.even
+              %p Ad esca ludus. Adipiscing autem defui similis utinam. Abluo causa duis esca meus nostrud si volutpat.
+        .field.field-name-field-tags.field-type-taxonomy-term-reference.field-label-above
+          .field-label Tags: 
+          .field-items
+            .field-item.even
+              %a{:href => "/taxonomy/term/1"} foo
+            .field-item.odd
+              %a{:href => "/taxonomy/term/2"} bar
+      %ul.links.inline
+        %li.comment-add.first.last.active
+          %a.active{:href => "/node/1#comment-form", :title => "Share your thoughts and opinions related to this posting."} Add new comment

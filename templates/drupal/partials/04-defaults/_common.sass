@@ -1,0 +1,110 @@
+@if $init-type != normalize
+  html
+    font-size: 100%
+    overflow-y: scroll
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+    // -webkit-font-smoothing: antialiased
+
+////////////////////////////
+// DEFAULT BOX SIZING TO BORDER BOX
+// see: http://paulirish.com/2012/box-sizing-border-box-ftw/
+////////////////////////////
+*
+  +box-sizing("border-box")
+
+/* Body --------------------------------------------------------------
+
+/* Establish baseline rhythm
+ * from compass/typography/_vertical_rhythm
+@if $establish-baseline
+  +establish-baseline
+
+body
+  font-family: $font-body
+  color: $text-color
+  background: $background-color
+
+@if $pixel-normalize
+  +pixel-normalize
+
+/* Selected Text --------------------------------------------------------------
+/* -moz- must be declared separately
+
+\::-moz-selection
+  // "+accessible-color" located in 'kit_partials/mixins/_helpers.sass'
+  +accessible-color($alt-color)
+  background: $alt-color
+  text-shadow: none
+
+\::selection
+  // "+accessible-color" located in 'kit_partials/mixins/_helpers.sass'
+  +accessible-color($alt-color)
+  background: $alt-color
+  text-shadow: none
+
+
+/* Links --------------------------------------------------------------
+a
+  +link-colors($alt-color, complement($alt-color), complement($alt-color), $alt-color, false)
+  +underline-links($alt-color, complement($alt-color), complement($alt-color), $alt-color, false)
+  // +link-transitions
+
+em
+  @extend %italic
+
+strong
+  @extend %bold
+
+p
+  +trailer
+
+hr
+
+pre
+  @extend %mono
+  // margin: $base-rhythm-unit
+  white-space: pre
+  white-space: pre-wrap
+  word-wrap: break-word
+  line-height: 1
+
+blockquote
+  // margin: $base-rhythm-unit $kit-gutter
+  // font-style: italic
+  // font-weight: 300
+
+/* Lists --------------------------------------------------------------
+
+ol, ul
+  // +trailer
+  // padding-left: $kit-gutter
+
+dl
+  margin-left: 0
+
+ol
+  list-style: decimal
+
+ul
+  list-style: disc
+  li &
+    list-style-type: circle
+
+dt
+  // +leader
+  // font-style: italic
+  // &:first-of-type
+  //   +leader(0)
+
+dd
+  // padding-left: $kit-gutter
+
+//
+figure
+
+figcaption
+
+address
+  @extend %italic
+

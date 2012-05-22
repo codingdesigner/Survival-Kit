@@ -1,0 +1,27 @@
+%div#pre.element
+  %h2.element-title
+    %a{:href => "http://developers.whatwg.org/grouping-content.html#the-pre-element"} pre
+  .markup
+    %p
+      This is the
+      %code Panel
+      constructor:
+    %pre
+      %code
+        :preserve
+          function Panel(element, canClose, closeHandler) {
+                        this.element = element;
+                        this.canClose = canClose;
+                        this.closeHandler = function () { if (closeHandler) closeHandler() };
+                      }            .markup
+    %pre
+      :preserve
+                                                   ,,                      ,,                     ,,
+          .M"""bgd                                 db                    `7MM      `7MMF' `YMM'   db   mm
+         ,MI    "Y                                                         MM        MM   .M'          MM
+         `MMb.   `7MM  `7MM  `7Mb,od8 `7M'   `MF'`7MM `7M'   `MF',6"Yb.    MM        MM .d"     `7MM mmMMmm
+           `YMMNq. MM    MM    MM' "'   VA   ,V    MM   VA   ,V 8)   MM    MM        MMMMM.       MM   MM
+         .     `MM MM    MM    MM        VA ,V     MM    VA ,V   ,pm9MM    MM        MM  VMA      MM   MM
+         Mb     dM MM    MM    MM         VVV      MM     VVV   8M   MM    MM        MM   `MM.    MM   MM
+         P"Ybmmd"  `Mbod"YML..JMML.        W     .JMML.    W    `Moo9^Yo..JMML.    .JMML.   MMb..JMML. `Mbmo
+

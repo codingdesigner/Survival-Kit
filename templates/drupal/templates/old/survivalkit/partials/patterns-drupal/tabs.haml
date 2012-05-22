@@ -1,0 +1,14 @@
+%div#tabs.element
+  %h2.element-title Tabs
+  .markup
+    .tabs
+      %h2.element-invisible Primary tabs
+      %ul.tabs.primary
+        %li.active
+          %a.active{:href => "/blog/about"}
+            View
+            %span.element-invisible (active tab)
+        %li
+          %a{:href => "/node/52/edit"} Edit
+        %li
+          %a{:href => "/node/52/devel"} Devel
