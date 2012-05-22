@@ -30,7 +30,7 @@ stylesheet 'partials/10-media/_print.sass'
 stylesheet 'partials/11-browser-adjustments/_ie.sass'
 stylesheet 'partials/11-browser-adjustments/_modernizr.sass'
 stylesheet 'partials/11-browser-adjustments/_selectivizr.sass'
-stylesheet 'your-design-here/_design.sass
+stylesheet 'your-design-here/_design.sass'
 # discover :stylesheets
 
 discover :javascripts
