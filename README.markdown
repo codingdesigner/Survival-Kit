@@ -45,6 +45,8 @@ I'll be recording a new video soon.
 
 - [Sass](http://sass-lang.com/)
 - [Compass](http://compass-style.org/)
+- [Susy](http://susy.oddbird.net/)
+- [Breakpoint](https://github.com/canarymason/breakpoint)
 
 ### Helpful
 
