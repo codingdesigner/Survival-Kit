@@ -11,6 +11,9 @@ gem 'compass'
 # Susy Grid
 gem 'susy'
 
+# Breakpoint
+gem 'breakpoint'
+
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
 # gem 'RedCloth'  # Textile

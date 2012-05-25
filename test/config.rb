@@ -3,6 +3,7 @@
 #
 
 require 'susy'
+require 'breakpoint'
 
 # HTTP paths
 http_path             = '/'

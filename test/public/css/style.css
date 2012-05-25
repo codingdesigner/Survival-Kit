@@ -1011,7 +1011,6 @@ del {
   text-decoration: line-through;
 }
 
-/* SITE-WIDE DESIGN -------------------------------------------------------------- */
 /* LAYOUT -------------------------------------------------------------- */
 .ie6 .styletile #page, .ie7 .styletile #page, .ie8 .styletile #page {
   *zoom: 1;
