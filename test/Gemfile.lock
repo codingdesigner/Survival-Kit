@@ -28,7 +28,7 @@ GEM
       rack-test (~> 0.5)
       tilt (~> 1.3)
       tzinfo
-    susy (1.0.rc.0)
+    susy (1.0.rc.1)
       compass (>= 0.12.2.rc.0)
       sass (>= 3.2.0.alpha.237)
     syntax (1.0.0)
