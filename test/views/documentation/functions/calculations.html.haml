@@ -1,0 +1,67 @@
+- @title = "Functions → Calculations"
+- @subnav = "<nav class='section-nav'></nav> "
+
+/ Calculations
+%section#helpers.element-group
+  %h1.section-title Calculations
+  %p.intro
+    :markdown
+      Generic function to calculate a percentage based on pixel values
+      (independent of any specific grid system)
+  %div.example
+    %h3.extendable
+      %a.permalink{:href => "#function-calc-percent"}
+        :preserve
+          calc-percent
+    #function-calc-percent.extendable-source
+      %pre
+        :preserve
+          @function calc-percent($target, $container)
+            @return ($target / $container) * 100%
+  %div.example
+    %h3.extendable
+      %a.permalink{:href => "#function-calc-em"}
+        :preserve
+          calc-em
+    #function-calc-em.extendable-source
+      %pre
+        :preserve
+          @function calc-em($target, $container: $base-font-size)
+            @return ($target / $container) * 1em
+  %div.example
+    %h3.extendable
+      %a.permalink{:href => "#function-cp"}
+        :preserve
+          'cp'
+    #function-cp.extendable-source
+      .comment
+        shortcut name
+      %pre
+        :preserve
+          @function cp($target, $container)
+            @return calc-percent($target, $container)
+  %div.example
+    %h3.extendable
+      %a.permalink{:href => "#function-ce"}
+        :preserve
+          'ce'
+    #function-ce.extendable-source
+      .comment
+        shortcut name
+      %pre
+        :preserve
+          @function ce($target, $container: $base-font-size)
+            @return calc-em($target, $container)
+  %div.example
+    %h3.extendable
+      %a.permalink{:href => "#function-calc-col-width"}
+        :preserve
+          calc-col-width
+    #function-calc-col-width.extendable-source
+      .comment
+        // return the width of an arbitrary number of columns in a css grid system
+      %pre
+        :preserve
+          @function calc-col-width($number-of-cols)
+            $calc-width: ($kit-col-width * $number-of-cols) + ($kit-gutter-width * ($number-of-cols - 1))
+            @return $calc-width
