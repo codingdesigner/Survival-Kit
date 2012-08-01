@@ -14,10 +14,11 @@
         :preserve
           %html-frame
     #extend-html-frame-hidden.extendable-source
+      .comment
+        &= "apply to <html> and <body>"
       %pre
         :preserve
           %html-frame
-            // apply to <html> and <body>
             height: 100%
             margin: 0pt
   %div.example
@@ -26,10 +27,11 @@
         :preserve
           %frame
     #extend-frame-hidden.extendable-source
+      .comment
+        &= "apply to <body>"
       %pre
         :preserve
           %frame
-            // aplly to <body>
             display: table
             height: 100%
             width: 100%
