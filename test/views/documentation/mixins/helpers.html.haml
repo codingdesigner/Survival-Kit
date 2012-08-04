@@ -6,113 +6,114 @@
   %h1.section-title Helpers
   %p.intro
     :markdown
-      Extendables that help.
+      Mixins that help.
   %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-clearfix-hidden"}
+    %h3.mixin
+      %a.permalink{:href => "#mixin-hidden"}
         :preserve
-          %clearfix
-    #extend-clearfix-hidden.extendable-source
+          =hidden
+    #mixin-hidden.extendable-source
       %pre
         :preserve
-          %clearfix
-            +kit-clearfix
+          =hidden
+            display: none !important
+            visibility: hidden
   %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-clearfix"}
+    %h3.mixin
+      %a.permalink{:href => "#mixin-clearfix"}
         :preserve
           .clearfix
-    #extend-clearfix.extendable-source
+    #mixin-clearfix.extendable-source
       %pre
         :preserve
           .clearfix
             @extend %clearfix
   %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-hidden-hidden"}
+    %h3.mixin
+      %a.permalink{:href => "#mixin-hidden-hidden"}
         :preserve
           %hidden
-    #extend-hidden-hidden.extendable-source
+    #mixin-hidden-hidden.extendable-source
       %pre
         :preserve
           %hidden
             +hidden
   %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-hidden"}
+    %h3.mixin
+      %a.permalink{:href => "#mixin-hidden"}
         :preserve
           .hidden
-    #extend-hidden.extendable-source
+    #mixin-hidden.extendable-source
       %pre
         :preserve
           .hidden
             @extend %hidden
   %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-visuallyhidden-hidden"}
+    %h3.mixin
+      %a.permalink{:href => "#mixin-visuallyhidden-hidden"}
         :preserve
           %visuallyhidden
-    #extend-visuallyhidden-hidden.extendable-source
+    #mixin-visuallyhidden-hidden.extendable-source
       %pre
         :preserve
           %visuallyhidden
             +visuallyhidden
   %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-visuallyhidden-focusable-hidden"}
+    %h3.mixin
+      %a.permalink{:href => "#mixin-visuallyhidden-focusable-hidden"}
         :preserve
           %visuallyhidden.focusable
-    #extend-visuallyhidden-focusable-hidden.extendable-source
+    #mixin-visuallyhidden-focusable-hidden.extendable-source
       %pre
         :preserve
           %visuallyhidden.focusable
             +visuallyhidden(true)
   %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-invisible-hidden"}
+    %h3.mixin
+      %a.permalink{:href => "#mixin-invisible-hidden"}
         :preserve
           %invisible
-    #extend-invisible-hidden.extendable-source
+    #mixin-invisible-hidden.extendable-source
       %pre
         :preserve
           %invisible
             +invisible
   %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-constrain-to-parent-hidden"}
+    %h3.mixin
+      %a.permalink{:href => "#mixin-constrain-to-parent-hidden"}
         :preserve
           %constrain-to-parent
-    #extend-constrain-to-parent-hidden.extendable-source
+    #mixin-constrain-to-parent-hidden.extendable-source
       %pre
         :preserve
           %constrain-to-parent
             max-width: 100%
   %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-italic-hidden"}
+    %h3.mixin
+      %a.permalink{:href => "#mixin-italic-hidden"}
         :preserve
           %italic
-    #extend-italic-hidden.extendable-source
+    #mixin-italic-hidden.extendable-source
       %pre
         :preserve
           %italic
             font-style: italic
   %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-bold-hidden"}
+    %h3.mixin
+      %a.permalink{:href => "#mixin-bold-hidden"}
         :preserve
           %bold
-    #extend-bold-hidden.extendable-source
+    #mixin-bold-hidden.extendable-source
       %pre
         :preserve
           %bold
             font-weight: bold
   %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-wireframe-hidden"}
+    %h3.mixin
+      %a.permalink{:href => "#mixin-wireframe-hidden"}
         :preserve
           %wireframe
-    #extend-wireframe-hidden.extendable-source
+    #mixin-wireframe-hidden.extendable-source
       %pre
         :preserve
           %wireframe
