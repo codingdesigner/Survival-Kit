@@ -1,0 +1,18 @@
+////////////////////////////
+// ABSOLUTE PSEUDO ELEMENTS
+////////////////////////////
+
+// $side: can be 'before', 'after', or 'both'
+@mixin pseudo($side: "before") {
+  position: relative;
+  @if $side == "both" {
+    &:before, &:after {
+      position: absolute;
+    }
+  }
+  @else {
+    &:#{$side} {
+      position: absolute;
+    }
+  }
+}

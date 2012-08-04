@@ -1,0 +1,76 @@
+@mixin hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+@mixin visuallyhidden($focusable: false) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  @if $focusable {
+    &:active, &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+}
+
+@mixin invisible {
+  visibility: hidden;
+}
+
+@mixin scale-image-ie($image) {
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="#{image_url($image, true, false)}",  sizingMethod="scale");
+}
+
+@mixin kit-clearfix {
+  &:after {
+    content: $space;
+    display: table;
+    clear: both;
+  }
+  zoom: 1;
+}
+
+@mixin accessible-color($background: $white) {
+  @if lightness($background) >= 65% {
+    color: $text-color;
+  }
+  @else {
+    color: white;
+  }
+}
+
+@mixin clean-list {
+  @include no-bullets;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+@mixin susy-grid-backgrounds {
+  @if $show-grid and $show-baseline {
+    @include susy-grid-background-baseline;
+  }
+  @else if $show-grid {
+    @include susy-grid-background;
+  }
+  @else if $show-baseline {
+    @include baseline-grid-background;
+  }
+}
+
+@mixin susy-grid-background-baseline {
+  @include grid-background($total-columns, $column-width, $gutter-width, $base-line-height, $column-width * 0, $grid-background-column-color, $grid-background-gutter-color, $grid-background-baseline-color, $force_fluid: true);
+  @include background-origin(content-box);
+  @include background-clip(content-box);
+}

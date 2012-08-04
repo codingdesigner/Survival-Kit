@@ -1,0 +1,145 @@
+// styles meant to assist while designing markup conventions
+// in elements.html, elements-drupal.html
+
+@import "../mixins/helpers";
+
+$kit-font-family: futura, $font-sans;
+
+$sk-lightgray: mix($lightgray, $c-primary, 90%);
+$sk-gray: mix($gray, $c-primary, 90%);
+$sk-darkgray: mix($darkgray, $c-primary, 90%);
+
+body.survival-kit {
+  #page {
+    > header {
+      background: $sk-lightgray;
+      font-family: $kit-font-family;
+      padding: 0 0.5em;
+      margin-bottom: 0;
+      a {
+        @include link-colors($white, $sk-darkgray, $sk-darkgray, $white);
+        @include underline-links($white, $sk-darkgray, $sk-darkgray, $white);
+      }
+      hgroup {
+        @extend .clearfix;
+      }
+      h1 {
+        @include adjust-font-size-to(ms(1));
+        float: left;
+        padding-right: $kit-gutter;
+        margin-right: $kit-gutter;
+        border-right: 1px solid white;
+        font-family: $kit-font-family;
+        a {
+          @include remove-link-underlines;
+          @include replace-text-with-dimensions("survival-kit-logo.png");
+          display: block;
+          padding: 0.3em;
+        }
+      }
+      h2 {
+        @include adjust-font-size-to(ms(2));
+        margin-top: 0;
+        font-family: $kit-font-family;
+      }
+      .intro {
+        margin-left: calc-em(265px, $base-font-size);
+      }
+    }
+  }
+  h1.section-title {
+    @include adjust-font-size-to(ms(3));
+    background-color: $sk-lightgray;
+    text-transform: uppercase;
+    padding-left: $kit-gutter-half;
+    margin-top: 0;
+    a {
+      @include link-colors($black, $alt-color, $alt-color, $black, false);
+      @include underline-links($black, $alt-color, $alt-color, $black, false);
+    }
+  }
+  .back-to-top {
+    @include remove-link-underlines;
+    float: right;
+    font-size: 10px;
+  }
+  h1.section-title .fold-section, h2.element-title .fold-article {}
+  .kit-nav, .section-nav {
+    @include trailer;
+    padding: 0 0.5em;
+    font-family: $kit-font-family;
+    color: $sk-lightgray;
+    #{headings()} {
+      font-size: $base-font-size;
+    }
+    a {
+      @include link-colors($white, $alt-color, $alt-color, $white);
+      @include underline-links($white, $alt-color, $alt-color, $white);
+    }
+    ul {
+      @include horizontal-list(0.5em);
+    }
+  }
+  .kit-nav {
+    background: shade($sk-gray, 20%);
+  }
+  .section-nav {
+    background: $sk-gray;
+    margin-top: calc-em(-24px, $base-font-size);
+    margin-bottom: 0;
+    h3 {
+      color: shade($sk-gray, 40%);
+      @include adjust-font-size-to($base-font-size - 2);
+    }
+    h4 {
+      float: left;
+      margin-right: 0.5em;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  div.element {
+    @include vertical-separation($kit-baseline * 2, 1px, transparentize($border-color, 0.9));
+    &.closed {
+      @include un-vertical-separation;
+    }
+    h2.element-title {
+      @include adjust-font-size-to(ms(0));
+      background-color: $sk-gray;
+      color: $white;
+      text-transform: uppercase;
+      padding-left: $kit-gutter-half;
+      a {
+        @include link-colors($white, $alt-color, $alt-color, $white, false);
+        @include underline-links($white, $alt-color, $alt-color, $white, false);
+      }
+    }
+    .example {
+      @include vertical-separation($kit-baseline, 1px, transparentize($border-color, 0.9), dashed);
+      @include pie-clearfix;
+      .markup {
+        // +columns(4)
+        display: inline;
+        float: left;
+        width: 64.228%;
+        margin-right: 2.439%;
+        & + .show-source {
+          // +columns(2)
+          // +omega(6)
+          display: inline;
+          float: right;
+          width: 30.894%;
+          margin-right: 0;
+          // margin-left: -24px
+          @extend .mono;
+          .show-hide {
+            text-align: right;
+          }
+          & + p {
+            clear: both;
+          }
+        }
+      }
+    }
+  }
+}

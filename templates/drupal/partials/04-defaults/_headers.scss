@@ -1,0 +1,56 @@
+/* Headings -------------------------------------------------------------- */
+
+// #{headers(all)},
+%h1, %h2, %h3, %h4, %h5, %h6 {
+  @extend %headers;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+%h1 {
+  // +adjust-font-size-to(ms(6))
+}
+
+%h2 {
+  // +adjust-font-size-to(ms(5))
+}
+
+%h3 {
+  // +adjust-font-size-to(ms(4))
+}
+
+%h4 {
+  // +adjust-font-size-to(ms(3))
+}
+
+%h5 {
+  // +adjust-font-size-to(ms(2))
+}
+
+%h6 {
+  // +adjust-font-size-to(ms(1))
+}
+
+h1 {
+  @extend %h1;
+}
+
+h2 {
+  @extend %h2;
+}
+
+h3 {
+  @extend %h3;
+}
+
+h4 {
+  @extend %h4;
+}
+
+h5 {
+  @extend %h5;
+}
+
+h6 {
+  @extend %h6;
+}

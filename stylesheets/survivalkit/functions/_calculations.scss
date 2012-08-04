@@ -1,0 +1,24 @@
+// Generic function to calculate a percentage based on pixel values
+// (independent of any specific grid system)
+@function calc-percent($target, $container) {
+  @return $target / $container * 100%;
+}
+
+@function calc-em($target, $container) {
+  @return $target / $container * 1em;
+}
+
+// shortcut name
+@function cp($target, $container) {
+  @return calc-percent($target, $container);
+}
+
+@function ce($target, $container) {
+  @return calc-em($target, $container);
+}
+
+// return the width of an arbitrary number of columns in a css grid system
+@function calc-col-width($number-of-cols) {
+  $calc-width: $kit-col-width * $number-of-cols + $kit-gutter-width * ($number-of-cols - 1);
+  @return $calc-width;
+}
