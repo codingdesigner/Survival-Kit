@@ -1,26 +1,10 @@
 /* The Coding Designer's Survival Kit
- * A framework for designing websites in the browser.
- *
- * Much love to:
- * Sass, Compass, HTML5 Boilerplate, Modernizr, Formalize, and more
- *
- * Available at http://thecodingdesigner.com
- * twitter: http://twitter.com/canarymason */
-
-/* -------------------------------------------------------------------------------------
- * -------------------------------------------------------------------------------------- */
-/* This CSS was authored using Sass & Compass
+ * This CSS was authored using Sass & Compass
  * Download the source files here:
- * https://github.com/canarymason/The-Coding-Designers-Survival-Kit
+ * https://github.com/canarymason/Survival-Kit
  * Learn more about Sass & Compass at http://compass-style.org/ */
 
-@charset "UTF-8";
-
-// FOLLOW THE STEP-BY-STEP IN THE CORRESPONDING PARTIAL TO YOUR CHOSEN FLAVOR
-// ---------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------
+// FOLLOW THE STEP-BY-STEP
 // ---------------------------------------------------------------------------------------
 // INTRODUCTION
 // This is the central organizing sass file where we manage all the imported partials
@@ -29,7 +13,6 @@
 // should help you put these files in order.
 // ---------------------------------------------------------------------------------------
 
-// TODO: refactor items in /lib/ into a compass extension
 
 // THE FIRST IMPORTS ADD NO CSS UPON COMPILE
 
@@ -48,7 +31,7 @@
 @import "compass";
 @import "susy";
 @import "breakpoint";
-
+@import "modular-scale";
 // add any others here
 
 // ✔ IMPORT COMMON MIXINS
@@ -56,27 +39,26 @@
 @import "survivalkit/mixins/all";
 
 // ✔ 2. ADD YOUR OWN MIXINS
-// @import partials/00-mixins/all
-
-// THE FOLLOWING IMPORTS WILL ADD CSS UPON COMPILE
-
-// ✔ ADD A CSS RESET OR NORMALIZATION
-@import "partials/02-reset/reset";
+@import "partials/03-mixins/custom";
 
 // ✔ IMPORT COMMON HELPER EXTENDABLES
 // @import survivalkit/extend/all
 @import "survivalkit/extend/helpers";
-
-// @import survivalkit/extend/sticky-footer
+@import "survivalkit/extend/sticky-footer";
 
 // ✔ 2. ADD YOUR OWN EXTENDABLES
 // typography
-@import "partials/03-extend/all";
+// @import "partials/03-extend/all";
+
+// THE FOLLOWING IMPORTS WILL ADD CSS UPON COMPILE
+
+// ✔ ADD A CSS RESET OR NORMALIZATION
+// @import "partials/02-reset/reset";
 
 // ✔ 3. EDIT AND ADD YOUR DEFAULT STYLES
 // This is worth going into in detail
 // edit as you see fit for your project
-@import "partials/04-defaults/all";
+// @import "partials/04-defaults/all";
 
 // ✔ 4. CHOOSE A GRID SYSTEM
 // Susy: Install the Susy Gem (https://rubygems.org/gems/compass-susy-plugin)
@@ -94,7 +76,7 @@
 // ✔ 7. YOUR CUSTOM LAYOUT AND DESIGN SASS
 // THIS IS WHERE MOST CUSTOM WORK WILL GO
 // -- PRIMARY DESIGN --
-@import "partials/08-your-design-here/design";
+// @import "partials/08-your-design-here/design";
 
 // ------ OR ------
 // -- STYLE TILE DESIGN --
@@ -102,8 +84,8 @@
 // work with styletile.html
 // see: http://badassideas.com/style-tiles-as-a-web-design-process-tool/
 // (requires susy)
-@import "survivalkit/style-tile/all";
-@import "partials/09-styletile/tile-design";
+// @import "survivalkit/style-tile/all";
+// @import "partials/09-styletile/tile-design";
 
 // --------------------------------------------------------------------------------------
 

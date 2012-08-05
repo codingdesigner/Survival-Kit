@@ -3,6 +3,7 @@
 #
 
 require 'susy'
+require 'modular-scale'
 require 'breakpoint'
 
 # HTTP paths

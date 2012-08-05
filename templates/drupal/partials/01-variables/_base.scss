@@ -9,7 +9,7 @@ $base-line-height: $base-font-size * 1.5;
 // values used to determine modular scale values
 // see: src/common/mixins/_modular-scale.sass
 // and http://modularscale.com/
-$ratio: $golden $major-third;
+$ratio: golden_ratio() major_third();
 $base-size: $base-font-size;
 
 // Dimensions

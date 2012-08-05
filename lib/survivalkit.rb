@@ -1,6 +1,7 @@
 require 'compass'
 require 'susy'
 require 'breakpoint'
+require 'modular-scale'
 Compass::Frameworks.register("survivalkit", :path => "#{File.dirname(__FILE__)}/..")
 
 module SurvivalKit
