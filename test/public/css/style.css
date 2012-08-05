@@ -3,11 +3,3 @@
  * Download the source files here:
  * https://github.com/canarymason/Survival-Kit
  * Learn more about Sass & Compass at http://compass-style.org/ */
-/* Only use the fancy ampersand in <h#> tags */
-h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
-  font-size: 1em;
-  font-family: Georgia, serif;
-  font-style: italic;
-}
-
-/* DEFINE THE GRID CONTAINER -------------------------------------------------------------- */

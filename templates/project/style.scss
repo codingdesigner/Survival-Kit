@@ -56,7 +56,7 @@
 // ✔ 2. ADD YOUR OWN EXTENDABLES
 // typography
 // @import "partials/04-extend/all";
-@import "partials/04-extend/typography";
+// @import "partials/04-extend/typography";
 // @import "partials/04-extend/helpers";
 
 // ✔ 3. EDIT AND ADD YOUR DEFAULT STYLES
@@ -67,14 +67,11 @@
 // ✔ 4. CHOOSE A GRID SYSTEM
 // Susy: Install the Susy Gem (https://rubygems.org/gems/compass-susy-plugin)
 //   and uncomment the Susy line in /config.rb (# require 'susy')
-@import "partials/06-grids/grids-susy";
+// @import "partials/06-grids/grids-susy";
 
 // ✔ 5. STYLE COMMON UI PATTERNS / DRUPAL UI PATTERNS
-// @import partials/06-ui-patterns/common
-// @import partials/06-ui-patterns/drupal-patterns
-
-// ✔ 6. PROCESS SPRITES WITH COMPASS
-// @import partials/07-sprites/sprites
+// @import "partials/07-ui-patterns/common";
+// @import "partials/07-ui-patterns/drupal-patterns";
 
 // --------------------------------------------------------------------------------------
 // ✔ 7. YOUR CUSTOM LAYOUT AND DESIGN SASS
@@ -83,7 +80,7 @@
 // @import "partials/08-your-design-here/design";
 
 // ------ OR ------
-// -- STYLE TILE DESIGN --
+// -- ✔ 8. STYLE TILE DESIGN --
 // enable these partials for styletile layout and design
 // work with styletile.html
 // see: http://badassideas.com/style-tiles-as-a-web-design-process-tool/
@@ -93,10 +90,5 @@
 
 // --------------------------------------------------------------------------------------
 
-// ✔ 9. ENABLE PRINT STYLES
-// @import partials/10-media/print
-
-// ✔ 10 ADJUST FOR LESSER/GREATER SYSTEMS
-// @import partials/11-browser_adjustments/modernizr
-// IE STYLES - aren't needed by other browsers, so compile them as a separate file and load via conditionals
-// SELECTIVIZR is nice, but the fallback css should really be compiled to a separate file
+// ✔ 10. ENABLE PRINT STYLES
+// @import "partials/10-media/print";
