@@ -1,6 +1,5 @@
 @import "survivalkit/reset/meyer-reset";
 @import "survivalkit/reset/normalize";
-@import "survivalkit/reset/pixel-normalize";
 
 $init-type: meyer !default;
 $init-headers: true !default;
@@ -22,4 +21,4 @@ $init-headers: true !default;
   }
 }
 
-@include init(normalize, false);
+@include init($init-type, $init-headers);

@@ -4,16 +4,8 @@
   @include kit-clearfix;
 }
 
-.clearfix {
-  @extend %clearfix;
-}
-
 %hidden {
   @include hidden;
-}
-
-.hidden {
-  @extend %hidden;
 }
 
 %visuallyhidden {

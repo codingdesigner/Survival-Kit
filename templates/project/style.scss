@@ -37,28 +37,32 @@
 // ✔ IMPORT COMMON MIXINS
 // enable / disable, but do not edit these files
 @import "survivalkit/mixins/all";
+@import "survivalkit/reset/pixel-normalize";
 
 // ✔ 2. ADD YOUR OWN MIXINS
 @import "partials/03-mixins/custom";
+
 
 // ✔ IMPORT COMMON HELPER EXTENDABLES
 // @import survivalkit/extend/all
 @import "survivalkit/extend/helpers";
 @import "survivalkit/extend/sticky-footer";
 
-// ✔ 2. ADD YOUR OWN EXTENDABLES
-// typography
-// @import "partials/03-extend/all";
-
 // THE FOLLOWING IMPORTS WILL ADD CSS UPON COMPILE
 
 // ✔ ADD A CSS RESET OR NORMALIZATION
 // @import "partials/02-reset/reset";
 
+// ✔ 2. ADD YOUR OWN EXTENDABLES
+// typography
+// @import "partials/04-extend/all";
+@import "partials/04-extend/typography";
+// @import "partials/04-extend/helpers";
+
 // ✔ 3. EDIT AND ADD YOUR DEFAULT STYLES
 // This is worth going into in detail
 // edit as you see fit for your project
-// @import "partials/04-defaults/all";
+@import "partials/05-defaults/all";
 
 // ✔ 4. CHOOSE A GRID SYSTEM
 // Susy: Install the Susy Gem (https://rubygems.org/gems/compass-susy-plugin)

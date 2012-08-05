@@ -2,6 +2,12 @@
 // Kit Default Variables
 ////////////////////////////
 
+// pick a reset of normalization
+// accepted values: 'meyer' (default), 'normalize'
+// choose to reset header sizes (applies to 'normalize' only)
+// $init-headers: true;
+$init-type: meyer;
+
 $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.5;
 
@@ -24,12 +30,6 @@ $kit-gutter-neg: $kit-gutter * -1;
 // pixel-normalize
 // http://www.alistapart.com/articles/a-pixel-identity-crisis/
 $pixel-normalize: true;
-
-// pick a reset of normalization
-// accepted values: 'meyer', 'normalize'
-// choose to reset header sizes (applies to 'normalize' only)
-// $init-headers: true
-$init-type: normalize;
 
 // Grid Variables --------------------------------------------------------------
 // Define the dimensions of the grid.
