@@ -27,6 +27,11 @@
   visibility: hidden;
 }
 
+body.survival-kit div.element .example .markup + .show-source {
+  font-family: Consolas, Menlo, "Courier New", monospace, monospace;
+  _font-family: Consolas, Menlo, "Courier New", monospace, monospace;
+}
+
 /* Only use the fancy ampersand in <h#> tags */
 h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
   font-size: 1em;
@@ -78,7 +83,7 @@ body.survival-kit #page > header h1 a {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url('../../images/survival-kit-logo.png?1337319895');
+  background-image: url('../../images/survival-kit-logo.png?1343746974');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 220px;
@@ -93,17 +98,17 @@ body.survival-kit #page > header h1 a:hover {
   border-bottom: none;
 }
 body.survival-kit #page > header h2 {
-  font-size: 1.563em;
+  font-size: 1.5625em;
   line-height: 1.92em;
   margin-top: 0;
   font-family: futura, sans-serif;
 }
 body.survival-kit #page > header .intro {
-  margin-left: 16.563em;
+  margin-left: 16.5625em;
 }
 body.survival-kit h1.section-title {
   font-size: 1.625em;
-  line-height: 1.846em;
+  line-height: 1.84615em;
   background-color: #d0d3c6;
   text-transform: uppercase;
   padding-left: 12.5px;
@@ -215,7 +220,7 @@ body.survival-kit .section-nav {
 body.survival-kit .section-nav h3 {
   color: #4f5249;
   font-size: 0.875em;
-  line-height: 1.714em;
+  line-height: 1.71429em;
 }
 body.survival-kit .section-nav h4 {
   float: left;

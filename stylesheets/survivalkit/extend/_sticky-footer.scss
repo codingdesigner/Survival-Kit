@@ -20,6 +20,6 @@
 }
 
 %row-expand {
-  @extend .row;
+  @extend %row;
   height: 100%;
 }

@@ -552,7 +552,7 @@ body {
     font-size: 19.2px;
   }
 }
-@media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait), screen and (-o-device-pixel-ratio: 3/2) and (device-width: 683px) and (orientation: landscape), screen and (-o-device-pixel-ratio: 3/2) and (device-width: 400px) and (orientation: portrait), screen and (device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait), screen and (device-pixel-ratio: 3/2) and (device-width: 683px) and (orientation: landscape), screen and (device-pixel-ratio: 3/2) and (device-width: 400px) and (orientation: portrait) {
+@media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait), screen and (-o-device-pixel-ratio: 3 / 2) and (device-width: 683px) and (orientation: landscape), screen and (-o-device-pixel-ratio: 3 / 2) and (device-width: 400px) and (orientation: portrait), screen and (device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait), screen and (device-pixel-ratio: 3 / 2) and (device-width: 683px) and (orientation: landscape), screen and (device-pixel-ratio: 3 / 2) and (device-width: 400px) and (orientation: portrait) {
   html {
     font-size: 12.8px;
   }
@@ -646,8 +646,8 @@ img.right {
 }
 
 small {
-  font-size: 0.813em;
-  line-height: 1.846em;
+  font-size: 0.8125em;
+  line-height: 1.84615em;
 }
 
 q {
@@ -947,8 +947,8 @@ optgroup {
 fieldset {
   margin-bottom: 1.5em;
   border-style: solid;
-  border-width: 0.063em;
-  padding: 1.438em;
+  border-width: 0.0625em;
+  padding: 1.4375em;
   border-color: gray;
   border-style: dotted;
 }
@@ -970,8 +970,8 @@ textarea, input[type=text], input[type=password], input[type=email], input[type=
   font-size: 1em;
   line-height: 1.5em;
   border-style: solid;
-  border-width: 0.063em;
-  padding: 0.313em;
+  border-width: 0.0625em;
+  padding: 0.3125em;
   border-width: 1px;
   margin-bottom: 0.75em;
   width: 305px;
@@ -1011,6 +1011,7 @@ del {
   text-decoration: line-through;
 }
 
+/* SITE-WIDE DESIGN -------------------------------------------------------------- */
 /* LAYOUT -------------------------------------------------------------- */
 .ie6 .styletile #page, .ie7 .styletile #page, .ie8 .styletile #page {
   *zoom: 1;
@@ -1026,7 +1027,7 @@ del {
   display: table;
   clear: both;
 }
-@media (max-width: 20.063em) {
+@media (max-width: 20.0625em) {
   .styletile #page {
     *zoom: 1;
     width: auto;
@@ -1041,7 +1042,7 @@ del {
     clear: both;
   }
 }
-@media (min-width: 20.063em) and (max-width: 30.063em) {
+@media (min-width: 20.0625em) and (max-width: 30.0625em) {
   .styletile #page {
     *zoom: 1;
     width: auto;
@@ -1056,7 +1057,7 @@ del {
     clear: both;
   }
 }
-@media (min-width: 30.063em) and (max-width: 45.063em) {
+@media (min-width: 30.0625em) and (max-width: 45.0625em) {
   .styletile #page {
     *zoom: 1;
     width: auto;
@@ -1071,33 +1072,33 @@ del {
     clear: both;
   }
   .styletile #page header .client-id {
-    width: 48.276%;
+    width: 48.27586%;
     float: left;
-    margin-right: 3.448%;
+    margin-right: 3.44828%;
     display: inline;
   }
   .styletile #page header aside {
-    width: 48.276%;
+    width: 48.27586%;
     float: right;
     margin-right: 0;
     #margin-left: -1em;
     display: inline;
   }
   .styletile #page #main .text-examples {
-    width: 48.276%;
+    width: 48.27586%;
     float: left;
-    margin-right: 3.448%;
+    margin-right: 3.44828%;
     display: inline;
   }
   .styletile #page #main .graphic-examples {
-    width: 48.276%;
+    width: 48.27586%;
     float: right;
     margin-right: 0;
     #margin-left: -1em;
     display: inline;
   }
 }
-@media (min-width: 45.063em) and (max-width: 64.063em) {
+@media (min-width: 45.0625em) and (max-width: 64.0625em) {
   .styletile #page {
     *zoom: 1;
     width: auto;
@@ -1112,33 +1113,33 @@ del {
     clear: both;
   }
   .styletile #page header .client-id {
-    width: 61.538%;
+    width: 61.53846%;
     float: left;
-    margin-right: 2.564%;
+    margin-right: 2.5641%;
     display: inline;
   }
   .styletile #page header aside {
-    width: 35.897%;
+    width: 35.89744%;
     float: right;
     margin-right: 0;
     #margin-left: -1em;
     display: inline;
   }
   .styletile #page #main .text-examples {
-    width: 48.718%;
+    width: 48.71795%;
     float: left;
-    margin-right: 2.564%;
+    margin-right: 2.5641%;
     display: inline;
   }
   .styletile #page #main .graphic-examples {
-    width: 48.718%;
+    width: 48.71795%;
     float: right;
     margin-right: 0;
     #margin-left: -1em;
     display: inline;
   }
 }
-@media (min-width: 64.063em) {
+@media (min-width: 64.0625em) {
   .styletile #page {
     *zoom: 1;
     max-width: 59em;
@@ -1154,26 +1155,26 @@ del {
     clear: both;
   }
   .styletile #page header .client-id {
-    width: 66.102%;
+    width: 66.10169%;
     float: left;
-    margin-right: 1.695%;
+    margin-right: 1.69492%;
     display: inline;
   }
   .styletile #page header aside {
-    width: 32.203%;
+    width: 32.20339%;
     float: right;
     margin-right: 0;
     #margin-left: -1em;
     display: inline;
   }
   .styletile #page #main .text-examples {
-    width: 49.153%;
+    width: 49.15254%;
     float: left;
-    margin-right: 1.695%;
+    margin-right: 1.69492%;
     display: inline;
   }
   .styletile #page #main .graphic-examples {
-    width: 49.153%;
+    width: 49.15254%;
     float: right;
     margin-right: 0;
     #margin-left: -1em;
@@ -1202,11 +1203,11 @@ del {
   top: 102%;
   color: gray;
 }
-@media (max-width: 20.063em) {
+@media (max-width: 20.0625em) {
   .styletile .colors ul li {
-    width: 44.444%;
+    width: 44.44444%;
     float: left;
-    margin-right: 11.111%;
+    margin-right: 11.11111%;
     display: inline;
   }
   .styletile .colors ul li:nth-of-type(2n+2) {
@@ -1216,11 +1217,11 @@ del {
     display: inline;
   }
 }
-@media (min-width: 20.063em) and (max-width: 30.063em) {
+@media (min-width: 20.0625em) and (max-width: 30.0625em) {
   .styletile .colors ul li {
-    width: 28.571%;
+    width: 28.57143%;
     float: left;
-    margin-right: 7.143%;
+    margin-right: 7.14286%;
     display: inline;
   }
   .styletile .colors ul li:nth-of-type(3n+3) {
@@ -1230,11 +1231,11 @@ del {
     display: inline;
   }
 }
-@media (min-width: 30.063em) and (max-width: 45.063em) {
+@media (min-width: 30.0625em) and (max-width: 45.0625em) {
   .styletile .colors ul li {
-    width: 28.571%;
+    width: 28.57143%;
     float: left;
-    margin-right: 7.143%;
+    margin-right: 7.14286%;
     display: inline;
   }
   .styletile .colors ul li:nth-of-type(3n+3) {
@@ -1244,11 +1245,11 @@ del {
     display: inline;
   }
 }
-@media (min-width: 45.063em) and (max-width: 64.063em) {
+@media (min-width: 45.0625em) and (max-width: 64.0625em) {
   .styletile .colors ul li {
-    width: 21.053%;
+    width: 21.05263%;
     float: left;
-    margin-right: 5.263%;
+    margin-right: 5.26316%;
     display: inline;
   }
   .styletile .colors ul li:nth-of-type(4n+4) {
@@ -1258,11 +1259,11 @@ del {
     display: inline;
   }
 }
-@media (min-width: 64.063em) {
+@media (min-width: 64.0625em) {
   .styletile .colors ul li {
-    width: 13.793%;
+    width: 13.7931%;
     float: left;
-    margin-right: 3.448%;
+    margin-right: 3.44828%;
     display: inline;
   }
   .styletile .colors ul li:nth-of-type(6n+6) {
@@ -1285,11 +1286,11 @@ del {
   overflow: hidden;
   margin-bottom: 24px;
 }
-@media (min-width: 45.063em) and (max-width: 64.063em) {
+@media (min-width: 45.0625em) and (max-width: 64.0625em) {
   .styletile .images ul li {
-    width: 47.368%;
+    width: 47.36842%;
     float: left;
-    margin-right: 5.263%;
+    margin-right: 5.26316%;
     display: inline;
   }
   .styletile .images ul li:nth-of-type(2n+2) {
@@ -1299,11 +1300,11 @@ del {
     display: inline;
   }
 }
-@media (min-width: 64.063em) {
+@media (min-width: 64.0625em) {
   .styletile .images ul li {
-    width: 48.276%;
+    width: 48.27586%;
     float: left;
-    margin-right: 3.448%;
+    margin-right: 3.44828%;
     display: inline;
   }
   .styletile .images ul li:nth-of-type(2n+2) {
@@ -1412,35 +1413,35 @@ header aside {
   background-color: gray;
 }
 .styletile-1 .colors ul li.color-1:after {
-  content: "gray";
+  content: gray;
 }
 .styletile-1 .colors ul li.color-2 {
   background-color: gray;
 }
 .styletile-1 .colors ul li.color-2:after {
-  content: "gray";
+  content: gray;
 }
 .styletile-1 .colors ul li.color-3 {
   background-color: gray;
 }
 .styletile-1 .colors ul li.color-3:after {
-  content: "gray";
+  content: gray;
 }
 .styletile-1 .colors ul li.color-4 {
   background-color: gray;
 }
 .styletile-1 .colors ul li.color-4:after {
-  content: "gray";
+  content: gray;
 }
 .styletile-1 .colors ul li.color-5 {
   background-color: gray;
 }
 .styletile-1 .colors ul li.color-5:after {
-  content: "gray";
+  content: gray;
 }
 .styletile-1 .colors ul li.color-6 {
   background-color: gray;
 }
 .styletile-1 .colors ul li.color-6:after {
-  content: "gray";
+  content: gray;
 }

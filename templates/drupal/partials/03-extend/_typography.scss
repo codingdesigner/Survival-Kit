@@ -23,7 +23,7 @@
 }
 
 %allcaps {
-  @extend .caps;
+  @extend %caps;
   text-transform: uppercase;
 }
 
@@ -32,7 +32,7 @@
 }
 
 %smallcaps {
-  @extend .caps;
+  @extend %caps;
   font-variant: small-caps;
 }
 
