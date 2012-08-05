@@ -62,12 +62,12 @@
 // ✔ 3. EDIT AND ADD YOUR DEFAULT STYLES
 // This is worth going into in detail
 // edit as you see fit for your project
-@import "partials/05-defaults/all";
+// @import "partials/05-defaults/all";
 
 // ✔ 4. CHOOSE A GRID SYSTEM
 // Susy: Install the Susy Gem (https://rubygems.org/gems/compass-susy-plugin)
 //   and uncomment the Susy line in /config.rb (# require 'susy')
-// @import partials/05-grids/grids-susy.sass
+@import "partials/06-grids/grids-susy";
 
 // ✔ 5. STYLE COMMON UI PATTERNS / DRUPAL UI PATTERNS
 // @import partials/06-ui-patterns/common

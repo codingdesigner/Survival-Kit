@@ -32,15 +32,7 @@ $kit-gutter-neg: $kit-gutter * -1;
 $pixel-normalize: true;
 
 // Grid Variables --------------------------------------------------------------
-// Define the dimensions of the grid.
-// These values populate other supported grid systems
-$kit-total-cols: 6;
-$kit-col-width: 140px;
-$kit-gutter-width: $kit-gutter;
-$kit-side-gutter-width: 0px;
-
-$kit-container-width: $kit-col-width * $kit-total-cols + $kit-gutter-width * ($kit-total-cols - 1);
-
+// note: set grid system-specific variables in the grid section (06)
 $show-grid: false;
 $show-baseline: false;
 
