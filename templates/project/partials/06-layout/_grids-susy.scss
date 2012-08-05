@@ -17,22 +17,18 @@ $side-gutter-width: $gutter-width;
 // BUILD THE GRID FOR YOUR SITE
 
 // BUILD THE GRID BY CALLING SUSY MIXINS ON DOM ELEMENTS
-// example:
-// body {
-//   #container {
-//     @include container;
-//     @if $show-grid == true {
-//       @include susy-grid-background;
-//     }
-//     @elseif $show-baseline == true {
-//       @include baseline-grid-background;
-//     }
+// #container {
+//   @include container;
+//   @if $show-grid == true {
+//     @include susy-grid-background;
 //   }
-//   .main {
-//     @include span-columns(8);
-//   }
-//   .side {
-//     @include span-columns(4 omega);
+//   @elseif $show-baseline == true {
+//     @include baseline-grid-background;
 //   }
 // }
-
+// .main {
+//   @include span-columns(8);
+// }
+// .side {
+//   @include span-columns(4 omega);
+// }

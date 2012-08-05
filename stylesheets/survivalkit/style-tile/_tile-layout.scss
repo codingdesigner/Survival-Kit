@@ -23,7 +23,7 @@ $media-layout-desktop: $bp-desktop 12;
 
 @import "susy";
 
-/* LAYOUT -------------------------------------------------------------- */
+// LAYOUT --------------------------------------------------------------
 .styletile {
   #page {
     .ie6 &, .ie7 &, .ie8 & {
@@ -115,9 +115,9 @@ $media-layout-desktop: $bp-desktop 12;
   }
 }
 
-/* graphic examples */
+// graphic examples
 
-/* colors */
+// colors
 .styletile {
   .colors {
     ul {

@@ -1,10 +1,10 @@
-//* PRINT STYLES **//
+// PRINT STYLES
 
 // Based heavily on the work of:
 // Paul Irish & Divya Manian: http://html5boilerplate.com/
 // And many others, less directly...
 
-/* Print Defaults -------------------------------------------------------------- */
+// Print Defaults --------------------------------------------------------------
 @media print {
   * {
     background: transparent !important;
@@ -13,7 +13,7 @@
     filter: none !important;
     -ms-filter: none !important;
   }
-  /* Black prints faster: h5bp.com/s */
+  // Black prints faster: h5bp.com/s
   body {
     font-family: $font-serifs !important;
     font-size: 12pt !important;
@@ -42,7 +42,7 @@
       content: "";
     }
   }
-  /* Don't show links for images, or Javascript/internal links */
+  // Don't show links for images, or Javascript/internal links
   pre, blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid;
@@ -50,7 +50,7 @@
   thead {
     display: table-header-group;
   }
-  /* h5bp.com/t */
+  // h5bp.com/t
   tr {
     page-break-inside: avoid;
   }

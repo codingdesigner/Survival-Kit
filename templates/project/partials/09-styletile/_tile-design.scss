@@ -1,5 +1,4 @@
 // Create the design for your site below
-/* SITE-WIDE DESIGN -------------------------------------------------------------- */
 
 header {
   @include pie-clearfix;
@@ -55,20 +54,19 @@ header {
   }
 }
 
-/* CLIENT NAME ------------------------------------------------------------------------------------------------------------------------------ */
+// CLIENT NAME ------------------------------------------------------------------------------------------------------------------------------
 
 header {
   h1.client-name {
-    // +replace-text-with-dimensions('wwlogo-01.png')
- 
+    // @include replace-text-with-dimensions('wwlogo-01.png');
   }
 }
 
-/* STYLE TILE #1 ------------------------------------------------------------------------------------------------------------------------------ */
+// STYLE TILE #1 ------------------------------------------------------------------------------------------------------------------------------
 
-/* type examples */
+// type examples
 .styletile-1 {
-  // color: $color-tile1-6
+  // color: $color-tile1-6;
   .text-examples {
     .logos {
       counter-reset: logos;
@@ -95,15 +93,12 @@ header {
         // font-family:
         // font-weight:
         // color:
-     
       }
       h2 {
         //
-     
       }
       h3 {
         //
-     
       }
       a {}
     }
@@ -114,7 +109,6 @@ header {
       }
       p {
         //
-     
       }
     }
     .quotes {
@@ -123,12 +117,10 @@ header {
         //
         .quote-mark {
           //
-       
         }
       }
       .source {
         //
-     
       }
     }
     .sans {
@@ -138,15 +130,14 @@ header {
       }
       p {
         //
-     
       }
     }
   }
 }
 
-/* graphic examples */
+// graphic examples
 
-/* colors */
+// colors
 .styletile-1 {
   .colors {
     ul {
@@ -198,27 +189,21 @@ header {
       li {
         &.image-1 {
           //
-       
         }
         &.image-2 {
           //
-       
         }
         &.image-3 {
           //
-       
         }
         &.image-4 {
           //
-       
         }
         &.image-5 {
           //
-       
         }
         &.image-6 {
           //
-       
         }
       }
     }
