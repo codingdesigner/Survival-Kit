@@ -1,9 +1,9 @@
-/* Images -------------------------------------------------------------- */
+// Images -------------------------------------------------------------- */
 
 img {
   @extend %constrain-to-parent;
-  vertical-align: text-bottom;
   height: auto;
+  vertical-align: text-bottom;
   @if $init-type != normalize {
     border: 0;
     -ms-interpolation-mode: bicubic;

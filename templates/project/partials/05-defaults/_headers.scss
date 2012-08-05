@@ -1,6 +1,5 @@
-/* Headings -------------------------------------------------------------- */
+// Headings -------------------------------------------------------------- */
 
-// #{headers(all)},
 %h1, %h2, %h3, %h4, %h5, %h6 {
   @extend %headers;
   font-weight: normal;
@@ -8,27 +7,27 @@
 }
 
 %h1 {
-  // +adjust-font-size-to(ms(6))
+  // @include adjust-font-size-to(ms(6));
 }
 
 %h2 {
-  // +adjust-font-size-to(ms(5))
+  // @include adjust-font-size-to(ms(5));
 }
 
 %h3 {
-  // +adjust-font-size-to(ms(4))
+  // @include adjust-font-size-to(ms(4));
 }
 
 %h4 {
-  // +adjust-font-size-to(ms(3))
+  // @include adjust-font-size-to(ms(3));
 }
 
 %h5 {
-  // +adjust-font-size-to(ms(2))
+  // @include adjust-font-size-to(ms(2));
 }
 
 %h6 {
-  // +adjust-font-size-to(ms(1))
+  // @include adjust-font-size-to(ms(1));
 }
 
 h1 {
@@ -55,4 +54,6 @@ h6 {
   @extend %h6;
 }
 
-@include header-ampersands;
+@if $header-ampersands == true {
+  @include header-ampersands;
+}

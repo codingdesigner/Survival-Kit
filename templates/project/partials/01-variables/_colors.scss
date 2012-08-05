@@ -42,3 +42,15 @@ $text-color: $black;
 $alt-color: $badass;
 $background-color: $white;
 $border-color: $gray;
+
+// link colors
+$link-normal: $alt-color;
+$link-hover: complement($alt-color);
+$link-active: complement($alt-color);
+$link-visited: $alt-color;
+$link-focus: $alt-color;
+$link-border-normal: $alt-color;
+$link-border-hover: complement($alt-color);
+$link-border-active: complement($alt-color);
+$link-border-visited: $alt-color;
+

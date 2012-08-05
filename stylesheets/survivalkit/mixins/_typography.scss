@@ -1,6 +1,6 @@
 // Links --------------------------------------------------------------
 // replace underlines on links with bottom borders
-@mixin underline-links($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+@mixin border-links($normal, $hover: false, $active: false, $visited: false, $focus: false) {
   & {
     text-decoration: none;
     border-bottom: 1px solid $normal;
@@ -27,7 +27,7 @@
   }
 }
 
-@mixin undo-underline-links {
+@mixin undo-border-links {
   & {
     text-decoration: none;
     // border-bottom: inherit
@@ -65,9 +65,9 @@
 }
 
 // Only use the fancy ampersand in <h#> tags */
-@mixin header-ampersands {
+@mixin header-ampersands($size: 1em) {
   h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
-    font-size: 1em;
+    font-size: $size;
     font-family: $font-amp;
     font-style: italic;
   }
