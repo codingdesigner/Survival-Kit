@@ -8,9 +8,9 @@ require 'breakpoint'
 
 # HTTP paths
 http_path             = '/'
-http_stylesheets_path = '/css'
+# http_stylesheets_path = '/css'
 http_images_path      = '../templates/project/files/images'
-http_javascripts_path = '/js'
+# http_javascripts_path = '/js'
 
 # File system locations
 sass_dir              = '../templates/project'
@@ -18,6 +18,7 @@ add_import_path         '../stylesheets'
 css_dir               = 'public/css'
 images_dir            = 'public/images'
 javascripts_dir       = 'public/js'
+fonts_dir             = 'public/fonts'
 
 # Set to true for easier debugging
 line_comments         = false

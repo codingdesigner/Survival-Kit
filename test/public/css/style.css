@@ -3,3 +3,133 @@
  * Download the source files here:
  * https://github.com/canarymason/Survival-Kit
  * Learn more about Sass & Compass at http://compass-style.org/ */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "\0020";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+em, address {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+pre {
+  font-family: Consolas, Menlo, "Courier New", monospace, monospace;
+}
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Body -------------------------------------------------------------- */
+/* Establish baseline rhythm
+ * from compass/typography/_vertical_rhythm */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: black;
+  background: white;
+}
+
+@media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait), screen and (-o-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), screen and (-o-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait), screen and (device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), screen and (device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait) {
+  html {
+    font-size: 19.2px;
+  }
+}
+@media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait), screen and (-o-device-pixel-ratio: 3 / 2) and (device-width: 683px) and (orientation: landscape), screen and (-o-device-pixel-ratio: 3 / 2) and (device-width: 400px) and (orientation: portrait), screen and (device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait), screen and (device-pixel-ratio: 3 / 2) and (device-width: 683px) and (orientation: landscape), screen and (device-pixel-ratio: 3 / 2) and (device-width: 400px) and (orientation: portrait) {
+  html {
+    font-size: 12.8px;
+  }
+}
+/* Selected Text -------------------------------------------------------------- */
+/* -moz- must be declared separately */
+::-moz-selection {
+  color: white;
+  background: #bada55;
+  text-shadow: none;
+}
+
+::selection {
+  color: white;
+  background: #bada55;
+  text-shadow: none;
+}
+
+/* Links -------------------------------------------------------------- */
+a {
+  color: #bada55;
+}
+a:visited {
+  color: #bada55;
+}
+a:hover {
+  color: #7555da;
+}
+a:active {
+  color: #7555da;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #bada55;
+}
+a:visited {
+  border-bottom-color: #bada55;
+}
+a:hover {
+  border-bottom-color: #7555da;
+}
+a:active {
+  border-bottom-color: #7555da;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1;
+}
+
+/* Lists -------------------------------------------------------------- */
+dl {
+  margin-left: 0;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+li ul {
+  list-style-type: circle;
+}

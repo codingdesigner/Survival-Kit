@@ -54,3 +54,5 @@ h5 {
 h6 {
   @extend %h6;
 }
+
+@include header-ampersands;
