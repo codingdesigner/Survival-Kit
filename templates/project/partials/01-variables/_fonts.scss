@@ -4,20 +4,12 @@ $font-sans: sans-serif;
 $font-serifs: Georgia, serif;
 $font-mono: Consolas, Menlo, "Courier New", monospace, monospace;
 
-// uncomment to integrate typekit or similar
-// $font-typekit-FONTNAME: fontname
-// $font-typekit-FONTNAME: fontname
-//
-// $font-sans: $font-typekit-FONTNAME, $font-sans
-// $font-serifs: $font-typekit-FONTNAME, $font-serifs
-
 $font-body: $font-serifs;
 $font-headline: $font-sans;
 $font-logo: $font-sans;
 
-// special use font stacks
+// SPECIAL USE FONT STACKS
 // ampersands
 $font-amp: $font-serifs;
-
-// CAPS
+// caps
 $font-cap: $font-sans;
