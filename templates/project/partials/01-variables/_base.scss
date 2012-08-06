@@ -3,17 +3,16 @@
 ////////////////////////////
 
 // pick a reset of normalization
-// accepted values: 'meyer' (default), 'normalize'
+// accepted values: 'meyer' (default), 'normalize', 'none'
 // choose to reset header sizes (applies to 'normalize' only)
 // $init-headers: true;
-$init-type: meyer;
+$init-type: normalize;
 
-$base-font-size: 14px;
-$base-line-height: $base-font-size * 1.75;
+$base-font-size: 16px;
+$base-line-height: $base-font-size * 1.5;
 
-// --- Modular SCALE (used by _defaults.sass) -----------
+// --- Modular SCALE (used by 05-base) -----------
 // values used to determine modular scale values
-// see: src/common/mixins/_modular-scale.sass
 // and http://modularscale.com/
 $ratio: golden_ratio() major_third();
 $base-size: $base-font-size;
@@ -47,7 +46,7 @@ $header-ampersands: false;
 // Grid Variables --------------------------------------------------------------
 // note: set grid system-specific variables in the grid section (06)
 $show-grid: false;
-$show-baseline: true;
+$show-baseline: false;
 
 // Animate all the things
 // useful for previewing css changes.

@@ -8,7 +8,7 @@ $init-headers: true !default;
   @if $init-type == meyer {
     @include meyer-reset;
   }
-  @if $init-type == normalize {
+  @elseif $init-type == normalize {
     @include normalize;
     @if $init-headers {
       // reset the header sizes
@@ -18,6 +18,9 @@ $init-headers: true !default;
         margin-bottom: 0;
       }
     }
+  }
+  @else {
+    @debug "no init type set. consider not importing this partial.";
   }
 }
 
