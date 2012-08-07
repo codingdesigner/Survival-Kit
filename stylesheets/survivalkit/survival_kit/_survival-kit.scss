@@ -18,7 +18,7 @@ body.survival-kit {
       margin-bottom: 0;
       a {
         @include link-colors($white, $sk-darkgray, $sk-darkgray, $white);
-        @include underline-links($white, $sk-darkgray, $sk-darkgray, $white);
+        @include border-links($white, $sk-darkgray, $sk-darkgray, $white);
       }
       hgroup {
         @extend .clearfix;
@@ -55,7 +55,7 @@ body.survival-kit {
     margin-top: 0;
     a {
       @include link-colors($black, $alt-color, $alt-color, $black, false);
-      @include underline-links($black, $alt-color, $alt-color, $black, false);
+      @include border-links($black, $alt-color, $alt-color, $black, false);
     }
   }
   .back-to-top {
@@ -74,7 +74,7 @@ body.survival-kit {
     }
     a {
       @include link-colors($white, $alt-color, $alt-color, $white);
-      @include underline-links($white, $alt-color, $alt-color, $white);
+      @include border-links($white, $alt-color, $alt-color, $white);
     }
     ul {
       @include horizontal-list(0.5em);
@@ -111,7 +111,7 @@ body.survival-kit {
       padding-left: $kit-gutter-half;
       a {
         @include link-colors($white, $alt-color, $alt-color, $white, false);
-        @include underline-links($white, $alt-color, $alt-color, $white, false);
+        @include border-links($white, $alt-color, $alt-color, $white, false);
       }
     }
     .example {
