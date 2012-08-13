@@ -31,7 +31,7 @@
 @import "compass";
 @import "susy";
 @import "breakpoint";
-@import "modular-scale";
+// @import "modular-scale";
 // add any others here
 
 // ✔ IMPORT COMMON MIXINS
@@ -84,7 +84,7 @@
 // -- ✔ 8. STYLE TILE DESIGN --
 // enable these partials for styletile layout and design
 // work with styletile.html
-// see: http://badassideas.com/style-tiles-as-a-web-design-process-tool/
+// see: http://styletil.es/
 // (requires susy)
 // @import "survivalkit/style-tile/all";
 // @import "partials/09-styletile/tile-design";

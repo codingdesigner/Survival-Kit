@@ -8,7 +8,7 @@ $init-headers: true !default;
   @if $init-type == meyer {
     @include meyer-reset;
   }
-  @elseif $init-type == normalize {
+  @if $init-type == normalize {
     @include normalize;
     @if $init-headers {
       // reset the header sizes
