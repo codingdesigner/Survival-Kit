@@ -7,27 +7,57 @@
 }
 
 %h1 {
-  @include adjust-font-size-to(nth($header-sizes, 1));
+  @if $adjust-font-size-to == true {
+    @include adjust-font-size-to(nth($header-sizes, 1));
+  }
+  @else {
+    font-size: nth($header-sizes, 1);
+  }
 }
 
 %h2 {
-  @include adjust-font-size-to(nth($header-sizes, 2));
+  @if $adjust-font-size-to == true {
+    @include adjust-font-size-to(nth($header-sizes, 2));
+  }
+  @else {
+    font-size: nth($header-sizes, 2);
+  }
 }
 
 %h3 {
-  @include adjust-font-size-to(nth($header-sizes, 3));
+  @if $adjust-font-size-to == true {
+    @include adjust-font-size-to(nth($header-sizes, 3));
+  }
+  @else {
+    font-size: nth($header-sizes, 3);
+  }
 }
 
 %h4 {
-  @include adjust-font-size-to(nth($header-sizes, 4));
+  @if $adjust-font-size-to == true {
+    @include adjust-font-size-to(nth($header-sizes, 4));
+  }
+  @else {
+    font-size: nth($header-sizes, 4);
+  }
 }
 
 %h5 {
-  @include adjust-font-size-to(nth($header-sizes, 5));
+  @if $adjust-font-size-to == true {
+    @include adjust-font-size-to(nth($header-sizes, 5));
+  }
+  @else {
+    font-size: nth($header-sizes, 5);
+  }
 }
 
 %h6 {
-  @include adjust-font-size-to(nth($header-sizes, 6));
+  @if $adjust-font-size-to == true {
+    @include adjust-font-size-to(nth($header-sizes, 6));
+  }
+  @else {
+    font-size: nth($header-sizes, 6);
+  }
 }
 
 h1 {
