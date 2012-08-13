@@ -1,64 +1,69 @@
 // Create the design for your site below
 
-header {
-  @include pie-clearfix;
-  @include trailer;
-  aside {
-    text-align: right;
+.styletile {
+  header {
+    @include pie-clearfix;
+    @include trailer;
+    aside {
+      text-align: right;
+      color: $gray;
+      @extend .sans;
+    }
+  }
+
+  .group {
+    @include pie-clearfix;
+    @include trailer(2);
+  }
+
+  .label {
     color: $gray;
-    @extend .sans;
+    @include adjust-font-size-to(ms(0));
+    text-transform: uppercase;
+    font-family: $font-sans;
   }
-}
 
-.group {
-  @include pie-clearfix;
-  @include trailer(2);
-}
-
-.label {
-  color: $gray;
-  @include adjust-font-size-to(ms(0));
-  text-transform: uppercase;
-  font-family: $font-sans;
-}
-
-.colors {
-  ul {
-    li {
-      @include box-shadow(rgba($black, 0.1) 0px 2px 4px);
-    }
-  }
-}
-
-.images {
-  ul {
-    counter-reset: section;
-    li {
-      position: relative;
-      overflow: visible;
-      // +scatter($child: img)
-      &:after {
-        position: relative;
-        top: 102%;
-        display: block;
-        color: $gray;
-        counter-increment: section;
-        content: "Image " counter(section);
-      }
-      img {
+  .colors {
+    ul {
+      li {
         @include box-shadow(rgba($black, 0.1) 0px 2px 4px);
-        border: 4px solid $white;
-        display: block;
+      }
+    }
+  }
+
+  .images {
+    ul {
+      counter-reset: section;
+      li {
+        position: relative;
+        overflow: visible;
+        // +scatter($child: img)
+        &:after {
+          position: relative;
+          top: 102%;
+          display: block;
+          color: $gray;
+          counter-increment: section;
+          content: "Image " counter(section);
+        }
+        img {
+          @include box-shadow(rgba($black, 0.1) 0px 2px 4px);
+          border: 4px solid $white;
+          display: block;
+        }
       }
     }
   }
 }
+
 
 // CLIENT NAME ------------------------------------------------------------------------------------------------------------------------------
 
-header {
-  h1.client-name {
-    // @include replace-text-with-dimensions('wwlogo-01.png');
+.styletile {
+  header {
+    h1.client-name {
+      // some styles
+    }
   }
 }
 
@@ -66,7 +71,6 @@ header {
 
 // type examples
 .styletile-1 {
-  // color: $color-tile1-6;
   .text-examples {
     .logos {
       counter-reset: logos;

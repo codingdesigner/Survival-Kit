@@ -9,7 +9,7 @@ $sk-lightgray: mix($lightgray, $c-primary, 90%);
 $sk-gray: mix($gray, $c-primary, 90%);
 $sk-darkgray: mix($darkgray, $c-primary, 90%);
 
-body.survival-kit {
+.survival-kit {
   #page {
     > header {
       background: $sk-lightgray;

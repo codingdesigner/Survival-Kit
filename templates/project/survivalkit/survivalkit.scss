@@ -1,97 +1,32 @@
-/* The Coding Designer's Survival Kit
- * This CSS was authored using Sass & Compass
- * Download the source files here:
- * https://github.com/canarymason/Survival-Kit
- * Learn more about Sass & Compass at http://compass-style.org/ */
-
-// FOLLOW THE STEP-BY-STEP
-// ---------------------------------------------------------------------------------------
-// INTRODUCTION
-// This is the central organizing sass file where we manage all the imported partials
-// in The Kit. Don't write custom code here. Instead, import files that bring in
-// default code from The Kit and files that add your custom code. The checklist below
-// should help you put these files in order.
-// ---------------------------------------------------------------------------------------
-
-
-// THE FIRST IMPORTS ADD NO CSS UPON COMPILE
+//////////////////////////////
+// STYLES FOR THE KIT, ITSELF
+//////////////////////////////
 
 // ✔ IMPORT COMMON FUNCTIONS AND VARIABLES
-// enable / disable, but do not edit these files
 @import "survivalkit/functions/all";
 @import "survivalkit/variables/all";
 
 // ✔ 1. ADD YOUR OWN VARIABLES
-// base, color, fonts, grids
-// edit these as you see fit
 @import "partials/01-variables/all";
 
 // ✔ IMPORT COMPASS AND OTHER GEMS
-// enable / disable, but do not edit these files
 @import "compass";
-@import "susy";
-@import "breakpoint";
-@import "modular-scale";
-// add any others here
 
 // ✔ IMPORT COMMON MIXINS
-// enable / disable, but do not edit these files
 @import "survivalkit/mixins/all";
 @import "survivalkit/reset/pixel-normalize";
 
-// ✔ 2. ADD YOUR OWN MIXINS
-@import "partials/03-mixins/custom";
-
-
 // ✔ IMPORT COMMON HELPER EXTENDABLES
-// @import survivalkit/extend/all
 @import "survivalkit/extend/helpers";
-@import "survivalkit/extend/sticky-footer";
-
-// THE FOLLOWING IMPORTS WILL ADD CSS UPON COMPILE
-// THE FOLLOWING IMPORTS WILL ADD CSS UPON COMPILE
-// THE FOLLOWING IMPORTS WILL ADD CSS UPON COMPILE
 
 // ✔ ADD A CSS RESET OR NORMALIZATION
 // @import "partials/02-reset/reset";
 
 // ✔ 2. ADD YOUR OWN EXTENDABLES
-// typography
 @import "partials/04-extend/all";
-// @import "partials/04-extend/typography";
-// @import "partials/04-extend/helpers";
 
-// ✔ 3. EDIT AND ADD YOUR BASE STYLES
-// This is worth going into in detail
-// edit as you see fit for your project
-// @import "partials/05-base/all";
-
-// ✔ 4. ESTABLISH A LAYOUT
-// Uncomment to use the Susy grid system
-// @import "partials/06-layout/grids-susy";
-
-// ✔ 5. STYLE COMMON UI PATTERNS / DRUPAL UI PATTERNS
-// @import "partials/07-ui-patterns/common";
-// @import "partials/07-ui-patterns/drupal-patterns";
-
-// --------------------------------------------------------------------------------------
-// ✔ 7. YOUR CUSTOM LAYOUT AND DESIGN SASS
-// THIS IS WHERE MOST CUSTOM WORK WILL GO
-// -- PRIMARY DESIGN --
-// @import "partials/08-your-design-here/design";
-
-// ------ OR ------
 // -- ✔ 8. STYLE TILE DESIGN --
-// enable these partials for styletile layout and design
-// work with styletile.html
-// see: http://badassideas.com/style-tiles-as-a-web-design-process-tool/
-// (requires susy)
 @import "survivalkit/style-tile/all";
 @import "partials/09-styletile/tile-design";
-
-// --------------------------------------------------------------------------------------
-
-// ✔ 10. ENABLE PRINT STYLES
-// @import "partials/10-media/print";
 
 @import "survivalkit/survival_kit/survival-kit";
