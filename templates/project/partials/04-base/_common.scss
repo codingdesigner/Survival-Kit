@@ -18,8 +18,6 @@
     overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    // -webkit-font-smoothing: antialiased
-
   }
 }
 
@@ -79,11 +77,12 @@ p {
   @include trailer;
 }
 
-hr {}
+hr {
+  // add your own styles, if you like
+}
 
 pre {
   @extend %mono;
-  // margin: $base-rhythm-unit;
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -91,9 +90,7 @@ pre {
 }
 
 blockquote {
-  // margin: $base-rhythm-unit $kit-gutter;
-  // @extend %italic;
-  // font-weight: 300;
+  // add your own styles, if you like
 }
 
 // Lists -------------------------------------------------------------- */
@@ -119,21 +116,21 @@ ul {
 }
 
 dt {
-  // @include leader;
-  // @extend %italic
-  // &:first-of-type {
-  //   @include leader(0);
-  // }
+  // add your own styles, if you like
 }
 
 dd {
-  // padding-left: $kit-gutter;
+  // add your own styles, if you like
 }
 
 //
-figure {}
+figure {
+  // add your own styles, if you like
+}
 
-figcaption {}
+figcaption {
+  // add your own styles, if you like
+}
 
 address {
   @extend %italic;

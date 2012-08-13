@@ -83,9 +83,7 @@
           line-height: 1;
         }
         &.opt-1 {
-          // font-family:
-          // font-weight:
-          // color:
+          // add your own styles, if you like
           &:before {
             content: counter(logos) " - #{$font-sans}";
           }
@@ -94,17 +92,17 @@
     }
     .headers {
       h1 {
-        // font-family:
-        // font-weight:
-        // color:
+        // add your own styles, if you like
       }
       h2 {
-        //
+        // add your own styles, if you like
       }
       h3 {
-        //
+        // add your own styles, if you like
       }
-      a {}
+      a {
+        // add your own styles, if you like
+      }
     }
     .serif {
       font-family: $font-serifs;
@@ -116,15 +114,15 @@
       }
     }
     .quotes {
-      //
+      // add your own styles, if you like
       .quote {
-        //
+        // add your own styles, if you like
         .quote-mark {
-          //
+          // add your own styles, if you like
         }
       }
       .source {
-        //
+        // add your own styles, if you like
       }
     }
     .sans {
@@ -133,7 +131,7 @@
         content: " - #{$font-sans}";
       }
       p {
-        //
+        // add your own styles, if you like
       }
     }
   }
@@ -192,22 +190,22 @@
     ul {
       li {
         &.image-1 {
-          //
+          // add your own styles, if you like
         }
         &.image-2 {
-          //
+          // add your own styles, if you like
         }
         &.image-3 {
-          //
+          // add your own styles, if you like
         }
         &.image-4 {
-          //
+          // add your own styles, if you like
         }
         &.image-5 {
-          //
+          // add your own styles, if you like
         }
         &.image-6 {
-          //
+          // add your own styles, if you like
         }
       }
     }

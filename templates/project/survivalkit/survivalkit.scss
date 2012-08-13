@@ -20,13 +20,13 @@
 @import "survivalkit/extend/helpers";
 
 // ✔ ADD A CSS RESET OR NORMALIZATION
-// @import "partials/02-reset/reset";
+// @import "survivalkit/reset/reset";
 
 // ✔ 2. ADD YOUR OWN EXTENDABLES
-@import "partials/04-extend/all";
+@import "partials/03-extend/all";
 
 // -- ✔ 8. STYLE TILE DESIGN --
 @import "survivalkit/style-tile/all";
-@import "partials/09-styletile/tile-design";
+@import "partials/07-styletile/tile-design";
 
 @import "survivalkit/survival_kit/survival-kit";

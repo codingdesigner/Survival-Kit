@@ -7,27 +7,27 @@
 }
 
 %h1 {
-  // @include adjust-font-size-to(ms(6));
+  @include adjust-font-size-to(nth($header-sizes, 1));
 }
 
 %h2 {
-  // @include adjust-font-size-to(ms(5));
+  @include adjust-font-size-to(nth($header-sizes, 2));
 }
 
 %h3 {
-  // @include adjust-font-size-to(ms(4));
+  @include adjust-font-size-to(nth($header-sizes, 3));
 }
 
 %h4 {
-  // @include adjust-font-size-to(ms(3));
+  @include adjust-font-size-to(nth($header-sizes, 4));
 }
 
 %h5 {
-  // @include adjust-font-size-to(ms(2));
+  @include adjust-font-size-to(nth($header-sizes, 5));
 }
 
 %h6 {
-  // @include adjust-font-size-to(ms(1));
+  @include adjust-font-size-to(nth($header-sizes, 6));
 }
 
 h1 {

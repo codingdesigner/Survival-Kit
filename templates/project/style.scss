@@ -31,7 +31,7 @@
 @import "compass";
 @import "susy";
 @import "breakpoint";
-// @import "modular-scale";
+@import "modular-scale";
 // add any others here
 
 // ✔ IMPORT COMMON MIXINS
@@ -40,7 +40,7 @@
 @import "survivalkit/reset/pixel-normalize";
 
 // ✔ 2. ADD YOUR OWN MIXINS
-@import "partials/03-mixins/custom";
+@import "partials/02-mixins/custom";
 
 
 // ✔ IMPORT COMMON HELPER EXTENDABLES
@@ -53,32 +53,32 @@
 // THE FOLLOWING IMPORTS WILL ADD CSS UPON COMPILE
 
 // ✔ ADD A CSS RESET OR NORMALIZATION
-@import "partials/02-reset/reset";
+@import "survivalkit/reset/reset";
 
 // ✔ 2. ADD YOUR OWN EXTENDABLES
 // typography
-@import "partials/04-extend/all";
-// @import "partials/04-extend/typography";
-// @import "partials/04-extend/helpers";
+@import "partials/03-extend/all";
+// @import "partials/03-extend/typography";
+// @import "partials/03-extend/helpers";
 
 // ✔ 3. EDIT AND ADD YOUR BASE STYLES
 // This is worth going into in detail
 // edit as you see fit for your project
-@import "partials/05-base/all";
+@import "partials/04-base/all";
 
 // ✔ 4. ESTABLISH A LAYOUT
 // Uncomment to use the Susy grid system
-@import "partials/06-layout/grids-susy";
+@import "partials/05-layout/grids-susy";
 
 // ✔ 5. STYLE COMMON UI PATTERNS / DRUPAL UI PATTERNS
-@import "partials/07-ui-patterns/common";
-@import "partials/07-ui-patterns/drupal-patterns";
+@import "partials/06-ui-patterns/common";
+// @import "partials/06-ui-patterns/drupal-patterns";
 
 // --------------------------------------------------------------------------------------
 // ✔ 7. YOUR CUSTOM LAYOUT AND DESIGN SASS
 // THIS IS WHERE MOST CUSTOM WORK WILL GO
 // -- PRIMARY DESIGN --
-@import "partials/08-your-design-here/design";
+@import "your-design-here/design";
 
 // ------ OR ------
 // -- ✔ 8. STYLE TILE DESIGN --
@@ -87,9 +87,9 @@
 // see: http://styletil.es/
 // (requires susy)
 // @import "survivalkit/style-tile/all";
-// @import "partials/09-styletile/tile-design";
+// @import "partials/07-styletile/tile-design";
 
 // --------------------------------------------------------------------------------------
 
 // ✔ 10. ENABLE PRINT STYLES
-@import "partials/10-media/print";
+@import "partials/08-media/print";

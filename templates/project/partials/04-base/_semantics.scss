@@ -2,7 +2,9 @@ small {
   @include adjust-font-size-to(ms(-1));
 }
 
-s {}
+s {
+  // add your own styles, if you like
+}
 
 cite {
   @extend %italic;
@@ -29,15 +31,21 @@ abbr, acronym {
   cursor: help;
 }
 
-time {}
+time {
+  // add your own styles, if you like
+}
 
 code {
   @extend %mono;
 }
 
-var {}
+var {
+  // add your own styles, if you like
+}
 
-samp {}
+samp {
+  // add your own styles, if you like
+}
 
 kbd {
   @extend %mono;
@@ -70,7 +78,9 @@ b {
   @extend %bold;
 }
 
-u {}
+u {
+  // add your own styles, if you like
+}
 
 mark {
   background: $red;
@@ -78,12 +88,22 @@ mark {
   text-shadow: none;
 }
 
-ruby {}
+ruby {
+  // add your own styles, if you like
+}
 
-rt {}
+rt {
+  // add your own styles, if you like
+}
 
-rp {}
+rp {
+  // add your own styles, if you like
+}
 
-bdi {}
+bdi {
+  // add your own styles, if you like
+}
 
-bdo {}
+bdo {
+  // add your own styles, if you like
+}

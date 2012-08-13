@@ -19,9 +19,8 @@ $init-headers: true !default;
       }
     }
   }
-  @else {
-    @debug "no init type set. consider not importing this partial.";
-  }
 }
 
 @include init($init-type, $init-headers);
+
+@import "survivalkit/reset/formalize";

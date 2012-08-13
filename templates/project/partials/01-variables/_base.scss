@@ -7,6 +7,8 @@
 // choose to reset header sizes (applies to 'normalize' only)
 // $init-headers: true;
 $init-type: normalize;
+// use Formalize http://formalize.me/
+$formalize: false;
 
 $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.5;
@@ -33,15 +35,20 @@ $pixel-normalize: true;
 // use the Compass baseline system
 $establish-baseline: true;
 
+// Headers
+// create a list of header sizes, H1 - H6
+$header-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1);
+// fancy apersands - for .amp within headers
+$header-ampersands: false;
+
 // Links
 // replace normal link underlines with bottom borders
 $border-links: false;
 // animate link hovers. use a 'time' value, like '0.5s'
 $link-transitions: false;
 
-// Headers
-// fancy apersands - for .amp within headers
-$header-ampersands: false;
+// Forms
+$kit-form-defaults: false;
 
 // Grid Variables --------------------------------------------------------------
 // note: set grid system-specific variables in the grid section (06)
