@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.alpha.1 - August 13, 2012
+## 1.0.alpha.1 - August 14, 2012
 * fix installation issue
 
 ## 1.0.alpha.1 - August 13, 2012
