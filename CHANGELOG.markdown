@@ -1,9 +1,12 @@
 # Changelog
 
-## 1.0.alpha.1 - August 14, 2012
+## 1.0.beta.3 - August 14, 2012
+* update dependencies
+
+## 1.0.beta.2 - August 14, 2012
 * fix installation issue
 
-## 1.0.alpha.1 - August 13, 2012
+## 1.0.beta.1 - August 13, 2012
 * convert to SCSS syntax
 * remove nearly all default styling
 * add many more configurable options to base.scss

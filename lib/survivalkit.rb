@@ -6,7 +6,7 @@ Compass::Frameworks.register("survivalkit", :path => "#{File.dirname(__FILE__)}/
 
 module SurvivalKit
 
-  VERSION = "1.0.beta.2"
-  DATE = "2012-08-14"
+  VERSION = "1.0.beta.3"
+  DATE = "2012-08-19"
 
 end
