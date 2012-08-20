@@ -85,12 +85,12 @@
 }
 
 // replace OL > LI numbers so they can be styled
-@mixin replace-list-numbers {
+@mixin replace-list-numbers($decimal: null) {
   counter-reset: li;
   list-style-type: none;
   li {
     &:before {
-      content: counter(li) ". ";
+      content: counter(li) $decimal;
       counter-increment: li;
     }
   }

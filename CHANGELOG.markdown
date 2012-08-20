@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.beta.6 and 7 - August 20, 2012
+* update replace-list-numbers mixin
+
 ## 1.0.beta.5 - August 20, 2012
 * update html templates with nested menu and line measure guides
 
