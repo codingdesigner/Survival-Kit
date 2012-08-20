@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.beta.5 - August 20, 2012
+* update html templates with nested menu and line measure guides
+
 ## 1.0.beta.4 - August 20, 2012
 * add dropdown menu mixins
 
