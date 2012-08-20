@@ -13,47 +13,42 @@
         :preserve
           %clearfix
     #extend-clearfix-hidden.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          %clearfix {
+            @include kit-clearfix;
+          }
+      %pre.sass
         :preserve
           %clearfix
             +kit-clearfix
-  %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-clearfix"}
-        :preserve
-          .clearfix
-    #extend-clearfix.extendable-source
-      %pre
-        :preserve
-          .clearfix
-            @extend %clearfix
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-hidden-hidden"}
         :preserve
           %hidden
     #extend-hidden-hidden.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          %hidden {
+            @include hidden;
+          }
+      %pre.sass
         :preserve
           %hidden
             +hidden
-  %div.example
-    %h3.extendable
-      %a.permalink{:href => "#extend-hidden"}
-        :preserve
-          .hidden
-    #extend-hidden.extendable-source
-      %pre
-        :preserve
-          .hidden
-            @extend %hidden
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-visuallyhidden-hidden"}
         :preserve
           %visuallyhidden
     #extend-visuallyhidden-hidden.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          %visuallyhidden {
+            @include visuallyhidden;
+          }
+      %pre.sass
         :preserve
           %visuallyhidden
             +visuallyhidden
@@ -63,7 +58,12 @@
         :preserve
           %visuallyhidden.focusable
     #extend-visuallyhidden-focusable-hidden.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          %visuallyhidden.focusable {
+            @include visuallyhidden(true);
+          }
+      %pre.sass
         :preserve
           %visuallyhidden.focusable
             +visuallyhidden(true)
@@ -73,7 +73,12 @@
         :preserve
           %invisible
     #extend-invisible-hidden.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          %invisible {
+            @include invisible;
+          }
+      %pre.sass
         :preserve
           %invisible
             +invisible
@@ -83,7 +88,12 @@
         :preserve
           %constrain-to-parent
     #extend-constrain-to-parent-hidden.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          %constrain-to-parent {
+            max-width: 100%;
+          }
+      %pre.sass
         :preserve
           %constrain-to-parent
             max-width: 100%
@@ -93,7 +103,12 @@
         :preserve
           %italic
     #extend-italic-hidden.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          %italic {
+            font-style: italic;
+          }
+      %pre.sass
         :preserve
           %italic
             font-style: italic
@@ -103,7 +118,12 @@
         :preserve
           %bold
     #extend-bold-hidden.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          %bold {
+            font-weight: bold;
+          }
+      %pre.sass
         :preserve
           %bold
             font-weight: bold
@@ -113,7 +133,12 @@
         :preserve
           %wireframe
     #extend-wireframe-hidden.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          %wireframe {
+            outline: 1px dashed $red;
+          }
+      %pre.sass
         :preserve
           %wireframe
             outline: 1px dashed $red
