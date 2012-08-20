@@ -1,6 +1,9 @@
 # Changelog
 
-## 1.0.beta.3 - August 14, 2012
+## 1.0.beta.4 - August 20, 2012
+* add dropdown menu mixins
+
+## 1.0.beta.3 - August 19, 2012
 * update dependencies
 
 ## 1.0.beta.2 - August 14, 2012
