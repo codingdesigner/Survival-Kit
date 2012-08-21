@@ -1,0 +1,32 @@
+- @title = "Mixins → pseudo"
+- @subnav = "<nav class='section-nav'></nav> "
+
+/ Helpers
+%section#helpers.element-group
+  %h1.section-title Helpers
+  %p.intro
+    :markdown
+      Mixins for pseudo elements.
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-pseudo"}
+        :preserve
+          pseudo
+    #mixin-pseudo.extendable-source
+      .comment
+        &= "$side: can be 'before', 'after', or 'both'"
+      %pre.scss
+        :preserve
+          @mixin pseudo($side: "before") {
+            position: relative;
+            @if $side == "both" {
+              &:before, &:after {
+                position: absolute;
+              }
+            }
+            @else {
+              &:#{$side} {
+                position: absolute;
+              }
+            }
+          }
