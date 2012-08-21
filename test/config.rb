@@ -4,6 +4,7 @@
 
 require 'susy'
 require 'modular-scale'
+require 'color-schemer'
 require 'breakpoint'
 
 # HTTP paths
