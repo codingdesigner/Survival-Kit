@@ -1,4 +1,4 @@
-- @title = "Extendables → Helpers"
+- @title = "Mixins → Helpers"
 - @subnav = "<nav class='section-nav'></nav> "
 
 / Helpers
@@ -11,111 +11,142 @@
     %h3.mixin
       %a.permalink{:href => "#mixin-hidden"}
         :preserve
-          =hidden
+          hidden
     #mixin-hidden.extendable-source
-      %pre
+      %pre.scss
         :preserve
-          =hidden
-            display: none !important
-            visibility: hidden
+          @mixin hidden {
+            display: none !important;
+            visibility: hidden;
+          }
   %div.example
     %h3.mixin
-      %a.permalink{:href => "#mixin-clearfix"}
+      %a.permalink{:href => "#mixin-visually-hidden"}
         :preserve
-          .clearfix
-    #mixin-clearfix.extendable-source
-      %pre
+          visuallyhidden
+    #mixin-visually-hidden.extendable-source
+      %pre.scss
         :preserve
-          .clearfix
-            @extend %clearfix
+          @mixin visuallyhidden($focusable: false) {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            @if $focusable {
+              &:active, &:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+              }
+            }
+          }
   %div.example
     %h3.mixin
-      %a.permalink{:href => "#mixin-hidden-hidden"}
+      %a.permalink{:href => "#mixin-invisible"}
         :preserve
-          %hidden
-    #mixin-hidden-hidden.extendable-source
-      %pre
+          invisible
+    #mixin-invisible.extendable-source
+      %pre.scss
         :preserve
-          %hidden
-            +hidden
+          @mixin invisible {
+            visibility: hidden;
+          }
   %div.example
     %h3.mixin
-      %a.permalink{:href => "#mixin-hidden"}
+      %a.permalink{:href => "#mixin-scale-image-ie"}
         :preserve
-          .hidden
-    #mixin-hidden.extendable-source
-      %pre
+          scale-image-ie
+    #mixin-scale-image-ie.extendable-source
+      %pre.scss
         :preserve
-          .hidden
-            @extend %hidden
+          @mixin scale-image-ie($image) {
+            background: none;
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="\#{image_url($image, true, false)}",  sizingMethod="scale");
+          }
   %div.example
     %h3.mixin
-      %a.permalink{:href => "#mixin-visuallyhidden-hidden"}
+      %a.permalink{:href => "#mixin-kit-clearfix"}
         :preserve
-          %visuallyhidden
-    #mixin-visuallyhidden-hidden.extendable-source
-      %pre
+          kit-clearfix
+    #mixin-kit-clearfix.extendable-source
+      %pre.scss
         :preserve
-          %visuallyhidden
-            +visuallyhidden
+          @mixin kit-clearfix {
+            &:after {
+              content: $space;
+              display: table;
+              clear: both;
+            }
+            zoom: 1;
+          }
   %div.example
     %h3.mixin
-      %a.permalink{:href => "#mixin-visuallyhidden-focusable-hidden"}
+      %a.permalink{:href => "#mixin-accessible-color"}
         :preserve
-          %visuallyhidden.focusable
-    #mixin-visuallyhidden-focusable-hidden.extendable-source
-      %pre
+          accessible-color
+    #mixin-accessible-color.extendable-source
+      %pre.scss
         :preserve
-          %visuallyhidden.focusable
-            +visuallyhidden(true)
+          @mixin accessible-color($background: $white) {
+            @if lightness($background) >= 65% {
+              color: $text-color;
+            }
+            @else {
+              color: white;
+            }
+          }
   %div.example
     %h3.mixin
-      %a.permalink{:href => "#mixin-invisible-hidden"}
+      %a.permalink{:href => "#mixin-clean-list"}
         :preserve
-          %invisible
-    #mixin-invisible-hidden.extendable-source
-      %pre
+          clean-list
+    #mixin-clean-list.extendable-source
+      %pre.scss
         :preserve
-          %invisible
-            +invisible
+          @mixin clean-list {
+            @include no-bullets;
+            margin-left: 0;
+            padding-left: 0;
+          }
   %div.example
     %h3.mixin
-      %a.permalink{:href => "#mixin-constrain-to-parent-hidden"}
+      %a.permalink{:href => "#mixin-susy-grid-backgrounds"}
         :preserve
-          %constrain-to-parent
-    #mixin-constrain-to-parent-hidden.extendable-source
-      %pre
+          susy-grid-backgrounds
+    #mixin-susy-grid-backgrounds.extendable-source
+      %pre.scss
         :preserve
-          %constrain-to-parent
-            max-width: 100%
+          @mixin susy-grid-backgrounds {
+            @if $show-grid and $show-baseline {
+              @include susy-grid-background-baseline;
+            }
+            @else if $show-grid {
+              @include susy-grid-background;
+            }
+            @else if $show-baseline {
+              @include baseline-grid-background;
+            }
+          }
   %div.example
     %h3.mixin
-      %a.permalink{:href => "#mixin-italic-hidden"}
+      %a.permalink{:href => "#mixin-susy-grid-background-baseline"}
         :preserve
-          %italic
-    #mixin-italic-hidden.extendable-source
-      %pre
+          susy-grid-background-baseline
+    #mixin-susy-grid-background-baseline.extendable-source
+      %pre.scss
         :preserve
-          %italic
-            font-style: italic
-  %div.example
-    %h3.mixin
-      %a.permalink{:href => "#mixin-bold-hidden"}
-        :preserve
-          %bold
-    #mixin-bold-hidden.extendable-source
-      %pre
-        :preserve
-          %bold
-            font-weight: bold
-  %div.example
-    %h3.mixin
-      %a.permalink{:href => "#mixin-wireframe-hidden"}
-        :preserve
-          %wireframe
-    #mixin-wireframe-hidden.extendable-source
-      %pre
-        :preserve
-          %wireframe
-            outline: 1px dashed $red
+          @mixin susy-grid-background-baseline {
+            @include grid-background($total-columns, $column-width, $gutter-width, $base-line-height, $column-width * 0, $grid-background-column-color, $grid-background-gutter-color, $grid-background-baseline-color, $force_fluid: true);
+            @include background-origin(content-box);
+            @include background-clip(content-box);
+          }
+
+
 
