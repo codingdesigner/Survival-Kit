@@ -1,0 +1,141 @@
+- @title = "Mixins → typography"
+- @subnav = "<nav class='section-nav'></nav> "
+
+/ Helpers
+%section#helpers.element-group
+  %h1.section-title Helpers
+  %p.intro
+    :markdown
+      Mixins for typography.
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-border-links"}
+        :preserve
+          border-links
+    #mixin-border-links.extendable-source
+      .comment
+        &= "replace underlines on links with bottom borders"
+      %pre.scss
+        :preserve
+          @mixin border-links($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+            & {
+              text-decoration: none;
+              border-bottom: 1px solid $normal;
+              @if $visited {
+                &:visited {
+                  border-bottom-color: $visited;
+                }
+              }
+              @if $focus {
+                &:focus {
+                  border-bottom-color: $focus;
+                }
+              }
+              @if $hover {
+                &:hover {
+                  border-bottom-color: $hover;
+                }
+              }
+              @if $active {
+                &:active {
+                  border-bottom-color: $active;
+                }
+              }
+            }
+          }
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-undo-border-links"}
+        :preserve
+          undo-border-links
+    #mixin-undo-border-links.extendable-source
+      .comment
+        &= "remove bottom borders from links"
+      %pre.scss
+        :preserve
+          @mixin undo-border-links {
+            & {
+              text-decoration: none;
+              border-bottom: none;
+              &:visited {
+                border-bottom: none;
+              }
+              &:focus {
+                border-bottom: none;
+              }
+              &:hover {
+                border-bottom: none;
+              }
+              &:active {
+                border-bottom: none;
+              }
+            }
+          }
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-link-transitions"}
+        :preserve
+          link-transitions
+    #mixin-link-transitions.extendable-source
+      .comment
+        &= "fade between default and hover colors"
+      %pre.scss
+        :preserve
+          @mixin link-transitions($time: 0.5s, $easing: "ease-out", $property: "all") {
+            @include transition($property, $time, $easing);
+          }
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-header-ampersands"}
+        :preserve
+          header-ampersands
+    #mixin-header-ampersands.extendable-source
+      .comment
+        &= "Only use the fancy ampersand in <h#> tags"
+      %pre.scss
+        :preserve
+          @mixin header-ampersands($size: 1em) {
+            h1 .amp, h2 .amp, h3 .amp, h4 .amp, h5 .amp, h6 .amp {
+              font-size: $size;
+              font-family: $font-amp;
+              font-style: italic;
+            }
+          }
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-text-overflow"}
+        :preserve
+          text-overflow
+    #mixin-text-overflow.extendable-source
+      %pre.scss
+        :preserve
+          @mixin text-overflow($method: ellipsis) {
+            white-space: nowrap;
+            overflow: hidden;
+            -o-text-overflow: $method;
+            text-overflow: $method;
+            .ie & {
+              width: 100%;
+            }
+          }
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-replace-list-numbers"}
+        :preserve
+          replace-list-numbers
+    #mixin-replace-list-numbers.extendable-source
+      .comment
+        &= "replace OL > LI numbers so they can be styled"
+      %pre.scss
+        :preserve
+          @mixin replace-list-numbers($decimal: null) {
+            counter-reset: li;
+            list-style-type: none;
+            li {
+              &:before {
+                content: counter(li) $decimal;
+                counter-increment: li;
+              }
+            }
+          }
+
