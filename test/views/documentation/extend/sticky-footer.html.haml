@@ -22,11 +22,6 @@
             height: 100%;
             margin: 0pt;
           }
-      %pre.sass
-        :preserve
-          %html-frame
-            height: 100%
-            margin: 0pt
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-frame-hidden"}
@@ -42,12 +37,6 @@
             height: 100%;
             width: 100%;
           }
-      %pre.sass
-        :preserve
-          %frame
-            display: table
-            height: 100%
-            width: 100%
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-row-hidden"}
@@ -59,10 +48,6 @@
           %row {
             display: table-row;
           }
-      %pre.sass
-        :preserve
-          %row
-            display: table-row
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-row-expand-hidden"}
@@ -75,8 +60,3 @@
             @extend %row;
             height: 100%;
           }
-      %pre.sass
-        :preserve
-          %row-expand
-            @extend .row
-            height: 100%

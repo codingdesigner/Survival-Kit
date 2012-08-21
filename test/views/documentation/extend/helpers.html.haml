@@ -18,10 +18,6 @@
           %clearfix {
             @include kit-clearfix;
           }
-      %pre.sass
-        :preserve
-          %clearfix
-            +kit-clearfix
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-hidden-hidden"}
@@ -33,10 +29,6 @@
           %hidden {
             @include hidden;
           }
-      %pre.sass
-        :preserve
-          %hidden
-            +hidden
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-visuallyhidden-hidden"}
@@ -48,10 +40,6 @@
           %visuallyhidden {
             @include visuallyhidden;
           }
-      %pre.sass
-        :preserve
-          %visuallyhidden
-            +visuallyhidden
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-visuallyhidden-focusable-hidden"}
@@ -63,10 +51,6 @@
           %visuallyhidden.focusable {
             @include visuallyhidden(true);
           }
-      %pre.sass
-        :preserve
-          %visuallyhidden.focusable
-            +visuallyhidden(true)
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-invisible-hidden"}
@@ -78,10 +62,6 @@
           %invisible {
             @include invisible;
           }
-      %pre.sass
-        :preserve
-          %invisible
-            +invisible
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-constrain-to-parent-hidden"}
@@ -93,10 +73,6 @@
           %constrain-to-parent {
             max-width: 100%;
           }
-      %pre.sass
-        :preserve
-          %constrain-to-parent
-            max-width: 100%
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-italic-hidden"}
@@ -108,10 +84,6 @@
           %italic {
             font-style: italic;
           }
-      %pre.sass
-        :preserve
-          %italic
-            font-style: italic
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-bold-hidden"}
@@ -123,10 +95,6 @@
           %bold {
             font-weight: bold;
           }
-      %pre.sass
-        :preserve
-          %bold
-            font-weight: bold
   %div.example
     %h3.extendable
       %a.permalink{:href => "#extend-wireframe-hidden"}
@@ -138,8 +106,3 @@
           %wireframe {
             outline: 1px dashed $red;
           }
-      %pre.sass
-        :preserve
-          %wireframe
-            outline: 1px dashed $red
-

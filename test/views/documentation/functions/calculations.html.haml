@@ -19,10 +19,6 @@
           @function calc-percent($target, $container) {
             @return $target / $container * 100%;
           }
-      %pre.sass
-        :preserve
-          @function calc-percent($target, $container)
-            @return ($target / $container) * 100%
   %div.example
     %h3.extendable
       %a.permalink{:href => "#function-calc-em"}
@@ -34,10 +30,6 @@
           @function calc-em($target, $container) {
             @return $target / $container * 1em;
           }
-      %pre.sass
-        :preserve
-          @function calc-em($target, $container: $base-font-size)
-            @return ($target / $container) * 1em
   %div.example
     %h3.extendable
       %a.permalink{:href => "#function-cp"}
@@ -51,10 +43,6 @@
           @function cp($args...) {
             @return calc-percent($args...);
           }
-      %pre.sass
-        :preserve
-          @function cp($args...)
-            @return calc-percent($args...)
   %div.example
     %h3.extendable
       %a.permalink{:href => "#function-ce"}
@@ -68,7 +56,3 @@
           @function ce($args...) {
             @return calc-em($args...);
           }
-      %pre.sass
-        :preserve
-          @function ce($args...)
-            @return calc-em($args...)
