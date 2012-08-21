@@ -1,0 +1,87 @@
+- @title = "Mixins → patterns"
+- @subnav = "<nav class='section-nav'></nav> "
+
+/ Helpers
+%section#helpers.element-group
+  %h1.section-title Helpers
+  %p.intro
+    :markdown
+      Mixins for UI patterns.
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-dropdown-menu"}
+        :preserve
+          dropdown-menu
+    #mixin-dropdown-menu.extendable-source
+      %pre.scss
+        :preserve
+          @mixin dropdown-menu($padding: false) {
+            padding: 0;
+            > li {
+              @include inline-block-list-item($padding);
+              position: relative;
+              &:hover{
+                ul {
+                  display: block;
+                }
+              }
+            }
+            ul {
+              display: none;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              margin-top: 0;
+              padding-left: 0;
+              padding-right: 0;
+              li {
+                display: block;
+                @if $padding != false {
+                  padding-left: $padding;
+                  padding-right: $padding;
+                }
+              }
+            }
+          }
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-pretty-dropdown-menu"}
+        :preserve
+          pretty-dropdown-menu
+    #mixin-pretty-dropdown-menu.extendable-source
+      %pre.scss
+        :preserve
+          @mixin pretty-dropdown-menu(
+              $padding: false,
+              $background: false,
+              $background-drop: false,
+              $hover-color: false
+              ) {
+            @include dropdown-menu($padding);
+            @if $background != false {
+              background: $background;
+            }
+            > li {
+              &:hover {
+                @if $background-drop != false {
+                  background: $background-drop;
+                }
+              }
+            }
+            ul {
+              @if $background-drop != false {
+                background: $background-drop;
+              }
+              @else {
+                @if $background != false {
+                  background: $background;
+                }
+              }
+              li:hover {
+                @if $hover-color != false {
+                  background: $hover-color;
+                }
+              }
+            }
+          }
+
