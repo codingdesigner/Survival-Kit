@@ -3,10 +3,142 @@
 
 / Helpers
 %section#helpers.element-group
-  %h1.section-title Helpers
+  %h1.section-title UI Patterns
   %p.intro
     :markdown
       Mixins for UI patterns.
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-tabs"}
+        :preserve
+          tabs
+    #mixin-tabs.extendable-source
+      .comment
+        &= "create simple tabs from <a> unside <ul>"
+        <br/>
+        &= "$dir is 'bottom' for standard tabs"
+        <br/>
+        &= "'top' for hanging tabs"
+        <br/>
+        &= "assumes placement on UL"
+      %pre.scss
+        :preserve
+          @mixin tabs($dir: bottom, $border-color: $base-color, $border-color-active: $white, $background-color: $gray, $background-color-active: $white) {
+            @include horizontal-list(3px);
+            position: relative;
+            li {
+              border-#{$dir}: 1px solid $border-color;
+              margin-top: 1px;
+              &.active {
+                a {
+                  border-#{$dir}: 1px solid $border-color-active;
+                  background-color: $background-color-active;
+
+                }
+              }
+              a {
+                border: {
+                  width: 1px;
+                  style: solid;
+                  color: $border-color;
+                };
+                background-color: $background-color;
+                padding: 0 0.25em;
+                @if $dir == bottom {
+                  @include border-top-radius;
+                  @include remove-link-underlines;
+                }
+                @else {
+                  @include border-bottom-radius;
+                  border-top-width: 0;
+                }
+                &:hover {
+                  background-color: $background-color-active;
+                  border-#{$dir}: 1px solid $border-color-active;
+                }
+              }
+            }
+          }
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-drupal-tab-reset"}
+        :preserve
+          drupal-tab-reset
+    #mixin-drupal-tab-reset.extendable-source
+      .comment
+        &= "remove drupal tab styling"
+        <br/>
+        &= "apply to <ul>"
+      %pre.scss
+        :preserve
+          @mixin drupal-tab-reset {
+            border-bottom: 0 solid transparent;
+            li {
+              a {
+                background-color: transparent;
+                border-style: none;
+                border-color: transparent;
+                border-width: 0;
+                float: none;
+                position: static;
+                bottom: auto;
+                padding: 0;
+                margin-right: 0;
+                &:hover {
+                  background-color: transparent;
+                  border-color: transparent;
+                  border-bottom-color: transparent;
+                }
+              }
+              &.active {
+                a {
+                  background-color: transparent;
+                  border-color: transparent;
+                  border-bottom-color: transparent;
+                }
+              }
+            }
+          }
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-decending-z-order-tab"}
+        :preserve
+          decending-z-order-tab
+    #mixin-decending-z-order-tab.extendable-source
+      .comment
+        &= "assumes placement on UL"
+      %pre.scss
+        :preserve
+          @mixin decending-z-order-tab($count: 20) {
+            position: relative;
+            li {
+              position: relative;
+              $t: 0;
+              $i: $count;
+              @while $i > 0 {
+                &:nth-child(#{$t}) {
+                  z-index: #{$i};
+                }
+                $t: $t + 1;
+                $i: $i - 1;
+              }
+            }
+          }
+  %div.example
+    %h3.mixin
+      %a.permalink{:href => "#mixin-transition-all"}
+        :preserve
+          transition-all
+    #mixin-transition-all.extendable-source
+      .comment
+        &= "universal transitions"
+      %pre.scss
+        :preserve
+          @mixin transition-all($time: 0.2s, $ease: ease) {
+            * {
+              @include transition(all $time $ease);
+            }
+          }
   %div.example
     %h3.mixin
       %a.permalink{:href => "#mixin-dropdown-menu"}
@@ -84,4 +216,3 @@
               }
             }
           }
-
