@@ -12,7 +12,6 @@
       a {
         border-#{$dir}: 1px solid $border-color-active;
         background-color: $background-color-active;
-        // padding-#{$dir}: 0
 
       }
     }
@@ -23,10 +22,6 @@
         color: $border-color;
       };
       background-color: $background-color;
-      // float: left
-      // margin-top: -1px
-      // position: relative
-      // #{$dir}: -1px
       padding: 0 0.25em;
       @if $dir == bottom {
         @include border-top-radius;
@@ -75,8 +70,8 @@
   }
 }
 
+// assumes placement on UL
 @mixin decending-z-order-tab($count: 20) {
-  // assumes placement on UL
   position: relative;
   li {
     position: relative;
