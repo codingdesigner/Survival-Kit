@@ -14,7 +14,12 @@
         :preserve
           calc-percent
     #function-calc-percent.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          @function calc-percent($target, $container) {
+            @return $target / $container * 100%;
+          }
+      %pre.sass
         :preserve
           @function calc-percent($target, $container)
             @return ($target / $container) * 100%
@@ -24,7 +29,12 @@
         :preserve
           calc-em
     #function-calc-em.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          @function calc-em($target, $container) {
+            @return $target / $container * 1em;
+          }
+      %pre.sass
         :preserve
           @function calc-em($target, $container: $base-font-size)
             @return ($target / $container) * 1em
@@ -36,10 +46,15 @@
     #function-cp.extendable-source
       .comment
         shortcut name
-      %pre
+      %pre.scss
         :preserve
-          @function cp($target, $container)
-            @return calc-percent($target, $container)
+          @function cp($args...) {
+            @return calc-percent($args...);
+          }
+      %pre.sass
+        :preserve
+          @function cp($args...)
+            @return calc-percent($args...)
   %div.example
     %h3.extendable
       %a.permalink{:href => "#function-ce"}
@@ -48,20 +63,12 @@
     #function-ce.extendable-source
       .comment
         shortcut name
-      %pre
+      %pre.scss
         :preserve
-          @function ce($target, $container: $base-font-size)
-            @return calc-em($target, $container)
-  %div.example
-    %h3.extendable
-      %a.permalink{:href => "#function-calc-col-width"}
+          @function ce($args...) {
+            @return calc-em($args...);
+          }
+      %pre.sass
         :preserve
-          calc-col-width
-    #function-calc-col-width.extendable-source
-      .comment
-        // return the width of an arbitrary number of columns in a css grid system
-      %pre
-        :preserve
-          @function calc-col-width($number-of-cols)
-            $calc-width: ($kit-col-width * $number-of-cols) + ($kit-gutter-width * ($number-of-cols - 1))
-            @return $calc-width
+          @function ce($args...)
+            @return calc-em($args...)

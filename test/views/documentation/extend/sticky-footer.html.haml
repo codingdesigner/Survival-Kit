@@ -16,7 +16,13 @@
     #extend-html-frame-hidden.extendable-source
       .comment
         &= "apply to <html> and <body>"
-      %pre
+      %pre.scss
+        :preserve
+          %html-frame {
+            height: 100%;
+            margin: 0pt;
+          }
+      %pre.sass
         :preserve
           %html-frame
             height: 100%
@@ -29,7 +35,14 @@
     #extend-frame-hidden.extendable-source
       .comment
         &= "apply to <body>"
-      %pre
+      %pre.scss
+        :preserve
+          %frame {
+            display: table;
+            height: 100%;
+            width: 100%;
+          }
+      %pre.sass
         :preserve
           %frame
             display: table
@@ -41,7 +54,12 @@
         :preserve
           %row
     #extend-row-hidden.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          %row {
+            display: table-row;
+          }
+      %pre.sass
         :preserve
           %row
             display: table-row
@@ -51,7 +69,13 @@
         :preserve
           %row-expand
     #extend-row-expand-hidden.extendable-source
-      %pre
+      %pre.scss
+        :preserve
+          %row-expand {
+            @extend %row;
+            height: 100%;
+          }
+      %pre.sass
         :preserve
           %row-expand
             @extend .row
