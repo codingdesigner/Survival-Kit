@@ -449,9 +449,19 @@
   padding: 0.3em;
 }
 .survival-kit #page > header h1 a {
+  text-decoration: none;
+  border-bottom: none;
+}
+.survival-kit #page > header h1 a:visited {
+  border-bottom: none;
+}
+.survival-kit #page > header h1 a:focus {
   border-bottom: none;
 }
 .survival-kit #page > header h1 a:hover {
+  border-bottom: none;
+}
+.survival-kit #page > header h1 a:active {
   border-bottom: none;
 }
 .survival-kit #page > header h2 {
@@ -501,9 +511,19 @@
   font-size: 10px;
 }
 .survival-kit .back-to-top {
+  text-decoration: none;
+  border-bottom: none;
+}
+.survival-kit .back-to-top:visited {
+  border-bottom: none;
+}
+.survival-kit .back-to-top:focus {
   border-bottom: none;
 }
 .survival-kit .back-to-top:hover {
+  border-bottom: none;
+}
+.survival-kit .back-to-top:active {
   border-bottom: none;
 }
 .survival-kit .kit-nav, .survival-kit .section-nav {

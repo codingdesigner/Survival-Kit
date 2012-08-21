@@ -31,7 +31,7 @@ $sk-darkgray: mix($darkgray, $c-primary, 90%);
         border-right: 1px solid white;
         font-family: $kit-font-family;
         a {
-          @include remove-link-underlines;
+          @include undo-border-links;
           @include replace-text-with-dimensions("survival-kit-logo.png");
           display: block;
           padding: 0.3em;
@@ -59,7 +59,7 @@ $sk-darkgray: mix($darkgray, $c-primary, 90%);
     }
   }
   .back-to-top {
-    @include remove-link-underlines;
+    @include undo-border-links;
     float: right;
     font-size: 10px;
   }
