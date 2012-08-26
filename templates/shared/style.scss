@@ -55,33 +55,33 @@
 // ✔ ADD A CSS RESET OR NORMALIZATION
 @import "survivalkit/reset/reset";
 
-// ✔ 2. ADD YOUR OWN EXTENDABLES
+// ✔ 3. ADD YOUR OWN EXTENDABLES
 // typography
 @import "partials/03-extend/all";
 // @import "partials/03-extend/typography";
 // @import "partials/03-extend/helpers";
 
-// ✔ 3. EDIT AND ADD YOUR BASE STYLES
+// ✔ 4. EDIT AND ADD YOUR BASE STYLES
 // This is worth going into in detail
 // edit as you see fit for your project
 @import "partials/04-base/all";
 
-// ✔ 4. ESTABLISH A LAYOUT
+// ✔ 5. ESTABLISH A LAYOUT
 // Uncomment to use the Susy grid system
 @import "partials/05-layout/grids-susy";
 
-// ✔ 5. STYLE COMMON UI PATTERNS / DRUPAL UI PATTERNS
+// ✔ 6. STYLE COMMON UI PATTERNS / DRUPAL UI PATTERNS
 @import "partials/06-ui-patterns/common";
 // @import "partials/06-ui-patterns/drupal-patterns";
 
 // --------------------------------------------------------------------------------------
-// ✔ 7. YOUR CUSTOM LAYOUT AND DESIGN SASS
+// ✔ YOUR CUSTOM LAYOUT AND DESIGN SASS
 // THIS IS WHERE MOST CUSTOM WORK WILL GO
 // -- PRIMARY DESIGN --
 @import "your-design-here/design";
 
 // ------ OR ------
-// -- ✔ 8. STYLE TILE DESIGN --
+// -- ✔ 7. STYLE TILE DESIGN --
 // enable these partials for styletile layout and design
 // work with styletile.html
 // see: http://styletil.es/
@@ -91,5 +91,5 @@
 
 // --------------------------------------------------------------------------------------
 
-// ✔ 10. ENABLE PRINT STYLES
+// ✔ 8. ENABLE PRINT STYLES
 @import "partials/08-media/print";
