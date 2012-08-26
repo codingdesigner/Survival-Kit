@@ -2,18 +2,23 @@
 // Kit Default Variables
 ////////////////////////////
 
-// pick a reset of normalization
+// Pick a reset or normalization
 // accepted values: 'meyer' (default), 'normalize', 'none'
 // choose to reset header sizes (applies to 'normalize' only)
 // $init-headers: true;
 $init-type: normalize;
-// use Formalize http://formalize.me/
+// use [Formalize](http://formalize.me/)
 $formalize: true;
 
+// pixel-normalize
+// [A List Apart](http://www.alistapart.com/articles/a-pixel-identity-crisis/)
+$pixel-normalize: true;
+
+// Font size and line-height
 $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.5;
 
-// --- Modular SCALE (used by 05-base) -----------
+// Modular Scale (used by 04-base)
 // values used to determine modular scale values
 // and http://modularscale.com/
 $ratio: golden_ratio() major_third();
@@ -28,9 +33,6 @@ $kit-gutter: ms(2);
 $kit-gutter-half: $kit-gutter * 0.5;
 $kit-gutter-neg: $kit-gutter * -1;
 
-// pixel-normalize
-// http://www.alistapart.com/articles/a-pixel-identity-crisis/
-$pixel-normalize: true;
 
 // use the Compass baseline system
 $establish-baseline: true;
@@ -52,7 +54,7 @@ $link-transitions: false;
 // Forms
 $kit-form-defaults: false;
 
-// Grid Variables --------------------------------------------------------------
+// Grid Variables
 // note: set grid system-specific variables in the grid section (06)
 $show-grid: false;
 $show-baseline: false;
