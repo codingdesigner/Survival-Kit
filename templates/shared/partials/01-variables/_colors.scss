@@ -22,9 +22,9 @@ $hue-offset: 30;
 // How distant do you want tints and shades to be from their base:
 $brightness-offset: 10%;
 // Use Claude Boutet complements instead of RGB complements.
-// $color-theory: boutet
+// $color-theory: boutet;
 // Set saturation to 100% and lightness to 50% on all colors
-// $equalize: true
+// $equalize: true;
 $c-primary: color-schemer(primary);
 $c-secondary: color-schemer(secondary);
 $c-tertiary: color-schemer(tertiary);
