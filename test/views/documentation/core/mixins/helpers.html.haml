@@ -7,24 +7,24 @@
   %p.intro
     :markdown
       Mixins that help.
-  %div.example
-    %h3.mixin
+  %div#mixin-hidden.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-hidden"}
         :preserve
           hidden
-    #mixin-hidden.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin hidden {
             display: none !important;
             visibility: hidden;
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-visually-hidden.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-visually-hidden"}
         :preserve
           visuallyhidden
-    #mixin-visually-hidden.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin visuallyhidden($focusable: false) {
@@ -47,35 +47,35 @@
               }
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-invisible.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-invisible"}
         :preserve
           invisible
-    #mixin-invisible.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin invisible {
             visibility: hidden;
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-scale-image-ie.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-scale-image-ie"}
         :preserve
           scale-image-ie
-    #mixin-scale-image-ie.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin scale-image-ie($image) {
             background: none;
             filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="\#{image_url($image, true, false)}",  sizingMethod="scale");
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-kit-clearfix.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-kit-clearfix"}
         :preserve
           kit-clearfix
-    #mixin-kit-clearfix.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin kit-clearfix {
@@ -86,12 +86,12 @@
             }
             zoom: 1;
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-accessible-color.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-accessible-color"}
         :preserve
           accessible-color
-    #mixin-accessible-color.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin accessible-color($background: $white) {
@@ -102,12 +102,12 @@
               color: white;
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-clean-list.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-clean-list"}
         :preserve
           clean-list
-    #mixin-clean-list.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin clean-list {
@@ -115,12 +115,12 @@
             margin-left: 0;
             padding-left: 0;
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-susy-grid-backgrounds.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-susy-grid-backgrounds"}
         :preserve
           susy-grid-backgrounds
-    #mixin-susy-grid-backgrounds.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin susy-grid-backgrounds {
@@ -134,12 +134,12 @@
               @include baseline-grid-background;
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-susy-grid-background-baseline.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-susy-grid-background-baseline"}
         :preserve
           susy-grid-background-baseline
-    #mixin-susy-grid-background-baseline.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin susy-grid-background-baseline {

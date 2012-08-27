@@ -7,12 +7,12 @@
   %p.intro
     :markdown
       Survival Kit default variables
-  %div.example
-    %h3.step
+  %div#reset.element
+    %h2.element-title
       %a.permalink{:href => "#reset"}
         :preserve
           Pick a reset or normalization
-    #reset.extendable-source
+    .extendable-source
       .comment
         :markdown
           - accepted values: 'meyer' (default), 'normalize', 'none'
@@ -23,24 +23,24 @@
           // $init-headers: true;
           $init-type: normalize;
           $formalize: true;
-  %div.example
-    %h3.step
+  %div#pixel-normalize.element
+    %h2.element-title
       %a.permalink{:href => "#pixel-normalize"}
         :preserve
           Pixel-normalize
-    #pixel-normalize.extendable-source
+    .extendable-source
       .comment
         :markdown
           - [A List Apart](http://www.alistapart.com/articles/a-pixel-identity-crisis/)
       %pre.scss
         :preserve
           $pixel-normalize: true;
-  %div.example
-    %h3.step
+  %div#font-size-leading.element
+    %h2.element-title
       %a.permalink{:href => "#font-size-leading"}
         :preserve
           - Font size and line-height
-    #font-size-leading.extendable-source
+    .extendable-source
       / .comment
       /   :markdown
       /     - [A List Apart](http://www.alistapart.com/articles/a-pixel-identity-crisis/)
@@ -48,12 +48,12 @@
         :preserve
           $base-font-size: 16px;
           $base-line-height: $base-font-size * 1.5;
-  %div.example
-    %h3.step
+  %div#modular-scale.element
+    %h2.element-title
       %a.permalink{:href => "#modular-scale"}
         :preserve
           Modular Scale
-    #modular-scale.extendable-source
+    .extendable-source
       .comment
         :markdown
           - values used to determine modular scale values
@@ -62,12 +62,12 @@
         :preserve
           $ratio: golden_ratio() major_third();
           $base-size: $base-font-size;
-  %div.example
-    %h3.step
+  %div#dimensions.element
+    %h2.element-title
       %a.permalink{:href => "#dimensions"}
         :preserve
           Dimensions
-    #dimensions.extendable-source
+    .extendable-source
       .comment
         :markdown
           - basic values, independant of any css framework
@@ -79,24 +79,24 @@
           $kit-gutter: ms(2);
           $kit-gutter-half: $kit-gutter * 0.5;
           $kit-gutter-neg: $kit-gutter * -1;
-  %div.example
-    %h3.step
+  %div#baseline.element
+    %h2.element-title
       %a.permalink{:href => "#baseline"}
         :preserve
           use the Compass baseline system
-    #baseline.extendable-source
+    .extendable-source
       / .comment
       /   :markdown
       /     - basic values, independant of any css framework
       %pre.scss
         :preserve
           $establish-baseline: true;
-  %div.example
-    %h3.step
+  %div#headers.element
+    %h2.element-title
       %a.permalink{:href => "#headers"}
         :preserve
           Headers
-    #headers.extendable-source
+    .extendable-source
       .comment
         :markdown
           - create a list of header sizes, H1 - H6
@@ -107,12 +107,12 @@
           $header-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1);
           $adjust-font-size-to: true;
           $header-ampersands: false;
-  %div.example
-    %h3.step
+  %div#links.element
+    %h2.element-title
       %a.permalink{:href => "#links"}
         :preserve
           Links
-    #links.extendable-source
+    .extendable-source
       .comment
         :markdown
           - replace normal link underlines with bottom borders
@@ -121,12 +121,12 @@
         :preserve
           $border-links: false;
           $link-transitions: false;
-  %div.example
-    %h3.step
+  %div#forms.element
+    %h2.element-title
       %a.permalink{:href => "#forms"}
         :preserve
           Forms
-    #forms.extendable-source
+    .extendable-source
       / .comment
       /   :markdown
       /     - replace normal link underlines with bottom borders
@@ -134,12 +134,12 @@
       %pre.scss
         :preserve
           $kit-form-defaults: false;
-  %div.example
-    %h3.step
+  %div#grid-variables.element
+    %h2.element-title
       %a.permalink{:href => "#grid-variables"}
         :preserve
           Grid Variables
-    #grid-variables.extendable-source
+    .extendable-source
       .comment
         :markdown
           - note: set grid system-specific variables in the grid section (06)
@@ -147,12 +147,12 @@
         :preserve
           $show-grid: false;
           $show-baseline: false;
-  %div.example
-    %h3.step
+  %div#animate.element
+    %h2.element-title
       %a.permalink{:href => "#animate"}
         :preserve
           Animate all the things
-    #animate.extendable-source
+    .extendable-source
       .comment
         :markdown
           - useful for previewing css changes.
@@ -160,12 +160,12 @@
       %pre.scss
         :preserve
           $animate-all-the-things: false;
-  %div.example
-    %h3.step
+  %div#compass-defaults.element
+    %h2.element-title
       %a.permalink{:href => "#compass-defaults"}
         :preserve
           Compass Defaults
-    #compass-defaults.extendable-source
+    .extendable-source
       .comment
         :markdown
           - all the default settings from Compass

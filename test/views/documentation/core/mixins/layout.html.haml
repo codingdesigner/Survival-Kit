@@ -7,12 +7,12 @@
   %p.intro
     :markdown
       Mixins for layout.
-  %div.example
-    %h3.mixin
+  %div#mixin-vertical-separation.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-vertical-separation"}
         :preserve
           vertical-separation
-    #mixin-vertical-separation.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin vertical-separation($margin: $kit-baseline, $divide: false, $bordercolor: $border-color, $borderstyle: solid) {
@@ -33,12 +33,12 @@
               margin-bottom: 0;
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-un-vertical-separation.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-un-vertical-separation"}
         :preserve
           un-vertical-separation
-    #mixin-un-vertical-separation.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin un-vertical-separation {

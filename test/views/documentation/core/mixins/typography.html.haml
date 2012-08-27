@@ -7,12 +7,12 @@
   %p.intro
     :markdown
       Mixins for typography.
-  %div.example
-    %h3.mixin
+  %div#mixin-border-links.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-border-links"}
         :preserve
           border-links
-    #mixin-border-links.extendable-source
+    .extendable-source
       .comment
         &= "replace underlines on links with bottom borders"
       %pre.scss
@@ -43,12 +43,12 @@
               }
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-undo-border-links.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-undo-border-links"}
         :preserve
           undo-border-links
-    #mixin-undo-border-links.extendable-source
+    .extendable-source
       .comment
         &= "remove bottom borders from links"
       %pre.scss
@@ -71,12 +71,12 @@
               }
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-link-transitions.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-link-transitions"}
         :preserve
           link-transitions
-    #mixin-link-transitions.extendable-source
+    .extendable-source
       .comment
         &= "fade between default and hover colors"
       %pre.scss
@@ -84,12 +84,12 @@
           @mixin link-transitions($time: 0.5s, $easing: "ease-out", $property: "all") {
             @include transition($property, $time, $easing);
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-header-ampersands.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-header-ampersands"}
         :preserve
           header-ampersands
-    #mixin-header-ampersands.extendable-source
+    .extendable-source
       .comment
         &= "Only use the fancy ampersand in <h#> tags"
       %pre.scss
@@ -101,12 +101,12 @@
               font-style: italic;
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-text-overflow.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-text-overflow"}
         :preserve
           text-overflow
-    #mixin-text-overflow.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin text-overflow($method: ellipsis) {
@@ -118,12 +118,12 @@
               width: 100%;
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-replace-list-numbers.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-replace-list-numbers"}
         :preserve
           replace-list-numbers
-    #mixin-replace-list-numbers.extendable-source
+    .extendable-source
       .comment
         &= "replace OL > LI numbers so they can be styled"
       %pre.scss

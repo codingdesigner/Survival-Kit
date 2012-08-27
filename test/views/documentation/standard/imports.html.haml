@@ -9,11 +9,11 @@
       Import libraries and partials into your project
   %h2
     THE FIRST IMPORTS ADD NO CSS UPON COMPILE
-  %div.example
-    %h3.step
+  %div#common-functions-variables.element
+    %h2.element-title
       %a.permalink{:href => "#common-functions-variables"}
         ✔ IMPORT COMMON FUNCTIONS AND VARIABLES
-    #common-functions-variables.extendable-source
+    .extendable-source
       .comment
         :markdown
           - enable / disable, but do not edit these files
@@ -21,11 +21,11 @@
         :preserve
           @import "survivalkit/functions/all";
           @import "survivalkit/variables/all";
-  %div.example
-    %h3.step
+  %div#variables.element
+    %h2.element-title
       %a.permalink{:href => "#variables"}
         ✔ 1. ADD YOUR OWN VARIABLES
-    #variables.extendable-source
+    .extendable-source
       .comment
         :markdown
           - base, color, fonts, grids
@@ -33,11 +33,11 @@
       %pre.scss
         :preserve
           @import "partials/01-variables/all";
-  %div.example
-    %h3.step
+  %div#gems.element
+    %h2.element-title
       %a.permalink{:href => "#gems"}
         ✔ IMPORT COMPASS AND OTHER GEMS
-    #gems.extendable-source
+    .extendable-source
       .comment
         :markdown
           - enable / disable, but do not edit these files
@@ -47,11 +47,11 @@
           @import "susy";
           @import "breakpoint";
           @import "modular-scale";
-  %div.example
-    %h3.step
+  %div#common-mixins.element
+    %h2.element-title
       %a.permalink{:href => "#common-mixins"}
         ✔ IMPORT COMMON MIXINS
-    #common-mixins.extendable-source
+    .extendable-source
       .comment
         :markdown
           - enable / disable, but do not edit these files
@@ -59,19 +59,19 @@
         :preserve
           @import "survivalkit/mixins/all";
           @import "survivalkit/reset/pixel-normalize";
-  %div.example
-    %h3.step
+  %div#custom-mixins.element
+    %h2.element-title
       %a.permalink{:href => "#custom-mixins"}
         ✔ 2. ADD YOUR OWN MIXINS
-    #custom-mixins.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @import "partials/02-mixins/custom";
-  %div.example
-    %h3.step
+  %div#extendables.element
+    %h2.element-title
       %a.permalink{:href => "#extendables"}
         ✔ IMPORT COMMON HELPER EXTENDABLES
-    #extendables.extendable-source
+    .extendable-source
       .comment
         :markdown
           - enable / disable, but do not edit these files
@@ -81,55 +81,55 @@
           @import "survivalkit/extend/sticky-footer";
   %h2
     THE FOLLOWING IMPORTS WILL ADD CSS UPON COMPILE
-  %div.example
-    %h3.step
+  %div#reset.element
+    %h2.element-title
       %a.permalink{:href => "#reset"}
         ✔ ADD A CSS RESET OR NORMALIZATION
-    #reset.extendable-source
+    .extendable-source
       .comment
         :markdown
           - enable / disable, but do not edit these files
       %pre.scss
         :preserve
           @import "survivalkit/reset/reset";
-  %div.example
-    %h3.step
+  %div#custom-extendables.element
+    %h2.element-title
       %a.permalink{:href => "#custom-extendables"}
         ✔ 3. ADD YOUR OWN EXTENDABLES
-    #custom-extendables.extendable-source
+    .extendable-source
       / .comment
       /   :markdown
       /     - enable / disable, but do not edit these files
       %pre.scss
         :preserve
           @import "partials/03-extend/all";
-  %div.example
-    %h3.step
+  %div#base.element
+    %h2.element-title
       %a.permalink{:href => "#base"}
         ✔ 4. EDIT AND ADD YOUR BASE STYLES
-    #base.extendable-source
+    .extendable-source
       .comment
         :markdown
           - edit these as you see fit for your project
       %pre.scss
         :preserve
           @import "partials/04-base/all";
-  %div.example
-    %h3.step
+  %div#layout.element
+    %h2.element-title
       %a.permalink{:href => "#layout"}
         ✔ 5. ESTABLISH A LAYOUT
-    #layout.extendable-source
+    .extendable-source
       .comment
         :markdown
           - set up a grid system (Susy)
       %pre.scss
         :preserve
           @import "partials/05-layout/grids-susy";
-  %div.example
-    %h3.step
+  %div#patterns.element
+    %h2.element-title
       %a.permalink{:href => "#patterns"}
         ✔ 6. STYLE COMMON UI PATTERNS / DRUPAL UI PATTERNS
-    #patterns.extendable-source
+    .extendable-source
       .comment
         :markdown
           - Choose Common or Drupal
@@ -138,22 +138,22 @@
         :preserve
           @import "partials/06-ui-patterns/common";
           // @import "partials/06-ui-patterns/drupal-patterns";
-  %div.example
-    %h3.step
+  %div#custom-design.element
+    %h2.element-title
       %a.permalink{:href => "#custom-design"}
         ✔ YOUR CUSTOM LAYOUT AND DESIGN SASS
-    #custom-design.extendable-source
+    .extendable-source
       .comment
         :markdown
           - This is where most custom work will go
       %pre.scss
         :preserve
           @import "your-design-here/design";
-  %div.example
-    %h3.step
+  %div#style-tile.element
+    %h2.element-title
       %a.permalink{:href => "#style-tile"}
         ✔ 7. STYLE TILE DESIGN
-    #style-tile.extendable-source
+    .extendable-source
       .comment
         :markdown
           - enable these partials for styletile layout and design
@@ -164,11 +164,11 @@
         :preserve
           @import "survivalkit/style-tile/all";
           @import "partials/07-styletile/tile-design";
-  %div.example
-    %h3.step
+  %div#media.element
+    %h2.element-title
       %a.permalink{:href => "#media"}
         ✔ 8. ENABLE PRINT STYLES
-    #media.extendable-source
+    .extendable-source
       / .comment
       /   :markdown
       /     - enable these partials for styletile layout and design

@@ -8,12 +8,12 @@
     :markdown
       Extendables for sticky footer.
       [link](http://pixelsvsbytes.com/blog/2011/09/sticky-css-footers-the-flexible-way/)
-  %div.example
-    %h3.extendable
+  %div#extend-html-frame-hidden.element
+    %h2.element-title
       %a.permalink{:href => "#extend-html-frame-hidden"}
         :preserve
           %html-frame
-    #extend-html-frame-hidden.extendable-source
+    .extendable-source
       .comment
         &= "apply to <html> and <body>"
       %pre.scss
@@ -22,12 +22,12 @@
             height: 100%;
             margin: 0pt;
           }
-  %div.example
-    %h3.extendable
+  %div#extend-frame-hidden.element
+    %h2.element-title
       %a.permalink{:href => "#extend-frame-hidden"}
         :preserve
           %frame
-    #extend-frame-hidden.extendable-source
+    .extendable-source
       .comment
         &= "apply to <body>"
       %pre.scss
@@ -37,23 +37,23 @@
             height: 100%;
             width: 100%;
           }
-  %div.example
-    %h3.extendable
+  %div#extend-row-hidden.element
+    %h2.element-title
       %a.permalink{:href => "#extend-row-hidden"}
         :preserve
           %row
-    #extend-row-hidden.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           %row {
             display: table-row;
           }
-  %div.example
-    %h3.extendable
+  %div#extend-row-expand-hidden.element
+    %h2.element-title
       %a.permalink{:href => "#extend-row-expand-hidden"}
         :preserve
           %row-expand
-    #extend-row-expand-hidden.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           %row-expand {

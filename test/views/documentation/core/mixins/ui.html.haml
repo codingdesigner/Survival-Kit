@@ -7,12 +7,12 @@
   %p.intro
     :markdown
       Mixins for UI patterns.
-  %div.example
-    %h3.mixin
+  %div#mixin-tabs.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-tabs"}
         :preserve
           tabs
-    #mixin-tabs.extendable-source
+    .extendable-source
       .comment
         &= "create simple tabs from <a> unside <ul>"
         <br/>
@@ -59,12 +59,12 @@
               }
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-drupal-tab-reset.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-drupal-tab-reset"}
         :preserve
           drupal-tab-reset
-    #mixin-drupal-tab-reset.extendable-source
+    .extendable-source
       .comment
         &= "remove drupal tab styling"
         <br/>
@@ -99,12 +99,12 @@
               }
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-decending-z-order-tab.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-decending-z-order-tab"}
         :preserve
           decending-z-order-tab
-    #mixin-decending-z-order-tab.extendable-source
+    .extendable-source
       .comment
         &= "assumes placement on UL"
       %pre.scss
@@ -124,12 +124,12 @@
               }
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-transition-all.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-transition-all"}
         :preserve
           transition-all
-    #mixin-transition-all.extendable-source
+    .extendable-source
       .comment
         &= "universal transitions"
       %pre.scss
@@ -139,12 +139,12 @@
               @include transition(all $time $ease);
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-dropdown-menu.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-dropdown-menu"}
         :preserve
           dropdown-menu
-    #mixin-dropdown-menu.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin dropdown-menu($padding: false) {
@@ -175,12 +175,12 @@
               }
             }
           }
-  %div.example
-    %h3.mixin
+  %div#mixin-pretty-dropdown-menu.element
+    %h2.element-title
       %a.permalink{:href => "#mixin-pretty-dropdown-menu"}
         :preserve
           pretty-dropdown-menu
-    #mixin-pretty-dropdown-menu.extendable-source
+    .extendable-source
       %pre.scss
         :preserve
           @mixin pretty-dropdown-menu(

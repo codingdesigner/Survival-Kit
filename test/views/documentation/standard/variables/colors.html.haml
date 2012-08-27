@@ -9,11 +9,11 @@
       Survival Kit color variables.
       Set color variables for your project.
       Optionally use Color-Schemer
-  %div.example
-    %h3.step
+  %div#default-colors.element
+    %h2.element-title
       %a.permalink{:href => "#default-colors"}
         Default Colors
-    #default-colors.extendable-source
+    .extendable-source
       / .comment
       /   :markdown
       /     - accepted values: 'meyer' (default
@@ -23,22 +23,22 @@
           $c-secondary: $black;
           $c-tertiary: $black;
           $c-quadrary: $black;
-  %div.example
-    %h3.step
+  %div#color-schemer-base-color.element
+    %h2.element-title
       %a.permalink{:href => "#color-schemer-base-color"}
         Color Schemer - Base Color
-    #color-schemer-base-color.extendable-source
+    .extendable-source
       .comment
         :markdown
           - Pick the base color for your scheme
       %pre.scss
         :preserve
           $base-color: $c-primary;
-  %div.example
-    %h3.step
+  %div#color-schemer-scheme.element
+    %h2.element-title
       %a.permalink{:href => "#color-schemer-scheme"}
         Color Schemer - Scheme
-    #color-schemer-scheme.extendable-source
+    .extendable-source
       .comment
         :markdown
           - Select your scheme from the list and place it here:
@@ -47,33 +47,33 @@
       %pre.scss
         :preserve
           $color-scheme: accented-analogic;
-  %div.example
-    %h3.step
+  %div#color-schemer-hue.element
+    %h2.element-title
       %a.permalink{:href => "#color-schemer-hue"}
         Color Schemer - Hue Offset
-    #color-schemer-hue.extendable-source
+    .extendable-source
       .comment
         :markdown
           - How distant do you want the hue offset to be? (degrees around the color wheel)
       %pre.scss
         :preserve
           $hue-offset: 30;
-  %div.example
-    %h3.step
+  %div#color-schemer-brightness.element
+    %h2.element-title
       %a.permalink{:href => "#color-schemer-brightness"}
         Color Schemer - Brightness Offset
-    #color-schemer-brightness.extendable-source
+    .extendable-source
       .comment
         :markdown
           - How distant do you want tints and shades to be from their base?
       %pre.scss
         :preserve
           $brightness-offset: 10%;
-  %div.example
-    %h3.step
+  %div#color-schemer-boutet.element
+    %h2.element-title
       %a.permalink{:href => "#color-schemer-boutet"}
         Color Schemer - Claude Boutet complements
-    #color-schemer-boutet.extendable-source
+    .extendable-source
       .comment
         :markdown
           - Use Claude Boutet complements instead of RGB complements?
@@ -81,22 +81,22 @@
       %pre.scss
         :preserve
           $color-theory: boutet;
-  %div.example
-    %h3.step
+  %div#color-schemer-equalize.element
+    %h2.element-title
       %a.permalink{:href => "#color-schemer-equalize"}
         Color Schemer - Equalize
-    #color-schemer-equalize.extendable-source
+    .extendable-source
       .comment
         :markdown
           - Set saturation to 100% and lightness to 50% on all colors
       %pre.scss
         :preserve
           $equalize: false;
-  %div.example
-    %h3.step
+  %div#color-schemer.element
+    %h2.element-title
       %a.permalink{:href => "#color-schemer"}
         Color Schemer
-    #color-schemer.extendable-source
+    .extendable-source
       .comment
         :markdown
           - arguments: $color-location, $base-color, $color-scheme, $hue-offset
@@ -106,11 +106,11 @@
           $c-secondary: color-schemer(secondary);
           $c-tertiary: color-schemer(tertiary);
           $c-quadrary: color-schemer(quadrary);
-  %div.example
-    %h3.step
+  %div#survival-kit-color-variables.element
+    %h2.element-title
       %a.permalink{:href => "#survival-kit-color-variables"}
         Survival Kit Color Variables
-    #survival-kit-color-variables.extendable-source
+    .extendable-source
       .comment
         :markdown
           - Color variables expected 04-base
@@ -122,11 +122,11 @@
           $alt-color: $badass;
           $background-color: $white;
           $border-color: $gray;
-  %div.example
-    %h3.step
+  %div#link-colors.element
+    %h2.element-title
       %a.permalink{:href => "#link-colors"}
         Link Colors
-    #link-colors.extendable-source
+    .extendable-source
       / .comment
       /   :markdown
       /     - Color variables expected 04-base
@@ -142,11 +142,11 @@
           $link-border-hover: complement($alt-color);
           $link-border-active: complement($alt-color);
           $link-border-visited: $alt-color;
-  %div.example
-    %h3.step
+  %div#styletile-colors.element
+    %h2.element-title
       %a.permalink{:href => "#styletile-colors"}
         Color Variables for Style Tiles
-    #styletile-colors.extendable-source
+    .extendable-source
       .comment
         :markdown
           - enable and customize as needed
