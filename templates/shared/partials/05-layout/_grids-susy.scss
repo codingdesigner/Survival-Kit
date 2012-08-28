@@ -9,7 +9,7 @@
 $total-columns: 12;
 $column-width: 6em;
 $gutter-width: 2em;
-$side-gutter-width: $gutter-width;
+$grid-padding: $gutter-width;
 
 // uncomment to output the full container width to the terminal
 // @debug columns-width()

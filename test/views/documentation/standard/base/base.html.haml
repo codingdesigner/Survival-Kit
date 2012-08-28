@@ -1,0 +1,27 @@
+- @title = "Base Markup Styles"
+- @subnav = "<nav class='section-nav'></nav> "
+
+/ Base Markup Styles
+%section#base.element-group
+  %h1.section-title Base Markup Styles
+  %p.intro
+    :markdown
+      Very vanilla styles for base html markup. Many selectors have no styling at all.
+
+      View the Sass files in your project and add, edit, and delete to suite your needs.
+  / %div#serif.element
+  /   %h2.element-title
+  /     %a.permalink{:href => "#serif"}
+  /       serif
+  /   .extendable-source
+  /     / .comment
+  /     /   :markdown
+  /     /     - the same as `%clearfix` but class-based.
+  /     /     - Your CMS may use this class, so let's extend it.
+  /     /     - Remove if you don't need it.
+  /     %pre.scss
+  /       :preserve
+  /         %serif {
+  /           font-family: $font-serifs;
+  /         }
+
