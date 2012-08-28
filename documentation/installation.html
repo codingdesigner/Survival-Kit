@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!-->
 <html class='no-js' lang='en'>
   <!--<![endif]-->
-  <head>
+  <head><base href="http://canarymason.github.com/Survival-Kit/"/>
     <meta charset='utf-8' />
     <title>Installation</title>
     <meta content='' name='description' />
@@ -60,7 +60,7 @@
           </h1>
           <h2>Installation</h2>
         </hgroup>
-        
+
       </header>
       <nav class='kit-nav'>
         <ul>
@@ -252,21 +252,21 @@
   <h1 class='section-title'>Installation</h1>
   <div class='instructions'>
     <h3 id='installation'>Installation</h3>
-    
+
     <p>0. <a href='http://compass-style.org/install/'>Install Sass and Compass</a>, if you haven&#8217;t already.</p>
-    
+
     <p>1. <strong>Terminal</strong>: <code>gem install survivalkit</code></p>
-    
+
     <h4 id='for_existing_compass_projects'>For Existing Compass Projects</h4>
-    
+
     <p>1. Add <code>require &#39;survivalkit&#39;</code> in Compass&#8217;s config.rb file</p>
-    
+
     <p>2. <strong>Terminal</strong>: navigate to your project directory: <code>cd PATH_TO_YOUR_PROJECT</code></p>
-    
+
     <p>3. <strong>Terminal</strong>: <code>compass install survivalkit</code></p>
-    
+
     <h4 id='for_new_compass_projects'>For New Compass Projects</h4>
-    
+
     <p>1. <strong>Terminal</strong>: <code>compass create my_project -r survivalkit -u survivalkit --javascripts-dir js --css-dir css</code></p>
   </div>
 </section>
@@ -294,7 +294,7 @@
       //<![CDATA[
         // iOS scale bug fix
         MBP.scaleFix();
-        
+
         // Respond.js
         yepnope({
           test : Modernizr.mq('(only all)'),
