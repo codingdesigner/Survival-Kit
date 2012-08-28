@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.beta.8 - August 28, 2012
+* small updates
+* clean installation option
+
 ## 1.0.beta.6 and 7 - August 20, 2012
 * update replace-list-numbers mixin
 
