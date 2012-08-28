@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+  <!--<![endif]-->
+  <head>
+    <meta charset='utf-8' />
+    <title>Mixins → patterns</title>
+    <meta content='' name='description' />
+    <meta content='' name='author' />
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta content='True' name='HandheldFriendly' />
+    <meta content='320' name='MobileOptimized' />
+    <meta content='width=device-width, target-densitydpi=160, initial-scale=1.0' name='viewport' />
+    <!-- For iPhone 4 with high-resolution Retina display: -->
+    <link href='/apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon-precomposed' sizes='114x114' />
+    <!-- For first-generation iPad: -->
+    <link href='/apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon-precomposed' sizes='72x72' />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link href='/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed' />
+    <!-- For Nokia -->
+    <link href='/apple-touch-icon.png' rel='shortcut icon' />
+    <!-- For everything else -->
+    <link href='/favicon.ico' rel='shortcut icon' />
+    <!-- iOS. Delete if not required -->
+    <meta content='yes' name='apple-mobile-web-app-capable' />
+    <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style' />
+    <link href='splash.png' rel='apple-touch-startup-image' />
+    <!-- Microsoft. Delete if not required -->
+    <meta content='on' http-equiv='cleartype' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <!--[if lt IE 7 ]> <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script> <![endif]-->
+    <!-- CSS -->
+    <link href='/css/style.css?v=1' rel='stylesheet' />
+    <link href='/css/survivalkit/survivalkit.css?v=1' rel='stylesheet' />
+    <!-- All JavaScript at the bottom, except for Modernizr and Respond. -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+      <script src="/js/libs/selectivizr-min.js"></script>
+    <![endif]-->
+    <script src='/js/libs/modernizr-2.0.min.js'></script>
+    <script src='/js/libs/respond.min.js'></script>
+    <!-- Typekit -->
+    <!--
+      <script src='http://use.typekit.com/xxxxxxx.js' type='text/javascript'></script>
+      <script type='text/javascript'>
+        //<![CDATA[
+          try{Typekit.load();}catch(e){}
+        //]]>
+      </script>
+    -->
+  </head>
+  <body class='survival-kit'>
+    <div id='page'>
+      <header>
+        <hgroup>
+          <h1>
+            <a href='/survivalkit/'>The Coding Designer's Survival Kit</a>
+          </h1>
+          <h2>Mixins → patterns</h2>
+        </hgroup>
+        
+      </header>
+      <nav class='kit-nav'>
+        <ul>
+          <li>
+            Variables
+            <ul>
+              <li>
+                <a href='/documentation/core/variables/color-names.html'>Color Names</a>
+              </li>
+              <li>
+                <a href='/documentation/core/variables/helpers.html'>Helpers</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Extendables
+            <ul>
+              <li>
+                <a href='/documentation/core/extend/helpers.html'>Helpers</a>
+              </li>
+              <li>
+                <a href='/documentation/core/extend/sticky-footer.html'>Sticky Footer</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Functions
+            <ul>
+              <li>
+                <a href='/documentation/core/functions/calculations.html'>Calculations</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Mixins
+            <ul>
+              <li>
+                <a href='/documentation/core/mixins/helpers.html'>Helpers</a>
+              </li>
+              <li>
+                <a href='/documentation/core/mixins/layout.html'>Layout</a>
+              </li>
+              <li>
+                <a href='/documentation/core/mixins/pseudo.html'>Pseudo</a>
+              </li>
+              <li>
+                <a href='/documentation/core/mixins/typography.html'>Typography</a>
+              </li>
+              <li>
+                <a href='/documentation/core/mixins/ui.html'>UI</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Reset
+            <ul>
+              <li>
+                <a href='/documentation/core/reset/reset.html'>
+                  Reset
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>
+          Standard
+          <ul>
+            <li>
+              <a href='/documentation/installation.html'>
+                Installation
+              </a>
+            </li>
+            <li>
+              Sass / Scss Workflow
+              <ul>
+                <li>
+                  <a href='/documentation/standard/imports.html'>
+                    Imports
+                  </a>
+                </li>
+                <li>
+                  Variables
+                  <ul>
+                    <li>
+                      <a href='/documentation/standard/variables/base.html'>
+                        Base
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/documentation/standard/variables/colors.html'>
+                        Colors
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/documentation/standard/variables/fonts.html'>
+                        Fonts
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Mixins
+                  <ul>
+                    <li>
+                      <a href='/documentation/standard/mixins/mixins.html'>
+                        Custom
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Extend
+                  <ul>
+                    <li>
+                      <a href='/documentation/standard/extend/helpers.html'>
+                        Helpers
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/documentation/standard/extend/typography.html'>
+                        Typography
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href='/documentation/standard/base/base.html'>
+                    Base
+                  </a>
+                </li>
+                <li>
+                  Layout
+                  <ul>
+                    <li>
+                      <a href='/documentation/standard/layout/susy.html'>
+                        Grids - Susy
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  UI Patterns
+                  <ul>
+                    <li>
+                      Common
+                    </li>
+                    <li>
+                      Drupal
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Style Tiles
+                  <ul>
+                    <li>
+                      Tile Design
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Media
+                  <ul>
+                    <li>
+                      Print
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Your Design
+                </li>
+              </ul>
+            </li>
+            <li>
+              HTML
+            </li>
+            <li>
+              Javascript
+            </li>
+          </ul>
+        </h2>
+        <h2>
+          Drupal Theme
+        </h2>
+      </nav>
+      <nav class='section-nav'></nav>
+      <div id='main' role='main'>
+        <!-- UI Patterns -->
+<section class='element-group' id='ui'>
+  <h1 class='section-title'>UI Patterns</h1>
+  <p class='intro'>
+    <p>Mixins for UI patterns.</p>
+  </p>
+  <div class='element' id='mixin-tabs'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-tabs'>
+        tabs
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <div class='comment'>
+        create simple tabs from &lt;a&gt; unside &lt;ul&gt;
+        <br/>
+        $dir is 'bottom' for standard tabs
+        <br/>
+        'top' for hanging tabs
+        <br/>
+        assumes placement on UL
+      </div>
+      <pre class='scss'>@mixin tabs($dir: bottom, $border-color: $base-color, $border-color-active: $white, $background-color: $gray, $background-color-active: $white) {&#x000A;  @include horizontal-list(3px);&#x000A;  position: relative;&#x000A;  li {&#x000A;    border-: 1px solid $border-color;&#x000A;    margin-top: 1px;&#x000A;    &.active {&#x000A;      a {&#x000A;        border-: 1px solid $border-color-active;&#x000A;        background-color: $background-color-active;&#x000A;&#x000A;      }&#x000A;    }&#x000A;    a {&#x000A;      border: {&#x000A;        width: 1px;&#x000A;        style: solid;&#x000A;        color: $border-color;&#x000A;      };&#x000A;      background-color: $background-color;&#x000A;      padding: 0 0.25em;&#x000A;      @if $dir == bottom {&#x000A;        @include border-top-radius;&#x000A;        @include remove-link-underlines;&#x000A;      }&#x000A;      @else {&#x000A;        @include border-bottom-radius;&#x000A;        border-top-width: 0;&#x000A;      }&#x000A;      &:hover {&#x000A;        background-color: $background-color-active;&#x000A;        border-: 1px solid $border-color-active;&#x000A;      }&#x000A;    }&#x000A;  }&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-drupal-tab-reset'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-drupal-tab-reset'>
+        drupal-tab-reset
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <div class='comment'>
+        remove drupal tab styling
+        <br/>
+        apply to &lt;ul&gt;
+      </div>
+      <pre class='scss'>@mixin drupal-tab-reset {&#x000A;  border-bottom: 0 solid transparent;&#x000A;  li {&#x000A;    a {&#x000A;      background-color: transparent;&#x000A;      border-style: none;&#x000A;      border-color: transparent;&#x000A;      border-width: 0;&#x000A;      float: none;&#x000A;      position: static;&#x000A;      bottom: auto;&#x000A;      padding: 0;&#x000A;      margin-right: 0;&#x000A;      &:hover {&#x000A;        background-color: transparent;&#x000A;        border-color: transparent;&#x000A;        border-bottom-color: transparent;&#x000A;      }&#x000A;    }&#x000A;    &.active {&#x000A;      a {&#x000A;        background-color: transparent;&#x000A;        border-color: transparent;&#x000A;        border-bottom-color: transparent;&#x000A;      }&#x000A;    }&#x000A;  }&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-decending-z-order-tab'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-decending-z-order-tab'>
+        decending-z-order-tab
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <div class='comment'>
+        assumes placement on UL
+      </div>
+      <pre class='scss'>@mixin decending-z-order-tab($count: 20) {&#x000A;  position: relative;&#x000A;  li {&#x000A;    position: relative;&#x000A;    $t: 0;&#x000A;    $i: $count;&#x000A;    @while $i > 0 {&#x000A;      &:nth-child() {&#x000A;        z-index: ;&#x000A;      }&#x000A;      $t: $t + 1;&#x000A;      $i: $i - 1;&#x000A;    }&#x000A;  }&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-transition-all'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-transition-all'>
+        transition-all
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <div class='comment'>
+        universal transitions
+      </div>
+      <pre class='scss'>@mixin transition-all($time: 0.2s, $ease: ease) {&#x000A;  * {&#x000A;    @include transition(all $time $ease);&#x000A;  }&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-dropdown-menu'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-dropdown-menu'>
+        dropdown-menu
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <pre class='scss'>@mixin dropdown-menu($padding: false) {&#x000A;  padding: 0;&#x000A;  > li {&#x000A;    @include inline-block-list-item($padding);&#x000A;    position: relative;&#x000A;    &:hover{&#x000A;      ul {&#x000A;        display: block;&#x000A;      }&#x000A;    }&#x000A;  }&#x000A;  ul {&#x000A;    display: none;&#x000A;    position: absolute;&#x000A;    top: 100%;&#x000A;    left: 0;&#x000A;    margin-top: 0;&#x000A;    padding-left: 0;&#x000A;    padding-right: 0;&#x000A;    li {&#x000A;      display: block;&#x000A;      @if $padding != false {&#x000A;        padding-left: $padding;&#x000A;        padding-right: $padding;&#x000A;      }&#x000A;    }&#x000A;  }&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-pretty-dropdown-menu'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-pretty-dropdown-menu'>
+        pretty-dropdown-menu
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <pre class='scss'>@mixin pretty-dropdown-menu(&#x000A;    $padding: false,&#x000A;    $background: false,&#x000A;    $background-drop: false,&#x000A;    $hover-color: false&#x000A;    ) {&#x000A;  @include dropdown-menu($padding);&#x000A;  @if $background != false {&#x000A;    background: $background;&#x000A;  }&#x000A;  > li {&#x000A;    &:hover {&#x000A;      @if $background-drop != false {&#x000A;        background: $background-drop;&#x000A;      }&#x000A;    }&#x000A;  }&#x000A;  ul {&#x000A;    @if $background-drop != false {&#x000A;      background: $background-drop;&#x000A;    }&#x000A;    @else {&#x000A;      @if $background != false {&#x000A;        background: $background;&#x000A;      }&#x000A;    }&#x000A;    li:hover {&#x000A;      @if $hover-color != false {&#x000A;        background: $hover-color;&#x000A;      }&#x000A;    }&#x000A;  }&#x000A;}</pre>
+    </div>
+  </div>
+</section>
+      </div>
+      <footer></footer>
+    </div>
+    <!--
+      Javascript at the bottom for fast page loading
+      Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
+    -->
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        window.jQuery || document.write("<script src='js/libs/jquery-1.6.min.js'>\x3C/script>")
+      //]]>
+    </script>
+    <script src='/js/libs/plugins.js?v=1'></script>
+    <script src='/js/script.js?v=1'></script>
+    <script src='/js/libs/320-up/helper.js?v=1'></script>
+    <script src='/js/kit/kit-source.jquery.js?v=1'></script>
+    <!--[if (lt IE 9) & (!IEMobile)]>
+      <script src="/js/libs/imgsizer.js"></script>
+    <![endif]-->
+    <script type='text/javascript'>
+      //<![CDATA[
+        // iOS scale bug fix
+        MBP.scaleFix();
+        
+        // Respond.js
+        yepnope({
+          test : Modernizr.mq('(only all)'),
+          nope : ['/js/libs/respond.min.js']
+        });
+      //]]>
+    </script>
+    <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet -->
+    <!-- change the UA-XXXXX-X to be your site's ID -->
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"],["_trackPageLoadTime"]];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+        s.parentNode.insertBefore(g,s)}(document,"script"));
+      //]]>
+    </script>
+  </body>
+</html>

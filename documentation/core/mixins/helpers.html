@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+  <!--<![endif]-->
+  <head>
+    <meta charset='utf-8' />
+    <title>Mixins → Helpers</title>
+    <meta content='' name='description' />
+    <meta content='' name='author' />
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta content='True' name='HandheldFriendly' />
+    <meta content='320' name='MobileOptimized' />
+    <meta content='width=device-width, target-densitydpi=160, initial-scale=1.0' name='viewport' />
+    <!-- For iPhone 4 with high-resolution Retina display: -->
+    <link href='/apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon-precomposed' sizes='114x114' />
+    <!-- For first-generation iPad: -->
+    <link href='/apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon-precomposed' sizes='72x72' />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link href='/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed' />
+    <!-- For Nokia -->
+    <link href='/apple-touch-icon.png' rel='shortcut icon' />
+    <!-- For everything else -->
+    <link href='/favicon.ico' rel='shortcut icon' />
+    <!-- iOS. Delete if not required -->
+    <meta content='yes' name='apple-mobile-web-app-capable' />
+    <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style' />
+    <link href='splash.png' rel='apple-touch-startup-image' />
+    <!-- Microsoft. Delete if not required -->
+    <meta content='on' http-equiv='cleartype' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <!--[if lt IE 7 ]> <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script> <![endif]-->
+    <!-- CSS -->
+    <link href='/css/style.css?v=1' rel='stylesheet' />
+    <link href='/css/survivalkit/survivalkit.css?v=1' rel='stylesheet' />
+    <!-- All JavaScript at the bottom, except for Modernizr and Respond. -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+      <script src="/js/libs/selectivizr-min.js"></script>
+    <![endif]-->
+    <script src='/js/libs/modernizr-2.0.min.js'></script>
+    <script src='/js/libs/respond.min.js'></script>
+    <!-- Typekit -->
+    <!--
+      <script src='http://use.typekit.com/xxxxxxx.js' type='text/javascript'></script>
+      <script type='text/javascript'>
+        //<![CDATA[
+          try{Typekit.load();}catch(e){}
+        //]]>
+      </script>
+    -->
+  </head>
+  <body class='survival-kit'>
+    <div id='page'>
+      <header>
+        <hgroup>
+          <h1>
+            <a href='/survivalkit/'>The Coding Designer's Survival Kit</a>
+          </h1>
+          <h2>Mixins → Helpers</h2>
+        </hgroup>
+        
+      </header>
+      <nav class='kit-nav'>
+        <ul>
+          <li>
+            Variables
+            <ul>
+              <li>
+                <a href='/documentation/core/variables/color-names.html'>Color Names</a>
+              </li>
+              <li>
+                <a href='/documentation/core/variables/helpers.html'>Helpers</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Extendables
+            <ul>
+              <li>
+                <a href='/documentation/core/extend/helpers.html'>Helpers</a>
+              </li>
+              <li>
+                <a href='/documentation/core/extend/sticky-footer.html'>Sticky Footer</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Functions
+            <ul>
+              <li>
+                <a href='/documentation/core/functions/calculations.html'>Calculations</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Mixins
+            <ul>
+              <li>
+                <a href='/documentation/core/mixins/helpers.html'>Helpers</a>
+              </li>
+              <li>
+                <a href='/documentation/core/mixins/layout.html'>Layout</a>
+              </li>
+              <li>
+                <a href='/documentation/core/mixins/pseudo.html'>Pseudo</a>
+              </li>
+              <li>
+                <a href='/documentation/core/mixins/typography.html'>Typography</a>
+              </li>
+              <li>
+                <a href='/documentation/core/mixins/ui.html'>UI</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Reset
+            <ul>
+              <li>
+                <a href='/documentation/core/reset/reset.html'>
+                  Reset
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>
+          Standard
+          <ul>
+            <li>
+              <a href='/documentation/installation.html'>
+                Installation
+              </a>
+            </li>
+            <li>
+              Sass / Scss Workflow
+              <ul>
+                <li>
+                  <a href='/documentation/standard/imports.html'>
+                    Imports
+                  </a>
+                </li>
+                <li>
+                  Variables
+                  <ul>
+                    <li>
+                      <a href='/documentation/standard/variables/base.html'>
+                        Base
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/documentation/standard/variables/colors.html'>
+                        Colors
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/documentation/standard/variables/fonts.html'>
+                        Fonts
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Mixins
+                  <ul>
+                    <li>
+                      <a href='/documentation/standard/mixins/mixins.html'>
+                        Custom
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Extend
+                  <ul>
+                    <li>
+                      <a href='/documentation/standard/extend/helpers.html'>
+                        Helpers
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/documentation/standard/extend/typography.html'>
+                        Typography
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href='/documentation/standard/base/base.html'>
+                    Base
+                  </a>
+                </li>
+                <li>
+                  Layout
+                  <ul>
+                    <li>
+                      <a href='/documentation/standard/layout/susy.html'>
+                        Grids - Susy
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  UI Patterns
+                  <ul>
+                    <li>
+                      Common
+                    </li>
+                    <li>
+                      Drupal
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Style Tiles
+                  <ul>
+                    <li>
+                      Tile Design
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Media
+                  <ul>
+                    <li>
+                      Print
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Your Design
+                </li>
+              </ul>
+            </li>
+            <li>
+              HTML
+            </li>
+            <li>
+              Javascript
+            </li>
+          </ul>
+        </h2>
+        <h2>
+          Drupal Theme
+        </h2>
+      </nav>
+      <nav class='section-nav'></nav>
+      <div id='main' role='main'>
+        <!-- Helpers -->
+<section class='element-group' id='helpers'>
+  <h1 class='section-title'>Helpers</h1>
+  <p class='intro'>
+    <p>Mixins that help.</p>
+  </p>
+  <div class='element' id='mixin-hidden'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-hidden'>
+        hidden
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <pre class='scss'>@mixin hidden {&#x000A;  display: none !important;&#x000A;  visibility: hidden;&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-visually-hidden'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-visually-hidden'>
+        visuallyhidden
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <pre class='scss'>@mixin visuallyhidden($focusable: false) {&#x000A;  border: 0;&#x000A;  clip: rect(0 0 0 0);&#x000A;  height: 1px;&#x000A;  margin: -1px;&#x000A;  overflow: hidden;&#x000A;  padding: 0;&#x000A;  position: absolute;&#x000A;  width: 1px;&#x000A;  @if $focusable {&#x000A;    &:active, &:focus {&#x000A;      clip: auto;&#x000A;      height: auto;&#x000A;      margin: 0;&#x000A;      overflow: visible;&#x000A;      position: static;&#x000A;      width: auto;&#x000A;    }&#x000A;  }&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-invisible'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-invisible'>
+        invisible
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <pre class='scss'>@mixin invisible {&#x000A;  visibility: hidden;&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-scale-image-ie'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-scale-image-ie'>
+        scale-image-ie
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <pre class='scss'>@mixin scale-image-ie($image) {&#x000A;  background: none;&#x000A;  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="#{image_url($image, true, false)}",  sizingMethod="scale");&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-kit-clearfix'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-kit-clearfix'>
+        kit-clearfix
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <pre class='scss'>@mixin kit-clearfix {&#x000A;  &:after {&#x000A;    content: $space;&#x000A;    display: table;&#x000A;    clear: both;&#x000A;  }&#x000A;  zoom: 1;&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-accessible-color'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-accessible-color'>
+        accessible-color
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <pre class='scss'>@mixin accessible-color($background: $white) {&#x000A;  @if lightness($background) >= 65% {&#x000A;    color: $text-color;&#x000A;  }&#x000A;  @else {&#x000A;    color: white;&#x000A;  }&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-clean-list'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-clean-list'>
+        clean-list
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <pre class='scss'>@mixin clean-list {&#x000A;  @include no-bullets;&#x000A;  margin-left: 0;&#x000A;  padding-left: 0;&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-susy-grid-backgrounds'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-susy-grid-backgrounds'>
+        susy-grid-backgrounds
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <pre class='scss'>@mixin susy-grid-backgrounds {&#x000A;  @if $show-grid and $show-baseline {&#x000A;    @include susy-grid-background-baseline;&#x000A;  }&#x000A;  @else if $show-grid {&#x000A;    @include susy-grid-background;&#x000A;  }&#x000A;  @else if $show-baseline {&#x000A;    @include baseline-grid-background;&#x000A;  }&#x000A;}</pre>
+    </div>
+  </div>
+  <div class='element' id='mixin-susy-grid-background-baseline'>
+    <h2 class='element-title'>
+      <a class='permalink' href='#mixin-susy-grid-background-baseline'>
+        susy-grid-background-baseline
+      </a>
+    </h2>
+    <div class='extendable-source'>
+      <pre class='scss'>@mixin susy-grid-background-baseline {&#x000A;  @include grid-background($total-columns, $column-width, $gutter-width, $base-line-height, $column-width * 0, $grid-background-column-color, $grid-background-gutter-color, $grid-background-baseline-color, $force_fluid: true);&#x000A;  @include background-origin(content-box);&#x000A;  @include background-clip(content-box);&#x000A;}</pre>
+    </div>
+  </div>
+</section>
+      </div>
+      <footer></footer>
+    </div>
+    <!--
+      Javascript at the bottom for fast page loading
+      Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
+    -->
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        window.jQuery || document.write("<script src='js/libs/jquery-1.6.min.js'>\x3C/script>")
+      //]]>
+    </script>
+    <script src='/js/libs/plugins.js?v=1'></script>
+    <script src='/js/script.js?v=1'></script>
+    <script src='/js/libs/320-up/helper.js?v=1'></script>
+    <script src='/js/kit/kit-source.jquery.js?v=1'></script>
+    <!--[if (lt IE 9) & (!IEMobile)]>
+      <script src="/js/libs/imgsizer.js"></script>
+    <![endif]-->
+    <script type='text/javascript'>
+      //<![CDATA[
+        // iOS scale bug fix
+        MBP.scaleFix();
+        
+        // Respond.js
+        yepnope({
+          test : Modernizr.mq('(only all)'),
+          nope : ['/js/libs/respond.min.js']
+        });
+      //]]>
+    </script>
+    <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet -->
+    <!-- change the UA-XXXXX-X to be your site's ID -->
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"],["_trackPageLoadTime"]];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+        s.parentNode.insertBefore(g,s)}(document,"script"));
+      //]]>
+    </script>
+  </body>
+</html>

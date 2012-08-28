@@ -1,0 +1,87 @@
+[submodule "templates/project/sources/PaintbrushJS"]
+  path = templates/project/sources/PaintbrushJS
+  url = https://github.com/mezzoblue/PaintbrushJS.git
+[submodule "templates/project/sources/flexie"]
+  path = templates/project/sources/flexie
+  url = https://github.com/doctyper/flexie.git
+[submodule "templates/project/sources/formalize"]
+  path = templates/project/sources/formalize
+  url = https://github.com/nathansmith/formalize.git
+[submodule "templates/project/sources/Geared-Scrolling"]
+  path = templates/project/sources/Geared-Scrolling
+  url = https://github.com/heyday/Geared-Scrolling.git
+[submodule "templates/project/sources/html5-boilerplate"]
+  path = templates/project/sources/html5-boilerplate
+  url = https://github.com/paulirish/html5-boilerplate.git
+[submodule "templates/project/sources/iSwipe-jQuery-Plugin"]
+  path = templates/project/sources/iSwipe-jQuery-Plugin
+  url = https://github.com/heyday/iSwipe-jQuery-Plugin.git
+[submodule "templates/project/sources/Lettering.js"]
+  path = templates/project/sources/Lettering.js
+  url = https://github.com/davatron5000/Lettering.js.git
+[submodule "templates/project/sources/Sticky-Footer-jQuery-Plugin"]
+  path = templates/project/sources/Sticky-Footer-jQuery-Plugin
+  url = https://github.com/heyday/Sticky-Footer-jQuery-Plugin.git
+[submodule "templates/project/sources/infinite-scroll"]
+  path = templates/project/sources/infinite-scroll
+  url = https://github.com/paulirish/infinite-scroll.git
+[submodule "templates/project/sources/jquery-ui"]
+  path = templates/project/sources/jquery-ui
+  url = https://github.com/jquery/jquery-ui.git
+[submodule "templates/project/sources/pie"]
+  path = templates/project/sources/pie
+  url = https://github.com/lojjic/PIE.git
+[submodule "templates/project/sources/modernizr"]
+  path = templates/project/sources/modernizr
+  url = https://github.com/Modernizr/Modernizr.git
+[submodule "templates/project/sources/FitText"]
+  path = templates/project/sources/FitText
+  url = https://github.com/davatron5000/FitText.js.git
+[submodule "templates/project/sources/Dynamic-Carousel"]
+  path = templates/project/sources/Dynamic-Carousel
+  url = https://github.com/Wilto/Dynamic-Carousel.git
+[submodule "templates/project/sources/Respond"]
+  path = templates/project/sources/Respond
+  url = https://github.com/scottjehl/Respond.git
+[submodule "templates/project/sources/jquery-lightbox"]
+  path = templates/project/sources/jquery-lightbox
+  url = https://github.com/krewenki/jquery-lightbox.git
+[submodule "templates/project/sources/scrollability"]
+  path = templates/project/sources/scrollability
+  url = https://github.com/joehewitt/scrollability.git
+[submodule "templates/project/sources/BigText"]
+  path = templates/project/sources/BigText
+  url = https://github.com/zachleat/BigText.git
+[submodule "templates/project/sources/flickrbomb"]
+  path = templates/project/sources/flickrbomb
+  url = https://github.com/zurb/flickrbomb.git
+[submodule "templates/project/sources/joyride"]
+  path = templates/project/sources/joyride
+  url = https://github.com/zurb/joyride.git
+[submodule "templates/project/sources/orbit"]
+  path = templates/project/sources/orbit
+  url = https://github.com/zurb/orbit.git
+[submodule "templates/project/sources/reveal"]
+  path = templates/project/sources/reveal
+  url = https://github.com/zurb/reveal.git
+[submodule "templates/project/sources/flexslider"]
+  path = templates/project/sources/flexslider
+  url = https://github.com/mbmufffin/FlexSlider.git
+[submodule "templates/project/sources/fitvids"]
+  path = templates/project/sources/fitvids
+  url = https://github.com/davatron5000/FitVids.js.git
+[submodule "templates/project/sources/deorphan"]
+	path = templates/project/sources/deorphan
+	url = https://github.com/megasmack/jquery.deorphan.js.git
+[submodule "templates/project/sources/iOS-Orientationchange-Fix"]
+	path = templates/project/sources/iOS-Orientationchange-Fix
+	url = https://github.com/scottjehl/iOS-Orientationchange-Fix.git
+[submodule "templates/project/sources/scrollorama"]
+	path = templates/project/sources/scrollorama
+	url = https://github.com/johnpolacek/scrollorama.git
+[submodule "templates/project/sources/FitVids"]
+	path = templates/project/sources/FitVids
+	url = https://github.com/davatron5000/FitVids.js.git
+[submodule "templates/project/sources/jQuery-widowFix"]
+	path = templates/project/sources/jQuery-widowFix
+	url = https://github.com/matthewlein/jQuery-widowFix.git
