@@ -276,26 +276,18 @@
 }
 
 .styletile header {
+  overflow: hidden;
   *zoom: 1;
   margin-bottom: 1.5em;
-}
-.styletile header:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 .styletile header aside {
   text-align: right;
   color: gray;
 }
 .styletile .group {
+  overflow: hidden;
   *zoom: 1;
   margin-bottom: 3em;
-}
-.styletile .group:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 .styletile .label, .styletile .styletile-1 .text-examples .logos h1:before, .styletile-1 .text-examples .logos .styletile h1:before {
   color: gray;

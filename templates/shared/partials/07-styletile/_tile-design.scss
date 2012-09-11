@@ -2,7 +2,7 @@
 
 .styletile {
   header {
-    @include pie-clearfix;
+    @include clearfix;
     @include trailer;
     aside {
       text-align: right;
@@ -12,7 +12,7 @@
   }
 
   .group {
-    @include pie-clearfix;
+    @include clearfix;
     @include trailer(2);
   }
 
