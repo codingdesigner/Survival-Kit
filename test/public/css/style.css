@@ -797,19 +797,6 @@ a:hover {
 a:active {
   color: #7555da;
 }
-a {
-  text-decoration: none;
-  border-bottom: 1px solid #bada55;
-}
-a:visited {
-  border-bottom-color: #bada55;
-}
-a:hover {
-  border-bottom-color: #7555da;
-}
-a:active {
-  border-bottom-color: #7555da;
-}
 
 p {
   margin-bottom: 1.5em;
@@ -1028,12 +1015,12 @@ ul.tabs li a {
   border-bottom-width: 0;
   position: relative;
   bottom: -0.25em;
-  -moz-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
-  border-top-left-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
 }
 ul.tabs li a:hover {
   background-color: white;
@@ -1069,23 +1056,6 @@ ul.pager li:last-child {
 }
 ul.pager li.last {
   padding-right: 0;
-}
-
-a.feed-icon {
-  text-decoration: none;
-  border-bottom: none;
-}
-a.feed-icon:visited {
-  border-bottom: none;
-}
-a.feed-icon:focus {
-  border-bottom: none;
-}
-a.feed-icon:hover {
-  border-bottom: none;
-}
-a.feed-icon:active {
-  border-bottom: none;
 }
 
 ul.inline {

@@ -9,7 +9,7 @@
   $background-color: $darkgray,
   $background-color-active: $white,
   $spacing: 3px,
-  $radius: 6px) {
+  $radius: 3px) {
   $from-the: bottom;
   @if $dir == bottom {
     $from-the: top;

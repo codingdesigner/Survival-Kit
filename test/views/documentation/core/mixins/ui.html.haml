@@ -23,17 +23,27 @@
         &= "assumes placement on UL"
       %pre.scss
         :preserve
-          @mixin tabs($dir: bottom, $border-color: $base-color, $border-color-active: $white, $background-color: $gray, $background-color-active: $white) {
-            @include horizontal-list(3px);
+          @mixin tabs(
+            $dir: top,
+            $border-color: $base-color,
+            $border-color-active: $white,
+            $background-color: $darkgray,
+            $background-color-active: $white,
+            $spacing: 3px,
+            $radius: 3px) {
+            $from-the: bottom;
+            @if $dir == bottom {
+              $from-the: top;
+            }
+            @include horizontal-list($spacing);
             position: relative;
             li {
-              border-#{$dir}: 1px solid $border-color;
+              border-\#{$from-the}: 1px solid $border-color;
               margin-top: 1px;
               &.active {
                 a {
-                  border-#{$dir}: 1px solid $border-color-active;
+                  border-\#{$from-the}: 1px solid $border-color-active;
                   background-color: $background-color-active;
-
                 }
               }
               a {
@@ -43,18 +53,18 @@
                   color: $border-color;
                 };
                 background-color: $background-color;
-                padding: 0 0.25em;
-                @if $dir == bottom {
-                  @include border-top-radius;
-                  @include remove-link-underlines;
+                border-\#{$from-the}-width: 0;
+                position: relative;
+                bottom: -0.25em;
+                @if $from-the == bottom {
+                  @include border-top-radius($radius);
                 }
                 @else {
-                  @include border-bottom-radius;
-                  border-top-width: 0;
+                  @include border-bottom-radius($radius);
                 }
                 &:hover {
                   background-color: $background-color-active;
-                  border-#{$dir}: 1px solid $border-color-active;
+                  border-\#{$from-the}: 1px solid $border-color-active;
                 }
               }
             }
