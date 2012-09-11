@@ -3,7 +3,7 @@
 // SITE NAME
 #site-name {
   a {
-    @include remove-link-underlines;
+    // add your own styles, if you like
   }
 }
 
@@ -61,14 +61,13 @@ ul.tabs {
 // PAGERS
 ul.pager {
   @include horizontal-list(0.5em);
-  a {
-    @include remove-link-underlines;
-  }
 }
 
 // RSS LINK
 a.feed-icon {
-  @include remove-link-underlines;
+  @if $border-links == true {
+    @include undo-border-links;
+  }
 }
 
 // INLINE LINKS
