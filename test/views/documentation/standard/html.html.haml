@@ -1,0 +1,62 @@
+- @title = "HTML"
+- @subnav = "<nav class='section-nav'></nav> "
+
+/ HTML
+%section#html.element-group
+  %h1.section-title HTML
+  %p.intro
+    :markdown
+      Sample markup to get you started.
+
+      Add your styles to the base HTML elements.
+  %div#common-elements.element
+    %h2.element-title
+      %a.permalink{:href => "#common-elements"}
+        Common Elements
+    .extendable-source
+      .comment
+        :markdown
+          The most common elements
+      %pre.scss
+        :preserve
+          headers
+          characters
+          paragraphs
+          links
+          lists
+          pre
+  %div#phrase-elements.element
+    %h2.element-title
+      %a.permalink{:href => "#phrase-elements"}
+        Phrase Elements
+    .extendable-source
+      .comment
+        :markdown
+          Phrase level HTML elements.
+      %pre.scss
+        :preserve
+          em
+          strong
+          cite
+          dfn
+          code
+          samp
+          kbd
+          var
+          abbr
+          acronym
+          q
+          others
+  %div#common-patterns.element
+    %h2.element-title
+      %a.permalink{:href => "#common-patterns"}
+        Common Patterns
+    .extendable-source
+      .comment
+        :markdown
+          Very common patterns
+      %pre.scss
+        :preserve
+          inline-images
+          tables
+          forms
