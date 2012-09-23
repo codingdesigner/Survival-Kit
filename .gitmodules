@@ -22,3 +22,6 @@
 [submodule "templates/project/sources/jQuery-widowFix"]
 	path = templates/project/sources/jQuery-widowFix
 	url = https://github.com/matthewlein/jQuery-widowFix.git
+[submodule "templates/project/sources/jquery-html5-placeholder-shim"]
+	path = templates/project/sources/jquery-html5-placeholder-shim
+	url = https://github.com/jcampbell1/jquery-html5-placeholder-shim.git
