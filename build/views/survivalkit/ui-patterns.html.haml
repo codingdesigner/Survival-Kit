@@ -1,18 +1,23 @@
 - @title = "UI Patterns"
 - @subnav = "<nav class='section-nav'></nav> "
 
+= render :template => "/setup/ui-patterns.haml"
 
 / Simple markup Patterns
 %section#simple-patterns.element-group
   %h1.section-title Common Patterns
-  = render :template => "/survivalkit/partials/patterns-general/_inline-images.haml"
-  = render :template => "/survivalkit/partials/patterns-general/_tables.haml"
-  = render :template => "/survivalkit/partials/patterns-general/_forms.haml"
-%section#simple-patterns.element-group
-  %h1.section-title Common Patterns
-  = render :template => "/survivalkit/partials/patterns-general/_nested-menu.haml"
-  = render :template => "/survivalkit/partials/patterns-drupal/_messages.haml"
-  = render :template => "/survivalkit/partials/patterns-drupal/_pager.haml"
+  -if @inline_images
+    = render :template => "/survivalkit/partials/patterns-general/_inline-images.haml"
+  -if @tables
+    = render :template => "/survivalkit/partials/patterns-general/_tables.haml"
+  -if @forms
+    = render :template => "/survivalkit/partials/patterns-general/_forms.haml"
+  -if @nested_menu
+    = render :template => "/survivalkit/partials/patterns-general/_nested-menu.haml"
+  -if @messages
+    = render :template => "/survivalkit/partials/patterns-drupal/_messages.haml"
+  -if @pager
+    = render :template => "/survivalkit/partials/patterns-drupal/_pager.haml"
 
 
 

@@ -2,66 +2,114 @@
 - @headertext = "Based on examples from <a href='http://developers.whatwg.org/'>developers.whatwg.org</a>"
 - @subnav = "<nav class='section-nav'></nav> "
 
+= render :template => "/setup/html5-elements.haml"
+
 %section#sections.element-group
   %h1.section-title Sections
-  = render :template => "/survivalkit/partials/html5/_section.haml"
-  = render :template => "/survivalkit/partials/html5/_nav.haml"
-  = render :template => "/survivalkit/partials/html5/_article.haml"
-  = render :template => "/survivalkit/partials/html5/_aside.haml"
-  = render :template => "/survivalkit/partials/html5/_all-headings.haml"
-  = render :template => "/survivalkit/partials/html5/_hgroup.haml"
-  = render :template => "/survivalkit/partials/html5/_header.haml"
-  = render :template => "/survivalkit/partials/html5/_footer.haml"
-  = render :template => "/survivalkit/partials/html5/_address.haml"
+  -if @section
+    = render :template => "/survivalkit/partials/html5/_section.haml"
+  -if @nav
+    = render :template => "/survivalkit/partials/html5/_nav.haml"
+  -if @article
+    = render :template => "/survivalkit/partials/html5/_article.haml"
+  -if @aside
+    = render :template => "/survivalkit/partials/html5/_aside.haml"
+  -if @all_headings
+    = render :template => "/survivalkit/partials/html5/_all-headings.haml"
+  -if @hgroup
+    = render :template => "/survivalkit/partials/html5/_hgroup.haml"
+  -if @header
+    = render :template => "/survivalkit/partials/html5/_header.haml"
+  -if @footer
+    = render :template => "/survivalkit/partials/html5/_footer.haml"
+  -if @address
+    = render :template => "/survivalkit/partials/html5/_address.haml"
 %section#grouping.element-group
   %h1.section-title Grouping
-  = render :template => "/survivalkit/partials/html5/_p.haml"
-  = render :template => "/survivalkit/partials/html5/_hr.haml"
-  = render :template => "/survivalkit/partials/html5/_pre.haml"
-  = render :template => "/survivalkit/partials/html5/_blockquote.haml"
-  = render :template => "/survivalkit/partials/html5/_ol.haml"
-  = render :template => "/survivalkit/partials/html5/_ul.haml"
-  = render :template => "/survivalkit/partials/html5/_li.haml"
-  = render :template => "/survivalkit/partials/html5/_dl.haml"
-  = render :template => "/survivalkit/partials/html5/_figure.haml"
+  -if @p
+    = render :template => "/survivalkit/partials/html5/_p.haml"
+  -if @hr
+    = render :template => "/survivalkit/partials/html5/_hr.haml"
+  -if @pre
+    = render :template => "/survivalkit/partials/html5/_pre.haml"
+  -if @blockquote
+    = render :template => "/survivalkit/partials/html5/_blockquote.haml"
+  -if @ol
+    = render :template => "/survivalkit/partials/html5/_ol.haml"
+  -if @ul
+    = render :template => "/survivalkit/partials/html5/_ul.haml"
+  -if @li
+    = render :template => "/survivalkit/partials/html5/_li.haml"
+  -if @dl
+    = render :template => "/survivalkit/partials/html5/_dl.haml"
+  -if @figure
+    = render :template => "/survivalkit/partials/html5/_figure.haml"
 %section#text.element-group
   %h1.section-title Text-level semantics
-  = render :template => "/survivalkit/partials/html5/_a.haml"
-  = render :template => "/survivalkit/partials/html5/_em.haml"
-  = render :template => "/survivalkit/partials/html5/_strong.haml"
-  = render :template => "/survivalkit/partials/html5/_small.haml"
-  = render :template => "/survivalkit/partials/html5/_s.haml"
-  = render :template => "/survivalkit/partials/html5/_cite.haml"
-  = render :template => "/survivalkit/partials/html5/_q.haml"
-  = render :template => "/survivalkit/partials/html5/_dfn.haml"
-  = render :template => "/survivalkit/partials/html5/_abbr.haml"
-  = render :template => "/survivalkit/partials/html5/_time.haml"
-  = render :template => "/survivalkit/partials/html5/_code.haml"
-  = render :template => "/survivalkit/partials/html5/_samp.haml"
-  = render :template => "/survivalkit/partials/html5/_kbd.haml"
-  = render :template => "/survivalkit/partials/html5/_sub-sup.haml"
-  = render :template => "/survivalkit/partials/html5/_i.haml"
-  = render :template => "/survivalkit/partials/html5/_b.haml"
-  = render :template => "/survivalkit/partials/html5/_mark.haml"
-  = render :template => "/survivalkit/partials/html5/_ruby.haml"
-  = render :template => "/survivalkit/partials/html5/_bdi.haml"
-  = render :template => "/survivalkit/partials/html5/_text-summary.haml"
+  -if @a
+    = render :template => "/survivalkit/partials/html5/_a.haml"
+  -if @em
+    = render :template => "/survivalkit/partials/html5/_em.haml"
+  -if @strong
+    = render :template => "/survivalkit/partials/html5/_strong.haml"
+  -if @small
+    = render :template => "/survivalkit/partials/html5/_small.haml"
+  -if @s
+    = render :template => "/survivalkit/partials/html5/_s.haml"
+  -if @cite
+    = render :template => "/survivalkit/partials/html5/_cite.haml"
+  -if @q
+    = render :template => "/survivalkit/partials/html5/_q.haml"
+  -if @dfn
+    = render :template => "/survivalkit/partials/html5/_dfn.haml"
+  -if @abbr
+    = render :template => "/survivalkit/partials/html5/_abbr.haml"
+  -if @time
+    = render :template => "/survivalkit/partials/html5/_time.haml"
+  -if @code
+    = render :template => "/survivalkit/partials/html5/_code.haml"
+  -if @samp
+    = render :template => "/survivalkit/partials/html5/_samp.haml"
+  -if @kbd
+    = render :template => "/survivalkit/partials/html5/_kbd.haml"
+  -if @sub_sup
+    = render :template => "/survivalkit/partials/html5/_sub-sup.haml"
+  -if @i
+    = render :template => "/survivalkit/partials/html5/_i.haml"
+  -if @b
+    = render :template => "/survivalkit/partials/html5/_b.haml"
+  -if @mark
+    = render :template => "/survivalkit/partials/html5/_mark.haml"
+  -if @ruby
+    = render :template => "/survivalkit/partials/html5/_ruby.haml"
+  -if @bdi
+    = render :template => "/survivalkit/partials/html5/_bdi.haml"
+  -if @text_summary
+    = render :template => "/survivalkit/partials/html5/_text-summary.haml"
 
 %section#tabular.element-group
   %h1.section-title Tabular Data
-  = render :template => "/survivalkit/partials/html5/_table.haml"
-  = render :template => "/survivalkit/partials/html5/_thead.haml"
-  = render :template => "/survivalkit/partials/html5/_sample-tables.haml"
+  -if @table
+    = render :template => "/survivalkit/partials/html5/_table.haml"
+  -if @thead
+    = render :template => "/survivalkit/partials/html5/_thead.haml"
+  -if @sample_tables
+    = render :template => "/survivalkit/partials/html5/_sample-tables.haml"
 
 %section#forms.element-group
   %h1.section-title Forms
-  = render :template => "/survivalkit/partials/html5/_sample-forms.haml"
-  = render :template => "/survivalkit/partials/html5/_fieldset.haml"
-  = render :template => "/survivalkit/partials/html5/_label.haml"
+  -if @sample_forms
+    = render :template => "/survivalkit/partials/html5/_sample-forms.haml"
+  -if @fieldset
+    = render :template => "/survivalkit/partials/html5/_fieldset.haml"
+  -if @label
+    = render :template => "/survivalkit/partials/html5/_label.haml"
 
 %section#interactive.element-group
   %h1.section-title Interactive
-  = render :template => "/survivalkit/partials/html5/_details.haml"
-  = render :template => "/survivalkit/partials/html5/_menu.haml"
+  -if @details
+    = render :template => "/survivalkit/partials/html5/_details.haml"
+  -if @menu
+    = render :template => "/survivalkit/partials/html5/_menu.haml"
 
 
