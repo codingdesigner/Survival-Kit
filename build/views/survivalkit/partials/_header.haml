@@ -1,7 +1,20 @@
 %header
-  %hgroup
-    %h1
-      %a{:href => "/survivalkit/"} The Coding Designer's Survival Kit
-    %h2= @title
-  - headertext = defined?(@headertext) ? "<div class=\"intro\">#{@headertext}</div>" : nil
-  = headertext
+  -if @styletile
+    .client-id
+      %h1.client-name= @clientName
+    %aside
+      = @clientName
+      Style Tile
+      %br/
+      Version
+      = @version
+      %br/
+      Author:
+      = @author
+  -else
+    %hgroup
+      %h1
+        %a{:href => "/survivalkit/"} The Coding Designer's Survival Kit
+      %h2= @title
+    - headertext = defined?(@headertext) ? "<div class=\"intro\">#{@headertext}</div>" : nil
+    = headertext

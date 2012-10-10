@@ -2,14 +2,16 @@
 = render :template => "../partials/_head.haml"
 = render :template => "../partials/_webfonts.haml"
 
-%body.survival-kit
-  #page
-    = render :template => "/survivalkit/partials/_header.haml"
-    = render :template => "/survivalkit/partials/_menu.haml"
-    #main{:role => "main"}
-      = yield
-
-    %footer= @footer
+-if @styletile
+  %body{:class => ['survival-kit', 'styletile', 'styletile-' + @version]}
+-else
+  %body{:class => ['survival-kit']}
+#page
+  = render :template => "/survivalkit/partials/_header.haml"
+  = render :template => "/survivalkit/partials/_menu.haml"
+  #main{:role => "main"}
+    = yield
+  %footer= @footer
 
 = render :template => "../partials/_frameworks.haml"
 = render :template => "../partials/_footer.haml"
