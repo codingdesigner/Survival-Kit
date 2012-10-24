@@ -25,3 +25,6 @@
 [submodule "templates/project/sources/jquery-html5-placeholder-shim"]
 	path = templates/project/sources/jquery-html5-placeholder-shim
 	url = https://github.com/jcampbell1/jquery-html5-placeholder-shim.git
+[submodule "templates/project/sources/box-sizing-polyfill"]
+	path = templates/project/sources/box-sizing-polyfill
+	url = https://github.com/Schepp/box-sizing-polyfill.git
