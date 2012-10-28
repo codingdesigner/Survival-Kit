@@ -1,4 +1,10 @@
-%header.kit-ui
+%header
+  %h1
+    %a{:href => "/survivalkit/"} Survival Kit
+  .page-info
+    %h2= @title
+    - headertext = defined?(@headertext) ? "<div class=\"intro\">#{@headertext}</div>" : nil
+    = headertext
   -if @styletile
     .client-id
       %h1.client-name= @clientName
@@ -11,10 +17,3 @@
       %br/
       Author:
       = @author
-  -else
-    %hgroup
-      %h1
-        %a{:href => "/survivalkit/"} The Coding Designer's Survival Kit
-      %h2= @title
-    - headertext = defined?(@headertext) ? "<div class=\"intro\">#{@headertext}</div>" : nil
-    = headertext

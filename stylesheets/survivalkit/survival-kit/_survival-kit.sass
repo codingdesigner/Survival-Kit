@@ -1,0 +1,176 @@
+// styles meant to assist while designing markup conventions
+// in elements.html, elements-drupal.html
+
+@import ../mixins/helpers
+
+$kit-font-family: futura, $font-sans
+
+$sk-lightgray: #ccc
+$sk-gray: #666
+$sk-darkgray: #333
+
+
+.kit-ui
+  background: $sk-lightgray
+  font-family: $kit-font-family
+  color: $sk-lightgray
+  margin-bottom: 0
+  header
+    padding: 0 0.5em
+    @extend .clearfix
+    background: $sk-darkgray
+    border-bottom: 1px solid $black
+  a
+    +link-colors($white, $sk-lightgray, $sk-lightgray, $white)
+    +border-links($white, $sk-lightgray, $sk-lightgray, $white)
+  h1, h2, div
+    display: inline
+  h1
+    +adjust-font-size-to(16px)
+    float: left
+    padding-right: 0.5em
+    margin-right: 0.5em
+    font-family: $kit-font-family
+    a
+      +undo-border-links
+      // +replace-text-with-dimensions("survival-kit-logo.png")
+      display: block
+      // padding: 0.3em
+  .page-info
+    border-left: 1px solid white
+    float: left
+    padding-left: 0.5em
+    a
+      +undo-border-links
+  h2
+    +adjust-font-size-to(16px)
+    margin-top: 0
+    font-family: $kit-font-family
+    margin-right: 1em
+  .intro
+    +adjust-font-size-to(14px)
+
+.kit-nav, .section-nav
+  +trailer
+  padding: 0 0.5em
+  font-family: +adjust-font-size-to(16px)
+  color: $sk-lightgray
+  #{headings()}
+    font-size: $base-font-size
+  a
+    +link-colors($white, $sk-lightgray, $sk-lightgray, $white)
+    // +border-links($white, $sk-lightgray, $sk-lightgray, $white)
+    +undo-border-links
+  ul
+    +horizontal-list(0.5em)
+.kit-nav
+  background: $sk-gray
+
+
+
+//
+  .survival-kit
+    #page
+      > header
+        background: $sk-lightgray
+        font-family: $kit-font-family
+        padding: 0 0.5em
+        margin-bottom: 0
+        a
+          +link-colors($white, $sk-darkgray, $sk-darkgray, $white)
+          +border-links($white, $sk-darkgray, $sk-darkgray, $white)
+        hgroup
+          @extend .clearfix
+        h1
+          +adjust-font-size-to(ms(1))
+          float: left
+          padding-right: $kit-gutter
+          margin-right: $kit-gutter
+          border-right: 1px solid white
+          font-family: $kit-font-family
+          a
+            +undo-border-links
+            +replace-text-with-dimensions("survival-kit-logo.png")
+            display: block
+            padding: 0.3em
+        h2
+          +adjust-font-size-to(ms(2))
+          margin-top: 0
+          font-family: $kit-font-family
+        .intro
+          margin-left: calc-em(265px, $base-font-size)
+    h1.section-title
+      +adjust-font-size-to(ms(3))
+      background-color: $sk-lightgray
+      text-transform: uppercase
+      padding-left: $kit-gutter-half
+      margin-top: 0
+      a
+        +link-colors($black, $alt-color, $alt-color, $black, false)
+        +border-links($black, $alt-color, $alt-color, $black, false)
+    .back-to-top
+      +undo-border-links
+      float: right
+      font-size: 10px
+    h1.section-title .fold-section, h2.element-title .fold-article
+    .kit-nav, .section-nav
+      +trailer
+      padding: 0 0.5em
+      font-family: $kit-font-family
+      color: $sk-lightgray
+      #{headings()}
+        font-size: $base-font-size
+      a
+        +link-colors($white, $alt-color, $alt-color, $white)
+        +border-links($white, $alt-color, $alt-color, $white)
+      ul
+        +horizontal-list(0.5em)
+    .kit-nav
+      background: shade($sk-gray, 20%)
+    .section-nav
+      background: $sk-gray
+      margin-top: calc-em(-24px, $base-font-size)
+      margin-bottom: 0
+      h3
+        color: shade($sk-gray, 40%)
+        +adjust-font-size-to($base-font-size - 2)
+      h4
+        float: left
+        margin-right: 0.5em
+        margin-top: 0
+        margin-bottom: 0
+    div.element
+      +vertical-separation($kit-baseline * 2, 1px, transparentize($border-color, 0.9))
+      &.closed
+        +un-vertical-separation
+      h2.element-title
+        +adjust-font-size-to(ms(0))
+        background-color: $sk-gray
+        color: $white
+        text-transform: uppercase
+        padding-left: $kit-gutter-half
+        a
+          +link-colors($white, $alt-color, $alt-color, $white, false)
+          +border-links($white, $alt-color, $alt-color, $white, false)
+      .example
+        +vertical-separation($kit-baseline, 1px, transparentize($border-color, 0.9), dashed)
+        +pie-clearfix
+        .markup
+          // +columns(4)
+          display: inline
+          float: left
+          width: 64.228%
+          margin-right: 2.439%
+          & + .show-source
+            // +columns(2)
+            // +omega(6)
+            display: inline
+            float: right
+            width: 30.894%
+            margin-right: 0
+            // margin-left: -24px
+            @extend %mono
+            .show-hide
+              text-align: right
+            & + p
+              clear: both
