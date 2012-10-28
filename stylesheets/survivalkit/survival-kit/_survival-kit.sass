@@ -7,11 +7,12 @@ $kit-font-family: futura, $font-sans
 
 $sk-lightgray: #ccc
 $sk-gray: #666
+$sk-midgray: #444
 $sk-darkgray: #333
 
 
 .kit-ui
-  background: $sk-lightgray
+  background: $sk-gray
   font-family: $kit-font-family
   color: $sk-lightgray
   margin-bottom: 0
@@ -51,22 +52,34 @@ $sk-darkgray: #333
     +adjust-font-size-to(14px)
 
 .kit-nav, .section-nav
-  +trailer
+  margin-bottom: 16px
   padding: 0 0.5em
   font-family: +adjust-font-size-to(16px)
-  color: $sk-lightgray
   #{headings()}
     font-size: $base-font-size
   a
     +link-colors($white, $sk-lightgray, $sk-lightgray, $white)
-    // +border-links($white, $sk-lightgray, $sk-lightgray, $white)
     +undo-border-links
   ul
     +horizontal-list(0.5em)
 .kit-nav
+  background: $sk-midgray
+.section-nav
   background: $sk-gray
-
-
+  margin-top: -16px
+  margin-bottom: 0
+  @extend .clearfix
+  h3
+    color: $white
+    +adjust-font-size-to(16px)
+  h4
+    float: left
+    clear: left
+    margin-right: 0.5em
+    margin-top: 0
+    margin-bottom: 0
+  ul
+    float: left
 
 //
   .survival-kit

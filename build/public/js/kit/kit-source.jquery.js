@@ -3,8 +3,7 @@
 * Crawl the elements page and show example source code
 */
 (function($){
-  $('div.element .markup').wrap('<div class="example">');
-  $('div.element .markup').each(function(){
+  $('div.element .markup').wrap('<div class="example">').each(function(){
     var thisHTML = $(this).html().replace('</textarea>', '&lt;/textarea&gt;');
     $(this).after('<div class="show-source"><div class="show-hide">show source</div><textarea class="show-source-textarea">'+ thisHTML +'</textarea></div>');
     $(this).find('+ .show-source textarea.show-source-textarea').height($(this).height()).css('min-height', '100px').hide();
