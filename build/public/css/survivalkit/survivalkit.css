@@ -1,7 +1,7 @@
-.clearfix, .survival-kit #page > header hgroup {
+.clearfix, .kit-ui header, .section-nav {
   zoom: 1;
 }
-.clearfix:after, .survival-kit #page > header hgroup:after {
+.clearfix:after, .kit-ui header:after, .section-nav:after {
   content: "\0020";
   display: table;
   clear: both;
@@ -14,10 +14,6 @@
 
 .styletile .images ul li img {
   max-width: 100%;
-}
-
-.survival-kit div.element .example .markup + .show-source {
-  font-family: Consolas, Menlo, "Courier New", monospace, monospace;
 }
 
 .ie6 .styletile #page, .ie7 .styletile #page, .ie8 .styletile #page {
@@ -388,306 +384,190 @@
   content: gray;
 }
 
-.survival-kit #page > header {
-  background: #d0d3c6;
+.kit-ui {
+  background: #666666;
   font-family: futura, sans-serif;
-  padding: 0 0.5em;
+  color: #cccccc;
   margin-bottom: 0;
 }
-.survival-kit #page > header a {
-  color: white;
-}
-.survival-kit #page > header a:visited {
-  color: white;
-}
-.survival-kit #page > header a:hover {
-  color: #aaada0;
-}
-.survival-kit #page > header a:active {
-  color: #aaada0;
-}
-.survival-kit #page > header a {
-  text-decoration: none;
-  border-bottom: 1px solid white;
-}
-.survival-kit #page > header a:visited {
-  border-bottom-color: white;
-}
-.survival-kit #page > header a:hover {
-  border-bottom-color: #aaada0;
-}
-.survival-kit #page > header a:active {
-  border-bottom-color: #aaada0;
-}
-.survival-kit #page > header h1 {
-  font-size: 1.25em;
-  line-height: 1.2em;
-  float: left;
-  padding-right: 25px;
-  margin-right: 25px;
-  border-right: 1px solid white;
-  font-family: futura, sans-serif;
-}
-.survival-kit #page > header h1 a {
-  text-indent: 110%;
-  white-space: nowrap;
-  overflow: hidden;
-  background-image: url('../../images/survival-kit-logo.png?1349240726');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 220px;
-  height: 40px;
-  display: block;
-  padding: 0.3em;
-}
-.survival-kit #page > header h1 a {
-  text-decoration: none;
-  border-bottom: none;
-}
-.survival-kit #page > header h1 a:visited {
-  border-bottom: none;
-}
-.survival-kit #page > header h1 a:focus {
-  border-bottom: none;
-}
-.survival-kit #page > header h1 a:hover {
-  border-bottom: none;
-}
-.survival-kit #page > header h1 a:active {
-  border-bottom: none;
-}
-.survival-kit #page > header h2 {
-  font-size: 1.5625em;
-  line-height: 1.92em;
-  margin-top: 0;
-  font-family: futura, sans-serif;
-}
-.survival-kit #page > header .intro {
-  margin-left: 16.5625em;
-}
-.survival-kit h1.section-title {
-  font-size: 1.625em;
-  line-height: 1.84615em;
-  background-color: #d0d3c6;
-  text-transform: uppercase;
-  padding-left: 12.5px;
-  margin-top: 0;
-}
-.survival-kit h1.section-title a {
-  color: black;
-}
-.survival-kit h1.section-title a:visited {
-  color: black;
-}
-.survival-kit h1.section-title a:hover {
-  color: #bada55;
-}
-.survival-kit h1.section-title a:active {
-  color: #bada55;
-}
-.survival-kit h1.section-title a {
-  text-decoration: none;
+.kit-ui header {
+  padding: 0 0.5em;
+  background: #333333;
   border-bottom: 1px solid black;
 }
-.survival-kit h1.section-title a:visited {
-  border-bottom-color: black;
-}
-.survival-kit h1.section-title a:hover {
-  border-bottom-color: #bada55;
-}
-.survival-kit h1.section-title a:active {
-  border-bottom-color: #bada55;
-}
-.survival-kit .back-to-top {
-  float: right;
-  font-size: 10px;
-}
-.survival-kit .back-to-top {
-  text-decoration: none;
-  border-bottom: none;
-}
-.survival-kit .back-to-top:visited {
-  border-bottom: none;
-}
-.survival-kit .back-to-top:focus {
-  border-bottom: none;
-}
-.survival-kit .back-to-top:hover {
-  border-bottom: none;
-}
-.survival-kit .back-to-top:active {
-  border-bottom: none;
-}
-.survival-kit .kit-nav, .survival-kit .section-nav {
-  margin-bottom: 1.5em;
-  padding: 0 0.5em;
-  font-family: futura, sans-serif;
-  color: #d0d3c6;
-}
-.survival-kit .kit-nav h1, .survival-kit .kit-nav h2, .survival-kit .kit-nav h3, .survival-kit .kit-nav h4, .survival-kit .kit-nav h5, .survival-kit .kit-nav h6, .survival-kit .section-nav h1, .survival-kit .section-nav h2, .survival-kit .section-nav h3, .survival-kit .section-nav h4, .survival-kit .section-nav h5, .survival-kit .section-nav h6 {
-  font-size: 16px;
-}
-.survival-kit .kit-nav a, .survival-kit .section-nav a {
+.kit-ui a {
   color: white;
 }
-.survival-kit .kit-nav a:visited, .survival-kit .section-nav a:visited {
+.kit-ui a:visited {
   color: white;
 }
-.survival-kit .kit-nav a:hover, .survival-kit .section-nav a:hover {
-  color: #bada55;
+.kit-ui a:hover {
+  color: #cccccc;
 }
-.survival-kit .kit-nav a:active, .survival-kit .section-nav a:active {
-  color: #bada55;
+.kit-ui a:active {
+  color: #cccccc;
 }
-.survival-kit .kit-nav a, .survival-kit .section-nav a {
+.kit-ui a {
   text-decoration: none;
   border-bottom: 1px solid white;
 }
-.survival-kit .kit-nav a:visited, .survival-kit .section-nav a:visited {
+.kit-ui a:visited {
   border-bottom-color: white;
 }
-.survival-kit .kit-nav a:hover, .survival-kit .section-nav a:hover {
-  border-bottom-color: #bada55;
+.kit-ui a:hover {
+  border-bottom-color: #cccccc;
 }
-.survival-kit .kit-nav a:active, .survival-kit .section-nav a:active {
-  border-bottom-color: #bada55;
+.kit-ui a:active {
+  border-bottom-color: #cccccc;
 }
-.survival-kit .kit-nav ul, .survival-kit .section-nav ul {
+.kit-ui h1, .kit-ui h2, .kit-ui div {
+  display: inline;
+}
+.kit-ui h1 {
+  font-size: 1em;
+  line-height: 1.5em;
+  float: left;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+  font-family: futura, sans-serif;
+}
+.kit-ui h1 a {
+  display: block;
+}
+.kit-ui h1 a {
+  text-decoration: none;
+  border-bottom: none;
+}
+.kit-ui h1 a:visited {
+  border-bottom: none;
+}
+.kit-ui h1 a:focus {
+  border-bottom: none;
+}
+.kit-ui h1 a:hover {
+  border-bottom: none;
+}
+.kit-ui h1 a:active {
+  border-bottom: none;
+}
+.kit-ui .page-info {
+  border-left: 1px solid white;
+  float: left;
+  padding-left: 0.5em;
+}
+.kit-ui .page-info a {
+  text-decoration: none;
+  border-bottom: none;
+}
+.kit-ui .page-info a:visited {
+  border-bottom: none;
+}
+.kit-ui .page-info a:focus {
+  border-bottom: none;
+}
+.kit-ui .page-info a:hover {
+  border-bottom: none;
+}
+.kit-ui .page-info a:active {
+  border-bottom: none;
+}
+.kit-ui h2 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 0;
+  font-family: futura, sans-serif;
+  margin-right: 1em;
+}
+.kit-ui .intro {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+}
+
+.kit-nav, .section-nav {
+  margin-bottom: 16px;
+  padding: 0 0.5em;
+}
+.kit-nav h1, .kit-nav h2, .kit-nav h3, .kit-nav h4, .kit-nav h5, .kit-nav h6, .section-nav h1, .section-nav h2, .section-nav h3, .section-nav h4, .section-nav h5, .section-nav h6 {
+  font-size: 16px;
+}
+.kit-nav a, .section-nav a {
+  color: white;
+}
+.kit-nav a:visited, .section-nav a:visited {
+  color: white;
+}
+.kit-nav a:hover, .section-nav a:hover {
+  color: #cccccc;
+}
+.kit-nav a:active, .section-nav a:active {
+  color: #cccccc;
+}
+.kit-nav a, .section-nav a {
+  text-decoration: none;
+  border-bottom: none;
+}
+.kit-nav a:visited, .section-nav a:visited {
+  border-bottom: none;
+}
+.kit-nav a:focus, .section-nav a:focus {
+  border-bottom: none;
+}
+.kit-nav a:hover, .section-nav a:hover {
+  border-bottom: none;
+}
+.kit-nav a:active, .section-nav a:active {
+  border-bottom: none;
+}
+.kit-nav ul, .section-nav ul {
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
   *zoom: 1;
+  margin-left: -0.25em;
 }
-.survival-kit .kit-nav ul li, .survival-kit .section-nav ul li {
+.kit-nav ul li, .section-nav ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
   white-space: nowrap;
-  display: inline;
-  float: left;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
 }
-.survival-kit .kit-nav ul li:first-child, .survival-kit .kit-nav ul li.first, .survival-kit .section-nav ul li:first-child, .survival-kit .section-nav ul li.first {
-  padding-left: 0;
+.kit-nav ul li, .section-nav ul li {
+  *display: inline;
 }
-.survival-kit .kit-nav ul li:last-child, .survival-kit .section-nav ul li:last-child {
-  padding-right: 0;
+.kit-nav ul li, .section-nav ul li {
+  padding: 0 0.25em;
 }
-.survival-kit .kit-nav ul li.last, .survival-kit .section-nav ul li.last {
-  padding-right: 0;
+
+.kit-nav {
+  background: #444444;
 }
-.survival-kit .kit-nav {
-  background: #6a6d62;
-}
-.survival-kit .section-nav {
-  background: #85897b;
-  margin-top: -1.5em;
+
+.section-nav {
+  background: #666666;
+  margin-top: -16px;
   margin-bottom: 0;
 }
-.survival-kit .section-nav h3 {
-  color: #4f5249;
-  font-size: 0.875em;
-  line-height: 1.71429em;
+.section-nav .sub-nav {
+  overflow: visible;
 }
-.survival-kit .section-nav h4 {
-  float: left;
-  margin-right: 0.5em;
-  margin-top: 0;
-  margin-bottom: 0;
+.section-nav .sub-nav li {
+  position: relative;
 }
-.survival-kit div.element {
-  *zoom: 1;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
-  margin-bottom: 24px;
-  padding-bottom: 23px;
+.section-nav .sub-nav li ul {
+  position: absolute;
+  top: 24px;
+  background: #333333;
+  display: none;
 }
-.survival-kit div.element:after {
-  content: "";
-  display: table;
-  clear: both;
+.section-nav .sub-nav li:hover, .section-nav .sub-nav li:active {
+  background: #333333;
 }
-.survival-kit div.element:last-child {
-  padding-bottom: 0;
-  border-bottom-width: 0;
-  margin-bottom: 0;
-}
-.survival-kit div.element.closed {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.survival-kit div.element h2.element-title {
-  font-size: 1em;
-  line-height: 1.5em;
-  background-color: #85897b;
-  color: white;
-  text-transform: uppercase;
-  padding-left: 12.5px;
-}
-.survival-kit div.element h2.element-title a {
-  color: white;
-}
-.survival-kit div.element h2.element-title a:visited {
-  color: white;
-}
-.survival-kit div.element h2.element-title a:hover {
-  color: #bada55;
-}
-.survival-kit div.element h2.element-title a:active {
-  color: #bada55;
-}
-.survival-kit div.element h2.element-title a {
-  text-decoration: none;
-  border-bottom: 1px solid white;
-}
-.survival-kit div.element h2.element-title a:visited {
-  border-bottom-color: white;
-}
-.survival-kit div.element h2.element-title a:hover {
-  border-bottom-color: #bada55;
-}
-.survival-kit div.element h2.element-title a:active {
-  border-bottom-color: #bada55;
-}
-.survival-kit div.element .example {
-  *zoom: 1;
-  border-bottom: 1px dashed rgba(128, 128, 128, 0.1);
-  margin-bottom: 12px;
-  padding-bottom: 11px;
-  *zoom: 1;
-}
-.survival-kit div.element .example:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.survival-kit div.element .example:last-child {
-  padding-bottom: 0;
-  border-bottom-width: 0;
-  margin-bottom: 0;
-}
-.survival-kit div.element .example:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.survival-kit div.element .example .markup {
-  display: inline;
-  float: left;
-  width: 64.228%;
-  margin-right: 2.439%;
-}
-.survival-kit div.element .example .markup + .show-source {
-  display: inline;
-  float: right;
-  width: 30.894%;
-  margin-right: 0;
-}
-.survival-kit div.element .example .markup + .show-source .show-hide {
-  text-align: right;
-}
-.survival-kit div.element .example .markup + .show-source + p {
-  clear: both;
+.section-nav .sub-nav li:hover ul, .section-nav .sub-nav li:active ul {
+  display: block;
 }

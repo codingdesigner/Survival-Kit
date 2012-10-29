@@ -54,14 +54,18 @@ $sk-darkgray: #333
 .kit-nav, .section-nav
   margin-bottom: 16px
   padding: 0 0.5em
-  font-family: +adjust-font-size-to(16px)
+  // +adjust-font-size-to(16px)
   #{headings()}
     font-size: $base-font-size
   a
     +link-colors($white, $sk-lightgray, $sk-lightgray, $white)
     +undo-border-links
   ul
-    +horizontal-list(0.5em)
+    +inline-block-list
+    margin-left: -0.25em
+    li
+      padding: 0 0.25em
+      // outline: 1px solid white
 .kit-nav
   background: $sk-midgray
 .section-nav
@@ -69,17 +73,36 @@ $sk-darkgray: #333
   margin-top: -16px
   margin-bottom: 0
   @extend .clearfix
-  h3
-    color: $white
-    +adjust-font-size-to(16px)
-  h4
-    float: left
-    clear: left
-    margin-right: 0.5em
-    margin-top: 0
-    margin-bottom: 0
-  ul
-    float: left
+  // h3
+  //   color: $white
+  //   +adjust-font-size-to(16px)
+  // h4
+  //   float: left
+  //   clear: left
+  //   margin-right: 0.5em
+  //   margin-top: 0
+  //   margin-bottom: 0
+  // ul
+  //   float: left
+  .sub-nav
+    // +tabs($dir: bottom)
+    overflow: visible
+    li
+      position: relative
+      // background: $sk-darkgray
+      ul
+        position: absolute
+        top: 24px
+        // left: 0
+        background: $sk-darkgray
+        display: none
+      &:hover, &:active
+        background: $sk-darkgray
+        ul
+          display: block
+      // &:first-of-type
+        // opacity: 0.2
+
 
 //
   .survival-kit

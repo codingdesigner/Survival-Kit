@@ -21,25 +21,25 @@
 * Create submenus based on the available sections
 */
 (function($){
-  if($sectionNav = $('nav.section-nav')) {
-    $sectionNav.append('<h3>Jump to a section</h3>')
-      .append('<div class="section-menus"></div>')
-      .find('h3').toggle(
-        function(){
-          $(this).siblings().slideDown();
-        },
-        function(){
-          $(this).siblings().slideUp();
-        }
-      );
-    $sectionMenus = $sectionNav.find('.section-menus').hide();
+  if($sectionNav = $('nav.section-nav').append('<ul class="sub-nav">').find('.sub-nav')) {
     $('.element-group').each(function(index) {
-      $sectionMenus.append('<h4>' + $(this).find('.section-title').text().trim() + ': </h4>');
-      $thisUL = $sectionMenus.append('<ul>').find('ul').last();
-      $(this).find('div.element').each(function(index) {
-        $thisID = $(this).attr('id');
-        $thisUL.append('<li><a href="#' + $thisID + '">' + $thisID + '</a></li>');
-      });
+      $sectionNav
+        .append('<li>' + $(this)
+        .find('.section-title')
+        .text().trim() + '</li>');
+      $thisLI = $sectionNav
+        .find('li')
+        .last();
+      $thisUL = $thisLI
+        .append('<ul>')
+        .find('ul')
+        .last();
+      $(this)
+        .find('div.element')
+        .each(function(index) {
+          $thisID = $(this).attr('id');
+          $thisUL.append('<li><a href="#' + $thisID + '">' + $thisID + '</a></li>');
+        });
     });
   }
 })(jQuery);
