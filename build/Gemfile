@@ -6,7 +6,11 @@ gem 'serve', '1.5.1'
 # gem 'serve', :git => 'git://github.com/jlong/serve.git'
 
 # Use Compass and Sass
-gem 'compass'
+gem 'compass', '>=0.12'
+gem 'susy', '>=1'
+gem 'modular-scale', '>=1'
+gem 'color-schemer', '>=0.1'
+gem 'breakpoint', '>=1.3'
 
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
