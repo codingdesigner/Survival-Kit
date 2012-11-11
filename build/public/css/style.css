@@ -3,6 +3,23 @@
  * Download the source files here:
  * https://github.com/canarymason/Survival-Kit
  * Learn more about Sass & Compass at http://compass-style.org/ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .clearfix {
   zoom: 1;
 }
@@ -926,8 +943,19 @@ del {
   margin: 0;
   padding: 0;
   border: 0;
-  overflow: hidden;
+  /* for IE 6/7 */
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+  /* non-JS fallback */
   *zoom: 1;
+}
+#main-menu:before, #main-menu:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#main-menu:after {
+  clear: both;
 }
 #main-menu li {
   list-style-image: none;
@@ -976,9 +1004,20 @@ ul.tabs {
   margin: 0;
   padding: 0;
   border: 0;
-  overflow: hidden;
+  /* for IE 6/7 */
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+  /* non-JS fallback */
   *zoom: 1;
   position: relative;
+}
+ul.tabs:before, ul.tabs:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+ul.tabs:after {
+  clear: both;
 }
 ul.tabs li {
   list-style-image: none;
@@ -1035,8 +1074,19 @@ ul.pager {
   margin: 0;
   padding: 0;
   border: 0;
-  overflow: hidden;
+  /* for IE 6/7 */
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+  /* non-JS fallback */
   *zoom: 1;
+}
+ul.pager:before, ul.pager:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+ul.pager:after {
+  clear: both;
 }
 ul.pager li {
   list-style-image: none;

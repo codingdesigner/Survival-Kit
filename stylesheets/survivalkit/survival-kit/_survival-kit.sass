@@ -2,6 +2,7 @@
 // in elements.html, elements-drupal.html
 
 @import ../mixins/helpers
+@import fonts/foundation_icons_all/foundation_icons_general_enclosed/sass/general_enclosed_foundicons
 
 $kit-font-family: futura, $font-sans
 
@@ -34,9 +35,7 @@ $sk-darkgray: #333
     font-family: $kit-font-family
     a
       +undo-border-links
-      // +replace-text-with-dimensions("survival-kit-logo.png")
       display: block
-      // padding: 0.3em
   .page-info
     border-left: 1px solid white
     float: left
@@ -54,18 +53,16 @@ $sk-darkgray: #333
 .kit-nav, .section-nav
   margin-bottom: 16px
   padding: 0 0.5em
-  // +adjust-font-size-to(16px)
   #{headings()}
     font-size: $base-font-size
   a
-    +link-colors($white, $sk-lightgray, $sk-lightgray, $white)
+    +link-colors($white, $black, $black, $white)
     +undo-border-links
   ul
     +inline-block-list
     margin-left: -0.25em
     li
       padding: 0 0.25em
-      // outline: 1px solid white
 .kit-nav
   background: $sk-midgray
 .section-nav
@@ -73,36 +70,109 @@ $sk-darkgray: #333
   margin-top: -16px
   margin-bottom: 0
   @extend .clearfix
-  // h3
-  //   color: $white
-  //   +adjust-font-size-to(16px)
-  // h4
-  //   float: left
-  //   clear: left
-  //   margin-right: 0.5em
-  //   margin-top: 0
-  //   margin-bottom: 0
-  // ul
-  //   float: left
+  ul
+    +no-bullets
   .sub-nav
-    // +tabs($dir: bottom)
     overflow: visible
+    position: relative
     li
-      position: relative
       // background: $sk-darkgray
+      white-space: inherit
       ul
         position: absolute
         top: 24px
-        // left: 0
+        left: 0
+        max-width: 100%
         background: $sk-darkgray
         display: none
       &:hover, &:active
         background: $sk-darkgray
         ul
           display: block
-      // &:first-of-type
-        // opacity: 0.2
 
+//
+h1.section-title
+  +adjust-font-size-to(ms(0))
+  background-color: $sk-lightgray
+  text-transform: uppercase
+  padding-left: 0.5em
+  margin-top: 0
+  a
+    +link-colors($black, $sk-gray, $sk-gray, $black, false)
+    +border-links($black, $sk-gray, $sk-gray, $black, false)
+
+.back-to-top,
+.fold-section,
+.fold-article
+  +undo-border-links
+  +link-colors($sk-gray, $sk-lightgray, $sk-lightgray, $sk-gray, false)
+  border-bottom-width: 0 !important
+  border-bottom-color: transparent !important
+  font-size: 0.8em
+  @extend .foundicon
+
+.back-to-top
+  margin: 0.25em 1.5em 0 0
+  float: right
+  @extend .foundicon-up-arrow
+.fold-section,
+.fold-article
+  margin-left: 1em
+.fold-article
+  +link-colors($sk-lightgray, $sk-gray, $sk-gray, $sk-lightgray, false)
+.fold-section-close,
+.fold-article-close
+  @extend .foundicon-minus
+.fold-section-open,
+.fold-article-open
+  @extend .foundicon-plus
+
+
+// .fold-article
+//   width: 0
+//   color: transparent
+//   @extend .foundicon
+//   &.fold-article-open
+//     @extend .foundicon-up-arrow
+
+
+div.element
+  +vertical-separation($kit-baseline * 2, 1px, transparentize($border-color, 0.9))
+  &.closed
+    +un-vertical-separation
+  h2.element-title
+    +adjust-font-size-to(ms(0))
+    // background-color: $sk-gray
+    // color: $white
+    border-bottom: 1px solid $sk-lightgray
+    color: $sk-lightgray
+    text-transform: uppercase
+    padding-left: $kit-gutter-half
+    // a
+    //   +link-colors($white, $alt-color, $alt-color, $white, false)
+    //   +border-links($white, $alt-color, $alt-color, $white, false)
+  .example
+    +vertical-separation($kit-baseline, 1px, transparentize($border-color, 0.9), dashed)
+    +pie-clearfix
+    .markup
+      // +columns(4)
+      display: inline
+      float: left
+      width: 64.228%
+      margin-right: 2.439%
+      & + .show-source
+        // +columns(2)
+        // +omega(6)
+        display: inline
+        float: right
+        width: 30.894%
+        margin-right: 0
+        // margin-left: -24px
+        @extend %mono
+        .show-hide
+          text-align: right
+        & + p
+          clear: both
 
 //
   .survival-kit

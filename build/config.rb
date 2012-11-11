@@ -6,6 +6,7 @@ require 'susy'
 require 'modular-scale'
 require 'color-schemer'
 require 'breakpoint'
+require 'toolkit'
 
 # HTTP paths
 http_path             = '/'
