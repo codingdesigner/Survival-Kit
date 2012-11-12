@@ -48,58 +48,68 @@
 /*!
 * Collapse markup sections
 */
+
+function foldArticle($el, $dir) {
+  $dir = typeof $dir !== 'undefined' ? $dir : 'close';
+  console.log($el);
+  console.log($dir);
+  if($dir == 'close') {
+    $el
+      .attr('data-label', 'open')
+      .html('open')
+      .removeClass('fold-article-close')
+      .addClass('fold-article-open')
+      .parents('.element').addClass('closed').end()
+      .parent().siblings().slideUp().end();
+  } else {
+    $el
+      .attr('data-label', 'close')
+      .html('close')
+      .removeClass('fold-article-open')
+      .addClass('fold-article-close')
+      .parents('.element').removeClass('closed').end()
+      .parent().siblings().slideDown().end();
+  }
+}
+function foldSection($el, $dir) {
+  $dir = typeof $dir !== 'undefined' ? $dir : 'close';
+  console.log($el);
+  console.log($dir);
+  if($dir == 'close') {
+    $el
+      .attr('data-label', 'open')
+      .html('open')
+      .removeClass('fold-section-close').addClass('fold-section-open')
+      .parent().siblings('.element:not(.closed)').find('.fold-article').click()
+      ;
+  } else {
+    $el
+      .attr('data-label', 'close')
+      .html('close')
+      .removeClass('fold-section-open').addClass('fold-section-close')
+      .parent().siblings('.element.closed').find('.fold-article').click()
+      ;
+  }
+}
+
 (function($){
-  $('div.element').find('.element-title').append('<a href="#" class="fold-article fold-article-close" data-label="close">close</a>');
+  $('div.element').find('.element-title').append('<a href="#" class="fold-article fold-article-close" data-label="close">close element</a>');
   $('.fold-article').toggle(
     function() {
-      $(this).parents('.element').addClass('closed');
-      $(this).parent().siblings().slideUp();
-      $(this)
-        .attr('data-label', 'open')
-        .html('open')
-        .removeClass('fold-article-close')
-        .addClass('fold-article-open');
+      foldArticle($(this));
     },
     function() {
-      $(this).parents('.element').removeClass('closed');
-      $(this).parent().siblings().slideDown();
-      $(this)
-        .attr('data-label', 'close')
-        .html('close')
-        .removeClass('fold-article-open')
-        .addClass('fold-article-close');
+      foldArticle($(this), 'open');
     }
   );
   // element groups
   $('.section-title').append('<a href="#" class="fold-section fold-section-close" data-label="fold section">close</a>');
   $('.fold-section').toggle(
     function() {
-      $(this)
-        .attr('data-label', 'open')
-        .html('open')
-        .removeClass('fold-section-close').addClass('fold-section-open')
-        .parent().siblings('.element').addClass('closed')
-        .children(':not(.element-title)').slideUp().end()
-        .find('.element-title').find('.fold-article-close')
-          .removeClass('fold-article-close')
-          .addClass('fold-article-open')
-          .attr('data-label', 'open')
-          .html('open')
-        ;
+      foldSection($(this));
     },
     function() {
-      $(this)
-        .attr('data-label', 'close')
-        .html('close')
-        .removeClass('fold-section-open').addClass('fold-section-close')
-        .parent().siblings('.element').removeClass('closed')
-        .children().slideDown().end()
-        .find('.element-title').find('.fold-article-open')
-          .removeClass('fold-article-open')
-          .addClass('fold-article-close')
-          .attr('data-label', 'close')
-          .html('close')
-        ;
+      foldSection($(this), 'open');
     }
   );
 })(jQuery);
