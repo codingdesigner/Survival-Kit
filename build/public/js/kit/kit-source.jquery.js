@@ -100,3 +100,12 @@
   $('div.element').find('.element-title').append('<a href="#" class="back-to-top" data-label="top"></a>');
   $('.section-title').append('<a href="#" class="back-to-top" data-label="top"></a>');
 })(jQuery);
+
+
+/*!
+* Side Panel Menu
+*/
+(function($){
+  var jPM = $.jPanelMenu();
+  jPM.on();
+})(jQuery);
