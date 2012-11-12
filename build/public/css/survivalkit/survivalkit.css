@@ -9,16 +9,16 @@ img, video {
   height: auto;
 }
 
-.clearfix:after, .kit-ui header:after, .section-nav:after {
+.clearfix:after, .kit-ui header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.clearfix, .kit-ui header, .section-nav {
+.clearfix, .kit-ui header {
   zoom: 1;
 }
-.clearfix:after, .kit-ui header:after, .section-nav:after {
+.clearfix:after, .kit-ui header:after {
   content: "\0020";
   display: table;
   clear: both;
@@ -727,6 +727,16 @@ div.element .example .markup + .show-source {
   line-height: 1.71429em;
 }
 
+.jPanelMenu #menu {
+  display: none;
+}
+
+#jPanelMenu-menu {
+  background: #444444;
+  font-family: futura, sans-serif;
+  color: #cccccc;
+}
+
 .kit-nav, .section-nav {
   margin-bottom: 16px;
   padding: 0 0.5em;
@@ -763,68 +773,13 @@ div.element .example .markup + .show-source {
   border-bottom: none;
 }
 .kit-nav ul, .section-nav ul {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  *zoom: 1;
-  margin-left: -0.25em;
-}
-.kit-nav ul li, .section-nav ul li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  white-space: nowrap;
-}
-.kit-nav ul li, .section-nav ul li {
-  *display: inline;
-}
-.kit-nav ul li, .section-nav ul li {
-  padding: 0 0.25em;
-}
-
-.kit-nav {
-  background: #444444;
-}
-
-.section-nav {
-  background: #666666;
-  margin-top: -16px;
-  margin-bottom: 0;
-}
-.section-nav ul {
   list-style: none;
+  padding-left: 0;
 }
-.section-nav ul li {
+.kit-nav ul li, .section-nav ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
-}
-.section-nav .sub-nav {
-  overflow: visible;
-  position: relative;
-}
-.section-nav .sub-nav li {
-  white-space: inherit;
-}
-.section-nav .sub-nav li ul {
-  position: absolute;
-  top: 24px;
-  left: 0;
-  max-width: 100%;
-  background: #333333;
-  display: none;
-}
-.section-nav .sub-nav li:hover, .section-nav .sub-nav li:active {
-  background: #333333;
-}
-.section-nav .sub-nav li:hover ul, .section-nav .sub-nav li:active ul {
-  display: block;
 }
 
 h1.section-title {

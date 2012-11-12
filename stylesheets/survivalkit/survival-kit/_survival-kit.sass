@@ -50,6 +50,16 @@ $sk-darkgray: #333
   .intro
     +adjust-font-size-to(14px)
 
+
+////////////////////////////
+// NAVIGATION
+////////////////////////////
+.jPanelMenu #menu
+  display: none
+#jPanelMenu-menu
+  background: $sk-midgray
+  font-family: $kit-font-family
+  color: $sk-lightgray
 .kit-nav, .section-nav
   margin-bottom: 16px
   padding: 0 0.5em
@@ -59,35 +69,10 @@ $sk-darkgray: #333
     +link-colors($white, $black, $black, $white)
     +undo-border-links
   ul
-    +inline-block-list
-    margin-left: -0.25em
-    li
-      padding: 0 0.25em
-.kit-nav
-  background: $sk-midgray
-.section-nav
-  background: $sk-gray
-  margin-top: -16px
-  margin-bottom: 0
-  @extend .clearfix
-  ul
     +no-bullets
-  .sub-nav
-    overflow: visible
-    position: relative
-    li
-      white-space: inherit
-      ul
-        position: absolute
-        top: 24px
-        left: 0
-        max-width: 100%
-        background: $sk-darkgray
-        display: none
-      &:hover, &:active
-        background: $sk-darkgray
-        ul
-          display: block
+    padding-left: 0
+
+
 
 //
 h1.section-title
