@@ -1,3 +1,5 @@
+-@kit_internal = true
+
 !!! 5
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
@@ -8,15 +10,17 @@
   = render :template => "../partials/_head.haml"
   = render :template => "../partials/_webfonts.haml"
   -if @styletile
-    %body{:class => ['survival-kit', 'styletile', 'styletile-' + @version]}
+    - @classes = 'survival-kit', 'styletile', 'styletile-' + @version
   -else
-    %body{:class => ['survival-kit']}
-  .kit-ui
-    = render :template => "/survivalkit/partials/_header.haml"
-    = render :template => "/survivalkit/partials/_menu.haml"
-  #page
-    #main{:role => "main"}
-      = yield
-    %footer= @footer
+    - @classes = 'survival-kit'
+
+  %body{:class => [@classes]}
+    .kit-ui
+      = render :template => "/survivalkit/partials/_header.haml"
+      = render :template => "/survivalkit/partials/_menu.haml"
+    #page
+      #main{:role => "main"}
+        = yield
+      %footer= @footer
     = render :template => "../partials/_frameworks.haml"
     = render :template => "../partials/_footer.haml"
