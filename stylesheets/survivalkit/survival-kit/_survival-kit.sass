@@ -11,17 +11,26 @@ $sk-gray: #666
 $sk-midgray: #444
 $sk-darkgray: #333
 
+body.survival-kit
+  padding-top: 1.5em
+  header.kit-ui
+    display: block
+    position: fixed
+    width: 100%
+    height: 1.5em
+    margin-top: -1.5em
 
+header.kit-ui
+  padding: 0 0.5em
+  @extend .clearfix
+  background: $sk-darkgray
+  border-bottom: 1px solid $black
 .kit-ui
   background: $sk-gray
   font-family: $kit-font-family
   color: $sk-lightgray
   margin-bottom: 0
-  header
-    padding: 0 0.5em
-    @extend .clearfix
-    background: $sk-darkgray
-    border-bottom: 1px solid $black
+  +clearfix
   a
     +link-colors($white, $sk-lightgray, $sk-lightgray, $white)
     +border-links($white, $sk-lightgray, $sk-lightgray, $white)
@@ -71,7 +80,13 @@ $sk-darkgray: #333
   ul
     +no-bullets
     padding-left: 0
-
+.no-js
+  body
+    +display-box
+    +box-orient(horizontal)
+    +box-align(stretch)
+  #menu
+    width: 250px
 
 
 //

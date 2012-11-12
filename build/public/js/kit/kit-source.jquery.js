@@ -48,7 +48,6 @@
 /*!
 * Collapse markup sections
 */
-
 function foldArticle($el, $dir) {
   $dir = typeof $dir !== 'undefined' ? $dir : 'close';
   console.log($el);
@@ -93,7 +92,7 @@ function foldSection($el, $dir) {
 }
 
 (function($){
-  $('div.element').find('.element-title').append('<a href="#" class="fold-article fold-article-close" data-label="close">close element</a>');
+  $('div.element').find('.element-title').append('<a href="#" class="fold-article fold-article-close" data-label="close">close</a>');
   $('.fold-article').toggle(
     function() {
       foldArticle($(this));
@@ -119,10 +118,10 @@ function foldSection($el, $dir) {
 * back to top links
 */
 (function($){
+  $('.section-title')
+    .append('<a href="#" class="back-to-top" data-label="top">top</a>');
   $('div.element')
     .find('.element-title')
-    .append('<a href="#" class="back-to-top" data-label="top">top</a>');
-  $('.section-title')
     .append('<a href="#" class="back-to-top" data-label="top">top</a>');
 })(jQuery);
 

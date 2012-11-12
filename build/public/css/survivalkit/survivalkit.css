@@ -9,16 +9,16 @@ img, video {
   height: auto;
 }
 
-.clearfix:after, .kit-ui header:after {
+.clearfix:after, header.kit-ui:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.clearfix, .kit-ui header {
+.clearfix, header.kit-ui {
   zoom: 1;
 }
-.clearfix:after, .kit-ui header:after {
+.clearfix:after, header.kit-ui:after {
   content: "\0020";
   display: table;
   clear: both;
@@ -628,16 +628,30 @@ div.element .example .markup + .show-source {
   content: "\f02e";
 }
 
+body.survival-kit {
+  padding-top: 1.5em;
+}
+body.survival-kit header.kit-ui {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 1.5em;
+  margin-top: -1.5em;
+}
+
+header.kit-ui {
+  padding: 0 0.5em;
+  background: #333333;
+  border-bottom: 1px solid black;
+}
+
 .kit-ui {
   background: #666666;
   font-family: futura, sans-serif;
   color: #cccccc;
   margin-bottom: 0;
-}
-.kit-ui header {
-  padding: 0 0.5em;
-  background: #333333;
-  border-bottom: 1px solid black;
+  overflow: hidden;
+  *zoom: 1;
 }
 .kit-ui a {
   color: white;
@@ -780,6 +794,24 @@ div.element .example .markup + .show-source {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
+}
+
+.no-js body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -ms-box-align: stretch;
+  box-align: stretch;
+}
+.no-js #menu {
+  width: 250px;
 }
 
 h1.section-title {

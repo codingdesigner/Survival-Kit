@@ -15,9 +15,8 @@
     - @classes = 'survival-kit'
 
   %body{:class => [@classes]}
-    .kit-ui
-      = render :template => "/survivalkit/partials/_header.haml"
-      = render :template => "/survivalkit/partials/_menu.haml"
+    = render :template => "/survivalkit/partials/_header.haml"
+    = render :template => "/survivalkit/partials/_menu.haml"
     #page
       #main{:role => "main"}
         = yield
