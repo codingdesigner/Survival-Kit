@@ -1,10 +1,9 @@
-// styles meant to assist while designing markup conventions
-// in elements.html, elements-drupal.html
+// styles for survivalkit ui
 
-@import ../mixins/helpers
-@import fonts/foundation_icons_all/foundation_icons_general_enclosed/sass/general_enclosed_foundicons
+$fontAwesomePath: "fontawesome-webfont"
+@import 'survivalkit/fonts/font-awesome'
 
-$kit-font-family: futura, $font-sans
+$kit-font-family: $font-serifs
 
 $sk-lightgray: #ccc
 $sk-gray: #666
@@ -41,7 +40,7 @@ header.kit-ui
     float: left
     padding-right: 0.5em
     margin-right: 0.5em
-    font-family: $kit-font-family
+    font-family: futura, $kit-font-family
     a
       +undo-border-links
       display: block
@@ -107,13 +106,13 @@ h1.section-title
   +link-colors($sk-gray, $sk-lightgray, $sk-lightgray, $sk-gray, false)
   border-bottom-width: 0 !important
   border-bottom-color: transparent !important
-  font-size: 0.8em
-  @extend .foundicon
+  @extend %font-awesome
 
 .back-to-top
-  margin: 0.25em 1.5em 0 0
+  margin: 0.25em 0.5em 0 0
   float: right
-  @extend .foundicon-up-arrow
+  clear: right
+  @extend .icon-circle-arrow-up
 .fold-section,
 .fold-article
   margin-left: 1em
@@ -121,10 +120,10 @@ h1.section-title
   +link-colors($sk-lightgray, $sk-gray, $sk-gray, $sk-lightgray, false)
 .fold-section-close,
 .fold-article-close
-  @extend .foundicon-minus
+  @extend .icon-remove-sign
 .fold-section-open,
 .fold-article-open
-  @extend .foundicon-plus
+  @extend .icon-plus-sign
 
 
 

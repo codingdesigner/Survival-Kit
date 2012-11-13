@@ -1,0 +1,69 @@
+@import "compass/css3/font-face";
+
+
+/* Regular */
+@include font-face(
+    'Ostrich',
+    font-files(
+        "ostrich-regular-webfont.woff", woff,
+        "ostrich-regular-webfont.ttf", truetype,
+        "ostrich-regular-webfont.svg#ostrich_regular_webfont", svg),
+    'ostrich-regular-webfont.eot',
+    normal,
+    normal);
+
+
+/* Light */
+@include font-face(
+    'Ostrich',
+    font-files(
+        "ostrich-light-webfont.woff", woff,
+        "ostrich-light-webfont.ttf", truetype,
+        "ostrich-light-webfont.svg#ostrich_light_webfont", svg),
+    'ostrich-light-webfont.eot',
+    300,
+    normal);
+
+/* bold */
+@include font-face(
+    'Ostrich',
+    font-files(
+        "ostrich-bold-webfont.woff", woff,
+        "ostrich-bold-webfont.ttf", truetype,
+        "ostrich-bold-webfont.svg#ostrich_bold_webfont", svg),
+    'ostrich-bold-webfont.eot',
+    bold,
+    normal);
+
+/* Black */
+@include font-face(
+    'Ostrich',
+    font-files(
+        "ostrich-black-webfont.woff", woff,
+        "ostrich-black-webfont.ttf", truetype,
+        "ostrich-black-webfont.svg#ostrich_black_webfont", svg),
+    'ostrich-black-webfont.eot',
+    black,
+    normal);
+
+/* Dashed */
+@include font-face(
+    'Ostrich Dashed',
+    font-files(
+        "ostrich-dashed-webfont.woff", woff,
+        "ostrich-dashed-webfont.ttf", truetype,
+        "ostrich-dashed-webfont.svg#ostrich_dashed_webfont", svg),
+    'ostrich-dashed-webfont.eot',
+    normal,
+    normal);
+
+/* Rounded */
+@include font-face(
+    'Ostrich Rounded',
+    font-files(
+        "ostrich-rounded-webfont.woff", woff,
+        "ostrich-rounded-webfont.ttf", truetype,
+        "ostrich-rounded-webfont.svg#ostrich_rounded_webfont", svg),
+    'ostrich-rounded-webfont.eot',
+    normal,
+    normal);

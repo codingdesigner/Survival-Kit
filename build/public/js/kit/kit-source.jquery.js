@@ -55,7 +55,7 @@ function foldArticle($el, $dir) {
   if($dir == 'close') {
     $el
       .attr('data-label', 'open')
-      .html('open')
+      // .html('open')
       .removeClass('fold-article-close')
       .addClass('fold-article-open')
       .parents('.element').addClass('closed').end()
@@ -63,7 +63,7 @@ function foldArticle($el, $dir) {
   } else {
     $el
       .attr('data-label', 'close')
-      .html('close')
+      // .html('close')
       .removeClass('fold-article-open')
       .addClass('fold-article-close')
       .parents('.element').removeClass('closed').end()
@@ -77,14 +77,14 @@ function foldSection($el, $dir) {
   if($dir == 'close') {
     $el
       .attr('data-label', 'open')
-      .html('open')
+      // .html('open')
       .removeClass('fold-section-close').addClass('fold-section-open')
       .parent().siblings('.element:not(.closed)').find('.fold-article').click()
       ;
   } else {
     $el
       .attr('data-label', 'close')
-      .html('close')
+      // .html('close')
       .removeClass('fold-section-open').addClass('fold-section-close')
       .parent().siblings('.element.closed').find('.fold-article').click()
       ;
@@ -92,7 +92,7 @@ function foldSection($el, $dir) {
 }
 
 (function($){
-  $('div.element').find('.element-title').append('<a href="#" class="fold-article fold-article-close" data-label="close">close</a>');
+  $('div.element').find('.element-title').append('<a href="#" class="fold-article fold-article-close" data-label="close"></a>');
   $('.fold-article').toggle(
     function() {
       foldArticle($(this));
@@ -102,7 +102,7 @@ function foldSection($el, $dir) {
     }
   );
   // element groups
-  $('.section-title').append('<a href="#" class="fold-section fold-section-close" data-label="fold section">close</a>');
+  $('.section-title').append('<a href="#" class="fold-section fold-section-close" data-label="fold section"></a>');
   $('.fold-section').toggle(
     function() {
       foldSection($(this));
@@ -119,10 +119,10 @@ function foldSection($el, $dir) {
 */
 (function($){
   $('.section-title')
-    .append('<a href="#" class="back-to-top" data-label="top">top</a>');
+    .append('<a href="#" class="back-to-top" data-label="top"></a>');
   $('div.element')
     .find('.element-title')
-    .append('<a href="#" class="back-to-top" data-label="top">top</a>');
+    .append('<a href="#" class="back-to-top" data-label="top"></a>');
 })(jQuery);
 
 
