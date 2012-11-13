@@ -1540,35 +1540,10 @@ header.kit-ui {
 h1.section-title {
   font-size: 1em;
   line-height: 1.5em;
-  background-color: #cccccc;
   text-transform: uppercase;
   padding-left: 0.5em;
   margin-top: 0;
-}
-h1.section-title a {
-  color: black;
-}
-h1.section-title a:visited {
-  color: black;
-}
-h1.section-title a:hover {
-  color: #666666;
-}
-h1.section-title a:active {
-  color: #666666;
-}
-h1.section-title a {
-  text-decoration: none;
-  border-bottom: 1px solid black;
-}
-h1.section-title a:visited {
-  border-bottom-color: black;
-}
-h1.section-title a:hover {
-  border-bottom-color: #666666;
-}
-h1.section-title a:active {
-  border-bottom-color: #666666;
+  border-bottom: 1px solid #666666;
 }
 
 .fold-section,
@@ -1630,33 +1605,18 @@ h1.section-title a:active {
 }
 
 div.element {
-  *zoom: 1;
+  padding-bottom: 44px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
-  margin-bottom: 24px;
-  padding-bottom: 23px;
-}
-div.element:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-div.element:last-child {
-  padding-bottom: 0;
-  border-bottom-width: 0;
-  margin-bottom: 0;
 }
 div.element.closed {
-  border-bottom: none;
-  margin-bottom: 0;
   padding-bottom: 0;
 }
 div.element h2.element-title {
   font-size: 1em;
   line-height: 1.5em;
   border-bottom: 1px solid #cccccc;
-  color: #cccccc;
   text-transform: uppercase;
-  padding-left: 12.5px;
+  padding-left: 0.5em;
 }
 div.element .example {
   *zoom: 1;
