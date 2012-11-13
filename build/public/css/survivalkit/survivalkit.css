@@ -438,8 +438,7 @@ div.element .example .markup + .show-source {
 
 /*  Font Awesome styles
     ------------------------------------------------------- */
-.back-to-top:before,
-.fold-section:before,
+.menu-trigger:before, .fold-section:before,
 .fold-article:before,
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
@@ -449,8 +448,7 @@ div.element .example .markup + .show-source {
   display: inline-block;
   text-decoration: inherit;
 }
-a .back-to-top:before,
-a .fold-section:before,
+a .menu-trigger:before, a .fold-section:before,
 a .fold-article:before, a
 [class^="icon-"]:before, a
 [class*=" icon-"]:before {
@@ -545,7 +543,7 @@ ul.icons li .icon-large:before {
   content: "\f00a";
 }
 
-.icon-th-list:before {
+.icon-th-list:before, .menu-trigger:before {
   content: "\f00b";
 }
 
@@ -1144,7 +1142,7 @@ ul.icons li .icon-large:before {
   content: "\f0a9";
 }
 
-.icon-circle-arrow-up:before, .back-to-top:before {
+.icon-circle-arrow-up:before {
   content: "\f0aa";
 }
 
@@ -1344,19 +1342,8 @@ ul.icons li .icon-large:before {
   content: "\f200";
 }
 
-body.survival-kit {
-  padding-top: 1.5em;
-}
-body.survival-kit header.kit-ui {
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 1.5em;
-  margin-top: -1.5em;
-}
-
 header.kit-ui {
-  padding: 0 0.5em;
+  padding: 0.5em 0.5em 0;
   background: #333333;
   border-bottom: 1px solid black;
 }
@@ -1457,6 +1444,19 @@ header.kit-ui {
   line-height: 1.71429em;
 }
 
+.menu-trigger {
+  float: left;
+  min-width: 2.75em;
+  min-height: 2.75em;
+  margin-top: -0.5em;
+  border-bottom-width: 0 !important;
+  border-bottom-color: transparent !important;
+}
+.menu-trigger:before {
+  font-size: 24px;
+  line-height: 1.83333em;
+}
+
 .jPanelMenu #menu {
   display: none;
 }
@@ -1525,6 +1525,13 @@ header.kit-ui {
   -moz-box-align: stretch;
   -ms-box-align: stretch;
   box-align: stretch;
+  padding-top: 44px;
+}
+.no-js header.kit-ui {
+  position: fixed;
+  width: 100%;
+  height: 44px;
+  margin-top: -44px;
 }
 .no-js #menu {
   width: 250px;
@@ -1564,59 +1571,44 @@ h1.section-title a:active {
   border-bottom-color: #666666;
 }
 
-.back-to-top,
 .fold-section,
 .fold-article {
   color: #666666;
   border-bottom-width: 0 !important;
   border-bottom-color: transparent !important;
 }
-.back-to-top,
 .fold-section,
 .fold-article {
   text-decoration: none;
   border-bottom: none;
 }
-.back-to-top:visited,
 .fold-section:visited,
 .fold-article:visited {
   border-bottom: none;
 }
-.back-to-top:focus,
 .fold-section:focus,
 .fold-article:focus {
   border-bottom: none;
 }
-.back-to-top:hover,
 .fold-section:hover,
 .fold-article:hover {
   border-bottom: none;
 }
-.back-to-top:active,
 .fold-section:active,
 .fold-article:active {
   border-bottom: none;
 }
-.back-to-top:visited,
 .fold-section:visited,
 .fold-article:visited {
   color: #666666;
 }
-.back-to-top:hover,
 .fold-section:hover,
 .fold-article:hover {
   color: #cccccc;
 }
-.back-to-top:active,
 .fold-section:active,
 .fold-article:active {
   color: #cccccc;
-}
-
-.back-to-top {
-  margin: 0.25em 0.5em 0 0;
-  float: right;
-  clear: right;
 }
 
 .fold-section,

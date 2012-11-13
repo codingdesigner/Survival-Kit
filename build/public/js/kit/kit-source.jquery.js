@@ -115,21 +115,10 @@ function foldSection($el, $dir) {
 
 
 /*!
-* back to top links
-*/
-(function($){
-  $('.section-title')
-    .append('<a href="#" class="back-to-top" data-label="top"></a>');
-  $('div.element')
-    .find('.element-title')
-    .append('<a href="#" class="back-to-top" data-label="top"></a>');
-})(jQuery);
-
-
-/*!
 * Side Panel Menu
 */
 (function($){
+  $('header.kit-ui').prepend('<a class="menu-trigger"></a>');
   var jPM = $.jPanelMenu();
   jPM.on();
 })(jQuery);

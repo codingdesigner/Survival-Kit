@@ -10,20 +10,21 @@ $sk-gray: #666
 $sk-midgray: #444
 $sk-darkgray: #333
 
-body.survival-kit
-  padding-top: 1.5em
-  header.kit-ui
-    display: block
-    position: fixed
-    width: 100%
-    height: 1.5em
-    margin-top: -1.5em
+// body.survival-kit
+  // padding-top: 44px
+  // header.kit-ui
+    // display: block
+    // position: fixed
+    // width: 100%
+    // height: 44px
+    // margin-top: -44px
 
 header.kit-ui
-  padding: 0 0.5em
+  padding: 0.5em 0.5em 0
   @extend .clearfix
   background: $sk-darkgray
   border-bottom: 1px solid $black
+
 .kit-ui
   background: $sk-gray
   font-family: $kit-font-family
@@ -62,12 +63,27 @@ header.kit-ui
 ////////////////////////////
 // NAVIGATION
 ////////////////////////////
+.menu-trigger
+  float: left
+  min-width: calc-em(44px, 16px)
+  min-height: calc-em(44px, 16px)
+  margin-top: -0.5em
+  // outline: 1px solid white
+  border-bottom-width: 0 !important
+  border-bottom-color: transparent !important
+  @extend %font-awesome
+  @extend .icon-th-list
+  &:before
+    // padding-top: 0.5em
+    font-size: 24px
+    line-height: calc-em(44px, 24px)
 .jPanelMenu #menu
   display: none
 #jPanelMenu-menu
   background: $sk-midgray
   font-family: $kit-font-family
   color: $sk-lightgray
+  // padding-top: calc-em(44px, 16px)
 .kit-nav, .section-nav
   margin-bottom: 16px
   padding: 0 0.5em
@@ -84,6 +100,12 @@ header.kit-ui
     +display-box
     +box-orient(horizontal)
     +box-align(stretch)
+    padding-top: 44px
+  header.kit-ui
+    position: fixed
+    width: 100%
+    height: 44px
+    margin-top: -44px
   #menu
     width: 250px
 
@@ -99,7 +121,6 @@ h1.section-title
     +link-colors($black, $sk-gray, $sk-gray, $black, false)
     +border-links($black, $sk-gray, $sk-gray, $black, false)
 
-.back-to-top,
 .fold-section,
 .fold-article
   +undo-border-links
@@ -108,11 +129,6 @@ h1.section-title
   border-bottom-color: transparent !important
   @extend %font-awesome
 
-.back-to-top
-  margin: 0.25em 0.5em 0 0
-  float: right
-  clear: right
-  @extend .icon-circle-arrow-up
 .fold-section,
 .fold-article
   margin-left: 1em
