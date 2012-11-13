@@ -9,7 +9,7 @@
           %a.username{:href => "/user/1", :title => "View user profile."} admin
         .form-item.form-type-textfield.form-item-subject
           %label{:for => "edit-subject"} Subject
-          %input#edit-subject.form-text{:maxlength => "64", :name => "subject", :size => "60", :type => "text", :value => ""}
+          %input#edit-subject.form-text{:maxlength => "64", :name => "subject", :size => "60", :type => "text", :value => ""}/
         #edit-comment-body.field-type-text-long.field-name-comment-body.field-widget-text-textarea.form-wrapper
           #comment-body-add-more-wrapper
             .text-format-wrapper
@@ -49,6 +49,6 @@
                         %li No HTML tags allowed.
                         %li Web page addresses and e-mail addresses turn into links automatically.
                         %li Lines and paragraphs break automatically.
-        #edit-actions.form-actions.form-wrapper
-          %input#edit-submit.form-submit{:name => "op", :type => "submit", :value => "Save"}
-            %input#edit-preview.form-submit{:name => "op", :type => "submit", :value => "Preview"}
+        #edit-actions-comment.form-actions.form-wrapper
+          %input#edit-submit.form-submit{:name => "op", :type => "submit", :value => "Save"}/
+          %input#edit-preview.form-submit{:name => "op", :type => "submit", :value => "Preview"}/
