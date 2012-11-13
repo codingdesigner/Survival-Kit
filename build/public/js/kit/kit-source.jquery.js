@@ -38,7 +38,8 @@
         .find('div.element')
         .each(function(index) {
           $thisID = $(this).attr('id');
-          $thisUL.append('<li><a href="#' + $thisID + '">' + $thisID + '</a></li>');
+          $re = /(\S*)-el/;
+          $thisUL.append('<li><a href="#' + $thisID + '">' + $thisID.replace($re, "$1") + '</a></li>');
         });
     });
   }
