@@ -10,15 +10,6 @@ $sk-gray: #666
 $sk-midgray: #444
 $sk-darkgray: #333
 
-// body.survival-kit
-  // padding-top: 44px
-  // header.kit-ui
-    // display: block
-    // position: fixed
-    // width: 100%
-    // height: 44px
-    // margin-top: -44px
-
 header.kit-ui
   padding: 0.5em 0.5em 0
   @extend .clearfix
@@ -68,13 +59,11 @@ header.kit-ui
   min-width: calc-em(44px, 16px)
   min-height: calc-em(44px, 16px)
   margin-top: -0.5em
-  // outline: 1px solid white
   border-bottom-width: 0 !important
   border-bottom-color: transparent !important
   @extend %font-awesome
   @extend .icon-th-list
   &:before
-    // padding-top: 0.5em
     font-size: 24px
     line-height: calc-em(44px, 24px)
 .jPanelMenu #menu
@@ -109,21 +98,12 @@ header.kit-ui
   #menu
     width: 250px
 
-
-//
 h1.section-title
   +adjust-font-size-to(ms(0))
-  // background-color: $sk-midgray
   text-transform: uppercase
   padding-left: 0.5em
   margin-top: 0
   border-bottom: 1px solid $sk-gray
-  // color: $white
-  // a
-    // +link-colors($white, $sk-lightgray, $sk-lightgray, $white, false)
-    // +border-links($white, $sk-lightgray, $sk-lightgray, $white, false)
-    // +link-colors($black, $sk-gray, $sk-gray, $black, false)
-    // +border-links($black, $sk-gray, $sk-gray, $black, false)
 
 .fold-section,
 .fold-article
@@ -144,9 +124,6 @@ h1.section-title
 .fold-section-open,
 .fold-article-open
   @extend .icon-plus-sign
-
-
-
 
 div.element
   padding-bottom: 44px
