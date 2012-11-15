@@ -38,7 +38,8 @@
         .find('div.element')
         .each(function(index) {
           $thisID = $(this).attr('id');
-          $thisUL.append('<li><a href="#' + $thisID + '">' + $thisID + '</a></li>');
+          $re = /(\S*)-el/;
+          $thisUL.append('<li><a href="#' + $thisID + '">' + $thisID.replace($re, "$1") + '</a></li>');
         });
     });
   }
@@ -48,55 +49,77 @@
 /*!
 * Collapse markup sections
 */
+function foldArticle($el, $dir) {
+  $dir = typeof $dir !== 'undefined' ? $dir : 'close';
+  console.log($el);
+  console.log($dir);
+  if($dir == 'close') {
+    $el
+      .attr('data-label', 'open')
+      // .html('open')
+      .removeClass('fold-article-close')
+      .addClass('fold-article-open')
+      .parents('.element').addClass('closed').end()
+      .parent().siblings().slideUp().end();
+  } else {
+    $el
+      .attr('data-label', 'close')
+      // .html('close')
+      .removeClass('fold-article-open')
+      .addClass('fold-article-close')
+      .parents('.element').removeClass('closed').end()
+      .parent().siblings().slideDown().end();
+  }
+}
+function foldSection($el, $dir) {
+  $dir = typeof $dir !== 'undefined' ? $dir : 'close';
+  console.log($el);
+  console.log($dir);
+  if($dir == 'close') {
+    $el
+      .attr('data-label', 'open')
+      // .html('open')
+      .removeClass('fold-section-close').addClass('fold-section-open')
+      .parent().siblings('.element:not(.closed)').find('.fold-article').click()
+      ;
+  } else {
+    $el
+      .attr('data-label', 'close')
+      // .html('close')
+      .removeClass('fold-section-open').addClass('fold-section-close')
+      .parent().siblings('.element.closed').find('.fold-article').click()
+      ;
+  }
+}
+
 (function($){
   $('div.element').find('.element-title').append('<a href="#" class="fold-article fold-article-close" data-label="close"></a>');
   $('.fold-article').toggle(
     function() {
-      $(this).parents('.element').addClass('closed');
-      $(this).parent().siblings().slideUp();
-      $(this).attr('data-label', 'close').removeClass('fold-article-close').addClass('fold-article-open');
+      foldArticle($(this));
     },
     function() {
-      $(this).parents('.element').removeClass('closed');
-      $(this).parent().siblings().slideDown();
-      $(this).attr('data-label', 'open').removeClass('fold-article-open').addClass('fold-article-close');
+      foldArticle($(this), 'open');
     }
   );
   // element groups
   $('.section-title').append('<a href="#" class="fold-section fold-section-close" data-label="fold section"></a>');
   $('.fold-section').toggle(
     function() {
-      $(this)
-        .attr('data-label', 'open')
-        .parent().siblings('.element').addClass('closed')
-        .children(':not(.element-title)').slideUp().end()
-        .find('.element-title').find('.fold-article-close')
-        .removeClass('fold-article-close').addClass('fold-article-open')
-        ;
-      $(this)
-        .attr('data-label', 'open')
-        .removeClass('fold-section-close').addClass('fold-section-open');
+      foldSection($(this));
     },
     function() {
-      $(this)
-        .attr('data-label', 'close')
-        .parent().siblings('.element').removeClass('closed')
-        .children().slideDown().end()
-        .find('.element-title').find('.fold-article-open')
-        .removeClass('fold-article-open').addClass('fold-article-close')
-        ;
-      $(this)
-        .attr('data-label', 'close')
-        .removeClass('fold-section-open').addClass('fold-section-close');
+      foldSection($(this), 'open');
     }
   );
 })(jQuery);
 
 
 /*!
-* back to top links
+* Side Panel Menu
 */
 (function($){
-  $('div.element').find('.element-title').append('<a href="#" class="back-to-top" data-label="top"></a>');
-  $('.section-title').append('<a href="#" class="back-to-top" data-label="top"></a>');
+  $('header.kit-ui').prepend('<a class="menu-trigger"></a>');
+  var jPM = $.jPanelMenu();
+  jPM.on();
 })(jQuery);

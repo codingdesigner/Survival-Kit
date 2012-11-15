@@ -1,4 +1,4 @@
-%div#p.element
+%div#p-el.element
   %h2.element-title
     p
   %p
@@ -23,7 +23,8 @@
           Name:
           %input{:name => "n"}/
         %label
-          %input{:name => "anon", :type => "checkbox"} Hide from other users
+          Hide from other users
+          %input{:name => "anon", :type => "checkbox"}/
       %p
         %label
           Address:
@@ -31,11 +32,11 @@
   .markup
     %p
       There was once an example from Femley,
-      %br
-        Whose markup was of dubious quality.
-        %br
-          The validator complained,
-          %br
-            So the author was pained,
-            %br
-              To move the error from the markup to the rhyming.
+      %br/
+      Whose markup was of dubious quality.
+      %br/
+      The validator complained,
+      %br/
+      So the author was pained,
+      %br/
+      To move the error from the markup to the rhyming.

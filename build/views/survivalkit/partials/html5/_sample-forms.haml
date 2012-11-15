@@ -1,4 +1,4 @@
-%div#sample-forms.element
+%div#sample-forms-el.element
   %h2.element-title Sample Forms
   .markup
     %form{:action => "https://pizza.example.com/order.cgi", :enctype => "application/x-www-form-urlencoded", :method => "post"}
@@ -18,27 +18,34 @@
         %legend Pizza Size
         %p
           %label
-            %input{:name => "size", :type => "radio", :value => "small"} Small
+            Small
+            %input{:name => "size", :type => "radio", :value => "small"}/
         %p
           %label
-            %input{:name => "size", :type => "radio", :value => "medium"} Medium
+            Medium
+            %input{:name => "size", :type => "radio", :value => "medium"}/
         %p
           %label
-            %input{:name => "size", :type => "radio", :value => "large"} Large
+            Large
+            %input{:name => "size", :type => "radio", :value => "large"}/
       %fieldset
         %legend Pizza Toppings
         %p
           %label
-            %input{:name => "topping", :type => "checkbox", :value => "bacon"} Bacon
+            Bacon
+            %input{:name => "topping", :type => "checkbox", :value => "bacon"}/
         %p
           %label
-            %input{:name => "topping", :type => "checkbox", :value => "cheese"} Extra Cheese
+            Extra Cheese
+            %input{:name => "topping", :type => "checkbox", :value => "cheese"}/
         %p
           %label
-            %input{:name => "topping", :type => "checkbox", :value => "onion"} Onion
+            Onion
+            %input{:name => "topping", :type => "checkbox", :value => "onion"}/
         %p
           %label
-            %input{:name => "topping", :type => "checkbox", :value => "mushroom"} Mushroom
+            Mushroom
+            %input{:name => "topping", :type => "checkbox", :value => "mushroom"}/
       %p
         %label
           Preferred delivery time:

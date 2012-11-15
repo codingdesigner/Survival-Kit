@@ -1,7 +1,7 @@
-%div#form-vertical-tabs.element
+%div#form-vertical-tabs-el.element
   %h2.element-title form, Vertical Tabs
   .markup
-    %form#styleguide-form{"accept-charset" => "UTF-8", :action => "", :enctype => "multipart/form-data", :method => "post"}
+    %form#styleguide-form{"accept-charset" => "UTF-8", :action => "#", :enctype => "multipart/form-data", :method => "post"}
       %div
         .form-item.form-type-select.form-item-select
           %label{:for => "edit-select"} Select
@@ -13,73 +13,73 @@
             %option{:value => "dignissim"} dignissim
           .description Duis orci nunc, lacinia in malesuada et, euismod id turpis.
         .form-item.form-type-checkbox.form-item-checkbox
-          %input#edit-checkbox.form-checkbox{:checked => "checked", :name => "checkbox", :type => "checkbox", :value => "1"}
-            %label.option{:for => "edit-checkbox"} Checkbox
-            .description Fusce dignissim tempor elementum.
+          %input#edit-checkbox.form-checkbox{:checked => "checked", :name => "checkbox", :type => "checkbox", :value => "1"}/
+          %label.option{:for => "edit-checkbox"} Checkbox
+          .description Fusce dignissim tempor elementum.
         .form-item.form-type-checkboxes.form-item-checkboxes
           %label{:for => "edit-checkboxes"} Checkboxes
           #edit-checkboxes.form-checkboxes
             .form-item.form-type-checkbox.form-item-checkboxes-eget
-              %input#edit-checkboxes-eget.form-checkbox{:name => "checkboxes[eget]", :type => "checkbox", :value => "eget"}
-                %label.option{:for => "edit-checkboxes-eget"} eget
+              %input#edit-checkboxes-eget.form-checkbox{:name => "checkboxes[eget]", :type => "checkbox", :value => "eget"}/
+              %label.option{:for => "edit-checkboxes-eget"} eget
             .form-item.form-type-checkbox.form-item-checkboxes-venenatis
-              %input#edit-checkboxes-venenatis.form-checkbox{:name => "checkboxes[venenatis]", :type => "checkbox", :value => "venenatis"}
-                %label.option{:for => "edit-checkboxes-venenatis"} venenatis
+              %input#edit-checkboxes-venenatis.form-checkbox{:name => "checkboxes[venenatis]", :type => "checkbox", :value => "venenatis"}/
+              %label.option{:for => "edit-checkboxes-venenatis"} venenatis
             .form-item.form-type-checkbox.form-item-checkboxes-aliquam
-              %input#edit-checkboxes-aliquam.form-checkbox{:name => "checkboxes[aliquam]", :type => "checkbox", :value => "aliquam"}
-                %label.option{:for => "edit-checkboxes-aliquam"} aliquam
+              %input#edit-checkboxes-aliquam.form-checkbox{:name => "checkboxes[aliquam]", :type => "checkbox", :value => "aliquam"}/
+              %label.option{:for => "edit-checkboxes-aliquam"} aliquam
             .form-item.form-type-checkbox.form-item-checkboxes-consequat
-              %input#edit-checkboxes-consequat.form-checkbox{:name => "checkboxes[consequat]", :type => "checkbox", :value => "consequat"}
-                %label.option{:for => "edit-checkboxes-consequat"} consequat
+              %input#edit-checkboxes-consequat.form-checkbox{:name => "checkboxes[consequat]", :type => "checkbox", :value => "consequat"}/
+              %label.option{:for => "edit-checkboxes-consequat"} consequat
             .form-item.form-type-checkbox.form-item-checkboxes-dignissim
-              %input#edit-checkboxes-dignissim.form-checkbox{:name => "checkboxes[dignissim]", :type => "checkbox", :value => "dignissim"}
-                %label.option{:for => "edit-checkboxes-dignissim"} dignissim
+              %input#edit-checkboxes-dignissim.form-checkbox{:name => "checkboxes[dignissim]", :type => "checkbox", :value => "dignissim"}/
+              %label.option{:for => "edit-checkboxes-dignissim"} dignissim
           .description Phasellus ac eleifend magna.
         .form-item.form-type-radios.form-item-radios
           %label{:for => "edit-radios"} Radios
           #edit-radios.form-radios
             .form-item.form-type-radio.form-item-radios
-              %input#edit-radios-eget.form-radio{:name => "radios", :type => "radio", :value => "eget"}
-                %label.option{:for => "edit-radios-eget"} eget
+              %input#edit-radios-eget.form-radio{:name => "radios", :type => "radio", :value => "eget"}/
+              %label.option{:for => "edit-radios-eget"} eget
             .form-item.form-type-radio.form-item-radios
-              %input#edit-radios-venenatis.form-radio{:name => "radios", :type => "radio", :value => "venenatis"}
-                %label.option{:for => "edit-radios-venenatis"} venenatis
+              %input#edit-radios-venenatis.form-radio{:name => "radios", :type => "radio", :value => "venenatis"}/
+              %label.option{:for => "edit-radios-venenatis"} venenatis
             .form-item.form-type-radio.form-item-radios
-              %input#edit-radios-aliquam.form-radio{:name => "radios", :type => "radio", :value => "aliquam"}
-                %label.option{:for => "edit-radios-aliquam"} aliquam
+              %input#edit-radios-aliquam.form-radio{:name => "radios", :type => "radio", :value => "aliquam"}/
+              %label.option{:for => "edit-radios-aliquam"} aliquam
             .form-item.form-type-radio.form-item-radios
-              %input#edit-radios-consequat.form-radio{:name => "radios", :type => "radio", :value => "consequat"}
-                %label.option{:for => "edit-radios-consequat"} consequat
+              %input#edit-radios-consequat.form-radio{:name => "radios", :type => "radio", :value => "consequat"}/
+              %label.option{:for => "edit-radios-consequat"} consequat
             .form-item.form-type-radio.form-item-radios
-              %input#edit-radios-dignissim.form-radio{:name => "radios", :type => "radio", :value => "dignissim"}
-                %label.option{:for => "edit-radios-dignissim"} dignissim
+              %input#edit-radios-dignissim.form-radio{:name => "radios", :type => "radio", :value => "dignissim"}/
+              %label.option{:for => "edit-radios-dignissim"} dignissim
           .description Suspendisse lectus erat, commodo nec fringilla quis, interdum non leo.
         .form-item.form-type-textfield.form-item-textfield
           %label{:for => "edit-textfield"} Textfield
-          %input#edit-textfield.form-text{:maxlength => "128", :name => "textfield", :size => "60", :type => "text", :value => "euismod"}
-            .description Vestibulum ut ligula dolor, in placerat tortor.
+          %input#edit-textfield.form-text{:maxlength => "128", :name => "textfield", :size => "60", :type => "text", :value => "euismod"}/
+          .description Vestibulum ut ligula dolor, in placerat tortor.
         .form-item.form-type-textfield.form-item-autocomplete{:role => "application"}
           %label{:for => "edit-autocomplete"} Autocomplete textfield
-          %input#edit-autocomplete.form-text.form-autocomplete{"aria-autocomplete" => "list", :autocomplete => "OFF", :maxlength => "128", :name => "autocomplete", :size => "60", :type => "text", :value => "nunc"}
-            %input#edit-autocomplete-autocomplete.autocomplete.autocomplete-processed{:disabled => "disabled", :type => "hidden", :value => "http://roadside.local/user/autocomplete"}
-              .description Nam auctor dui a neque iaculis in aliquam erat viverra.
-              %span#edit-autocomplete-autocomplete-aria-live.element-invisible{"aria-live" => "assertive"}
+          %input#edit-autocomplete.form-text.form-autocomplete{"aria-autocomplete" => "list", :autocomplete => "OFF", :maxlength => "128", :name => "autocomplete", :size => "60", :type => "text", :value => "nunc"}/
+          %input#edit-autocomplete-autocomplete.autocomplete.autocomplete-processed{:disabled => "disabled", :type => "hidden", :value => "http://roadside.local/user/autocomplete"}/
+          .description Nam auctor dui a neque iaculis in aliquam erat viverra.
+          %span#edit-autocomplete-autocomplete-aria-live.element-invisible{"aria-live" => "assertive"}
         .form-item.form-type-textfield.form-item-textfield-machine
           %label{:for => "edit-textfield-machine"} Textfield, with machine name
-          %input#edit-textfield-machine.form-text.machine-name-source{:maxlength => "128", :name => "textfield-machine", :size => "60", :type => "text", :value => "velit convallis consectetur"}
-            %span.field-suffix
-              %small#edit-textfield-machine-machine-name-suffix
-                %span.machine-name-label Machine name:
-                %span.machine-name-value velit_convallis_consectetur
-                %span.admin-link
-                  %a{:href => "#"} Edit
-            .description Aenean sit amet tellus sit amet ante congue faucibus.
+          %input#edit-textfield-machine.form-text.machine-name-source{:maxlength => "128", :name => "textfield-machine", :size => "60", :type => "text", :value => "velit convallis consectetur"}/
+          %span.field-suffix
+            %small#edit-textfield-machine-machine-name-suffix
+              %span.machine-name-label Machine name:
+              %span.machine-name-value velit_convallis_consectetur
+              %span.admin-link
+                %a{:href => "#"} Edit
+          .description Aenean sit amet tellus sit amet ante congue faucibus.
         .form-item.form-type-machine-name.form-item-machine-name{:style => "display: none; "}
           %label{:for => "edit-machine-name"}
             Machine name
             %span.form-required{:title => "This field is required."} *
-          %input#edit-machine-name.form-text.required.machine-name-target{:maxlength => "64", :name => "machine_name", :size => "60", :type => "text", :value => ""}
-            .description Morbi congue nulla vel tortor aliquet imperdiet.
+          %input#edit-machine-name.form-text.required.machine-name-target{:maxlength => "64", :name => "machine_name", :size => "60", :type => "text", :value => ""}/
+          .description Morbi congue nulla vel tortor aliquet imperdiet.
         .form-item.form-type-textarea.form-item-textarea
           %label{:for => "edit-textarea"} Textarea
           .form-textarea-wrapper.resizable.textarea-processed.resizable-textarea
@@ -295,20 +295,20 @@
           .description Sed feugiat velit sed magna aliquam accumsan.
         .form-item.form-type-file.form-item-files-file
           %label{:for => "edit-file"} File
-          %input#edit-file.form-file{:name => "files[file]", :size => "60", :type => "file"}
-            .description Sed feugiat velit sed magna aliquam accumsan.
+          %input#edit-file.form-file{:name => "files[file]", :size => "60", :type => "file"}/
+          .description Sed feugiat velit sed magna aliquam accumsan.
         #edit-managed-file-ajax-wrapper
           .form-item.form-type-managed-file.form-item-managed-file
             %label{:for => "edit-managed-file"} Managed file
             .form-managed-file
-              %input#edit-managed-file-upload.form-file{:name => "files[managed_file]", :size => "22", :type => "file"}
-                %input#edit-managed-file-upload-button.form-submit.ajax-processed{:name => "managed_file_upload_button", :type => "submit", :value => "Upload"}
-                  %input{:name => "managed_file[fid]", :type => "hidden", :value => "0"}
+              %input#edit-managed-file-upload.form-file{:name => "files[managed_file]", :size => "22", :type => "file"}/
+              %input#edit-managed-file-upload-button.form-submit.ajax-processed{:name => "managed_file_upload_button", :type => "submit", :value => "Upload"}/
+              %input{:name => "managed_file[fid]", :type => "hidden", :value => "0"}/
             .description Morbi congue nulla vel tortor aliquet imperdiet.
         .form-item.form-type-password.form-item-password
           %label{:for => "edit-password"} Password
-          %input#edit-password.form-text{:maxlength => "128", :name => "password", :size => "60", :type => "password"}
-            .description Sed vitae velit ut dolor varius semper at id lectus.
+          %input#edit-password.form-text{:maxlength => "128", :name => "password", :size => "60", :type => "password"}/
+          .description Sed vitae velit ut dolor varius semper at id lectus.
         .form-item.form-type-password-confirm.form-item-password-confirm
           %label{:for => "edit-password-confirm"} Password confirm
           .form-item.form-type-password.form-item-password-confirm-pass1.password-parent
@@ -318,13 +318,13 @@
               .password-indicator
                 .indicator
             %label{:for => "edit-password-confirm-pass1"} Password
-            %input#edit-password-confirm-pass1.password-field.form-text.password-processed{:maxlength => "128", :name => "password_confirm[pass1]", :size => "60", :type => "password"}
+            %input#edit-password-confirm-pass1.password-field.form-text.password-processed{:maxlength => "128", :name => "password_confirm[pass1]", :size => "60", :type => "password"}/
           .form-item.form-type-password.form-item-password-confirm-pass2.confirm-parent
             .password-confirm
               Passwords match:
               %span
             %label{:for => "edit-password-confirm-pass2"} Confirm password
-            %input#edit-password-confirm-pass2.password-confirm.form-text{:maxlength => "128", :name => "password_confirm[pass2]", :size => "60", :type => "password"}
+            %input#edit-password-confirm-pass2.password-confirm.form-text{:maxlength => "128", :name => "password_confirm[pass2]", :size => "60", :type => "password"}/
           .password-suggestions.description{:style => "display: none; "}
         .form-item.form-type-select.form-item-weight
           %label{:for => "edit-weight"} Weight
@@ -351,6 +351,6 @@
             %option{:value => "9"} 9
             %option{:value => "10"} 10
           .description Phasellus blandit ullamcorper diam vel porta.
-        %input{:name => "form_build_id", :type => "hidden", :value => "form-x-0vcWL95UYhYJdScM5FciQVI2fEZT78IOFQaqNkpFE"}
-          %input{:name => "form_token", :type => "hidden", :value => "JgHDsNA3K2wOnE1ML25JvEfxbCUwElNU2YFSdWy0Ivk"}
-            %input{:name => "form_id", :type => "hidden", :value => "styleguide_form"}
+        %input{:name => "form_build_id", :type => "hidden", :value => "form-x-0vcWL95UYhYJdScM5FciQVI2fEZT78IOFQaqNkpFE"}/
+        %input{:name => "form_token", :type => "hidden", :value => "JgHDsNA3K2wOnE1ML25JvEfxbCUwElNU2YFSdWy0Ivk"}/
+        %input{:name => "form_id", :type => "hidden", :value => "styleguide_form"}/

@@ -1,4 +1,4 @@
-%div#details.element
+%div#details-el.element
   %h2.element-title
     details
   %p
@@ -36,7 +36,8 @@
       %summary
         %label{:for => "fn"} Name & Extension:
       %p
-        %input#fn{:name => "fn", :type => "text", :value => "Pillar Magazine.pdf"}
-          %p
-            %label
-              %input{:checked => "", :name => "ext", :type => "checkbox"} Hide extension
+        %input#fn{:name => "fn", :type => "text", :value => "Pillar Magazine.pdf"}/
+        %p
+          %label
+            Hide extension
+          %input{:checked => "", :name => "ext", :type => "checkbox"}/

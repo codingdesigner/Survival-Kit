@@ -1,12 +1,12 @@
-%div#fieldset.element
+%div#fieldset-el.element
   %h2.element-title
     fieldset
   .markup
     %fieldset{:disabled => "", :name => "clubfields"}
       %legend
         %label
-          %input{:name => "club", :onchange => "form.clubfields.disabled = !checked", :type => "checkbox"}
-            Use Club Card
+          Use Club Card
+        %input{:name => "club", :onchange => "form.clubfields.disabled = !checked", :type => "checkbox"}/
       %p
         %label
           Name on card:
@@ -23,8 +23,8 @@
     %fieldset{:disabled => "", :name => "clubfields"}
       %legend
         %label
-          %input{:name => "club", :onchange => "form.clubfields.disabled = !checked", :type => "checkbox"}
-            Use Club Card
+          Use Club Card
+          %input{:name => "club", :onchange => "form.clubfields.disabled = !checked", :type => "checkbox"}/
       %p
         %label
           Name on card:
@@ -32,8 +32,8 @@
       %fieldset{:name => "numfields"}
         %legend
           %label
-            %input{:checked => "", :name => "clubtype", :onchange => "form.numfields.disabled = !checked", :type => "radio"}
-              My card has numbers on it
+            My card has numbers on it
+            %input{:checked => "", :name => "clubtype", :onchange => "form.numfields.disabled = !checked", :type => "radio"}/
         %p
           %label
             Card number:
@@ -41,8 +41,8 @@
       %fieldset{:disabled => "", :name => "letfields"}
         %legend
           %label
-            %input{:name => "clubtype", :onchange => "form.letfields.disabled = !checked", :type => "radio"}
-              My card has letters on it
+            My card has letters on it
+            %input{:name => "clubtype", :onchange => "form.letfields.disabled = !checked", :type => "radio"}/
         %p
           %label
             Card code:
