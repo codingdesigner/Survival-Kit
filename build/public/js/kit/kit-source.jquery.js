@@ -119,7 +119,9 @@ function foldSection($el, $dir) {
 * Side Panel Menu
 */
 (function($){
-  $('header.kit-ui').prepend('<a class="menu-trigger"></a>');
-  var jPM = $.jPanelMenu();
-  jPM.on();
+  if($('body.documentation').length == 0){
+    $('header.kit-ui').prepend('<a class="menu-trigger"></a>');
+    var jPM = $.jPanelMenu();
+    jPM.on();
+  }
 })(jQuery);

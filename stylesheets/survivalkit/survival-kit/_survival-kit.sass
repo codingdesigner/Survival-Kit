@@ -84,19 +84,21 @@ header.kit-ui
   ul
     +no-bullets
     padding-left: 0
-.no-js
-  body
-    +display-box
-    +box-orient(horizontal)
-    +box-align(stretch)
-    padding-top: 44px
+.no-js body,
+body.documentation
+  +display-box
+  +box-orient(horizontal)
+  +box-align(stretch)
+  padding-top: 44px
   header.kit-ui
     position: fixed
     width: 100%
     height: 44px
     margin-top: -44px
   #menu
-    width: 250px
+    width: auto
+    max-width: 250px
+    margin-right: 1em
 
 h1.section-title
   +adjust-font-size-to(ms(0))
