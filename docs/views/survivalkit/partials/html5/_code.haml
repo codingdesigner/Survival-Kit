@@ -1,0 +1,70 @@
+%div#code-el.element
+  %h2.element-title
+    code
+  %p
+    The
+    %code
+      %a{:href => "http://developers.whatwg.org/text-level-semantics.html#the-code-element"} code
+    element
+    %a{:href => "http://developers.whatwg.org/text-level-semantics.html#represents"} represents
+    a fragment
+    of computer code. This could be an XML element name, a filename, a
+    computer program, or any other string that a computer would
+    recognize.
+  .markup
+    %p
+      When you call the
+      %code activate()
+      method on the
+      %code robotSnowman
+      object, the eyes glow.
+  .markup
+    %pre
+      %code.language-pascal
+        :preserve
+          var i: Integer;
+          begin
+             i := 1;
+          end.  %div#var.element
+  %h2.element-title
+    %a{:href => "http://developers.whatwg.org/text-level-semantics.html#the-var-element"} var
+  %p
+    The
+    %code
+      %a{:href => "http://developers.whatwg.org/text-level-semantics.html#the-var-element"} var
+    element
+    %a{:href => "http://developers.whatwg.org/text-level-semantics.html#represents"} represents
+    a
+    variable. This could be an actual variable in a mathematical
+    expression or programming context, or it could just be a term used
+    as a placeholder in prose.
+  .markup
+    %p
+      If there are
+      %var n
+      pipes leading to the ice
+      cream factory then I expect at
+      %em least
+      %var n
+      flavors of ice cream to be available for purchase!
+  .markup
+    %figure
+      %math
+        %mi a
+        %mo =
+        %msqrt
+          %msup
+            %mi b
+            %mn 2
+          %mi +
+          %msup
+            %mi c
+            %mn 2
+      %figcaption
+        Using Pythagoras' theorem to solve for the hypotenuse
+        %var a
+        of
+        a triangle with sides
+        %var b
+        and
+        %var c

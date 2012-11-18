@@ -1,0 +1,58 @@
+- @title = "Functions → Calculations"
+- @subnav = "<nav class='section-nav'></nav> "
+
+/ Calculations
+%section#calculations.element-group
+  %h1.section-title Calculations
+  %p.intro
+    :markdown
+      Generic function to calculate a percentage based on pixel values
+      (independent of any specific grid system)
+  %div#function-calc-percent.element
+    %h2.element-title
+      %a.permalink{:href => "#function-calc-percent"}
+        :preserve
+          calc-percent
+    .extendable-source
+      %pre.scss
+        :preserve
+          @function calc-percent($target, $container) {
+            @return $target / $container * 100%;
+          }
+  %div#function-calc-em.element
+    %h2.element-title
+      %a.permalink{:href => "#function-calc-em"}
+        :preserve
+          calc-em
+    .extendable-source
+      %pre.scss
+        :preserve
+          @function calc-em($target, $container) {
+            @return $target / $container * 1em;
+          }
+  %div#function-cp.element
+    %h2.element-title
+      %a.permalink{:href => "#function-cp"}
+        :preserve
+          'cp'
+    .extendable-source
+      .comment
+        shortcut name
+      %pre.scss
+        :preserve
+          @function cp($args...) {
+            @return calc-percent($args...);
+          }
+  %div#function-ce.element
+    %h2.element-title
+      %a.permalink{:href => "#function-ce"}
+        :preserve
+          'ce'
+    .extendable-source
+      .comment
+        shortcut name
+      %pre.scss
+        :preserve
+          @function ce($args...) {
+            @return calc-em($args...);
+          }

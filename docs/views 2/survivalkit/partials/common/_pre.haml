@@ -1,0 +1,22 @@
+%div#pre-el.element
+  %h2.element-title pre
+  .markup
+    %p
+      This is the
+      %code Panel
+      constructor:
+    %pre
+      %code
+        :preserve
+          function Panel(element, canClose, closeHandler) {
+                        this.element = element;
+                        this.canClose = canClose;
+                        this.closeHandler = function () { if (closeHandler) closeHandler() };
+                      }            .markup
+    %pre
+      :preserve
+          ()                   o             | |   /|   / o
+          /\         ,_                 __,  | |    |__/    _|_
+         /  \|   |  /  |  |  |_|  |  |_/  |  |/     | \   |  |
+        /(__/ \_/|_/   |_/ \/  |_/ \/  \_/|_/|__/   |  \_/|_/|_/
+

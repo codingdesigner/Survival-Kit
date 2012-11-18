@@ -1,0 +1,39 @@
+%div#menu-el.element
+  %h2.element-title
+    menu
+  %p
+    The
+    %code
+      %a{:href => "http://developers.whatwg.org/interactive-elements.html#menus"} menu
+    element represents a list of commands.
+  .markup
+    %menu{:type => "toolbar"}
+      %li
+        %menu{:label => "File"}
+          %button{:onclick => "fnew()", :type => "button"} New...
+          %button{:onclick => "fopen()", :type => "button"} Open...
+          %button{:onclick => "fsave()", :type => "button"} Save
+          %button{:onclick => "fsaveas()", :type => "button"} Save as...
+      %li
+        %menu{:label => "Edit"}
+          %button{:onclick => "ecopy()", :type => "button"} Copy
+          %button{:onclick => "ecut()", :type => "button"} Cut
+          %button{:onclick => "epaste()", :type => "button"} Paste
+      %li
+        %menu{:label => "Help"}
+          %li
+            %a{:href => "help.html"} Help
+          %li
+            %a{:href => "about.html"} About
+  .markup
+    %form{:action => "#"}
+      %menu{:type => "toolbar"}
+        %label{:for => "goto"} Go to...
+        %menu{:label => "Go"}
+          %select#goto
+            %option{:selected => "selected", :value => ""} Select site:
+            %option{:value => "http://www.apple.com/"} Apple
+            %option{:value => "http://www.mozilla.org/"} Mozilla
+            %option{:value => "http://www.opera.com/"} Opera
+          %span
+            %input{:type => "submit", :value => "Go"}/

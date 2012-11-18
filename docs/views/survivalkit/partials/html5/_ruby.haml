@@ -1,0 +1,55 @@
+%div#ruby-el.element
+  %hgroup
+    %h2.element-title
+      ruby
+    %h3.element-title
+      rt
+    %h3.element-title
+      rp
+  %p
+    The
+    %code
+      %a{:href => "http://developers.whatwg.org/text-level-semantics.html#the-ruby-element"} ruby
+    element allows one or more spans of
+    phrasing content to be marked with ruby annotations. Ruby
+    annotations are short runs of text presented alongside base text,
+    primarily used in East Asian typography as a guide for
+    pronunciation or to include other annotations. In Japanese, this
+    form of typography is also known as
+    = succeed "." do
+      %i furigana
+  %p
+    The
+    %code
+      %a{:href => "http://developers.whatwg.org/text-level-semantics.html#the-rt-element"} rt
+    element marks the ruby text component of a
+    ruby annotation.
+  %p
+    The
+    %code
+      %a{:href => "http://developers.whatwg.org/text-level-semantics.html#the-rp-element"} rp
+    element can be used to provide parentheses
+    around a ruby text component of a ruby annotation, to be shown by
+    user agents that don't support ruby annotations.
+  .markup
+    %ruby
+      漢
+      %rt> かん
+      字
+      %rt じ　
+  .markup
+    %ruby
+      汉
+      %rt> hàn
+      字
+      %rt zì
+  .markup
+    %ruby
+      漢
+      %rp (
+      %rt かん
+      %rp )
+      字
+      %rp (
+      %rt じ
+      %rp )

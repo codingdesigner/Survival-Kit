@@ -1,0 +1,62 @@
+- @title = "Extendables → Sticky Footer"
+- @subnav = "<nav class='section-nav'></nav> "
+
+/ Sticky Footer
+%section#sticky-footer.element-group
+  %h1.section-title Sticky Footer
+  %p.intro
+    :markdown
+      Extendables for sticky footer.
+      [link](http://pixelsvsbytes.com/blog/2011/09/sticky-css-footers-the-flexible-way/)
+  %div#extend-html-frame-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-html-frame-hidden"}
+        :preserve
+          %html-frame
+    .extendable-source
+      .comment
+        &= "apply to <html> and <body>"
+      %pre.scss
+        :preserve
+          %html-frame {
+            height: 100%;
+            margin: 0pt;
+          }
+  %div#extend-frame-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-frame-hidden"}
+        :preserve
+          %frame
+    .extendable-source
+      .comment
+        &= "apply to <body>"
+      %pre.scss
+        :preserve
+          %frame {
+            display: table;
+            height: 100%;
+            width: 100%;
+          }
+  %div#extend-row-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-row-hidden"}
+        :preserve
+          %row
+    .extendable-source
+      %pre.scss
+        :preserve
+          %row {
+            display: table-row;
+          }
+  %div#extend-row-expand-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-row-expand-hidden"}
+        :preserve
+          %row-expand
+    .extendable-source
+      %pre.scss
+        :preserve
+          %row-expand {
+            @extend %row;
+            height: 100%;
+          }

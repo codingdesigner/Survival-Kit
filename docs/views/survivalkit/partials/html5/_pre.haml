@@ -1,0 +1,44 @@
+%div#pre-el.element
+  %h2.element-title
+    pre
+  %p
+    The
+    %code
+      %a{:href => "http://developers.whatwg.org/grouping-content.html#the-pre-element"} pre
+    element
+    %a{:href => "http://developers.whatwg.org/grouping-content.html#represents"} represents
+    a block of preformatted text, in which structure is represented by typographic conventions rather than by elements.
+  .markup
+    %p
+      This is the
+      %code Panel
+      constructor:
+    %pre
+      %code
+        :preserve
+          function Panel(element, canClose, closeHandler) {
+                        this.element = element;
+                        this.canClose = canClose;
+                        this.closeHandler = function () { if (closeHandler) closeHandler() };
+                      }    .markup
+    %pre
+      %samp
+        You are in an open field west of a big white house with a boarded
+        front door.
+        There is a small mailbox here.
+
+        >
+      %kbd open mailbox
+      %samp
+        Opening the mailbox reveals:
+        A leaflet.
+
+        >
+  .markup
+    %pre
+
+      :preserve
+          ()                   o             | |   /|   / o
+          /\         ,_                 __,  | |    |__/    _|_
+         /  \|   |  /  |  |  |_|  |  |_/  |  |/     | \   |  |
+        /(__/ \_/|_/   |_/ \/  |_/ \/  \_/|_/|__/   |  \_/|_/|_/

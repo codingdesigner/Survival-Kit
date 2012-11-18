@@ -1,0 +1,108 @@
+- @title = "Extendables → Helpers"
+- @subnav = "<nav class='section-nav'></nav> "
+
+/ Helpers
+%section#helpers.element-group
+  %h1.section-title Helpers
+  %p.intro
+    :markdown
+      Extendables that help.
+  %div#extend-clearfix-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-clearfix-hidden"}
+        :preserve
+          %clearfix
+    .extendable-source
+      %pre.scss
+        :preserve
+          %clearfix {
+            @include kit-clearfix;
+          }
+  %div#extend-hidden-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-hidden-hidden"}
+        :preserve
+          %hidden
+    .extendable-source
+      %pre.scss
+        :preserve
+          %hidden {
+            @include hidden;
+          }
+  %div#extend-visuallyhidden-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-visuallyhidden-hidden"}
+        :preserve
+          %visuallyhidden
+    .extendable-source
+      %pre.scss
+        :preserve
+          %visuallyhidden {
+            @include visuallyhidden;
+          }
+  %div#extend-visuallyhidden-focusable-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-visuallyhidden-focusable-hidden"}
+        :preserve
+          %visuallyhidden.focusable
+    .extendable-source
+      %pre.scss
+        :preserve
+          %visuallyhidden.focusable {
+            @include visuallyhidden(true);
+          }
+  %div#extend-invisible-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-invisible-hidden"}
+        :preserve
+          %invisible
+    .extendable-source
+      %pre.scss
+        :preserve
+          %invisible {
+            @include invisible;
+          }
+  %div#extend-constrain-to-parent-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-constrain-to-parent-hidden"}
+        :preserve
+          %constrain-to-parent
+    .extendable-source
+      %pre.scss
+        :preserve
+          %constrain-to-parent {
+            max-width: 100%;
+          }
+  %div#extend-italic-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-italic-hidden"}
+        :preserve
+          %italic
+    .extendable-source
+      %pre.scss
+        :preserve
+          %italic {
+            font-style: italic;
+          }
+  %div#extend-bold-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-bold-hidden"}
+        :preserve
+          %bold
+    .extendable-source
+      %pre.scss
+        :preserve
+          %bold {
+            font-weight: bold;
+          }
+  %div#extend-wireframe-hidden.element
+    %h2.element-title
+      %a.permalink{:href => "#extend-wireframe-hidden"}
+        :preserve
+          %wireframe
+    .extendable-source
+      %pre.scss
+        :preserve
+          %wireframe {
+            outline: 1px dashed $red;
+          }

@@ -1,0 +1,27 @@
+%div#forms-el.element
+  %h2.element-title Forms
+  .markup
+    %form#form{"accept-charset" => "UTF-8", :action => "/action", :method => "post"}
+      %fieldset
+        %legend Fieldset with legend
+        %div
+          %label Label for Radios
+          %input{:name => "radio", :type => "radio", :value => ""}/
+          %input{:name => "Radio", :type => "radio", :value => ""}/
+          %input{:name => "Radio", :type => "radio", :value => ""}/
+        %div
+          %label Label for Checkboxes
+          %input{:name => "checkboxes", :type => "checkbox", :value => ""}/
+          %input{:name => "checkboxes", :type => "checkbox", :value => ""}/
+          %input{:name => "checkboxes", :type => "checkbox", :value => ""}/
+        %div
+          %label Label for Textfield
+          %input#textfield{:maxlength => "12", :size => "50", :type => "text", :value => "input"}/
+        %div
+          %label label for Textarea
+          %textarea#text{:cols => "50", :rows => "5"}
+        %div
+          %label label for Filefield
+          %input{:name => "files", :size => "50", :type => "file"}/
+        %div
+          %input{:name => "button", :type => "button", :value => "Button"}/

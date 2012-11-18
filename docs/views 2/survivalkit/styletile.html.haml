@@ -1,0 +1,62 @@
+- @styletile = true
+- @version = "1"
+
+= render :template => "/setup/client.haml"
+= render :template => "/setup/style-tile.haml"
+
+
+%article.text-examples
+  -if @logos
+    .logos.group
+      %h5.label Header text options
+      %h1.logo.opt-1 INSERT CLIENT NAME
+  -if @headers
+    .headers.group
+      %h5.label Header text options
+      %h1 This is a Page Title
+      %h2 This is a Header
+      %h3 This is a Sub Header
+      %a{:href => ""} Link Text
+  -if @quote
+    .quotes.group
+      %figure.quote
+        %span.quote-mark.left-quote-mark &ldquo;
+        An Exceptional Quote
+        %span.quote-mark.right-quote-mark &rdquo;
+        %figcaption.source
+          %span.publication
+            The Paper
+            %span.comma ,
+          %span.year 2011
+  -if @type_serifs
+    .serif.group
+      %h5.label Body Text Option
+      %h2 This is a Header
+      %p.serif
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        = succeed "." do
+          %a{:href => ""} Donec odio
+        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+  -if @type_sans
+    .sans.group
+      %h5.label Body Text Option
+      %h2 This is a Header
+      %p.sans
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        = succeed "." do
+          %a{:href => ""} Donec odio
+        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+%article.graphic-examples
+  -if @number_of_colors > 0
+    .colors.group
+      %h5.label Color Options
+      %ul
+        -(1..@number_of_colors).each do |i|
+          %li(class="color-#{i}")
+  -if @number_of_images > 0
+    .images.group
+      %h5.label Style and Pattern Swatches
+      %ul
+        -(1..@number_of_images).each do |i|
+          %li(class="image-#{i}")
+            %img{:alt => "placeholder image", :src => "http://lorempixel.com/g/400/300/abstract/#{i}"}/

@@ -1,0 +1,46 @@
+= render :template => "/setup/frameworks.haml"
+
+-if @jQuery
+  / Grab jQuery #{@jQuery} from Google's CDN with a protocol relative URL
+  %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/#{@jQuery}/jquery.min.js"}
+
+  -if @jQueryFallback
+    / Fall back to local copy jQuery
+    :javascript
+      window.jQuery || document.write("<script src='js/libs/#{jQueryFallback}.js'>\x3C/script>")
+
+  -if @jQueryUI
+    / Grab jQueryUI #{@jQueryUI} from Google's CDN with a protocol relative URL
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jqueryui/#{@jQueryUI}/jquery-ui.min.js"}
+
+    -if @jQueryUIFallback
+      / Fall back to local copy of jQuery UI
+      :javascript
+        window.jQuery.ui || document.write("<script src='js/libs/#{jQueryUIFallback}.js'>\x3C/script>")
+
+-if @MooTools
+  / Grab MooTools #{@MooTools} from Google's CDN with a protocol relative URL
+  %script{:src => "//ajax.googleapis.com/ajax/libs/mootools/#{@MooTools}/mootools-yui-compressed.js"}
+
+  -if @MooToolsFallback
+    / Fall back to local copy of MooTools
+    :javascript
+      window.MooTools || document.write("<script src='js/libs/#{MooToolsFallback}.js'>\x3C/script>")
+
+-if @Prototype
+  / Grab Prototype #{@Prototype} from Google's CDN with a protocol relative URL
+  %script{:src => "//ajax.googleapis.com/ajax/libs/prototype/#{@Prototype}/prototype.js"}
+
+  -if @PrototypeFallback
+    / Fall back to local copy of Prototype
+    :javascript
+      window.Prototype || document.write("<script src='js/libs/#{PrototypeFallback}.js'>\x3C/script>")
+
+-if @Dojo
+  / Grab Dojo #{@Dojo} from Google's CDN with a protocol relative URL
+  %script{:src => "//ajax.googleapis.com/ajax/libs/dojo/#{@Dojo}/dojo/dojo.js.js"}
+
+  -if @jQueryUIFallback
+    / Fall back to local copy of Dojo
+    :javascript
+      window.Dojo || document.write("<script src='js/libs/#{DojoFallback}.js'>\x3C/script>")
