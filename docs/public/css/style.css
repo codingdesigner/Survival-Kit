@@ -3,23 +3,6 @@
  * Download the source files here:
  * https://github.com/canarymason/Survival-Kit
  * Learn more about Sass & Compass at http://compass-style.org/ */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .clearfix {
   zoom: 1;
 }
@@ -557,7 +540,7 @@ input[type="button"] {
   -ms-border-radius: 11px;
   -o-border-radius: 11px;
   border-radius: 11px;
-  background: #dddddd url('../images/formalize/button.png?1349240726') repeat-x;
+  background: #dddddd url('../images/formalize/button.png?1353440104') repeat-x;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
   background-image: -webkit-linear-gradient(#ffffff, #dddddd);
   background-image: -moz-linear-gradient(#ffffff, #dddddd);
@@ -677,7 +660,7 @@ input[type="checkbox"]:active {
 }
 
 .is_webkit select {
-  background-image: url('../images/formalize/select_arrow.gif?1349240726');
+  background-image: url('../images/formalize/select_arrow.gif?1353440104');
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 20px;
@@ -709,7 +692,7 @@ optgroup {
 
 .ie6_button,
 * html button {
-  background: #dddddd url('../images/formalize/button.png?1349240726') repeat-x;
+  background: #dddddd url('../images/formalize/button.png?1353440104') repeat-x;
   border: 1px solid;
   border-color: #dddddd #bbbbbb #999999;
   cursor: pointer;
@@ -943,19 +926,8 @@ del {
   margin: 0;
   padding: 0;
   border: 0;
-  /* for IE 6/7 */
-  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-  /* non-JS fallback */
-  *zoom: 1;
-}
-#main-menu:before, #main-menu:after {
-  content: ".";
-  display: block;
-  height: 0;
   overflow: hidden;
-}
-#main-menu:after {
-  clear: both;
+  *zoom: 1;
 }
 #main-menu li {
   list-style-image: none;
@@ -1004,20 +976,9 @@ ul.tabs {
   margin: 0;
   padding: 0;
   border: 0;
-  /* for IE 6/7 */
-  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-  /* non-JS fallback */
+  overflow: hidden;
   *zoom: 1;
   position: relative;
-}
-ul.tabs:before, ul.tabs:after {
-  content: ".";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-ul.tabs:after {
-  clear: both;
 }
 ul.tabs li {
   list-style-image: none;
@@ -1074,19 +1035,8 @@ ul.pager {
   margin: 0;
   padding: 0;
   border: 0;
-  /* for IE 6/7 */
-  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-  /* non-JS fallback */
-  *zoom: 1;
-}
-ul.pager:before, ul.pager:after {
-  content: ".";
-  display: block;
-  height: 0;
   overflow: hidden;
-}
-ul.pager:after {
-  clear: both;
+  *zoom: 1;
 }
 ul.pager li {
   list-style-image: none;

@@ -1,6 +1,9 @@
 # Changelog
 
-## 1.0.beta.9 - August 28, 2012
+## 1.0.beta.10 - November 23, 2012
+* fix dependencies
+
+## 1.0.beta.9 - November 21, 2012
 * moved build to separate project (Survival Guide)
 
 ## 1.0.beta.8 - August 28, 2012
