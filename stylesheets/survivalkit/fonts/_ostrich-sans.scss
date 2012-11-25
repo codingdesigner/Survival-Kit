@@ -33,7 +33,6 @@
   }
 }
 
-// available fonts:
 // dashed
 @mixin ostrich-dashed-font-face() {
   @include font-face(
@@ -47,7 +46,7 @@
     normal,
     normal);
 }
-// available fonts:
+
 // rounded
 @mixin ostrich-rounded-font-face() {
   @include font-face(
