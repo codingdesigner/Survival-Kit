@@ -1,8 +1,9 @@
-@import "survivalkit/reset/meyer-reset";
-@import "survivalkit/reset/normalize";
-
 $init-type: meyer !default;
 $init-headers: true !default;
+
+@import "survivalkit/reset/meyer-reset";
+@import "survivalkit/reset/normalize";
+@import "survivalkit/reset/formalize";
 
 @mixin init($init-type, $init-headers) {
   @if $init-type == meyer {
@@ -19,8 +20,9 @@ $init-headers: true !default;
       }
     }
   }
+  @if $formalize {
+    @include formalize;
+  }
 }
 
-@include init($init-type, $init-headers);
 
-@import "survivalkit/reset/formalize";

@@ -1,46 +1,34 @@
 @import "compass/css3/font-face";
 
-/* Regular */
-@include font-face(
-    'League Gothic',
-    font-files(
-        "leaguegothic-regular-webfont.woff", woff,
-        "leaguegothic-regular-webfont.ttf", truetype,
-        "leaguegothic-regular-webfont.svg#league_gothicregular", svg),
-    'leaguegothic-regular-webfont.eot',
-    normal,
-    normal);
-
-/* Italic */
-@include font-face(
-    'League Gothic',
-    font-files(
-        "leaguegothic-italic-webfont.woff", woff,
-        "leaguegothic-italic-webfont.ttf", truetype,
-        "leaguegothic-italic-webfont.svg#league_gothic_italicregular", svg),
-    'leaguegothic-italic-webfont.eot',
-    normal,
-    italic);
-
-/* Condensed */
-@include font-face(
-    'League Gothic Condensed',
-    font-files(
-        "leaguegothic-condensed-regular-webfont.woff", woff,
-        "leaguegothic-condensed-regular-webfont.ttf", truetype,
-        "leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed", svg),
-    'leaguegothic-condensed-regular-webfont.eot',
-    normal,
-    normal);
-
-
-/* Condensed Italic */
-@include font-face(
-    'League Gothic Condensed',
-    font-files(
-        "leaguegothic-condensed-italic-webfont.woff", woff,
-        "leaguegothic-condensed-italic-webfont.ttf", truetype,
-        "leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg", svg),
-    'leaguegothic-condensed-italic-webfont.eot',
-    normal,
-    italic);
+// available fonts:
+// all, regular, italic, condensed-regular, condensed-italic
+@mixin leaguegothic-font-face($fonts: all) {
+  $all-fonts: regular, italic, condensed-regular, condensed-italic;
+  @if $fonts == all {
+    $fonts: $all-fonts;
+  }
+  @each $font in $fonts {
+    @for $i from 1 through length($all-fonts) {
+      @if $font == nth($all-fonts, $i) {
+        $weight: normal;
+        $style: normal;
+        @if $font == italic {
+          $style: italic;
+        }
+        @if $font == condensed-italic {
+          $style: italic;
+        }
+        @include font-face(
+          'League Gothic',
+          font-files(
+            "leaguegothic-#{$font}-webfont.woff", woff,
+            "leaguegothic-#{$font}-webfont.ttf", truetype,
+            "leaguegothic-#{$font}-webfont.svg#league_gothic#{$font}", svg
+          ),
+          'leaguegothic-#{$font}-webfont.eot',
+          $weight,
+          $style);
+      }
+    }
+  }
+}

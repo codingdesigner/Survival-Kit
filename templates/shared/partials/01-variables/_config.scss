@@ -3,16 +3,16 @@
 ////////////////////////////
 
 // Pick a reset or normalization
-// accepted values: 'meyer' (default), 'normalize', 'none'
+// accepted values: 'meyer' (default), 'normalize', false
 // choose to reset header sizes (applies to 'normalize' only)
-// $init-headers: true;
+$init-headers: false;
 $init-type: normalize;
 // use [Formalize](http://formalize.me/)
-$formalize: true;
+$formalize: false;
 
 // pixel-normalize
 // [A List Apart](http://www.alistapart.com/articles/a-pixel-identity-crisis/)
-$pixel-normalize: true;
+$pixel-normalize: false;
 
 // Font size and line-height
 $base-font-size: 16px;

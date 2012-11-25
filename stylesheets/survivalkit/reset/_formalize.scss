@@ -1,4 +1,4 @@
-@if $formalize == true {
+@mixin formalize {
   // Note: This file is dependent on Sass and Compass.
   // Sass = http://sass-lang.com
   // Compass = http://compass-style.org
@@ -289,5 +289,5 @@
   .ie6_input_disabled {
     background: #eeeeee;
   }
-
 }
+

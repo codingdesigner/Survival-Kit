@@ -1,5 +1,13 @@
 // see: elements-ui-patterns-drupal.html for markup
 
+.clearfix {
+  @extend %clearfix;
+}
+
+.hidden {
+  @extend %hidden;
+}
+
 // SITE NAME
 #site-name {
   a {
