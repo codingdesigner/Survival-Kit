@@ -3,12 +3,11 @@ description "Tools for desiging in the browser: The Coding Designer's Survival K
 # Stylesheets
 file '../shared/style.scss', :like => :stylesheet, :media => 'all', :to => 'style.scss'
 file '../shared/partials/01-variables/_all.scss', :like => :stylesheet, :to => 'partials/01-variables/_all.scss'
-file '../shared/partials/01-variables/_base.scss', :like => :stylesheet, :to => 'partials/01-variables/_base.scss'
+file '../shared/partials/01-variables/_settings.scss', :like => :stylesheet, :to => 'partials/01-variables/_settings.scss'
 file '../shared/partials/01-variables/_colors.scss', :like => :stylesheet, :to => 'partials/01-variables/_colors.scss'
 file '../shared/partials/01-variables/_fonts.scss', :like => :stylesheet, :to => 'partials/01-variables/_fonts.scss'
 file '../shared/partials/02-mixins/_custom.scss', :like => :stylesheet, :to => 'partials/02-mixins/_custom.scss'
 file '../shared/partials/03-extend/_all.scss', :like => :stylesheet, :to => 'partials/03-extend/_all.scss'
-file '../shared/partials/03-extend/_helpers.scss', :like => :stylesheet, :to => 'partials/03-extend/_helpers.scss'
 file '../shared/partials/03-extend/_typography.scss', :like => :stylesheet, :to => 'partials/03-extend/_typography.scss'
 file '../shared/partials/04-base/_all.scss', :like => :stylesheet, :to => 'partials/04-base/_all.scss'
 file '../shared/partials/04-base/_common.scss', :like => :stylesheet, :to => 'partials/04-base/_common.scss'
@@ -20,10 +19,8 @@ file '../shared/partials/04-base/_images.scss', :like => :stylesheet, :to => 'pa
 file '../shared/partials/04-base/_semantics.scss', :like => :stylesheet, :to => 'partials/04-base/_semantics.scss'
 file '../shared/partials/04-base/_tables.scss', :like => :stylesheet, :to => 'partials/04-base/_tables.scss'
 file '../shared/partials/05-layout/_grids-susy.scss', :like => :stylesheet, :to => 'partials/05-layout/_grids-susy.scss'
-file '../shared/partials/06-ui-patterns/_common.scss', :like => :stylesheet, :to => 'partials/06-ui-patterns/_common.scss'
 file '../shared/partials/06-ui-patterns/_drupal-patterns.scss', :like => :stylesheet, :to => 'partials/06-ui-patterns/_drupal-patterns.scss'
-file '../shared/partials/07-styletile/_tile-design.scss', :like => :stylesheet, :to => 'partials/07-styletile/_tile-design.scss'
-file '../shared/partials/08-media/_print.scss', :like => :stylesheet, :to => 'partials/08-media/_print.scss'
+file '../shared/partials/07-media/_print.scss', :like => :stylesheet, :to => 'partials/07-media/_print.scss'
 file '../shared/your-design-here/_design.scss', :like => :stylesheet, :to => 'your-design-here/_design.scss'
 # discover :stylesheets
 
