@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.beta.11 - November 28, 2012
+* add singularity
+
 ## 1.0.beta.10 - November 23, 2012
 * fix dependencies
 
