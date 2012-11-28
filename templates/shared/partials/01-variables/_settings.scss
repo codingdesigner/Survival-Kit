@@ -126,6 +126,7 @@ $animate-all-the-things: false;
 // $default-text-shadow-h-offset: 0px;
 // $default-text-shadow-v-offset: 0px;
 // $default-text-shadow-blur: 1px;
+// $default-text-shadow-spread; false;
 
 // transform
 // $default-origin-x: 50%;
@@ -172,3 +173,22 @@ $animate-all-the-things: false;
 // $contrasted-dark-default: black;
 // $contrasted-light-default: white;
 // $contrasted-lightness-threshold: 30%;
+
+// VERTICAL RHYTHM
+// $default-rhythm-border-style: solid;
+// $relative-font-sizing: true;
+// $round-to-nearest-half-line: false;
+// $min-line-padding: 2px;
+// $font-unit: if($relative-font-sizing, 1em, $base-font-size);
+
+// COMPASS COLOR CONTRAST
+// $contrasted-dark-default: black;
+// $contrasted-light-default: white;
+// $contrasted-lightness-threshold: 30%;
+
+// HACKS
+// $default-has-layout-approach; zoom;
+
+// COMPASS SPRITE BASE
+// $sprite-selectors: hover, target, active;
+// $disable-magic-sprite-selectors; false;

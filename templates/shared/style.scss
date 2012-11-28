@@ -2,17 +2,17 @@
 // ---------------------------------------------------------------------------------------
 // INTRODUCTION
 // This is the central organizing sass file where we manage all the imported partials
-// in The Kit. Don't write custom code here. Instead, import files that bring in
+// in The Kit. Don't write custom styles here. Instead, import files that bring in
 // default code from The Kit and files that add your custom code. The checklist below
 // should help you put these files in order.
 // ---------------------------------------------------------------------------------------
 
-// ✔ IMPORT COMPASS AND OTHER GEMS
-// enable / disable, but do not edit these files
-@import "compass";
-@import "survivalkit";
-@import "breakpoint";
-@import "modular-scale";
+// ✔ IMPORT COMPASS AND EXTENSIONS
+// enable / disable as desired
+@import "compass"; // http://compass-style.org
+@import "survivalkit"; // http://canarymason.github.com/Survival-Kit
+@import "breakpoint";  // http://breakpoint-sass.com
+@import "modular-scale"; // https://github.com/scottkellum/modular-scale
 // add any others here
 
 
@@ -41,9 +41,9 @@
 
 // ✔ 5. ESTABLISH A LAYOUT
 // Uncomment to use one of the grid systems below
-// @import "singularitygs";
+// @import "singularitygs"; // http://singularity.gs
 // @import "partials/05-layout/grids-singularitygs";
-// @import "susy";
+// @import "susy"; // http://susy.oddbird.net
 // @import "partials/05-layout/grids-susy";
 
 // ✔ 6. STYLE COMMON UI PATTERNS / DRUPAL UI PATTERNS
