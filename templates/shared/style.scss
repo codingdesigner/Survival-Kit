@@ -11,7 +11,6 @@
 // enable / disable, but do not edit these files
 @import "compass";
 @import "survivalkit";
-@import "susy";
 @import "breakpoint";
 @import "modular-scale";
 // add any others here
@@ -41,7 +40,10 @@
 @import "partials/04-base/all";
 
 // ✔ 5. ESTABLISH A LAYOUT
-// Uncomment to use the Susy grid system
+// Uncomment to use one of the grid systems below
+// @import "singularitygs";
+// @import "partials/05-layout/grids-singularitygs";
+// @import "susy";
 // @import "partials/05-layout/grids-susy";
 
 // ✔ 6. STYLE COMMON UI PATTERNS / DRUPAL UI PATTERNS

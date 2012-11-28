@@ -18,6 +18,7 @@ file '../shared/partials/04-base/_headers.scss', :like => :stylesheet, :to => 'p
 file '../shared/partials/04-base/_images.scss', :like => :stylesheet, :to => 'partials/04-base/_images.scss'
 file '../shared/partials/04-base/_semantics.scss', :like => :stylesheet, :to => 'partials/04-base/_semantics.scss'
 file '../shared/partials/04-base/_tables.scss', :like => :stylesheet, :to => 'partials/04-base/_tables.scss'
+file '../shared/partials/05-layout/_grids-singularitygs.scss', :like => :stylesheet, :to => 'partials/05-layout/_grids-singularitygs.scss'
 file '../shared/partials/05-layout/_grids-susy.scss', :like => :stylesheet, :to => 'partials/05-layout/_grids-susy.scss'
 file '../shared/partials/06-ui-patterns/_drupal-patterns.scss', :like => :stylesheet, :to => 'partials/06-ui-patterns/_drupal-patterns.scss'
 file '../shared/partials/07-media/_print.scss', :like => :stylesheet, :to => 'partials/07-media/_print.scss'
