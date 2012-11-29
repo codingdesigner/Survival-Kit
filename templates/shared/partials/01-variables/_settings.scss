@@ -69,7 +69,7 @@ $animate-all-the-things: false;
 ////////////////////////////
 
 // SUPPORT
-// legacy and experimental browser support
+// LEGACY AND EXPERIMENTAL BROWSER SUPPORT
 // $legacy-support-for-ie: true;
 // $legacy-support-for-ie6: $legacy-support-for-ie;
 // $legacy-support-for-ie7: $legacy-support-for-ie;
@@ -86,19 +86,19 @@ $animate-all-the-things: false;
 
 // CSS3
 
-// background clip
+// BACKGROUND CLIP
 // $default-background-clip: padding-box;
 
-// background origin
+// BACKGROUND ORIGIN
 // $default-background-origin: content-box;
 
-// background size
+// BACKGROUND SIZE
 // $default-background-size: 100% auto;
 
-// border radius
+// BORDER RADIUS
 // $default-border-radius: 5px;
 
-// box
+// BOX
 // $default-box-orient: horizontal;
 // $default-box-align: stretch;
 // $default-box-flex: 0;
@@ -108,7 +108,7 @@ $animate-all-the-things: false;
 // $default-box-lines: single;
 // $default-box-pack: start;
 
-// box shadow
+// BOX SHADOW
 // $default-box-shadow-color: #333333;
 // $default-box-shadow-h-offset: 0px;
 // $default-box-shadow-v-offset: 0px;
@@ -116,19 +116,19 @@ $animate-all-the-things: false;
 // $default-box-shadow-spread: false;
 // $default-box-shadow-inset: false;
 
-// css3 pie
+// CSS3 PIE
 // $pie-base-class: false;
 // $pie-default-approach: relative;
 // $pie-behavior: stylesheet-url("PIE.htc");
 
-// text shadow
+// TEXT SHADOW
 // $default-text-shadow-color: #aaaaaa;
 // $default-text-shadow-h-offset: 0px;
 // $default-text-shadow-v-offset: 0px;
 // $default-text-shadow-blur: 1px;
 // $default-text-shadow-spread; false;
 
-// transform
+// TRANSFORM
 // $default-origin-x: 50%;
 // $default-origin-y: 50%;
 // $default-origin-z: 50%;
@@ -145,7 +145,7 @@ $animate-all-the-things: false;
 // $default-skew-x: 5deg;
 // $default-skew-y: 5deg;
 
-// transition
+// TRANSITION
 // $default-transition-property: all;
 // $default-transition-duration: 1s;
 // $default-transition-function: false;
@@ -154,7 +154,7 @@ $animate-all-the-things: false;
 
 // LAYOUT
 
-// grid background
+// GRID BACKGROUND
 // $grid-background-column-color: rgba(100, 100, 225, 0.25);
 // $grid-background-gutter-color: rgba(0, 0, 0, 0);
 // $grid-background-total-columns: 24;
@@ -169,7 +169,7 @@ $animate-all-the-things: false;
 // $grid-background-force-fluid: false;
 
 // UTILITIES
-// color
+// COLOR
 // $contrasted-dark-default: black;
 // $contrasted-light-default: white;
 // $contrasted-lightness-threshold: 30%;
@@ -192,3 +192,18 @@ $animate-all-the-things: false;
 // COMPASS SPRITE BASE
 // $sprite-selectors: hover, target, active;
 // $disable-magic-sprite-selectors; false;
+
+// COMPASS SPRITE IMAGE
+// $sprite-default-size: 32px;
+// $sprite-default-margin: 0px;
+// $sprite-image-default-width: $sprite-default-size;
+// $sprite-image-default-height: $sprite-default-size;
+
+// COMPASS TEXT REPLACEMENT
+// $hide-text-direction: left;
+
+// COMPASS INLINE BLOCK
+// $inline-block-alignment: middle;
+
+// TRUNCATING TEXT WITH ELLIPSES
+// $use-mozilla-ellipsis-binding: false;
