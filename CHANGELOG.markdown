@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.beta.12 - December 2, 2012
+* refine codebase
+* rebuild manifests
+
 ## 1.0.beta.11 - November 28, 2012
 * add singularity
 
