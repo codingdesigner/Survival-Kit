@@ -6,11 +6,7 @@ $c-quadrary: $black;
 
 
 // COLOR SCHEMES
-// color-schemer arguments
-// $color-location,
-// $base-color,
-// $color-scheme,
-// $hue-offset
+// color-schemer($color-location, $base-color, $color-scheme, $hue-offset)
 // Color schemes to choose from
 // mono, complement, triad, tetrad, analogic, accented-analogic
 // Pick the base color for your scheme:
@@ -21,7 +17,7 @@ $color-scheme: accented-analogic;
 $hue-offset: 30;
 // How distant do you want tints and shades to be from their base:
 $brightness-offset: 10%;
-// Use Claude Boutet complements instead of RGB complements.
+// Use Claude Boutet complements (RYB) instead of RGB complements.
 // $color-theory: ryb;
 // Set saturation to 100% and lightness to 50% on all colors
 // $equalize: true;

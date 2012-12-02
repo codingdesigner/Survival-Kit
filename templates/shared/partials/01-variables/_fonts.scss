@@ -18,6 +18,21 @@ $font-cap: $font-sans;
 
 
 ////////////////////////////
+// CUSTOM FONTS
+// uncomment and customize with your own fonts
+// place fonts in your fonts directory
+////////////////////////////
+// @include font-face(
+//   myfont,
+//   font-files(
+//     'myfont-bold-webfont.woff',
+//     'myfont-bold-webfont.ttf',
+//     'myfont-bold-webfont.svg'),
+//   'myfont-bold-webfont.eot',
+//   'bold',
+//   'normal');
+
+////////////////////////////
 // FONT-AWESOME
 // uncomment to include
 // http://fortawesome.github.com/Font-Awesome/
@@ -32,6 +47,7 @@ $font-cap: $font-sans;
 // purchase the font and place in your fonts directory
 ////////////////////////////
 // @import 'survivalkit/fonts/ss-standard';
+// @include ss-standard-classes;
 
 ////////////////////////////
 // SYMBOLSET - SOCIAL
@@ -41,6 +57,7 @@ $font-cap: $font-sans;
 // purchase the font and place in your fonts directory
 ////////////////////////////
 // @import 'survivalkit/fonts/ss-social';
+// @include ss-social-classes;
 
 ////////////////////////////
 // League Gothic

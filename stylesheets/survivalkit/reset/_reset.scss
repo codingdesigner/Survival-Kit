@@ -4,6 +4,7 @@ $init-headers: true !default;
 @import "survivalkit/reset/meyer-reset";
 @import "survivalkit/reset/normalize";
 @import "survivalkit/reset/formalize";
+@import 'survivalkit/reset/pixel-normalize';
 
 @mixin init($init-type, $init-headers) {
   @if $init-type == meyer {
@@ -22,6 +23,9 @@ $init-headers: true !default;
   }
   @if $formalize {
     @include formalize;
+  }
+  @if $pixel-normalize {
+    @include pixel-normalize;
   }
 }
 

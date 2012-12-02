@@ -1,14 +1,12 @@
 @charset "UTF-8";
 
-/*
-* Symbolset
-* www.symbolset.com
-* Copyright © 2012 Oak Studios LLC
-*
-* Upload this file to your web server
-* and place this within your <head> tags.
-* <link href="webfonts/ss-standard.css" rel="stylesheet" />
-*/
+// Symbolset
+// www.symbolset.com
+// Copyright © 2012 Oak Studios LLC
+//
+// Upload this file to your web server
+// and place this within your <head> tags.
+// <link href="webfonts/ss-standard.css" rel="stylesheet" />
 
 @import "compass/css3/font-face";
 
@@ -23,33 +21,406 @@
   normal);
 
 
-/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
-html:hover [class^="ss-"]{-ms-zoom: 1;}
+@mixin ss-standard-classes {
+  /* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+  html:hover [class^="ss-"]{-ms-zoom: 1;}
 
-.ss-icon, .ss-icon.ss-standard,
-[class^="ss-"]:before, [class*=" ss-"]:before,
-[class^="ss-"].ss-standard:before, [class*=" ss-"].ss-standard:before,
-[class^="ss-"].right:after, [class*=" ss-"].right:after,
-[class^="ss-"].ss-standard.right:after, [class*=" ss-"].ss-standard.right:after {
-  font-family: "SSStandard";
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
-  text-rendering: optimizeLegibility;
-  white-space: nowrap;
-  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
-  -moz-font-feature-settings: "liga=1";
-  -moz-font-feature-settings: "liga";
-  -ms-font-feature-settings: "liga" 1;
-  -o-font-feature-settings: "liga";
-  font-feature-settings: "liga";
-  -webkit-font-smoothing: antialiased;
+  .ss-icon, .ss-icon.ss-standard,
+  [class^="ss-"]:before, [class*=" ss-"]:before,
+  [class^="ss-"].ss-standard:before, [class*=" ss-"].ss-standard:before,
+  [class^="ss-"].right:after, [class*=" ss-"].right:after,
+  [class^="ss-"].ss-standard.right:after, [class*=" ss-"].ss-standard.right:after {
+    font-family: "SSStandard";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  [class^="ss-"].right:before,
+  [class*=" ss-"].right:before{display:none;content:'';}
+
+  .ss-cursor:before,.ss-cursor.right:after{content:''}.ss-crosshair:before,.ss-crosshair.right:after{content:'⌖'}.ss-search:before,.ss-search.right:after{content:'🔎'}.ss-zoomin:before,.ss-zoomin.right:after{content:''}.ss-zoomout:before,.ss-zoomout.right:after{content:''}.ss-view:before,.ss-view.right:after{content:'👀'}.ss-attach:before,.ss-attach.right:after{content:'📎'}.ss-link:before,.ss-link.right:after{content:'🔗'}.ss-move:before,.ss-move.right:after{content:''}.ss-write:before,.ss-write.right:after{content:'✎'}.ss-writingdisabled:before,.ss-writingdisabled.right:after{content:''}.ss-erase:before,.ss-erase.right:after{content:'✐'}.ss-compose:before,.ss-compose.right:after{content:'📝'}.ss-lock:before,.ss-lock.right:after{content:'🔒'}.ss-unlock:before,.ss-unlock.right:after{content:'🔓'}.ss-key:before,.ss-key.right:after{content:'🔑'}.ss-backspace:before,.ss-backspace.right:after{content:'⌫'}.ss-ban:before,.ss-ban.right:after{content:'🚫'}.ss-trash:before,.ss-trash.right:after{content:''}.ss-target:before,.ss-target.right:after{content:'◎'}.ss-tag:before,.ss-tag.right:after{content:''}.ss-bookmark:before,.ss-bookmark.right:after{content:'🔖'}.ss-flag:before,.ss-flag.right:after{content:'⚑'}.ss-like:before,.ss-like.right:after{content:'👍'}.ss-dislike:before,.ss-dislike.right:after{content:'👎'}.ss-heart:before,.ss-heart.right:after{content:'♥'}.ss-halfheart:before,.ss-halfheart.right:after{content:''}.ss-star:before,.ss-star.right:after{content:'⋆'}.ss-halfstar:before,.ss-halfstar.right:after{content:''}.ss-sample:before,.ss-sample.right:after{content:''}.ss-crop:before,.ss-crop.right:after{content:''}.ss-layers:before,.ss-layers.right:after{content:''}.ss-fill:before,.ss-fill.right:after{content:''}.ss-stroke:before,.ss-stroke.right:after{content:''}.ss-phone:before,.ss-phone.right:after{content:'📞'}.ss-phonedisabled:before,.ss-phonedisabled.right:after{content:''}.ss-rss:before,.ss-rss.right:after{content:''}.ss-facetime:before,.ss-facetime.right:after{content:''}.ss-reply:before,.ss-reply.right:after{content:'↩'}.ss-send:before,.ss-send.right:after{content:''}.ss-mail:before,.ss-mail.right:after{content:'✉'}.ss-inbox:before,.ss-inbox.right:after{content:'📥'}.ss-chat:before,.ss-chat.right:after{content:'💬'}.ss-ellipsischat:before,.ss-ellipsischat.right:after{content:''}.ss-ellipsis:before,.ss-ellipsis.right:after{content:'…'}.ss-user:before,.ss-user.right:after{content:'👤'}.ss-femaleuser:before,.ss-femaleuser.right:after{content:'👧'}.ss-users:before,.ss-users.right:after{content:'👥'}.ss-cart:before,.ss-cart.right:after{content:''}.ss-creditcard:before,.ss-creditcard.right:after{content:'💳'}.ss-dollarsign:before,.ss-dollarsign.right:after{content:'💲'}.ss-barchart:before,.ss-barchart.right:after{content:'📊'}.ss-piechart:before,.ss-piechart.right:after{content:''}.ss-box:before,.ss-box.right:after{content:'📦'}.ss-home:before,.ss-home.right:after{content:'⌂'}.ss-buildings:before,.ss-buildings.right:after{content:'🏢'}.ss-warehouse:before,.ss-warehouse.right:after{content:''}.ss-globe:before,.ss-globe.right:after{content:'🌎'}.ss-navigate:before,.ss-navigate.right:after{content:''}.ss-compass:before,.ss-compass.right:after{content:''}.ss-signpost:before,.ss-signpost.right:after{content:''}.ss-map:before,.ss-map.right:after{content:''}.ss-location:before,.ss-location.right:after{content:''}.ss-pin:before,.ss-pin.right:after{content:'📍'}.ss-database:before,.ss-database.right:after{content:''}.ss-hdd:before,.ss-hdd.right:after{content:''}.ss-music:before,.ss-music.right:after{content:'♫'}.ss-mic:before,.ss-mic.right:after{content:'🎤'}.ss-volume:before,.ss-volume.right:after{content:'🔈'}.ss-lowvolume:before,.ss-lowvolume.right:after{content:'🔉'}.ss-highvolume:before,.ss-highvolume.right:after{content:'🔊'}.ss-airplay:before,.ss-airplay.right:after{content:''}.ss-camera:before,.ss-camera.right:after{content:'📷'}.ss-picture:before,.ss-picture.right:after{content:'🌄'}.ss-video:before,.ss-video.right:after{content:'📹'}.ss-play:before,.ss-play.right:after{content:'▶'}.ss-pause:before,.ss-pause.right:after{content:''}.ss-stop:before,.ss-stop.right:after{content:'■'}.ss-record:before,.ss-record.right:after{content:'●'}.ss-rewind:before,.ss-rewind.right:after{content:'⏪'}.ss-fastforward:before,.ss-fastforward.right:after{content:'⏩'}.ss-skipback:before,.ss-skipback.right:after{content:'⏮'}.ss-skipforward:before,.ss-skipforward.right:after{content:'⏭'}.ss-eject:before,.ss-eject.right:after{content:'⏏'}.ss-repeat:before,.ss-repeat.right:after{content:'🔁'}.ss-replay:before,.ss-replay.right:after{content:'↺'}.ss-shuffle:before,.ss-shuffle.right:after{content:'🔀'}.ss-book:before,.ss-book.right:after{content:'📕'}.ss-openbook:before,.ss-openbook.right:after{content:'📖'}.ss-notebook:before,.ss-notebook.right:after{content:'📓'}.ss-newspaper:before,.ss-newspaper.right:after{content:'📰'}.ss-grid:before,.ss-grid.right:after{content:''}.ss-rows:before,.ss-rows.right:after{content:''}.ss-columns:before,.ss-columns.right:after{content:''}.ss-thumbnails:before,.ss-thumbnails.right:after{content:''}.ss-filter:before,.ss-filter.right:after{content:''}.ss-desktop:before,.ss-desktop.right:after{content:'💻'}.ss-laptop:before,.ss-laptop.right:after{content:''}.ss-tablet:before,.ss-tablet.right:after{content:''}.ss-cell:before,.ss-cell.right:after{content:'📱'}.ss-battery:before,.ss-battery.right:after{content:'🔋'}.ss-highbattery:before,.ss-highbattery.right:after{content:''}.ss-mediumbattery:before,.ss-mediumbattery.right:after{content:''}.ss-lowbattery:before,.ss-lowbattery.right:after{content:''}.ss-emptybattery:before,.ss-emptybattery.right:after{content:''}.ss-lightbulb:before,.ss-lightbulb.right:after{content:'💡'}.ss-downloadcloud:before,.ss-downloadcloud.right:after{content:''}.ss-download:before,.ss-download.right:after{content:''}.ss-uploadcloud:before,.ss-uploadcloud.right:after{content:''}.ss-upload:before,.ss-upload.right:after{content:''}.ss-fork:before,.ss-fork.right:after{content:''}.ss-merge:before,.ss-merge.right:after{content:''}.ss-transfer:before,.ss-transfer.right:after{content:'⇆'}.ss-refresh:before,.ss-refresh.right:after{content:'↻'}.ss-sync:before,.ss-sync.right:after{content:''}.ss-loading:before,.ss-loading.right:after{content:''}.ss-wifi:before,.ss-wifi.right:after{content:''}.ss-connection:before,.ss-connection.right:after{content:''}.ss-file:before,.ss-file.right:after{content:'📄'}.ss-folder:before,.ss-folder.right:after{content:'📁'}.ss-quote:before,.ss-quote.right:after{content:'“'}.ss-text:before,.ss-text.right:after{content:''}.ss-font:before,.ss-font.right:after{content:''}.ss-print:before,.ss-print.right:after{content:'⎙'}.ss-fax:before,.ss-fax.right:after{content:'📠'}.ss-list:before,.ss-list.right:after{content:''}.ss-layout:before,.ss-layout.right:after{content:''}.ss-action:before,.ss-action.right:after{content:''}.ss-redirect:before,.ss-redirect.right:after{content:'↪'}.ss-expand:before,.ss-expand.right:after{content:'⤢'}.ss-contract:before,.ss-contract.right:after{content:''}.ss-help:before,.ss-help.right:after{content:'❓'}.ss-info:before,.ss-info.right:after{content:'ℹ'}.ss-alert:before,.ss-alert.right:after{content:'⚠'}.ss-caution:before,.ss-caution.right:after{content:'⛔'}.ss-logout:before,.ss-logout.right:after{content:''}.ss-plus:before,.ss-plus.right:after{content:'+'}.ss-hyphen:before,.ss-hyphen.right:after{content:'-'}.ss-check:before,.ss-check.right:after{content:'✓'}.ss-delete:before,.ss-delete.right:after{content:'␡'}.ss-settings:before,.ss-settings.right:after{content:'⚙'}.ss-dashboard:before,.ss-dashboard.right:after{content:''}.ss-notifications:before,.ss-notifications.right:after{content:'🔔'}.ss-notificationsdisabled:before,.ss-notificationsdisabled.right:after{content:'🔕'}.ss-clock:before,.ss-clock.right:after{content:'⏲'}.ss-stopwatch:before,.ss-stopwatch.right:after{content:'⏱'}.ss-calendar:before,.ss-calendar.right:after{content:'📅'}.ss-addcalendar:before,.ss-addcalendar.right:after{content:''}.ss-removecalendar:before,.ss-removecalendar.right:after{content:''}.ss-checkcalendar:before,.ss-checkcalendar.right:after{content:''}.ss-deletecalendar:before,.ss-deletecalendar.right:after{content:''}.ss-briefcase:before,.ss-briefcase.right:after{content:'💼'}.ss-cloud:before,.ss-cloud.right:after{content:'☁'}.ss-droplet:before,.ss-droplet.right:after{content:'💧'}.ss-flask:before,.ss-flask.right:after{content:''}.ss-up:before,.ss-up.right:after{content:'⬆'}.ss-upright:before,.ss-upright.right:after{content:'⬈'}.ss-right:before,.ss-right.right:after{content:'➡'}.ss-downright:before,.ss-downright.right:after{content:'⬊'}.ss-down:before,.ss-down.right:after{content:'⬇'}.ss-downleft:before,.ss-downleft.right:after{content:'⬋'}.ss-left:before,.ss-left.right:after{content:'⬅'}.ss-upleft:before,.ss-upleft.right:after{content:'⬉'}.ss-navigateup:before,.ss-navigateup.right:after{content:''}.ss-navigateright:before,.ss-navigateright.right:after{content:'▻'}.ss-navigatedown:before,.ss-navigatedown.right:after{content:''}.ss-navigateleft:before,.ss-navigateleft.right:after{content:'◅'}.ss-directup:before,.ss-directup.right:after{content:'▴'}.ss-directright:before,.ss-directright.right:after{content:'▹'}.ss-dropdown:before,.ss-dropdown.right:after{content:'▾'}.ss-directleft:before,.ss-directleft.right:after{content:'◃'}.ss-retweet:before,.ss-retweet.right:after{content:''}
+
+  /* Legacy classes */
+  .ss-volumelow:before,.ss-volumelow.right:after{content:'🔉'}.ss-volumehigh:before,.ss-volumehigh.right:after{content:'🔊'}.ss-batteryhigh:before,.ss-batteryhigh.right:after{content:''}.ss-batterymedium:before,.ss-batterymedium.right:after{content:''}.ss-batterylow:before,.ss-batterylow.right:after{content:''}.ss-batteryempty:before,.ss-batteryempty.right:after{content:''}.ss-clouddownload:before,.ss-clouddownload.right:after{content:''}.ss-cloudupload:before,.ss-cloudupload.right:after{content:''}.ss-calendaradd:before,.ss-calendaradd.right:after{content:''}.ss-calendarremove:before,.ss-calendarremove.right:after{content:''}.ss-calendarcheck:before,.ss-calendarcheck.right:after{content:''}.ss-calendardelete:before,.ss-calendardelete.right:after{content:''}
 }
 
-[class^="ss-"].right:before,
-[class*=" ss-"].right:before{display:none;content:'';}
+@function ss-standard-icon($icon) {
+  @if $icon == cursor {
+    @return '';
+  } @else if $icon == crosshair {
+    @return '⌖';
+  } @else if $icon == search {
+    @return '🔎';
+  } @else if $icon == zoom {
+    @return '';
+  } @else if $icon == zoomout {
+    @return '';
+  } @else if $icon == view {
+    @return '👀';
+  } @else if $icon == attach {
+    @return '📎';
+  } @else if $icon == link {
+    @return '🔗';
+  } @else if $icon == move {
+    @return '';
+  } @else if $icon == write {
+    @return '✎';
+  } @else if $icon == writingdisabled {
+    @return '';
+  } @else if $icon == erase {
+    @return '✐';
+  } @else if $icon == compose {
+    @return '📝';
+  } @else if $icon == lock {
+    @return '🔒';
+  } @else if $icon == unlock {
+    @return '🔓';
+  } @else if $icon == key {
+    @return '🔑';
+  } @else if $icon == backspace {
+    @return '⌫';
+  } @else if $icon == ban {
+    @return '🚫';
+  } @else if $icon == trash {
+    @return '';
+  } @else if $icon == target {
+    @return '◎';
+  } @else if $icon == tag {
+    @return '';
+  } @else if $icon == bookmark {
+    @return '🔖';
+  } @else if $icon == flag {
+    @return '⚑';
+  } @else if $icon == like {
+    @return '👍';
+  } @else if $icon == dislike {
+    @return '👎';
+  } @else if $icon == heart {
+    @return '♥';
+  } @else if $icon == halfheart {
+    @return '';
+  } @else if $icon == star {
+    @return '⋆';
+  } @else if $icon == halfstar {
+    @return '';
+  } @else if $icon == sample {
+    @return '';
+  } @else if $icon == crop {
+    @return '';
+  } @else if $icon == layers {
+    @return '';
+  } @else if $icon == fill {
+    @return '';
+  } @else if $icon == stroke {
+    @return '';
+  } @else if $icon == phone {
+    @return '📞';
+  } @else if $icon == phonedisabled {
+    @return '';
+  } @else if $icon == rss {
+    @return '';
+  } @else if $icon == facetime {
+    @return '';
+  } @else if $icon == reply {
+    @return '↩';
+  } @else if $icon == send {
+  @return '';
+  } @else if $icon == mail {
+    @return '✉';
+  } @else if $icon == inbox {
+    @return '📥';
+  } @else if $icon == chat {
+    @return '💬';
+  } @else if $icon == ellipsischat {
+    @return '';
+  } @else if $icon == ellipsis {
+    @return '…';
+  } @else if $icon == user {
+    @return '👤';
+  } @else if $icon == femaleuser {
+    @return '👧';
+  } @else if $icon == users {
+    @return '👥';
+  } @else if $icon == cart {
+    @return '';
+  } @else if $icon == creditcard {
+    @return '💳';
+  } @else if $icon == cost {
+    @return '💲';
+  } @else if $icon == barchart {
+    @return '📊';
+  } @else if $icon == piechart {
+    @return '';
+  } @else if $icon == box {
+    @return '📦';
+  } @else if $icon == home {
+    @return '⌂';
+  } @else if $icon == buildings {
+    @return '🏢';
+  } @else if $icon == warehouse {
+    @return '';
+  } @else if $icon == globe {
+    @return '🌎';
+  } @else if $icon == navigate {
+    @return '';
+  } @else if $icon == compass {
+    @return '';
+  } @else if $icon == signpost {
+    @return '';
+  } @else if $icon == location {
+    @return '';
+  } @else if $icon == map {
+    @return '';
+  } @else if $icon == pin {
+    @return '📍';
+  } @else if $icon == database {
+    @return '';
+  } @else if $icon == harddrive {
+    @return '';
+  } @else if $icon == music {
+    @return '♫';
+  } @else if $icon == mic {
+    @return '🎤';
+  } @else if $icon == volume {
+    @return '🔈';
+  } @else if $icon == volumelow {
+    @return '🔉';
+  } @else if $icon == volumehigh {
+    @return '🔊';
+  } @else if $icon == airplay {
+    @return '';
+  } @else if $icon == camera {
+    @return '📷';
+  } @else if $icon == picture {
+    @return '🌄';
+  } @else if $icon == video {
+    @return '📹';
+  } @else if $icon == play {
+    @return '▶';
+  } @else if $icon == pause {
+    @return '';
+  } @else if $icon == stop {
+    @return '■';
+  } @else if $icon == record {
+    @return '●';
+  } @else if $icon == rewind {
+    @return '⏪';
+  } @else if $icon == fastforward {
+    @return '⏩';
+  } @else if $icon == skipback {
+    @return '⏮';
+  } @else if $icon == skipforward {
+    @return '⏭';
+  } @else if $icon == eject {
+    @return '⏏';
+  } @else if $icon == repeat {
+    @return '🔁';
+  } @else if $icon == replay {
+    @return '↺';
+  } @else if $icon == shuffle {
+    @return '🔀';
+  } @else if $icon == book {
+    @return '📕';
+  } @else if $icon == openbook {
+    @return '📖';
+  } @else if $icon == notebook {
+    @return '📓';
+  } @else if $icon == newspaper {
+    @return '📰';
+  } @else if $icon == grid {
+    @return '';
+  } @else if $icon == rows {
+    @return '';
+  } @else if $icon == columns {
+    @return '';
+  } @else if $icon == thumbnails {
+    @return '';
+  } @else if $icon == filter {
+    @return '';
+  } @else if $icon == desktop {
+    @return '💻';
+  } @else if $icon == laptop {
+    @return '';
+  } @else if $icon == tablet {
+    @return '';
+  } @else if $icon == cell {
+    @return '📱';
+  } @else if $icon == battery {
+    @return '🔋';
+  } @else if $icon == batteryhigh {
+    @return '';
+  } @else if $icon == batterymedium {
+    @return '';
+  } @else if $icon == batterylow {
+    @return '';
+  } @else if $icon == batteryempty {
+    @return '';
+  } @else if $icon == lightbulb {
+    @return '💡';
+  } @else if $icon == clouddownload {
+    @return '';
+  } @else if $icon == download {
+    @return '';
+  } @else if $icon == cloudupload {
+    @return '';
+  } @else if $icon == upload {
+    @return '';
+  } @else if $icon == fork {
+    @return '';
+  } @else if $icon == merge {
+    @return '';
+  } @else if $icon == transfer {
+    @return '⇆';
+  } @else if $icon == refresh {
+    @return '↻';
+  } @else if $icon == sync {
+    @return '';
+  } @else if $icon == loading {
+    @return '';
+  } @else if $icon == wifi {
+    @return '';
+  } @else if $icon == connection {
+    @return '';
+  } @else if $icon == file {
+    @return '📄';
+  } @else if $icon == folder {
+    @return '📁';
+  } @else if $icon == quote {
+    @return '“';
+  } @else if $icon == text {
+    @return '';
+  } @else if $icon == font {
+    @return '';
+  } @else if $icon == print {
+    @return '⎙';
+  } @else if $icon == fax {
+    @return '📠';
+  } @else if $icon == list {
+    @return '';
+  } @else if $icon == layout {
+    @return '';
+  } @else if $icon == action {
+    @return '';
+  } @else if $icon == redirect {
+    @return '↪';
+  } @else if $icon == expand {
+    @return '⤢';
+  } @else if $icon == contract {
+    @return '';
+  } @else if $icon == help {
+    @return '❓';
+  } @else if $icon == info {
+    @return 'ℹ';
+  } @else if $icon == alert {
+    @return '⚠';
+  } @else if $icon == caution {
+    @return '⛔';
+  } @else if $icon == logout {
+    @return '';
+  } @else if $icon == plus {
+    @return '+';
+  } @else if $icon == hyphen {
+    @return '-';
+  } @else if $icon == check {
+    @return '✓';
+  } @else if $icon == delete {
+    @return '␡';
+  } @else if $icon == settings {
+    @return '⚙';
+  } @else if $icon == dashboard {
+    @return '';
+  } @else if $icon == notifications {
+    @return '🔔';
+  } @else if $icon == notificationsdisabled {
+    @return '🔕';
+  } @else if $icon == clock {
+    @return '⏲';
+  } @else if $icon == stopwatch {
+    @return '⏱';
+  } @else if $icon == calendar {
+    @return '📆';
+  } @else if $icon == calendaradd {
+    @return '';
+  } @else if $icon == calendarremove {
+    @return '';
+  } @else if $icon == calendarcheck {
+    @return '';
+  } @else if $icon == calendardelete {
+    @return '';
+  } @else if $icon == briefcase {
+    @return '💼';
+  } @else if $icon == cloud {
+    @return '☁';
+  } @else if $icon == drop {
+    @return '💧';
+  } @else if $icon == flask {
+    @return '';
+  } @else if $icon == up {
+    @return '⬆';
+  } @else if $icon == upright {
+    @return '⬈';
+  } @else if $icon == right {
+    @return '➡';
+  } @else if $icon == downright {
+    @return '⬊';
+  } @else if $icon == down {
+    @return '⬇';
+  } @else if $icon == downleft {
+    @return '⬋';
+  } @else if $icon == left {
+    @return '⬅';
+  } @else if $icon == upleft {
+    @return '⬉';
+  } @else if $icon == navigateup {
+    @return '';
+  } @else if $icon == navigateright {
+    @return '▻';
+  } @else if $icon == navigatedown {
+    @return '';
+  } @else if $icon == navigateleft {
+    @return '◅';
+  } @else if $icon == directup {
+    @return '▴';
+  } @else if $icon == directright {
+    @return '▹';
+  } @else if $icon == dropdown {
+    @return '▾';
+  } @else if $icon == directleft {
+    @return '◃';
+  } @else if $icon == retweet {
+    @return '';
+  } @else {
+    @return '#{$icon}';
+  }
+}
 
-.ss-cursor:before,.ss-cursor.right:after{content:''}.ss-crosshair:before,.ss-crosshair.right:after{content:'⌖'}.ss-search:before,.ss-search.right:after{content:'🔎'}.ss-zoomin:before,.ss-zoomin.right:after{content:''}.ss-zoomout:before,.ss-zoomout.right:after{content:''}.ss-view:before,.ss-view.right:after{content:'👀'}.ss-attach:before,.ss-attach.right:after{content:'📎'}.ss-link:before,.ss-link.right:after{content:'🔗'}.ss-move:before,.ss-move.right:after{content:''}.ss-write:before,.ss-write.right:after{content:'✎'}.ss-writingdisabled:before,.ss-writingdisabled.right:after{content:''}.ss-erase:before,.ss-erase.right:after{content:'✐'}.ss-compose:before,.ss-compose.right:after{content:'📝'}.ss-lock:before,.ss-lock.right:after{content:'🔒'}.ss-unlock:before,.ss-unlock.right:after{content:'🔓'}.ss-key:before,.ss-key.right:after{content:'🔑'}.ss-backspace:before,.ss-backspace.right:after{content:'⌫'}.ss-ban:before,.ss-ban.right:after{content:'🚫'}.ss-trash:before,.ss-trash.right:after{content:''}.ss-target:before,.ss-target.right:after{content:'◎'}.ss-tag:before,.ss-tag.right:after{content:''}.ss-bookmark:before,.ss-bookmark.right:after{content:'🔖'}.ss-flag:before,.ss-flag.right:after{content:'⚑'}.ss-like:before,.ss-like.right:after{content:'👍'}.ss-dislike:before,.ss-dislike.right:after{content:'👎'}.ss-heart:before,.ss-heart.right:after{content:'♥'}.ss-halfheart:before,.ss-halfheart.right:after{content:''}.ss-star:before,.ss-star.right:after{content:'⋆'}.ss-halfstar:before,.ss-halfstar.right:after{content:''}.ss-sample:before,.ss-sample.right:after{content:''}.ss-crop:before,.ss-crop.right:after{content:''}.ss-layers:before,.ss-layers.right:after{content:''}.ss-fill:before,.ss-fill.right:after{content:''}.ss-stroke:before,.ss-stroke.right:after{content:''}.ss-phone:before,.ss-phone.right:after{content:'📞'}.ss-phonedisabled:before,.ss-phonedisabled.right:after{content:''}.ss-rss:before,.ss-rss.right:after{content:''}.ss-facetime:before,.ss-facetime.right:after{content:''}.ss-reply:before,.ss-reply.right:after{content:'↩'}.ss-send:before,.ss-send.right:after{content:''}.ss-mail:before,.ss-mail.right:after{content:'✉'}.ss-inbox:before,.ss-inbox.right:after{content:'📥'}.ss-chat:before,.ss-chat.right:after{content:'💬'}.ss-ellipsischat:before,.ss-ellipsischat.right:after{content:''}.ss-ellipsis:before,.ss-ellipsis.right:after{content:'…'}.ss-user:before,.ss-user.right:after{content:'👤'}.ss-femaleuser:before,.ss-femaleuser.right:after{content:'👧'}.ss-users:before,.ss-users.right:after{content:'👥'}.ss-cart:before,.ss-cart.right:after{content:''}.ss-creditcard:before,.ss-creditcard.right:after{content:'💳'}.ss-dollarsign:before,.ss-dollarsign.right:after{content:'💲'}.ss-barchart:before,.ss-barchart.right:after{content:'📊'}.ss-piechart:before,.ss-piechart.right:after{content:''}.ss-box:before,.ss-box.right:after{content:'📦'}.ss-home:before,.ss-home.right:after{content:'⌂'}.ss-buildings:before,.ss-buildings.right:after{content:'🏢'}.ss-warehouse:before,.ss-warehouse.right:after{content:''}.ss-globe:before,.ss-globe.right:after{content:'🌎'}.ss-navigate:before,.ss-navigate.right:after{content:''}.ss-compass:before,.ss-compass.right:after{content:''}.ss-signpost:before,.ss-signpost.right:after{content:''}.ss-map:before,.ss-map.right:after{content:''}.ss-location:before,.ss-location.right:after{content:''}.ss-pin:before,.ss-pin.right:after{content:'📍'}.ss-database:before,.ss-database.right:after{content:''}.ss-hdd:before,.ss-hdd.right:after{content:''}.ss-music:before,.ss-music.right:after{content:'♫'}.ss-mic:before,.ss-mic.right:after{content:'🎤'}.ss-volume:before,.ss-volume.right:after{content:'🔈'}.ss-lowvolume:before,.ss-lowvolume.right:after{content:'🔉'}.ss-highvolume:before,.ss-highvolume.right:after{content:'🔊'}.ss-airplay:before,.ss-airplay.right:after{content:''}.ss-camera:before,.ss-camera.right:after{content:'📷'}.ss-picture:before,.ss-picture.right:after{content:'🌄'}.ss-video:before,.ss-video.right:after{content:'📹'}.ss-play:before,.ss-play.right:after{content:'▶'}.ss-pause:before,.ss-pause.right:after{content:''}.ss-stop:before,.ss-stop.right:after{content:'■'}.ss-record:before,.ss-record.right:after{content:'●'}.ss-rewind:before,.ss-rewind.right:after{content:'⏪'}.ss-fastforward:before,.ss-fastforward.right:after{content:'⏩'}.ss-skipback:before,.ss-skipback.right:after{content:'⏮'}.ss-skipforward:before,.ss-skipforward.right:after{content:'⏭'}.ss-eject:before,.ss-eject.right:after{content:'⏏'}.ss-repeat:before,.ss-repeat.right:after{content:'🔁'}.ss-replay:before,.ss-replay.right:after{content:'↺'}.ss-shuffle:before,.ss-shuffle.right:after{content:'🔀'}.ss-book:before,.ss-book.right:after{content:'📕'}.ss-openbook:before,.ss-openbook.right:after{content:'📖'}.ss-notebook:before,.ss-notebook.right:after{content:'📓'}.ss-newspaper:before,.ss-newspaper.right:after{content:'📰'}.ss-grid:before,.ss-grid.right:after{content:''}.ss-rows:before,.ss-rows.right:after{content:''}.ss-columns:before,.ss-columns.right:after{content:''}.ss-thumbnails:before,.ss-thumbnails.right:after{content:''}.ss-filter:before,.ss-filter.right:after{content:''}.ss-desktop:before,.ss-desktop.right:after{content:'💻'}.ss-laptop:before,.ss-laptop.right:after{content:''}.ss-tablet:before,.ss-tablet.right:after{content:''}.ss-cell:before,.ss-cell.right:after{content:'📱'}.ss-battery:before,.ss-battery.right:after{content:'🔋'}.ss-highbattery:before,.ss-highbattery.right:after{content:''}.ss-mediumbattery:before,.ss-mediumbattery.right:after{content:''}.ss-lowbattery:before,.ss-lowbattery.right:after{content:''}.ss-emptybattery:before,.ss-emptybattery.right:after{content:''}.ss-lightbulb:before,.ss-lightbulb.right:after{content:'💡'}.ss-downloadcloud:before,.ss-downloadcloud.right:after{content:''}.ss-download:before,.ss-download.right:after{content:''}.ss-uploadcloud:before,.ss-uploadcloud.right:after{content:''}.ss-upload:before,.ss-upload.right:after{content:''}.ss-fork:before,.ss-fork.right:after{content:''}.ss-merge:before,.ss-merge.right:after{content:''}.ss-transfer:before,.ss-transfer.right:after{content:'⇆'}.ss-refresh:before,.ss-refresh.right:after{content:'↻'}.ss-sync:before,.ss-sync.right:after{content:''}.ss-loading:before,.ss-loading.right:after{content:''}.ss-wifi:before,.ss-wifi.right:after{content:''}.ss-connection:before,.ss-connection.right:after{content:''}.ss-file:before,.ss-file.right:after{content:'📄'}.ss-folder:before,.ss-folder.right:after{content:'📁'}.ss-quote:before,.ss-quote.right:after{content:'“'}.ss-text:before,.ss-text.right:after{content:''}.ss-font:before,.ss-font.right:after{content:''}.ss-print:before,.ss-print.right:after{content:'⎙'}.ss-fax:before,.ss-fax.right:after{content:'📠'}.ss-list:before,.ss-list.right:after{content:''}.ss-layout:before,.ss-layout.right:after{content:''}.ss-action:before,.ss-action.right:after{content:''}.ss-redirect:before,.ss-redirect.right:after{content:'↪'}.ss-expand:before,.ss-expand.right:after{content:'⤢'}.ss-contract:before,.ss-contract.right:after{content:''}.ss-help:before,.ss-help.right:after{content:'❓'}.ss-info:before,.ss-info.right:after{content:'ℹ'}.ss-alert:before,.ss-alert.right:after{content:'⚠'}.ss-caution:before,.ss-caution.right:after{content:'⛔'}.ss-logout:before,.ss-logout.right:after{content:''}.ss-plus:before,.ss-plus.right:after{content:'+'}.ss-hyphen:before,.ss-hyphen.right:after{content:'-'}.ss-check:before,.ss-check.right:after{content:'✓'}.ss-delete:before,.ss-delete.right:after{content:'␡'}.ss-settings:before,.ss-settings.right:after{content:'⚙'}.ss-dashboard:before,.ss-dashboard.right:after{content:''}.ss-notifications:before,.ss-notifications.right:after{content:'🔔'}.ss-notificationsdisabled:before,.ss-notificationsdisabled.right:after{content:'🔕'}.ss-clock:before,.ss-clock.right:after{content:'⏲'}.ss-stopwatch:before,.ss-stopwatch.right:after{content:'⏱'}.ss-calendar:before,.ss-calendar.right:after{content:'📅'}.ss-addcalendar:before,.ss-addcalendar.right:after{content:''}.ss-removecalendar:before,.ss-removecalendar.right:after{content:''}.ss-checkcalendar:before,.ss-checkcalendar.right:after{content:''}.ss-deletecalendar:before,.ss-deletecalendar.right:after{content:''}.ss-briefcase:before,.ss-briefcase.right:after{content:'💼'}.ss-cloud:before,.ss-cloud.right:after{content:'☁'}.ss-droplet:before,.ss-droplet.right:after{content:'💧'}.ss-flask:before,.ss-flask.right:after{content:''}.ss-up:before,.ss-up.right:after{content:'⬆'}.ss-upright:before,.ss-upright.right:after{content:'⬈'}.ss-right:before,.ss-right.right:after{content:'➡'}.ss-downright:before,.ss-downright.right:after{content:'⬊'}.ss-down:before,.ss-down.right:after{content:'⬇'}.ss-downleft:before,.ss-downleft.right:after{content:'⬋'}.ss-left:before,.ss-left.right:after{content:'⬅'}.ss-upleft:before,.ss-upleft.right:after{content:'⬉'}.ss-navigateup:before,.ss-navigateup.right:after{content:''}.ss-navigateright:before,.ss-navigateright.right:after{content:'▻'}.ss-navigatedown:before,.ss-navigatedown.right:after{content:''}.ss-navigateleft:before,.ss-navigateleft.right:after{content:'◅'}.ss-directup:before,.ss-directup.right:after{content:'▴'}.ss-directright:before,.ss-directright.right:after{content:'▹'}.ss-dropdown:before,.ss-dropdown.right:after{content:'▾'}.ss-directleft:before,.ss-directleft.right:after{content:'◃'}.ss-retweet:before,.ss-retweet.right:after{content:''}
-
-/* Legacy classes */
-.ss-volumelow:before,.ss-volumelow.right:after{content:'🔉'}.ss-volumehigh:before,.ss-volumehigh.right:after{content:'🔊'}.ss-batteryhigh:before,.ss-batteryhigh.right:after{content:''}.ss-batterymedium:before,.ss-batterymedium.right:after{content:''}.ss-batterylow:before,.ss-batterylow.right:after{content:''}.ss-batteryempty:before,.ss-batteryempty.right:after{content:''}.ss-clouddownload:before,.ss-clouddownload.right:after{content:''}.ss-cloudupload:before,.ss-cloudupload.right:after{content:''}.ss-calendaradd:before,.ss-calendaradd.right:after{content:''}.ss-calendarremove:before,.ss-calendarremove.right:after{content:''}.ss-calendarcheck:before,.ss-calendarcheck.right:after{content:''}.ss-calendardelete:before,.ss-calendardelete.right:after{content:''}
+@mixin ss-standard($icon: false, $declare-font: true) {
+  @if $declare-font != false {
+    font-family: "SSStandard";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+  }
+  @if $icon != false{
+    content: ss-standard-icon($icon);
+  }
+}

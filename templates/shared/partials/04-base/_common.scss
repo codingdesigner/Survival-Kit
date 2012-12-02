@@ -35,10 +35,6 @@ body {
   background: $background-color;
 }
 
-@if $pixel-normalize {
-  @include pixel-normalize;
-}
-
 // Selected Text -------------------------------------------------------------- */
 // -moz- must be declared separately
 
