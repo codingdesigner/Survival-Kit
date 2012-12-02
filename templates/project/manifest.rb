@@ -11,8 +11,6 @@ file '../shared/partials/03-extend/_all.scss', :like => :stylesheet, :to => 'par
 file '../shared/partials/03-extend/_typography.scss', :like => :stylesheet, :to => 'partials/03-extend/_typography.scss'
 file '../shared/partials/04-base/_all.scss', :like => :stylesheet, :to => 'partials/04-base/_all.scss'
 file '../shared/partials/04-base/_common.scss', :like => :stylesheet, :to => 'partials/04-base/_common.scss'
-file '../shared/partials/04-base/_edits.scss', :like => :stylesheet, :to => 'partials/04-base/_edits.scss'
-file '../shared/partials/04-base/_font-face.scss', :like => :stylesheet, :to => 'partials/04-base/_font-face.scss'
 file '../shared/partials/04-base/_form-defaults.scss', :like => :stylesheet, :to => 'partials/04-base/_form-defaults.scss'
 file '../shared/partials/04-base/_headers.scss', :like => :stylesheet, :to => 'partials/04-base/_headers.scss'
 file '../shared/partials/04-base/_images.scss', :like => :stylesheet, :to => 'partials/04-base/_images.scss'
