@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.files = ["README.markdown"]
   s.files += ["CHANGELOG.markdown"]
   s.files += Dir.glob("lib/**/*.*")
-  s.files += Dir.glob("stylesheets/survivalkit/**/*.*")
+  s.files += Dir.glob("stylesheets/**/*.*")
   s.files += Dir.glob("templates/clean/**/*.*")
   s.files += Dir.glob("templates/drupal/**/*.*")
   s.files += Dir.glob("templates/project/**/*.*")

@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.beta.13 - December 3, 2012
+* fix missing file
+
 ## 1.0.beta.12 - December 2, 2012
 * refine codebase
 * rebuild manifests
