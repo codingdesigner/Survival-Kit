@@ -1,8 +1,9 @@
 @import "compass/css3/font-face";
+$inline-fonts: false !default;
 
 // available fonts:
 // all, regular, italic, condensed-regular, condensed-italic
-@mixin leaguegothic-font-face($fonts: all) {
+@mixin league-gothic-font-face($fonts: all) {
   $all-fonts: regular, italic, condensed-regular, condensed-italic;
   @if $fonts == all {
     $fonts: $all-fonts;
@@ -18,16 +19,29 @@
         @if $font == condensed-italic {
           $style: italic;
         }
-        @include font-face(
-          'League Gothic',
-          font-files(
-            "leaguegothic-#{$font}-webfont.woff", woff,
-            "leaguegothic-#{$font}-webfont.ttf", truetype,
-            "leaguegothic-#{$font}-webfont.svg#league_gothic#{$font}", svg
-          ),
-          'leaguegothic-#{$font}-webfont.eot',
-          $weight,
-          $style);
+        @if $inline-fonts == false {
+          @include font-face(
+            'League Gothic',
+            font-files(
+              "leaguegothic-#{$font}-webfont.woff", woff,
+              "leaguegothic-#{$font}-webfont.ttf", truetype,
+              "leaguegothic-#{$font}-webfont.svg#league_gothic#{$font}", svg
+            ),
+            'leaguegothic-#{$font}-webfont.eot',
+            $weight,
+            $style);
+        } @else {
+          @include font-face(
+            'League Gothic',
+            inline-font-files(
+              "leaguegothic-#{$font}-webfont.woff", woff,
+              "leaguegothic-#{$font}-webfont.ttf", truetype,
+              "leaguegothic-#{$font}-webfont.svg", svg
+            ),
+            'leaguegothic-#{$font}-webfont.eot',
+            $weight,
+            $style);
+        }
       }
     }
   }

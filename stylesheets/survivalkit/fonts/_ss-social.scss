@@ -9,25 +9,49 @@
 // <link href="webfonts/ss-social.css" rel="stylesheet" />
 
 @import "compass/css3/font-face";
+$inline-fonts: false !default;
 
-@include font-face(
-  'SSSocial',
-  font-files(
-      "ss-social-regular.woff", woff,
-      "ss-social-regular.ttf", truetype,
-      "ss-social-regular.svg#ss-social-regular", svg),
-  'ss-social-regular.eot',
-  normal,
-  normal);
-@include font-face(
-  'SSSocial',
-  font-files(
-      "ss-social-circle.woff", woff,
-      "ss-social-circle.ttf", truetype,
-      "ss-social-circle.svg#ss-social-circle", svg),
-  'ss-social-circle.eot',
-  bold,
-  normal);
+@mixin ss-social-font-face() {
+  @if $inline-fonts == false {
+    @include font-face(
+      'SSSocial',
+      font-files(
+          "ss-social-regular.woff", woff,
+          "ss-social-regular.ttf", truetype,
+          "ss-social-regular.svg#ss-social-regular", svg),
+      'ss-social-regular.eot',
+      normal,
+      normal);
+    @include font-face(
+      'SSSocial',
+      font-files(
+          "ss-social-circle.woff", woff,
+          "ss-social-circle.ttf", truetype,
+          "ss-social-circle.svg#ss-social-circle", svg),
+      'ss-social-circle.eot',
+      bold,
+      normal);
+  } @else {
+    @include font-face(
+      'SSSocial',
+      inline-font-files(
+          "ss-social-regular.woff", woff,
+          "ss-social-regular.ttf", ttf,
+          "ss-social-regular.svg", svg),
+      'ss-social-regular.eot',
+      normal,
+      normal);
+    @include font-face(
+      'SSSocial',
+      inline-font-files(
+          "ss-social-circle.woff", woff,
+          "ss-social-circle.ttf", ttf,
+          "ss-social-circle.svg", svg),
+      'ss-social-circle.eot',
+      bold,
+      normal);
+  }
+}
 
 @mixin ss-social-classes {
   /* This triggers a redraw in IE to Fix IE8's :before content rendering. */

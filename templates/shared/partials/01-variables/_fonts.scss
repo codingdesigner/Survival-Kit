@@ -32,12 +32,16 @@ $font-cap: $font-sans;
 //   'bold',
 //   'normal');
 
+// Encode custom fonts in the compiled css (data uri)
+$inline-fonts: false;
+
 ////////////////////////////
 // FONT-AWESOME
 // uncomment to include
 // http://fortawesome.github.com/Font-Awesome/
 ////////////////////////////
 // @import 'survivalkit/fonts/font-awesome';
+// @include font-awesome-font-face;
 
 ////////////////////////////
 // SYMBOLSET - STANDARD
@@ -47,6 +51,7 @@ $font-cap: $font-sans;
 // purchase the font and place in your fonts directory
 ////////////////////////////
 // @import 'survivalkit/fonts/ss-standard';
+// @include ss-standard-font-face;
 // @include ss-standard-classes;
 
 ////////////////////////////
@@ -57,6 +62,7 @@ $font-cap: $font-sans;
 // purchase the font and place in your fonts directory
 ////////////////////////////
 // @import 'survivalkit/fonts/ss-social';
+// @include ss-social-font-face;
 // @include ss-social-classes;
 
 ////////////////////////////
@@ -65,6 +71,7 @@ $font-cap: $font-sans;
 // http://www.theleagueofmoveabletype.com/league-gothic
 ////////////////////////////
 // @import 'survivalkit/fonts/league-gothic';
+// @include league-gothic-font-face;
 
 ////////////////////////////
 // OSTRICH SANS
@@ -72,3 +79,6 @@ $font-cap: $font-sans;
 // http://www.theleagueofmoveabletype.com/ostrich-sans
 ////////////////////////////
 // @import 'survivalkit/fonts/ostrich-sans';
+// @include ostrich-sans-font-face;
+// @include ostrich-dashed-font-face;
+// @include ostrich-rounded-font-face;

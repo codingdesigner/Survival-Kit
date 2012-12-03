@@ -22,17 +22,30 @@
 ////////////////////////////
 
 @import "compass/css3/font-face";
+$inline-fonts: false !default;
 
-@mixin font-awesome-font-face {
-  @include font-face(
-    'FontAwesome',
-    font-files(
-        "fontawesome-webfont.woff", woff,
-        "fontawesome-webfont.ttf", truetype,
-        "fontawesome-webfont.svg#FontAwesomeRegular", svg),
-    'fontawesome-webfont.eot',
-    normal,
-    normal);
+@mixin font-awesome-font-face() {
+  @if $inline-fonts == false {
+    @include font-face(
+      'FontAwesome',
+      font-files(
+          "fontawesome-webfont.woff", woff,
+          "fontawesome-webfont.ttf", truetype,
+          "fontawesome-webfont.svg#FontAwesomeRegular", svg),
+      'fontawesome-webfont.eot',
+      normal,
+      normal);
+  } @else {
+    @include font-face(
+      'FontAwesome',
+      inline-font-files(
+          "fontawesome-webfont.woff", woff,
+          "fontawesome-webfont.ttf", truetype,
+          "fontawesome-webfont.svg", svg),
+      'fontawesome-webfont.eot',
+      normal,
+      normal);
+  }
 }
 
 @mixin font-awesome {

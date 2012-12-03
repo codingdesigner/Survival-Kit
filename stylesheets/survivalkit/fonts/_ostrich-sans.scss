@@ -1,8 +1,9 @@
 @import "compass/css3/font-face";
+$inline-fonts: false !default;
 
 // available fonts:
 // all, regular, light, bold, black
-@mixin ostrich-font-face($fonts: all) {
+@mixin ostrich-sans-font-face($fonts: all) {
   $all-fonts: regular, light, bold, black;
   @if $fonts == all {
     $fonts: $all-fonts;
@@ -18,16 +19,30 @@
         @if $font == condensed-italic {
           $style: italic;
         }
-        @include font-face(
-          'Ostrich',
-          font-files(
-            "ostrich-#{$font}-webfont.woff", woff,
-            "ostrich-#{$font}-webfont.ttf", truetype,
-            "ostrich-#{$font}-webfont.svg#ostrich#{$font}", svg
-          ),
-          'ostrich-#{$font}-webfont.eot',
-          $weight,
-          $style);
+        @if $inline-fonts == false {
+          @include font-face(
+            'Ostrich',
+            font-files(
+              "ostrich-#{$font}-webfont.woff", woff,
+              "ostrich-#{$font}-webfont.ttf", truetype,
+              "ostrich-#{$font}-webfont.svg#ostrich#{$font}", svg
+            ),
+            'ostrich-#{$font}-webfont.eot',
+            $weight,
+            $style);
+        } @else {
+          @include font-face(
+            'Ostrich',
+            inline-font-files(
+              "ostrich-#{$font}-webfont.woff", woff,
+              "ostrich-#{$font}-webfont.ttf", truetype,
+              "ostrich-#{$font}-webfont.svg", svg
+            ),
+            'ostrich-#{$font}-webfont.eot',
+            $weight,
+            $style);
+
+        }
       }
     }
   }
@@ -35,28 +50,55 @@
 
 // dashed
 @mixin ostrich-dashed-font-face() {
-  @include font-face(
-    'Ostrich Dashed',
-    font-files(
-      "ostrich-dashed-webfont.woff", woff,
-      "ostrich-dashed-webfont.ttf", truetype,
-      "ostrich-dashed-webfont.svg#ostrich-dashed", svg
-    ),
-    'ostrich-dashed-webfont.eot',
-    normal,
-    normal);
+  @if $inline-fonts == false {
+    @include font-face(
+      'Ostrich Dashed',
+      font-files(
+        "ostrich-dashed-webfont.woff", woff,
+        "ostrich-dashed-webfont.ttf", truetype,
+        "ostrich-dashed-webfont.svg#ostrich-dashed", svg
+      ),
+      'ostrich-dashed-webfont.eot',
+      normal,
+      normal);
+  } @else {
+    @include font-face(
+      'Ostrich Dashed',
+      inline-font-files(
+        "ostrich-dashed-webfont.woff", woff,
+        "ostrich-dashed-webfont.ttf", truetype,
+        "ostrich-dashed-webfont.svg", svg
+      ),
+      'ostrich-dashed-webfont.eot',
+      normal,
+      normal);
+  }
 }
 
 // rounded
 @mixin ostrich-rounded-font-face() {
-  @include font-face(
-    'Ostrich Rounded',
-    font-files(
-      "ostrich-rounded-webfont.woff", woff,
-      "ostrich-rounded-webfont.ttf", truetype,
-      "ostrich-rounded-webfont.svg#ostrich-rounded#", svg
-    ),
-    'ostrich-rounded-webfont.eot',
-    normal,
-    normal);
+  @if $inline-fonts == false {
+    @include font-face(
+      'Ostrich Rounded',
+      font-files(
+        "ostrich-rounded-webfont.woff", woff,
+        "ostrich-rounded-webfont.ttf", truetype,
+        "ostrich-rounded-webfont.svg#ostrich-rounded", svg
+      ),
+      'ostrich-rounded-webfont.eot',
+      normal,
+      normal);
+  } @else {
+    @include font-face(
+      'Ostrich Rounded',
+      inline-font-files(
+        "ostrich-rounded-webfont.woff", woff,
+        "ostrich-rounded-webfont.ttf", truetype,
+        "ostrich-rounded-webfont.svg", svg
+      ),
+      'ostrich-rounded-webfont.eot',
+      normal,
+      normal);
+
+  }
 }

@@ -9,16 +9,33 @@
 // <link href="webfonts/ss-standard.css" rel="stylesheet" />
 
 @import "compass/css3/font-face";
+$inline-fonts: false !default;
 
-@include font-face(
-  'SSStandard',
-  font-files(
-      "ss-standard.woff", woff,
-      "ss-standard.ttf", truetype,
-      "ss-standard.svg#ss-standard", svg),
-  'ss-standard.eot',
-  normal,
-  normal);
+@mixin ss-standard-font-face() {
+  @if $inline-fonts == false {
+    @include font-face(
+      'SSStandard',
+      font-files(
+          "ss-standard.woff", woff,
+          "ss-standard.ttf", truetype,
+          "ss-standard.svg#ss-standard", svg),
+      'ss-standard.eot',
+      normal,
+      normal);
+  } @else if $inline-fonts == true {
+    @include font-face(
+      'SSStandard',
+      inline-font-files(
+          "ss-standard.woff", woff,
+          "ss-standard.ttf", truetype,
+          "ss-standard.svg", svg),
+      'ss-standard.eot',
+      normal,
+      normal);
+  }
+}
+
+
 
 
 @mixin ss-standard-classes {
