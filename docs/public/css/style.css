@@ -1,3 +1,12 @@
+header.kit-ui {
+  zoom: 1;
+}
+header.kit-ui:after {
+  content: "\0020";
+  display: table;
+  clear: both;
+}
+
 img, table {
   max-width: 100%;
 }
@@ -8,6 +17,31 @@ em, address, cite, q, dfn, i {
 
 strong, dfn, b {
   font-weight: bold;
+}
+
+.menu-trigger:before, .fold-section-open:before,
+.fold-article-open:before, .fold-section-close:before,
+.fold-article-close:before, .menu-trigger, .fold-section,
+.fold-article {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.menu-trigger:before {
+  content: "\f00b";
+}
+
+.fold-section-open:before,
+.fold-article-open:before {
+  content: "\f055";
+}
+
+.fold-section-close:before,
+.fold-article-close:before {
+  content: "\f057";
 }
 
 pre, code, kbd, tt, div.element .example .markup + .show-source {
@@ -303,12 +337,8 @@ table {
   box-sizing: border-box;
 }
 
-* html {
-  font-size: 100%;
-}
-
 html {
-  font-size: 16px;
+  font-size: 100%;
   line-height: 1.5em;
 }
 
@@ -461,13 +491,12 @@ mark {
   text-shadow: none;
 }
 
-.menu-trigger, .fold-section,
-.fold-article {
-  font-family: FontAwesome;
+@font-face {
+  font-family: "FontAwesome";
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
   font-weight: normal;
   font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
 }
 
 header.kit-ui {

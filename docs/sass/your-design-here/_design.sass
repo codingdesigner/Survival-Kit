@@ -1,7 +1,7 @@
 // styles for survivalkit ui
 
-$fontAwesomePath: "fontawesome-webfont"
-@import 'survivalkit/fonts/font-awesome'
+
+@include font-awesome-font-face
 
 $kit-font-family: $font-serifs
 
@@ -12,7 +12,7 @@ $sk-darkgray: #333
 
 header.kit-ui
   padding: 0.5em 0.5em 0
-  @extend .clearfix
+  @extend %clearfix
   background: $sk-darkgray
   border-bottom: 1px solid $black
 
@@ -62,7 +62,7 @@ header.kit-ui
   border-bottom-width: 0 !important
   border-bottom-color: transparent !important
   @extend %font-awesome
-  @extend .icon-th-list
+  @extend %icon-th-list
   &:before
     font-size: 24px
     line-height: calc-em(44px, 24px)
@@ -122,10 +122,10 @@ h1.section-title
   +link-colors($sk-lightgray, $sk-gray, $sk-gray, $sk-lightgray, false)
 .fold-section-close,
 .fold-article-close
-  @extend .icon-remove-sign
+  @extend %icon-remove-sign
 .fold-section-open,
 .fold-article-open
-  @extend .icon-plus-sign
+  @extend %icon-plus-sign
 
 div.element
   padding-bottom: 44px
