@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.beta.14 - December 3, 2012
+* font-face mixins now have an inline option
+
 ## 1.0.beta.13 - December 3, 2012
 * fix missing file
 
