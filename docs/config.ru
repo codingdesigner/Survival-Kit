@@ -16,6 +16,21 @@ require 'serve/rack'
 # The project root directory
 root = ::File.dirname(__FILE__)
 
+# Compile Sass on the fly with the Sass plugin. Some production environments
+# don't allow you to write to the file system on the fly (like Heroku).
+# Remove this conditional if you want to compile Sass in production.
+if ENV['RACK_ENV'] != 'production'
+  require 'sass'
+  require 'sass/plugin/rack'
+  require 'compass'
+  require 'survivalkit'
+
+  Compass.add_project_configuration(root + '/compass.config')
+  Compass.configure_sass_plugin!
+
+  use Sass::Plugin::Rack  # Sass Middleware
+end
+
 # Other Rack Middleware
 use Rack::ShowStatus      # Nice looking 404s and other messages
 use Rack::ShowExceptions  # Nice looking errors

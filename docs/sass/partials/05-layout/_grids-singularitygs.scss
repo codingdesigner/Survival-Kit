@@ -1,0 +1,59 @@
+// SINGULARITY GRID FRAMEWORK
+//*
+//  Grids without limits
+//  By: Scott Kellum and Sam Richard
+//  Site: http://singularity.gs/
+//*
+
+// Can be a number or a list of non-uniform column widths
+// $columns: 12;
+
+// Must be of the same unit type of defined columns
+// $gutter: .25;
+
+// Grid padding can be any type of unit
+// $padding: 0;
+
+// Layout direction?
+// options are ltr, rtl, both
+// $dir: ltr;
+
+// Choose a selector for rtl layouts when using 'both'
+// $rtl-selector: '[dir="rtl"]';
+
+// Options for Multiple Grids
+// $grids: ();
+// $gutters: ();
+// $paddings: ();
+
+// $grids-mobile-first: true;
+
+// Container
+// $container: 100%;
+// $containers: ();
+// $container-to-ems: false;
+
+// Base Font Size
+// $base-font-size: 1em;
+
+
+// BUILD THE GRID FOR YOUR SITE
+
+@include base-font-sizing;
+// #container {
+//   @include container;
+//   // @if $show-grid == true {
+//   //   @include background-grid;
+//   // }
+// }
+// .main {
+//   @include grid-span(1, 1);
+// }
+// .side {
+//   @include grid-span(2, 3);
+// }
+
+// // DEBUGGING / PREVIEW
+// $prefix: 'a';
+// $color: $badass;
+// @include test-grid($columns, $gutter, $padding, $prefix, $color);
