@@ -47,8 +47,8 @@
 }
 
 // fade between default and hover colors
-@mixin link-transitions($time: 0.5s, $easing: "ease-out", $property: "all") {
-  @include transition($property, $time, $easing);
+@mixin link-transitions($time: 0.5s, $easing: ease-out, $property: all) {
+  @include transition($property $time $easing);
 }
 
 // Only use the fancy ampersand in <h#> tags */

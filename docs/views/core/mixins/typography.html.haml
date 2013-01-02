@@ -81,8 +81,8 @@
         &= "fade between default and hover colors"
       %pre.scss
         :preserve
-          @mixin link-transitions($time: 0.5s, $easing: "ease-out", $property: "all") {
-            @include transition($property, $time, $easing);
+          @mixin link-transitions($time: 0.5s, $easing: ease-out, $property: all) {
+            @include transition($property $time $easing);
           }
   %div#mixin-header-ampersands.element
     %h2.element-title
