@@ -1,3 +1,10 @@
+@mixin debug-outline($color: red, $background-color: false) {
+  outline: 1px solid $color;
+  @if $background-color != false {
+    background-color: $background-color;
+  }
+}
+
 @mixin hidden {
   display: none !important;
   visibility: hidden;
