@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{The Coding Designer's Survival Kit - tools for designing websites in the browser.}
   s.summary = %q{The Coding Designer's Survival Kit }
   s.authors = ["Mason Wendell"]
-  s.email = ["mason@zivtech.com"]
+  s.email = ["mason@thecodingdesigner.com"]
   s.homepage = "http://thecodingdesigner.com"
 
   # Gem Files
@@ -30,6 +30,4 @@ Gem::Specification.new do |s|
   s.add_dependency("breakpoint", [">= 1.2"])
   s.add_dependency("modular-scale", [">= 1.0"])
   s.add_dependency("color-schemer", [">= 0.1"])
-  s.add_dependency("singularitygs", [">= 0.0.17"])
-  s.add_dependency("susy", [">= 1.0"])
 end

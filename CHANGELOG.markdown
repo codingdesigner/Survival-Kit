@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.beta.16 - July 20, 2013
+* remove grid systems
+
 ## 1.0.beta.15 - January 2, 2013
 * fixed link transition mixin
 
