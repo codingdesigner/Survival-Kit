@@ -1,4 +1,4 @@
-# [The Coding Designer's Survival Kit](http://thecodingdesigner.com) ![project status](http://stillmaintained.com/canarymason/Survival-Kit.png) #
+# [The Coding Designer's Survival Kit](http://thecodingdesigner.com)
 
 **A Toolset for Designing Web Sites in the Browser**
 
